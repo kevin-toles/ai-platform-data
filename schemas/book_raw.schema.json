@@ -2,49 +2,159 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://ai-platform-data/schemas/book_raw.schema.json",
   "title": "Book Raw Schema",
-  "description": "JSON Schema for raw book content extracted from textbooks. Contains the original content structure before any enrichment processing.",
+  "description": "JSON Schema for raw book content extracted by llm-document-enhancer. This is the output format from PDF→JSON conversion using Unstructured/PyMuPDF with 3-pass chapter detection. Schema is intentionally flexible to accommodate evolving extraction methods and legacy formats.",
   "type": "object",
-  "required": ["title", "author", "chapters"],
-  "additionalProperties": false,
+  "required": ["metadata", "chapters"],
+  "additionalProperties": true,
   "properties": {
-    "title": {
-      "type": "string",
-      "description": "The title of the book",
-      "minLength": 1
-    },
-    "author": {
-      "type": "string",
-      "description": "The author(s) of the book",
-      "minLength": 1
+    "metadata": {
+      "$ref": "#/definitions/metadata"
     },
     "chapters": {
       "type": "array",
-      "description": "List of chapters in the book",
+      "description": "List of chapters detected via regex, topic-shift, or synthetic methods",
       "items": {
         "$ref": "#/definitions/chapter"
+      }
+    },
+    "pages": {
+      "type": "array",
+      "description": "Raw page-level content extracted from PDF",
+      "items": {
+        "$ref": "#/definitions/page"
       }
     }
   },
   "definitions": {
+    "metadata": {
+      "type": "object",
+      "description": "Book metadata extracted from PDF and enriched during conversion",
+      "required": ["title"],
+      "additionalProperties": true,
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Book title (derived from filename for consistency)",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "description": "Author(s) of the book"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Publisher name"
+        },
+        "edition": {
+          "type": "string",
+          "description": "Edition information"
+        },
+        "isbn": {
+          "type": "string",
+          "description": "ISBN if available"
+        },
+        "total_pages": {
+          "type": "integer",
+          "description": "Total number of pages in the source PDF",
+          "minimum": 1
+        },
+        "conversion_date": {
+          "type": "string",
+          "description": "ISO timestamp of when the conversion was performed"
+        },
+        "conversion_method": {
+          "type": "string",
+          "description": "Primary conversion method used (e.g., 'PyMuPDF + OCR fallback')"
+        },
+        "source_pdf": {
+          "type": "string",
+          "description": "Original PDF filename"
+        },
+        "extraction_method": {
+          "type": "string",
+          "description": "Detailed extraction method - flexible string, not enum (e.g., 'Unstructured', 'PyMuPDF_fallback', 'PyMuPDF (Direct: N, OCR: M)')"
+        }
+      }
+    },
     "chapter": {
       "type": "object",
-      "description": "A chapter within the book",
-      "required": ["chapter_number", "title", "content"],
-      "additionalProperties": false,
+      "description": "A chapter detected by the 3-pass algorithm (regex → topic-shift → synthetic). Supports both legacy (chapter_number) and current (number) formats.",
+      "anyOf": [
+        {"required": ["number", "title"]},
+        {"required": ["chapter_number", "title"]}
+      ],
+      "additionalProperties": true,
       "properties": {
+        "number": {
+          "type": "integer",
+          "description": "Sequential chapter number (1-based) - current format",
+          "minimum": 1
+        },
         "chapter_number": {
           "type": "integer",
-          "description": "The chapter number (1-based index)",
+          "description": "Sequential chapter number (1-based) - legacy format",
           "minimum": 1
         },
         "title": {
           "type": "string",
-          "description": "The title of the chapter",
+          "description": "Chapter title (extracted or synthetic)",
           "minLength": 1
+        },
+        "start_page": {
+          "type": "integer",
+          "description": "First page of the chapter (1-based)",
+          "minimum": 1
+        },
+        "end_page": {
+          "type": "integer",
+          "description": "Last page of the chapter (1-based)",
+          "minimum": 1
+        },
+        "detection_method": {
+          "type": "string",
+          "description": "How the chapter was detected - flexible string, not enum (e.g., 'regex_chapter', 'topic_boundary', 'synthetic')"
         },
         "content": {
           "type": "string",
-          "description": "The full text content of the chapter"
+          "description": "Full text content of the chapter (populated from page ranges)"
+        },
+        "page_number": {
+          "type": "integer",
+          "description": "Compatibility field - same as start_page",
+          "minimum": 1
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "description": "Raw page content extracted from PDF",
+      "required": ["page_number", "content"],
+      "additionalProperties": true,
+      "properties": {
+        "page_number": {
+          "type": "integer",
+          "description": "Page number (1-based)",
+          "minimum": 1
+        },
+        "chapter": {
+          "description": "Chapter assignment (may be null before segmentation)",
+          "anyOf": [
+            {"type": "integer", "minimum": 1},
+            {"type": "null"}
+          ]
+        },
+        "content": {
+          "type": "string",
+          "description": "Raw text content of the page"
+        },
+        "content_length": {
+          "type": "integer",
+          "description": "Length of content string",
+          "minimum": 0
+        },
+        "extraction_method": {
+          "type": "string",
+          "description": "How the page was extracted - flexible string, not enum (e.g., 'Direct', 'OCR', 'PyMuPDF_fallback', 'Unstructured')"
         }
       }
     }

@@ -82,41 +82,57 @@ class TestBookRawSchema:
         Draft7Validator.check_schema(schema)
 
     def test_valid_raw_book_minimal(self, load_schema: Any) -> None:
-        """Minimal valid raw book should pass validation."""
+        """Minimal valid raw book should pass validation.
+        
+        Note: Updated to match llm-document-enhancer output format which uses
+        metadata wrapper around title/author.
+        """
         schema = load_schema("book_raw.schema.json")
         valid_data = {
-            "title": "Test Book",
-            "author": "Test Author",
+            "metadata": {
+                "title": "Test Book",
+                "author": "Test Author"
+            },
             "chapters": []
         }
         assert validate_data(schema, valid_data)
 
     def test_valid_raw_book_with_chapters(self, load_schema: Any) -> None:
-        """Raw book with chapters should pass validation."""
+        """Raw book with chapters should pass validation.
+        
+        Note: Updated to match llm-document-enhancer output format which uses
+        'number' for chapter numbers and includes detection_method.
+        """
         schema = load_schema("book_raw.schema.json")
         valid_data = {
-            "title": "AI Engineering",
-            "author": "Chip Huyen",
+            "metadata": {
+                "title": "AI Engineering",
+                "author": "Chip Huyen"
+            },
             "chapters": [
                 {
-                    "chapter_number": 1,
+                    "number": 1,
                     "title": "Introduction",
-                    "content": "Foundation models are models trained..."
+                    "content": "Foundation models are models trained...",
+                    "detection_method": "topic_boundary"
                 },
                 {
-                    "chapter_number": 2,
+                    "number": 2,
                     "title": "Building Blocks",
-                    "content": "This chapter covers the building blocks..."
+                    "content": "This chapter covers the building blocks...",
+                    "detection_method": "topic_boundary"
                 }
             ]
         }
         assert validate_data(schema, valid_data)
 
     def test_invalid_missing_title(self, load_schema: Any) -> None:
-        """Book without title should fail validation."""
+        """Book without title in metadata should fail validation."""
         schema = load_schema("book_raw.schema.json")
         invalid_data = {
-            "author": "Test Author",
+            "metadata": {
+                "author": "Test Author"
+            },
             "chapters": []
         }
         with pytest.raises(ValidationError) as exc_info:
@@ -124,22 +140,28 @@ class TestBookRawSchema:
         assert "title" in str(exc_info.value)
 
     def test_invalid_missing_author(self, load_schema: Any) -> None:
-        """Book without author should fail validation."""
+        """Book without author should still pass validation (author is optional).
+        
+        Note: With the flexible schema, only title is required in metadata.
+        """
         schema = load_schema("book_raw.schema.json")
-        invalid_data = {
-            "title": "Test Book",
+        valid_data = {
+            "metadata": {
+                "title": "Test Book"
+            },
             "chapters": []
         }
-        with pytest.raises(ValidationError) as exc_info:
-            validate_data(schema, invalid_data)
-        assert "author" in str(exc_info.value)
+        # This should now pass since author is optional
+        assert validate_data(schema, valid_data)
 
     def test_invalid_chapter_missing_number(self, load_schema: Any) -> None:
-        """Chapter without chapter_number should fail validation."""
+        """Chapter without number or chapter_number should fail validation."""
         schema = load_schema("book_raw.schema.json")
         invalid_data = {
-            "title": "Test Book",
-            "author": "Test Author",
+            "metadata": {
+                "title": "Test Book",
+                "author": "Test Author"
+            },
             "chapters": [
                 {
                     "title": "Introduction",
@@ -149,17 +171,20 @@ class TestBookRawSchema:
         }
         with pytest.raises(ValidationError) as exc_info:
             validate_data(schema, invalid_data)
-        assert "chapter_number" in str(exc_info.value)
+        # The anyOf requirement means it must have either 'number' or 'chapter_number'
+        assert "number" in str(exc_info.value) or "anyOf" in str(exc_info.value)
 
     def test_invalid_chapter_number_type(self, load_schema: Any) -> None:
-        """Chapter with non-integer chapter_number should fail validation."""
+        """Chapter with non-integer number should fail validation."""
         schema = load_schema("book_raw.schema.json")
         invalid_data = {
-            "title": "Test Book",
-            "author": "Test Author",
+            "metadata": {
+                "title": "Test Book",
+                "author": "Test Author"
+            },
             "chapters": [
                 {
-                    "chapter_number": "one",  # Should be integer
+                    "number": "one",  # Should be integer
                     "title": "Introduction",
                     "content": "Content here"
                 }

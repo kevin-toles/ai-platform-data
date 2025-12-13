@@ -44,6 +44,51 @@ def schemas_dir(project_root: Path) -> Path:
     return project_root / "schemas"
 
 
+@pytest.fixture
+def scripts_dir(project_root: Path) -> Path:
+    """Return the scripts directory."""
+    return project_root / "scripts"
+
+
+@pytest.fixture
+def textbooks_json_dir() -> Path:
+    """Return the source textbooks JSON directory.
+
+    Note: This is outside the ai-platform-data repo, in the textbooks/ workspace.
+    Adjust path as needed for your environment.
+    """
+    # Try common locations
+    candidates = [
+        Path("/Users/kevintoles/POC/textbooks/JSON Texts"),
+        Path.home() / "POC" / "textbooks" / "JSON Texts",
+        Path(__file__).parent.parent.parent.parent / "textbooks" / "JSON Texts",
+    ]
+    for path in candidates:
+        if path.exists():
+            return path
+    # Fallback - return first candidate (tests will fail with clear message)
+    return candidates[0]
+
+
+@pytest.fixture
+def load_schema(schemas_dir: Path) -> Any:
+    """Factory fixture to load a schema by name.
+
+    Args:
+        schemas_dir: Path to schemas directory.
+
+    Returns:
+        Function that loads a schema given its filename.
+    """
+    def _load(schema_name: str) -> dict[str, Any]:
+        schema_path = schemas_dir / schema_name
+        if not schema_path.exists():
+            pytest.fail(f"Schema file does not exist: {schema_path}")
+        with open(schema_path, encoding="utf-8") as f:
+            return json.load(f)
+    return _load
+
+
 # ============================================================================
 # Sample Data Fixtures
 # ============================================================================
