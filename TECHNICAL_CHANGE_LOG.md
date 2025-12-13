@@ -68,6 +68,43 @@
 
 ---
 
+### 2025-12-13: Phase 2.1 Docker Configuration (CL-005)
+
+**Phase**: 2.1 Docker Configuration
+
+**Actions**:
+- Created 37 TDD tests for Docker infrastructure validation
+- Created Neo4j init scripts (constraints + indexes)
+- Created Qdrant collection configuration
+- Validated security patterns per Comp_Static_Analysis_Report
+
+**Files Created**:
+
+| File | Purpose |
+|------|---------|
+| `tests/unit/test_docker_compose.py` | 37 tests for Docker config validation |
+| `docker/neo4j/init-scripts/01_constraints.cypher` | Book, Chapter, Concept, Tier constraints |
+| `docker/neo4j/init-scripts/02_indexes.cypher` | Performance indexes for tier/priority queries |
+| `docker/qdrant/config/collections.yaml` | chapters, concepts, keywords collections |
+
+**Anti-Pattern Audit** (per Comp_Static_Analysis Issues #1-3, #17-20):
+- ✅ No hardcoded passwords in docker-compose.yml
+- ✅ Environment variable substitution pattern used
+- ✅ Health checks defined for all services
+- ✅ Redis has no auth in dev (correct pattern for local dev)
+
+**Docker Services**:
+
+| Service | Image | Ports | Purpose |
+|---------|-------|-------|---------|
+| neo4j | neo4j:5.15-community | 7474, 7687 | Graph database |
+| qdrant | qdrant/qdrant:v1.7.4 | 6333, 6334 | Vector database |
+| redis | redis:7-alpine | 6379 | Session storage |
+
+**TDD Results**: 37 new tests, 101 total passing
+
+---
+
 ## Schema Reference
 
 | Schema | Version | Last Updated |

@@ -1,0 +1,74 @@
+# Qdrant Collection Configuration for AI Platform Data
+# Phase 2.1: WBS 2.1.4 - Collection schemas defined
+#
+# These collections support the Graph RAG semantic search system.
+# Vector size 384 matches sentence-transformers/all-MiniLM-L6-v2 model.
+
+collections:
+  chapters:
+    # Chapter embeddings for semantic search
+    # Used by semantic-search-service for content retrieval
+    vectors:
+      size: 384  # all-MiniLM-L6-v2 embedding dimension
+      distance: Cosine
+    # Payload fields for filtering and metadata
+    # Per TIER_RELATIONSHIP_DIAGRAM.md, chapters have tier relationships
+    payload_schema:
+      book_id:
+        type: keyword
+        indexed: true
+      chapter_id:
+        type: keyword
+        indexed: true
+      tier:
+        type: keyword
+        indexed: true
+      priority:
+        type: integer
+        indexed: true
+      title:
+        type: text
+        indexed: false
+      content_preview:
+        type: text
+        indexed: false
+
+  concepts:
+    # Concept embeddings for term matching
+    # Per AI-ML_taxonomy_20251128.json, concepts are extracted from chapters
+    vectors:
+      size: 384  # all-MiniLM-L6-v2 embedding dimension
+      distance: Cosine
+    payload_schema:
+      concept_id:
+        type: keyword
+        indexed: true
+      name:
+        type: keyword
+        indexed: true
+      tier:
+        type: keyword
+        indexed: true
+      source_chapter_id:
+        type: keyword
+        indexed: true
+      source_book_id:
+        type: keyword
+        indexed: true
+
+  keywords:
+    # Keyword embeddings for search queries
+    # Supports cross-reference matching per TIER_RELATIONSHIP_DIAGRAM.md
+    vectors:
+      size: 384
+      distance: Cosine
+    payload_schema:
+      keyword:
+        type: keyword
+        indexed: true
+      frequency:
+        type: integer
+        indexed: true
+      source_chapters:
+        type: keyword
+        indexed: true
