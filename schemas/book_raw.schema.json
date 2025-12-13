@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-platform-data/schemas/book_raw.schema.json",
+  "title": "Book Raw Schema",
+  "description": "JSON Schema for raw book content extracted from textbooks. Contains the original content structure before any enrichment processing.",
+  "type": "object",
+  "required": ["title", "author", "chapters"],
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the book",
+      "minLength": 1
+    },
+    "author": {
+      "type": "string",
+      "description": "The author(s) of the book",
+      "minLength": 1
+    },
+    "chapters": {
+      "type": "array",
+      "description": "List of chapters in the book",
+      "items": {
+        "$ref": "#/definitions/chapter"
+      }
+    }
+  },
+  "definitions": {
+    "chapter": {
+      "type": "object",
+      "description": "A chapter within the book",
+      "required": ["chapter_number", "title", "content"],
+      "additionalProperties": false,
+      "properties": {
+        "chapter_number": {
+          "type": "integer",
+          "description": "The chapter number (1-based index)",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the chapter",
+          "minLength": 1
+        },
+        "content": {
+          "type": "string",
+          "description": "The full text content of the chapter"
+        }
+      }
+    }
+  }
+}

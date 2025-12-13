@@ -25,7 +25,7 @@ class EmbeddingGenerator:
         self._model: SentenceTransformer | None = None
 
     @property
-    def model(self) -> "SentenceTransformer":
+    def model(self) -> SentenceTransformer:
         """Lazy-load the embedding model."""
         if self._model is None:
             from sentence_transformers import SentenceTransformer

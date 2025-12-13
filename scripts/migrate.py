@@ -18,7 +18,8 @@ def main(version: str | None, dry_run: bool) -> None:
     if dry_run:
         console.print("[yellow]Dry run mode - no changes will be applied[/yellow]")
 
-    # TODO: Implement migration logic
+    # TODO: Implement migration logic using version parameter
+    _ = version  # Used in future migration logic
     console.print("[dim]No migrations pending[/dim]")
 
 

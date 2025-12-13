@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-platform-data/schemas/book_metadata.schema.json",
+  "title": "Book Metadata Schema",
+  "description": "JSON Schema for book metadata with tier classification and domain information. Extends raw book data with enrichment fields for the AI platform.",
+  "type": "object",
+  "required": ["id", "title", "author", "tier"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the book",
+      "minLength": 1,
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the book",
+      "minLength": 1
+    },
+    "author": {
+      "type": "string",
+      "description": "The author(s) of the book",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "description": "The publisher of the book"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Publication year",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "isbn": {
+      "type": "string",
+      "description": "ISBN-10 or ISBN-13 identifier",
+      "pattern": "^(97[89]-)?[0-9]{1,5}-[0-9]+-[0-9]+-[0-9X]$"
+    },
+    "tier": {
+      "type": "string",
+      "description": "Taxonomy tier classification (e.g., architecture, implementation)",
+      "minLength": 1
+    },
+    "priority": {
+      "type": "integer",
+      "description": "Priority within the tier (1 = highest)",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "domains": {
+      "type": "array",
+      "description": "List of domain classifications",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "concepts": {
+      "type": "array",
+      "description": "List of key concepts covered in the book",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "description": "List of chapter metadata",
+      "items": {
+        "$ref": "#/definitions/chapter_metadata"
+      }
+    }
+  },
+  "definitions": {
+    "chapter_metadata": {
+      "type": "object",
+      "description": "Metadata for a chapter",
+      "required": ["number", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "type": "integer",
+          "description": "The chapter number",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the chapter",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "description": "Brief summary of the chapter content"
+        }
+      }
+    }
+  }
+}

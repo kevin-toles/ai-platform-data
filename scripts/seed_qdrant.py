@@ -24,7 +24,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 EMBEDDING_DIM = 384
 
 
-def get_qdrant_client() -> "QdrantClient":
+def get_qdrant_client() -> QdrantClient:
     """Create Qdrant client from environment configuration."""
     from qdrant_client import QdrantClient
 
@@ -43,7 +43,7 @@ def get_embedding_model():
     return SentenceTransformer(EMBEDDING_MODEL)
 
 
-def ensure_collection(client: "QdrantClient", collection_name: str) -> None:
+def ensure_collection(client: QdrantClient, collection_name: str) -> None:
     """Create collection if it doesn't exist."""
     from qdrant_client.models import Distance, VectorParams
 
@@ -59,7 +59,7 @@ def ensure_collection(client: "QdrantClient", collection_name: str) -> None:
 
 
 def seed_chapters(
-    client: "QdrantClient",
+    client: QdrantClient,
     books_path: Path,
     collection_name: str = "chapters",
 ) -> int:

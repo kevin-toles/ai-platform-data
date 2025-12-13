@@ -18,7 +18,7 @@ console = Console()
 logger = logging.getLogger(__name__)
 
 
-def get_neo4j_driver() -> "Driver":
+def get_neo4j_driver() -> Driver:
     """Create Neo4j driver from environment configuration."""
     import os
 
@@ -33,7 +33,7 @@ def get_neo4j_driver() -> "Driver":
     return GraphDatabase.driver(uri, auth=(auth[0], auth[1]))
 
 
-def seed_books(driver: "Driver", books_path: Path) -> int:
+def seed_books(driver: Driver, books_path: Path) -> int:
     """Seed Book nodes from metadata files."""
     count = 0
     metadata_path = books_path / "metadata"
@@ -64,7 +64,7 @@ def seed_books(driver: "Driver", books_path: Path) -> int:
     return count
 
 
-def seed_chapters(driver: "Driver", books_path: Path) -> int:
+def seed_chapters(driver: Driver, books_path: Path) -> int:
     """Seed Chapter nodes and connect to Books."""
     count = 0
     metadata_path = books_path / "metadata"
@@ -100,7 +100,7 @@ def seed_chapters(driver: "Driver", books_path: Path) -> int:
     return count
 
 
-def seed_tier_relationships(driver: "Driver", taxonomies_path: Path) -> int:
+def seed_tier_relationships(driver: Driver, taxonomies_path: Path) -> int:
     """Seed tier relationships (PARALLEL, PERPENDICULAR, SKIP_TIER)."""
     count = 0
     taxonomy_file = taxonomies_path / "AI-ML_taxonomy.json"

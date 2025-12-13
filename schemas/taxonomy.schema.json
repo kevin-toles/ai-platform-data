@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-platform-data/schemas/taxonomy.schema.json",
+  "title": "Taxonomy Schema",
+  "description": "JSON Schema for domain taxonomy structure. Defines tiers, their relationships, and associated books for the AI platform knowledge organization.",
+  "type": "object",
+  "required": ["name", "version", "tiers"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the taxonomy",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the taxonomy",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the taxonomy purpose and scope"
+    },
+    "tiers": {
+      "type": "array",
+      "description": "List of taxonomy tiers",
+      "items": {
+        "$ref": "#/definitions/tier"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "description": "List of relationships between tiers",
+      "items": {
+        "$ref": "#/definitions/relationship"
+      }
+    }
+  },
+  "definitions": {
+    "tier": {
+      "type": "object",
+      "description": "A tier in the taxonomy hierarchy",
+      "required": ["name", "priority"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the tier (e.g., architecture, implementation)",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "integer",
+          "description": "Priority of the tier (1 = highest)",
+          "minimum": 1
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the tier's purpose"
+        },
+        "concepts": {
+          "type": "array",
+          "description": "List of concepts covered in this tier",
+          "items": {
+            "type": "string"
+          }
+        },
+        "books": {
+          "type": "array",
+          "description": "List of books belonging to this tier",
+          "items": {
+            "$ref": "#/definitions/book_reference"
+          }
+        }
+      }
+    },
+    "book_reference": {
+      "type": "object",
+      "description": "Reference to a book in the tier",
+      "required": ["id", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the book",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the book",
+          "minLength": 1
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "description": "Relationship between two tiers",
+      "required": ["type", "source", "target"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of relationship (PARALLEL, PERPENDICULAR, SKIP_TIER)",
+          "enum": ["PARALLEL", "PERPENDICULAR", "SKIP_TIER"]
+        },
+        "source": {
+          "type": "string",
+          "description": "Source tier name",
+          "minLength": 1
+        },
+        "target": {
+          "type": "string",
+          "description": "Target tier name",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

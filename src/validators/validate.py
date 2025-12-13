@@ -90,7 +90,7 @@ def main(file_path: Path, schema: Path) -> None:
     else:
         errors = validate_file(file_path, schema_data)
         if errors:
-            console.print(f"[red]✗ Validation failed[/red]")
+            console.print("[red]✗ Validation failed[/red]")
             for error in errors:
                 console.print(f"    {error}")
         else:
