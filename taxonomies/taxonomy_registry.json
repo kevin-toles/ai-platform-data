@@ -1,0 +1,33 @@
+{
+  "registry_version": "1.0.0",
+  "default_taxonomy": "ai-ml-2024",
+  "description": "Registry of available taxonomies for user-directed selection. Users specify which taxonomy to use at runtime via prompt, config, or API parameter.",
+  "taxonomies": [
+    {
+      "id": "ai-ml-2024",
+      "name": "AI-ML Taxonomy",
+      "version": "1.0.0",
+      "path": "AI-ML_taxonomy_20251128.json",
+      "description": "Primary taxonomy for AI and ML domain. Includes tier relationships (T0-T5), PARALLEL/PERPENDICULAR/SKIP_TIER navigation patterns, and 24+ books.",
+      "tier_count": 6,
+      "book_count": 24,
+      "domains": ["ai-ml", "software-engineering", "machine-learning"],
+      "created_at": "2024-11-28",
+      "updated_at": "2024-12-13",
+      "active": true
+    },
+    {
+      "id": "domain-v1",
+      "name": "Domain Taxonomy",
+      "version": "1.0.0",
+      "path": "domain_taxonomy.json",
+      "description": "General domain classifications for cross-cutting concerns. Covers broader software engineering and architecture patterns.",
+      "tier_count": 3,
+      "book_count": 47,
+      "domains": ["general", "architecture", "patterns"],
+      "created_at": "2024-12-01",
+      "updated_at": "2024-12-13",
+      "active": true
+    }
+  ]
+}

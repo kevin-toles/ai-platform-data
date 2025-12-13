@@ -5,6 +5,7 @@ This module tests all JSON schemas in the schemas/ directory:
 - book_metadata.schema.json: Book metadata with enriched fields
 - book_enriched.schema.json: Fully enriched book with embeddings
 - taxonomy.schema.json: Domain taxonomy structure
+- taxonomy_registry.schema.json: Registry for user-directed taxonomy selection
 
 TDD RED Phase: These tests are written BEFORE the schemas exist.
 """
@@ -526,3 +527,189 @@ class TestTaxonomySchema:
         with pytest.raises(ValidationError) as exc_info:
             validate_data(schema, invalid_data)
         assert "type" in str(exc_info.value)
+
+
+# ============================================================================
+# Taxonomy Registry Schema Tests - User-Directed Taxonomy Selection
+# ============================================================================
+
+
+class TestTaxonomyRegistrySchema:
+    """Tests for taxonomy_registry.schema.json - discovery mechanism for taxonomies.
+
+    The registry allows users to:
+    1. Discover available taxonomies
+    2. Select which taxonomy to use at runtime
+    3. Override the default taxonomy via prompt/config/API
+    """
+
+    def test_schema_exists(self, schemas_dir: Path) -> None:
+        """Schema file must exist."""
+        schema_path = schemas_dir / "taxonomy_registry.schema.json"
+        assert schema_path.exists(), f"taxonomy_registry.schema.json not found at {schema_path}"
+
+    def test_schema_is_valid_json_schema(self, load_schema: Any) -> None:
+        """Schema must be a valid JSON Schema draft-07."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        Draft7Validator.check_schema(schema)
+
+    def test_valid_registry_minimal(self, load_schema: Any) -> None:
+        """Minimal valid registry should pass validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        valid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "taxonomies": [
+                {
+                    "id": "ai-ml-2024",
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy.json"
+                }
+            ]
+        }
+        assert validate_data(schema, valid_data)
+
+    def test_valid_registry_full(self, load_schema: Any) -> None:
+        """Full registry with all fields should pass validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        valid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "description": "Registry of available taxonomies for user selection",
+            "taxonomies": [
+                {
+                    "id": "ai-ml-2024",
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy_20251128.json",
+                    "description": "Taxonomy for AI and ML domain with tier relationships",
+                    "tier_count": 6,
+                    "book_count": 24,
+                    "domains": ["ai-ml", "software-engineering"],
+                    "created_at": "2024-11-28",
+                    "updated_at": "2024-12-01",
+                    "active": True
+                },
+                {
+                    "id": "domain-v1",
+                    "name": "Domain Taxonomy",
+                    "version": "1.0.0",
+                    "path": "domain_taxonomy.json",
+                    "description": "General domain classifications",
+                    "tier_count": 3,
+                    "book_count": 47,
+                    "domains": ["general"],
+                    "active": True
+                }
+            ]
+        }
+        assert validate_data(schema, valid_data)
+
+    def test_invalid_missing_default_taxonomy(self, load_schema: Any) -> None:
+        """Registry without default_taxonomy should fail validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        invalid_data = {
+            "registry_version": "1.0.0",
+            "taxonomies": [
+                {
+                    "id": "ai-ml-2024",
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy.json"
+                }
+            ]
+        }
+        with pytest.raises(ValidationError) as exc_info:
+            validate_data(schema, invalid_data)
+        assert "default_taxonomy" in str(exc_info.value)
+
+    def test_invalid_empty_taxonomies(self, load_schema: Any) -> None:
+        """Registry with empty taxonomies array should fail validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        invalid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "taxonomies": []
+        }
+        with pytest.raises(ValidationError):
+            validate_data(schema, invalid_data)
+
+    def test_invalid_taxonomy_missing_id(self, load_schema: Any) -> None:
+        """Taxonomy entry without id should fail validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        invalid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "taxonomies": [
+                {
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy.json"
+                }
+            ]
+        }
+        with pytest.raises(ValidationError) as exc_info:
+            validate_data(schema, invalid_data)
+        assert "id" in str(exc_info.value)
+
+    def test_invalid_taxonomy_missing_path(self, load_schema: Any) -> None:
+        """Taxonomy entry without path should fail validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        invalid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "taxonomies": [
+                {
+                    "id": "ai-ml-2024",
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0"
+                }
+            ]
+        }
+        with pytest.raises(ValidationError) as exc_info:
+            validate_data(schema, invalid_data)
+        assert "path" in str(exc_info.value)
+
+    def test_invalid_taxonomy_id_format(self, load_schema: Any) -> None:
+        """Taxonomy id with invalid characters should fail validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        invalid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "AI_ML_2024",  # Underscores not allowed
+            "taxonomies": [
+                {
+                    "id": "AI_ML_2024",  # Should be lowercase with hyphens
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy.json"
+                }
+            ]
+        }
+        with pytest.raises(ValidationError):
+            validate_data(schema, invalid_data)
+
+    def test_valid_inactive_taxonomy(self, load_schema: Any) -> None:
+        """Taxonomy marked as inactive should pass validation."""
+        schema = load_schema("taxonomy_registry.schema.json")
+        valid_data = {
+            "registry_version": "1.0.0",
+            "default_taxonomy": "ai-ml-2024",
+            "taxonomies": [
+                {
+                    "id": "ai-ml-2024",
+                    "name": "AI-ML Taxonomy",
+                    "version": "1.0.0",
+                    "path": "AI-ML_taxonomy.json",
+                    "active": True
+                },
+                {
+                    "id": "legacy-v0",
+                    "name": "Legacy Taxonomy",
+                    "version": "0.9.0",
+                    "path": "legacy_taxonomy.json",
+                    "active": False
+                }
+            ]
+        }
+        assert validate_data(schema, valid_data)
