@@ -1,16 +1,22 @@
 # Docker Compose for AI Platform Data Infrastructure
 # Canonical definitions for Neo4j, Qdrant, and Redis
+#
+# Option D: Network-Only Architecture (Production-Ready)
+# - No host port binding for databases (internal only via Docker DNS)
+# - Services connect via: bolt://neo4j:7687, http://qdrant:6333, redis://redis:6379
+# - Debug container available via: docker compose --profile debug up -d debug
 
 services:
   neo4j:
     image: neo4j:5.15-community
     container_name: ai-platform-neo4j
-    ports:
-      - "7474:7474"  # HTTP
-      - "7687:7687"  # Bolt
+    # NO ports: section - internal only (K8s-native pattern)
+    expose:
+      - "7474"  # HTTP (internal)
+      - "7687"  # Bolt (internal)
     volumes:
       - ./neo4j/init-scripts:/docker-entrypoint-initdb.d:ro
-      - ./neo4j/plugins:/plugins:ro
+      - ./neo4j/plugins:/plugins  # Not :ro - Neo4j needs to write here for APOC
       - neo4j_data:/data
       - neo4j_logs:/logs
     environment:
@@ -31,9 +37,9 @@ services:
   qdrant:
     image: qdrant/qdrant:v1.7.4
     container_name: ai-platform-qdrant
-    ports:
-      - "6333:6333"  # HTTP
-      - "6334:6334"  # gRPC
+    expose:
+      - "6333"  # HTTP (internal)
+      - "6334"  # gRPC (internal)
     volumes:
       - qdrant_data:/qdrant/storage
       - ./qdrant/config:/qdrant/config:ro
@@ -51,8 +57,8 @@ services:
   redis:
     image: redis:7-alpine
     container_name: ai-platform-redis
-    ports:
-      - "6379:6379"
+    expose:
+      - "6379"  # Redis (internal)
     volumes:
       - redis_data:/data
     command: redis-server --appendonly yes
@@ -61,6 +67,17 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - ai-platform-network
+
+  # Debug container for health checks (only starts when explicitly requested)
+  # Usage: docker compose --profile debug up -d debug
+  # Then:  docker exec platform-debug curl http://neo4j:7474
+  debug:
+    image: alpine/curl:latest
+    container_name: platform-debug
+    profiles: ["debug"]
+    command: sleep infinity
     networks:
       - ai-platform-network
 
