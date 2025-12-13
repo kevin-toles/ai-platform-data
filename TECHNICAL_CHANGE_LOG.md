@@ -136,6 +136,59 @@
 
 **TDD Results**: 37 new tests, 101 total passing
 
+**Commit**: `956c97e`
+
+---
+
+### 2025-12-13: Phase 2.2 Neo4j Schema (CL-006)
+
+**Phase**: 2.2 Neo4j Schema
+
+**Actions**:
+- Created graph models module (`src/graph/__init__.py`) with EdgeType enum
+- Created 17 integration tests for Neo4j schema validation
+- Created 19 unit tests for graph models
+- Documented PARALLEL/PERPENDICULAR/SKIP_TIER relationship types
+
+**TIER_RELATIONSHIP_DIAGRAM.md Compliance**:
+
+| Relationship | Definition | Validated |
+|--------------|------------|-----------|
+| PARALLEL | Same tier level (diff=0) | ✅ |
+| PERPENDICULAR | Adjacent tiers (±1) | ✅ |
+| SKIP_TIER | Non-adjacent tiers (±2+) | ✅ |
+
+**Spider Web Model Support**:
+- All relationships bidirectional (◄────►)
+- Non-linear traversal: T1 → T2 → T3 → T1 supported
+- PathResult dataclass for multi-hop queries
+
+**Files Created**:
+
+| File | Purpose |
+|------|---------|
+| `src/graph/__init__.py` | EdgeType enum, TraversalResult, PathResult dataclasses |
+| `docker/neo4j/init-scripts/03_relationship_types.cypher` | Relationship type documentation |
+| `tests/integration/test_neo4j_schema.py` | 17 integration tests (requires Neo4j) |
+| `tests/unit/test_graph_models.py` | 19 unit tests for graph models |
+
+**Graph Models**:
+
+| Class | Purpose |
+|-------|---------|
+| EdgeType | Enum: PARALLEL, PERPENDICULAR, SKIP_TIER |
+| NavigationDirection | Enum: UPWARD, DOWNWARD, LATERAL |
+| TraversalResult | Single chapter traversal with edge type + score |
+| PathResult | Multi-hop path through spider web graph |
+
+**Anti-Pattern Audit** (per Comp_Static_Analysis, CODING_PATTERNS_ANALYSIS.md):
+- ✅ EdgeType inherits from `str` for JSON serialization
+- ✅ `to_dict()` methods return JSON-serializable dicts
+- ✅ `get_edge_type_for_tier_diff()` utility for tier-based edge selection
+- ✅ Dataclasses with frozen=False for Neo4j result mapping
+
+**TDD Results**: 19 new tests, 120 total passing
+
 ---
 
 ## Schema Reference
