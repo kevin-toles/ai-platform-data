@@ -68,6 +68,39 @@
 
 ---
 
+### 2025-12-13: Phase 1.4 Data Migration Complete (CL-004)
+
+**Phase**: 1.4 Data Migration
+
+**Actions**:
+- Created scalable migration script with `MigrationConfig` dataclass
+- Migrated 47 books from `llm-document-enhancer` to `books/raw/`
+- Updated `book_raw.schema.json` for flexible format support
+
+**Scalability Patterns Applied** (per CODING_PATTERNS_ANALYSIS.md):
+- `MigrationConfig` dataclass for batch_size, source_dir, target_dir
+- Generator pattern: `migrate_books_batch()` yields `MigrationResult`
+- Streaming validation for memory efficiency with 10K+ files
+- Dynamic counts (no hardcoded "47")
+
+**Schema Updates**:
+- Added `anyOf` for `chapter_number` vs `number` field variants
+- Added `additionalProperties: true` for flexibility
+- Supports `PyMuPDF_fallback` extraction method
+
+**Files Created**:
+
+| File | Purpose |
+|------|---------|
+| `scripts/migrate_raw_books.py` | Scalable batch migration |
+| `tests/unit/test_migration.py` | 22 migration tests |
+
+**TDD Results**: 22 new tests, 64 total passing
+
+**Commit**: `17ba2ec`
+
+---
+
 ### 2025-12-13: Phase 2.1 Docker Configuration (CL-005)
 
 **Phase**: 2.1 Docker Configuration
