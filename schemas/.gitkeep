@@ -1,0 +1,16 @@
+# JSON Schemas
+
+This directory contains JSON schemas for validating data files.
+
+## Schemas
+
+- `book_raw.schema.json` - Raw book JSON format
+- `book_metadata.schema.json` - Extracted metadata format
+- `book_enriched.schema.json` - LLM-enhanced content format
+- `taxonomy.schema.json` - Taxonomy structure format
+
+## Validation
+
+```bash
+python -m src.validators.validate <file> --schema <schema>
+```

@@ -1,0 +1,19 @@
+# Books - Enriched
+
+This directory contains LLM-enhanced book content.
+
+## Schema
+
+Files follow `book_enriched.schema.json`:
+- All metadata fields plus:
+- `keywords`: Extracted keywords per chapter
+- `concepts`: Key concepts with definitions
+- `summaries`: Chapter summaries
+- `embeddings_ref`: Reference to Qdrant vectors
+
+## Generation
+
+Enrichment is performed using:
+```bash
+python scripts/enrich_books.py
+```

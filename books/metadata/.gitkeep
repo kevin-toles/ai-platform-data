@@ -1,0 +1,19 @@
+# Books - Metadata
+
+This directory contains extracted metadata from raw books.
+
+## Schema
+
+Files follow `book_metadata.schema.json`:
+- `title`: Book title
+- `author`: Author name(s)
+- `chapters`: List of chapter metadata
+- `tier`: T1/T2/T3 classification
+- `book_id`: Unique identifier
+
+## Generation
+
+Metadata is extracted using:
+```bash
+python scripts/extract_metadata.py
+```

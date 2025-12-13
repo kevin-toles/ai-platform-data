@@ -1,0 +1,97 @@
+[tool.poetry]
+name = "ai-platform-data"
+version = "0.1.0"
+description = "Centralized data repository for the AI Coding Platform (Pantry)"
+authors = ["Kevin Toles"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "~=3.11"
+jsonschema = "~=4.21"
+pydantic = "~=2.5"
+pydantic-settings = "~=2.1"
+neo4j = "~=5.15"
+qdrant-client = "~=1.7"
+redis = "~=5.0"
+sentence-transformers = "~=2.2"
+python-dotenv = "~=1.0"
+click = "~=8.1"
+rich = "~=13.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "~=7.4"
+pytest-cov = "~=4.1"
+pytest-asyncio = "~=0.23"
+ruff = "~=0.1"
+mypy = "~=1.8"
+pre-commit = "~=3.6"
+
+[tool.poetry.scripts]
+seed-neo4j = "scripts.seed_neo4j:main"
+seed-qdrant = "scripts.seed_qdrant:main"
+seed-all = "scripts.seed_all:main"
+validate-seed = "scripts.validate_seed:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ARG", # flake8-unused-arguments
+    "SIM", # flake8-simplify
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.per-file-ignores]
+"tests/**/*" = ["ARG"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = [
+    "neo4j.*",
+    "qdrant_client.*",
+    "sentence_transformers.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --cov=src --cov-report=term-missing --cov-report=xml"
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+omit = ["tests/*", "scripts/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]

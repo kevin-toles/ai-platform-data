@@ -1,0 +1,15 @@
+# Books - Raw JSON Texts
+
+This directory contains the 47 raw JSON textbooks from the source `textbooks/` directory.
+
+## Expected Files
+
+- JSON files following the `book_raw.schema.json` schema
+- Original content without modifications
+
+## Migration
+
+Files are migrated using:
+```bash
+python scripts/migrate_raw_books.py
+```

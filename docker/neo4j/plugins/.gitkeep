@@ -1,0 +1,7 @@
+# Neo4j Plugins
+
+Place Neo4j plugins here:
+- APOC (Awesome Procedures on Cypher)
+- GDS (Graph Data Science) if needed
+
+Download from: https://neo4j.com/labs/

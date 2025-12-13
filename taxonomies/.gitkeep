@@ -1,0 +1,22 @@
+# Taxonomies
+
+This directory contains taxonomy definitions for the AI Coding Platform.
+
+## Files
+
+- `AI-ML_taxonomy.json` - Tier structure (T1/T2/T3), 24+ books
+- `domain_taxonomy.json` - Domain classifications
+
+## Tier Structure
+
+| Tier | Description | Example Books |
+|------|-------------|---------------|
+| T1 | Architecture Spine | System Design, Clean Architecture |
+| T2 | Implementation | Refactoring, Design Patterns |
+| T3 | Practices | Testing, DevOps |
+
+## Relationships
+
+- **PARALLEL**: Same-tier connections
+- **PERPENDICULAR**: Cross-tier connections
+- **SKIP_TIER**: Multi-hop connections
