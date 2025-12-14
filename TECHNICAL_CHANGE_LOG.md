@@ -6,6 +6,60 @@
 
 ## Changelog
 
+### 2025-12-13: Data Pipeline Workflow Clarification (CL-009)
+
+**Phase**: 3.5 Data Pipeline Completion
+
+**Issue**: WBS Phase 3.5 originally implied that `ai-platform-data` would run chapter segmentation directly. This conflicted with the established separation of concerns.
+
+**Decision**: **Process in Enhancer → Transfer → Validate Pattern**
+
+**Workflow Established**:
+```
+┌─────────────────────────┐     Manual      ┌─────────────────────────┐
+│  llm-document-enhancer  │ ──────────────► │    ai-platform-data     │
+│                         │    Transfer     │                         │
+│  • PDF → JSON           │                 │  • Validate data        │
+│  • Chapter segmentation │                 │  • Store in books/raw/  │
+│  • Metadata enrichment  │                 │  • Seed to databases    │
+│  • Similar chapters     │                 │  • Serve to platform    │
+└─────────────────────────┘                 └─────────────────────────┘
+```
+
+**ai-platform-data Responsibilities:**
+- ✅ Validate incoming JSON files against schemas
+- ✅ Store validated files in `books/raw/` and `books/enriched/`
+- ✅ Seed Neo4j and Qdrant databases
+- ✅ Serve data to platform services
+- ❌ NOT responsible for: PDF processing, segmentation, enrichment
+
+**Current Status:**
+- 35 of 47 books have chapters populated
+- 12 books need re-processing in `llm-document-enhancer`
+- `books/enriched/` is empty (enrichment not yet run)
+
+**Books Needing Re-Processing** (to be done in llm-document-enhancer):
+1. Architecture Patterns with Python.json
+2. Building Microservices.json
+3. Building Python Microservices with FastAPI.json
+4. Fluent Python 2nd.json
+5. Microservice APIs Using Python Flask FastAPI.json
+6. Microservice Architecture.json
+7. Microservices Up and Running.json
+8. Python Architecture Patterns.json
+9. Python Data Analysis 3rd.json
+10. Python Distilled.json
+11. Python Essential Reference 4th.json
+12. Python Microservices Development.json
+
+**Validation Tests Created**:
+- `tests/unit/test_chapter_segmentation.py` - Validates all books have chapters
+- More validation tests to be added per WBS 3.5.2
+
+**WBS Reference**: AI_CODING_PLATFORM_WBS.md v1.5.0
+
+---
+
 ### 2025-12-13: Enrichment Scalability - Full Corpus Pattern (CL-008)
 
 **Phase**: 3.7 Incremental/Delta Enrichment Pipeline
