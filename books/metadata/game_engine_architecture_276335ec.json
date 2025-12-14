@@ -1,0 +1,305 @@
+{
+  "book_id": "game_engine_architecture_276335ec",
+  "title": "Game Engine Architecture",
+  "author": "Jason Gregory",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch001_12516d",
+      "number": 1,
+      "title": "Segment 1 (pages 1-18)",
+      "start_page": 1,
+      "end_page": 18
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch002_27324d",
+      "number": 2,
+      "title": "Segment 2 (pages 19-41)",
+      "start_page": 19,
+      "end_page": 41
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch003_23fed4",
+      "number": 3,
+      "title": "Segment 3 (pages 42-63)",
+      "start_page": 42,
+      "end_page": 63
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch004_1d604d",
+      "number": 4,
+      "title": "Segment 4 (pages 64-82)",
+      "start_page": 64,
+      "end_page": 82
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch005_788dc2",
+      "number": 5,
+      "title": "Segment 5 (pages 83-102)",
+      "start_page": 83,
+      "end_page": 102
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch006_e3f0a4",
+      "number": 6,
+      "title": "Segment 6 (pages 103-120)",
+      "start_page": 103,
+      "end_page": 120
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch007_c84012",
+      "number": 7,
+      "title": "Segment 7 (pages 121-141)",
+      "start_page": 121,
+      "end_page": 141
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch008_8b94b6",
+      "number": 8,
+      "title": "Segment 8 (pages 142-159)",
+      "start_page": 142,
+      "end_page": 159
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch009_da2fd5",
+      "number": 9,
+      "title": "Segment 9 (pages 160-181)",
+      "start_page": 160,
+      "end_page": 181
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch010_ea2632",
+      "number": 10,
+      "title": "Segment 10 (pages 182-202)",
+      "start_page": 182,
+      "end_page": 202
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch011_da1d12",
+      "number": 11,
+      "title": "Segment 11 (pages 203-224)",
+      "start_page": 203,
+      "end_page": 224
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch012_05d851",
+      "number": 12,
+      "title": "Segment 12 (pages 225-246)",
+      "start_page": 225,
+      "end_page": 246
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch013_935d89",
+      "number": 13,
+      "title": "Segment 13 (pages 247-268)",
+      "start_page": 247,
+      "end_page": 268
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch014_331787",
+      "number": 14,
+      "title": "Segment 14 (pages 269-288)",
+      "start_page": 269,
+      "end_page": 288
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch015_6c58a5",
+      "number": 15,
+      "title": "Segment 15 (pages 289-307)",
+      "start_page": 289,
+      "end_page": 307
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch016_150ac4",
+      "number": 16,
+      "title": "Segment 16 (pages 308-325)",
+      "start_page": 308,
+      "end_page": 325
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch017_cc233e",
+      "number": 17,
+      "title": "Segment 17 (pages 326-347)",
+      "start_page": 326,
+      "end_page": 347
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch018_ea212d",
+      "number": 18,
+      "title": "Segment 18 (pages 348-366)",
+      "start_page": 348,
+      "end_page": 366
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch019_b5d023",
+      "number": 19,
+      "title": "Segment 19 (pages 367-384)",
+      "start_page": 367,
+      "end_page": 384
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch020_69a072",
+      "number": 20,
+      "title": "Segment 20 (pages 385-402)",
+      "start_page": 385,
+      "end_page": 402
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch021_e9ae41",
+      "number": 21,
+      "title": "Segment 21 (pages 403-420)",
+      "start_page": 403,
+      "end_page": 420
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch022_fe8015",
+      "number": 22,
+      "title": "Segment 22 (pages 421-440)",
+      "start_page": 421,
+      "end_page": 440
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch023_66abf9",
+      "number": 23,
+      "title": "Segment 23 (pages 441-462)",
+      "start_page": 441,
+      "end_page": 462
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch024_fa6885",
+      "number": 24,
+      "title": "Segment 24 (pages 463-481)",
+      "start_page": 463,
+      "end_page": 481
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch025_49e4da",
+      "number": 25,
+      "title": "Segment 25 (pages 482-502)",
+      "start_page": 482,
+      "end_page": 502
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch026_0f1e09",
+      "number": 26,
+      "title": "Segment 26 (pages 503-525)",
+      "start_page": 503,
+      "end_page": 525
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch027_fadf3b",
+      "number": 27,
+      "title": "Segment 27 (pages 526-548)",
+      "start_page": 526,
+      "end_page": 548
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch028_8139ca",
+      "number": 28,
+      "title": "Segment 28 (pages 549-568)",
+      "start_page": 549,
+      "end_page": 568
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch029_b8dd8a",
+      "number": 29,
+      "title": "Segment 29 (pages 569-589)",
+      "start_page": 569,
+      "end_page": 589
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch030_643941",
+      "number": 30,
+      "title": "Segment 30 (pages 590-610)",
+      "start_page": 590,
+      "end_page": 610
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch031_fad341",
+      "number": 31,
+      "title": "Segment 31 (pages 611-631)",
+      "start_page": 611,
+      "end_page": 631
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch032_25c6b4",
+      "number": 32,
+      "title": "Segment 32 (pages 632-651)",
+      "start_page": 632,
+      "end_page": 651
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch033_23be77",
+      "number": 33,
+      "title": "Segment 33 (pages 652-672)",
+      "start_page": 652,
+      "end_page": 672
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch034_f185a2",
+      "number": 34,
+      "title": "Segment 34 (pages 673-695)",
+      "start_page": 673,
+      "end_page": 695
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch035_1a69da",
+      "number": 35,
+      "title": "Segment 35 (pages 696-718)",
+      "start_page": 696,
+      "end_page": 718
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch036_4d7628",
+      "number": 36,
+      "title": "Segment 36 (pages 719-740)",
+      "start_page": 719,
+      "end_page": 740
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch037_de520d",
+      "number": 37,
+      "title": "Segment 37 (pages 741-763)",
+      "start_page": 741,
+      "end_page": 763
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch038_0589dd",
+      "number": 38,
+      "title": "Segment 38 (pages 764-785)",
+      "start_page": 764,
+      "end_page": 785
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch039_6b4849",
+      "number": 39,
+      "title": "Segment 39 (pages 786-808)",
+      "start_page": 786,
+      "end_page": 808
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch040_e2c961",
+      "number": 40,
+      "title": "Segment 40 (pages 809-829)",
+      "start_page": 809,
+      "end_page": 829
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch041_b67996",
+      "number": 41,
+      "title": "Segment 41 (pages 830-848)",
+      "start_page": 830,
+      "end_page": 848
+    },
+    {
+      "chapter_id": "game_engine_architecture_276335ec_ch042_1f1804",
+      "number": 42,
+      "title": "Segment 42 (pages 849-853)",
+      "start_page": 849,
+      "end_page": 853
+    }
+  ],
+  "source_file": "Game_Engine_Architecture.json",
+  "extraction_date": "2025-12-14T04:13:06.157751+00:00"
+}

@@ -340,12 +340,12 @@ class TestTierIndexes:
     def test_book_tier_index_exists(self, neo4j_session: Any) -> None:
         """2.2.9: Book tier index must exist for fast lookups."""
         result = neo4j_session.run("SHOW INDEXES")
-        indexes = list(result)
+        indexes = [record.data() for record in result]
         
         tier_indexes = [
             idx for idx in indexes 
-            if "Book" in idx.get("labelsOrTypes", [])
-            and "tier" in idx.get("properties", [])
+            if "Book" in (idx.get("labelsOrTypes") or [])
+            and "tier" in (idx.get("properties") or [])
         ]
         
         assert len(tier_indexes) > 0, (
@@ -356,12 +356,12 @@ class TestTierIndexes:
     def test_book_priority_index_exists(self, neo4j_session: Any) -> None:
         """Book priority index must exist for tier-priority queries."""
         result = neo4j_session.run("SHOW INDEXES")
-        indexes = list(result)
+        indexes = [record.data() for record in result]
         
         priority_indexes = [
             idx for idx in indexes 
-            if "Book" in idx.get("labelsOrTypes", [])
-            and "priority" in idx.get("properties", [])
+            if "Book" in (idx.get("labelsOrTypes") or [])
+            and "priority" in (idx.get("properties") or [])
         ]
         
         assert len(priority_indexes) > 0, "Missing Book priority index"

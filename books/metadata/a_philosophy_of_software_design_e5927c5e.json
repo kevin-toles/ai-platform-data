@@ -1,0 +1,186 @@
+{
+  "book_id": "a_philosophy_of_software_design_e5927c5e",
+  "title": "A Philosophy of Software Design",
+  "author": "John Ousterhout",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch001_386479",
+      "number": 1,
+      "title": "Segment 1 (pages 2-9)",
+      "start_page": 2,
+      "end_page": 9
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch002_397549",
+      "number": 2,
+      "title": "Segment 2 (pages 10-17)",
+      "start_page": 10,
+      "end_page": 17
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch003_b29710",
+      "number": 3,
+      "title": "Segment 3 (pages 18-26)",
+      "start_page": 18,
+      "end_page": 26
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch004_1cdb5e",
+      "number": 4,
+      "title": "Segment 4 (pages 27-35)",
+      "start_page": 27,
+      "end_page": 35
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch005_66f6bc",
+      "number": 5,
+      "title": "Segment 5 (pages 36-43)",
+      "start_page": 36,
+      "end_page": 43
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch006_4986c7",
+      "number": 6,
+      "title": "Segment 6 (pages 44-51)",
+      "start_page": 44,
+      "end_page": 51
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch007_e46212",
+      "number": 7,
+      "title": "Segment 7 (pages 52-59)",
+      "start_page": 52,
+      "end_page": 59
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch008_1d2728",
+      "number": 8,
+      "title": "Segment 8 (pages 60-67)",
+      "start_page": 60,
+      "end_page": 67
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch009_b5c24e",
+      "number": 9,
+      "title": "Segment 9 (pages 68-76)",
+      "start_page": 68,
+      "end_page": 76
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch010_c3f9f5",
+      "number": 10,
+      "title": "Segment 10 (pages 77-87)",
+      "start_page": 77,
+      "end_page": 87
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch011_e09fea",
+      "number": 11,
+      "title": "Segment 11 (pages 88-95)",
+      "start_page": 88,
+      "end_page": 95
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch012_ffc5cf",
+      "number": 12,
+      "title": "Segment 12 (pages 96-104)",
+      "start_page": 96,
+      "end_page": 104
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch013_23b3da",
+      "number": 13,
+      "title": "Segment 13 (pages 105-116)",
+      "start_page": 105,
+      "end_page": 116
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch014_9f8e9d",
+      "number": 14,
+      "title": "Segment 14 (pages 117-124)",
+      "start_page": 117,
+      "end_page": 124
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch015_5fb075",
+      "number": 15,
+      "title": "Segment 15 (pages 125-135)",
+      "start_page": 125,
+      "end_page": 135
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch016_5d6556",
+      "number": 16,
+      "title": "Segment 16 (pages 136-143)",
+      "start_page": 136,
+      "end_page": 143
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch017_758107",
+      "number": 17,
+      "title": "Segment 17 (pages 144-151)",
+      "start_page": 144,
+      "end_page": 151
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch018_09e487",
+      "number": 18,
+      "title": "Segment 18 (pages 152-159)",
+      "start_page": 152,
+      "end_page": 159
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch019_6bfb67",
+      "number": 19,
+      "title": "Segment 19 (pages 160-167)",
+      "start_page": 160,
+      "end_page": 167
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch020_5ff111",
+      "number": 20,
+      "title": "Segment 20 (pages 168-175)",
+      "start_page": 168,
+      "end_page": 175
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch021_c966c9",
+      "number": 21,
+      "title": "Segment 21 (pages 176-183)",
+      "start_page": 176,
+      "end_page": 183
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch022_cfa1e1",
+      "number": 22,
+      "title": "Segment 22 (pages 184-192)",
+      "start_page": 184,
+      "end_page": 192
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch023_c4dbfe",
+      "number": 23,
+      "title": "Segment 23 (pages 193-200)",
+      "start_page": 193,
+      "end_page": 200
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch024_c89016",
+      "number": 24,
+      "title": "Segment 24 (pages 201-208)",
+      "start_page": 201,
+      "end_page": 208
+    },
+    {
+      "chapter_id": "a_philosophy_of_software_design_e5927c5e_ch025_14927b",
+      "number": 25,
+      "title": "Segment 25 (pages 209-210)",
+      "start_page": 209,
+      "end_page": 210
+    }
+  ],
+  "source_file": "A Philosophy of Software Design.json",
+  "extraction_date": "2025-12-14T04:13:06.062007+00:00"
+}

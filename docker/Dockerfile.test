@@ -1,0 +1,37 @@
+# Test runner Dockerfile for integration tests
+# Runs pytest inside the Docker network (production-aligned)
+#
+# Usage:
+#   docker compose --profile test run --rm test-runner
+#   docker compose --profile test run --rm -e PYTEST_ARGS="-k neo4j" test-runner
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies for sentence-transformers and neo4j
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir poetry==1.7.1
+
+# Copy Poetry files first for caching
+COPY pyproject.toml ./
+COPY poetry.lock* ./
+
+# Configure Poetry: no virtualenv in container, install all deps including dev
+RUN poetry config virtualenvs.create false \
+    && poetry install --no-interaction --no-ansi --no-root || true
+
+# Copy application code
+COPY . .
+
+# Install the project itself (if installable)
+RUN poetry install --no-interaction --no-ansi --only-root 2>/dev/null || true
+
+# Create test results directory
+RUN mkdir -p /app/test-results
+
+# Default command runs integration tests
+CMD ["sh", "-c", "poetry run pytest tests/integration/ -v --tb=short ${PYTEST_ARGS:-}"]

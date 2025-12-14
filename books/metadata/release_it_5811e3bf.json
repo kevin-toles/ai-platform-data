@@ -1,0 +1,319 @@
+{
+  "book_id": "release_it_5811e3bf",
+  "title": "Release It!",
+  "author": "Michael T. Nygard",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "release_it_5811e3bf_ch001_419f32",
+      "number": 1,
+      "title": "Segment 1 (pages 3-10)",
+      "start_page": 3,
+      "end_page": 10
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch002_99998c",
+      "number": 2,
+      "title": "Segment 2 (pages 11-18)",
+      "start_page": 11,
+      "end_page": 18
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch003_d84a09",
+      "number": 3,
+      "title": "Segment 3 (pages 19-26)",
+      "start_page": 19,
+      "end_page": 26
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch004_638132",
+      "number": 4,
+      "title": "Segment 4 (pages 27-34)",
+      "start_page": 27,
+      "end_page": 34
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch005_6268a5",
+      "number": 5,
+      "title": "Segment 5 (pages 35-42)",
+      "start_page": 35,
+      "end_page": 42
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch006_7e4bba",
+      "number": 6,
+      "title": "Segment 6 (pages 43-50)",
+      "start_page": 43,
+      "end_page": 50
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch007_437c26",
+      "number": 7,
+      "title": "Segment 7 (pages 51-58)",
+      "start_page": 51,
+      "end_page": 58
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch008_9af8eb",
+      "number": 8,
+      "title": "Segment 8 (pages 59-66)",
+      "start_page": 59,
+      "end_page": 66
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch009_674e6d",
+      "number": 9,
+      "title": "Segment 9 (pages 67-74)",
+      "start_page": 67,
+      "end_page": 74
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch010_fac04f",
+      "number": 10,
+      "title": "Segment 10 (pages 75-82)",
+      "start_page": 75,
+      "end_page": 82
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch011_4fc4bd",
+      "number": 11,
+      "title": "Segment 11 (pages 83-90)",
+      "start_page": 83,
+      "end_page": 90
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch012_2aef58",
+      "number": 12,
+      "title": "Segment 12 (pages 91-98)",
+      "start_page": 91,
+      "end_page": 98
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch013_683fa5",
+      "number": 13,
+      "title": "Segment 13 (pages 99-106)",
+      "start_page": 99,
+      "end_page": 106
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch014_229b47",
+      "number": 14,
+      "title": "Segment 14 (pages 107-114)",
+      "start_page": 107,
+      "end_page": 114
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch015_244a42",
+      "number": 15,
+      "title": "Segment 15 (pages 115-122)",
+      "start_page": 115,
+      "end_page": 122
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch016_d6b9eb",
+      "number": 16,
+      "title": "Segment 16 (pages 123-130)",
+      "start_page": 123,
+      "end_page": 130
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch017_d19182",
+      "number": 17,
+      "title": "Segment 17 (pages 131-138)",
+      "start_page": 131,
+      "end_page": 138
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch018_0a8bdd",
+      "number": 18,
+      "title": "Segment 18 (pages 139-146)",
+      "start_page": 139,
+      "end_page": 146
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch019_9024c5",
+      "number": 19,
+      "title": "Segment 19 (pages 147-156)",
+      "start_page": 147,
+      "end_page": 156
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch020_fee53d",
+      "number": 20,
+      "title": "Segment 20 (pages 157-165)",
+      "start_page": 157,
+      "end_page": 165
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch021_104a4b",
+      "number": 21,
+      "title": "Segment 21 (pages 166-173)",
+      "start_page": 166,
+      "end_page": 173
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch022_23f508",
+      "number": 22,
+      "title": "Segment 22 (pages 174-181)",
+      "start_page": 174,
+      "end_page": 181
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch023_f987f8",
+      "number": 23,
+      "title": "Segment 23 (pages 182-191)",
+      "start_page": 182,
+      "end_page": 191
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch024_220bf7",
+      "number": 24,
+      "title": "Segment 24 (pages 192-199)",
+      "start_page": 192,
+      "end_page": 199
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch025_f8910e",
+      "number": 25,
+      "title": "Segment 25 (pages 200-207)",
+      "start_page": 200,
+      "end_page": 207
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch026_9c6a0c",
+      "number": 26,
+      "title": "Segment 26 (pages 208-215)",
+      "start_page": 208,
+      "end_page": 215
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch027_09d20b",
+      "number": 27,
+      "title": "Segment 27 (pages 216-223)",
+      "start_page": 216,
+      "end_page": 223
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch028_75b444",
+      "number": 28,
+      "title": "Segment 28 (pages 224-231)",
+      "start_page": 224,
+      "end_page": 231
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch029_9ca1c6",
+      "number": 29,
+      "title": "Segment 29 (pages 232-239)",
+      "start_page": 232,
+      "end_page": 239
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch030_9ca9cd",
+      "number": 30,
+      "title": "Segment 30 (pages 240-247)",
+      "start_page": 240,
+      "end_page": 247
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch031_1c2e0e",
+      "number": 31,
+      "title": "Segment 31 (pages 248-255)",
+      "start_page": 248,
+      "end_page": 255
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch032_88c8ec",
+      "number": 32,
+      "title": "Segment 32 (pages 256-265)",
+      "start_page": 256,
+      "end_page": 265
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch033_6b247a",
+      "number": 33,
+      "title": "Segment 33 (pages 266-273)",
+      "start_page": 266,
+      "end_page": 273
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch034_847122",
+      "number": 34,
+      "title": "Segment 34 (pages 274-281)",
+      "start_page": 274,
+      "end_page": 281
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch035_d53c7b",
+      "number": 35,
+      "title": "Segment 35 (pages 282-289)",
+      "start_page": 282,
+      "end_page": 289
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch036_3e232b",
+      "number": 36,
+      "title": "Segment 36 (pages 290-298)",
+      "start_page": 290,
+      "end_page": 298
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch037_51cea8",
+      "number": 37,
+      "title": "Segment 37 (pages 299-307)",
+      "start_page": 299,
+      "end_page": 307
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch038_cf66ef",
+      "number": 38,
+      "title": "Segment 38 (pages 308-316)",
+      "start_page": 308,
+      "end_page": 316
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch039_22775c",
+      "number": 39,
+      "title": "Segment 39 (pages 317-324)",
+      "start_page": 317,
+      "end_page": 324
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch040_46c690",
+      "number": 40,
+      "title": "Segment 40 (pages 325-333)",
+      "start_page": 325,
+      "end_page": 333
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch041_fcd311",
+      "number": 41,
+      "title": "Segment 41 (pages 334-342)",
+      "start_page": 334,
+      "end_page": 342
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch042_59cdb5",
+      "number": 42,
+      "title": "Segment 42 (pages 343-353)",
+      "start_page": 343,
+      "end_page": 353
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch043_3f6329",
+      "number": 43,
+      "title": "Segment 43 (pages 354-361)",
+      "start_page": 354,
+      "end_page": 361
+    },
+    {
+      "chapter_id": "release_it_5811e3bf_ch044_f7ea7e",
+      "number": 44,
+      "title": "Segment 44 (pages 362-366)",
+      "start_page": 362,
+      "end_page": 366
+    }
+  ],
+  "source_file": "Release It! Design and Deploy Production-Ready Software.json",
+  "extraction_date": "2025-12-14T04:13:06.024531+00:00"
+}

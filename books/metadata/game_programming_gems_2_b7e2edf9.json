@@ -1,0 +1,403 @@
+{
+  "book_id": "game_programming_gems_2_b7e2edf9",
+  "title": "Game Programming Gems 2",
+  "author": "Unknown Author",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch001_aa5684",
+      "number": 1,
+      "title": "Segment 1 (pages 1-8)",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch002_fb8798",
+      "number": 2,
+      "title": "Segment 2 (pages 9-16)",
+      "start_page": 9,
+      "end_page": 16
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch003_ba7b70",
+      "number": 3,
+      "title": "Segment 3 (pages 17-24)",
+      "start_page": 17,
+      "end_page": 24
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch004_ef679c",
+      "number": 4,
+      "title": "Segment 4 (pages 25-33)",
+      "start_page": 25,
+      "end_page": 33
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch005_d3dd16",
+      "number": 5,
+      "title": "Segment 5 (pages 34-41)",
+      "start_page": 34,
+      "end_page": 41
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch006_ac2d0d",
+      "number": 6,
+      "title": "Segment 6 (pages 42-52)",
+      "start_page": 42,
+      "end_page": 52
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch007_f0c864",
+      "number": 7,
+      "title": "Segment 7 (pages 53-62)",
+      "start_page": 53,
+      "end_page": 62
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch008_0418e0",
+      "number": 8,
+      "title": "Segment 8 (pages 63-70)",
+      "start_page": 63,
+      "end_page": 70
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch009_a57765",
+      "number": 9,
+      "title": "Segment 9 (pages 71-80)",
+      "start_page": 71,
+      "end_page": 80
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch010_47a21e",
+      "number": 10,
+      "title": "Segment 10 (pages 81-89)",
+      "start_page": 81,
+      "end_page": 89
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch011_a2d211",
+      "number": 11,
+      "title": "Segment 11 (pages 90-100)",
+      "start_page": 90,
+      "end_page": 100
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch012_e3b237",
+      "number": 12,
+      "title": "Segment 12 (pages 101-108)",
+      "start_page": 101,
+      "end_page": 108
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch013_30171d",
+      "number": 13,
+      "title": "Segment 13 (pages 109-116)",
+      "start_page": 109,
+      "end_page": 116
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch014_a152d4",
+      "number": 14,
+      "title": "Segment 14 (pages 117-128)",
+      "start_page": 117,
+      "end_page": 128
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch015_b08b31",
+      "number": 15,
+      "title": "Segment 15 (pages 129-137)",
+      "start_page": 129,
+      "end_page": 137
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch016_e703d3",
+      "number": 16,
+      "title": "Segment 16 (pages 138-146)",
+      "start_page": 138,
+      "end_page": 146
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch017_6a959d",
+      "number": 17,
+      "title": "Segment 17 (pages 147-155)",
+      "start_page": 147,
+      "end_page": 155
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch018_9ce325",
+      "number": 18,
+      "title": "Segment 18 (pages 156-172)",
+      "start_page": 156,
+      "end_page": 172
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch019_585543",
+      "number": 19,
+      "title": "Segment 19 (pages 173-181)",
+      "start_page": 173,
+      "end_page": 181
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch020_151f9b",
+      "number": 20,
+      "title": "Segment 20 (pages 182-197)",
+      "start_page": 182,
+      "end_page": 197
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch021_45e1fa",
+      "number": 21,
+      "title": "Segment 21 (pages 198-206)",
+      "start_page": 198,
+      "end_page": 206
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch022_2d7f07",
+      "number": 22,
+      "title": "Segment 22 (pages 207-219)",
+      "start_page": 207,
+      "end_page": 219
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch023_3c868c",
+      "number": 23,
+      "title": "Segment 23 (pages 220-230)",
+      "start_page": 220,
+      "end_page": 230
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch024_32e258",
+      "number": 24,
+      "title": "Segment 24 (pages 231-239)",
+      "start_page": 231,
+      "end_page": 239
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch025_188039",
+      "number": 25,
+      "title": "Segment 25 (pages 240-248)",
+      "start_page": 240,
+      "end_page": 248
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch026_068d5a",
+      "number": 26,
+      "title": "Segment 26 (pages 249-257)",
+      "start_page": 249,
+      "end_page": 257
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch027_61ffc4",
+      "number": 27,
+      "title": "Segment 27 (pages 258-267)",
+      "start_page": 258,
+      "end_page": 267
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch028_4d3ebb",
+      "number": 28,
+      "title": "Segment 28 (pages 268-275)",
+      "start_page": 268,
+      "end_page": 275
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch029_9f758a",
+      "number": 29,
+      "title": "Segment 29 (pages 276-286)",
+      "start_page": 276,
+      "end_page": 286
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch030_ec15e3",
+      "number": 30,
+      "title": "Segment 30 (pages 287-294)",
+      "start_page": 287,
+      "end_page": 294
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch031_e60156",
+      "number": 31,
+      "title": "Segment 31 (pages 295-305)",
+      "start_page": 295,
+      "end_page": 305
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch032_21bac8",
+      "number": 32,
+      "title": "Segment 32 (pages 306-318)",
+      "start_page": 306,
+      "end_page": 318
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch033_0e37ba",
+      "number": 33,
+      "title": "Segment 33 (pages 319-337)",
+      "start_page": 319,
+      "end_page": 337
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch034_88f5ff",
+      "number": 34,
+      "title": "Segment 34 (pages 338-346)",
+      "start_page": 338,
+      "end_page": 346
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch035_27b795",
+      "number": 35,
+      "title": "Segment 35 (pages 347-359)",
+      "start_page": 347,
+      "end_page": 359
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch036_767d74",
+      "number": 36,
+      "title": "Segment 36 (pages 360-367)",
+      "start_page": 360,
+      "end_page": 367
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch037_36d2cd",
+      "number": 37,
+      "title": "Segment 37 (pages 368-376)",
+      "start_page": 368,
+      "end_page": 376
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch038_ed642d",
+      "number": 38,
+      "title": "Segment 38 (pages 377-385)",
+      "start_page": 377,
+      "end_page": 385
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch039_ff306a",
+      "number": 39,
+      "title": "Segment 39 (pages 386-393)",
+      "start_page": 386,
+      "end_page": 393
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch040_242d4f",
+      "number": 40,
+      "title": "Segment 40 (pages 394-404)",
+      "start_page": 394,
+      "end_page": 404
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch041_51f680",
+      "number": 41,
+      "title": "Segment 41 (pages 405-415)",
+      "start_page": 405,
+      "end_page": 415
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch042_a63667",
+      "number": 42,
+      "title": "Segment 42 (pages 416-423)",
+      "start_page": 416,
+      "end_page": 423
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch043_60b0ad",
+      "number": 43,
+      "title": "Segment 43 (pages 424-431)",
+      "start_page": 424,
+      "end_page": 431
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch044_0c18cd",
+      "number": 44,
+      "title": "Segment 44 (pages 432-439)",
+      "start_page": 432,
+      "end_page": 439
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch045_d38be3",
+      "number": 45,
+      "title": "Segment 45 (pages 440-449)",
+      "start_page": 440,
+      "end_page": 449
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch046_dd870f",
+      "number": 46,
+      "title": "Segment 46 (pages 450-457)",
+      "start_page": 450,
+      "end_page": 457
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch047_f3db32",
+      "number": 47,
+      "title": "Segment 47 (pages 458-468)",
+      "start_page": 458,
+      "end_page": 468
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch048_e75df1",
+      "number": 48,
+      "title": "Segment 48 (pages 469-476)",
+      "start_page": 469,
+      "end_page": 476
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch049_fa7a6a",
+      "number": 49,
+      "title": "Segment 49 (pages 477-489)",
+      "start_page": 477,
+      "end_page": 489
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch050_155b17",
+      "number": 50,
+      "title": "Segment 50 (pages 490-497)",
+      "start_page": 490,
+      "end_page": 497
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch051_15f2fc",
+      "number": 51,
+      "title": "Segment 51 (pages 498-505)",
+      "start_page": 498,
+      "end_page": 505
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch052_2d8ba0",
+      "number": 52,
+      "title": "Segment 52 (pages 506-515)",
+      "start_page": 506,
+      "end_page": 515
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch053_dab41c",
+      "number": 53,
+      "title": "Segment 53 (pages 516-524)",
+      "start_page": 516,
+      "end_page": 524
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch054_dbbc59",
+      "number": 54,
+      "title": "Segment 54 (pages 525-535)",
+      "start_page": 525,
+      "end_page": 535
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch055_dd8bbf",
+      "number": 55,
+      "title": "Segment 55 (pages 536-543)",
+      "start_page": 536,
+      "end_page": 543
+    },
+    {
+      "chapter_id": "game_programming_gems_2_b7e2edf9_ch056_7a30c3",
+      "number": 56,
+      "title": "Segment 56 (pages 544-551)",
+      "start_page": 544,
+      "end_page": 551
+    }
+  ],
+  "source_file": "Game Programming Gems 2.json",
+  "extraction_date": "2025-12-14T04:13:06.280340+00:00"
+}

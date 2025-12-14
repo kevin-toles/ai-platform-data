@@ -1,0 +1,116 @@
+{
+  "book_id": "python_cookbook_3rd_443cdd39",
+  "title": "Python Cookbook 3rd",
+  "author": "David Beazley and Brian K. Jones",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch001_c28211",
+      "number": 1,
+      "title": "Data Structures and Algorithms",
+      "start_page": 1,
+      "end_page": 60
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch002_23d9f2",
+      "number": 2,
+      "title": "Strings and Text",
+      "start_page": 61,
+      "end_page": 120
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch003_c33162",
+      "number": 3,
+      "title": "Numbers, Dates, and Times",
+      "start_page": 121,
+      "end_page": 160
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch004_4c3fd9",
+      "number": 4,
+      "title": "Iterators and Generators",
+      "start_page": 161,
+      "end_page": 200
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch005_8ded73",
+      "number": 5,
+      "title": "Files and I/O",
+      "start_page": 201,
+      "end_page": 240
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch006_bd484c",
+      "number": 6,
+      "title": "Data Encoding and Processing",
+      "start_page": 241,
+      "end_page": 280
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch007_539d22",
+      "number": 7,
+      "title": "Functions",
+      "start_page": 281,
+      "end_page": 320
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch008_eb26b3",
+      "number": 8,
+      "title": "Classes and Objects",
+      "start_page": 321,
+      "end_page": 380
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch009_eedbef",
+      "number": 9,
+      "title": "Metaprogramming",
+      "start_page": 381,
+      "end_page": 440
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch010_f2a9be",
+      "number": 10,
+      "title": "Modules and Packages",
+      "start_page": 441,
+      "end_page": 480
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch011_1e091f",
+      "number": 11,
+      "title": "Network and Web Programming",
+      "start_page": 481,
+      "end_page": 520
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch012_ed9b6b",
+      "number": 12,
+      "title": "Concurrency",
+      "start_page": 521,
+      "end_page": 560
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch013_ce3da5",
+      "number": 13,
+      "title": "Utility Scripting and System Administration",
+      "start_page": 561,
+      "end_page": 600
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch014_7622ee",
+      "number": 14,
+      "title": "Testing, Debugging, and Exceptions",
+      "start_page": 601,
+      "end_page": 640
+    },
+    {
+      "chapter_id": "python_cookbook_3rd_443cdd39_ch015_c948e7",
+      "number": 15,
+      "title": "C Extensions",
+      "start_page": 641,
+      "end_page": 680
+    }
+  ],
+  "source_file": "Python Cookbook 3rd.json",
+  "extraction_date": "2025-12-14T04:13:06.347170+00:00"
+}

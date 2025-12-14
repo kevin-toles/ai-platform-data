@@ -1,0 +1,354 @@
+{
+  "book_id": "ai_engineering_building_applications_d3482ade",
+  "title": "AI Engineering Building Applications",
+  "author": "Chip Huyen",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch001_8d3829",
+      "number": 1,
+      "title": "Segment 1 (pages 1-18)",
+      "start_page": 1,
+      "end_page": 18
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch002_66c867",
+      "number": 2,
+      "title": "Segment 2 (pages 19-39)",
+      "start_page": 19,
+      "end_page": 39
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch003_870bae",
+      "number": 3,
+      "title": "Segment 3 (pages 40-60)",
+      "start_page": 40,
+      "end_page": 60
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch004_7e53e6",
+      "number": 4,
+      "title": "Segment 4 (pages 61-81)",
+      "start_page": 61,
+      "end_page": 81
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch005_d4c904",
+      "number": 5,
+      "title": "Segment 5 (pages 82-102)",
+      "start_page": 82,
+      "end_page": 102
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch006_81197e",
+      "number": 6,
+      "title": "Segment 6 (pages 103-122)",
+      "start_page": 103,
+      "end_page": 122
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch007_6bc1fe",
+      "number": 7,
+      "title": "Segment 7 (pages 123-143)",
+      "start_page": 123,
+      "end_page": 143
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch008_098bb4",
+      "number": 8,
+      "title": "Segment 8 (pages 144-164)",
+      "start_page": 144,
+      "end_page": 164
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch009_3ce16b",
+      "number": 9,
+      "title": "Segment 9 (pages 165-185)",
+      "start_page": 165,
+      "end_page": 185
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch010_4d06e4",
+      "number": 10,
+      "title": "Segment 10 (pages 186-208)",
+      "start_page": 186,
+      "end_page": 208
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch011_aadd65",
+      "number": 11,
+      "title": "Segment 11 (pages 209-230)",
+      "start_page": 209,
+      "end_page": 230
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch012_50c32e",
+      "number": 12,
+      "title": "Segment 12 (pages 231-252)",
+      "start_page": 231,
+      "end_page": 252
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch013_3fad0a",
+      "number": 13,
+      "title": "Segment 13 (pages 253-274)",
+      "start_page": 253,
+      "end_page": 274
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch014_b21cf3",
+      "number": 14,
+      "title": "Segment 14 (pages 275-296)",
+      "start_page": 275,
+      "end_page": 296
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch015_2da1d7",
+      "number": 15,
+      "title": "Segment 15 (pages 297-315)",
+      "start_page": 297,
+      "end_page": 315
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch016_e183b6",
+      "number": 16,
+      "title": "Segment 16 (pages 316-334)",
+      "start_page": 316,
+      "end_page": 334
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch017_1d4fe4",
+      "number": 17,
+      "title": "Segment 17 (pages 335-354)",
+      "start_page": 335,
+      "end_page": 354
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch018_3743e6",
+      "number": 18,
+      "title": "Segment 18 (pages 355-374)",
+      "start_page": 355,
+      "end_page": 374
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch019_71087f",
+      "number": 19,
+      "title": "Segment 19 (pages 375-397)",
+      "start_page": 375,
+      "end_page": 397
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch020_5587e8",
+      "number": 20,
+      "title": "Segment 20 (pages 398-416)",
+      "start_page": 398,
+      "end_page": 416
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch021_f9dd57",
+      "number": 21,
+      "title": "Segment 21 (pages 417-434)",
+      "start_page": 417,
+      "end_page": 434
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch022_56d682",
+      "number": 22,
+      "title": "Segment 22 (pages 435-456)",
+      "start_page": 435,
+      "end_page": 456
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch023_79a189",
+      "number": 23,
+      "title": "Segment 23 (pages 457-476)",
+      "start_page": 457,
+      "end_page": 476
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch024_a183e9",
+      "number": 24,
+      "title": "Segment 24 (pages 477-494)",
+      "start_page": 477,
+      "end_page": 494
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch025_2491c0",
+      "number": 25,
+      "title": "Segment 25 (pages 495-517)",
+      "start_page": 495,
+      "end_page": 517
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch026_0f8e4f",
+      "number": 26,
+      "title": "Segment 26 (pages 518-535)",
+      "start_page": 518,
+      "end_page": 535
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch027_ebba54",
+      "number": 27,
+      "title": "Segment 27 (pages 536-554)",
+      "start_page": 536,
+      "end_page": 554
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch028_74d10e",
+      "number": 28,
+      "title": "Segment 28 (pages 555-576)",
+      "start_page": 555,
+      "end_page": 576
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch029_edf405",
+      "number": 29,
+      "title": "Segment 29 (pages 577-594)",
+      "start_page": 577,
+      "end_page": 594
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch030_85471f",
+      "number": 30,
+      "title": "Segment 30 (pages 595-616)",
+      "start_page": 595,
+      "end_page": 616
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch031_9c667b",
+      "number": 31,
+      "title": "Segment 31 (pages 617-639)",
+      "start_page": 617,
+      "end_page": 639
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch032_3b55b3",
+      "number": 32,
+      "title": "Segment 32 (pages 640-662)",
+      "start_page": 640,
+      "end_page": 662
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch033_faf1bf",
+      "number": 33,
+      "title": "Segment 33 (pages 663-680)",
+      "start_page": 663,
+      "end_page": 680
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch034_b80920",
+      "number": 34,
+      "title": "Segment 34 (pages 681-701)",
+      "start_page": 681,
+      "end_page": 701
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch035_10bb3b",
+      "number": 35,
+      "title": "Segment 35 (pages 702-724)",
+      "start_page": 702,
+      "end_page": 724
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch036_763124",
+      "number": 36,
+      "title": "Segment 36 (pages 725-745)",
+      "start_page": 725,
+      "end_page": 745
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch037_759f14",
+      "number": 37,
+      "title": "Segment 37 (pages 746-766)",
+      "start_page": 746,
+      "end_page": 766
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch038_3850f5",
+      "number": 38,
+      "title": "Segment 38 (pages 767-788)",
+      "start_page": 767,
+      "end_page": 788
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch039_164f62",
+      "number": 39,
+      "title": "Segment 39 (pages 789-807)",
+      "start_page": 789,
+      "end_page": 807
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch040_78d632",
+      "number": 40,
+      "title": "Segment 40 (pages 808-829)",
+      "start_page": 808,
+      "end_page": 829
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch041_47c8ae",
+      "number": 41,
+      "title": "Segment 41 (pages 830-852)",
+      "start_page": 830,
+      "end_page": 852
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch042_ca3258",
+      "number": 42,
+      "title": "Segment 42 (pages 853-871)",
+      "start_page": 853,
+      "end_page": 871
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch043_5d60a9",
+      "number": 43,
+      "title": "Segment 43 (pages 872-889)",
+      "start_page": 872,
+      "end_page": 889
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch044_76bdee",
+      "number": 44,
+      "title": "Segment 44 (pages 890-909)",
+      "start_page": 890,
+      "end_page": 909
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch045_553681",
+      "number": 45,
+      "title": "Segment 45 (pages 910-929)",
+      "start_page": 910,
+      "end_page": 929
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch046_12f8ba",
+      "number": 46,
+      "title": "Segment 46 (pages 930-949)",
+      "start_page": 930,
+      "end_page": 949
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch047_eba968",
+      "number": 47,
+      "title": "Segment 47 (pages 950-972)",
+      "start_page": 950,
+      "end_page": 972
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch048_656e14",
+      "number": 48,
+      "title": "Segment 48 (pages 973-990)",
+      "start_page": 973,
+      "end_page": 990
+    },
+    {
+      "chapter_id": "ai_engineering_building_applications_d3482ade_ch049_a12d8f",
+      "number": 49,
+      "title": "Segment 49 (pages 991-991)",
+      "start_page": 991,
+      "end_page": 991
+    }
+  ],
+  "source_file": "AI Engineering Building Applications.json",
+  "extraction_date": "2025-12-14T04:13:06.195000+00:00"
+}

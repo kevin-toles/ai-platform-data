@@ -1,0 +1,578 @@
+{
+  "book_id": "c_templates_the_complete_guide_da5bc0fa",
+  "title": "C++ Templates: The Complete Guide",
+  "author": "David Vandevoorde & Nicolai M. Josuttis & Douglas Gregor",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch001_d1f988",
+      "number": 1,
+      "title": "Segment 1 (pages 1-35)",
+      "start_page": 1,
+      "end_page": 35
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch002_87ae50",
+      "number": 2,
+      "title": "Segment 2 (pages 36-70)",
+      "start_page": 36,
+      "end_page": 70
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch003_04cc64",
+      "number": 3,
+      "title": "Segment 3 (pages 71-100)",
+      "start_page": 71,
+      "end_page": 100
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch004_11703a",
+      "number": 4,
+      "title": "Segment 4 (pages 101-135)",
+      "start_page": 101,
+      "end_page": 135
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch005_7c50db",
+      "number": 5,
+      "title": "Segment 5 (pages 136-166)",
+      "start_page": 136,
+      "end_page": 166
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch006_21b11f",
+      "number": 6,
+      "title": "Segment 6 (pages 167-197)",
+      "start_page": 167,
+      "end_page": 197
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch007_b87b6d",
+      "number": 7,
+      "title": "Segment 7 (pages 198-230)",
+      "start_page": 198,
+      "end_page": 230
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch008_e1c4a0",
+      "number": 8,
+      "title": "Segment 8 (pages 231-264)",
+      "start_page": 231,
+      "end_page": 264
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch009_e516d3",
+      "number": 9,
+      "title": "Segment 9 (pages 265-294)",
+      "start_page": 265,
+      "end_page": 294
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch010_688b45",
+      "number": 10,
+      "title": "Segment 10 (pages 295-328)",
+      "start_page": 295,
+      "end_page": 328
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch011_fc8aa7",
+      "number": 11,
+      "title": "Segment 11 (pages 329-363)",
+      "start_page": 329,
+      "end_page": 363
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch012_65a3ad",
+      "number": 12,
+      "title": "Segment 12 (pages 364-393)",
+      "start_page": 364,
+      "end_page": 393
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch013_973162",
+      "number": 13,
+      "title": "Segment 13 (pages 394-424)",
+      "start_page": 394,
+      "end_page": 424
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch014_add217",
+      "number": 14,
+      "title": "Segment 14 (pages 425-455)",
+      "start_page": 425,
+      "end_page": 455
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch015_b2b36b",
+      "number": 15,
+      "title": "Segment 15 (pages 456-487)",
+      "start_page": 456,
+      "end_page": 487
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch016_a338f7",
+      "number": 16,
+      "title": "Segment 16 (pages 488-517)",
+      "start_page": 488,
+      "end_page": 517
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch017_3c818c",
+      "number": 17,
+      "title": "Segment 17 (pages 518-549)",
+      "start_page": 518,
+      "end_page": 549
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch018_abedde",
+      "number": 18,
+      "title": "Segment 18 (pages 550-583)",
+      "start_page": 550,
+      "end_page": 583
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch019_aa7b93",
+      "number": 19,
+      "title": "Segment 19 (pages 584-615)",
+      "start_page": 584,
+      "end_page": 615
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch020_ae6b7c",
+      "number": 20,
+      "title": "Segment 20 (pages 616-650)",
+      "start_page": 616,
+      "end_page": 650
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch021_0af538",
+      "number": 21,
+      "title": "Segment 21 (pages 651-684)",
+      "start_page": 651,
+      "end_page": 684
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch022_4489e4",
+      "number": 22,
+      "title": "Segment 22 (pages 685-719)",
+      "start_page": 685,
+      "end_page": 719
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch023_5c2525",
+      "number": 23,
+      "title": "Segment 23 (pages 720-752)",
+      "start_page": 720,
+      "end_page": 752
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch024_6b178d",
+      "number": 24,
+      "title": "Segment 24 (pages 753-783)",
+      "start_page": 753,
+      "end_page": 783
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch025_9d5bdb",
+      "number": 25,
+      "title": "Segment 25 (pages 784-814)",
+      "start_page": 784,
+      "end_page": 814
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch026_e76383",
+      "number": 26,
+      "title": "Segment 26 (pages 815-849)",
+      "start_page": 815,
+      "end_page": 849
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch027_623fe0",
+      "number": 27,
+      "title": "Segment 27 (pages 850-883)",
+      "start_page": 850,
+      "end_page": 883
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch028_bbcb0b",
+      "number": 28,
+      "title": "Segment 28 (pages 884-918)",
+      "start_page": 884,
+      "end_page": 918
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch029_155427",
+      "number": 29,
+      "title": "Segment 29 (pages 919-949)",
+      "start_page": 919,
+      "end_page": 949
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch030_5cb20c",
+      "number": 30,
+      "title": "Segment 30 (pages 950-980)",
+      "start_page": 950,
+      "end_page": 980
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch031_4d1109",
+      "number": 31,
+      "title": "Segment 31 (pages 981-1014)",
+      "start_page": 981,
+      "end_page": 1014
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch032_a36720",
+      "number": 32,
+      "title": "Segment 32 (pages 1015-1044)",
+      "start_page": 1015,
+      "end_page": 1044
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch033_0ad9ea",
+      "number": 33,
+      "title": "Segment 33 (pages 1045-1079)",
+      "start_page": 1045,
+      "end_page": 1079
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch034_15cd47",
+      "number": 34,
+      "title": "Segment 34 (pages 1080-1114)",
+      "start_page": 1080,
+      "end_page": 1114
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch035_742d09",
+      "number": 35,
+      "title": "Segment 35 (pages 1115-1144)",
+      "start_page": 1115,
+      "end_page": 1144
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch036_38ebe7",
+      "number": 36,
+      "title": "Segment 36 (pages 1145-1179)",
+      "start_page": 1145,
+      "end_page": 1179
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch037_0a2781",
+      "number": 37,
+      "title": "Segment 37 (pages 1180-1210)",
+      "start_page": 1180,
+      "end_page": 1210
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch038_30902e",
+      "number": 38,
+      "title": "Segment 38 (pages 1211-1240)",
+      "start_page": 1211,
+      "end_page": 1240
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch039_36e8b4",
+      "number": 39,
+      "title": "Segment 39 (pages 1241-1273)",
+      "start_page": 1241,
+      "end_page": 1273
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch040_943f9d",
+      "number": 40,
+      "title": "Segment 40 (pages 1274-1308)",
+      "start_page": 1274,
+      "end_page": 1308
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch041_66d969",
+      "number": 41,
+      "title": "Segment 41 (pages 1309-1342)",
+      "start_page": 1309,
+      "end_page": 1342
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch042_6b53e7",
+      "number": 42,
+      "title": "Segment 42 (pages 1343-1372)",
+      "start_page": 1343,
+      "end_page": 1372
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch043_72f81a",
+      "number": 43,
+      "title": "Segment 43 (pages 1373-1403)",
+      "start_page": 1373,
+      "end_page": 1403
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch044_8bcdcd",
+      "number": 44,
+      "title": "Segment 44 (pages 1404-1436)",
+      "start_page": 1404,
+      "end_page": 1436
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch045_80ea75",
+      "number": 45,
+      "title": "Segment 45 (pages 1437-1468)",
+      "start_page": 1437,
+      "end_page": 1468
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch046_6c3109",
+      "number": 46,
+      "title": "Segment 46 (pages 1469-1503)",
+      "start_page": 1469,
+      "end_page": 1503
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch047_91ed94",
+      "number": 47,
+      "title": "Segment 47 (pages 1504-1535)",
+      "start_page": 1504,
+      "end_page": 1535
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch048_2a9e2e",
+      "number": 48,
+      "title": "Segment 48 (pages 1536-1565)",
+      "start_page": 1536,
+      "end_page": 1565
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch049_fde026",
+      "number": 49,
+      "title": "Segment 49 (pages 1566-1599)",
+      "start_page": 1566,
+      "end_page": 1599
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch050_43606d",
+      "number": 50,
+      "title": "Segment 50 (pages 1600-1629)",
+      "start_page": 1600,
+      "end_page": 1629
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch051_18f2f6",
+      "number": 51,
+      "title": "Segment 51 (pages 1630-1663)",
+      "start_page": 1630,
+      "end_page": 1663
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch052_7a28ac",
+      "number": 52,
+      "title": "Segment 52 (pages 1664-1696)",
+      "start_page": 1664,
+      "end_page": 1696
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch053_d364ce",
+      "number": 53,
+      "title": "Segment 53 (pages 1697-1728)",
+      "start_page": 1697,
+      "end_page": 1728
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch054_37e520",
+      "number": 54,
+      "title": "Segment 54 (pages 1729-1761)",
+      "start_page": 1729,
+      "end_page": 1761
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch055_4dac5f",
+      "number": 55,
+      "title": "Segment 55 (pages 1762-1792)",
+      "start_page": 1762,
+      "end_page": 1792
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch056_6612d1",
+      "number": 56,
+      "title": "Segment 56 (pages 1793-1823)",
+      "start_page": 1793,
+      "end_page": 1823
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch057_82c91d",
+      "number": 57,
+      "title": "Segment 57 (pages 1824-1855)",
+      "start_page": 1824,
+      "end_page": 1855
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch058_4ce01e",
+      "number": 58,
+      "title": "Segment 58 (pages 1856-1886)",
+      "start_page": 1856,
+      "end_page": 1886
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch059_9fa8bb",
+      "number": 59,
+      "title": "Segment 59 (pages 1887-1917)",
+      "start_page": 1887,
+      "end_page": 1917
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch060_72f779",
+      "number": 60,
+      "title": "Segment 60 (pages 1918-1952)",
+      "start_page": 1918,
+      "end_page": 1952
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch061_938b24",
+      "number": 61,
+      "title": "Segment 61 (pages 1953-1984)",
+      "start_page": 1953,
+      "end_page": 1984
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch062_a57d18",
+      "number": 62,
+      "title": "Segment 62 (pages 1985-2015)",
+      "start_page": 1985,
+      "end_page": 2015
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch063_d3925d",
+      "number": 63,
+      "title": "Segment 63 (pages 2016-2049)",
+      "start_page": 2016,
+      "end_page": 2049
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch064_901f2f",
+      "number": 64,
+      "title": "Segment 64 (pages 2050-2080)",
+      "start_page": 2050,
+      "end_page": 2080
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch065_723204",
+      "number": 65,
+      "title": "Segment 65 (pages 2081-2112)",
+      "start_page": 2081,
+      "end_page": 2112
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch066_c30130",
+      "number": 66,
+      "title": "Segment 66 (pages 2113-2146)",
+      "start_page": 2113,
+      "end_page": 2146
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch067_1f7202",
+      "number": 67,
+      "title": "Segment 67 (pages 2147-2180)",
+      "start_page": 2147,
+      "end_page": 2180
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch068_4eeafb",
+      "number": 68,
+      "title": "Segment 68 (pages 2181-2212)",
+      "start_page": 2181,
+      "end_page": 2212
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch069_935831",
+      "number": 69,
+      "title": "Segment 69 (pages 2213-2247)",
+      "start_page": 2213,
+      "end_page": 2247
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch070_307195",
+      "number": 70,
+      "title": "Segment 70 (pages 2248-2280)",
+      "start_page": 2248,
+      "end_page": 2280
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch071_8a9c9d",
+      "number": 71,
+      "title": "Segment 71 (pages 2281-2311)",
+      "start_page": 2281,
+      "end_page": 2311
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch072_e5cacb",
+      "number": 72,
+      "title": "Segment 72 (pages 2312-2344)",
+      "start_page": 2312,
+      "end_page": 2344
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch073_4b97ba",
+      "number": 73,
+      "title": "Segment 73 (pages 2345-2376)",
+      "start_page": 2345,
+      "end_page": 2376
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch074_ab481b",
+      "number": 74,
+      "title": "Segment 74 (pages 2377-2408)",
+      "start_page": 2377,
+      "end_page": 2408
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch075_2c96d2",
+      "number": 75,
+      "title": "Segment 75 (pages 2409-2441)",
+      "start_page": 2409,
+      "end_page": 2441
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch076_b14bd0",
+      "number": 76,
+      "title": "Segment 76 (pages 2442-2473)",
+      "start_page": 2442,
+      "end_page": 2473
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch077_52cb3e",
+      "number": 77,
+      "title": "Segment 77 (pages 2474-2504)",
+      "start_page": 2474,
+      "end_page": 2504
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch078_4fec41",
+      "number": 78,
+      "title": "Segment 78 (pages 2505-2534)",
+      "start_page": 2505,
+      "end_page": 2534
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch079_9c2a1c",
+      "number": 79,
+      "title": "Segment 79 (pages 2535-2565)",
+      "start_page": 2535,
+      "end_page": 2565
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch080_65bfc0",
+      "number": 80,
+      "title": "Segment 80 (pages 2566-2598)",
+      "start_page": 2566,
+      "end_page": 2598
+    },
+    {
+      "chapter_id": "c_templates_the_complete_guide_da5bc0fa_ch081_7c94f5",
+      "number": 81,
+      "title": "Segment 81 (pages 2599-2606)",
+      "start_page": 2599,
+      "end_page": 2606
+    }
+  ],
+  "source_file": "C++ Templates_ The Complete Guide.json",
+  "extraction_date": "2025-12-14T04:13:06.127321+00:00"
+}

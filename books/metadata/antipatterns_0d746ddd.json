@@ -1,0 +1,137 @@
+{
+  "book_id": "antipatterns_0d746ddd",
+  "title": "AntiPatterns",
+  "author": "William J. Brown",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch001_9c682b",
+      "number": 1,
+      "title": "Segment 1 (pages 2-12)",
+      "start_page": 2,
+      "end_page": 12
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch002_3e17c1",
+      "number": 2,
+      "title": "Segment 2 (pages 13-21)",
+      "start_page": 13,
+      "end_page": 21
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch003_346fdb",
+      "number": 3,
+      "title": "Segment 3 (pages 22-29)",
+      "start_page": 22,
+      "end_page": 29
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch004_b7c6dc",
+      "number": 4,
+      "title": "Segment 4 (pages 30-37)",
+      "start_page": 30,
+      "end_page": 37
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch005_cf38d1",
+      "number": 5,
+      "title": "Segment 5 (pages 38-47)",
+      "start_page": 38,
+      "end_page": 47
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch006_705791",
+      "number": 6,
+      "title": "Segment 6 (pages 48-55)",
+      "start_page": 48,
+      "end_page": 55
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch007_addf9a",
+      "number": 7,
+      "title": "Segment 7 (pages 56-65)",
+      "start_page": 56,
+      "end_page": 65
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch008_c43bbf",
+      "number": 8,
+      "title": "Segment 8 (pages 66-73)",
+      "start_page": 66,
+      "end_page": 73
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch009_47c336",
+      "number": 9,
+      "title": "Segment 9 (pages 74-81)",
+      "start_page": 74,
+      "end_page": 81
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch010_3ff075",
+      "number": 10,
+      "title": "Segment 10 (pages 82-89)",
+      "start_page": 82,
+      "end_page": 89
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch011_966145",
+      "number": 11,
+      "title": "Segment 11 (pages 90-97)",
+      "start_page": 90,
+      "end_page": 97
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch012_09d1bd",
+      "number": 12,
+      "title": "Segment 12 (pages 98-105)",
+      "start_page": 98,
+      "end_page": 105
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch013_340615",
+      "number": 13,
+      "title": "Segment 13 (pages 106-113)",
+      "start_page": 106,
+      "end_page": 113
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch014_e6e495",
+      "number": 14,
+      "title": "Segment 14 (pages 114-126)",
+      "start_page": 114,
+      "end_page": 126
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch015_ada69c",
+      "number": 15,
+      "title": "Segment 15 (pages 127-134)",
+      "start_page": 127,
+      "end_page": 134
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch016_58fb13",
+      "number": 16,
+      "title": "Segment 16 (pages 135-143)",
+      "start_page": 135,
+      "end_page": 143
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch017_636b82",
+      "number": 17,
+      "title": "Segment 17 (pages 144-151)",
+      "start_page": 144,
+      "end_page": 151
+    },
+    {
+      "chapter_id": "antipatterns_0d746ddd_ch018_e58768",
+      "number": 18,
+      "title": "Segment 18 (pages 152-157)",
+      "start_page": 152,
+      "end_page": 157
+    }
+  ],
+  "source_file": "AntiPatterns.json",
+  "extraction_date": "2025-12-14T04:13:06.324237+00:00"
+}

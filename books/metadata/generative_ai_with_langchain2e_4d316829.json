@@ -1,0 +1,403 @@
+{
+  "book_id": "generative_ai_with_langchain2e_4d316829",
+  "title": "Generative AI with LangChain_2e",
+  "author": "Unknown Author",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch001_5b522b",
+      "number": 1,
+      "title": "Segment 1 (pages 1-8)",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch002_dea32e",
+      "number": 2,
+      "title": "Segment 2 (pages 9-16)",
+      "start_page": 9,
+      "end_page": 16
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch003_337568",
+      "number": 3,
+      "title": "Segment 3 (pages 17-24)",
+      "start_page": 17,
+      "end_page": 24
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch004_5c268e",
+      "number": 4,
+      "title": "Segment 4 (pages 25-33)",
+      "start_page": 25,
+      "end_page": 33
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch005_6dd04f",
+      "number": 5,
+      "title": "Segment 5 (pages 34-43)",
+      "start_page": 34,
+      "end_page": 43
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch006_ba4c48",
+      "number": 6,
+      "title": "Segment 6 (pages 44-52)",
+      "start_page": 44,
+      "end_page": 52
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch007_22e955",
+      "number": 7,
+      "title": "Segment 7 (pages 53-60)",
+      "start_page": 53,
+      "end_page": 60
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch008_7235b1",
+      "number": 8,
+      "title": "Segment 8 (pages 61-70)",
+      "start_page": 61,
+      "end_page": 70
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch009_480ad0",
+      "number": 9,
+      "title": "Segment 9 (pages 71-78)",
+      "start_page": 71,
+      "end_page": 78
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch010_ab72b8",
+      "number": 10,
+      "title": "Segment 10 (pages 79-86)",
+      "start_page": 79,
+      "end_page": 86
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch011_464f96",
+      "number": 11,
+      "title": "Segment 11 (pages 87-95)",
+      "start_page": 87,
+      "end_page": 95
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch012_206d86",
+      "number": 12,
+      "title": "Segment 12 (pages 96-103)",
+      "start_page": 96,
+      "end_page": 103
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch013_ce8375",
+      "number": 13,
+      "title": "Segment 13 (pages 104-112)",
+      "start_page": 104,
+      "end_page": 112
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch014_1803b8",
+      "number": 14,
+      "title": "Segment 14 (pages 113-121)",
+      "start_page": 113,
+      "end_page": 121
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch015_519401",
+      "number": 15,
+      "title": "Segment 15 (pages 122-129)",
+      "start_page": 122,
+      "end_page": 129
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch016_49f799",
+      "number": 16,
+      "title": "Segment 16 (pages 130-138)",
+      "start_page": 130,
+      "end_page": 138
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch017_54e4f1",
+      "number": 17,
+      "title": "Segment 17 (pages 139-148)",
+      "start_page": 139,
+      "end_page": 148
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch018_62028a",
+      "number": 18,
+      "title": "Segment 18 (pages 149-156)",
+      "start_page": 149,
+      "end_page": 156
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch019_d4c76f",
+      "number": 19,
+      "title": "Segment 19 (pages 157-164)",
+      "start_page": 157,
+      "end_page": 164
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch020_815276",
+      "number": 20,
+      "title": "Segment 20 (pages 165-173)",
+      "start_page": 165,
+      "end_page": 173
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch021_1211c8",
+      "number": 21,
+      "title": "Segment 21 (pages 174-181)",
+      "start_page": 174,
+      "end_page": 181
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch022_7c7f0e",
+      "number": 22,
+      "title": "Segment 22 (pages 182-189)",
+      "start_page": 182,
+      "end_page": 189
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch023_a95742",
+      "number": 23,
+      "title": "Segment 23 (pages 190-197)",
+      "start_page": 190,
+      "end_page": 197
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch024_9b5777",
+      "number": 24,
+      "title": "Segment 24 (pages 198-205)",
+      "start_page": 198,
+      "end_page": 205
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch025_fcc437",
+      "number": 25,
+      "title": "Segment 25 (pages 206-213)",
+      "start_page": 206,
+      "end_page": 213
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch026_800f29",
+      "number": 26,
+      "title": "Segment 26 (pages 214-221)",
+      "start_page": 214,
+      "end_page": 221
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch027_c09dad",
+      "number": 27,
+      "title": "Segment 27 (pages 222-231)",
+      "start_page": 222,
+      "end_page": 231
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch028_7c7e80",
+      "number": 28,
+      "title": "Segment 28 (pages 232-240)",
+      "start_page": 232,
+      "end_page": 240
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch029_a557c8",
+      "number": 29,
+      "title": "Segment 29 (pages 241-252)",
+      "start_page": 241,
+      "end_page": 252
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch030_c1bb3f",
+      "number": 30,
+      "title": "Segment 30 (pages 253-261)",
+      "start_page": 253,
+      "end_page": 261
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch031_a8418e",
+      "number": 31,
+      "title": "Segment 31 (pages 262-269)",
+      "start_page": 262,
+      "end_page": 269
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch032_d99b66",
+      "number": 32,
+      "title": "Segment 32 (pages 270-277)",
+      "start_page": 270,
+      "end_page": 277
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch033_1f56bc",
+      "number": 33,
+      "title": "Segment 33 (pages 278-285)",
+      "start_page": 278,
+      "end_page": 285
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch034_edb884",
+      "number": 34,
+      "title": "Segment 34 (pages 286-294)",
+      "start_page": 286,
+      "end_page": 294
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch035_8ab575",
+      "number": 35,
+      "title": "Segment 35 (pages 295-302)",
+      "start_page": 295,
+      "end_page": 302
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch036_ec95cd",
+      "number": 36,
+      "title": "Segment 36 (pages 303-311)",
+      "start_page": 303,
+      "end_page": 311
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch037_fb6486",
+      "number": 37,
+      "title": "Segment 37 (pages 312-319)",
+      "start_page": 312,
+      "end_page": 319
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch038_0ef0bb",
+      "number": 38,
+      "title": "Segment 38 (pages 320-327)",
+      "start_page": 320,
+      "end_page": 327
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch039_00b2a7",
+      "number": 39,
+      "title": "Segment 39 (pages 328-335)",
+      "start_page": 328,
+      "end_page": 335
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch040_e4b3a5",
+      "number": 40,
+      "title": "Segment 40 (pages 336-343)",
+      "start_page": 336,
+      "end_page": 343
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch041_3e1e43",
+      "number": 41,
+      "title": "Segment 41 (pages 344-352)",
+      "start_page": 344,
+      "end_page": 352
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch042_887463",
+      "number": 42,
+      "title": "Segment 42 (pages 353-360)",
+      "start_page": 353,
+      "end_page": 360
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch043_47fbb9",
+      "number": 43,
+      "title": "Segment 43 (pages 361-368)",
+      "start_page": 361,
+      "end_page": 368
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch044_2bdbb3",
+      "number": 44,
+      "title": "Segment 44 (pages 369-376)",
+      "start_page": 369,
+      "end_page": 376
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch045_f93071",
+      "number": 45,
+      "title": "Segment 45 (pages 377-389)",
+      "start_page": 377,
+      "end_page": 389
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch046_c3d15d",
+      "number": 46,
+      "title": "Segment 46 (pages 390-397)",
+      "start_page": 390,
+      "end_page": 397
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch047_5def16",
+      "number": 47,
+      "title": "Segment 47 (pages 398-406)",
+      "start_page": 398,
+      "end_page": 406
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch048_66b440",
+      "number": 48,
+      "title": "Segment 48 (pages 407-414)",
+      "start_page": 407,
+      "end_page": 414
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch049_497094",
+      "number": 49,
+      "title": "Segment 49 (pages 415-422)",
+      "start_page": 415,
+      "end_page": 422
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch050_98190d",
+      "number": 50,
+      "title": "Segment 50 (pages 423-430)",
+      "start_page": 423,
+      "end_page": 430
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch051_78695a",
+      "number": 51,
+      "title": "Segment 51 (pages 431-439)",
+      "start_page": 431,
+      "end_page": 439
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch052_44df5f",
+      "number": 52,
+      "title": "Segment 52 (pages 440-447)",
+      "start_page": 440,
+      "end_page": 447
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch053_945986",
+      "number": 53,
+      "title": "Segment 53 (pages 448-456)",
+      "start_page": 448,
+      "end_page": 456
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch054_a2bbaa",
+      "number": 54,
+      "title": "Segment 54 (pages 457-464)",
+      "start_page": 457,
+      "end_page": 464
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch055_d57520",
+      "number": 55,
+      "title": "Segment 55 (pages 465-472)",
+      "start_page": 465,
+      "end_page": 472
+    },
+    {
+      "chapter_id": "generative_ai_with_langchain2e_4d316829_ch056_4c9299",
+      "number": 56,
+      "title": "Segment 56 (pages 473-477)",
+      "start_page": 473,
+      "end_page": 477
+    }
+  ],
+  "source_file": "Generative AI with LangChain_2e.json",
+  "extraction_date": "2025-12-14T04:13:06.395416+00:00"
+}

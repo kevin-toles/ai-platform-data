@@ -1,0 +1,249 @@
+{
+  "book_id": "machine_learning_engineering_990125f1",
+  "title": "Machine Learning Engineering",
+  "author": "Unknown Author",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch001_0d4f6e",
+      "number": 1,
+      "title": "Segment 1 (pages 2-11)",
+      "start_page": 2,
+      "end_page": 11
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch002_f6d83b",
+      "number": 2,
+      "title": "Segment 2 (pages 12-19)",
+      "start_page": 12,
+      "end_page": 19
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch003_665cb2",
+      "number": 3,
+      "title": "Segment 3 (pages 20-27)",
+      "start_page": 20,
+      "end_page": 27
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch004_c6c1a6",
+      "number": 4,
+      "title": "Segment 4 (pages 28-36)",
+      "start_page": 28,
+      "end_page": 36
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch005_c1e205",
+      "number": 5,
+      "title": "Segment 5 (pages 37-45)",
+      "start_page": 37,
+      "end_page": 45
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch006_e9c941",
+      "number": 6,
+      "title": "Segment 6 (pages 46-54)",
+      "start_page": 46,
+      "end_page": 54
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch007_7c4e41",
+      "number": 7,
+      "title": "Segment 7 (pages 55-62)",
+      "start_page": 55,
+      "end_page": 62
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch008_5a6160",
+      "number": 8,
+      "title": "Segment 8 (pages 63-71)",
+      "start_page": 63,
+      "end_page": 71
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch009_a96c8b",
+      "number": 9,
+      "title": "Segment 9 (pages 72-81)",
+      "start_page": 72,
+      "end_page": 81
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch010_d1da75",
+      "number": 10,
+      "title": "Segment 10 (pages 82-90)",
+      "start_page": 82,
+      "end_page": 90
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch011_026469",
+      "number": 11,
+      "title": "Segment 11 (pages 91-98)",
+      "start_page": 91,
+      "end_page": 98
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch012_f0e642",
+      "number": 12,
+      "title": "Segment 12 (pages 99-107)",
+      "start_page": 99,
+      "end_page": 107
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch013_438609",
+      "number": 13,
+      "title": "Segment 13 (pages 108-115)",
+      "start_page": 108,
+      "end_page": 115
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch014_dcedd8",
+      "number": 14,
+      "title": "Segment 14 (pages 116-123)",
+      "start_page": 116,
+      "end_page": 123
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch015_84876e",
+      "number": 15,
+      "title": "Segment 15 (pages 124-132)",
+      "start_page": 124,
+      "end_page": 132
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch016_61eb32",
+      "number": 16,
+      "title": "Segment 16 (pages 133-142)",
+      "start_page": 133,
+      "end_page": 142
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch017_3e001d",
+      "number": 17,
+      "title": "Segment 17 (pages 143-150)",
+      "start_page": 143,
+      "end_page": 150
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch018_3aa963",
+      "number": 18,
+      "title": "Segment 18 (pages 151-158)",
+      "start_page": 151,
+      "end_page": 158
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch019_ee64ab",
+      "number": 19,
+      "title": "Segment 19 (pages 159-167)",
+      "start_page": 159,
+      "end_page": 167
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch020_16c249",
+      "number": 20,
+      "title": "Segment 20 (pages 168-176)",
+      "start_page": 168,
+      "end_page": 176
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch021_f2c093",
+      "number": 21,
+      "title": "Segment 21 (pages 177-184)",
+      "start_page": 177,
+      "end_page": 184
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch022_605e4a",
+      "number": 22,
+      "title": "Segment 22 (pages 185-194)",
+      "start_page": 185,
+      "end_page": 194
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch023_0e323a",
+      "number": 23,
+      "title": "Segment 23 (pages 195-202)",
+      "start_page": 195,
+      "end_page": 202
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch024_94c769",
+      "number": 24,
+      "title": "Segment 24 (pages 203-210)",
+      "start_page": 203,
+      "end_page": 210
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch025_f13eaf",
+      "number": 25,
+      "title": "Segment 25 (pages 211-219)",
+      "start_page": 211,
+      "end_page": 219
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch026_aad34e",
+      "number": 26,
+      "title": "Segment 26 (pages 220-227)",
+      "start_page": 220,
+      "end_page": 227
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch027_6e5019",
+      "number": 27,
+      "title": "Segment 27 (pages 228-235)",
+      "start_page": 228,
+      "end_page": 235
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch028_fac4a1",
+      "number": 28,
+      "title": "Segment 28 (pages 236-244)",
+      "start_page": 236,
+      "end_page": 244
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch029_c254f5",
+      "number": 29,
+      "title": "Segment 29 (pages 245-254)",
+      "start_page": 245,
+      "end_page": 254
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch030_bd9a8d",
+      "number": 30,
+      "title": "Segment 30 (pages 255-262)",
+      "start_page": 255,
+      "end_page": 262
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch031_ea1db9",
+      "number": 31,
+      "title": "Segment 31 (pages 263-271)",
+      "start_page": 263,
+      "end_page": 271
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch032_9e9fdb",
+      "number": 32,
+      "title": "Segment 32 (pages 272-280)",
+      "start_page": 272,
+      "end_page": 280
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch033_ae7feb",
+      "number": 33,
+      "title": "Segment 33 (pages 281-289)",
+      "start_page": 281,
+      "end_page": 289
+    },
+    {
+      "chapter_id": "machine_learning_engineering_990125f1_ch034_045b52",
+      "number": 34,
+      "title": "Segment 34 (pages 290-296)",
+      "start_page": 290,
+      "end_page": 296
+    }
+  ],
+  "source_file": "Machine Learning Engineering.json",
+  "extraction_date": "2025-12-14T04:13:06.437608+00:00"
+}

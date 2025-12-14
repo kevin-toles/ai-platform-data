@@ -1,0 +1,410 @@
+{
+  "book_id": "llmengineershandbook_1af4acf1",
+  "title": "LLM-Engineers-Handbook",
+  "author": "Unknown Author",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch001_a6ac42",
+      "number": 1,
+      "title": "Segment 1 (pages 2-10)",
+      "start_page": 2,
+      "end_page": 10
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch002_1a1378",
+      "number": 2,
+      "title": "Segment 2 (pages 11-18)",
+      "start_page": 11,
+      "end_page": 18
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch003_6e1484",
+      "number": 3,
+      "title": "Segment 3 (pages 19-27)",
+      "start_page": 19,
+      "end_page": 27
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch004_7982fb",
+      "number": 4,
+      "title": "Segment 4 (pages 28-36)",
+      "start_page": 28,
+      "end_page": 36
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch005_b267e2",
+      "number": 5,
+      "title": "Segment 5 (pages 37-46)",
+      "start_page": 37,
+      "end_page": 46
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch006_7dbcb3",
+      "number": 6,
+      "title": "Segment 6 (pages 47-58)",
+      "start_page": 47,
+      "end_page": 58
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch007_3b2f2b",
+      "number": 7,
+      "title": "Segment 7 (pages 59-66)",
+      "start_page": 59,
+      "end_page": 66
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch008_d5261f",
+      "number": 8,
+      "title": "Segment 8 (pages 67-75)",
+      "start_page": 67,
+      "end_page": 75
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch009_ea4405",
+      "number": 9,
+      "title": "Segment 9 (pages 76-83)",
+      "start_page": 76,
+      "end_page": 83
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch010_56a5b9",
+      "number": 10,
+      "title": "Segment 10 (pages 84-97)",
+      "start_page": 84,
+      "end_page": 97
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch011_dc279b",
+      "number": 11,
+      "title": "Segment 11 (pages 98-105)",
+      "start_page": 98,
+      "end_page": 105
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch012_8c1e0a",
+      "number": 12,
+      "title": "Segment 12 (pages 106-115)",
+      "start_page": 106,
+      "end_page": 115
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch013_f855ef",
+      "number": 13,
+      "title": "Segment 13 (pages 116-123)",
+      "start_page": 116,
+      "end_page": 123
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch014_0f2423",
+      "number": 14,
+      "title": "Segment 14 (pages 124-132)",
+      "start_page": 124,
+      "end_page": 132
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch015_b5b4f6",
+      "number": 15,
+      "title": "Segment 15 (pages 133-140)",
+      "start_page": 133,
+      "end_page": 140
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch016_7575ca",
+      "number": 16,
+      "title": "Segment 16 (pages 141-148)",
+      "start_page": 141,
+      "end_page": 148
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch017_5fa0c9",
+      "number": 17,
+      "title": "Segment 17 (pages 149-163)",
+      "start_page": 149,
+      "end_page": 163
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch018_bd680e",
+      "number": 18,
+      "title": "Segment 18 (pages 164-171)",
+      "start_page": 164,
+      "end_page": 171
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch019_b0b435",
+      "number": 19,
+      "title": "Segment 19 (pages 172-179)",
+      "start_page": 172,
+      "end_page": 179
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch020_3aee8c",
+      "number": 20,
+      "title": "Segment 20 (pages 180-188)",
+      "start_page": 180,
+      "end_page": 188
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch021_1225b8",
+      "number": 21,
+      "title": "Segment 21 (pages 189-197)",
+      "start_page": 189,
+      "end_page": 197
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch022_ee225b",
+      "number": 22,
+      "title": "Segment 22 (pages 198-207)",
+      "start_page": 198,
+      "end_page": 207
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch023_70fcf4",
+      "number": 23,
+      "title": "Segment 23 (pages 208-215)",
+      "start_page": 208,
+      "end_page": 215
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch024_14a5d6",
+      "number": 24,
+      "title": "Segment 24 (pages 216-225)",
+      "start_page": 216,
+      "end_page": 225
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch025_402367",
+      "number": 25,
+      "title": "Segment 25 (pages 226-234)",
+      "start_page": 226,
+      "end_page": 234
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch026_986cea",
+      "number": 26,
+      "title": "Segment 26 (pages 235-244)",
+      "start_page": 235,
+      "end_page": 244
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch027_397cf4",
+      "number": 27,
+      "title": "Segment 27 (pages 245-252)",
+      "start_page": 245,
+      "end_page": 252
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch028_35ffcc",
+      "number": 28,
+      "title": "Segment 28 (pages 253-265)",
+      "start_page": 253,
+      "end_page": 265
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch029_7a437a",
+      "number": 29,
+      "title": "Segment 29 (pages 266-274)",
+      "start_page": 266,
+      "end_page": 274
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch030_a95671",
+      "number": 30,
+      "title": "Segment 30 (pages 275-282)",
+      "start_page": 275,
+      "end_page": 282
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch031_c1cf3b",
+      "number": 31,
+      "title": "Segment 31 (pages 283-291)",
+      "start_page": 283,
+      "end_page": 291
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch032_2e8bdc",
+      "number": 32,
+      "title": "Segment 32 (pages 292-299)",
+      "start_page": 292,
+      "end_page": 299
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch033_50ba05",
+      "number": 33,
+      "title": "Segment 33 (pages 300-308)",
+      "start_page": 300,
+      "end_page": 308
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch034_9e8e2f",
+      "number": 34,
+      "title": "Segment 34 (pages 309-317)",
+      "start_page": 309,
+      "end_page": 317
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch035_4992a4",
+      "number": 35,
+      "title": "Segment 35 (pages 318-325)",
+      "start_page": 318,
+      "end_page": 325
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch036_f654f1",
+      "number": 36,
+      "title": "Segment 36 (pages 326-334)",
+      "start_page": 326,
+      "end_page": 334
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch037_3c6e4d",
+      "number": 37,
+      "title": "Segment 37 (pages 335-343)",
+      "start_page": 335,
+      "end_page": 343
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch038_7a3e03",
+      "number": 38,
+      "title": "Segment 38 (pages 344-356)",
+      "start_page": 344,
+      "end_page": 356
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch039_939f03",
+      "number": 39,
+      "title": "Segment 39 (pages 357-366)",
+      "start_page": 357,
+      "end_page": 366
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch040_945604",
+      "number": 40,
+      "title": "Segment 40 (pages 367-374)",
+      "start_page": 367,
+      "end_page": 374
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch041_af2bcc",
+      "number": 41,
+      "title": "Segment 41 (pages 375-383)",
+      "start_page": 375,
+      "end_page": 383
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch042_2f1b02",
+      "number": 42,
+      "title": "Segment 42 (pages 384-392)",
+      "start_page": 384,
+      "end_page": 392
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch043_86d554",
+      "number": 43,
+      "title": "Segment 43 (pages 393-400)",
+      "start_page": 393,
+      "end_page": 400
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch044_3b8e42",
+      "number": 44,
+      "title": "Segment 44 (pages 401-411)",
+      "start_page": 401,
+      "end_page": 411
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch045_bf5776",
+      "number": 45,
+      "title": "Segment 45 (pages 412-421)",
+      "start_page": 412,
+      "end_page": 421
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch046_b533af",
+      "number": 46,
+      "title": "Segment 46 (pages 422-429)",
+      "start_page": 422,
+      "end_page": 429
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch047_2163c3",
+      "number": 47,
+      "title": "Segment 47 (pages 430-437)",
+      "start_page": 430,
+      "end_page": 437
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch048_49d9e7",
+      "number": 48,
+      "title": "Segment 48 (pages 438-445)",
+      "start_page": 438,
+      "end_page": 445
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch049_9dde53",
+      "number": 49,
+      "title": "Segment 49 (pages 446-455)",
+      "start_page": 446,
+      "end_page": 455
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch050_9f7df2",
+      "number": 50,
+      "title": "Segment 50 (pages 456-464)",
+      "start_page": 456,
+      "end_page": 464
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch051_16c4a2",
+      "number": 51,
+      "title": "Segment 51 (pages 465-475)",
+      "start_page": 465,
+      "end_page": 475
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch052_9e93fb",
+      "number": 52,
+      "title": "Segment 52 (pages 476-483)",
+      "start_page": 476,
+      "end_page": 483
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch053_f83123",
+      "number": 53,
+      "title": "Segment 53 (pages 484-491)",
+      "start_page": 484,
+      "end_page": 491
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch054_eddb48",
+      "number": 54,
+      "title": "Segment 54 (pages 492-500)",
+      "start_page": 492,
+      "end_page": 500
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch055_d6b89a",
+      "number": 55,
+      "title": "Segment 55 (pages 501-509)",
+      "start_page": 501,
+      "end_page": 509
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch056_a698eb",
+      "number": 56,
+      "title": "Segment 56 (pages 510-517)",
+      "start_page": 510,
+      "end_page": 517
+    },
+    {
+      "chapter_id": "llmengineershandbook_1af4acf1_ch057_f6416f",
+      "number": 57,
+      "title": "Segment 57 (pages 518-522)",
+      "start_page": 518,
+      "end_page": 522
+    }
+  ],
+  "source_file": "LLM-Engineers-Handbook.json",
+  "extraction_date": "2025-12-14T04:13:06.002073+00:00"
+}

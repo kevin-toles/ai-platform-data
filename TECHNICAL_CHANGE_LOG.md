@@ -203,6 +203,93 @@
 
 ---
 
+### 2025-12-13: Taxonomy-Agnostic Architecture Decision (CL-007)
+
+**Issue**: Original design baked taxonomy tier information into seeded data, requiring re-seeding whenever:
+- A new taxonomy was added
+- An existing taxonomy was modified
+- A user wanted to use a different taxonomy
+
+**Conflict Assessment** (per GUIDELINES_AI_Engineering Section 4.8):
+
+| Option | Description | Pros | Cons |
+|--------|-------------|------|------|
+| **A** | Tier baked into metadata | Simple seeding | Re-seed on any taxonomy change |
+| **B** | Separate tier collection per taxonomy | Clean isolation | Data duplication, complex queries |
+| **C** | Taxonomy as query-time overlay | No re-seeding ever, flexible | Slightly more complex queries |
+
+**Decision**: **Option C - Taxonomy as Query-Time Overlay**
+
+**Rationale**:
+1. **Zero Re-Seeding**: Adding/modifying taxonomies requires NO database operations
+2. **Multi-Tenant Support**: Different teams can use different taxonomies simultaneously
+3. **User-Directed**: Users specify taxonomy via prompt/API at runtime
+4. **Same Book, Different Views**: Book can have different tier/priority in different taxonomies
+
+**Architecture Change**:
+
+```
+BEFORE (Tier Baked In):
+┌─────────────────────────────────────────────────────────────┐
+│  Metadata Extraction                                         │
+│  book.json → extract_metadata.py → metadata with tier=3     │
+│                                    ↓                         │
+│  Seeding                          tier baked into payload   │
+│                                    ↓                         │
+│  Query                            results have fixed tier    │
+│                                                              │
+│  ❌ Change taxonomy = re-seed everything                     │
+└─────────────────────────────────────────────────────────────┘
+
+AFTER (Query-Time Overlay):
+┌─────────────────────────────────────────────────────────────┐
+│  Metadata Extraction                                         │
+│  book.json → extract_metadata.py → metadata (NO tier)       │
+│                                    ↓                         │
+│  Seeding                          tier-agnostic payloads    │
+│                                    ↓                         │
+│  Query (with taxonomy parameter)                             │
+│  1. Search Qdrant (taxonomy-agnostic)                       │
+│  2. Load taxonomy from taxonomies/ directory                │
+│  3. Apply tier mapping at query time                        │
+│  4. Return results with tier attached                        │
+│                                                              │
+│  ✅ Change taxonomy = just edit JSON file, immediate effect │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Files Affected**:
+
+| File | Change |
+|------|--------|
+| `scripts/extract_metadata.py` | Remove tier assignment, make taxonomy-agnostic |
+| `scripts/seed_neo4j.py` | Remove tier from Book/Chapter nodes |
+| `scripts/seed_qdrant.py` | Remove tier from payloads |
+| `taxonomies/` | Remains source of taxonomy files (query-time loaded) |
+
+**API Contract**:
+
+```python
+# Search WITHOUT taxonomy (returns all results, no tier info)
+POST /v1/search/hybrid
+{"query": "rate limiting"}
+
+# Search WITH taxonomy (query-time overlay, no re-seeding!)
+POST /v1/search/hybrid
+{
+    "query": "rate limiting",
+    "taxonomy": "AI-ML_taxonomy",    # Loaded from taxonomies/ at query time
+    "tier_filter": [1, 2]            # Only return tier 1 and 2 books
+}
+```
+
+**WBS Impact**:
+- Added Phase 3.6: Taxonomy Registry & Query-Time Resolution
+- Updated Phase 4 APIs to accept `taxonomy` and `tier_filter` parameters
+- Total duration increased from 26.5 to 27.5 days
+
+---
+
 ## Document Priority Reference
 
 Changes follow this priority hierarchy:

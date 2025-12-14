@@ -1,0 +1,242 @@
+{
+  "book_id": "0321515811pdf_1591e43d",
+  "title": "0321515811.Pdf",
+  "author": "Unknown Author",
+  "tier": 3,
+  "priority": 0.5,
+  "chapters": [
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch001_8b7997",
+      "number": 1,
+      "title": "Segment 1 (pages 1-8)",
+      "start_page": 1,
+      "end_page": 8
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch002_d78b89",
+      "number": 2,
+      "title": "Segment 2 (pages 9-16)",
+      "start_page": 9,
+      "end_page": 16
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch003_a3d955",
+      "number": 3,
+      "title": "Segment 3 (pages 17-24)",
+      "start_page": 17,
+      "end_page": 24
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch004_e2b834",
+      "number": 4,
+      "title": "Segment 4 (pages 25-32)",
+      "start_page": 25,
+      "end_page": 32
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch005_7f2a76",
+      "number": 5,
+      "title": "Segment 5 (pages 33-40)",
+      "start_page": 33,
+      "end_page": 40
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch006_476c5d",
+      "number": 6,
+      "title": "Segment 6 (pages 41-51)",
+      "start_page": 41,
+      "end_page": 51
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch007_27a958",
+      "number": 7,
+      "title": "Segment 7 (pages 52-60)",
+      "start_page": 52,
+      "end_page": 60
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch008_3afe86",
+      "number": 8,
+      "title": "Segment 8 (pages 61-75)",
+      "start_page": 61,
+      "end_page": 75
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch009_ec12b4",
+      "number": 9,
+      "title": "Segment 9 (pages 76-97)",
+      "start_page": 76,
+      "end_page": 97
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch010_99406b",
+      "number": 10,
+      "title": "Segment 10 (pages 98-107)",
+      "start_page": 98,
+      "end_page": 107
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch011_b933fb",
+      "number": 11,
+      "title": "Segment 11 (pages 108-115)",
+      "start_page": 108,
+      "end_page": 115
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch012_de3f50",
+      "number": 12,
+      "title": "Segment 12 (pages 116-123)",
+      "start_page": 116,
+      "end_page": 123
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch013_a924e8",
+      "number": 13,
+      "title": "Segment 13 (pages 124-132)",
+      "start_page": 124,
+      "end_page": 132
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch014_fdac56",
+      "number": 14,
+      "title": "Segment 14 (pages 133-140)",
+      "start_page": 133,
+      "end_page": 140
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch015_4527aa",
+      "number": 15,
+      "title": "Segment 15 (pages 141-151)",
+      "start_page": 141,
+      "end_page": 151
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch016_64e517",
+      "number": 16,
+      "title": "Segment 16 (pages 152-161)",
+      "start_page": 152,
+      "end_page": 161
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch017_4b078b",
+      "number": 17,
+      "title": "Segment 17 (pages 162-169)",
+      "start_page": 162,
+      "end_page": 169
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch018_ea7a43",
+      "number": 18,
+      "title": "Segment 18 (pages 170-177)",
+      "start_page": 170,
+      "end_page": 177
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch019_0c4ad1",
+      "number": 19,
+      "title": "Segment 19 (pages 178-189)",
+      "start_page": 178,
+      "end_page": 189
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch020_b7cd66",
+      "number": 20,
+      "title": "Segment 20 (pages 190-199)",
+      "start_page": 190,
+      "end_page": 199
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch021_3ff43d",
+      "number": 21,
+      "title": "Segment 21 (pages 200-215)",
+      "start_page": 200,
+      "end_page": 215
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch022_5206df",
+      "number": 22,
+      "title": "Segment 22 (pages 216-223)",
+      "start_page": 216,
+      "end_page": 223
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch023_4953d1",
+      "number": 23,
+      "title": "Segment 23 (pages 224-233)",
+      "start_page": 224,
+      "end_page": 233
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch024_df668f",
+      "number": 24,
+      "title": "Segment 24 (pages 234-241)",
+      "start_page": 234,
+      "end_page": 241
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch025_170254",
+      "number": 25,
+      "title": "Segment 25 (pages 242-261)",
+      "start_page": 242,
+      "end_page": 261
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch026_76bab8",
+      "number": 26,
+      "title": "Segment 26 (pages 262-270)",
+      "start_page": 262,
+      "end_page": 270
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch027_54b278",
+      "number": 27,
+      "title": "Segment 27 (pages 271-284)",
+      "start_page": 271,
+      "end_page": 284
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch028_bc9b06",
+      "number": 28,
+      "title": "Segment 28 (pages 285-292)",
+      "start_page": 285,
+      "end_page": 292
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch029_b8d57e",
+      "number": 29,
+      "title": "Segment 29 (pages 293-301)",
+      "start_page": 293,
+      "end_page": 301
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch030_930fc3",
+      "number": 30,
+      "title": "Segment 30 (pages 302-311)",
+      "start_page": 302,
+      "end_page": 311
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch031_0fa1fe",
+      "number": 31,
+      "title": "Segment 31 (pages 312-319)",
+      "start_page": 312,
+      "end_page": 319
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch032_cf0330",
+      "number": 32,
+      "title": "Segment 32 (pages 320-329)",
+      "start_page": 320,
+      "end_page": 329
+    },
+    {
+      "chapter_id": "0321515811pdf_1591e43d_ch033_52c8f4",
+      "number": 33,
+      "title": "Segment 33 (pages 330-335)",
+      "start_page": 330,
+      "end_page": 335
+    }
+  ],
+  "source_file": "More Effective C++.json",
+  "extraction_date": "2025-12-14T04:13:06.214690+00:00"
+}
