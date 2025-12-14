@@ -6,6 +6,46 @@
 
 ## Changelog
 
+### 2025-12-13: Enrichment Scalability - Full Corpus Pattern (CL-008)
+
+**Phase**: 3.7 Incremental/Delta Enrichment Pipeline
+
+**Issue**: Enriched book data (`similar_chapters`) was computed per taxonomy, creating scalability issues:
+- Different enriched files needed per taxonomy
+- Adding new book required O(n²) re-enrichment
+- Storage: 47 books × t taxonomies = 47t files
+
+**Decision**: Compute `similar_chapters` against FULL corpus, filter at query-time
+
+**Impact on this Repository**:
+
+| Component | Change |
+|-----------|--------|
+| `books/enriched/*.json` | `similar_chapters` now references ANY book in corpus, not taxonomy-limited |
+| `scripts/enrich_new_book.py` | NEW: Delta enrichment script for incremental updates |
+| `books/enriched/` count | Stays at 47 (one per book, not per taxonomy) |
+
+**Schema Implications**:
+- `book_enriched.schema.json` unchanged (already supports flexible `similar_chapters`)
+- `similar_chapters[].book` can reference any book, filtered at query-time
+
+**Query-Time Filtering**:
+```python
+# API call with taxonomy filter
+POST /v1/search/similar-chapters
+{
+    "chapter_id": "arch_patterns_ch4",
+    "taxonomy": "AI-ML_taxonomy"  # Filter similar_chapters by books in this taxonomy
+}
+```
+
+**Benefits for ai-platform-data**:
+1. Single enriched file per book (not per taxonomy)
+2. Adding new book = O(n) delta update, not O(n²) full re-run
+3. Taxonomy changes don't require re-enrichment
+
+---
+
 ### 2025-12-13: Initial Repository Setup (CL-001)
 
 **Phase**: 1.1 ai-platform-data Scaffolding
