@@ -29,7 +29,8 @@ QDRANT_CONFIG_DIR = DOCKER_DIR / "qdrant" / "config"
 
 REQUIRED_SERVICES = {"neo4j", "qdrant", "redis"}
 EXPECTED_NEO4J_IMAGE = "neo4j:5.15-community"
-EXPECTED_QDRANT_IMAGE = "qdrant/qdrant:v1.7.4"
+# Option D: Qdrant uses custom image with healthcheck (built from Dockerfile)
+EXPECTED_QDRANT_IMAGE = "ai-platform-qdrant:v1.12.0-health"
 EXPECTED_REDIS_IMAGE = "redis:7-alpine"
 
 
@@ -116,7 +117,11 @@ class TestServiceImages:
 
 
 class TestServicePorts:
-    """Test that services expose correct ports per WBS 2.1 spec."""
+    """Test that services expose correct ports per WBS 2.1 spec.
+    
+    Option D Architecture: Uses 'expose:' instead of 'ports:' for internal-only
+    networking (K8s-native pattern). Services connect via Docker DNS names.
+    """
 
     @pytest.fixture
     def compose_data(self) -> dict[str, Any]:
@@ -124,43 +129,44 @@ class TestServicePorts:
         return yaml.safe_load(COMPOSE_FILE.read_text())
 
     def test_neo4j_http_port(self, compose_data: dict[str, Any]) -> None:
-        """Neo4j must expose HTTP port 7474."""
+        """Neo4j must expose HTTP port 7474 (internal)."""
         neo4j = compose_data["services"]["neo4j"]
-        ports = neo4j.get("ports", [])
-        assert any("7474:7474" in str(p) for p in ports), (
-            "Neo4j must expose port 7474 (HTTP)"
+        # Option D: Uses 'expose' not 'ports' (internal networking)
+        expose = neo4j.get("expose", [])
+        assert any("7474" in str(p) for p in expose), (
+            "Neo4j must expose port 7474 (HTTP) via 'expose:'"
         )
 
     def test_neo4j_bolt_port(self, compose_data: dict[str, Any]) -> None:
-        """Neo4j must expose Bolt port 7687."""
+        """Neo4j must expose Bolt port 7687 (internal)."""
         neo4j = compose_data["services"]["neo4j"]
-        ports = neo4j.get("ports", [])
-        assert any("7687:7687" in str(p) for p in ports), (
-            "Neo4j must expose port 7687 (Bolt)"
+        expose = neo4j.get("expose", [])
+        assert any("7687" in str(p) for p in expose), (
+            "Neo4j must expose port 7687 (Bolt) via 'expose:'"
         )
 
     def test_qdrant_http_port(self, compose_data: dict[str, Any]) -> None:
-        """Qdrant must expose HTTP port 6333."""
+        """Qdrant must expose HTTP port 6333 (internal)."""
         qdrant = compose_data["services"]["qdrant"]
-        ports = qdrant.get("ports", [])
-        assert any("6333:6333" in str(p) for p in ports), (
-            "Qdrant must expose port 6333 (HTTP)"
+        expose = qdrant.get("expose", [])
+        assert any("6333" in str(p) for p in expose), (
+            "Qdrant must expose port 6333 (HTTP) via 'expose:'"
         )
 
     def test_qdrant_grpc_port(self, compose_data: dict[str, Any]) -> None:
-        """Qdrant must expose gRPC port 6334."""
+        """Qdrant must expose gRPC port 6334 (internal)."""
         qdrant = compose_data["services"]["qdrant"]
-        ports = qdrant.get("ports", [])
-        assert any("6334:6334" in str(p) for p in ports), (
-            "Qdrant must expose port 6334 (gRPC)"
+        expose = qdrant.get("expose", [])
+        assert any("6334" in str(p) for p in expose), (
+            "Qdrant must expose port 6334 (gRPC) via 'expose:'"
         )
 
     def test_redis_port(self, compose_data: dict[str, Any]) -> None:
-        """Redis must expose port 6379."""
+        """Redis must expose port 6379 (internal)."""
         redis = compose_data["services"]["redis"]
-        ports = redis.get("ports", [])
-        assert any("6379:6379" in str(p) for p in ports), (
-            "Redis must expose port 6379"
+        expose = redis.get("expose", [])
+        assert any("6379" in str(p) for p in expose), (
+            "Redis must expose port 6379 via 'expose:'"
         )
 
 
@@ -242,12 +248,12 @@ class TestHealthChecks:
         )
 
     def test_qdrant_healthcheck_valid(self, compose_data: dict[str, Any]) -> None:
-        """Qdrant healthcheck must use /health endpoint."""
+        """Qdrant healthcheck must use /readyz or /health endpoint."""
         healthcheck = compose_data["services"]["qdrant"]["healthcheck"]
         test = healthcheck.get("test", [])
-        # Should test /health endpoint
-        assert any("/health" in str(t) for t in test), (
-            "Qdrant healthcheck must test /health endpoint"
+        # Qdrant 1.12+ uses /readyz for K8s-style health checks
+        assert any("/readyz" in str(t) or "/health" in str(t) for t in test), (
+            "Qdrant healthcheck must test /readyz or /health endpoint"
         )
 
     def test_redis_healthcheck_valid(self, compose_data: dict[str, Any]) -> None:
