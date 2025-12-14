@@ -10,7 +10,92 @@
     "conversion_method": "PyMuPDF + OCR fallback",
     "source_pdf": "Building Microservices.pdf"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Microservices",
+      "start_page": 15,
+      "end_page": 34,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 2,
+      "title": "The Evolutionary Architect",
+      "start_page": 35,
+      "end_page": 61,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 3,
+      "title": "How to Model Services",
+      "start_page": 62,
+      "end_page": 79,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 4,
+      "title": "Integration",
+      "start_page": 80,
+      "end_page": 144,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 5,
+      "title": "Splitting the Monolith",
+      "start_page": 145,
+      "end_page": 187,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 6,
+      "title": "Deployment",
+      "start_page": 188,
+      "end_page": 230,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 7,
+      "title": "Testing",
+      "start_page": 231,
+      "end_page": 267,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 8,
+      "title": "Monitoring",
+      "start_page": 268,
+      "end_page": 285,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 9,
+      "title": "Security",
+      "start_page": 286,
+      "end_page": 322,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 10,
+      "title": "Conway’s Law and System",
+      "start_page": 323,
+      "end_page": 346,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 11,
+      "title": "Microservices at Scale",
+      "start_page": 347,
+      "end_page": 410,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 12,
+      "title": "Bringing It All Together",
+      "start_page": 411,
+      "end_page": 473,
+      "detection_method": "regex_chapter_title"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

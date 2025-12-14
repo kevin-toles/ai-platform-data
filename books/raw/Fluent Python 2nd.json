@@ -9,7 +9,358 @@
     "conversion_date": "2025-11-05T18:42:12.964519",
     "conversion_method": "PyMuPDF + OCR fallback"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Segment 1 (pages 1-19)",
+      "start_page": 1,
+      "end_page": 19,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 2,
+      "title": "Segment 2 (pages 20-40)",
+      "start_page": 20,
+      "end_page": 40,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 3,
+      "title": "Segment 3 (pages 41-61)",
+      "start_page": 41,
+      "end_page": 61,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 4,
+      "title": "Segment 4 (pages 62-83)",
+      "start_page": 62,
+      "end_page": 83,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 5,
+      "title": "Segment 5 (pages 84-106)",
+      "start_page": 84,
+      "end_page": 106,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 6,
+      "title": "Segment 6 (pages 107-127)",
+      "start_page": 107,
+      "end_page": 127,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 7,
+      "title": "Segment 7 (pages 128-146)",
+      "start_page": 128,
+      "end_page": 146,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 8,
+      "title": "Segment 8 (pages 147-169)",
+      "start_page": 147,
+      "end_page": 169,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 9,
+      "title": "Segment 9 (pages 170-191)",
+      "start_page": 170,
+      "end_page": 191,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 10,
+      "title": "Segment 10 (pages 192-209)",
+      "start_page": 192,
+      "end_page": 209,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 11,
+      "title": "Segment 11 (pages 210-230)",
+      "start_page": 210,
+      "end_page": 230,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 12,
+      "title": "Segment 12 (pages 231-249)",
+      "start_page": 231,
+      "end_page": 249,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 13,
+      "title": "Segment 13 (pages 250-271)",
+      "start_page": 250,
+      "end_page": 271,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 14,
+      "title": "Segment 14 (pages 272-289)",
+      "start_page": 272,
+      "end_page": 289,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 15,
+      "title": "Segment 15 (pages 290-311)",
+      "start_page": 290,
+      "end_page": 311,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 16,
+      "title": "Segment 16 (pages 312-333)",
+      "start_page": 312,
+      "end_page": 333,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 17,
+      "title": "Segment 17 (pages 334-353)",
+      "start_page": 334,
+      "end_page": 353,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 18,
+      "title": "Segment 18 (pages 354-371)",
+      "start_page": 354,
+      "end_page": 371,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 19,
+      "title": "Segment 19 (pages 372-391)",
+      "start_page": 372,
+      "end_page": 391,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 20,
+      "title": "Segment 20 (pages 392-414)",
+      "start_page": 392,
+      "end_page": 414,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 21,
+      "title": "Segment 21 (pages 415-432)",
+      "start_page": 415,
+      "end_page": 432,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 22,
+      "title": "Segment 22 (pages 433-453)",
+      "start_page": 433,
+      "end_page": 453,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 23,
+      "title": "Segment 23 (pages 454-475)",
+      "start_page": 454,
+      "end_page": 475,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 24,
+      "title": "Segment 24 (pages 476-496)",
+      "start_page": 476,
+      "end_page": 496,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 25,
+      "title": "Segment 25 (pages 497-516)",
+      "start_page": 497,
+      "end_page": 516,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 26,
+      "title": "Segment 26 (pages 517-534)",
+      "start_page": 517,
+      "end_page": 534,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 27,
+      "title": "Segment 27 (pages 535-552)",
+      "start_page": 535,
+      "end_page": 552,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 28,
+      "title": "Segment 28 (pages 553-575)",
+      "start_page": 553,
+      "end_page": 575,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 29,
+      "title": "Segment 29 (pages 576-595)",
+      "start_page": 576,
+      "end_page": 595,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 30,
+      "title": "Segment 30 (pages 596-614)",
+      "start_page": 596,
+      "end_page": 614,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 31,
+      "title": "Segment 31 (pages 615-636)",
+      "start_page": 615,
+      "end_page": 636,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 32,
+      "title": "Segment 32 (pages 637-655)",
+      "start_page": 637,
+      "end_page": 655,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 33,
+      "title": "Segment 33 (pages 656-676)",
+      "start_page": 656,
+      "end_page": 676,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 34,
+      "title": "Segment 34 (pages 677-699)",
+      "start_page": 677,
+      "end_page": 699,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 35,
+      "title": "Segment 35 (pages 700-717)",
+      "start_page": 700,
+      "end_page": 717,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 36,
+      "title": "Segment 36 (pages 718-737)",
+      "start_page": 718,
+      "end_page": 737,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 37,
+      "title": "Segment 37 (pages 738-758)",
+      "start_page": 738,
+      "end_page": 758,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 38,
+      "title": "Segment 38 (pages 759-777)",
+      "start_page": 759,
+      "end_page": 777,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 39,
+      "title": "Segment 39 (pages 778-797)",
+      "start_page": 778,
+      "end_page": 797,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 40,
+      "title": "Segment 40 (pages 798-818)",
+      "start_page": 798,
+      "end_page": 818,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 41,
+      "title": "Segment 41 (pages 819-841)",
+      "start_page": 819,
+      "end_page": 841,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 42,
+      "title": "Segment 42 (pages 842-862)",
+      "start_page": 842,
+      "end_page": 862,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 43,
+      "title": "Segment 43 (pages 863-885)",
+      "start_page": 863,
+      "end_page": 885,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 44,
+      "title": "Segment 44 (pages 886-908)",
+      "start_page": 886,
+      "end_page": 908,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 45,
+      "title": "Segment 45 (pages 909-929)",
+      "start_page": 909,
+      "end_page": 929,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 46,
+      "title": "Segment 46 (pages 930-951)",
+      "start_page": 930,
+      "end_page": 951,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 47,
+      "title": "Segment 47 (pages 952-973)",
+      "start_page": 952,
+      "end_page": 973,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 48,
+      "title": "Segment 48 (pages 974-992)",
+      "start_page": 974,
+      "end_page": 992,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 49,
+      "title": "Segment 49 (pages 993-1010)",
+      "start_page": 993,
+      "end_page": 1010,
+      "detection_method": "synthetic"
+    },
+    {
+      "number": 50,
+      "title": "Segment 50 (pages 1011-1011)",
+      "start_page": 1011,
+      "end_page": 1011,
+      "detection_method": "synthetic"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

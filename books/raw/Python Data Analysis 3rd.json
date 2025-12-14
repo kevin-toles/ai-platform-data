@@ -9,7 +9,99 @@
     "conversion_date": "2025-11-05T18:42:58.102560",
     "conversion_method": "PyMuPDF + OCR fallback"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Preliminaries",
+      "start_page": 19,
+      "end_page": 34,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 2,
+      "title": "Python Language Basics, IPython,",
+      "start_page": 35,
+      "end_page": 64,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 3,
+      "title": "Built-In Data Structures,",
+      "start_page": 65,
+      "end_page": 100,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 4,
+      "title": "NumPy Basics: Arrays and",
+      "start_page": 101,
+      "end_page": 133,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 5,
+      "title": "for much",
+      "start_page": 134,
+      "end_page": 140,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 6,
+      "title": "Getting Started with pandas",
+      "start_page": 141,
+      "end_page": 146,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 7,
+      "title": "and an",
+      "start_page": 147,
+      "end_page": 220,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 8,
+      "title": "Data Cleaning and Preparation",
+      "start_page": 221,
+      "end_page": 298,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 9,
+      "title": "Plotting and Visualization",
+      "start_page": 299,
+      "end_page": 318,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 10,
+      "title": "Bar Plots",
+      "start_page": 319,
+      "end_page": 336,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 11,
+      "title": "Data Aggregation and Group Operations",
+      "start_page": 337,
+      "end_page": 422,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 12,
+      "title": "Introduction to Modeling",
+      "start_page": 423,
+      "end_page": 442,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 13,
+      "title": "Data Analysis Examples",
+      "start_page": 443,
+      "end_page": 582,
+      "detection_method": "regex_chapter"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

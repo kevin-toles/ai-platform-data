@@ -10,7 +10,99 @@
     "conversion_method": "PyMuPDF + OCR fallback",
     "source_pdf": "Architecture-Patterns-with-Python.pdf"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Domain Modeling",
+      "start_page": 46,
+      "end_page": 73,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 2,
+      "title": "Repository Pattern",
+      "start_page": 74,
+      "end_page": 102,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 3,
+      "title": "A Brief Interlude:",
+      "start_page": 103,
+      "end_page": 121,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 4,
+      "title": "Our First Use",
+      "start_page": 122,
+      "end_page": 149,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 5,
+      "title": "TDD in High Gear",
+      "start_page": 150,
+      "end_page": 163,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 6,
+      "title": "Unit of Work",
+      "start_page": 164,
+      "end_page": 184,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 7,
+      "title": "Aggregates and",
+      "start_page": 185,
+      "end_page": 222,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 8,
+      "title": "Events and the",
+      "start_page": 223,
+      "end_page": 246,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 9,
+      "title": "Going to Town on",
+      "start_page": 247,
+      "end_page": 275,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 10,
+      "title": "Commands and",
+      "start_page": 276,
+      "end_page": 290,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 11,
+      "title": "Event-Driven",
+      "start_page": 291,
+      "end_page": 309,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 12,
+      "title": "Command-Query",
+      "start_page": 310,
+      "end_page": 334,
+      "detection_method": "regex_chapter_title"
+    },
+    {
+      "number": 13,
+      "title": "Dependency",
+      "start_page": 335,
+      "end_page": 497,
+      "detection_method": "regex_chapter_title"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

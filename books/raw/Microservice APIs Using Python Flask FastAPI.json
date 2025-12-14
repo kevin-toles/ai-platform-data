@@ -10,7 +10,309 @@
     "conversion_method": "PyMuPDF + OCR fallback",
     "source_pdf": "microservice_apis_using_python_flask_fastapi_open.pdf"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Segment 1 (pages 1-8)",
+      "start_page": 1,
+      "end_page": 8,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 2,
+      "title": "Segment 2 (pages 9-16)",
+      "start_page": 9,
+      "end_page": 16,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 3,
+      "title": "Segment 3 (pages 17-24)",
+      "start_page": 17,
+      "end_page": 24,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 4,
+      "title": "Segment 4 (pages 25-34)",
+      "start_page": 25,
+      "end_page": 34,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 5,
+      "title": "Segment 5 (pages 35-42)",
+      "start_page": 35,
+      "end_page": 42,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 6,
+      "title": "Segment 6 (pages 43-51)",
+      "start_page": 43,
+      "end_page": 51,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 7,
+      "title": "Segment 7 (pages 52-59)",
+      "start_page": 52,
+      "end_page": 59,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 8,
+      "title": "Segment 8 (pages 60-71)",
+      "start_page": 60,
+      "end_page": 71,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 9,
+      "title": "Segment 9 (pages 72-80)",
+      "start_page": 72,
+      "end_page": 80,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 10,
+      "title": "Segment 10 (pages 81-91)",
+      "start_page": 81,
+      "end_page": 91,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 11,
+      "title": "Segment 11 (pages 92-103)",
+      "start_page": 92,
+      "end_page": 103,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 12,
+      "title": "Segment 12 (pages 104-116)",
+      "start_page": 104,
+      "end_page": 116,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 13,
+      "title": "Segment 13 (pages 117-126)",
+      "start_page": 117,
+      "end_page": 126,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 14,
+      "title": "Segment 14 (pages 127-135)",
+      "start_page": 127,
+      "end_page": 135,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 15,
+      "title": "Segment 15 (pages 136-143)",
+      "start_page": 136,
+      "end_page": 143,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 16,
+      "title": "Segment 16 (pages 144-156)",
+      "start_page": 144,
+      "end_page": 156,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 17,
+      "title": "Segment 17 (pages 157-164)",
+      "start_page": 157,
+      "end_page": 164,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 18,
+      "title": "Segment 18 (pages 165-177)",
+      "start_page": 165,
+      "end_page": 177,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 19,
+      "title": "Segment 19 (pages 178-191)",
+      "start_page": 178,
+      "end_page": 191,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 20,
+      "title": "Segment 20 (pages 192-200)",
+      "start_page": 192,
+      "end_page": 200,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 21,
+      "title": "Segment 21 (pages 201-209)",
+      "start_page": 201,
+      "end_page": 209,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 22,
+      "title": "Segment 22 (pages 210-219)",
+      "start_page": 210,
+      "end_page": 219,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 23,
+      "title": "Segment 23 (pages 220-231)",
+      "start_page": 220,
+      "end_page": 231,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 24,
+      "title": "Segment 24 (pages 232-239)",
+      "start_page": 232,
+      "end_page": 239,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 25,
+      "title": "Segment 25 (pages 240-252)",
+      "start_page": 240,
+      "end_page": 252,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 26,
+      "title": "Segment 26 (pages 253-260)",
+      "start_page": 253,
+      "end_page": 260,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 27,
+      "title": "Segment 27 (pages 261-276)",
+      "start_page": 261,
+      "end_page": 276,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 28,
+      "title": "Segment 28 (pages 277-289)",
+      "start_page": 277,
+      "end_page": 289,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 29,
+      "title": "Segment 29 (pages 290-298)",
+      "start_page": 290,
+      "end_page": 298,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 30,
+      "title": "Segment 30 (pages 299-319)",
+      "start_page": 299,
+      "end_page": 319,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 31,
+      "title": "Segment 31 (pages 320-327)",
+      "start_page": 320,
+      "end_page": 327,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 32,
+      "title": "Segment 32 (pages 328-342)",
+      "start_page": 328,
+      "end_page": 342,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 33,
+      "title": "Segment 33 (pages 343-351)",
+      "start_page": 343,
+      "end_page": 351,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 34,
+      "title": "Segment 34 (pages 352-361)",
+      "start_page": 352,
+      "end_page": 361,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 35,
+      "title": "Segment 35 (pages 362-369)",
+      "start_page": 362,
+      "end_page": 369,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 36,
+      "title": "Segment 36 (pages 370-377)",
+      "start_page": 370,
+      "end_page": 377,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 37,
+      "title": "Segment 37 (pages 378-388)",
+      "start_page": 378,
+      "end_page": 388,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 38,
+      "title": "Segment 38 (pages 389-397)",
+      "start_page": 389,
+      "end_page": 397,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 39,
+      "title": "Segment 39 (pages 398-407)",
+      "start_page": 398,
+      "end_page": 407,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 40,
+      "title": "Segment 40 (pages 408-418)",
+      "start_page": 408,
+      "end_page": 418,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 41,
+      "title": "Segment 41 (pages 419-429)",
+      "start_page": 419,
+      "end_page": 429,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 42,
+      "title": "Segment 42 (pages 430-440)",
+      "start_page": 430,
+      "end_page": 440,
+      "detection_method": "topic_boundary"
+    },
+    {
+      "number": 43,
+      "title": "Segment 43 (pages 441-442)",
+      "start_page": 441,
+      "end_page": 442,
+      "detection_method": "topic_boundary"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

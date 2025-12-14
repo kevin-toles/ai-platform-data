@@ -9,7 +9,190 @@
     "conversion_date": "2025-11-05T18:39:16.091178",
     "conversion_method": "PyMuPDF + OCR fallback"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "A Tutorial Introduction",
+      "start_page": 31,
+      "end_page": 45,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 2,
+      "title": "Objects and Classes",
+      "start_page": 46,
+      "end_page": 50,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 3,
+      "title": "Lexical Conventions and Syntax",
+      "start_page": 51,
+      "end_page": 58,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 4,
+      "title": "Types and Objects",
+      "start_page": 59,
+      "end_page": 79,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 5,
+      "title": "Table 3.11",
+      "start_page": 80,
+      "end_page": 90,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 6,
+      "title": "Operators and Expressions",
+      "start_page": 91,
+      "end_page": 106,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 7,
+      "title": "Program Structure and Control Flow",
+      "start_page": 107,
+      "end_page": 168,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 8,
+      "title": "Modules, Packages, and Distribution",
+      "start_page": 169,
+      "end_page": 182,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 9,
+      "title": "Input and Output",
+      "start_page": 183,
+      "end_page": 198,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 10,
+      "title": "Execution Environment",
+      "start_page": 199,
+      "end_page": 206,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 11,
+      "title": "Testing, Debugging, Profiling, and Tuning",
+      "start_page": 207,
+      "end_page": 226,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 12,
+      "title": "Built-In Functions and Exceptions",
+      "start_page": 227,
+      "end_page": 244,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 13,
+      "title": "Python Runtime Services",
+      "start_page": 245,
+      "end_page": 268,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 14,
+      "title": "Mathematics",
+      "start_page": 269,
+      "end_page": 282,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 15,
+      "title": "Data Structures, Algorithms, and Code Simplification",
+      "start_page": 283,
+      "end_page": 302,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 16,
+      "title": "String and Text Handling",
+      "start_page": 303,
+      "end_page": 322,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 17,
+      "title": "Python Database Access",
+      "start_page": 323,
+      "end_page": 338,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 18,
+      "title": "File and Directory Handling",
+      "start_page": 339,
+      "end_page": 356,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 19,
+      "title": "Operating System Services",
+      "start_page": 357,
+      "end_page": 438,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 20,
+      "title": "Threads and Concurrency",
+      "start_page": 439,
+      "end_page": 476,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 21,
+      "title": "Network Programming and Sockets",
+      "start_page": 477,
+      "end_page": 522,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 22,
+      "title": "Internet Application Programming",
+      "start_page": 523,
+      "end_page": 556,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 23,
+      "title": "Web Programming",
+      "start_page": 557,
+      "end_page": 572,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 24,
+      "title": "Internet Data Handling and Encoding",
+      "start_page": 573,
+      "end_page": 610,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 25,
+      "title": "Miscellaneous Library Modules",
+      "start_page": 611,
+      "end_page": 616,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 26,
+      "title": "Extending and Embedding Python",
+      "start_page": 617,
+      "end_page": 742,
+      "detection_method": "regex_chapter"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

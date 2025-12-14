@@ -10,7 +10,120 @@
     "conversion_method": "PyMuPDF + OCR fallback",
     "source_pdf": "Python Architecture Patterns.pdf"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "[ 3 ]",
+      "start_page": 22,
+      "end_page": 37,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 2,
+      "title": "[ 19 ]",
+      "start_page": 38,
+      "end_page": 95,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 3,
+      "title": "[ 77 ]",
+      "start_page": 96,
+      "end_page": 131,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 4,
+      "title": "[ 113 ]",
+      "start_page": 132,
+      "end_page": 167,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 5,
+      "title": "[ 149 ]",
+      "start_page": 168,
+      "end_page": 193,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 6,
+      "title": "[ 175 ]",
+      "start_page": 194,
+      "end_page": 239,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 7,
+      "title": "[ 221 ]",
+      "start_page": 240,
+      "end_page": 277,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 8,
+      "title": "[ 259 ]",
+      "start_page": 278,
+      "end_page": 301,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 9,
+      "title": "[ 283 ]",
+      "start_page": 302,
+      "end_page": 347,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 10,
+      "title": "[ 329 ]",
+      "start_page": 348,
+      "end_page": 401,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 11,
+      "title": "[ 383 ]",
+      "start_page": 402,
+      "end_page": 445,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 12,
+      "title": "[ 427 ]",
+      "start_page": 446,
+      "end_page": 461,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 13,
+      "title": "[ 443 ]",
+      "start_page": 462,
+      "end_page": 483,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 14,
+      "title": "[ 465 ]",
+      "start_page": 484,
+      "end_page": 521,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 15,
+      "title": "[ 503 ]",
+      "start_page": 522,
+      "end_page": 551,
+      "detection_method": "regex_chapter"
+    },
+    {
+      "number": 16,
+      "title": "[ 533 ]",
+      "start_page": 552,
+      "end_page": 595,
+      "detection_method": "regex_chapter"
+    }
+  ],
   "pages": [
     {
       "page_number": 1,

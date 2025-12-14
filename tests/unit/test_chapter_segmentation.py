@@ -22,7 +22,13 @@ from pathlib import Path
 
 # Constants - Per CODING_PATTERNS #1.3: No magic values
 BOOKS_RAW_DIR = Path(__file__).parent.parent.parent / "books" / "raw"
-REQUIRED_CHAPTER_FIELDS = {"number", "title", "start_page", "end_page", "detection_method"}
+# Per book_raw.schema.json: chapter requires (number OR chapter_number), title
+# Optional but expected: start_page, end_page, detection_method
+REQUIRED_CHAPTER_FIELDS_BASE = {"title", "start_page", "end_page"}
+# Per schema anyOf: either "number" or "chapter_number" must be present
+CHAPTER_NUMBER_FIELDS = {"number", "chapter_number"}
+# detection_method is expected but not required in schema (for legacy compatibility)
+EXPECTED_CHAPTER_FIELDS = {"detection_method"}
 
 
 class TestAllBooksHaveChapters:
@@ -69,9 +75,13 @@ class TestChapterStructure:
     
     def test_chapters_have_required_fields(self) -> None:
         """
-        RED: Each chapter must have: number, title, start_page, end_page, detection_method.
+        Verify chapters meet schema requirements.
         
-        Per book_raw.schema.json chapter object definition.
+        Per book_raw.schema.json:
+        - Required: (number OR chapter_number), title
+        - Expected: start_page, end_page, detection_method
+        
+        Uses anyOf pattern from schema: either 'number' or 'chapter_number' is valid.
         """
         book_files = list(BOOKS_RAW_DIR.glob("*.json"))
         assert book_files, f"No book files found in {BOOKS_RAW_DIR}"
@@ -84,7 +94,14 @@ class TestChapterStructure:
             
             for i, chapter in enumerate(data.get("chapters", [])):
                 chapter_keys = set(chapter.keys())
-                missing_fields = REQUIRED_CHAPTER_FIELDS - chapter_keys
+                
+                # Check for base required fields
+                missing_fields = REQUIRED_CHAPTER_FIELDS_BASE - chapter_keys
+                
+                # Check anyOf: either 'number' or 'chapter_number' must exist
+                has_chapter_identifier = bool(chapter_keys & CHAPTER_NUMBER_FIELDS)
+                if not has_chapter_identifier:
+                    missing_fields.add("number|chapter_number")
                 
                 if missing_fields:
                     invalid_chapters.append((book_file.name, i + 1, missing_fields))

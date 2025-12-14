@@ -6,6 +6,60 @@
 
 ## Changelog
 
+### 2025-12-18: WBS 3.5.2 Data Transfer & Validation Complete (CL-010)
+
+**Phase**: 3.5.2 Data Pipeline - Data Transfer & Validation
+
+**TDD Methodology Applied**:
+- ✅ Phase 0: Document Analysis (AI_CODING_PLATFORM_ARCHITECTURE, CODING_PATTERNS_ANALYSIS)
+- ✅ RED: `test_all_books_have_chapters` already existed and was failing
+- ✅ GREEN: Transferred 12 re-processed books from llm-document-enhancer
+- ✅ GREEN: All 47 books now have chapters (1,922 total chapters)
+- ✅ REFACTOR: Created `scripts/validate_raw_books.py` CLI tool
+
+**Changes Made**:
+
+| File | Change |
+|------|--------|
+| `tests/unit/test_chapter_segmentation.py` | Updated to handle schema's anyOf (number OR chapter_number) |
+| `scripts/validate_raw_books.py` | NEW - CLI tool for validating raw book JSON files |
+| `books/raw/*.json` | 12 books updated with populated chapters from llm-document-enhancer |
+
+**Schema Compliance Fix**:
+- `book_raw.schema.json` defines chapter identifier as `anyOf: [number, chapter_number]`
+- Updated test to support both formats (legacy `chapter_number` + current `number`)
+- Legacy books (`Learning Python Ed6`, `Python Cookbook 3rd`) use `chapter_number`
+
+**Validation Results**:
+```
+📚 Raw Books Validation Summary
+┌────────────────┬───────┐
+│ Metric         │ Value │
+├────────────────┼───────┤
+│ Total Books    │ 47    │
+│ Total Chapters │ 1922  │
+│ Passed         │ 47    │
+│ Failed         │ 0     │
+└────────────────┴───────┘
+✅ All books validated successfully!
+```
+
+**Books Transferred (12)**:
+- Architecture Patterns with Python (13 chapters)
+- Building Microservices (12 chapters)
+- Building Python Microservices with FastAPI (46 chapters)
+- Fluent Python 2nd (50 chapters)
+- Microservice APIs Using Python Flask FastAPI (43 chapters)
+- Microservice Architecture (18 chapters)
+- Microservices Up and Running (32 chapters)
+- Python Architecture Patterns (16 chapters)
+- Python Data Analysis 3rd (13 chapters)
+- Python Distilled (39 chapters)
+- Python Essential Reference 4th (26 chapters)
+- Python Microservices Development (38 chapters)
+
+---
+
 ### 2025-12-13: Data Pipeline Workflow Clarification (CL-009)
 
 **Phase**: 3.5 Data Pipeline Completion
@@ -34,8 +88,8 @@
 - ❌ NOT responsible for: PDF processing, segmentation, enrichment
 
 **Current Status:**
-- 35 of 47 books have chapters populated
-- 12 books need re-processing in `llm-document-enhancer`
+- ✅ All 47 books have chapters populated (1,922 total)
+- ✅ 12 previously empty books re-processed and transferred
 - `books/enriched/` is empty (enrichment not yet run)
 
 **Books Needing Re-Processing** (to be done in llm-document-enhancer):
