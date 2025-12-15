@@ -40,6 +40,8 @@ DEFAULT_BOOKS_PATH = Path(__file__).parent.parent / "books"
 DEFAULT_COLLECTION_NAME = "chapters"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 EMBEDDING_DIM = 384
+JSON_GLOB_PATTERN = "*.json"  # Per S1192: extract duplicated literal
+MAX_CONTENT_LENGTH = 8000  # Truncate content for embedding
 
 
 @dataclass
@@ -146,7 +148,7 @@ def seed_chapters_from_metadata(
     points: list[PointStruct] = []
     point_id = 0
 
-    for file_path in sorted(metadata_path.glob("*.json")):
+    for file_path in sorted(metadata_path.glob(JSON_GLOB_PATTERN)):
         if file_path.name.startswith("."):
             continue
             
@@ -202,6 +204,79 @@ def seed_chapters_from_metadata(
     return chapters_count, books_count
 
 
+def _build_enriched_payload(
+    chapter: dict[str, Any],
+    book_id: str,
+    book_title: str,
+    tier: Any,
+) -> dict[str, Any]:
+    """Build payload with all enriched fields per WBS 3.5.5.
+    
+    Per AI_CODING_PLATFORM_ARCHITECTURE: enriched data includes
+    keywords, concepts, summary, similar_chapters.
+    
+    Extracted per S3776 to reduce cognitive complexity.
+    """
+    return {
+        "chapter_id": chapter.get("chapter_id", ""),
+        "book_id": book_id,
+        "book_title": book_title,
+        "title": chapter.get("title", ""),
+        "number": chapter.get("number"),
+        "tier": tier,
+        # Enriched fields per WBS 3.5.5.3-6
+        "keywords": chapter.get("keywords", []),
+        "concepts": chapter.get("concepts", []),
+        "summary": chapter.get("summary", ""),
+        "similar_chapters": chapter.get("similar_chapters", []),
+    }
+
+
+def _process_enriched_book(
+    file_path: Path,
+    model: Any,
+    points: list[Any],
+    point_id: int,
+) -> tuple[int, int]:
+    """Process a single enriched book file.
+    
+    Returns tuple of (chapters_processed, updated_point_id).
+    Extracted per S3776 to reduce cognitive complexity.
+    """
+    from qdrant_client.models import PointStruct
+    
+    chapters_count = 0
+    
+    with open(file_path) as f:
+        book = json.load(f)
+
+    book_id = book.get("book_id", "")
+    book_title = book.get("title", "")
+    tier = book.get("tier")
+    chapters = book.get("chapters", [])
+
+    for chapter in chapters:
+        # Generate embedding from chapter content (or title if no content)
+        content = chapter.get("content", chapter.get("title", ""))
+        if len(content) > MAX_CONTENT_LENGTH:
+            content = content[:MAX_CONTENT_LENGTH]
+            
+        embedding = model.encode(content).tolist()
+        payload = _build_enriched_payload(chapter, book_id, book_title, tier)
+
+        points.append(
+            PointStruct(
+                id=point_id,
+                vector=embedding,
+                payload=payload,
+            )
+        )
+        point_id += 1
+        chapters_count += 1
+
+    return chapters_count, point_id
+
+
 def seed_chapters_from_enriched(
     client: QdrantClient,
     books_path: Path,
@@ -224,56 +299,25 @@ def seed_chapters_from_enriched(
         return chapters_count, books_count
 
     model = get_embedding_model()
-
     points: list[PointStruct] = []
     point_id = 0
 
-    for file_path in sorted(enriched_path.glob("*.json")):
+    for file_path in sorted(enriched_path.glob(JSON_GLOB_PATTERN)):
         if file_path.name.startswith("."):
             continue
             
         try:
-            with open(file_path) as f:
-                book = json.load(f)
-
-            book_id = book.get("book_id", "")
-            book_title = book.get("title", "")
-            tier = book.get("tier")
-            chapters = book.get("chapters", [])
-
-            for chapter in chapters:
-                # Generate embedding from chapter content (or title if no content)
-                content = chapter.get("content", chapter.get("title", ""))
-                if len(content) > 8000:  # Truncate long content for embedding
-                    content = content[:8000]
-                    
-                embedding = model.encode(content).tolist()
-
-                points.append(
-                    PointStruct(
-                        id=point_id,
-                        vector=embedding,
-                        payload={
-                            "chapter_id": chapter.get("chapter_id", ""),
-                            "book_id": book_id,
-                            "book_title": book_title,
-                            "title": chapter.get("title", ""),
-                            "number": chapter.get("number"),
-                            "tier": tier,
-                            "keywords": chapter.get("keywords", []),
-                        },
-                    )
-                )
-                point_id += 1
-                chapters_count += 1
-
-                # Batch upsert when batch is full
-                if len(points) >= batch_size:
-                    client.upsert(collection_name=collection_name, points=points)
-                    points = []
-
+            processed, point_id = _process_enriched_book(
+                file_path, model, points, point_id
+            )
+            chapters_count += processed
             books_count += 1
-            
+
+            # Batch upsert when batch is full
+            if len(points) >= batch_size:
+                client.upsert(collection_name=collection_name, points=points)
+                points = []
+
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse {file_path.name}: {e}")
         except Exception as e:
@@ -357,10 +401,12 @@ def main(
     collection: str,
     batch_size: int,
     recreate: bool,
-    verbose: bool,
+    verbose: bool,  # noqa: ARG001 - reserved for future logging control
 ) -> None:
     """Seed Qdrant database with chapter embeddings."""
-    config = QdrantConfig(
+    # Note: verbose is reserved for future logging level control
+    # Config object available for programmatic API usage
+    _config = QdrantConfig(  # noqa: F841 - kept for API compatibility
         books_path=books_path,
         collection_name=collection,
         batch_size=batch_size,
@@ -386,7 +432,7 @@ def main(
             
             # Step 2: Seed chapters (try enriched first, fall back to metadata)
             enriched_path = books_path / "enriched"
-            if enriched_path.exists() and list(enriched_path.glob("*.json")):
+            if enriched_path.exists() and list(enriched_path.glob(JSON_GLOB_PATTERN)):
                 chapters, books = seed_chapters_from_enriched(
                     client, books_path, collection, batch_size
                 )

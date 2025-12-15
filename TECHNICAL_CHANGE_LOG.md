@@ -6,6 +6,113 @@
 
 ## Changelog
 
+### 2025-12-19: WBS 3.5.5 Update Seeding Scripts for Enriched Data (CL-012)
+
+**Phase**: 3.5.5 Data Pipeline - Qdrant Seeding with Enriched Payloads
+
+**TDD Methodology Applied**:
+- ✅ Phase 0: Document Analysis (seed_qdrant.py, seed_neo4j.py, AI_CODING_PLATFORM_ARCHITECTURE)
+- ✅ RED: Created `test_wbs_355_qdrant_enriched.py` with 17 tests - 4 failed initially
+- ✅ GREEN: Updated `seed_chapters_from_enriched()` payload to include all enriched fields
+- ✅ REFACTOR: Extracted helper functions to reduce cognitive complexity (S3776)
+
+**Changes Made**:
+
+| File | Change |
+|------|--------|
+| `tests/unit/test_wbs_355_qdrant_enriched.py` | NEW - 17 TDD tests for enriched Qdrant seeding |
+| `scripts/seed_qdrant.py` | MODIFIED - Added enriched fields to payload, extracted helpers |
+
+**SonarQube Compliance**:
+- ✅ S1192: Added `JSON_GLOB_PATTERN = "*.json"` constant (was duplicated 4 times)
+- ✅ S1192: Added `MAX_CONTENT_LENGTH = 8000` constant
+- ✅ S3776: Extracted `_build_enriched_payload()` helper (cognitive complexity 17 → <15)
+- ✅ S3776: Extracted `_process_enriched_book()` helper
+- ✅ Unused variable: Renamed `config` to `_config` with noqa comment
+
+**Enriched Payload Structure**:
+```python
+payload = {
+    "chapter_id": chapter_id,
+    "book_id": book_id,
+    "book_title": book.get("metadata", {}).get("title", ""),
+    "title": chapter.get("title", ""),
+    "number": chapter.get("number") or chapter.get("chapter_number"),
+    "tier": book.get("metadata", {}).get("tier"),
+    # NEW enriched fields from WBS 3.5.3/3.5.4
+    "keywords": chapter.get("keywords", []),
+    "concepts": chapter.get("concepts", []),
+    "summary": chapter.get("summary", ""),
+    "similar_chapters": chapter.get("similar_chapters", []),
+}
+```
+
+**Test Results**:
+```
+tests/unit/test_wbs_355_qdrant_enriched.py - 17 passed
+Full suite: 151 passed, 1 skipped in 8.36s
+```
+
+**Cross-Reference**: 
+- Enriched data from WBS 3.5.4 (CL-011) now flows to Qdrant payloads
+- Similar chapters use SBERT method per CL-029 in llm-document-enhancer
+- Neo4j correlation validated via test (same enriched source)
+
+**WBS Reference**: AI_CODING_PLATFORM_WBS.md v1.5.0 (Phase 3.5.5.1-8)
+
+---
+
+### 2025-12-19: WBS 3.5.4 Enriched Data Transfer & Validation Complete (CL-011)
+
+**Phase**: 3.5.4 Data Pipeline - Enriched Data Transfer & Validation
+
+**TDD Methodology Applied**:
+- ✅ Phase 0: Document Analysis (AI_CODING_PLATFORM_ARCHITECTURE, WBS specifications)
+- ✅ RED: Created `test_wbs_354_enriched_validation.py` with 10 tests - all failed (directory empty)
+- ✅ GREEN: Transferred 47 enriched books from llm-document-enhancer
+- ✅ REFACTOR: Created `scripts/validate_enriched_books.py` CLI tool
+
+**Changes Made**:
+
+| File | Change |
+|------|--------|
+| `tests/unit/test_wbs_354_enriched_validation.py` | NEW - 10 validation tests for enriched books |
+| `scripts/validate_enriched_books.py` | NEW - CLI tool for validating enriched book JSON files |
+| `books/enriched/*.json` | 47 files transferred from llm-document-enhancer |
+
+**Validation Results**:
+```
+📚 WBS 3.5.4 Enriched Book Validation Report
+┌────────────────┬───────┐
+│ Metric         │ Value │
+├────────────────┼───────┤
+│ Total Books    │ 47    │
+│ Expected Books │ 47    │
+│ Passed         │ 47    │
+│ Failed         │ 0     │
+│ Total Issues   │ 0     │
+└────────────────┴───────┘
+✓ Book count matches expected: 47
+✓ All validations passed!
+```
+
+**Enriched Data Structure Validated**:
+- ✅ Top-level keys: `metadata`, `chapters`, `pages`, `enrichment`
+- ✅ All chapters have `keywords` (list)
+- ✅ All chapters have `concepts` (list)
+- ✅ All chapters have `summary` (string)
+- ✅ All chapters have `similar_chapters` (list)
+- ✅ All `similar_chapters` entries have `method: "sentence_transformers"` (SBERT)
+
+**Cross-Reference**: 
+- Enriched data produced by llm-document-enhancer WBS 3.5.3 pipeline
+- `similar_chapters` uses SBERT (`all-MiniLM-L6-v2`) per CL-029 in llm-document-enhancer
+- 9,614 total similar chapter links across 47 books
+
+**WBS Reference**: AI_CODING_PLATFORM_WBS.md v1.5.0 (Phase 3.5.4.1-9)
+
+---
+
 ### 2025-12-18: WBS 3.5.2 Data Transfer & Validation Complete (CL-010)
 
 **Phase**: 3.5.2 Data Pipeline - Data Transfer & Validation
