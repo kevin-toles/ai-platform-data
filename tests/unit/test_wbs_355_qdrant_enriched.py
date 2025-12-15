@@ -236,12 +236,15 @@ class TestQdrantPayloadsHaveSimilarChapters:
         )
 
     def test_similar_chapters_have_method_field(self) -> None:
-        """similar_chapters entries must have method field (sentence_transformers)."""
+        """similar_chapters entries must have method field (api or sentence_transformers)."""
         book = _get_sample_enriched_book()
         if book is None:
             pytest.skip("No enriched books available")
         
         chapters = book.get("chapters", [])
+        
+        # Valid methods: 'api' (SBERT via Code-Orchestrator), 'sentence_transformers' (legacy)
+        valid_methods = ("api", "sentence_transformers")
         
         # Find a chapter with similar_chapters
         for chapter in chapters:
@@ -251,8 +254,8 @@ class TestQdrantPayloadsHaveSimilarChapters:
                     assert "method" in item, (
                         "similar_chapters entry missing 'method' field"
                     )
-                    assert item["method"] == "sentence_transformers", (
-                        f"Expected method 'sentence_transformers', got '{item['method']}'"
+                    assert item["method"] in valid_methods, (
+                        f"Expected method in {valid_methods}, got '{item['method']}'"
                     )
                 return  # Found and validated
         
