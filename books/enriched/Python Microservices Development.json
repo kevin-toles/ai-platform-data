@@ -54,35 +54,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.79,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 2,
           "title": "Segment 2 (pages 20-40)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -129,35 +129,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 14,
           "title": "Segment 14 (pages 106-114)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -204,35 +204,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-34)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -279,35 +279,35 @@
           "chapter": 6,
           "title": "Segment 6 (pages 43-51)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 14,
           "title": "Segment 14 (pages 106-114)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-34)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -354,35 +354,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -429,35 +429,35 @@
           "chapter": 37,
           "title": "Segment 37 (pages 738-758)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 40,
           "title": "Segment 40 (pages 798-818)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 28,
           "title": "Segment 28 (pages 290-298)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 34,
           "title": "Segment 34 (pages 677-699)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 18,
           "title": "Segment 18 (pages 175-187)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -504,35 +504,35 @@
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 34,
           "title": "Segment 34 (pages 274-281)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 11,
           "title": "Segment 11 (pages 92-103)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -579,35 +579,35 @@
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 30,
           "title": "Segment 30 (pages 299-319)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 34,
           "title": "Segment 34 (pages 274-281)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 7,
           "title": "Segment 7 (pages 52-59)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 11,
           "title": "Segment 11 (pages 92-103)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -654,35 +654,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 53-61)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 11,
           "title": "Segment 11 (pages 90-99)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 7,
           "title": "Segment 7 (pages 51-58)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -729,35 +729,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -804,35 +804,35 @@
           "chapter": 4,
           "title": "Our First Use",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 34,
           "title": "Segment 34 (pages 352-361)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 10,
           "title": "[ 329 ]",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 40,
           "title": "Segment 40 (pages 368-375)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -879,35 +879,35 @@
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 39,
           "title": "Segment 39 (pages 411-419)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -954,35 +954,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 19-26)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 29,
           "title": "Segment 29 (pages 258-268)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 13,
           "title": "Segment 13 (pages 104-111)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1029,35 +1029,35 @@
           "chapter": 44,
           "title": "Segment 44 (pages 400-407)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 30,
           "title": "Segment 30 (pages 275-283)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1104,35 +1104,35 @@
           "chapter": 44,
           "title": "Segment 44 (pages 400-407)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 34,
           "title": "Segment 34 (pages 677-699)",
           "relevance_score": 0.39,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 18,
           "title": "Segment 18 (pages 158-166)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 24,
           "title": "Segment 24 (pages 211-227)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 35,
           "title": "Segment 35 (pages 318-325)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1179,35 +1179,35 @@
           "chapter": 35,
           "title": "Segment 35 (pages 318-325)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 44,
           "title": "Segment 44 (pages 400-407)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 28,
           "title": "Segment 28 (pages 227-234)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1254,35 +1254,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 35,
           "title": "Segment 35 (pages 318-325)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 9,
           "title": "[ 283 ]",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1329,35 +1329,35 @@
           "chapter": 15,
           "title": "Segment 15 (pages 135-143)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 36-43)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 16,
           "title": "Segment 16 (pages 129-139)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 19,
           "title": "Segment 19 (pages 152-159)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1404,35 +1404,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 292-300)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 30,
           "title": "Segment 30 (pages 275-283)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 31,
           "title": "Segment 31 (pages 284-291)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 28,
           "title": "Segment 28 (pages 290-298)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 40,
           "title": "Segment 40 (pages 798-818)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1478,35 +1478,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 284-291)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 7,
           "title": "[ 221 ]",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 37,
           "title": "Segment 37 (pages 391-402)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 39,
           "title": "Segment 39 (pages 778-797)",
           "relevance_score": 0.37,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 36,
           "title": "Segment 36 (pages 718-737)",
           "relevance_score": 0.36,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1553,35 +1553,35 @@
           "chapter": 12,
           "title": "[ 427 ]",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 13,
           "title": "Segment 13 (pages 109-116)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 30,
           "title": "Segment 30 (pages 269-279)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 42,
           "title": "Segment 42 (pages 442-451)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 36,
           "title": "Segment 36 (pages 718-737)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1628,35 +1628,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 345-356)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 38,
           "title": "Segment 38 (pages 403-410)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 11,
           "title": "Segment 11 (pages 90-99)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 13,
           "title": "Segment 13 (pages 250-271)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1703,35 +1703,35 @@
           "chapter": 27,
           "title": "Segment 27 (pages 245-256)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 41,
           "title": "Segment 41 (pages 419-429)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 28,
           "title": "Segment 28 (pages 257-264)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 29,
           "title": "Segment 29 (pages 265-274)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 26,
           "title": "Segment 26 (pages 236-244)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1778,35 +1778,35 @@
           "chapter": 29,
           "title": "Segment 29 (pages 265-274)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 27,
           "title": "Segment 27 (pages 245-256)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 30,
           "title": "Segment 30 (pages 299-319)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 41,
           "title": "Segment 41 (pages 419-429)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 9,
           "title": "Security",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1853,35 +1853,35 @@
           "chapter": 28,
           "title": "Segment 28 (pages 224-231)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 17,
           "title": "Python Database Access",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 29,
           "title": "Segment 29 (pages 232-239)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 31,
           "title": "Segment 31 (pages 320-327)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 13,
           "title": "[ 443 ]",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1928,35 +1928,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 53-61)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Generative AI with LangChain_2e",
           "chapter": 36,
           "title": "Segment 36 (pages 303-311)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 10,
           "title": "Segment 10 (pages 77-87)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 23,
           "title": "Segment 23 (pages 457-476)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2003,35 +2003,35 @@
           "chapter": 35,
           "title": "Segment 35 (pages 318-325)",
           "relevance_score": 0.34,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 38,
           "title": "Segment 38 (pages 759-777)",
           "relevance_score": 0.34,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Learning Python Ed6",
           "chapter": 3,
           "title": "How You Run Programs",
           "relevance_score": 0.34,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 27,
           "title": "Segment 27 (pages 245-256)",
           "relevance_score": 0.32,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 9,
           "title": "Security",
           "relevance_score": 0.31,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2078,7 +2078,7 @@
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.3,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2125,35 +2125,35 @@
           "chapter": 27,
           "title": "Segment 27 (pages 245-256)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 35,
           "title": "Segment 35 (pages 318-325)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 41,
           "title": "Segment 41 (pages 419-429)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 30,
           "title": "Segment 30 (pages 299-319)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 29,
           "title": "Segment 29 (pages 265-274)",
           "relevance_score": 0.4,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2200,35 +2200,35 @@
           "chapter": 39,
           "title": "Segment 39 (pages 411-419)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 11,
           "title": "[ 383 ]",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 29,
           "title": "Segment 29 (pages 258-268)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2275,35 +2275,35 @@
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 25,
           "title": "Segment 25 (pages 249-264)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Learning Python Ed6",
           "chapter": 3,
           "title": "How You Run Programs",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 28,
           "title": "Segment 28 (pages 247-257)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 39,
           "title": "Segment 39 (pages 411-419)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2350,35 +2350,35 @@
           "chapter": 6,
           "title": "Deployment",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 46,
           "title": "Segment 46 (pages 416-420)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 14,
           "title": "Segment 14 (pages 106-114)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 39,
           "title": "Segment 39 (pages 411-419)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2425,35 +2425,35 @@
           "chapter": 38,
           "title": "Segment 38 (pages 759-777)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.39,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 49,
           "title": "Segment 49 (pages 446-455)",
           "relevance_score": 0.36,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 33,
           "title": "Segment 33 (pages 301-308)",
           "relevance_score": 0.35,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 25,
           "title": "Segment 25 (pages 249-264)",
           "relevance_score": 0.35,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2500,35 +2500,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 305-313)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 19,
           "title": "Segment 19 (pages 193-200)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 6,
           "title": "Deployment",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 37,
           "title": "Segment 37 (pages 378-388)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 28,
           "title": "Segment 28 (pages 271-278)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2575,35 +2575,35 @@
           "chapter": 19,
           "title": "Segment 19 (pages 193-200)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 31,
           "title": "Segment 31 (pages 305-313)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 37,
           "title": "Segment 37 (pages 378-388)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 42,
           "title": "Segment 42 (pages 343-353)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 40,
           "title": "Segment 40 (pages 342-350)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2650,35 +2650,35 @@
           "chapter": 35,
           "title": "Segment 35 (pages 362-369)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 19,
           "title": "Segment 19 (pages 193-200)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 50,
           "title": "Segment 50 (pages 456-464)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 31,
           "title": "Segment 31 (pages 305-313)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 14,
           "title": "Segment 14 (pages 106-114)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2725,35 +2725,35 @@
           "chapter": 40,
           "title": "Segment 40 (pages 798-818)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 42,
           "title": "Segment 42 (pages 842-862)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 29,
           "title": "Segment 29 (pages 299-314)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 41,
           "title": "Segment 41 (pages 819-841)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 18,
           "title": "Segment 18 (pages 150-158)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2800,35 +2800,35 @@
           "chapter": 37,
           "title": "Segment 37 (pages 738-758)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 16,
           "title": "Segment 16 (pages 144-156)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 40,
           "title": "Segment 40 (pages 798-818)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 28,
           "title": "Segment 28 (pages 290-298)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

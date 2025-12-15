@@ -57,35 +57,35 @@
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Microservices Development",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -134,35 +134,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 33,
           "title": "Segment 33 (pages 662-682)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 38,
           "title": "Segment 38 (pages 351-358)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -211,35 +211,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -288,35 +288,35 @@
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 8,
           "title": "Segment 8 (pages 66-75)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -365,35 +365,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 20,
           "title": "Threads and Concurrency",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -442,35 +442,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -519,35 +519,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -596,35 +596,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -673,35 +673,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -750,35 +750,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 27,
           "title": "Segment 27 (pages 287-297)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 5,
           "title": "Segment 5 (pages 46-58)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -827,35 +827,35 @@
           "chapter": 37,
           "title": "Segment 37 (pages 365-372)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 26,
           "title": "Segment 26 (pages 271-286)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 10,
           "title": "Segment 10 (pages 75-82)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -904,35 +904,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 271-286)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -981,35 +981,35 @@
           "chapter": 15,
           "title": "Segment 15 (pages 137-144)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 34,
           "title": "Segment 34 (pages 319-327)",
           "relevance_score": 0.41,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 26,
           "title": "Segment 26 (pages 271-286)",
           "relevance_score": 0.41,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 41,
           "title": "Segment 41 (pages 407-414)",
           "relevance_score": 0.4,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 31,
           "title": "Segment 31 (pages 324-335)",
           "relevance_score": 0.39,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1058,35 +1058,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 27,
           "title": "Segment 27 (pages 253-260)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1135,35 +1135,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 271-286)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1212,35 +1212,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 10,
           "title": "Segment 10 (pages 75-82)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1289,35 +1289,35 @@
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 5,
           "title": "Segment 5 (pages 79-99)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 55,
           "title": "Segment 55 (pages 567-574)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1366,35 +1366,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 23,
           "title": "Segment 23 (pages 454-475)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 26,
           "title": "Segment 26 (pages 249-257)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1443,35 +1443,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1520,35 +1520,35 @@
           "chapter": 27,
           "title": "Segment 27 (pages 287-297)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 37,
           "title": "Segment 37 (pages 365-372)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 35,
           "title": "Segment 35 (pages 369-376)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1597,35 +1597,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1674,35 +1674,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 29,
           "title": "Segment 29 (pages 272-282)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 17,
           "title": "Segment 17 (pages 131-138)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1751,35 +1751,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1828,35 +1828,35 @@
           "chapter": 20,
           "title": "Segment 20 (pages 190-199)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 13,
           "title": "Segment 13 (pages 134-141)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 15,
           "title": "Segment 15 (pages 456-487)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1905,35 +1905,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1982,35 +1982,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 26,
           "title": "Segment 26 (pages 249-257)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2059,35 +2059,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 662-682)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 37,
           "title": "Segment 37 (pages 343-350)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2136,35 +2136,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 7,
           "title": "Segment 7 (pages 59-68)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 54,
           "title": "Segment 54 (pages 520-528)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 10,
           "title": "Segment 10 (pages 75-82)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2213,35 +2213,35 @@
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2290,35 +2290,35 @@
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 10,
           "title": "Segment 10 (pages 102-112)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 28,
           "title": "Segment 28 (pages 290-298)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2367,35 +2367,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 21,
           "title": "Segment 21 (pages 193-203)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 50,
           "title": "Segment 50 (pages 1000-1022)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2444,35 +2444,35 @@
           "chapter": 25,
           "title": "Segment 25 (pages 259-270)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 26,
           "title": "Segment 26 (pages 271-286)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2521,35 +2521,35 @@
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 12,
           "title": "Segment 12 (pages 103-116)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 8,
           "title": "Segment 8 (pages 66-75)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2598,35 +2598,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2675,35 +2675,35 @@
           "chapter": 34,
           "title": "Segment 34 (pages 319-327)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 26,
           "title": "Segment 26 (pages 265-274)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2752,35 +2752,35 @@
           "chapter": 20,
           "title": "Segment 20 (pages 616-650)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 67,
           "title": "Segment 67 (pages 2147-2180)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 65,
           "title": "Segment 65 (pages 2081-2112)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 5,
           "title": "Segment 5 (pages 39-47)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 21,
           "title": "Segment 21 (pages 223-230)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2829,35 +2829,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.8,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2906,35 +2906,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 30,
           "title": "Segment 30 (pages 294-301)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 50,
           "title": "Segment 50 (pages 1000-1022)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2983,35 +2983,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 113-123)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 30,
           "title": "Segment 30 (pages 317-324)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 14,
           "title": "Segment 14 (pages 116-123)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 7,
           "title": "Segment 7 (pages 52-60)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 12,
           "title": "Segment 12 (pages 116-123)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3060,35 +3060,35 @@
           "chapter": 43,
           "title": "Segment 43 (pages 1373-1403)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 47,
           "title": "Segment 47 (pages 1504-1535)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 48,
           "title": "Segment 48 (pages 1536-1565)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 53,
           "title": "Segment 53 (pages 1697-1728)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 37,
           "title": "Segment 37 (pages 1180-1210)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3137,35 +3137,35 @@
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 45,
           "title": "Segment 45 (pages 426-433)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3214,35 +3214,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 5,
           "title": "Segment 5 (pages 33-40)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 12,
           "title": "Segment 12 (pages 219-238)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 41,
           "title": "Segment 41 (pages 815-837)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3291,35 +3291,35 @@
           "chapter": 69,
           "title": "Segment 69 (pages 2213-2247)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 32,
           "title": "Segment 32 (pages 1015-1044)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 27,
           "title": "Segment 27 (pages 850-883)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 57,
           "title": "Segment 57 (pages 1824-1855)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 50,
           "title": "Segment 50 (pages 1600-1629)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3368,35 +3368,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3445,35 +3445,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 310-319)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 7,
           "title": "Segment 7 (pages 121-141)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 27,
           "title": "Segment 27 (pages 287-297)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 50,
           "title": "Segment 50 (pages 1000-1022)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3522,35 +3522,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 113-123)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 29,
           "title": "Segment 29 (pages 293-301)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 5,
           "title": "Segment 5 (pages 36-48)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 12,
           "title": "Segment 12 (pages 364-393)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 30,
           "title": "Segment 30 (pages 950-980)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3599,35 +3599,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 12,
           "title": "Segment 12 (pages 124-133)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3676,35 +3676,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3753,35 +3753,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3830,35 +3830,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 34,
           "title": "Segment 34 (pages 330-344)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 40,
           "title": "Segment 40 (pages 399-406)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3907,35 +3907,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 31,
           "title": "Segment 31 (pages 302-309)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3984,35 +3984,35 @@
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 51,
           "title": "Segment 51 (pages 1023-1040)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 33,
           "title": "Segment 33 (pages 320-329)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -4061,35 +4061,35 @@
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 31,
           "title": "Segment 31 (pages 325-333)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 39,
           "title": "Segment 39 (pages 359-367)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 31,
           "title": "Segment 31 (pages 312-319)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective_Modern_C++",
           "chapter": 30,
           "title": "Segment 30 (pages 317-324)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -4138,35 +4138,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 355-364)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 52,
           "title": "Segment 52 (pages 1041-1063)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 36,
           "title": "Segment 36 (pages 333-342)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 39,
           "title": "Segment 39 (pages 388-398)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 13,
           "title": "Segment 13 (pages 116-124)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

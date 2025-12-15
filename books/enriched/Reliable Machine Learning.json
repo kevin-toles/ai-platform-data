@@ -57,35 +57,35 @@
           "chapter": 51,
           "title": "Segment 51 (pages 433-440)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 34,
           "title": "Segment 34 (pages 290-296)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 1,
           "title": "Segment 1 (pages 2-11)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 4,
           "title": "Segment 4 (pages 28-36)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -134,35 +134,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 18-25)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 3,
           "title": "Segment 3 (pages 20-27)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 51,
           "title": "Segment 51 (pages 433-440)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -211,35 +211,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 4,
           "title": "Segment 4 (pages 26-33)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 4,
           "title": "Segment 4 (pages 28-36)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 5,
           "title": "Segment 5 (pages 37-45)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -288,35 +288,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 5,
           "title": "Segment 5 (pages 37-46)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 50,
           "title": "Segment 50 (pages 1011-1011)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 57,
           "title": "Segment 57 (pages 518-522)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -365,35 +365,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 11,
           "title": "Segment 11 (pages 88-98)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 52-61)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 42,
           "title": "Segment 42 (pages 853-871)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -442,35 +442,35 @@
           "chapter": 55,
           "title": "Segment 55 (pages 546-554)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 3,
           "title": "Segment 3 (pages 18-26)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 40,
           "title": "Segment 40 (pages 394-416)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 31,
           "title": "Segment 31 (pages 291-298)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 50,
           "title": "Segment 50 (pages 498-509)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -519,35 +519,35 @@
           "chapter": 44,
           "title": "Segment 44 (pages 375-382)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 2,
           "title": "Segment 2 (pages 9-17)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 52,
           "title": "Segment 52 (pages 518-525)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 50-57)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 9,
           "title": "Segment 9 (pages 72-79)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -596,35 +596,35 @@
           "chapter": 15,
           "title": "Segment 15 (pages 115-122)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 3,
           "title": "Segment 3 (pages 18-26)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 55,
           "title": "Segment 55 (pages 546-554)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 63,
           "title": "Segment 63 (pages 639-643)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 27,
           "title": "Segment 27 (pages 256-263)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -673,35 +673,35 @@
           "chapter": 18,
           "title": "Segment 18 (pages 164-171)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 48,
           "title": "Segment 48 (pages 408-416)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 40,
           "title": "Segment 40 (pages 394-416)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -750,35 +750,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 18-25)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 103-122)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 4,
           "title": "Segment 4 (pages 28-36)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -827,35 +827,35 @@
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 26,
           "title": "Segment 26 (pages 219-228)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 40,
           "title": "Segment 40 (pages 341-348)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 43,
           "title": "Segment 43 (pages 371-380)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -904,35 +904,35 @@
           "chapter": 43,
           "title": "Segment 43 (pages 371-380)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 10,
           "title": "Segment 10 (pages 81-92)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 44,
           "title": "Segment 44 (pages 375-382)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -981,35 +981,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 20,
           "title": "Segment 20 (pages 168-178)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 15,
           "title": "Segment 15 (pages 126-134)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 4,
           "title": "Segment 4 (pages 28-35)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1058,35 +1058,35 @@
           "chapter": 20,
           "title": "Segment 20 (pages 398-416)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 53,
           "title": "Segment 53 (pages 484-491)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 18,
           "title": "Segment 18 (pages 151-158)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 18,
           "title": "Segment 18 (pages 164-171)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 57,
           "title": "Segment 57 (pages 518-522)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1135,35 +1135,35 @@
           "chapter": 20,
           "title": "Segment 20 (pages 398-416)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 16,
           "title": "Segment 16 (pages 135-142)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 19,
           "title": "Segment 19 (pages 375-397)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 8,
           "title": "[ 259 ]",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1212,35 +1212,35 @@
           "chapter": 50,
           "title": "Segment 50 (pages 446-453)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 47,
           "title": "Segment 47 (pages 400-407)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 48,
           "title": "Segment 48 (pages 430-437)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 49,
           "title": "Segment 49 (pages 438-445)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1289,35 +1289,35 @@
           "chapter": 50,
           "title": "Segment 50 (pages 446-453)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 47,
           "title": "Segment 47 (pages 400-407)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 46,
           "title": "Segment 46 (pages 392-399)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 20,
           "title": "Segment 20 (pages 398-416)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 14,
           "title": "Segment 14 (pages 275-296)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1366,35 +1366,35 @@
           "chapter": 47,
           "title": "Segment 47 (pages 400-407)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 56,
           "title": "Segment 56 (pages 555-562)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 11,
           "title": "Segment 11 (pages 88-98)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 26,
           "title": "Segment 26 (pages 220-227)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1443,35 +1443,35 @@
           "chapter": 47,
           "title": "Segment 47 (pages 400-407)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 50,
           "title": "Segment 50 (pages 446-453)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 26,
           "title": "Segment 26 (pages 220-227)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 35,
           "title": "Segment 35 (pages 702-724)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 48,
           "title": "Segment 48 (pages 408-416)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1520,35 +1520,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 31,
           "title": "Segment 31 (pages 265-272)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 32,
           "title": "Segment 32 (pages 272-280)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1597,35 +1597,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 28-36)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 103-122)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1674,35 +1674,35 @@
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 53,
           "title": "Segment 53 (pages 449-456)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 49,
           "title": "Segment 49 (pages 417-424)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 51,
           "title": "Segment 51 (pages 433-440)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1751,35 +1751,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 34-41)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 35,
           "title": "Segment 35 (pages 297-305)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 38,
           "title": "Segment 38 (pages 767-788)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 30,
           "title": "Segment 30 (pages 256-263)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 36,
           "title": "Segment 36 (pages 306-314)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1828,35 +1828,35 @@
           "chapter": 42,
           "title": "Segment 42 (pages 853-871)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 52-61)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 13,
           "title": "Segment 13 (pages 98-105)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 29,
           "title": "Segment 29 (pages 245-254)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1905,35 +1905,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 290-298)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 53,
           "title": "Segment 53 (pages 484-491)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 48,
           "title": "Segment 48 (pages 438-445)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1982,35 +1982,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 55,
           "title": "Segment 55 (pages 501-509)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 8,
           "title": "Monitoring",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 13,
           "title": "[ 443 ]",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 53,
           "title": "Segment 53 (pages 484-491)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2059,35 +2059,35 @@
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 29,
           "title": "Segment 29 (pages 279-295)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 18,
           "title": "Segment 18 (pages 164-171)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 32,
           "title": "Segment 32 (pages 273-280)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 28,
           "title": "Segment 28 (pages 236-244)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2136,35 +2136,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2213,35 +2213,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 53,
           "title": "Segment 53 (pages 484-491)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 34,
           "title": "Segment 34 (pages 289-296)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 20,
           "title": "Segment 20 (pages 398-416)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2290,35 +2290,35 @@
           "chapter": 34,
           "title": "Segment 34 (pages 289-296)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 38,
           "title": "Segment 38 (pages 325-333)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 34,
           "title": "Segment 34 (pages 290-297)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 54,
           "title": "Segment 54 (pages 492-500)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2367,35 +2367,35 @@
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 4,
           "title": "Segment 4 (pages 28-36)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 3,
           "title": "Segment 3 (pages 18-25)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 26,
           "title": "Segment 26 (pages 220-227)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 27,
           "title": "Segment 27 (pages 229-236)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2444,35 +2444,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 20,
           "title": "Segment 20 (pages 398-416)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 59-66)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2521,35 +2521,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 6,
           "title": "Segment 6 (pages 59-67)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2598,35 +2598,35 @@
           "chapter": 43,
           "title": "Segment 43 (pages 354-361)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 8,
           "title": "Monitoring",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 31,
           "title": "Segment 31 (pages 265-272)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 8,
           "title": "Segment 8 (pages 63-71)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2675,35 +2675,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 43,
           "title": "Segment 43 (pages 354-361)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 2,
           "title": "Segment 2 (pages 9-17)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2752,35 +2752,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 11-18)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 48,
           "title": "Segment 48 (pages 438-445)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 24,
           "title": "Segment 24 (pages 221-230)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 45,
           "title": "Segment 45 (pages 456-462)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2829,35 +2829,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 50-57)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 43,
           "title": "Segment 43 (pages 371-380)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 5,
           "title": "Segment 5 (pages 37-45)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2906,35 +2906,35 @@
           "chapter": 44,
           "title": "Segment 44 (pages 375-382)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 4,
           "title": "Segment 4 (pages 26-33)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 12,
           "title": "Segment 12 (pages 99-107)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2983,35 +2983,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 50-57)",
           "relevance_score": 0.44,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 29,
           "title": "Segment 29 (pages 235-246)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 35,
           "title": "Segment 35 (pages 298-306)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Generative AI with LangChain_2e",
           "chapter": 56,
           "title": "Segment 56 (pages 473-477)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 17,
           "title": "Segment 17 (pages 145-152)",
           "relevance_score": 0.43,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3060,35 +3060,35 @@
           "chapter": 10,
           "title": "Conway’s Law and System",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3137,35 +3137,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 9,
           "title": "Segment 9 (pages 66-73)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 10,
           "title": "Conway’s Law and System",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3214,35 +3214,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 45,
           "title": "Segment 45 (pages 383-391)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3291,35 +3291,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 34-41)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Generative AI with LangChain_2e",
           "chapter": 5,
           "title": "Segment 5 (pages 34-43)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 35,
           "title": "Segment 35 (pages 702-724)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 56,
           "title": "Segment 56 (pages 475-482)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 55,
           "title": "Segment 55 (pages 474-483)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3368,35 +3368,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 18-25)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 58-71)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 6,
           "title": "Segment 6 (pages 42-49)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 15,
           "title": "Segment 15 (pages 126-134)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3445,35 +3445,35 @@
           "chapter": 49,
           "title": "Segment 49 (pages 415-422)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 8,
           "title": "Segment 8 (pages 59-66)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 47,
           "title": "Segment 47 (pages 950-972)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 55,
           "title": "Segment 55 (pages 474-483)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 34-41)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3522,35 +3522,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 49,
           "title": "Segment 49 (pages 417-424)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 53,
           "title": "Segment 53 (pages 449-456)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3599,35 +3599,35 @@
           "chapter": 33,
           "title": "Segment 33 (pages 281-289)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 583-590)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 36,
           "title": "Segment 36 (pages 307-316)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Engineering",
           "chapter": 29,
           "title": "Segment 29 (pages 245-254)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 49,
           "title": "Segment 49 (pages 417-424)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

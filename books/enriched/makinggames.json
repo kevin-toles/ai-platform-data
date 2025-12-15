@@ -57,35 +57,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 19-41)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 42,
           "title": "Segment 42 (pages 849-853)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -134,35 +134,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 8,
           "title": "Segment 8 (pages 142-159)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents In Action",
           "chapter": 18,
           "title": "Segment 18 (pages 147-158)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 40,
           "title": "Segment 40 (pages 809-829)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -211,35 +211,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 39,
           "title": "Segment 39 (pages 353-355)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 2,
           "title": "Python Language Basics, IPython,",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -288,35 +288,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 14,
           "title": "Segment 14 (pages 116-123)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 2,
           "title": "Segment 2 (pages 19-41)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -365,35 +365,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 336-344)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 4,
           "title": "Segment 4 (pages 27-34)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 4,
           "title": "Segment 4 (pages 62-83)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 21,
           "title": "Segment 21 (pages 415-432)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -442,35 +442,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 64-82)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 50,
           "title": "Segment 50 (pages 487-494)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 26,
           "title": "Segment 26 (pages 503-525)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 53,
           "title": "Segment 53 (pages 511-519)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 3,
           "title": "Segment 3 (pages 42-63)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -519,35 +519,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 33,
           "title": "Segment 33 (pages 662-682)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 25,
           "title": "Segment 25 (pages 231-249)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -596,35 +596,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 142-159)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 16,
           "title": "Segment 16 (pages 308-330)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 54,
           "title": "Segment 54 (pages 1084-1102)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -673,35 +673,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 38,
           "title": "Segment 38 (pages 764-785)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 50,
           "title": "Segment 50 (pages 483-490)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -750,35 +750,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 41,
           "title": "Segment 41 (pages 389-403)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 56,
           "title": "Segment 56 (pages 544-551)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -826,35 +826,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 12,
           "title": "Segment 12 (pages 219-238)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AntiPatterns",
           "chapter": 9,
           "title": "Segment 9 (pages 74-81)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -903,35 +903,35 @@
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 27,
           "title": "Segment 27 (pages 526-548)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "operating_systems_three_easy_pieces",
           "chapter": 4,
           "title": "Segment 4 (pages 25-32)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -980,35 +980,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1057,35 +1057,35 @@
           "chapter": 9,
           "title": "Segment 9 (pages 76-90)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 31,
           "title": "Segment 31 (pages 291-298)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 36,
           "title": "Segment 36 (pages 360-367)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 45,
           "title": "Segment 45 (pages 429-442)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 12,
           "title": "Segment 12 (pages 219-238)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1134,35 +1134,35 @@
           "chapter": 9,
           "title": "Segment 9 (pages 76-90)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 62,
           "title": "Segment 62 (pages 601-608)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 10,
           "title": "Segment 10 (pages 91-99)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 17,
           "title": "Segment 17 (pages 326-347)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1211,35 +1211,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1288,35 +1288,35 @@
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 3,
           "title": "Segment 3 (pages 42-63)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 40,
           "title": "Segment 40 (pages 809-829)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 43,
           "title": "Segment 43 (pages 424-431)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1365,35 +1365,35 @@
           "chapter": 40,
           "title": "Segment 40 (pages 809-829)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 10,
           "title": "Segment 10 (pages 83-98)",
           "relevance_score": 0.39,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.35,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.35,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1442,35 +1442,35 @@
           "chapter": 12,
           "title": "Segment 12 (pages 108-115)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 20,
           "title": "Segment 20 (pages 385-402)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 13,
           "title": "Segment 13 (pages 115-123)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 6,
           "title": "Segment 6 (pages 103-120)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 24,
           "title": "Segment 24 (pages 213-226)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1519,35 +1519,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 336-344)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 3,
           "title": "Segment 3 (pages 17-26)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 13,
           "title": "Segment 13 (pages 115-123)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1596,35 +1596,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 43,
           "title": "Segment 43 (pages 424-431)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 59,
           "title": "Segment 59 (pages 499-500)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 41,
           "title": "Segment 41 (pages 389-403)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1673,35 +1673,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 128-146)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 4,
           "title": "Segment 4 (pages 27-34)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 32,
           "title": "Segment 32 (pages 336-344)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1750,35 +1750,35 @@
           "chapter": 54,
           "title": "Segment 54 (pages 1084-1102)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 17,
           "title": "Segment 17 (pages 144-151)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 40,
           "title": "Segment 40 (pages 368-375)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 17,
           "title": "Segment 17 (pages 331-351)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 40,
           "title": "Segment 40 (pages 809-829)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1827,35 +1827,35 @@
           "chapter": 10,
           "title": "Segment 10 (pages 91-99)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 13,
           "title": "Segment 13 (pages 115-123)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 32,
           "title": "Segment 32 (pages 301-308)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 31,
           "title": "Segment 31 (pages 291-298)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1904,35 +1904,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 32,
           "title": "Segment 32 (pages 301-308)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 29,
           "title": "Segment 29 (pages 249-256)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1981,35 +1981,35 @@
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.45,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 7,
           "title": "Segment 7 (pages 121-141)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 15,
           "title": "Segment 15 (pages 125-135)",
           "relevance_score": 0.41,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 22,
           "title": "Segment 22 (pages 205-213)",
           "relevance_score": 0.41,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 36,
           "title": "Segment 36 (pages 719-740)",
           "relevance_score": 0.41,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2058,35 +2058,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 301-308)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 32,
           "title": "Segment 32 (pages 336-344)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2135,35 +2135,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 28,
           "title": "Segment 28 (pages 261-272)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents In Action",
           "chapter": 18,
           "title": "Segment 18 (pages 147-158)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 40,
           "title": "Segment 40 (pages 368-375)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2209,35 +2209,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 13,
           "title": "Segment 13 (pages 115-123)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 22,
           "title": "Segment 22 (pages 205-213)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2286,35 +2286,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 30,
           "title": "Segment 30 (pages 279-290)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 31,
           "title": "Segment 31 (pages 291-298)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 41,
           "title": "Segment 41 (pages 389-403)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2363,35 +2363,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "C++ Templates_ The Complete Guide",
           "chapter": 21,
           "title": "Segment 21 (pages 651-684)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2440,35 +2440,35 @@
           "chapter": 41,
           "title": "Segment 41 (pages 389-403)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 33,
           "title": "Segment 33 (pages 314-325)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 30,
           "title": "Segment 30 (pages 279-290)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2517,35 +2517,35 @@
           "chapter": 32,
           "title": "Segment 32 (pages 289-298)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 13,
           "title": "Segment 13 (pages 115-123)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 13,
           "title": "Segment 13 (pages 109-116)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 10,
           "title": "Segment 10 (pages 80-87)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 32,
           "title": "Segment 32 (pages 336-344)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2594,35 +2594,35 @@
           "chapter": 25,
           "title": "Segment 25 (pages 234-242)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 9,
           "title": "Segment 9 (pages 93-101)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 35,
           "title": "Segment 35 (pages 316-323)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 62,
           "title": "Segment 62 (pages 601-608)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 48,
           "title": "Segment 48 (pages 461-471)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2671,35 +2671,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 47,
           "title": "Segment 47 (pages 448-460)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2748,35 +2748,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 360-367)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 43,
           "title": "Segment 43 (pages 424-431)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 6",
           "chapter": 32,
           "title": "Segment 32 (pages 559-576)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 4",
           "chapter": 8,
           "title": "Segment 8 (pages 127-144)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 6",
           "chapter": 8,
           "title": "Segment 8 (pages 127-144)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2825,35 +2825,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 39,
           "title": "Segment 39 (pages 353-355)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2902,35 +2902,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 11,
           "title": "Segment 11 (pages 100-107)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 43,
           "title": "Segment 43 (pages 424-431)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 6",
           "chapter": 32,
           "title": "Segment 32 (pages 559-576)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 32,
           "title": "Segment 32 (pages 301-308)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -2979,35 +2979,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 65,
           "title": "Segment 65 (pages 625-632)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 8",
           "chapter": 1,
           "title": "Segment 1 (pages 1-13)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 43,
           "title": "Segment 43 (pages 424-431)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 6",
           "chapter": 30,
           "title": "Segment 30 (pages 523-540)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3056,35 +3056,35 @@
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 26,
           "title": "Segment 26 (pages 243-252)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 3",
           "chapter": 11,
           "title": "Segment 11 (pages 111-118)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3133,35 +3133,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 99-114)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 12,
           "title": "Segment 12 (pages 101-108)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 1",
           "chapter": 26,
           "title": "Segment 26 (pages 238-247)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 54,
           "title": "Segment 54 (pages 1084-1102)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -3210,35 +3210,35 @@
           "chapter": 42,
           "title": "Segment 42 (pages 849-853)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game_Engine_Architecture",
           "chapter": 2,
           "title": "Segment 2 (pages 19-41)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 25,
           "title": "Segment 25 (pages 238-245)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 39,
           "title": "Segment 39 (pages 353-355)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

@@ -57,35 +57,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 55,
           "title": "Segment 55 (pages 489-497)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 56,
           "title": "Segment 56 (pages 498-505)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -134,35 +134,35 @@
           "chapter": 12,
           "title": "Segment 12 (pages 96-104)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 55,
           "title": "Segment 55 (pages 489-497)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 45,
           "title": "Segment 45 (pages 397-404)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 56,
           "title": "Segment 56 (pages 498-505)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 51,
           "title": "Segment 51 (pages 454-461)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -211,35 +211,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 60-67)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 2",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 5,
           "title": "Segment 5 (pages 33-40)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 8,
           "title": "Segment 8 (pages 63-71)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 10,
           "title": "Segment 10 (pages 80-87)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -288,35 +288,35 @@
           "chapter": 55,
           "title": "Segment 55 (pages 489-497)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Machine Learning Design Patterns",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 38,
           "title": "Segment 38 (pages 345-352)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 12,
           "title": "Segment 12 (pages 96-104)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -365,35 +365,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 1,
           "title": "Segment 1 (pages 3-10)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 11,
           "title": "Segment 11 (pages 88-95)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -442,35 +442,35 @@
           "chapter": 10,
           "title": "Segment 10 (pages 80-87)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 43,
           "title": "Segment 43 (pages 433-447)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 16,
           "title": "Segment 16 (pages 148-155)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 9,
           "title": "Segment 9 (pages 72-79)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 12,
           "title": "Segment 12 (pages 96-104)",
           "relevance_score": 0.5,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -519,35 +519,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 3-10)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 32,
           "title": "Segment 32 (pages 320-329)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 46,
           "title": "Segment 46 (pages 930-951)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "More Effective C++",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "The Little Book Of Python-Anti-Patterns",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -596,35 +596,35 @@
           "chapter": 11,
           "title": "Segment 11 (pages 87-94)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "LLM-Engineers-Handbook",
           "chapter": 51,
           "title": "Segment 51 (pages 465-475)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "makinggames",
           "chapter": 8,
           "title": "Segment 8 (pages 60-68)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 3,
           "title": "Segment 3 (pages 19-26)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 4,
           "title": "Segment 4 (pages 27-35)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -673,35 +673,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 1,
           "title": "Segment 1 (pages 3-10)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 4,
           "title": "Segment 4 (pages 27-35)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "makinggames",
           "chapter": 11,
           "title": "Segment 11 (pages 87-94)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -750,35 +750,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 63-71)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 33,
           "title": "Segment 33 (pages 327-334)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 17,
           "title": "Segment 17 (pages 131-142)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -827,35 +827,35 @@
           "chapter": 10,
           "title": "Segment 10 (pages 80-87)",
           "relevance_score": 0.42,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 1,
           "title": "Segment 1 (pages 1-9)",
           "relevance_score": 0.39,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 11,
           "title": "Segment 11 (pages 89-96)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 12,
           "title": "Segment 12 (pages 96-104)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 16,
           "title": "Segment 16 (pages 148-155)",
           "relevance_score": 0.38,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -904,35 +904,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 17,
           "title": "Segment 17 (pages 131-142)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 4,
           "title": "Segment 4 (pages 27-35)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -981,35 +981,35 @@
           "chapter": 43,
           "title": "Segment 43 (pages 433-447)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 28,
           "title": "Segment 28 (pages 555-576)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 48,
           "title": "Segment 48 (pages 973-990)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Reliable Machine Learning",
           "chapter": 5,
           "title": "Segment 5 (pages 36-44)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 123-143)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1058,35 +1058,35 @@
           "chapter": 40,
           "title": "Segment 40 (pages 343-351)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Game Programming Gems 7",
           "chapter": 28,
           "title": "Segment 28 (pages 263-270)",
           "relevance_score": 0.49,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Reliable Machine Learning",
           "chapter": 42,
           "title": "Segment 42 (pages 360-367)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Generative AI with LangChain_2e",
           "chapter": 29,
           "title": "Segment 29 (pages 241-252)",
           "relevance_score": 0.46,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1135,35 +1135,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 3-10)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents In Action",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1212,35 +1212,35 @@
           "chapter": 36,
           "title": "Segment 36 (pages 290-298)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 5,
           "title": "Segment 5 (pages 82-102)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Computer Systems A Programmer’s Perspective",
           "chapter": 1,
           "title": "Segment 1 (pages 1-20)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 38,
           "title": "Segment 38 (pages 345-352)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Reliable Machine Learning",
           "chapter": 35,
           "title": "Segment 35 (pages 301-308)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1289,35 +1289,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 3-10)",
           "relevance_score": 0.67,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "A Philosophy of Software Design",
           "chapter": 2,
           "title": "Segment 2 (pages 10-17)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice Architecture",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 8,
           "title": "Segment 8 (pages 63-71)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Engineering Building Applications",
           "chapter": 23,
           "title": "Segment 23 (pages 457-476)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1366,35 +1366,35 @@
           "chapter": 25,
           "title": "Segment 25 (pages 228-235)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 52-61)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 43,
           "title": "Segment 43 (pages 433-447)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 20,
           "title": "Segment 20 (pages 181-194)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Python Microservices with FastAPI",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

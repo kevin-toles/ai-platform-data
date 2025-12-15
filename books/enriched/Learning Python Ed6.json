@@ -49,35 +49,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 2-9)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 39,
           "title": "Segment 39 (pages 353-355)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 2,
           "title": "Segment 2 (pages 9-18)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 1,
           "title": "Preliminaries",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -122,35 +122,35 @@
           "chapter": 10,
           "title": "Execution Environment",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 41,
           "title": "Segment 41 (pages 342-350)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 1,
           "title": "Preliminaries",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 2,
           "title": "Python Language Basics, IPython,",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Microservices Development",
           "chapter": 6,
           "title": "Segment 6 (pages 41-48)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -195,35 +195,35 @@
           "chapter": 10,
           "title": "Execution Environment",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building LLM Powered Applications",
           "chapter": 41,
           "title": "Segment 41 (pages 342-350)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Microservices Development",
           "chapter": 31,
           "title": "Segment 31 (pages 256-263)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Architecture Patterns",
           "chapter": 11,
           "title": "[ 383 ]",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -268,35 +268,35 @@
           "chapter": 4,
           "title": "Types and Objects",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 29,
           "title": "Segment 29 (pages 576-595)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 20,
           "title": "Segment 20 (pages 392-414)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 1,
           "title": "Segment 1 (pages 1-19)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 2,
           "title": "Python Language Basics, IPython,",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -341,35 +341,35 @@
           "chapter": 29,
           "title": "Segment 29 (pages 576-595)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 7,
           "title": "Segment 7 (pages 128-146)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 4,
           "title": "Types and Objects",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 20,
           "title": "Segment 20 (pages 392-414)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 15,
           "title": "Segment 15 (pages 290-311)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -414,35 +414,35 @@
           "chapter": 8,
           "title": "Segment 8 (pages 147-169)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 30,
           "title": "Segment 30 (pages 269-279)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 4,
           "title": "Segment 4 (pages 27-34)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 16,
           "title": "String and Text Handling",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 29,
           "title": "Segment 29 (pages 258-268)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -487,35 +487,35 @@
           "chapter": 2,
           "title": "Strings and Text",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 4,
           "title": "Types and Objects",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 5,
           "title": "Segment 5 (pages 35-42)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 6,
           "title": "Segment 6 (pages 43-50)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 7,
           "title": "Segment 7 (pages 128-146)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -560,35 +560,35 @@
           "chapter": 7,
           "title": "Segment 7 (pages 128-146)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 4,
           "title": "Types and Objects",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 2,
           "title": "Segment 2 (pages 10-18)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 2,
           "title": "Segment 2 (pages 20-40)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Fluent Python 2nd",
           "chapter": 29,
           "title": "Segment 29 (pages 576-595)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -633,35 +633,35 @@
           "chapter": 25,
           "title": "Miscellaneous Library Modules",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Data Analysis 3rd",
           "chapter": 3,
           "title": "Built-In Data Structures,",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 6,
           "title": "Segment 6 (pages 46-53)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Effective-Python",
           "chapter": 40,
           "title": "Segment 40 (pages 420-428)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 29,
           "title": "Segment 29 (pages 258-268)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -706,35 +706,35 @@
           "chapter": 3,
           "title": "Lexical Conventions and Syntax",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 29,
           "title": "Segment 29 (pages 258-268)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Distilled",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 1,
           "title": "A Tutorial Introduction",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Essential Reference 4th",
           "chapter": 10,
           "title": "Execution Environment",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }

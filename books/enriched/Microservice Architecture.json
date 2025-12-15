@@ -54,35 +54,35 @@
           "chapter": 1,
           "title": "Microservices",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 9,
           "title": "Segment 9 (pages 72-80)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -129,35 +129,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.84,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -204,35 +204,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -279,35 +279,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -354,35 +354,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 8,
           "title": "Segment 8 (pages 63-71)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.61,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 12,
           "title": "Bringing It All Together",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -429,35 +429,35 @@
           "chapter": 1,
           "title": "Microservices",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 29,
           "title": "Segment 29 (pages 279-295)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 11,
           "title": "Microservices at Scale",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 9,
           "title": "Segment 9 (pages 72-80)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -504,35 +504,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.52,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.51,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Machine Learning Systems An Iterative Process for Production-Ready Applications",
           "chapter": 7,
           "title": "Segment 7 (pages 50-57)",
           "relevance_score": 0.48,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 9,
           "title": "Segment 9 (pages 72-80)",
           "relevance_score": 0.47,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -578,35 +578,35 @@
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.59,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -653,35 +653,35 @@
           "chapter": 27,
           "title": "Segment 27 (pages 257-266)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 12,
           "title": "Bringing It All Together",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Release It! Design and Deploy Production-Ready Software",
           "chapter": 25,
           "title": "Segment 25 (pages 200-207)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Reliable Machine Learning",
           "chapter": 42,
           "title": "Segment 42 (pages 360-367)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -728,35 +728,35 @@
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 1,
           "title": "Microservices",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.6,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -803,35 +803,35 @@
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 12,
           "title": "Bringing It All Together",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 6,
           "title": "Segment 6 (pages 43-51)",
           "relevance_score": 0.64,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -878,35 +878,35 @@
           "chapter": 10,
           "title": "Segment 10 (pages 95-107)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 11,
           "title": "Segment 11 (pages 108-118)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Designing Data-Intensive Applications",
           "chapter": 46,
           "title": "Segment 46 (pages 459-473)",
           "relevance_score": 0.56,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 30,
           "title": "Segment 30 (pages 290-300)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -953,35 +953,35 @@
           "chapter": 6,
           "title": "Segment 6 (pages 43-51)",
           "relevance_score": 0.73,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 9,
           "title": "Segment 9 (pages 86-94)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.7,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 12,
           "title": "Bringing It All Together",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1028,35 +1028,35 @@
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.72,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservice APIs Using Python Flask FastAPI",
           "chapter": 3,
           "title": "Segment 3 (pages 17-24)",
           "relevance_score": 0.71,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Python Microservices Development",
           "chapter": 2,
           "title": "Segment 2 (pages 9-16)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1103,35 +1103,35 @@
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.78,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.76,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Software Architecture",
           "chapter": 27,
           "title": "Segment 27 (pages 257-266)",
           "relevance_score": 0.62,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1178,35 +1178,35 @@
           "chapter": 29,
           "title": "Segment 29 (pages 279-295)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.68,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 4,
           "title": "Segment 4 (pages 26-50)",
           "relevance_score": 0.66,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.65,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.63,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1253,35 +1253,35 @@
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 7,
           "title": "Segment 7 (pages 68-75)",
           "relevance_score": 0.77,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 3,
           "title": "Segment 3 (pages 17-25)",
           "relevance_score": 0.75,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Microservices Up and Running",
           "chapter": 30,
           "title": "Segment 30 (pages 296-304)",
           "relevance_score": 0.74,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "Building Microservices",
           "chapter": 12,
           "title": "Bringing It All Together",
           "relevance_score": 0.69,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     },
@@ -1328,35 +1328,35 @@
           "chapter": 42,
           "title": "Segment 42 (pages 849-853)",
           "relevance_score": 0.58,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents In Action",
           "chapter": 39,
           "title": "Segment 39 (pages 341-346)",
           "relevance_score": 0.57,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 1,
           "title": "Segment 1 (pages 1-8)",
           "relevance_score": 0.55,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents In Action",
           "chapter": 12,
           "title": "Segment 12 (pages 95-102)",
           "relevance_score": 0.54,
-          "method": "sentence_transformers"
+          "method": "api"
         },
         {
           "book": "AI Agents and Applications",
           "chapter": 42,
           "title": "Segment 42 (pages 363-371)",
           "relevance_score": 0.53,
-          "method": "sentence_transformers"
+          "method": "api"
         }
       ]
     }
