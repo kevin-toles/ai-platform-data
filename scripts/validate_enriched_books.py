@@ -37,9 +37,24 @@ console = Console()
 # Constants per CODING_PATTERNS_ANALYSIS.md S1192
 DEFAULT_BOOKS_PATH = Path(__file__).parent.parent / "books" / "enriched"
 EXPECTED_BOOK_COUNT = 47
-REQUIRED_TOP_LEVEL_KEYS = {"metadata", "chapters", "pages", "enrichment"}
+REQUIRED_TOP_LEVEL_KEYS = {"metadata", "chapters", "pages", "enrichment", "enrichment_metadata"}
 REQUIRED_CHAPTER_KEYS = {"title", "keywords", "concepts", "summary", "similar_chapters"}
 EXPECTED_METHOD = "sentence_transformers"
+
+# D2.2 - Enrichment Provenance Fields per DATA_PIPELINE_FIX_WBS.md
+REQUIRED_PROVENANCE_FIELDS = {
+    "taxonomy_id",
+    "taxonomy_version",
+    "taxonomy_path",
+    "taxonomy_checksum",
+    "source_metadata_file",
+    "enrichment_date",
+    "enrichment_method",
+    "model_version",
+}
+NAMING_CONVENTION_SUFFIX = "_metadata_enriched.json"
+TAXONOMY_CHECKSUM_PREFIX = "sha256:"
+VALID_ENRICHMENT_METHODS = {"llm_enrichment", "cross_book_similarity", "hybrid"}
 
 
 @dataclass
@@ -177,10 +192,107 @@ def _validate_chapter_fields(
     return issues
 
 
+def _validate_enrichment_metadata(
+    data: dict[str, Any],
+    book_name: str
+) -> list[ChapterIssue]:
+    """Validate enrichment_metadata provenance fields.
+    
+    D2.2 - DATA_PIPELINE_FIX_WBS.md Phase D2.2
+    Validates presence and format of enrichment provenance fields.
+    """
+    issues: list[ChapterIssue] = []
+    
+    enrichment_metadata = data.get("enrichment_metadata")
+    if enrichment_metadata is None:
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="missing_enrichment_metadata",
+            details="Missing enrichment_metadata section"
+        ))
+        return issues
+    
+    if not isinstance(enrichment_metadata, dict):
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="invalid_enrichment_metadata",
+            details="enrichment_metadata must be a dict"
+        ))
+        return issues
+    
+    # Check all required provenance fields
+    keys = set(enrichment_metadata.keys())
+    missing = REQUIRED_PROVENANCE_FIELDS - keys
+    if missing:
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="missing_provenance_fields",
+            details=f"Missing fields: {sorted(missing)}"
+        ))
+    
+    # Validate taxonomy_checksum format (must start with sha256:)
+    checksum = enrichment_metadata.get("taxonomy_checksum", "")
+    if checksum and not checksum.startswith(TAXONOMY_CHECKSUM_PREFIX):
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="invalid_checksum_format",
+            details=f"taxonomy_checksum must start with '{TAXONOMY_CHECKSUM_PREFIX}'"
+        ))
+    
+    # Validate enrichment_method is one of valid values
+    method = enrichment_metadata.get("enrichment_method", "")
+    if method and method not in VALID_ENRICHMENT_METHODS:
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="invalid_enrichment_method",
+            details=f"enrichment_method must be one of: {sorted(VALID_ENRICHMENT_METHODS)}"
+        ))
+    
+    # Validate source_metadata_file is non-empty string
+    source_file = enrichment_metadata.get("source_metadata_file", "")
+    if not source_file or not isinstance(source_file, str):
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="invalid_source_metadata_file",
+            details="source_metadata_file must be a non-empty string"
+        ))
+    
+    return issues
+
+
+def _validate_naming_convention(file_path: Path) -> list[ChapterIssue]:
+    """Validate file follows naming convention.
+    
+    D2.2 - DATA_PIPELINE_FIX_WBS.md Phase D2.2
+    Files should be named {Book Title}_metadata_enriched.json
+    """
+    issues: list[ChapterIssue] = []
+    book_name = file_path.stem
+    
+    if not file_path.name.endswith(NAMING_CONVENTION_SUFFIX):
+        issues.append(ChapterIssue(
+            book_name=book_name,
+            chapter_idx=-1,
+            issue_type="invalid_naming_convention",
+            details=f"File must end with '{NAMING_CONVENTION_SUFFIX}', got '{file_path.name}'"
+        ))
+    
+    return issues
+
+
 def validate_book(file_path: Path) -> BookValidationResult:
     """Validate a single enriched book file."""
     book_name = file_path.stem
     issues: list[ChapterIssue] = []
+    
+    # D2.2 - Validate naming convention first
+    issues.extend(_validate_naming_convention(file_path))
     
     try:
         with open(file_path, encoding="utf-8") as f:
@@ -199,6 +311,9 @@ def validate_book(file_path: Path) -> BookValidationResult:
     
     # Validate top-level structure
     issues.extend(_validate_top_level_keys(data, book_name))
+    
+    # D2.2 - Validate enrichment_metadata provenance fields
+    issues.extend(_validate_enrichment_metadata(data, book_name))
     
     # Get chapters
     chapters = data.get("chapters", [])

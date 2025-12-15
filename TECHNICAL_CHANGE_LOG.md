@@ -31,10 +31,25 @@ llm-document-enhancer:  A Philosophy of Software Design_metadata.json
 | Phase | Change | Status |
 |-------|--------|--------|
 | D1.2.1 | Delete `scripts/extract_metadata.py` | ✅ DONE |
-| D2.2.2 | Update `validate_enriched_books.py` for new naming | PENDING |
-| D2.2.3 | Update `seed_qdrant.py` for new naming | PENDING |
-| D2.2.4 | Update `seed_neo4j.py` for new naming | PENDING |
+| D2.2.2 | Update `validate_enriched_books.py` for new naming | ✅ DONE |
+| D2.2.3 | Update `seed_qdrant.py` for new naming | ⏭️ SKIPPED (uses `*.json` glob, works as-is) |
+| D2.2.4 | Update `seed_neo4j.py` for new naming | ⏭️ SKIPPED (reads from metadata/, not enriched/) |
 | D3.1.2 | Create `scripts/sync_from_enhancer.py` | PENDING |
+
+**D2.2 Implementation Details** (2025-12-16):
+- Created `tests/unit/test_d22_naming_convention_validation.py` (TDD RED phase)
+- Updated `validate_enriched_books.py`:
+  - Added `enrichment_metadata` to `REQUIRED_TOP_LEVEL_KEYS`
+  - Added `REQUIRED_PROVENANCE_FIELDS` constant (8 fields)
+  - Added `_validate_enrichment_metadata()` function
+  - Added `_validate_naming_convention()` function
+  - Updated `validate_book()` to call new validation functions
+- Tests in RED state (expected - files lack provenance until D3 migration)
+- Full test suite: 165 passed, 8 failed (D2.2 tests), 1 skipped
+
+**Why seed scripts don't need changes**:
+- `seed_qdrant.py`: Uses `glob("*.json")` which matches any naming convention
+- `seed_neo4j.py`: Reads from `books/metadata/`, not `books/enriched/`
 
 **D1 Implementation Details** (2025-12-15):
 - Verified no imports of `extract_metadata` across codebase
