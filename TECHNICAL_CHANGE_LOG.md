@@ -34,7 +34,19 @@ llm-document-enhancer:  A Philosophy of Software Design_metadata.json
 | D2.2.2 | Update `validate_enriched_books.py` for new naming | ✅ DONE |
 | D2.2.3 | Update `seed_qdrant.py` for new naming | ⏭️ SKIPPED (uses `*.json` glob, works as-is) |
 | D2.2.4 | Update `seed_neo4j.py` for new naming | ⏭️ SKIPPED (reads from metadata/, not enriched/) |
-| D3.1.2 | Create `scripts/sync_from_enhancer.py` | PENDING |
+| D3.1.2 | Create `scripts/sync_from_enhancer.py` | ✅ DONE |
+
+**D3.1 Implementation Details** (2025-12-16):
+- Created `tests/unit/test_sync_from_enhancer.py` (TDD RED→GREEN)
+- Created `scripts/sync_from_enhancer.py` with:
+  - Source path validation (directory exists, contains enriched files)
+  - File renaming: `{Book}_enriched.json` → `{Book}_metadata_enriched.json`
+  - Checksum verification post-copy
+  - `--dry-run` flag for preview mode
+  - Rich CLI output with verbose option
+- 26 tests pass (TDD GREEN phase complete)
+- Full test suite: 206 passed, 8 failed (D2.2 RED expected), 66 skipped
+- Anti-pattern audit: S1192 (constants), S3776 (decomposed), S1172 (underscore prefixes)
 
 **D2.2 Implementation Details** (2025-12-16):
 - Created `tests/unit/test_d22_naming_convention_validation.py` (TDD RED phase)
