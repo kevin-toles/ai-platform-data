@@ -127,7 +127,7 @@ class TestQdrantSeedingPrerequisites:
         
         assert len(source_files) > 0, (
             "No source files found for vector generation. "
-            "Run 'python scripts/extract_metadata.py' first."
+            "Sync enriched files from llm-document-enhancer first."
         )
 
 

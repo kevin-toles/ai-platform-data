@@ -30,11 +30,18 @@ llm-document-enhancer:  A Philosophy of Software Design_metadata.json
 
 | Phase | Change | Status |
 |-------|--------|--------|
-| D1.2.1 | Delete `scripts/extract_metadata.py` | PENDING |
+| D1.2.1 | Delete `scripts/extract_metadata.py` | ✅ DONE |
 | D2.2.2 | Update `validate_enriched_books.py` for new naming | PENDING |
 | D2.2.3 | Update `seed_qdrant.py` for new naming | PENDING |
 | D2.2.4 | Update `seed_neo4j.py` for new naming | PENDING |
 | D3.1.2 | Create `scripts/sync_from_enhancer.py` | PENDING |
+
+**D1 Implementation Details** (2025-12-15):
+- Verified no imports of `extract_metadata` across codebase
+- Verified no CI/CD workflows reference the script
+- Deleted `scripts/extract_metadata.py`
+- Updated `test_qdrant_seeding.py` error message (line 130)
+- All 162 tests pass after deletion
 
 **Why extract_metadata.py Must Be Deleted**:
 1. Creates `generate_book_id()` with snake_case + hash format
