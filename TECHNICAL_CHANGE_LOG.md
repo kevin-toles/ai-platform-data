@@ -6,6 +6,68 @@
 
 ## Changelog
 
+### 2025-12-15: Data Pipeline Fix - Naming Convention & Script Deletion (CL-013)
+
+**Issue**: WBS 3.5.6 correlation tests failed due to incompatible book_id/chapter_id formats between Neo4j and Qdrant.
+
+**Root Cause**: `scripts/extract_metadata.py` creates IDs incompatible with llm-document-enhancer output.
+
+```
+extract_metadata.py:    a_philosophy_of_software_design_e5927c5e
+llm-document-enhancer:  A Philosophy of Software Design_metadata.json
+                        ↑ Completely different naming schemes!
+```
+
+**Decisions Made**:
+
+| Decision | Choice |
+|----------|--------|
+| extract_metadata.py | **DELETE** - creates incompatible IDs |
+| File naming | `{Book Title}_metadata_enriched.json` |
+| Seeder updates | Read from new naming convention |
+
+**Changes Planned** (per `DATA_PIPELINE_FIX_WBS.md`):
+
+| Phase | Change | Status |
+|-------|--------|--------|
+| D1.2.1 | Delete `scripts/extract_metadata.py` | PENDING |
+| D2.2.2 | Update `validate_enriched_books.py` for new naming | PENDING |
+| D2.2.3 | Update `seed_qdrant.py` for new naming | PENDING |
+| D2.2.4 | Update `seed_neo4j.py` for new naming | PENDING |
+| D3.1.2 | Create `scripts/sync_from_enhancer.py` | PENDING |
+
+**Why extract_metadata.py Must Be Deleted**:
+1. Creates `generate_book_id()` with snake_case + hash format
+2. Duplicates functionality already in llm-document-enhancer
+3. Violates "Single Source of Truth" architecture principle
+4. Root cause of Neo4j/Qdrant data mismatch
+
+**Enrichment Provenance Standard** (new):
+All enriched files must include:
+```json
+{
+  "enrichment_metadata": {
+    "taxonomy_id": "ai-ml-2024",
+    "taxonomy_version": "1.0.0",
+    "taxonomy_checksum": "sha256:...",
+    "source_metadata_file": "{Book}_metadata.json"
+  }
+}
+```
+
+**Architecture Alignment**:
+- ✅ ai-platform-data = Storage/Validation only (Pantry)
+- ✅ llm-document-enhancer = Processing (Extraction, Enrichment)
+- ✅ Single Source: All data flows from llm-document-enhancer → ai-platform-data
+
+**Anti-Pattern Audit**:
+- Verified against `CODING_PATTERNS_ANALYSIS.md`
+- New sync script will follow S1192, S3776, S1172 guidelines
+
+**Reference**: `DATA_PIPELINE_FIX_WBS.md` in textbooks/pending/platform/
+
+---
+
 ### 2025-12-19: WBS 3.5.5 Update Seeding Scripts for Enriched Data (CL-012)
 
 **Phase**: 3.5.5 Data Pipeline - Qdrant Seeding with Enriched Payloads

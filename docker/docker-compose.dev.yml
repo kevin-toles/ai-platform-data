@@ -1,0 +1,25 @@
+# Docker Compose Development Override
+# Adds host port bindings for local development and testing
+#
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d neo4j qdrant
+#
+# Per AI_CODING_PLATFORM_ARCHITECTURE.md:
+# - Development uses host port bindings for direct access
+# - Production uses Option D (network-only, no host ports)
+
+services:
+  neo4j:
+    ports:
+      - "7474:7474"  # HTTP Browser
+      - "7687:7687"  # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/devpassword
+
+  qdrant:
+    ports:
+      - "6333:6333"  # HTTP API
+      - "6334:6334"  # gRPC
+
+  redis:
+    ports:
+      - "6379:6379"  # Redis

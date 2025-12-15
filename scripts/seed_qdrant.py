@@ -209,6 +209,7 @@ def _build_enriched_payload(
     book_id: str,
     book_title: str,
     tier: Any,
+    chapter_number: int,
 ) -> dict[str, Any]:
     """Build payload with all enriched fields per WBS 3.5.5.
     
@@ -217,12 +218,21 @@ def _build_enriched_payload(
     
     Extracted per S3776 to reduce cognitive complexity.
     """
+    # Generate chapter_id if not present (format: book_id_chNNN_hash)
+    chapter_id = chapter.get("chapter_id", "")
+    if not chapter_id and book_id:
+        import hashlib
+        title_hash = hashlib.sha256(
+            chapter.get("title", "").encode()
+        ).hexdigest()[:6]
+        chapter_id = f"{book_id}_ch{chapter_number:03d}_{title_hash}"
+    
     return {
-        "chapter_id": chapter.get("chapter_id", ""),
+        "chapter_id": chapter_id,
         "book_id": book_id,
         "book_title": book_title,
         "title": chapter.get("title", ""),
-        "number": chapter.get("number"),
+        "number": chapter.get("number", chapter_number),
         "tier": tier,
         # Enriched fields per WBS 3.5.5.3-6
         "keywords": chapter.get("keywords", []),
@@ -242,6 +252,10 @@ def _process_enriched_book(
     
     Returns tuple of (chapters_processed, updated_point_id).
     Extracted per S3776 to reduce cognitive complexity.
+    
+    Handles two book formats:
+    1. Standard: book_id, title at top level
+    2. Enriched: metadata.title, metadata.source_pdf for book_id
     """
     from qdrant_client.models import PointStruct
     
@@ -250,19 +264,21 @@ def _process_enriched_book(
     with open(file_path) as f:
         book = json.load(f)
 
-    book_id = book.get("book_id", "")
-    book_title = book.get("title", "")
-    tier = book.get("tier")
+    # Handle both formats: direct fields or nested in metadata
+    metadata = book.get("metadata", {})
+    book_id = book.get("book_id") or metadata.get("book_id") or _derive_book_id(file_path, metadata)
+    book_title = book.get("title") or metadata.get("title", "")
+    tier = book.get("tier") or metadata.get("tier")
     chapters = book.get("chapters", [])
 
-    for chapter in chapters:
+    for chapter_num, chapter in enumerate(chapters, start=1):
         # Generate embedding from chapter content (or title if no content)
         content = chapter.get("content", chapter.get("title", ""))
         if len(content) > MAX_CONTENT_LENGTH:
             content = content[:MAX_CONTENT_LENGTH]
             
         embedding = model.encode(content).tolist()
-        payload = _build_enriched_payload(chapter, book_id, book_title, tier)
+        payload = _build_enriched_payload(chapter, book_id, book_title, tier, chapter_num)
 
         points.append(
             PointStruct(
@@ -275,6 +291,19 @@ def _process_enriched_book(
         chapters_count += 1
 
     return chapters_count, point_id
+
+
+def _derive_book_id(file_path: Path, metadata: dict[str, Any]) -> str:
+    """Derive book_id from file path or metadata.
+    
+    Priority:
+    1. source_pdf field in metadata (without extension)
+    2. File stem (filename without extension)
+    """
+    source_pdf = metadata.get("source_pdf", "")
+    if source_pdf:
+        return Path(source_pdf).stem
+    return file_path.stem
 
 
 def seed_chapters_from_enriched(
