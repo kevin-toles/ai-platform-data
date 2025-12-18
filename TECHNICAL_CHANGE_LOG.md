@@ -6,6 +6,47 @@
 
 ## Changelog
 
+### 2025-12-18: EEP-6 Diagram Similarity - Data Schema Impact (CL-014)
+
+**Summary**: EEP-6 Diagram Similarity was implemented in Code-Orchestrator-Service. This change has potential future impact on the enriched data schema stored in ai-platform-data.
+
+**Impact Assessment**:
+
+| Aspect | Impact | Notes |
+|--------|--------|-------|
+| Current Schema | None | EEP-6 does not modify existing enriched files |
+| Future Schema | Planned | `diagram_references` field may be added to enriched chapters |
+| Seeder Updates | None Required | No changes to `seed_qdrant.py` or `seed_neo4j.py` |
+
+**Potential Future Schema Extension**:
+```json
+{
+  "chapters": [{
+    "title": "Chapter 1",
+    "keywords": [...],
+    "concepts": [...],
+    "similar_chapters": [...],
+    "diagram_references": [
+      {
+        "type": "FIGURE",
+        "caption": "Figure 3.1: System Architecture",
+        "context": "...",
+        "line_number": 42
+      }
+    ]
+  }]
+}
+```
+
+**Architecture Alignment**:
+- ✅ Kitchen Brigade: ai-platform-data remains storage-only (Pantry role)
+- ✅ Processing happens in Code-Orchestrator-Service (Sous Chef role)
+- ✅ No code changes required in this repository for EEP-6
+
+**Deviations from Original Architecture**: None
+
+---
+
 ### 2025-12-15: Data Pipeline Fix - Naming Convention & Script Deletion (CL-013)
 
 **Issue**: WBS 3.5.6 correlation tests failed due to incompatible book_id/chapter_id formats between Neo4j and Qdrant.

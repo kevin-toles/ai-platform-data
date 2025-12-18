@@ -5,7 +5,7 @@ WBS Tasks: D3.1.1-6
 
 These tests validate:
 1. Source path validation (directory exists, contains enriched files)
-2. File renaming logic: `{Book}_enriched.json` → `{Book}_metadata_enriched.json`
+2. File sync logic: `{Book}_metadata_enriched.json` copied as-is (source already has correct naming)
 3. JSON structure validation (valid JSON, has required fields)
 4. Checksum verification post-copy
 5. Dry-run flag previews changes without writing
@@ -41,7 +41,7 @@ import pytest
 # Constants per CODING_PATTERNS_ANALYSIS.md (S1192)
 # =============================================================================
 
-SOURCE_SUFFIX = "_enriched.json"
+SOURCE_SUFFIX = "_metadata_enriched.json"
 TARGET_SUFFIX = "_metadata_enriched.json"
 ENRICHMENT_METADATA_KEY = "enrichment_metadata"
 REQUIRED_PROVENANCE_FIELDS = {
@@ -149,7 +149,7 @@ def create_source_files(
         data = sample_enriched_data.copy()
         data["book"] = {"title": title, "author": "Author"}
         
-        file_path = temp_source_dir / f"{title}_enriched.json"
+        file_path = temp_source_dir / f"{title}_metadata_enriched.json"
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
         files.append(file_path)
@@ -232,7 +232,7 @@ class TestSourcePathValidation:
 # =============================================================================
 
 class TestFileRenamingLogic:
-    """WBS D3.1.4: Test file renaming from _enriched.json to _metadata_enriched.json."""
+    """WBS D3.1.4: Test file sync preserves correct naming convention."""
 
     def test_files_renamed_with_metadata_suffix(
         self,
@@ -240,7 +240,7 @@ class TestFileRenamingLogic:
         temp_target_dir: Path,
         create_source_files: list[Path]
     ) -> None:
-        """Files should be renamed from _enriched.json to _metadata_enriched.json."""
+        """Files with _metadata_enriched.json suffix should be synced."""
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         _report = sync_from_enhancer(temp_source_dir, temp_target_dir)
@@ -263,7 +263,7 @@ class TestFileRenamingLogic:
         temp_target_dir: Path,
         sample_enriched_data: dict[str, Any]
     ) -> None:
-        """Book title portion of filename should be preserved during rename."""
+        """Book title portion of filename should be preserved during sync."""
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create file with complex title
@@ -271,7 +271,7 @@ class TestFileRenamingLogic:
         data = sample_enriched_data.copy()
         data["book"]["title"] = title
         
-        source_file = temp_source_dir / f"{title}_enriched.json"
+        source_file = temp_source_dir / f"{title}_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(data, f)
         
@@ -307,7 +307,7 @@ class TestFileRenamingLogic:
         temp_target_dir: Path,
         sample_enriched_data: dict[str, Any]
     ) -> None:
-        """Sync should only process files matching *_enriched.json pattern.
+        """Sync should only process files matching *_metadata_enriched.json pattern.
         
         Files not matching the pattern (config.json, _metadata.json) are
         simply ignored - they don't appear in any count since they're not
@@ -316,11 +316,11 @@ class TestFileRenamingLogic:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create valid enriched file
-        valid_file = temp_source_dir / "Test Book_enriched.json"
+        valid_file = temp_source_dir / "Test Book_metadata_enriched.json"
         with open(valid_file, "w", encoding="utf-8") as f:
             json.dump(sample_enriched_data, f)
         
-        # Create files that should be ignored (not matching *_enriched.json)
+        # Create files that should be ignored (not matching *_metadata_enriched.json)
         (temp_source_dir / "config.json").write_text('{"key": "value"}')
         (temp_source_dir / "Test Book_metadata.json").write_text('{"key": "value"}')
         (temp_source_dir / ".gitkeep").touch()
@@ -349,7 +349,7 @@ class TestJsonValidation:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create invalid JSON file
-        invalid_file = temp_source_dir / "Bad Book_enriched.json"
+        invalid_file = temp_source_dir / "Bad Book_metadata_enriched.json"
         invalid_file.write_text("{ not valid json }")
         
         report = sync_from_enhancer(temp_source_dir, temp_target_dir)
@@ -368,7 +368,7 @@ class TestJsonValidation:
         
         # Create JSON without enrichment_metadata
         data = {"book": {"title": "Test"}, "chapters": []}
-        file_path = temp_source_dir / "Incomplete Book_enriched.json"
+        file_path = temp_source_dir / "Incomplete Book_metadata_enriched.json"
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f)
         
@@ -397,7 +397,7 @@ class TestChecksumVerification:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create source file
-        source_file = temp_source_dir / "Test Book_enriched.json"
+        source_file = temp_source_dir / "Test Book_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(sample_enriched_data, f, indent=2)
         
@@ -440,7 +440,7 @@ class TestChecksumVerification:
         from scripts.sync_from_enhancer import sync_from_enhancer, SyncError
         
         # Create source file
-        source_file = temp_source_dir / "Test Book_enriched.json"
+        source_file = temp_source_dir / "Test Book_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(sample_enriched_data, f)
         
@@ -521,7 +521,7 @@ class TestDryRunMode:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create source file
-        source_file = temp_source_dir / "Existing Book_enriched.json"
+        source_file = temp_source_dir / "Existing Book_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(sample_enriched_data, f)
         
@@ -673,7 +673,7 @@ class TestEdgeCases:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create empty file
-        empty_file = temp_source_dir / "Empty Book_enriched.json"
+        empty_file = temp_source_dir / "Empty Book_metadata_enriched.json"
         empty_file.write_text("")
         
         report = sync_from_enhancer(temp_source_dir, temp_target_dir)
@@ -692,7 +692,7 @@ class TestEdgeCases:
         from scripts.sync_from_enhancer import sync_from_enhancer
         
         # Create source file
-        source_file = temp_source_dir / "Test Book_enriched.json"
+        source_file = temp_source_dir / "Test Book_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(sample_enriched_data, f)
         
@@ -721,7 +721,7 @@ class TestEdgeCases:
         data = sample_enriched_data.copy()
         data["book"]["title"] = unicode_title
         
-        source_file = temp_source_dir / f"{unicode_title}_enriched.json"
+        source_file = temp_source_dir / f"{unicode_title}_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(data, f)
         
@@ -745,7 +745,7 @@ class TestEdgeCases:
         data = sample_enriched_data.copy()
         data["book"]["title"] = long_title
         
-        source_file = temp_source_dir / f"{long_title}_enriched.json"
+        source_file = temp_source_dir / f"{long_title}_metadata_enriched.json"
         with open(source_file, "w", encoding="utf-8") as f:
             json.dump(data, f)
         

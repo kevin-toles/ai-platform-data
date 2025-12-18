@@ -52,8 +52,9 @@ console = Console()
 # =============================================================================
 
 # File naming patterns
-SOURCE_SUFFIX = "_enriched.json"
-TARGET_SUFFIX = "_metadata_enriched.json"
+# Source files now use the correct naming convention after rename
+SOURCE_SUFFIX = "_metadata_enriched.json"
+TARGET_SUFFIX = "_metadata_enriched.json"  # Same as source - no rename needed
 GITKEEP_FILE = ".gitkeep"
 
 # Default paths (relative to typical workspace structure)
@@ -255,14 +256,12 @@ def _validate_source_directory(source_dir: Path) -> None:
 
 
 def _get_enriched_files(source_dir: Path) -> list[Path]:
-    """Get all files matching *_enriched.json pattern.
+    """Get all files matching *_metadata_enriched.json pattern.
     
     Returns:
-        List of Path objects for enriched files (excludes _metadata_enriched.json)
+        List of Path objects for enriched files with correct naming convention.
     """
-    all_files = list(source_dir.glob(f"*{SOURCE_SUFFIX}"))
-    # Exclude files that already have the target naming
-    return [f for f in all_files if not f.name.endswith(TARGET_SUFFIX)]
+    return sorted(source_dir.glob(f"*{SOURCE_SUFFIX}"))
 
 
 def _validate_has_enriched_files(source_dir: Path, enriched_files: list[Path]) -> None:
@@ -276,13 +275,12 @@ def _validate_has_enriched_files(source_dir: Path, enriched_files: list[Path]) -
 
 
 def _generate_target_name(source_name: str) -> str:
-    """Generate target filename with new naming convention.
+    """Generate target filename.
     
-    Transforms: {Book}_enriched.json → {Book}_metadata_enriched.json
+    Since source files now use correct naming, target name is the same.
     """
-    # Remove _enriched.json suffix and add _metadata_enriched.json
-    book_title = source_name.removesuffix(SOURCE_SUFFIX)
-    return f"{book_title}{TARGET_SUFFIX}"
+    # Source files already have correct naming - no transformation needed
+    return source_name
 
 
 def _validate_json_file(file_path: Path) -> tuple[dict[str, Any] | None, str | None]:
