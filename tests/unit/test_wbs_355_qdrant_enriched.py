@@ -236,15 +236,19 @@ class TestQdrantPayloadsHaveSimilarChapters:
         )
 
     def test_similar_chapters_have_method_field(self) -> None:
-        """similar_chapters entries must have method field (api or sentence_transformers)."""
+        """similar_chapters entries must have method field per schema enum."""
         book = _get_sample_enriched_book()
         if book is None:
             pytest.skip("No enriched books available")
         
         chapters = book.get("chapters", [])
         
-        # Valid methods: 'api' (SBERT via Code-Orchestrator), 'sentence_transformers' (legacy)
-        valid_methods = ("api", "sentence_transformers")
+        # Valid methods per book_enriched_chapters.schema.json similar_chapters[].method enum
+        valid_methods = (
+            "sbert", "tfidf", "bertopic", "hybrid",
+            "cosine_similarity", "api", "multi-signal",
+            "sentence_transformers",  # Legacy support
+        )
         
         # Find a chapter with similar_chapters
         for chapter in chapters:

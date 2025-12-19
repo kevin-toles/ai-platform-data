@@ -50,7 +50,11 @@ EXPECTED_PROVENANCE_FIELDS = {
 }
 EXPECTED_BOOK_COUNT = 47
 MINIMUM_CHECKSUM_LENGTH = 64  # sha256 hex length
-VALID_ENRICHMENT_METHODS = {"sentence_transformers", "tfidf", "statistical", "semantic_search"}
+# Valid enrichment methods per book_enriched_chapters.schema.json enrichment_provenance.enrichment_method
+VALID_ENRICHMENT_METHODS = {
+    "msep", "tfidf", "semantic_search", "api", "local",
+    "sentence_transformers", "statistical",  # Legacy support
+}
 
 
 # =============================================================================

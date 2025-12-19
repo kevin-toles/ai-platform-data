@@ -39,7 +39,17 @@ DEFAULT_BOOKS_PATH = Path(__file__).parent.parent / "books" / "enriched"
 EXPECTED_BOOK_COUNT = 47
 REQUIRED_TOP_LEVEL_KEYS = {"metadata", "chapters", "pages", "enrichment", "enrichment_metadata"}
 REQUIRED_CHAPTER_KEYS = {"title", "keywords", "concepts", "summary", "similar_chapters"}
-EXPECTED_METHOD = "sentence_transformers"
+# Valid methods per book_enriched_chapters.schema.json similar_chapters[].method enum
+VALID_SIMILAR_CHAPTER_METHODS = {
+    "sbert",
+    "tfidf",
+    "bertopic",
+    "hybrid",
+    "cosine_similarity",
+    "api",
+    "multi-signal",
+    "sentence_transformers",  # Legacy support
+}
 
 # D2.2 - Enrichment Provenance Fields per DATA_PIPELINE_FIX_WBS.md
 REQUIRED_PROVENANCE_FIELDS = {
@@ -180,12 +190,12 @@ def _validate_chapter_fields(
     elif similar:  # Non-empty list - check method field
         for i, item in enumerate(similar):
             method = item.get("method")
-            if method != EXPECTED_METHOD:
+            if method not in VALID_SIMILAR_CHAPTER_METHODS:
                 issues.append(ChapterIssue(
                     book_name=book_name,
                     chapter_idx=chapter_idx,
                     issue_type="wrong_method",
-                    details=f"similar_chapters[{i}].method={method}, expected {EXPECTED_METHOD}"
+                    details=f"similar_chapters[{i}].method={method}, expected one of {VALID_SIMILAR_CHAPTER_METHODS}"
                 ))
                 break  # Report once per chapter
     
