@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "title": "Python Distilled",
+    "source_file": "Python Distilled_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 9,
+      "title": "The __bytes__() method is used to create a byte representation if an instance is passed",
+      "start_page": 110,
+      "end_page": 116,
+      "summary": "Python never performs implicit type conversions using these methods.\nobject x implements an __int__() method, the expression 3 + x will still produce a\nfunction.\nThe __index__() method performs an integer conversion of an object when it’s used\nThe methods in Table 4.5 are used by objects that want to implement containers of various\nMethods for Containers\nMethod\nReturns self[key]\n__setitem__(self, key, value)\nSets self[key] = value\nx = a[2]\nThe __len__() method is called by the built-in len() function to return a non-\nThis function also determines truth values unless the __bool__() method\nFor accessing individual items, the __getitem__() method can return an item by key\nThe __setitem__() method assigns a value to an\nThe __delitem__() method is invoked whenever the del operation is applied to\nThe __contains__() method is used to implement the in operator.\nSlicing operations such as x = s[i:j] are also implemented using __getitem__(),\nx = a[1:5]\n# x = a.__getitem__(slice(1, 5, None))\nan integer, the value passed to these methods is a tuple containing a combination of slice\nIf an instance, obj, supports iteration, it provides a method, obj.__iter__(), that returns\nAn iterator iter, in turn, implements a single method, iter.__next__(), that\nreturns the next object or raises StopIteration to signal the end of iteration.\nmethods are used by the implementation of the for statement as well as other operations\nx = _iter.__next__()\nAn object may optionally provide a reversed iterator if it implements the\nThis method should return an iterator object with\nthe same interface as a normal iterator (that is, a __next__() method that raises\nfunction.\nA common implementation technique for iteration is to use a generator function\ndef __iter__(self):\nx = self.start\nwhile x < self.stop:\nx += self.step\nThis works because generator functions conform to the iteration protocol themselves.\nthe __iter__() method.\nThe methods in Table 4.6 read, write, and delete the attributes of an object using the dot\nMethods for Attribute Access\nMethod\nReturns the attribute self.name\nReturns the attribute self.name if it’s not\nSets the attribute self.name = value\nWhenever an attribute is accessed, the __getattribute__() method is invoked.\nThe __setattr__() method is always invoked when setting an attribute, and the\n__delattr__() method is always invoked when deleting an attribute.\nFunction Protocol\nAn object can emulate a function by providing the __call__() method.\nIf an object, x,\nprovides this method, it can be invoked like a function.\n__call__() to pass the self argument to instance methods.\nA context object shown here is expected to implement the methods listed in Table 4.7.\nMethods for Context Managers\nMethod\n__exit__(self, type, value, tb)\nThe __enter__() method is invoked when the with statement executes.\nreturned by this method is placed into the variable specified with the optional as var\nThe __exit__() method should return\nparts of Python and the standard library are designed to work with iterable objects.\nFunctions\nFunctions are defined with the def statement:\nThe body of a function is a sequence of statements that execute",
+      "keywords": [
+        "method",
+        "function",
+        "slice",
+        "Python",
+        "object",
+        "Protocol",
+        "Attribute",
+        "statement",
+        "Iteration",
+        "Context",
+        "functions",
+        "Iteration Protocol",
+        "extended slice",
+        "key",
+        "types"
+      ],
+      "concepts": [
+        "method",
+        "function",
+        "functions",
+        "functionality",
+        "iteration",
+        "iterating",
+        "slicing",
+        "slices",
+        "value",
+        "object"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Distilled",
+          "chapter": 10,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.665,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 7,
+          "title": "",
+          "score": 0.458,
+          "base_score": 0.458,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 6,
+          "title": "",
+          "score": 0.388,
+          "base_score": 0.388,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 8,
+          "title": "",
+          "score": 0.313,
+          "base_score": 0.313,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "self",
+          "method invoked",
+          "methods",
+          "invoked",
+          "attribute"
+        ],
+        "semantic": [],
+        "merged": [
+          "self",
+          "method invoked",
+          "methods",
+          "invoked",
+          "attribute"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5647261129507483,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:20.066480+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Generators",
+      "start_page": 155,
+      "end_page": 168,
+      "summary": "Generators\nWhen next() is called, the generator function executes statements until it reaches a\nThe yield statement returns a result, at which point execution of the\nnext() is a shorthand for invoking the __next__() method on a generator.\nYou normally don’t call next() on a generator directly, but use the for statement or\nA generator function produces items until it returns—by reaching the end of the\nIf a generator function returns a non-None value, it is attached to\nFor example, this generator function uses both yield and\nyield 37\n<generator object func at 0x10b7cd480>\n6.1 Generators and yield\nNormally, generator functions don’t return a value.\nGenerators are almost always\nthe only practical way to get the value is to drive the generator manually with explicit\nMost code involving generators just doesn’t do that.\nA subtle issue with generators is where a generator function is only partially consumed.\nIn this example, the for loop aborts by calling break and the associated generator never\nIf it’s important for your generator function to perform some kind\ndef countdown(n):\nyield n\nprint('Only made it to', n)\nGenerators are guaranteed to execute the finally block code even if the generator is\nwhen a generator terminates:\nyield data\n# file closed here even if generator is abandoned\ntry-finally or context managers, generators are guaranteed to do the right thing even if\nGenerators\nRestartable Generators\nNormally a generator function executes only once.\n__iter__() method a generator:\ndef __iter__(self):\nyield n\nThis works because each time you iterate, a fresh generator is created by __iter__().\nGenerator Delegation\nAn essential feature of generators is that a function involving yield never executes by\ncalling a generator function is not enough to make it execute.\nyield n\n6.3 Generator Delegation\nyield n\ndef up_and_down(n):\nyield from countup(n)\nyield from countdown(n)\ndef up_and_down(n):\nyield from is especially useful when writing code that must recursively iterate through\nyield i\nGenerators\nUsing Generators in Practice\nAt first glance, it might not be obvious how to use generators for practical problems\nOne useful application of generators is as a tool for restructuring code that consists of\nNow, consider this version using generators:\nyield file\ndef get_lines(files):\nyield from file\n6.4 Using Generators in Practice\ngenerator is only concerned with path names, the get_files() generator is only\nIt is only at the end that these generators are\nexample, consider the get_comments() generator.\nThis text could come from almost anywhere—a file, a list, a generator, and so\nGenerators thus encourage\nGenerators are also useful for altering the normal evaluation rules of function\nGenerators don’t do that.\nWhen a generator function is applied, its execution\nAs an example, consider again the generator function for flattening nested lists:\nyield i\nGenerators\nDo these examples mean that you should rewrite all of your code using wild generator\nEnhanced Generators and yield\nInside a generator function, the yield statement can also be used as an expression that\nn = yield\nA function that uses yield as an expression is still a generator, but its usage is different.\n6.5 Enhanced Generators and yield Expressions\nIn this example, the initial call to r.send(None) is necessary so that the generator\nAt this point, the generator\ngenerator object r.\nThe value passed to send() is returned by the yield expression in the\ngenerator.\nUpon receiving a value, a generator executes statements until the next yield is\ndown the generator as follows:\nThe close() operation raises a GeneratorExit exception inside the generator at the\nexception will be raised if further values are sent to a generator.\nExceptions can be raised inside a generator using the throw(ty [,val [,tb]]) method\nn = yield\nstatement in the generator.\nA generator can elect to catch the exception and handle it as is\nIf a generator doesn’t handle the exception, it propagates out of the generator\nGenerators\nApplications of Enhanced Generators\nEnhanced generators are an odd programming construct.\ngenerator.\nHere, a generator is being used to glue together the two halves of a context manager.\nWith the @contextmanager generator, everything prior to the yield statement executes\nEverything after the yield\n6.6 Applications of Enhanced Generators\nAnother application of extended generators is using functions to encapsulate a\nexplicitly closed or destroyed, one might use a generator to set up a long-lived task.\nan example of a generator that receives byte fragments and assembles them into lines:\nGenerators\npart = yield line\nIn this example, a generator receives byte fragments that are collected into a byte array.\n# Prime the generator\nindex = self.data.index(b'\\n')\n6.7 Generators and the Bridge to Awaiting\nis about 40–50% faster with a generator than with this class code.\nGenerators and the Bridge to Awaiting\nA classic use of generator functions is in libraries related to asynchronous I/O such as in\nThe await statement involves interacting with a generator in disguise.\nyield\n# Must be a generator\ndef function():\nknow that there is a generator function buried somewhere inside.\nGenerators\nreason to ever implement an iterator using anything other than a generator.\nIn later versions of Python, generators took on a new role as they evolved enhanced\nlimited to iteration but opened up possibilities for using generators in other contexts.\ncommon to see generator functions used outside of the context of iteration—their\nIn fact, if you find yourself defining a generator function and you’re not",
+      "keywords": [
+        "generator",
+        "generator function",
+        "yield",
+        "function",
+        "Enhanced Generators",
+        "Python",
+        "line",
+        "code",
+        "generator function executes",
+        "yield statement",
+        "Enhanced",
+        "File",
+        "exception",
+        "functions",
+        "statement"
+      ],
+      "concepts": [
+        "generators",
+        "yield",
+        "iteration",
+        "iterate",
+        "functions",
+        "functionality",
+        "line",
+        "code",
+        "file",
+        "returns"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Distilled",
+          "chapter": 9,
+          "title": "",
+          "score": 0.388,
+          "base_score": 0.388,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 10,
+          "title": "",
+          "score": 0.332,
+          "base_score": 0.332,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 7,
+          "title": "",
+          "score": 0.325,
+          "base_score": 0.325,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "generator",
+          "generators",
+          "yield",
+          "generator function",
+          "enhanced"
+        ],
+        "semantic": [],
+        "merged": [
+          "generator",
+          "generators",
+          "yield",
+          "generator function",
+          "enhanced"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4547515654221911,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:20.066516+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Classes and Object-Oriented Programming",
+      "start_page": 169,
+      "end_page": 240,
+      "summary": "Classes and Object-Oriented Programming\n<class 'list'>\nThe class Statement\nNew objects are defined using the class statement.\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'Account({self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nreturn self.balance\nIt’s important to note that a class statement by itself doesn’t create any instances of the\nclass.\nclass merely holds the methods that will be available on the instances created later.\nThe functions defined inside a class are known as methods.\nAn instance method is a\nfunction that operates on an instance of the class, which is passed as the first argument.\nwithdraw(), and inquiry() are examples of instance methods.\nThe __init__() and __repr__() methods of the class are examples of so-called special\nThe __init__() method is used to initialize state when a new instance is created.\n__repr__() method returns a string for viewing an object.\nA class definition may optionally include a documentation string and type hints.\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'Account({self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nreturn self.balance\nType hints do not change any aspect of how a class works—that is, they do not\nInstances of a class are created by calling a class object as a function.\ninstance that is then passed to the __init__() method.\nconsist of the newly created instance self along with the arguments supplied in calling the\nclass object.\nClasses and Object-Oriented Programming\nInside __init__(), attributes are saved on the instance by assigning to self.\nexample, self.owner = owner is saving an attribute on the instance.\ncreated instance has been returned, these attributes, as well as methods of the class, are\nThe methods are found on the class\nEvery instance keeps a link to its class via its associated type.\n<class 'Account'>\n<class 'Account'>\nrelationship between instances and classes.\nAttributeError: 'Account' object has no attribute 'balance'\n# Method call\nmethod.\nClasses and Object-Oriented Programming\nWhen you access a method as an attribute, you get an object known as a bound method.\nA bound method is an object that contains both an instance (the self) and the function\nAlthough classes define an isolated namespace for the methods, that namespace does\nimplementing a class, references to attributes and methods must be fully qualified.\nexample, in methods you always reference attributes of the instance through self.\nanother method.\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'Account({self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nreturn self.balance\nWhen defining new classes, it is common to define some of these methods.\n__repr__() method in the Account class was one such method for improving debugging\nclass AccountPortfolio:\ndef __init__(self):\nself.accounts = []\ndef add_account(self, account):\nreturn sum(account.inquiry() for account in self)\nreturn len(self.accounts)\nreturn self.accounts[index]\nreturn iter(self.accounts)\nClasses and Object-Oriented Programming\nthis by having your class implement predefined special methods as described in Chapter 4.\nInheritance is a mechanism for creating a new class that specializes or modifies the\nbehavior of an existing class.\nThe original class is called a base class, superclass, or parent\nclass.\nWhen a class\nis created via inheritance, it inherits the attributes defined by its base classes.\nderived class may redefine any of these attributes and add new attributes of its own.\nInheritance is specified with a comma-separated list of base-class names in the class\nIf there is no specified base class, a class implicitly inherits from object.\nis a class that is the root of all Python objects; it provides the default implementation of\nOne use of inheritance is to extend an existing class with new methods.\nclass MyAcount(Account):\nclass EvilAccount(Account):\nreturn self.balance * 1.10\nreturn self.balance\nOccasionally, a derived class would reimplement a method but also need to call the\nclass EvilAccount(Account):\nIn this example, super() allows you to access a method as it was previously defined.\nclass EvilAccount(Account):\ndef __init__(self, owner, balance, factor):\nClasses and Object-Oriented Programming\nAccount class:\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'Account({self.owner!r}, {self.balance!r})'\nthe method is hardcoded to use the name Account.\n>>> class EvilAccount(Account):\n<class 'EvilAccount'>\nclass Account:\nreturn f'{type(self).__name__}({self.owner!r}, {self.balance!r})'\nInheritance is not used with every class, but if it’s\nan anticipated use case of the class you’re writing, you need to pay attention to details like\nInheritance establishes a relationship in the type system where any child class will\ntype-check as the parent class.\n<class 'EvilAccount'>\nclass Food:\nTo do that, list more than one class as a parent.\nThe resulting child class will\nclass Stack(list):\nClasses and Object-Oriented Programming\nclass Stack:\ndef __init__(self):\nA slight extension of this implementation might accept the internal list class as an\nclass Stack:\ndef __init__(self, *, container=None):\nclass Stack:\ndef __init__(self):\nClasses and Object-Oriented Programming\nthe object you’re building is a specialized version of the parent class or if you are merely\nSometimes you might find yourself writing classes with just a single method that needs to\nFor example, maybe you wrote a data parsing class like this:\nclass DataParser:\nclasses, consider using functions instead.\nHowever, none of these inherit from any kind of special Iterable base class.\nClasses and Object-Oriented Programming\nclass udict(dict):\nclass above.\nclass udict(UserDict):\n7.12 Class Variables and Methods\nStack class in Section 7.8.\nClass Variables and Methods\nIn a class definition, all functions are assumed to operate on an instance, which is always\nHowever, the class itself is also an object that can carry\nbeen created using a class variable num_accounts:\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'{type(self).__name__}({self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nreturn self.balance\nClass variables are defined outside the normal __init__() method.\nuse the class, not self.\nIt’s a bit unusual, but class variables can also be accessed via instances.\nClasses and Object-Oriented Programming\nThis works because attribute lookup on instances checks the associated class if there’s no\nIt is also possible to define what’s known as a class method.\nA class method is a method\napplied to the class itself, not to instances.\nA common use of class methods is to define\nclass Account:\ndef __init__(self, owner, balance):\n7.12 Class Variables and Methods\nThe first argument of a class method is always the class itself.\nclass method is to create a new instance, explicit steps must be taken to do so.\nThe fact that the class is passed as argument solves an important problem related to\nof that class.\nclass EvilAccount(Account):\nClass variables and class methods are sometimes used together to configure and control\nAs another example, consider the following Date class:\nclass Date:\nmethod.\nClasses and Object-Oriented Programming\nclass MDYDate(Date):\nclass DMYDate(Date):\nConfiguration via class variables and inheritance like this is a common tool for adjusting\nThe use of class methods is critical to making it work since they\nAlternate construction of instances is, by far, the most common use of class methods.\nYou will see this naming convention used in class methods\na class method for creating a preinitialized dictionary from a set of keys:\nOne caution about class methods is that Python does not manage them in a namespace\nSometimes a class is merely used as a namespace for functions declared as static methods\nUnlike a normal method or class method, a static method does not\nhappens to be defined inside a class.\nclass Ops:\nYou don’t normally create instances of such a class.\nthrough the class:\nSometimes other classes will use a collection of static methods like this to implement\nConsider the use of inheritance in the earlier Account example:\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'{type(self).__name__}({self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nreturn self.balance\nclass EvilAccount(Account):\nClasses and Object-Oriented Programming\nreturn 1.10 * self.balance\nreturn self.balance\nclass StandardPolicy:\nclass Account:\ndef __init__(self, owner, balance, *, policy=StandardPolicy):\nreturn f'Account({self.policy}, {self.owner!r}, {self.balance!r})'\ndef withdraw(self, amount):\nIn this reformulation, there is only one type of instance that gets created, Account.\nmethods.\n<class 'StandardPolicy'>\nThe main purpose of these classes is to\ndef deposit(self, account, amount):\naccount.balance += self.deposit_factor * amount\ndef inquiry(self, account):\nreturn self.inquiry_factor * account.balance\nClasses and Object-Oriented Programming\nThis approach of delegating methods to supporting classes is a common\ncan be encapsulated into its own class of methods (often static).\nwriting classes with useful __repr__() methods, preferring composition over inheritance,\nIn Python, all attributes and methods of a class are public, that is, accessible without any\nAccount class where the balance has been turned into a “private” attribute:\nclass Account:\ndef __init__(self, owner, balance):\nreturn f'Account({self.owner!r}, {self._balance!r})'\ndef withdraw(self, amount):\nreturn self._balance\nAccount.inquiry() method.\nclass EvilAccount(Account):\nreturn 1.10 * self._balance\nreturn self._balance\nclass A:\ndef __init__(self):\nClasses and Object-Oriented Programming\nclass B(A):\ndef __init__(self):\nprint('B.__spam', self.__x)\nappears that class B is trying to override the __spam() method via inheritance.\nplace to actually prevent access to the “private” attributes of a class.\nnames of the class and the corresponding private attribute are known, they can still be\nmangling process actually only occurs once when the class is defined.\nAttributes of user-defined classes have no constraints on their type or value.\nclasses allow optional type hints to be specified for selected attributes.\nclass Account:\ndef __init__(self, owner, balance):\nClasses and Object-Oriented Programming\nFor example, does the Account class\nattribute access and handles it via user-defined methods.\nclass Account:\ndef __init__(self, owner, balance):\ndef owner(self):\nreturn self._owner\ndef owner(self, value):\nHere is how it works when you try to use the class:\nis used to optionally implement a method for setting the attribute value.\nThis method\nAccount.__init__() method.\nClasses and Object-Oriented Programming\nimplement methods for getting, setting, or deleting the attribute value.\nclass SomeClass:\nclass Box(object):\n7.18 Types, Interfaces, and Abstract Base Classes\nOne thing to think about when defining a class is making the programming interface to\nattributes such as b.width or b.height whereas other values would be accessed as methods\nConsider this class:\nclass SomeClass:\nWhen you define static and class methods\nClasses\nWhen you create an instance of a class, the type of that instance is the class itself.\nfor membership in a class, use the built-in function isinstance(obj, cls).\nreturns True if an object, obj, belongs to the class cls or any class derived from cls.\nclass A:\nclass B(A):\nClasses and Object-Oriented Programming\nclass C:\n# Returns the class object A\nSimilarly, the built-in function issubclass(A, B) returns True if the class A is a subclass\nof class B.\nA common use of class typing relations is the specification of programming interfaces.\nAs an example, a top-level base class might be implemented to specify the requirements\nThat base class might then be used for type hinting or for\nclass Stream:\nclasses would inherit from Stream and implement the required functionality.\ninstantiate one of those classes instead.\nclass SocketStream(Stream):\n7.18 Types, Interfaces, and Abstract Base Classes\nclass PipeStream(Stream):\nThis use of interface classes is more common in the organization of large frameworks\nTo prevent this problem, it is common for interfaces to be defined as abstract base classes\nThis module defines a base class (ABC) and a decorator\nclass Stream(ABC):\nClasses and Object-Oriented Programming\nTypeError: Can't instantiate abstract class Stream with abstract methods\nclass SocketStream(Stream):\nAlthough an abstract class cannot be instantiated, it can define methods and properties\nIf a child class lists more than one parent, the child\nclass Duck:\nclass Trombonist:\ndef noise(self):\nclasses and combining them together with multiple inheritance to create weird mutant\nFor example, the last section introduced the concept of an abstract base class.\nvarious abstract classes like this:\nclass Stream(ABC):\nClasses and Object-Oriented Programming\nclass Iterable(ABC):\nWith these classes, multiple inheritance might be used to specify which interfaces have\nbeen implemented by a child class:\nFor example, none of the inherited methods even do anything in this example.\nThe other use of multiple inheritance is to define mixin classes.\nthat modifies or extends the functionality of other classes.\nclass Duck:\ndef noise(self):\nclass Trombonist:\ndef noise(self):\nclass Cyclist:\ndef noise(self):\nThese classes are completely unrelated to each other.\ndefine the following classes:\nclass LoudMixin:\ndef noise(self):\nclass AnnoyingMixin:\ndef noise(self):\nsuper() to delegate to a nonexistent parent class.\nThe classes don’t even work:\nThese are mixin classes.\nclasses that implement the missing functionality.\nClasses and Object-Oriented Programming\nFirst, whenever you use inheritance, Python builds a linear chain of classes known as\non a class.\nclass Base:\nclass A(Base):\nclass B(A):\nBase.__mro__ # -> (<class 'Base'>, <class 'object'>)\n# -> (<class 'A'>, <class 'Base'>, <class 'object'>)\n# -> (<class 'B'>, <class 'A'>, <class 'Base'>, <class 'object'>)\nsearch for an attribute on an instance or class, each class on the MRO is checked in the\nThe object class is listed in\nthe MRO because all classes inherit from object, whether or not it’s listed as a parent.\nmultiple inheritance.” With cooperative inheritance, all of the classes are placed on the\nThe first rule states that a child class\nclass X: pass\nclass Y(X): pass\nIn this case, the method resolution algorithm rejects class Z because it can’t determine\nan ordering of the base classes that makes sense.\nHowever, class Y inherits from X, so if X is\nclass shown earlier:\n<class 'LoudMixin'>, <class 'Cyclist'>, <class 'object'>)\nSpecifically, any child class is always\nThe object class is listed last because it is the parent of all other\nclasses.\nrole is to delegate attributes to the next class on the MRO.\nThis is based upon the class\nFor example, when the AnnoyingMixin class uses super(), it looks\nlookup to the next class.\nclass invokes LoudMixin.noise().\nThis is because LoudMixin is the next class listed on the\nThe super().noise() operation in the LoudMixin class\nthen delegates to the Cyclist class.\nFor any use of super(), the choice of the next class\nFirst, child classes are always checked before any base class in the\nIf multiple mixin classes are used at the\nclass NoiseMixin:\ndef noise(self):\nClasses and Object-Oriented Programming\ndef noise(self):\ndef noise(self):\nencounter a class that makes a direct call to its parent:\nclass Base:\nclass A(Base):\nclass B(Base):\nclass C(A, B):\nSuch classes are not safe to use with multiple inheritance.\nSometimes dispatching is implemented through a class-based interface using getattr()\nclass Dispatcher:\nClasses and Object-Oriented Programming\nThis last example of using getattr() to dispatch onto methods of a class is a fairly\nClass Decorators\nclass decorator.\nA class decorator is a function that takes a class as input and returns a class\nIn this example, the register_decoder() function looks inside a class for a mimetypes\nIf found, it’s used to add the class to a dictionary mapping MIME types to class\nTo use this function, you apply it as a decorator right before the class definition:\nclass TextDecoder:\n7.21 Class Decorators\nclass HTMLDecoder:\nclass ImageDecoder:\nThis is a common alternative to mixin classes or\ndef noise(self):\ndef noise(self):\nclass Cyclist(object):\ndef noise(self):\nClasses and Object-Oriented Programming\nClass decorators can also be used to create entirely new code.\ntask when writing a class is to write a useful __repr__() method for improved debugging:\nclass Point:\ndef __init__(self, x, y):\nPerhaps a class decorator could create the\nmethod for you?\nclass Point:\nThat function is attached to the class.\nclass Point:\nclass type hints.\nHere’s how the resulting Point class works:\nThe examples shown in this section illustrate common uses of class decorators—\nOne issue with class\nmanipulation of classes.\nA class decorator is one mechanism for doing this.\nimplementing an __init_subclass__(cls) class method.\nclass Base:\n# Example (should see 'Initializing' message for each class)\nclass A(Base):\nclass B(A):\ndefinition of any child class.\nFor example, class registration:\nClasses and Object-Oriented Programming\nclass DecoderBase:\nHere is an example of a class that automatically creates a __repr__() method from the\nsignature of the class __init__() method:\nclass Base:\nclass Point(Base):\nIf multiple inheritance is being used, you should use super() to make sure all classes\nclass A:\nclass B:\n# Should see output from both classes here\nclass C(A, B):\ncan register classes, rewrite methods, perform validation, and more.\nWhen a class is defined, the resulting class is a factory for creating new instances.\nclass Account:\ndef __init__(self, owner, balance):\nClasses and Object-Oriented Programming\nExcept for the first argument which is the class instead of an instance, __new__()\nclass methods.\nclass Date:\nreturn self\nSometimes a class will define __new__() if it wants to alter some aspect of instance\nexample, you might want Date class to perform date interning—that is, caching and\nclass Date:\nif not self:\nreturn self\nIn this example, the class keeps an internal dictionary of previously created Date\nexample, one belonging to a different class.\nclass Account(object):\ndef __init__(self, owner, balance):\ndef __del__(self):\nClasses and Object-Oriented Programming\nIn practice, it’s rarely necessary for a class to define a __del__() method.\nclass SomeClass:\ndef __init__(self):\ndef __del__(self):\nreturn self\nAgain, it should be emphasized that writing a __del__() in a class is almost never\nclass SomeClass:\ndef __del__(self):\nClasses and Object-Oriented Programming\nexample, a Date class was shown with internal caching of instances.\nclass Date:\nreturn self\ndef __del__(self):\nClasses and Object-Oriented Programming\nAs previously noted, the __del__() method of a class is only invoked when the\nInstances of user-defined classes normally have such an attribute by default.\nbuilt-in types and certain kinds of special data structures—named tuples, classes with\nclass wdict(dict):\nInstances are linked back to their class by a special attribute __class__.\nThe class itself is\nclass dictionary is where you find the methods.\n>>> a.__class__\n<class '__main__.Account'>\nClasses are linked to their base classes by a special attribute __bases__, which is a tuple\nof the base classes.\nimplementation of inheritance uses the __mro__ attribute which is a tuple of all parent\nclasses listed in search order.\nWhenever an attribute is set using obj.name = value, the special method\nchecking the class dictionary, and searching the MRO.\nfind the attribute is made by invoking the obj.__getattr__('name') method of the class\nUser-defined classes can implement their own versions of the attribute access functions,\nFor example, here’s a class that restricts the attribute names that can be set:\nclass Account:\ndef __init__(self, owner, balance):\nA class that reimplements these methods should rely upon the default implementation\nClasses and Object-Oriented Programming\nSometimes classes implement a wrapper layer around another object to create a kind of\nclass A:\nclass LoggedA:\ndef __init__(self):\nself._a = A()\nclass A:\nclass B:\ndef __init__(self):\nself._a = A()\nIn this example, it appears as if class B might be inheriting from class A and redefining a\nmethods.\nFor example, consider this class:\nclass ListLike:\ndef __init__(self):\nClasses and Object-Oriented Programming\nHere, the class successfully forwards all of the standard list methods (list.sort(),\nmethods.\nclass ListLike:\ndef __init__(self):\nnames are fixed, you can specify the names in a special class variable called __slots__.\nclass Account(object):\nInstances of a class with __slots__ no longer use\nproperties, class variables, or any other class-level attributes.\nIf a class inherits\nfrom a base class that uses __slots__, it also needs to define __slots__ for storing its own\nIf you forget this, the derived class will run slower—and use even more memory than if\n__slots__ had not been used on any of the classes!\nIf multiple base classes are\nclass.\nA descriptor is a class-level object that\nclass Typed:\ndef __set_name__(self, cls, name):\ndef __get__(self, instance, cls):\nreturn instance.__dict__[self.key]\nreturn self\ndef __set__(self, instance, value):\ninstance.__dict__[self.key] = value\nClasses and Object-Oriented Programming\ndef __delete__(self,instance):\nclass Integer(Typed):\nclass Float(Typed):\nclass String(Typed):\nclass Account:\ndef __init__(self, owner, balance):\nIn this example, the class Typed defines a descriptor where type checking is performed\nThe use of these classes in another class (such as Account) makes those attributes\nmethods.\nThe __set_name__() method of a descriptor is invoked after a class has been\nthat has been used within the class.\nFloat.__set_name__(Account, 'balance') to inform the descriptor of the class and\nThe __get__(instance, cls) method of a descriptor takes arguments for both the\ninstance and the class.\nmethods, class methods, and static methods.\nclass classmethod:\ndef __init__(self, func):\ndef __get__(self, instance, cls):\nreturn types.MethodType(self.__func__, cls)\nclass staticmethod:\ndef __init__(self, func):\ndef __get__(self, instance, cls):\nClasses and Object-Oriented Programming\nclass Lazy:\ndef __init__(self, func):\ndef __set_name__(self, cls, name):\ndef __get__(self, instance, cls):\nvalue = self.func(instance)\ninstance.__dict__[self.key] = value\nreturn self\nclass Rectangle:\n7.29 Class Definition Process\nClass Definition Process\nWhen you define a class using the class\nstatement, a new dictionary is created that serves as the local class namespace.\nbecomes the __dict__ attribute of the resulting class object.\nAny legal Python statement is allowed in the body of a class.\nfunctions and variables, but control flow, imports, nested classes, and everything else is\nFor example, here is a class that conditionally defines methods:\nclass Account:\ndef __init__(self, owner, balance):\ndef withdraw(self, amount):\ndef withdraw(self, amount):\nabout the class name and enclosing module.\nThese can be used by statements in the class",
+      "keywords": [
+        "Account",
+        "class Account",
+        "method",
+        "Guido",
+        "instance",
+        "attribute",
+        "Classes",
+        "Object-Oriented Programming",
+        "object",
+        "init",
+        "class methods",
+        "Inheritance",
+        "Object-Oriented Programming class",
+        "Python",
+        "base class"
+      ],
+      "concepts": [
+        "classes",
+        "methods",
+        "object",
+        "type",
+        "typed",
+        "typing",
+        "attributes",
+        "accounts",
+        "examples",
+        "instance"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Distilled",
+          "chapter": 10,
+          "title": "",
+          "score": 0.501,
+          "base_score": 0.501,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 9,
+          "title": "",
+          "score": 0.458,
+          "base_score": 0.458,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 8,
+          "title": "",
+          "score": 0.423,
+          "base_score": 0.423,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 6,
+          "title": "",
+          "score": 0.325,
+          "base_score": 0.325,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "class",
+          "self",
+          "classes",
+          "account",
+          "def"
+        ],
+        "semantic": [],
+        "merged": [
+          "class",
+          "self",
+          "classes",
+          "account",
+          "def"
+        ]
+      },
+      "topic_id": 4,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5413847058155158,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:20.066528+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "Modules and Packages",
+      "start_page": 241,
+      "end_page": 312,
+      "summary": "Modules and Packages\n>>> module.func()\n>>> s = module.SomeClass()\n1. The module source code is located.\n2. A new module object is created.\n3. The module source code is executed within the newly created module namespace.\n4. If no errors occur, a name is created within the caller that refers to the new module\nFor example, if the code is found in a file module.py, the name of\nthe module is module.\nA module filename must use the same rules as variable names (letters, digits, and\nunderscore) and have a .py suffix—for example, module.py.\nWhen using import, you\nspecify the name without the suffix: import module, not import module.py (the latter\nThe file needs to be placed in one of the\nother modules.\nWhen accessing definitions in a module, use a fully qualified name such as\nmodule.func().\nimport executes all of the statements in the loaded source file.\nIf a module carries out\nA module always defines a namespace,\nso if a file module.py defines a class SomeClass, use the name module.SomeClass to refer\nTo import multiple modules using a single import, use a comma-separated list of names:\nimport.\nimport module as mo\n8.2 Module Caching\nThis latter style of import is standard practice in the data analysis world.\nOther unrelated program modules can still load the module\nAssigning a different name to an imported module can be a useful tool for managing\nFor example, if you have two modules unixmodule.py and winmodule.py that both define\nwrite code to selectively import the module:\nimport unixmodule as module\nimport winmodule as module\nr = module.func()\nModules are first-class objects in Python.\nFor instance, the module\nname in the above example is a variable that refers to the corresponding module object.\nModule Caching\nThe source code for a module is loaded and executed only once, regardless of how often\nyou use the import statement.\nSubsequent import statements bind the module name to\nthe module object already created by the previous import.\nA common confusion for newcomers arises when a module is imported into an\nimport fails to load the modified code.\nnever reload a previously imported module even if the underlying source code has been\nused to determine whether import loads a fresh copy of a module or not.\nmodule from the cache will force it to load again on the next import statement.\nModules and Packages\na module on each invocation.\nobjection to having the import inside a function is one of style—it’s more common to\nhave all module imports listed at the top of a file where they’re easy to see.\nonly load the required modules if they are actually needed.\nModule\nmodule import name statement.\nmore of the objects defined in the module into the current namespace:\nfrom module import func\n# Imports module and puts func in current namespace\n# Calls func() defined in module\nmodule.func()\nNameError: module\nfrom module import func, SomeClass\nSemantically, the statement from module import name performs a name copy from the\nThat is, Python first executes import module\nA common misconception is that the from module import name statement is more\nfunctions look for variables, they only look within the file where the function was defined,\n>>> from module import func\n8.3 Importing Selected Names from a Module\n>>> func.__module__\n'module'\nthis code that imports both func and a global variable a that it uses:\nfrom module import a, func\npoint, a is no longer bound to the value in the imported module.\nput them in a module and use the module name explicitly using the import statement—\nfor example, module.a. The asterisk (*) wildcard character is sometimes used to load all the definitions in a\nfrom module import *\nThe from module import * statement may only be used at the top-level scope of a\nmodule.\nIn particular, it is illegal to use this form of import inside a function body.\nModules can precisely control the set of names imported by from module import * by\n# module: module.py\nModules and Packages\nWhen at the interactive Python prompt, using from module import * can be a\nconvenient way to work with a module.\n# From which module?\nA peculiar problem arises if two modules mutually import each other.\nsuppose you had two files:\nstarts executing the file moda.py.\nThe first statement in that file is import moda.\nof entering a recursive cycle, that import is satisfied by the module cache and control\nexample, you could move the import into func_a() where the definition is actually\nYou could also move the import to a later position in the file:\nyou don’t see module imports appearing at the end of a file.\nmight be to move the definition of Base to a separate file base.py and rewrite modb.py as\nModules and Packages\nThere is no reliable support for reloading or unloading of previously imported modules.\nThis is because references to the cached module object still exist in other\nmodules that imported that module.\nthe module, those instances contain references back to their class objects, which in turn\nmodule from sys.modules and use import to reload it, this will not retroactively change\nall of the previous references to the module used in a program.\nreference to the new module created by the most recent import statement, and a set of\nreferences to the old module created by imports in other parts of the code.\nModule reloading is never safe to use in any kind of sane production code\nThere is a reload() function for reloading a module that can be found in the\nAs an argument, you pass it the already loaded module.\n>>> import module\nloaded module\n<module 'module' from 'module.py'>\nreload() works by loading a new version of the module source code and then\nIf other modules had previously imported the reloaded module using a standard import\nstatement, such as import module, reloading will make them see the updated code as if by\nmodules that might be imported by the reloaded file.\n8.6 Module Compilation\nModule Compilation\nWhen modules are first imported, they are compiled into an interpreter bytecode.\ncode is written to a .pyc file within a special __pycache__ directory.\nusually found in the same directory as the original .py file.\nFiles are automatically regenerated if the original source code changes.\nFirst, sometimes Python files get installed (often accidentally) in an environment where\nPython will still work, but every import now loads the original source code and\nThe other good reason to know about module caching is that some programming\nNone of this generated code is cached by the import system.\nHowever, if you have a module consisting of\nModules and Packages\nWhen importing modules, the interpreter searches the list of directories in sys.path.\ndirectory names and .zip archive files.\ndetermines the search order used when importing modules.\nZIP archive files are a convenient way to bundle a collection of modules into a single\nfile.\nFor example, suppose you created two modules, foo.py and bar.py, and placed them\nThe file could be added to the Python search path as follows:\nSpecific locations within the directory structure of a .zip file can also be used for the\nsys.path.append('/tmp/modules.zip/lib/python')\nbeen common to encounter .egg files on the path as well.\n.egg files originate from an\nHowever, an .egg file is\nAlthough this section is about the import statement, Python files are often executed as a\n% python3 module.py\nmodule of the interpreter is named __main__.\nits behavior, depending on whether it has been imported as a module or is running in\nFor example, a module may include code that is executed if the module is used\nas the main program but not executed if the module is simply imported by another\nmodule.\n# No, I must have been imported as a module\nSource files intended for use as libraries can use this technique to include optional\nWhen developing a module, you can put debugging code for\nyour module as the main program.\nThat code won’t run for users who import your library.\nspecial __main__.py file.\n__main__.py file.\nTyping python3 myapp.zip will look for a top-level __main__.py file and execute it if\nFor anything but the simplest programs, Python code is organized into packages.\na directory with a distinctive name and placing an initially empty __init__.py file in that\nYou then place additional Python files and subpackages in this directory as\nModules and Packages\nThe import statement is used to load modules from a package the same way as it’s used\nWhenever any part of a package is first imported, code in the __init__.py file executes\nAs noted, this file may be empty, but it can also contain code to perform\nfiles encountered in traversal of the directory structure are executed.\nimport graphics.primitive.fill would first execute the __init__.py file in the\ngraphics/ directory followed by the __init__.py file in the primitive/ directory.\nAstute Python users might observe that a package still seems to work if __init__.py\nfiles are omitted.\nThis is true—you can use a directory of Python code as a package even if\n__init__.py file actually defines a different kind of package known as namespace package.\n8.10 Imports Within a Package\nwant—you should always create proper __init__.py files when creating a package.\nImports Within a Package\nA critical feature of the import statement is that all module imports require an absolute or\nThis includes import statements used within a package itself.\nFor example, suppose the graphics.primitive.fill module wants to import the\ngraphics.primitive.lines module.\nA simple statement such as import lines won’t\nfrom graphics.primitives import lines\nA better choice is to use a package-relative import like this:\n# Package-relative import\nimport lines\nimport lines refers to the same directory\nas the importing module.\nThus, this statement looks for a module lines in the same\ndirectory as the file fill.py.\nRelative imports can also specify submodules contained in different directories of the\nFor example, if the module graphics.graph2d.plot2d wants to import\nfrom ..primitive import lines\nRelative imports can only be specified using the from module import symbol form of\nThus, statements such as import ..primitive.lines or import\nfrom within a package; it is illegal to use a relative import to refer to modules that are\nModules and Packages\nThere is an enclosing package name, submodules, and the use of relative imports\nPython directly on a package source file.\ngraphics/graph2d/plot2d.py file and add some testing code at the bottom:\nfrom ..primitive import lines, text\nFile \"graphics/graph2d/plot2d.py\", line 1, in <module>\nfrom ..primitive import line, text\nValueError: attempted relative import beyond top-level package\nFile \"plot2d.py\", line 1, in <module>\nfrom ..primitive import line, text\nValueError: attempted relative import beyond top-level package\n-m specifies a module or package as the main program.\nPython will run the module\nWhen only a top-level package import is given, the only file that imports is the\nassociated __init__.py file.\nIn this example, it’s the file graphics/__init__.py file.\nThe primary purpose of an __init__.py file is to build and/or manage the contents of\nencapsulated into a handful of high-level classes, then the __init__.py file might choose\nWith this __init__.py file, the names Plot2D and Plot3D would appear at the top level\nA user could then use those names as if graphics were a simple module:\nModules and Packages\nMany of the modules in the Python standard\nFor example, the popular collections module is\nThe collections/__init__.py file consolidates definitions from a few\nOne issue concerns the interaction between an __init__.py file and low-level\nThe associated __init__.py file then imports its submodules using an * import like\n8.14 Package Data\nThe __init__.py files then propagate the exports upwards.\nnames into the __init__.py file.\nwidespread practice in package __init__.py files.\nPackage Data\nSometimes a package includes data files that need to be loaded (as opposed to source\nWithin a package, the __file__ variable will give you location information about a\nspecific source file.\nThe __file__ variable itself might\nAs a result, loading a data file is often not a simple matter\nof passing a filename to the built-in open() function and reading some data.\nTo read package data, use pkgutil.get_data(package, resource).\nTo load the file data.json from the file spam.py, do this:\nModules and Packages\nThe __package__ variable shown in the example is a string\nA package is not a good place to store giant data files.\nModule Objects\nModules are first-class objects.\nTable 8.1 lists attributes commonly found on modules.\nModule Attributes\nFull module name\nModule dictionary\n__file__\n'__main__' is often done to see if a file is running as a standalone program.\nFor example, built-in modules may not\nhave a __file__ attribute set.\nmodules (not contained in a package).\nThe __doc__ attribute is the module doc string (if any).\nthe first statement in a file.\nAs with other type hints, module-level hints change no part of Python’s behavior, nor\nThe final frontier of modules and packages is the problem of giving your code to\nsophisticated things that can be done with the module and package system.\ncode is to use the setuptools module or the built-in distutils module.\nTo create a distribution, create a file setup.py in the topmost directory\nIn this file, put the following code:\nModules and Packages\nlist of script files.\nCreating a setup.py file is enough to create a source distribution of your software.\nThis is the file you would give to others to install your software.\nWhen first starting a new program, it is easy to start with a simple single Python file.\nexample, you might write a script called program.py and start with that.\nFor example, instead of making a file called program.py, you should make\nPut your starting code in __main__.py and run your program using a command such\nAs you need more code, add new files to your package and use\npackage-relative imports.\nother packages, standard library modules, or code written by your coworkers.\nThere is a lot of more advanced wizardry associated with the module and package system\nmodule hacking.\nManaging modules, packages, and software distribution has always been\nPython I/O including data encoding, command-line options, environment variables, file\noverview of common standard library modules related to I/O.\ndata, use bytes.\nIf you work with text, all data read from input must be decoded and all data written to\npreservation of data is useful for certain kinds of system interfaces where a text encoding is\nFile \"<stdin>\", line 1, in <module>\nIf not supplied, the default format code is s for strings, d for integers, and f for floats.\nThe formatting code uses str() to generate strings.\nWithin an f-string, text of the form {expr:spec} is replaced by the value of\nAs an alternative to f-strings, you can use the .format() method of strings:\nr = 'Value is {0:{1}.{2}f}'.format(y, width, precision)\nb'Value is %0.2f' % x\nUsing a format code of %r produces the output of ascii() which can be useful in\nproduced by the logging module are formatted in this way:\nWhen Python starts, command-line options are placed in the list sys.argv as text strings.\nprogram to pass the command-line options to your main() function.\nthe argparse module for more complicated command-line handling.\nThis example only shows the most simple use of the argparse module.\nThere are also third-party modules\nFinally, command-line options might be provided to Python in an invalid text encoding.\ncreated later—for example, those created by the subprocess module.\nFiles and File Objects\nTo open a file, use the built-in open() function.\nfile mode.\nHere are some common usage patterns of working with files:\n# Read a text file all at once as a string\nwith open('filename.txt', 'rt') as file:\ndata = file.read()\n# Read a file line-by-line\nwith open('filename.txt', 'rt') as file:\nfor line in file:\n# Write to a text file\nwith open('out.txt', 'wt') as file:\nfile.write('Some output\\n')\nprint('More output', file=file)\n9.6 Files and File Objects\nYou give it the name of the file\nyou want to open along with a file mode.\nwork with files.\nThe next few sections discuss open() and file I/O in more detail.\nTo open a file, you need to give open() the name of the file.\nfully specified absolute pathname such as '/Users/guido/Desktop/files/old/data.csv'\nthe file location is determined relative to the current working directory as returned by\nlibrary modules such as pathlib work.\nFinally, filenames can be given as low-level integer file descriptors.\nexample of opening a file directly with the os module and then turning it into a proper\nfile object:\n>>> file = open(fd, 'rt')\n# Proper file object\n>>> file\n>>> data = file.read()\nWhen opening an existing file descriptor like this, the close() method of the returned\nfile = open(fd, 'rt', closefd=False)\nFile Modes\nWhen opening a file, you need to specify a file mode.\nThe core file modes are 'r' for\n'w' mode replaces any existing file with\n'a' opens a file for writing and positions the file pointer to the end of the\nfile so that new data can be appended.\nA special file mode of 'x' can be used to write to a file, but only if it doesn’t exist\nmode, a FileExistsError exception is raised if the file already exists.\nPython makes a strict distinction between text and binary data.\ndata, you append a 't' or a 'b' to the file mode.\nFor example, a file mode of 'rt' opens a\nfile for reading in text mode and 'rb' opens a file for reading in binary mode.\ndetermines the kind of data returned by file-related methods such as f.read().\nBinary files can be opened for in-place updates by supplying a plus (+) character, such as\nWhen a file is opened for update, you can perform both input and\nIf a file is opened using 'wb+' mode, its length is first truncated to zero.\ncommon use of the update mode is to provide random read/write access to file contents in\nBy default, files are opened with I/O buffering enabled.\n9.6 Files and File Objects\n# Open a binary-mode file with no I/O buffering\nwith open('data.bin', 'wb', buffering=0) as file:\nfile.write(data)\nA value of 0 specifies unbuffered I/O and is only valid for binary mode files.\nof 1 specifies line-buffering and is usually only meaningful for text-mode files.\npositive value indicates the buffer size to use (in bytes).\nthe default behavior depends on the kind of file.\nIf it’s a normal file on disk, buffering is\nIf the file represents an\ncall on the associated file.\nfile.write(data)\nfile.write(data)\nfile.flush()\nFor files opened in text mode, an optional encoding and an error-handling policy can be\nwith open('file.txt', 'rt',\nencoding='utf-8', errors='replace') as file:\ndata = file.read()\nWith text files, one complication is the encoding of newline characters.\nfile = open('somefile.txt', 'rt', newline='\\r\\n')\nThese classes embody the different file modes, encodings, and\nOpens a file for raw unbuffered binary I/O.\nBufferedReader(file [, buffer_size])\nBufferedWriter(file [, buffer_size])\nBufferedRandom(file [, buffer_size])\nImplements a buffered binary I/O layer for a file.\non whether or not the file is reading, writing, or updating data.\nbuffered is a buffered binary mode file, such as\nHere is an example that shows how a text-mode file is constructed, layer-by-layer:\n>>> file = io.TextIOWrapper(buffer, encoding='utf-8') # Text mode\nHowever, if you already have an existing file object\nTo strip layers away, use the detach() method of a file.\ncan convert an already text-mode file into a binary-mode file:\n# Text-mode file\n# Detach underlying binary mode file\nFile Methods\nThe exact type of object returned by open() depends on the combination of file mode\nHowever, the resulting file object supports the methods in\nFile Methods\nReturns True if file can be read.\nthe approximate number of characters to read on the file\nReturns True if file can be written.\nCloses the file.\nReturns the current file pointer.\nTruncates the file to at most size bytes.\nReturns an integer file descriptor.\nThe read() method returns the entire file as a string unless an\nmethod returns all the input file as a list of strings.\nread() and readline() indicate end-of-file (EOF) by returning an empty string.\nline = file.readline()\nwhile (line:=file.readline()):\nA convenient way to read all lines in a file is to use iteration with a for loop:\nfor line in file:\n# Iterate over all lines in the file\nThe write() method writes data to the file, and the writelines() method writes an\niterable of strings to the file.\nInternally, each open file object keeps a file pointer that stores the byte offset at which\nof the file pointer.\nThe fileno() method returns the integer file descriptor for a file and is sometimes used\nin low-level I/O operations in certain library modules.\nFor example, the fcntl module\nuses the file descriptor to provide low-level file control operations on UNIX systems.\nFile objects also have the read-only data attributes shown in Table 9.5.\nFile Attributes\nBoolean value indicates the file state: False if the file is open, True if\nThe I/O mode for the file.\nName of the file if created using open().\nindicating the source of the file.\nThe newline representation actually found in the file.\nA string that indicates file encoding, if any (for example, 'latin-1' or\nBoolean value indicating if writes on a text file pass data directly to the\nunderlying binary level file without buffering.\nThe interpreter provides three standard file-like objects, known as standard input, standard\nstdin is a file object corresponding to the stream of input characters supplied\nto the interpreter, stdout is the file object that receives output produced by print(), and\nstderr is a file that receives error messages.\nFor example, the following code writes to standard output and reads a line of input\nwith other file objects, in which case the print() and input() functions will use the new\nexample, here is an example of matching all *.txt files in a specific directory:\nTo redirect the output to a file, use the file keyword argument:\n# Redirect to file object f\nprint('The values are', x, y, z, file=f)\nWorking directly with files is most familiar to programmers.\nyou want to route the above output to a file f, you can do this:\nFor programs that are routing output to files or network connections, a generator\nline = bytes(data[:index+1])\nor with files:\ndata = file.read(10000)\nPython-specific data serialization format called Pickle.\nThe pickle module serializes an object into a stream of bytes that can be used to\nFor example, the following code writes an object\nto a file:\nwith open(filename, 'wb') as file:\nwith open(filename, 'rb') as file:\nobj = pickle.load(file)\nFor network programming, it is common to use pickle to create byte-encoded\nInstead of reading/writing data to a file,\nIt is also important\nexample, code that reads data on the network might perform a receive operation on a\nmodule.\nan example of code that reads data on two sockets at once:\nHowever, a few additional examples are provided in the threading module section later in\n9.15 Standard Library Modules\nmodule.\nStandard Library Modules\nA large number of standard library modules are used for various I/O related tasks.\ngiving you the names of the modules that you should be using along with a few examples\nof very common programming tasks involving each module.\nasyncio Module\nThe asyncio module provides support for concurrent I/O operations using I/O polling\nbinascii Module\nThe binascii module has functions for converting binary data into various text-based\nSimilar functionality can be found in the base64 module as well as with the hex() and\n9.15 Standard Library Modules\ncgi Module\nThe cgi module is for doing just that.\nconfigparser Module\nINI files are a common format for encoding program configuration information in a\nThe configparser module is used to read .ini files and extract values.\n# Create a config parser and read a file\nability to merge multiple .ini files, provide default values, and more.\ncsv Module\nThe csv module is used to read/write files of comma-separated values (CSV) produced by\nTo use it, open a file and\n# Read a CSV file into a list of tuples\nwith open(filename, newline='') as file:\nrows = csv.reader(file)\n9.15 Standard Library Modules\n# Write Python data to a CSV file\nwith open(filename, 'w', newline='') as file:\nout = csv.writer(file)\nline of a CSV file as headers and returns each row as dictionary instead of a tuple.\nwith open(filename, newline='') as file:\nrows = csv.DictReader(file)\nThe csv module doesn’t do much with CSV data other than reading or writing it.\nmain benefit provided is that the module knows how to properly encode/decode the data\nThis is a module you might use to write simple scripts for cleaning or preparing data to be\nerrno Module\ndef write_data(file, data):\nfile.write(data)\nfcntl Module\nThe fcntl module is used to perform low-level I/O control operations on UNIX using\nThis is also the module to use if you want to\nHere is an example of opening a file in combination\nwith open(\"somefile\", \"r\") as file:\n# Use the file\nhashlib Module\nThe hashlib module provides functions for computing cryptographic hash values such as\nThe following example illustrates how to use the module:\n9.15 Standard Library Modules\nNevertheless, one useful easter egg of the http package is the ability for Python to run\nGo a directory with a collection of files and type the following:\nNow, Python will serve the files to your browser if you point it at the right port.\nio Module\nThe io module primarily contains the definitions of classes used to implement the file\nHowever, the module also contains a pair of classes that are useful for “faking” a\nfile in the form of strings and bytes.\nThe StringIO() class provides a file-like interface on top of strings.\n# Function that expects a file\ndef greeting(file):\nfile.write('Hello\\n')\nfile.write('World\\n')\n# Call the function using a real file\nwith open('out.txt', 'w') as file:\ngreeting(file)\n# Call the function with a \"fake\" file\ngreeting(file)\noutput = file.getvalue()\nfile = io.StringIO('hello\\nworld\\n')\nwhile (line := file.readline()):\njson Module\nThe json module can be used to encode and decode data in the JSON format, commonly\nlogging Module\nIt can be used to route output to a log file and",
+      "keywords": [
+        "module",
+        "file",
+        "module import",
+        "Python",
+        "data",
+        "package",
+        "code",
+        "standard library modules",
+        "output",
+        "text",
+        "module import func",
+        "library modules",
+        "Python files",
+        "line",
+        "file object"
+      ],
+      "concepts": [
+        "file",
+        "imported",
+        "important",
+        "modules",
+        "data",
+        "python",
+        "packages",
+        "packaging",
+        "code",
+        "byte"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Distilled",
+          "chapter": 7,
+          "title": "",
+          "score": 0.423,
+          "base_score": 0.423,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 10,
+          "title": "",
+          "score": 0.417,
+          "base_score": 0.417,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 9,
+          "title": "",
+          "score": 0.313,
+          "base_score": 0.313,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "file",
+          "module",
+          "import",
+          "py",
+          "modules"
+        ],
+        "semantic": [],
+        "merged": [
+          "file",
+          "module",
+          "import",
+          "py",
+          "modules"
+        ]
+      },
+      "topic_id": 3,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.47618926894002617,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:20.066537+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "Built-in Functions and Standard Library",
+      "start_page": 313,
+      "end_page": 355,
+      "summary": "Built-in Functions and Standard Library\n10.1 Built-in Functions\nmethod.\nBuilt-in Functions and Standard Library\n10.1 Built-in Functions\nReturns True if obj is callable as a function.\nConverts the integer x representing a Unicode code-point into a single-character\nThis decorator creates a class method for the function func.\nother kind of object, the value of real.__complex__() is returned.\nTable 10.3 shows methods and attributes of complex.\nAttribute/Method\nBuilt-in Functions and Standard Library\nhaving the same keys and same values as m is returned.\nReturns the number of items in m.\nReturns the item of m with key k.\nRemoves a random (key, value) pair from m and returns it as\nReturns the values.\nIf object is a module, it contains the list of\nIf object is a type or class object, it returns a list\nspecial method __dir__() that alters the result of this function.\n10.1 Built-in Functions\nGiven an iterable object, iter, returns a new iterator (of type enumerate) that\nexpr is a string or a code object created by compile().\ncode is a string, bytes, or a code object created by\nCreates an iterator that returns the items in iterable for which function(item)\nFor all other objects, x.__float__() is\nTable 10.5 shows methods and attributes of floats.\nMethods and Attributes of Floats\nAttribute/Method\nA class method.\nBuilt-in Functions and Standard Library\nType representing an immutable set object populated with values taken from items\nReturns the value of a named attribute of an object.\ndefault is an optional value to return if no such attribute exists;\nWhen called inside another function or method, it returns the global namespace of\nthe module in which the function or method was defined.\nReturns True if name is the name of an attribute of object.\nReturns an integer hash value for an object (if possible).\nusually don’t define a hash value, although user-defined classes can define a method\n10.1 Built-in Functions\nIf it is a string, it is parsed into an integer value.\nof attributes and methods listed in Table 10.6.\nMethods and Attributes of Integers\nmethod.\nReturns an iterator for producing items in object.\nomitted, the object must either provide the method __iter__(), which creates an\niterator object will call this function repeatedly until the returned value is equal to\nBuilt-in Functions and Standard Library\nitems may be any iterable object, the values of which are\nList Operators and Methods\n10.1 Built-in Functions\nmap(function, items, ...)\nCreates an iterator that produces the results of applying function to the items in\nFor a single argument, s, this function returns the maximum value of the items in s,\nStopIteration exception is raised unless a value is supplied to the default argument.\nobject()\nThe base class for all objects in Python.\nConverts an integer, x, to an octal string.\nReturns the integer ordinal value of a single character, c.\nIf z is supplied, this function returns (x ** y) % z.\nBuilt-in Functions and Standard Library\nfget is a function that returns the attribute\nprint('setting x to', value)\nCreates a range object that represents a range of integer values from start to stop.\nReturns a string representation of object.\n10.1 Built-in Functions\nSet Operations and Methods\nBuilt-in Functions and Standard Library\nSets an attribute of an object.\nSame as object.name = value.\nReturns a slice object representing integers in the specified range.\nsingle-argument function that transforms values before they are compared.\nCreates a static method for use in classes.\nIf object is supplied, a string representation of its value is\nTable 10.9 shows methods defined on strings.\nString Operators and Methods\nBuilt-in Functions and Standard Library\nmethod.\nReturns an object that represents the collective superclasses of the class in which its\nThe primary purpose of this object is to invoke methods in base classes.\nTuple Operators and Methods\nWhen called as a function, returns the type of\nobject.\nThis type is the same as the object’s class.\none of the classes defined in the types module.\nReturns the symbol table of object (usually found in its __dict__ attribute).\nThe dictionary returned by this function should be assumed to be read-only.\nBuilt-in Functions and Standard Library\nException Base Classes\nException\nThe base class for all program-related exceptions.\nException Attributes\nexceptions, the value is a 2-tuple or 3-tuple containing an integer error number,\nmethods of files return an empty string to signal EOF instead of raising an\nexception.\nBuilt-in Functions and Standard Library\nPrimarily raised by functions in the os module.\ncan arise with range or xrange objects if you specify starting or ending values that\nof an object or in a generator function.\nThe value is an integer indicating the return\nOccurs when an operation or function is applied to an object of an inappropriate\nGenerated when the argument to a function or operation is the right type but an\nBuilt-in Functions and Standard Library\nThe inspect module provides functions for inspecting the internals of code-related\nelements such as functions, classes, generators, and coroutines.\nThe os module is where you find low-level functions related to the host operating\nThe random module provides various functions related to random number generation.\nThe shutil module has functions for performing common tasks related to the shell, such\nThe statistics module provides functions for computing common statistical values such\nThe sys module contains a variety of attributes and methods related to the runtime\nBuilt-in Functions and Standard Library\nfor functions, 22, 56, 101\nin function arguments, 102–104, 108–109\nin module imports, 229–230, 240–241\noperator, 5, 38–40, 47, 57, 298, 307, 310, 313\nin function arguments, 104, 108–109\nin numbers converted to text strings, 250–251\noperator, 5, 10–11, 14, 38–40, 47, 57, 91, 298,\nin numbers converted to text strings, 250–251\nin numbers converted to text strings, 250–251\noperator, 5, 18, 39–40, 50, 57, 309\nfor slicing operator, 10, 47–49\noperator, 5, 9, 39–40, 57, 298, 310\nin private attribute and method names, 176\nin attribute names, 177–179\nin method names, 27, 88\n__add__() method, 27, 80, 90–91\nall() function, 47, 297\n__all__ variable, 229, 240–241\nand operator, 6–7, 43, 57, 92\n__and__() method, 90\nany() function, 47, 297\nargs attribute, 64–65, 70–315\nArithmeticError exception, 67–68, 314–318 \nassert statement, 77–78\nassignments, 38–39, 41, 83\nasyncio module, 135, 137, 151, 271–274, 285 \nbinding, 167, 207–208\ninternal, 177–179\nof functions, 129–130\nof objects, 157–158, 304, 310\nawait statement, 135–137, 151\nabstract, 185–188\nused for type hinting, 184–185\nBaseException exception, 67–68, 314\nblocking, 269–273\n__bool__() method, 93–95\nBoolean values, 6–7, 38, 43–44, 297\nbound methods, 158, 183\nbreak statement, 8, 12, 62–63, 141\nbyte arrays, 247, 266, 298–300\nbytes, 247–248\nformatting, 253–254\noperations on, 298–300\nbytes type, 247–248, 298\n__bytes__() method, 94–95\n__call__() method, 98, 219\npassing arguments to, 118–121\nreturning results from, 121–123\ncapitalize() method, 298, 310\ncasefold() method, 310\n__cause__ attribute, 65, 71–73, 315\ncheck_output() function, 288–289\nclass methods, 89, 170–172, 222, 301\nclass statement, 27, 154–155, 215–218\nclass variables, 169–172, 222\nclasses, 80, 153–223\ncreating, 160, 215–218\nuser-defined, 179, 206–207\n@classmethod decorator, 125, 170–171, 183, 197,\nclear() method, 300, 302, 309\nclosures, 116–117, 129\nPythonic, 99–100, 160, 176\n__code__ attribute, 129–130\ncommand-line options, 15, 33, 254–255, 317, 319\ncomplex() function, 301\n__complex__() method, 94–95, 301\ncompute_usage() function, 282–283\nconcurrency, 148, 269, 273, 291–293\nconjugate() method, 303, 305\ncontainers, 95–96\n__contains__() method, 95–96\ncontext managers, 75–77, 99\nasynchronous, 136–137\n__context__ attribute, 65, 72–73, 315\ncontinue statement, 8, 62–63\nwith conditionals, 7–9, 59–60\nwith exceptions, 64–69, 77\nwith loops, 60–63\ncopy() method, 300, 302, 309\ncopying, of sequences, 47–48\ncount() method, 298, 307, 310, 313\nintroducing code for, 77–78\ndecorators, 104, 124–127, 194–197, 220\ndel statement, 19, 50–51, 82–83, 89, 202, 207,\n300–302, 307\n__del__() method, 89, 201–206\ndelegation, 208–210\n__delete__() method, 211\n__delitem__() method, 95–96\ndescriptors, 211–214, 220, 285\ndict type, 80, 301–302\n__dict__ attribute, 206–207, 211, 215, 222–223,\ndictionaries, 18–21\nadding unusual items to, 85–87\ncreating, 18, 20, 53–54\nkeys of, 20–21, 294–295\noperations on, 51, 301–302\ndictionary comprehension, 20, 53–54\ndifference() method, 309\nelif statement, 7–8, 59–60, 193\nelse statement, 7–9, 44–45, 57, 59–60, 63, 66,\nencode() method, 248, 259, 310\nencoding attribute, 13, 259–260, 263\nencodings, 248–249, 263\nEnvironmentError exception, 314–316\n__eq__() method, 93–94\nerrno module, 277–278\nhandling, 110–111\nerrors attribute, 259–260, 263\nexcept statement, 24–25, 64–66, 70, 110\nException exception, 66–69, 314\nexceptions, 24–25, 64–75\naltering control flow, 67–69\nbuilt-in, 67–68, 75, 314–318\ncatching, 64, 66, 70, 73–74\nchained, 70–73, 315\ndefining new, 69–70, 74\nunexpected, 72–73\n277–278\nhierarchy of, 67–68, 70\nignoring, 65–66\npredefined, 315–318\nstandard attributes of, 64–65\nexec() function, 133–134, 233, 301, 303\nexpandtabs() method, 298, 311\nexpressions, 3, 38–39\nextend() method, 300, 307\nf-strings, 4, 9, 11, 251–252\nFalse value, 6–7, 38, 43–45, 297–298\nmethods supported by, 261\nfilename attribute, 316–317\nnames of, 257–258, 263\nopening, 12, 256–258\npaths to, 281–283\nreading, 12–13, 262\nfiltering, 127–128\nfind() method, 10, 299, 311\nfirst-class objects, 85–87, 115, 242\nfloat() function, 11, 303, 315\n__float__() method, 94–95, 303\nFloatingPointError exception, 67, 314–315\nfloats, 3, 5, 37–38, 303, 315\nconverting to text, 250–251\nfor statement, 12–13, 21–22, 45, 60–63, 140, 176\nnested, 144–145\nformat() function, 11, 94, 250, 304\nformat() method, 9, 252–253, 311\n__format__() method, 94, 304\nfrom statement, 31, 228–230, 237, 316\nfrom_bytes() method, 305\nfunction call operator, 56\nfunctions, 22–24, 101–131, 137\ndefault, 23, 101–102, 115\nkeyword, 103–104\nnumber of, 101–102\npositional, 105–106\nasynchronous, 135–137, 272, 317\nattributes of, 129–130\nbuilt-in, 297–314\ncallback, 114, 116, 118–123\nhigher-order, 115–118\ninspecting, 131–133, 318\nlocal variables in, 24, 107, 111–113, 149–151\nmetadata of, 124–125, 130\nnested, 113, 116–117, 129\nreturn values of, 23, 109–110\nsignature of, 130–131\ngenerator expressions, 54–56, 128\nGeneratorExit exception, 147, 314–315\ngenerators, 97, 139–152\ndelegating, 142–144\nget() method, 19, 302\n__get__() method, 211–213\nget_data() function, 242\ngetattr() function, 157, 179, 193–194, 304\n__getattr__() method, 98, 207–211\n__getitem__() method, 95–96, 159–308\nglobals() function, 131, 303–304\n__hash__() method, 93–94\nhex() method, 274, 299, 303\nhigher-order functions, 115–118\n293–294\n__iadd__(), __iand__() methods, 91–92\n__idivmod__() method, 91–92\nif statement, 7–9, 39, 44–45, 52, 57, 59–60, 193\n__imatmul__(), __imod__() methods, 91–92\nimport statement, 15, 30–35, 59, 225–237, 241,\nImportError exception, 31, 67–68, 226, 237, 316\n__imul__() method, 91–92\nin operator, 19, 45, 50–52, 57, 96, 302\nindex() method, 299, 307, 311, 313\n__index__() method, 94–95\ninheritance, 28–30, 160–163\nfrom built-in types, 167–169\nmultiple, 163, 187–192, 211\ncooperative, 190–192\nsupervised, 197–199\nvia composition, 164–166\nvia functions, 166–167\nvia implementation, 163–164\n__init__() method, 27, 70, 89, 134, 154–155,\n161, 181–201, 219–220\n__init_subclass__() method, 197–199, 220–222\ninput() function, 13, 33, 304, 315\ninput/output (I/O), 247–296\nbuffering, 258–260\nconsuming input, 266–267\ngenerating output, 265–266\nin binary mode, 257–259\nin text mode, 258–260\ninstances, 79, 154–156\nalternate constructors of, 170–172\nstoring data of, 210–211\n__int__() method, 94–95\nhexadecimal, 37, 299, 303–304\nranges of, 21–22, 308\ninterfaces, 184–188\nintersection() method, 309\nio module, 260–261, 279–280\n__ior__(), __ipow__() methods, 91–92\n__irshift__() method, 91–92\nis_integer() method, 303\nisascii() method, 311\nisdecimal() method, 311\nisdigit() method, 299, 311\nisdisjoint() method, 309\nisidentifier() method, 311\nislower() method, 299, 311\nisspace() method, 299, 311\nistitle() method, 299, 311\n__isub__() method, 91–92\nisupper() method, 299, 311\nitems() method, 21, 51, 302\niter() function, 305\n__iter__() method, 97–98, 142, 152, 160, 305\nasynchronous, 136–137\n__itruediv__() method, 91–92\n__ixor__() method, 91–92\njoin() method, 299, 311\nkeys() method, 20, 51, 302\n309–310, 313\n__len__() method, 28, 93, 95, 159–160, 308\nlist() function, 20, 47, 55, 81, 168, 306\nlists, 13–15\nempty, 14, 43–44, 306\nmodifying, 49–50\nnested, 14, 145–146\nnumber of items in, 306–307\nprocessing, 52–53, 307\nliterals, 37–38\nlocals() function, 131, 303, 307\nLogger instance, 280–281\nlogging module, 254, 280–281\nlogical operators, 6–7, 43, 57, 92\nLookupError exception, 67–68, 314, 316\nlower() method, 10, 299, 311\n__lt__() method, 93–94\nmappings, 18–19, 128, 307\nopeations on, 51–52\nmathematical operations, 5, 40, 90–92\nreducing usage of, 55, 210–211 \nmetaclass keyword, 218–219\nmetaclasses, 217–222\nMethod Resolution Order (MRO, 190–192, 222 \nmethods, 79, 154\nstatic, 173–176, 310\nmixin classes, 188–192, 220\nmodule objects, 226\nmodules, 30–32, 225–235\nas first-class objects, 242–243\nimporting, 31, 225–227, 232–234\ncircular, 230–232\nspecific definitions from, 228–230\nreloading and unloading, 232–233\nstandard library, 31, 273–296, 318–319\nname mangling, 177–179\nNameError exception, 68, 111, 316–317\nof packages, 239–240\n__new__() method, 89, 199–201, 219\nnew_class() function, 216–217\nnext() function, 139–141, 307\nnext() method, 317\n__next__() method, 97, 140, 152\nNone value, 6, 43–44, 87, 102, 108–110\nnot operator, 6–7, 43, 57, 92\nfrom objects, 94–95\nto text, 250–251\nfloating-point, 5, 37–38, 250–251, 288, 303,\nobject class, 190, 307\nobjects, 26–30, 79–99, 153\nbuilt-in, 222–223\ncomparing, 42, 80, 92–94\nconverting to built-in types, 94–95\nfirst-class, 85–87, 115\nhash values of, 93–94, 304\nlisting available methods of, 26\nlocation of, 38–39\nmanagement of, 89–90\nmutable, 41, 83–84, 107–108\nreference count of, 81–83\nreferences to, 83–84\nrepresentations of, 84–85, 297, 308\nserialization of, 268–269\nunpacking values of, 45–46, 60\nvalues of, 79, 84–85\nopen() function, 12, 15, 241, 256–261, 279, 307\noperating-system functions, 281, 316, 319\noperators, 39–40\ncomparison, 6, 42–43, 93\nlogical, 6–7, 43, 57, 92\nprecedence rules for, 56–58\nor operator, 6–7, 43, 57, 92\n__or__() method, 90\nos.path module, 281–282\nOSError exception, 64–65, 67–68, 277, 314,\n316–318\npackages, 33–34, 235–242\ndata files of, 241–242\ndeploying, 243–244\nexporting, 240–241\nnamespaces of, 239–240\npathlib module, 257, 264, 281–283\nlocal variables and, 149–151\noptimizing, 210, 220–221\npickle module, 268–269\npip command, 35–36, 244\npop() method, 27, 104, 300, 302, 307, 309\nprint() function, 4, 11–13, 84, 265, 308\ncreating, 2–3\nexecuting, 1, 3, 234–235\nstructuring, 34–35, 59, 235\nproperties, 180–183\n@property decorator, 180–182, 308\nprotocols, 87–99\ninteractive mode of, 1–2\n__radd__() method, 90–91\nrange() function, 21–22, 308\nre module, 283–284, 319\nread() method, 12, 262, 315\nreadable() method, 262\nreadinto() method, 262–263\nreference counting, 81–83, 201\nregular expressions, 283–284, 319\nremove() method, 18, 50, 300, 307, 309\nreplace() method, 10, 299, 312\n__repr__() method, 28, 89–90, 154–155,\n159–199\nreverse() method, 300, 307\n__reversed__() method, 97, 308\nmethods, 90\nround() function, 5, 40, 308\nrun() function, 135, 270–271\nRuntimeError exception, 68, 114, 316–317\nscripts, 32–33\nselect module, 271, 284–285\nsend() method, 152\nmutable, 49–50\noperations on, 47–50\nset() function, 17–18, 20, 47, 309\n__set__() method, 211\n__set_name__() method, 212\n__setitem__() method, 95–96, 167\nsets, 17–18\nprocessing, 50–51, 53–54, 309\nsetuptools module, 234, 243–244\nsignature() function, 130–131\nslice() function, 310\nslicing operator, 10, 47–49, 298, 307, 310, 313\n__slots__ variable, 210–211, 220–221, 223\nsmtplib module, 285–286\nsocket module, 286–287\nsort() method, 108, 307\nsplit() method, 10, 300, 312\nsplitlines() method, 300, 312\nstack frames, 132–133\nStopIteration exception, 67, 69, 97, 140–141,\nstr() function, 11, 84, 94, 168, 248, 251–252,\nstrings, 3, 9–12\nconcatenating, 10–11, 310\nfrom objects, 94\nconverting to upper/lowercase, 310–312\nformatting, 9, 11, 250–253, 310–311\nmethods for, 10\nprocessing, 310–312\nrepresentations of, 89–90\nsubstrings of, 10, 310–312\n__sub__() method, 90\nsubprocess module, 256, 288–289\nsuper() function, 161, 189–192, 199, 207, 313\nswapcase() method, 300, 312\nsys.argv list, 33, 254–255\nsys.stderr object, 69, 263–264\nsys.stdin, sys.stdout objects, 263–264\ntempfile module, 289–290\ntext, 247–248\nencoding/decoding, 13, 248–250, 255,\nthreading module, 271, 291–293\nthreads, 271–272\ntime, handling, 293, 318–319\ntitle() method, 300, 312\nto_bytes() method, 305\n@trace decorator, 125–126\ntranslate() method, 299–300, 312\nTrue value, 6–7, 38, 43–45, 297–298\ntruncate() method, 262\ntry statement, 24–25, 64, 66, 110, 141\ntuple() function, 47\ntuples, 15–17\nnamed, 109–110\nreturning values from functions with, 23, 109\ntype class, 218–220, 313\ntype hints, 107, 129, 155, 179–180, 222\ncreating methods from, 197\nwith base classes, 184–185\ntype() function, 70, 80, 154, 217, 313\ntype-based dispatch, 193–194\nbuilt-in, 167–169\nconversions between, 94–95\noperations on text strings in, 294–295\nunicodedata module, 294–295\nUnicodeError exception, 67–68, 249, 317\nunion() method, 309\nupdate() method, 18, 168, 302\nupper() method, 10, 300, 312\n293–294\nurllib package, 293–294\nUTF-8 encoding, 2, 13, 249–250\nValueError exception, 25, 67–68, 317\nrepresenting, 84–85\nvalues() method, 21, 51, 302\nfree, 114–115\nglobal, 111–113\nlocal, 24, 111–113, 134, 149–151\nweak references, 204–206, 317\nwhile statement, 4, 7–9, 12, 39, 60–62\nwith statement, 12, 25, 75–77, 99, 202, 256,\n289–290\n@wraps decorator, 124–125\nwrite() method, 13, 262\nxml package, 295–296\nyield from statement, 142–143\nyield statement, 97, 139–142, 265\nused as an expression, 146–147\nCustomize objects with special methods, properties, and descriptors",
+      "keywords": [
+        "function",
+        "method",
+        "Built-in Functions",
+        "module",
+        "string",
+        "Functions",
+        "Returns",
+        "object",
+        "exception",
+        "Standard Library",
+        "Attribute",
+        "Python",
+        "items",
+        "Built-in",
+        "Standard"
+      ],
+      "concepts": [
+        "method",
+        "functions",
+        "function",
+        "module",
+        "exception",
+        "exceptions",
+        "classes",
+        "attributes",
+        "object",
+        "operations"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Distilled",
+          "chapter": 9,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.665,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 7,
+          "title": "",
+          "score": 0.501,
+          "base_score": 0.501,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 8,
+          "title": "",
+          "score": 0.417,
+          "base_score": 0.417,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Distilled",
+          "chapter": 6,
+          "title": "",
+          "score": 0.332,
+          "base_score": 0.332,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "built functions",
+          "module",
+          "307",
+          "94",
+          "310"
+        ],
+        "semantic": [],
+        "merged": [
+          "built functions",
+          "module",
+          "307",
+          "94",
+          "310"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5830985028147928,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:20.066546+00:00"
+      }
+    }
+  ],
+  "total_chapters": 5,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Python Distilled_metadata.json",
+    "enrichment_date": "2025-12-17T23:08:20.070839+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 1790.8436249999795,
+    "total_similar_chapters": 18
+  }
+}

@@ -1,0 +1,1232 @@
+{
+  "metadata": {
+    "title": "Data-Oriented Design",
+    "source_file": "Data-Oriented Design_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Data-Oriented Design",
+      "start_page": 6,
+      "end_page": 29,
+      "summary": "Chapter 1\nData-Oriented Design\nData-oriented design has been around for decades in one\nby side with other programming paradigms such as object-\noriented, procedural, or functional programming.\nknows that functional programming can coexist with object-\nthat object-oriented programming can coexist with proce-\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nPotentially very fast comput-\nobjects messaging and getting responses immediately is part\nof the beneﬁts available to the data-oriented programmer.\nProgramming, with a ﬁrm reliance on awareness of the data\nthat bring game titles to life.\nIt will grow because abstractions and se-\nrial thinking will be the bottleneck of your competitors, and\nData is the graphics on the screen, the\nData is how long the dynamite took to ex-\nin the beautiful scene that ended the game which was loaded\nNo application is anything without its data.\never been written, have been written to output data based\ncomplex, or so simple it requires no documentation at all,\nneed recognisable data, then they are toys or tech demos at\nHarvard architecture relies on the same memory for data\ngives us the data to decide what instructions are necessary,\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nAll this data and the transforming of data, from strings, to\nthe patterns and types of transforms that need to operate on\nSometimes the data isn’t well deﬁned, and sometimes the\nIf the ultimate result of an application is data, and all\ninput can be represented by data, and it is recognised that\nprinciples; the principles of understanding the data, and\nFor some, it would seem that data-oriented design is the\nIt does not promote the concept of an object as\nheavy paradigms try to pretend the computer and its data do\nnot exist at every turn, abstracting away the idea that there\ninstead bringing the model of the problem into the program.\ncode, or the model of the world as a context for the problem.\nThat is, they either structure the code around attributes of\nple, but when you name them x,y,z, you can put meaning on\ngame, they mean very little without context.\nand by the class name and neighbouring data (also named)\nso deep inside an object that you forget its impact, consider\nthe numerous games released, and in production, where a\n2D or 3D grid system could have been used for the data\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nobject-centric approach commit crimes against the hardware\nby having hundreds of objects placed in WorldSpace at grid\nsider a simple 256 by 256 tilemap requiring 65,536 tiles.\nthousand objects as being quite expensive.\nmore sense for them to allocate the objects for the tiles only\ncostly), or references to an auxiliary augmented grid object\nor spatial mapping system connecting to the objects which\nare otherwise free to move, but won’t, due to the design of the\ndesign presents issues with understanding the data, and has\nand every item in the game.\ngames this is an optimisation, as creation and destruction\nof objects is a costly activity, but the trend is worrying, as\nMany games seem to try to keep everything about the\nIf the player dies in-game, they\nhave to hang around as a dead object, otherwise, they lose\naccess to their achievement data.\ndata is, to where it resides and what it shares lifetime with,\nwill not name any of the games, but it’s not just one title, nor\njust one studio, but an epidemic of poor technical design that\nThis could be seen as a failing of\nIn the case of objects, we tie meanings to\ndata by associating them with their containing classes and\narate actions and data by high-level concepts, which might\nWhen a class owns some data, it gives that data a context\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nwhich can sometimes limit the ability to reuse the data or un-\nin object-oriented languages, not functional languages.\ngot all this implicit environment that they carry around with\nseems to resonate with the issue of contextual referencing\nthat seems to be plaguing the object-oriented languages.\nThe contexts in the objects are often connecting diﬀer-\nobject ﬁts.\nproblem presented by the idea of the banana as an instance,\ning many data items cannot be removed as they would then\nplied to the data that leads to unnecessary complexity.\na better data representation or a diﬀerent algorithmic ap-\ncannot be reused on primitive data types, but when you\nlikelihood of mixing unrelated data just for the sake of an\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nThe second principle: Data is the type, frequency, quantity,\nThe second statement is that data is not just the struc-\nstructuring your classes so the hot and cold data was split\ndata is important, but the values and how the data is trans-\njects manipulate the data needed to represent them without\nany consideration for the hardware or the real-world data\nallowing you to put the ﬁrst version of the design document\ndesign for a project often changes so much that there is\nwasting resources by never assuming the design needs to\nby providing a solution to the current problem through some\nhigh-level code controlling sequences of events and specify-\nrequiring much thought, by utilising techniques developed\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nObject-oriented design starts to show its weaknesses\nwhen designs change in the real-world.\ncited in introductions to object-oriented design.\nin the stages of the proposed solution.\nduce a data hiding approach to modularisation, and though\nthe problem in its current form.\noriented design lies in the inevitability of change at a higher\nDesigns change for multiple reasons, occasionally includ-\nof a design, or a misinterpretation of a design, will cause as\nchange of design.\nconsiders the change in design through the lens of under-\noriented approach to design also allows for change to the\nsulated internal state manipulations of the object-oriented\nbetter as pieces of data and transforms can be more sim-\nply coupled and decoupled than objects can be mutated and\ntions in with concepts of objects, you ﬁnd the objects are\nthrough a singular vision implied by the object deﬁnition.\nfor your expected manipulations, and your data manipula-\nhard to unlink data related by aspect.\nwhen diﬀerent aspects need diﬀerent subsets of the data,\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nThis is what is meant by tying data to an aspect.\nwith static typed objects that purpose is predeﬁned, a union\npects and roles of data intrinsic from how the operations and\nﬁcult in object-oriented code, the task now becomes trivial\nwhere objects are responsible for maintaining internal con-\nthough Vulkan and OpenGL are object-oriented, the gran-\nularity of the objects is large and linked to stable concepts\ndesign paradigm, a concept brought over from abstraction\nbased development, is that we can design a static library or\npresented in this book as a data-oriented solution.\ndesign, not how to add it to your project.\ndesign attempts to rectify.\nstanding and leveraging patterns in the data, and that’s\ncan build algorithms to ﬁnd patterns in data, otherwise,\nbut it is frequently discouraged as being not object-oriented,\nand potentially fewer bugs if the functionality was in some\nyou constrain yourself to the facts about concrete data and\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nof where each type of data belongs and classiﬁes it by what\nThis makes it very easy to add and use\ndata quickly, but implementing all these diﬀerent wrapper\noccasionally objects are classiﬁed in such a way that they\nwith level of detail caused many engineers to start think-\ngines, mesh data is optimised for rendering, but when you\nstarts to look cobbled together as there are fewer objects that\nrepresent real things, and more objects used as containers\nWave data, to banks, to envelope controlled grain tables and\nfree access to the lesser understood elements of game devel-\ndo that is to not provide objects which represent them, and\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nApart from the objects representing digital assets, there\nCollectable card games have a lot of textures, but they also\nrecords, with many objects to represent the current state of\nre-skin, it will use quite diﬀerent game logic in many places,\ngame evolves.\nto implement any given design, are very quick at implement-\ning each singular design in turn, but don’t oﬀer a clean or\ngraceful way to migrate from one data schema to the next.\nconversion scripts, but normally, game developers change\nhappen over multiple sites at the same time, or if you have\ntion well is that the objects would appear to be views into\nsolution, it wouldn’t be a game solution, just a new language.\nlution if we go back to thinking about a game as merely run-\nGame developers are notorious for thinking about game\ndevelopment from either a low level all out performance\nnever been much of a middle ground in game development,\nand performance techniques employed by big-iron compa-\nthat game developers don’t normally develop systems and\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nﬁrst ﬂourishing into larger studios in the late 1990’s, aca-\nwas a dramatic drop in game performance, and whenever\nAs games machines became more like the\nscale of games has grown to match the hardware, but the\ngames industry has stopped looking at where those non-\ngame development practices led.\nseem to be grounded in simulation and high volume data\noper hours to create a game has grown, which is why project\nin high proﬁle game development.\nneeded to make your game go faster, it can be used to make\nyour game development schedule more regular.\nThese odds might sound ﬁne to some developers,\ngame, at one in a million, that’s ﬁve to ﬁfty people who will\nexperience the problem, can take a video of your game be-\nhaving oddly, post it on the YouTube, and call your company\nsold ﬁve to ﬁfty million copies of your game, you wouldn’t\ncare, but with the advent of free-to-play games, ﬁve million\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nconcerned with real money transactions.\nwrite business logic that operated on the data, but most im-\nprocess stored data, to do complex analysis on it, to store and\nIn database terminology, durability meant the transaction\nModern networked games also have to worry about highly\nthe database ACID test, game developers have gone back to\nlooking at how databases were designed to cope with these\nstrict requirements and found reference to staged commits,\nment, and a vast literature base on how to design tables for\noriented design.\nTo ﬁnish the chapter, there are some take-\naways you can use immediately to begin your journey.\n• Is your data layout deﬁned by a single interpretation\nCHAPTER 1.\nDATA-ORIENTED DESIGN\nKnow your data, and know your tar-\nstream of data matters, and who is consuming it.\nsecond principle, data is the type, frequency, quantity, shape,\n• Are you always modifying the data, or just reading it?\n• Who does the data matter to, and what about it mat-\n• What information do you have that isn’t in the data per-",
+      "keywords": [
+        "data",
+        "Data-Oriented Design",
+        "Design",
+        "Data-Oriented",
+        "game",
+        "Object-oriented design",
+        "problem",
+        "problem domain",
+        "objects",
+        "data-oriented design approach",
+        "data layout",
+        "object-oriented",
+        "hardware",
+        "game development",
+        "change"
+      ],
+      "concepts": [
+        "data",
+        "design",
+        "games",
+        "object",
+        "develop",
+        "change",
+        "changed",
+        "functional",
+        "function"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.773,
+          "base_score": 0.623,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.714,
+          "base_score": 0.714,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.601,
+          "base_score": 0.451,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.541,
+          "base_score": 0.541,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.496,
+          "base_score": 0.346,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "design",
+          "oriented",
+          "chapter",
+          "chapter data",
+          "game"
+        ],
+        "semantic": [],
+        "merged": [
+          "design",
+          "oriented",
+          "chapter",
+          "chapter data",
+          "game"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5200644410642191,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.572936+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "Relational Databases",
+      "start_page": 30,
+      "end_page": 59,
+      "summary": "In order to lay your data out better, it’s useful to have an\nface when applying data-oriented approaches to existing\ncode and data layouts usually stem from the complexity of\nstate inherent in data-hiding or encapsulating programming\nto reconﬁguring data layouts.\nto the structure of the data.\ncomplex data structures and relationships into very clean\ncollections of linear storable data entries.\nYou certainly don’t have to move your data to a database\nstyle to do data-oriented design, but there are many places\nWhen you think about the data present in most software,\nmethods on encapsulated data to a world where you only\nIn A Relational Model of Data for Large Shared Data\nwith data.\nHe proposed a solution to structuring data for\ning of how the data was laid out to use it well.\nther Normalization of the Data Base Relational Model.[?],\nframework for complex data?\nDatabases store highly complex data in a structured way\nports based on that data.\ncomputable data while also maintaining data relationships\nhave simple computable data, they have classes and objects.\ndatabase technology doesn’t work for the object-oriented ap-\nThe data relationships in games can be highly complex,\ndatabase rows.\nwith your albums neatly arranged in a single table.\nmany game objects won’t ﬁt into rows of columns.\nuninitiated, it can be hard to ﬁnd the right table columns\nAn obvious answer could be that game data doesn’t ﬁt\nonly because we’ve not normalised the data.\nto what we need, we will work through these normalisation\nwhat game data is really doing.\nstore our data.\nThe structure of any data is a trade-oﬀbe-\nstring for the data.\nThe more complex the tables\nof performance, they have forgotten they are merely a data\ndatabases, and document store types of data storage.\nkeep your data consistent across multiple tables that might\nof how we utilise large data primitives such as meshes, tex-\nlational model calls for atomicity when working with data.\ncan be rooted in considering the data from the perspective\nthis end, when working with your data, when you’re normal-\nNormalising your data\nfor keys to unlock doors in order to get to the exit room.\ntrapped, some not), with doors leading to other rooms which\nOne of the rooms is\nrooms , pickups , and\nmsh_room = LoadMesh( \" roommesh \" );\nmsh_key = LoadMesh( \" keymesh \" );\ntex_room = LoadTexture ( \" roomtexture \" );\ntex_key = LoadTexture( \" keytexture \" );\nNORMALISING YOUR DATA\nk1 = CreatePickup ( TYPE_KEY , msh_key , tex_key ,\nk2 = CreatePickup ( TYPE_KEY , msh_key , tex_key ,\nk3 = CreatePickup ( TYPE_KEY , msh_key , tex_key ,\np1 = CreatePickup ( TYPE_POTION , msh_pot , tex_pot ,\np2 = CreatePickup ( TYPE_POTION , msh_pot , tex_pot ,\na1 = CreatePickup ( TYPE_ARMOUR , msh_arm , tex_arm );\nRoom r1 = CreateRoom( WorldPos (0 ,0), msh_roomstart , tex_roomstart\nRoom r2 = CreateRoom( WorldPos (-20,0), msh_roomtrapped ,\nRoom r3 = CreateRoom( WorldPos ( -10 ,20), msh_room , tex_room );\nRoom r4 = CreateRoom( WorldPos ( -30 ,20), msh_room , tex_room );\nRoom r5 = CreateRoom( WorldPos (20 ,10) , msh_roomtrapped ,\ncreate some pickup prototypes, build up a few rooms, add\nWe create the rooms before we\nmat, or relational model, we will need to normalise it.\nbe in tables.\nIn the ﬁrst step you take all the data and put\nit into a very messy, but hopefully complete, table design.\nour case we take the form of the data from the object cre-\nation script and ﬁt it into a table.\ndirectly translated into tables, as can be seen in table 2.1\nmsh key\ntex key\nTable 2.1: Initial tables created by converting asset load calls\nPrimed with this data, it’s now possible for us to create\ntables in table 2.2.\nOnly keys had\nanimations, so there needs to be NULL entries for all non-\nkey rows.\nNORMALISING YOUR DATA\nmsh key\ntex key\nKEY\nmsh key\ntex key\nKEY\nmsh key\ntex key\nKEY\nTable 2.2: Initial tables created by converting CreatePickup\npickup prototypes, we move onto creating a table for rooms.\ncial, and AddPickup, to columns in the Rooms table.\ntable 2.3 for one way to build up a table that represents all\nRooms\nTable 2.3: Initial table created by converting CreateRoom\nated these ﬁrst tables, we ﬁnd the tables contain a lot of\nare also elements which contain more than one item of data.\nHaving multiple doors per room is tricky to handle in this\ntable.\ndeﬁned stages of data normalisation.\ndata dependency and can hint at reinterpretations of your\ndata layout.\nthat, you might wish to normalise your data for hot/cold ac-\nA Simple Guide to Five Normal Forms in Relational Database\nIf a table is in ﬁrst normal form, then every cell contains\nPrimary keys\nAll tables are made up of rows and columns.\nIn a database,\nWhen you have normalised your data, it be-\ntables to be more like sets, where the whole row is the set\ndered, and a database table is not ordered either.\nAll tables need a key.\nThe key is often used to\norder the sorting of the table in physical media, to help op-\nFor this reason, the key needs to be unique,\nYou can think of the key as the\nevery table has an implicit key because the table can use the\nThat is, the key, or the unique lookup, which is\nthe primary key for a table, can be deﬁned as the totality of\nIf the row is unique, then the primary key is\nprimary key, but sometimes, it’s actually our only choice.\nFor example, in the mesh table, the combination of\nand ﬁlename in the textures table.\nFrom the table 2.2 it’s\npossible to see how we could use the type, mesh, texture,\nNow consider rooms.\nthan the RoomID of the room table, you will ﬁnd the combi-\nof values making up the room, it would in fact be describing\nthe same room.\nmID is being used as an alias for the rest of the data.\nstuck the RoomID in the table, but where did it come from?\nnothing connected logically to the room, we would not need\nA primary key must be unique.\na primary key because it uniquely describes the room.\nan alias in this sense as it contains no data in and of itself,\nIn some cases the primary key\nIf a database table is a set, when you in-\ncombination of data is being recorded as existing.\na database table is a very sparse set from an extremely large\nble values isn’t very large, and your table can be more easily\nAs an example, consider a table which\nquire at least 2kb of data if their IDs were shrunk to shorts,\nmance of queries into the data.\nGoing back to the asset table, an important and useful\nalso be the column you can use as the primary key.\nprimary keys for those tables, we can then look at continuing\nFor example, a room may\ners and that there be no arrays of data in each element of\ndata.\npeats and all the optional content to other tables.\ngoing to be the Pickups table, it has optional ColourTint and\nWe invent a new table PickupTint, and\nuse the primary key of the Pickup as the primary key of the\nnew table.\nWe also invent a new table PickupAnim.\nTable\nmsh key\ntex key\nKEY\nmsh key\ntex key\nKEY\nmsh key\ntex key\nKEY\nTable 2.4: Pickups in 1NF\nmalisation appears to create more tables and fewer columns\nin each table, secondly that there are only rows for things\nIf we store data like this, then\nLet’s move onto the Rooms table.\nto remove all elements from this table that do not conform\nthough every room has a door, they often had more than\nIn table 2.5 it shows how\nRooms\nTable 2.5: Rooms table now in 1NF\nNow we will make new tables for Pickups, Doors, and\nIn table 2.6 we see many decisions made to satisfy\nthat doors now need two tables.\nThe ﬁrst table to identify\na need to identify doors by their primary key in the locked\ndoors table.\nIf you look at the Doors table, you can immedi-\nkey, as neither contain only unique values.\nthough is the combination of values, so the primary key is\nIn the table LockedDoors, From-\nRoom and ToRoom are being used as a lookup into the Doors\ntable.\nThis is often called a foreign key, meaning that there\nexists a table for which these columns directly map to that\ntable’s primary key.\nIn this case, the primary key is made up\nof two columns, so the LockedDoors table has a large foreign\nforeign table.\nTable 2.6: Additional tables to support 1NF rooms\nLaying out the data in this way takes less space in larger\nlaying out the data this way, we can add new features with-\nthe room objects.\nnew table such as in table 2.7.\nTable 2.7: Adding monsters\nlevel data.\ndon’t depend on only a part of the primary key.\ncaused by having a table that requires a compound primary\nkey, and some attributes of the row only being dependent\nyou have weapons deﬁned by quality and type, and the table\nlooks like that in table 2.8, what you can see is that the\nprimary key must be compound, as there are no columns\nTable 2.8: Weapons in 1NF\nIt makes sense for us looking at the table that the primary\nmean about depending on part of the key.\ncurrently relies on too little of the primary key to allow this\ntable to remain in 2NF.\nWe split the table out in table 2.9\nthen we would put the table back the way it was.\nTable 2.9: Weapons in 2NF\nWhen considering second normal form for our level data,\nTable 2.10 shows how this may have looked, but the compli-\nID, the only way to put the pickups in rooms was to have\ntwo tables.\nOne table for pickups with tints, and another\nKEY\nKEY\nKEY\nKEY\nKEY\nKEY\nKEY\nTable 2.10: An alternative 0NF and 1NF for Pickups\nIf we now revisit the Pickup table from before, with the\nown table, and depending only on PickupType, not the com-\nIn table 2.11, the assets elements now rely on the whole\nKEY\nKEY\nKEY\nKEY\nmsh key\ntex key\nKEY\nTable 2.11: Pickups in 2NF\nWe can’t apply the same normalisation of table data to\nthe Room table.\nThe Room table’s RoomID is an alias for\nalso relies on the existence of entries in an external table.\nIf we take the table as it is, the MeshID and TextureID do\npendencies on the primary key only via another column in\nWe can do a quick scan of the current tables and\nother from all the tables that use them, and look them up\nvia a table of pairs.\nTextureID as the main lookup, and slim down to one table\ntex room\ntex key\nTable 2.12: Assets in 3NF\ntrapped, or it’s the starting room.\ngenerating intermediate data to drive the value query, but\ning rooms, and the assets connected to the room depend on\nthose attributes, not the room itself.\nRooms\nRooms\nTable 2.13: Rooms table now in BCNF\nDomain Key / Knowledge\nDomain key normal form is normally thought of as the last\nnormal form, but for developing eﬃcient data structures, it’s\nand tables.\nDomain knowledge is the idea that data depends\non other data, but only given information about the domain\nman interpretation of data.\nLooking at our level data, one thing we can guess at is\nast room\n\"room%s\"\n\"key%s\"\nTable 2.14: Assets in DKNF\nsome otherwise unnecessarily stored data.\ntax tree) to then provide itself with data upon which it can\nWhat we see here as we normalise our data is a tendency\nto split data by dependency.\ntheir data and applied database normalisation techniques,\nWithout classes to deﬁne boundaries, the table-based ap-\nproach levels the playing ﬁeld for data to be manipulated\nthe level data, we have made it so changes to the design re-\nquire fewer changes to the data, and made it so data changes\ndo you unlock a door in this table-based approach?\na door is locked would normally require a join between ta-\nand request data from our tables.\nlocked, we don’t need to join tables, we know we can look up\ninto the locked doors table directly.\nJust because the data\nis laid out like a database, doesn’t mean we have to use a\nWhen it comes to operations that change state, it’s best\ntable of doors that are open, and a table of doors that are\nMoving a door from one table might be considered\nto a single table, but with all closed doors at one end, and\nBy having both tables represented\nas a single table, and having the isClosed attribute deﬁned\n2.2, leads to the table being somewhat ordered.\ninto a table makes the whole table inherently less parallelis-\nthere is an entry in the LockedDoors table that matches the\ndoor matches, and you have the right key.\nThe player inventory would be a table with just PickupIDs. This is the idea that ”the primary key is also the data” men-\na Pickup, then the entry matching the room is deleted while\nations on a table can cause cascades of further operations.\nthe LockedDoors table.\nhighly complex data structures in a database format, even\ngame data with its high interconnectedness and rapid design\nbles, as the data layout is less surprising.\nA database approach to data storage has some other use-\nexecutables to run oﬀnew data, and it allows new executa-\nbles to more easily run with old data.\nrequired nothing more than adding a new table, or a new col-\numn to an existing table.\nNow we realise that all the game data and game runtime can\nsee that all game data can be implemented as streams.\npersistent storage is a database, our runtime data is in the\ntables as sets.\nnear this because of the data layout of the object-oriented\nwe now need to think in this way for game logic too.\ncan process lots of data quickly as long as we utilise stream\nprocessing or set processing as much as possible and use\ncessing in this case means to process data without writing to\nis currently a very good ﬁt for developing non-sparse data\nstate management required once the tables have been de-\nbeen advances in techniques to process enormous data-sets.\nDatabases\nhighly sparse databases need a diﬀerent solution for pro-\nthe high-level data processing techniques which are prov-\ning to be useful are a combination of hardware-aware data\nData-oriented design was inspired by a real-",
+      "keywords": [
+        "key",
+        "msh key tex",
+        "data",
+        "primary key",
+        "Relational Databases",
+        "tex key",
+        "tex",
+        "msh key",
+        "room",
+        "msh",
+        "database",
+        "tables",
+        "NULL",
+        "Relational",
+        "normal form"
+      ],
+      "concepts": [
+        "data",
+        "tables",
+        "databases",
+        "room",
+        "key",
+        "keys",
+        "normalisation",
+        "normalised",
+        "normalise",
+        "normalisations"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.714,
+          "base_score": 0.714,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.512,
+          "base_score": 0.512,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.508,
+          "base_score": 0.508,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.49,
+          "base_score": 0.49,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.486,
+          "base_score": 0.486,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "table",
+          "key",
+          "room",
+          "primary",
+          "primary key"
+        ],
+        "semantic": [],
+        "merged": [
+          "table",
+          "key",
+          "room",
+          "primary",
+          "primary key"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4889234894693135,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:54.572965+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "Existential Processing",
+      "start_page": 60,
+      "end_page": 85,
+      "summary": "Existential processing attempts to provide a way to re-\nyour data.\nqueries to make sure the objects are in a valid state before\nyour objects were in a valid state, and should always be pro-\nnique is shown that can work with the data-oriented de-\nIt is not the only way to implement data-\nthe complexity of programs and is used in analysing large-\nthat is, a lookup in a function pointer table followed by a\nbranch into the class method, we can see that a virtual call\nis eﬀectively just as complex as a switch statement.\ning the ﬂow control statements is more diﬃcult in a virtual\ncall because to know the complexity value, you have to know\nyou don’t have access to all the code that is running, which\nThis kind of complexity is commonly called control ﬂow\nsoftware, and that is the complexity of state.\nwhich causes the most complexity is state.\nwhat it calls accidental state, that is, state which is required\nany state introduced merely to support a programming style.\nWe use ﬂow control to change state, and state changes\nEssential control is when we need to implement the de-\nThis type of control complexity is itself generally split into two\nwhere functions operating on the data aren’t sure the data\nyou will ﬁnd this kind of control complexity when using con-\nthe form of bounds checks and ensuring data has not gone\nWhat classes of issues do we suﬀer with high complexity\nunexpected behaviour due to reacting to this invalid data.\nstate.\nniques such as caching, are issues of complexity of state.\nnot working with the expected state in mind, leads to issues\ncomes from not fully observing all the ﬂow control points,\nWith runtime polymorphism using virtual calls, the like-\ncannot be sure we know all the diﬀerent ways the code can\nIn real-world cases of game development, the most common\nuse of an explicit ﬂow control statement would appear to be\nbeing practiced, many of the ﬂow control statements are just\nring to work with reference types, or with value types where\nﬂow control is looping.\ncontrol comes from polymorphic calls, which can be helpful\nEssential game design originating ﬂow control doesn’t ap-\nCode that does use a con-\ndata upon which the game is going to produce the boolean\nit’s hard to validate writing fast code for any one task.\nIt’s\nIf we decide the elimination of control ﬂow is a goal wor-\ncontrol ﬂow operations we can eliminate.\ntempt to eliminate control ﬂow by looking at defensive pro-\ngramming, we can try to keep our working set of data as a\ndata will be NULL.\nof our ﬂow control statements.\nas long as they are loops over data running a pure func-\nThe inherent ﬂow control in a virtual call is avoidable,\ntables.\nThere are many ways to implement runtime polymorphism.\ntype, you don’t need to switch on it, so if you can eradicate\nﬂow control statements go away completely.\nWhen we get to the control ﬂow in gameplay logic, we ﬁnd\nessential complexity as we can get when it comes to game\nthat we will have our data in a format that doesn’t allow for\nit requires a new way of processing our entities.\nIt’s\nyou’re the type that tries to plan meals, then a list is nigh on\nto-do list and a calendar, you know who is coming and what\nand waste in your program, lists of tasks seem like a good\nat the data and see the general shape of the processing your\nprocessing that is the problem, but the requirement to pro-\nWhen your program is running, if you don’t give it ho-\nmogeneous lists to work with, but instead let it do whatever\nof data dependency which leads to misses in both data and\nObject-oriented programming works very well when there\nare few patterns in the way the program runs.\nthe program is working with only a small amount of data, or\nwhen the data is incredibly heterogeneous, to the point that\ning system can be told to drag in any data necessary.\nof data to be a special case and invent systems to provide\nIf you let your game generate to-do lists, shopping lists,\nYou can begin to preempt all types of processing.\nTypes of processing\nExistential processing is related to to-do lists.\nprocess every element in a homogeneous set of data, you\nknow you are processing every element the same way.\nmutation is a one to one manipulation of the data, it takes\nincoming data and some constants that are set up before\nA ﬁlter takes incoming data, again with\nguaranteed size of the output table; it can produce anywhere\ndata, but is often part of a transform pipeline, and that is\nA generator takes no input data, but merely\nThese categories can help you decide what data structure\nyou even need a structure, or you should instead pipe data\nEvery CPU can eﬃciently handle running processing\nkernels over homogeneous sets of data, that is, doing the\nsame operation over and over again over contiguous data.\nTYPES OF PROCESSING\nHandles input data.\nHandles input data.\nHandles input data.\nDoes not read data.\nTable 3.1: Types of transform normally encountered\nstateful data are highly robust and deeply parallelisable.\nWithin the processing of each element, that is for each\ncontrol ﬂow.\nWhen the ﬂow control is not based on a constant,\nthe branch at the same time and discard one result based on\nSIMD or single-instruction-multiple-data allows the par-\nallel processing of data when the instructions are the same.\nThe data is diﬀerent but local.\nevery piece of data can be operated on by a diﬀerent set of\nEach piece of data can take a diﬀerent path.\nadd a thread and process some more data with a separate\nto the kind of rare fatal error caused by complexity of state.\nbetween data and information.\ncoded in data, and the amount of information encoded can\nIf we take an example, a game where the entities have\n• If you have full health, then you don’t need to regener-\nEntity {\nentity\ndata\nentity\nentity\nlist <Entity > entities;\nListing 3.1: basic entity approach\nListing 3.2: simple health regen\nIf we have a list for the entities such as in listing 3.1, then\nwe see the normal problem of data potentially causing cache\nyou might run an update function over the list, such as in\nlisting 3.2, which will run for every entity in the game, every\nWe can make this better by looking at the ﬂow control\nThe function won’t run if health is at max.\nwon’t run if the entity is dead.\nEntity {\nentity\nentity\nlist <Entity > entities;\nListing 3.3: Existential processing style health\nwe can run the update function over the health table rather\nthan the entities.\nwe are in this function, that the entity is not dead, and they\nentity\nListing 3.4: every entity health regen\nWe only add a new entityhealth element when an entity\nson this works is, an entity has an implicit boolean hidden\nin the row existing in the table.\nobject to process.\nBy moving to keeping lists of attribute state, you can\nput them in a sorted list, sorted by time of when they should\nas real-time, are the quick thinking and acting processes we\ncan think and react on multiple time-scales is more likely to\nAnother use is in state management.\nloaded data with dynamic additional attributes, has been\nSave games often encode the state\nof a dynamic world as a delta from the base state, and one\nEnumerations are used to deﬁne sets of states.\nhave had a state variable for the regenerating entity, one that\nInstead, we used tables to\nAll you need is one table per enumerable value.\ntable to another.\nWhen using tables to replace enums, some things become\nmore diﬃcult: ﬁnding out the value of an enum in an entity\nis diﬃcult as it requires checking all the tables which repre-\nsent that state for the entity.\nternal state or to ﬁnd out if an entity is in the right state to be\ndata should already be part of the table element.\nIf the enum is a state or type enum previously handled\nby a switch or virtual call, then we don’t need to look up the\nvalue, instead, we change the way we think about the prob-\neach of the switch cases or virtual methods as the operation\nwhere you have an entity as the result of a query and need\ntable in the ﬁrst place, or a second ﬁltering operation could\nbe committed to create a table in the right form.\ntable form, is to reduce control ﬂow impact.\nas moving objects from table to table has a cost too.\nenumeration which is actually a lookup into data of another\nknow we don’t have to use a virtual table pointer; we could\nuse an enum as a type variable.\nWhen your type is deﬁned by a member type variable, it’s\nusual to implement virtual functions as switches based on\nthat type, or as an array of functions.\nwhen we don’t really use enums, but instead tables that\neﬃciency of a data-ﬂow processing approach to processing\nOur elements in tables allow the char-\nThe processing of\nthe tables and their update() functions would also be added\nstate to change by inserting and removing from tables, then\nto react to a common entry point in diﬀerent ways due only\nRuntime polymorphism is the ability for a class to pro-\nvide a diﬀerent implementation for a common base operation\nwith the class type unknown at compile-time.\nthis through virtual tables, calling the right function at run-\ntime based on the type hidden in the virtual table pointer at\nnamic runtime polymorphism is when a class can react to a\ncommon call signature in diﬀerent ways based on its type,\nbut its type can change at runtime.\nthis explicitly, but if a class allows the use of an internal state\non the state as well as the core language runtime virtual ta-\nListing 3.5: simple object-oriented shape code\nConsider the code in listing 3.5, where we expect the run-\ntime method lookup to solve the problem of not knowing the\nway is to keep a type variable inside the class such as in\nlisting 3.6, where the object acts as a container for the type\ntype , float\ntype ) {\nListing 3.6: ugly internal type code\nListing 3.7: convert existing class to new class\nThough this works, all the pointers to the old class are\nIf you use existential processing techniques, your classes\ndeﬁned by the tables they belong to, then you can switch\nbetween tables at runtime.\naging a union to carry all the diﬀerent data around for all\nthe states you need.\nIf you’re updating tables, the fact that\nthe pointer address of an entity has changed will mean little\nIt’s normal for an entity to move around memory in\ntable-based processing, so there are fewer surprises.\nthe reference to the entity in each of the class attributes or\nabilities, but you don’t need a virtual table pointer to ﬁnd\nYou can run through all entities of\nprovides a safe way to change type at runtime.\nsingle entity with more than one table.\nonly can a class be dynamically runtime polymorphic, but\nthan one class at a time.\nappropriate for the current state of that class.\nmight get to poke at code that still does this, but it’s normally\nthe data, but it was fast enough to be told about events and\nIt’s possible to have\nglobal tables for subscribing to global events.\nbe possible to have named tables.\nus to new ways of implementing code traditionally done via\nregisters into the has pressed action event table with the\nto activate, and also helps provide state information such as\nIf we allow for all tables to have triggers like those found\nlevel tables such as a insert into a has pressed action ta-\nregistration tables diﬀers is in where the reactions come\nto allow your code to become more dynamic without the\nnormally associated cost of data-driven control ﬂow.",
+      "keywords": [
+        "Existential Processing",
+        "data",
+        "Processing",
+        "ﬂow control",
+        "state",
+        "n’t",
+        "Entity",
+        "control",
+        "Complexity",
+        "type",
+        "ﬂow",
+        "ﬂow control statements",
+        "tables",
+        "Existential",
+        "health"
+      ],
+      "concepts": [
+        "processing",
+        "process",
+        "processes",
+        "data",
+        "state",
+        "tables",
+        "complexity",
+        "code",
+        "coded",
+        "coding"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.518,
+          "base_score": 0.518,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 11,
+          "title": "",
+          "score": 0.459,
+          "base_score": 0.459,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.41,
+          "base_score": 0.41,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.407,
+          "base_score": 0.407,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.387,
+          "base_score": 0.387,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "ﬂow",
+          "control",
+          "entity",
+          "processing",
+          "state"
+        ],
+        "semantic": [],
+        "merged": [
+          "ﬂow",
+          "control",
+          "entity",
+          "processing",
+          "state"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4218944354958341,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:54.572979+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "Component Based",
+      "start_page": 86,
+      "end_page": 99,
+      "summary": "Component Based\nA component-oriented design is a good start for high-level\ndata-oriented design.\nDeveloping with components can put\nvide data-driven functionality packs for entities, allowing for\nNot only are component based entities\nmost game designers would demand more components with\nand extending an existing component by code to introduce\nmore ﬂexible to add another component as an extension or\nCOMPONENT BASED OBJECTS\nA problem that comes up with talking about component-\noriented development is how many diﬀerent types of entity\ncomponent systems there are.\nwe shall describe some diﬀerent ways in which component-\nThe ﬁrst kind of component-oriented approach most peo-\nFor example, Unity’s GameObject is a base entity type\nticular instance’s list of components.\nthe core entity object, and they refer to each other through\nThis approach means every entity still tends to update via\nfrequently refers to using components to make up an ob-\nThough this is better than a monolithic class, it is not yet a\nfully component based approach.\nWhen you introduce component based entities, you have\nject in object-oriented design is to name it, then ﬁll out the\nand body shell model assets etc, possibly changing class de-\nCOMPONENTS IN THE WILD\nIn component-\noriented design, objects aren’t so rigidly deﬁned, and don’t\ncomponent to control the inputs for the physics component,\nA truly component based object is nothing more than the\nThis means the deﬁnition of a component\nbased object is also nothing more than an inventory with\nponents are ﬁrst class citizens.\nComponents in the wild\nComponent based approaches to development have been\ning that objects aren’t a good place to store all your data\ncomponents are more easily moved to a structure-of-arrays\nused component based objects.\nCOMPONENT BASED OBJECTS\nusing a component based approach.\nThe article explains that using components means the\ncomponents of which the entity is made.\nWe will mention how components\nlem of objects applying meaning to data, causing coupling,\nclass and rewrite it in a component based fashion.\ngoing to tackle a fairly typical complex object, the Player\nclass.\nNormally these classes get messy and out of hand\nWe’re going to assume it’s a Player class de-\nically messy class as our starting point.\n4.1 as a reference example of one such class.\nclass\nPlayer {\nPlayer ();\n~Player ();\nplayer\nplayer\nplayer\n2GPG:DG uses GO or Game-Objects, but we stick with the term entity\nCOMPONENTS IN THE WILD\nplayer\nplayer\nplayer\nListing 4.1: Monolithic Player class\nThis example class includes many of the types of things\nIt’s common for the Player class to have lots of helper func-\ntions to make writing game code easier.\nusual for the Player class to touch nearly every aspect of a\ngame, as the human player is the target of the code in the\nﬁrst place, the Player class is going to reference nearly every-\nAI characters will have similarly gnarly looking classes if\nCOMPONENT BASED OBJECTS\nmachines, but now, because the Player class has to interact\nas the player, to help simplify the code that allows them to\nforms are data-oriented design friendly, and others are not.\nmoving from object-oriented hierarchies of gameplay classes\nto a component based approach is the transitional states of\nturning their classes into containers of smaller objects, an\ntakes an existing class and ﬁnds the boundaries between\nconcepts internal to the class and attempts to refactor them\nout into new classes which can be owned or pointed to by\nthe original class.\nFrom our monolithic player class, we can\nObject-oriented hierarchies are is-a relationships, and\ncomponents and composition oriented designs are tradition-\npieces of our monolithic class and move them into their own\nbe more easily combined into new classes later.\nTaking a look at the results of splitting the player class\nThe rendering functions need access\nto the player’s position as well as the model, and the game-\nplay functions such as Shoot(Vec target) need access to the\nit’s becoming clear that code needs to cut across diﬀerent\nCOMPONENT BASED OBJECTS\nclass\nPlayer {\nPlayer ();\n~Player ();\nListing 4.2: Composite Player class\nIn this ﬁrst step, we made the player class a container for\nthe components.\nCurrently, the player has the components,\nand the player class has to be instantiated to make a player\nTo allow for the cleanest separation into components\nor updated by their entities.\nThe UI rendering code won’t even care about where the player\nall the data in one class isn’t a good long-term solution.\nThe functionality of a class, or an object, comes from\nfact from meaning is not possible with an object-oriented\nclass containing the fact.\nfacts and keeping them as separate components, has given\nus the chance to move away from classes that instill perma-\nclass\nclass\nclass\nclass\nCOMPONENT BASED OBJECTS\nclass\nclass\nListing 4.3: Manager ticked components\nAfter splitting your classes up into components, you\nnot your classes that should be looking up variables, but in-\nstead transforms on the classes.\nby which we move away from a class-centric approach to a\ndata-oriented approach.\nplayer update, but instead an update for each component\nthat makes up the player.\nThis way, everyone entity’s physics\nAll entity’s\ncontrols (whether they be player or AI) can be updated be-\nAnalysing which components need updating every\nIn many component systems that allow scripting lan-\npresent in an object-oriented program design.\nthe behaviour of the component.\ncomponents happen in sync.\nprobably by having a new weapon class that can be pointed\nCOMPONENT BASED OBJECTS\nto allow the player and the NPC to share ﬁring code without\ninventing a new class to hold the ﬁring.\nof our previously class oriented processes out, and into more\nThere is no entity\nWhat happens when we completely remove the Player class?\ncomponents?\nof component combinations, the components which make up\nAs an entity is\nits current conﬁguration of components, then there is the\npossibility of removing the core Player class completely.\nmoving this class can mean we no longer think of the player\nas being the centre of the game, but because the class no\nTHERE IS NO ENTITY\nplayer\nListing 4.4: Sparse arrays for components\nMoving away from compile-time deﬁned classes means\nmany other classes can be invented without adding much\nAllowing scripts to generate new classes of entity by\ndiﬀerent entities in the game will now run the same code at\nCOMPONENT BASED OBJECTS",
+      "keywords": [
+        "COMPONENT BASED OBJECTS",
+        "Component Based",
+        "Player class",
+        "player",
+        "BASED OBJECTS",
+        "Component",
+        "component based approach",
+        "Based",
+        "Objects",
+        "component based entities",
+        "Entity",
+        "void",
+        "Monolithic Player class",
+        "int",
+        "bool"
+      ],
+      "concepts": [
+        "classes",
+        "void",
+        "component",
+        "objects",
+        "entity",
+        "entities",
+        "player",
+        "oriented",
+        "float",
+        "controlling"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.604,
+          "base_score": 0.454,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.486,
+          "base_score": 0.486,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.455,
+          "base_score": 0.455,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.411,
+          "base_score": 0.411,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 11,
+          "title": "",
+          "score": 0.402,
+          "base_score": 0.402,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "component",
+          "player",
+          "class",
+          "components",
+          "component based"
+        ],
+        "semantic": [],
+        "merged": [
+          "component",
+          "player",
+          "class",
+          "components",
+          "component based"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.39973757129473647,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.572993+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Hierarchical Level of",
+      "start_page": 100,
+      "end_page": 115,
+      "summary": "Hierarchical Level of\nway of doing level of detail with multiple meshes with de-\nquired of the level of detail used in each renderable.\nHIERARCHICAL LEVEL OF DETAIL\none single low level of detail mesh.\nThis reduces the time\nscale environment, a hierarchical level of detail approach to\ngame content can reduce the workload on a game engine by\nan order of magnitude as the number of entities in the scene\nIf we consider that entities can be implicit based on their at-\nditional level of detail techniques, as we move further away\nGame logic can also degrade.\nfrom an entity, it might switch to a much coarser grain time\nIn a hierarchical level of de-\nConsider a shooter game where you are defending a base\nand the attackers come in squadrons of aircraft, you can see\nneed to be running AI.\nnumber of entities based on how they are perceived by the\nplayer.\nreferenced between the levels of detail.\nis a lower level of detail sub-element of the collective.\ngame, there are a few wave entities which project squadron\nThe squadrons don’t exist as their own\nand pop out a new squadron entity.\nsquadron entity shows blips on the radar for each of its\nThe aircraft don’t exist yet, but they are\nentities.\nAs a squadron comes into even closer range, it\npops out its aircraft into their own entities and eventually\nHIERARCHICAL LEVEL OF DETAIL\nAs the aircraft get closer, traditional level of\nIf things get out of hand and the player can’t keep the\nIn the board game\nest level of detail, eﬀectively making them roll individually,\nsic game engine element.\nnumber of concurrent attacking AI1, reduced the number of\nplayer is not looking.\ning level of detail in game logic systems, AI and such, brings\na way to store what is needed to maintain a highly cohesive\nplayer experience.\nplayer goes out of sight and another squadron takes their\nWhen a high detail entity drops to a lower level of de-\nHIERARCHICAL LEVEL OF DETAIL\ntail, it should store a memento, a small, well-compressed\ntions of all the aircraft in the squadron.\nate the high detail entities back in the state they were before.\nAnother example is in a city-based free-roaming game.\nthere is a good possibility you can reduce processing time\nplayer, then you can delete it.\ntos so they try to lose sight of the player thus allowing for\nSome games get around\nit by designing in ways to reset memento data as a gameplay\nIt is important to generate new entities\nplayer knows about the game so far.\nGenerating that data\nin time.\nJust in time mementos, or JIT mementos, oﬀers\na way to create fake mementos that can provide continuity\ntion provided implicitly by the entity in need of it.\ndom number generator, it is possible to seed the generator\nwith details about the thing that needs generation.\nas you’re about to get close enough to a car to need to render\nInstead, generate the driver\naﬀected the result of generating the memento, you have no\nHIERARCHICAL LEVEL OF DETAIL\nday 107 of the game?\nIf you’re generating a landscape, it’s preferred for the\nWe don’t need such qualities when generating\nAn example of using this to create a JIT memento might\nany normal random number generator and seed it with the\nGenerate\nthe random number generator, you’re going to get the same\ncan direct a feel bias for any mementos generated in those\nJIT mementos are a good way to keep the variety up, and\nHIERARCHICAL LEVEL OF DETAIL\nwith a level of detail system, you will be aware that the con-\nstate of the entities of our game.\nto control the state of many parts of our game already, but\nally some graphical, or logical level of detail, but it could be\nsomething as important to the entity as its own existence.\nlevel of detail something should be at, but it’s not the met-\nThe true metric of level of detail should\nbe how much of our perception an entity is taking up.\nan entity is very large, and far away, it takes up as much of\nAll this time\nby how the player perceives a thing, at the range it is at.\nlevels of detail.\ngame’s representation.\nIf some element of a game is not the player’s current\nIf we consider the probability of the player\nAn entity that you know has the player’s attention, but is\nhidden, maintains a large stake on the player’s perception.\nThat stake allows the entity to maintain a higher priority on\nlevel of detail than it would otherwise deserve.\na character the player is chasing in an assassination game,\nthroughout the mission, as they are the object the player\nHIERARCHICAL LEVEL OF DETAIL\ncars seem to be diﬀerent each time you face their way.\nwhere they were, because, in essence, the player put them\nBecause the player has interacted with them, they\nstatus so can vanish when the player looks away.\nGames like this store vast\nlevel of attention to player game interaction.\nIn addition to time-since-seen, some elements may base\ntheir level of detail on how far a player has progressed in\nthe game, or how many of something a player has, or how\nmany times they have done it.\nThis can be done simply, and the player will be\nThis way of manipulating the present state of the game is\ntimes you may ﬁnd that going down two levels of menu, but\nback only one level, takes you back to where you started.\nPlayer input is often captured in obscure ways\nFor example, if a player hits both the forward\nthere is player input captured in a diﬀerent thread of execu-\ntion, the game state can become disjoint and unresponsive.\nConsider a network game’s lobby, where if everyone is ready\nentering into the options screen prior to game launch, in\nshould the player return to once they exit the options screen?\nHIERARCHICAL LEVEL OF DETAIL\na better one, but it’s a technique that didn’t need a name un-\nthis book, games have started to have too many instances.\nabout simple seeming games.\nI have a ﬁctional farming game, where I harvest wheat.\nIn some games, those wheat tiles would be instances,\nDo we need to\nDo we need an object to\nLook at your game from\nUse how the players describe what is on screen.\nup the players perception space.\nHIERARCHICAL LEVEL OF DETAIL\nliteral grid is irregular either, in some grid-based games, the\nbut the game code can be strict grid-based, leading to better\nsolution space, and more likely easier for the player to reason",
+      "keywords": [
+        "level of detail",
+        "Hierarchical Level",
+        "Detail",
+        "Level",
+        "game",
+        "player",
+        "JIT MEMENTOS",
+        "squadron",
+        "n’t",
+        "Hierarchical",
+        "entity",
+        "time",
+        "aircraft",
+        "MEMENTOS",
+        "high detail"
+      ],
+      "concepts": [
+        "game",
+        "player",
+        "mementos",
+        "level",
+        "generate",
+        "generating",
+        "generators",
+        "generation",
+        "looking",
+        "squadrons"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.411,
+          "base_score": 0.411,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.406,
+          "base_score": 0.406,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.395,
+          "base_score": 0.395,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.367,
+          "base_score": 0.367,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.325,
+          "base_score": 0.325,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "player",
+          "level",
+          "hierarchical",
+          "hierarchical level",
+          "game"
+        ],
+        "semantic": [],
+        "merged": [
+          "player",
+          "level",
+          "hierarchical",
+          "hierarchical level",
+          "game"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3827121819656265,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:54.573006+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Searching",
+      "start_page": 116,
+      "end_page": 127,
+      "summary": "Searching\nWhen looking for speciﬁc data, it’s very important to remem-\nadd searching helpers such as binary trees, hash tables, or\njust keep your table sorted by using ordered insertion when-\nSEARCHING\nIn SQL, every time you want to ﬁnd out if an element\nStarting out as a simple linear search query\n(if the data is not already sorted), the process can ﬁnd out\ngramming can bring to data-oriented design.\nthe logs of what tables had pushed for building indexes for\ntheir queries, then we can see data hotspots and where there\nDATA-ORIENTED LOOKUP\nData-oriented Lookup\nThe ﬁrst step in any data-oriented approach to searching\nand the data dependencies of the search criteria.\noriented solutions to searching often ask the object whether\nis an example of simple binary search for a key in a na¨ıve im-\nThis kind of data\nint\nint l = 0, h = numKeys -1;\nint m = (l+h) / 2;\nif( t < keys[m].\nkeys[m];\nListing 6.1: Binary search through objects\nwhat data is needed to satisfy the requirements of the pro-\nSEARCHING\nvalue we need to return in this instance is an animation key.\nThe animation key we need to return is dependent on data\nopportunity to rearrange the data any way we like.\nknow the input will be compared to the key times, but not\nany of the rest of the key data, we can extract the key times\nthe animation key when we ﬁnd the one we want to return,\nit makes sense to keep the animation key data as an array\nof structures so we access fewer cache lines when returning\nint\nint l = 0, h = numKeys -1;\nint m = (l+h) / 2;\nkeys[m];\nListing 6.2: Binary search through values\nfrom nearby the returned data, ensuring we have another\nLet’s look at the data layout of the AnimKeys.\nDATA-ORIENTED LOOKUP\nﬁnding the index of the key by hunting for through values in\ninal layout, we one or two key times per cache line.\nupdated code, we see 16 key times per cache line.\nThere are ways to organise the data better still, but any\nA basic binary search will home in on the correct data\nyou need is in the cache and all you’re doing from then on\nIn a cache line\ninto larger data structures, you deny your proven code the\nA binary search is one of the best search algorithms for\nusing the smallest number of instructions to ﬁnd a key value.\nSEARCHING\ntwo diﬀerent data layouts for an algorithm could have more\npointers to the times and the key data, had quite a bit of\ncache lines are smaller, but it’s still worth thinking about\nparticular case, there was enough cache line left to store\nkeys\nint\nint l = start* keysPerLump ;\nint h = l + keysPerLump ;\nGetKeyAtTimeLinear ( float t, int\nkeys [0];\nkeys[i];\nDATA-ORIENTED LOOKUP\nListing 6.3: Better cache line utilisation\ndata for free.\nIn listing 6.3 you can see it uses a linear search\nthe original binary search look slow by comparison, and we\nAverage 13.71ms [Full anim key - linear search]\nAverage 11.13ms [Full anim key - binary search]\n8.23ms [Data only key - linear search]\n7.79ms [Data only key - binary search]\n1.63ms [Pre-indexed - binary search]\n1.45ms [Pre-indexed - linear search]\nters work very well, by providing data about which tables to\nuse bloom ﬁlters to quickly ﬁnd out if data requests should\nSEARCHING\nFor our data-oriented approach, there\nwill always be some way to speed up a search but only by\nlooking at the data.\nIf the data is not already sorted, then\nan index is a simple way to ﬁnd the speciﬁc item we need.\nthe data is already sorted, but needs even faster access, then\na search tree optimised for the cache line size would help.\nMost data isn’t this simple to optimise.\ndata, but because we use objects, it’s hard to strap on an ef-\nAdding spatial partitioning when your data is in a simple\ndata format like rows allows us to generate spatial contain-\nIn some circumstances, you don’t even really need to search.\nIf the reason for searching is to ﬁnd something within a\nIn the ﬁrst few runs of a query, the search might\nliterally do a real search to ﬁnd the results, but if it’s run\ndata.\nArray <int > bestValue;\nThe trick is to ﬁnd, at runtime, the best value to use that\nto check the data at runtime.\nthe table’s query optimiser.\nSEARCHING\nother insert or delete, but in most B-tree implementations,\nIf you have many diﬀerent queries on some data, you can\ndex data.\ncheaper where the data is mostly static, or at least hangs\nWhen the data becomes constant, a perfect hash can\ntime, then you might ﬁnd a perfect hash that returns the\nThis data is\nSEARCHING",
+      "keywords": [
+        "data",
+        "cache line",
+        "search",
+        "key",
+        "binary search",
+        "int",
+        "cache",
+        "ﬁnd",
+        "keys",
+        "line",
+        "key data",
+        "key times",
+        "time",
+        "return keys",
+        "query"
+      ],
+      "concepts": [
+        "data",
+        "searching",
+        "times",
+        "key",
+        "keys",
+        "lookup",
+        "indexes",
+        "index",
+        "code",
+        "oriented"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.65,
+          "base_score": 0.5,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.601,
+          "base_score": 0.451,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.508,
+          "base_score": 0.508,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.476,
+          "base_score": 0.326,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.407,
+          "base_score": 0.407,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "search",
+          "key",
+          "binary",
+          "searching",
+          "binary search"
+        ],
+        "semantic": [],
+        "merged": [
+          "search",
+          "key",
+          "binary",
+          "searching",
+          "binary search"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4346480789460412,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.573020+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Sorting",
+      "start_page": 128,
+      "end_page": 137,
+      "summary": "Sorting\nSorting the prim-\nWhatever you need to sort for, make sure you need to sort\nThere are some algorithms which seem to require sorted\ndata, but don’t, and some which require sorted data but\nA common use of sorting in games is in the render pass\nSORTING\neral sorting algorithm, but in reality, there’s no reason to\nsort the alpha blended objects with the opaque objects, so\nchoose your sorting algorithm wisely.\nthe most important part is usually sorting by textures then\nuploads do, then you probably want to radix sort your calls.\nWith alpha blended calls, you just have to sort by depth, so\nof how accurately you need your data to be sorted.\nsorts are stable, others unstable.\nUnstable sorts are usually\nFor analogue ranges, a quick sort or a merge\ndiscrete ranges of large n, a radix sort is very hard to beat.\nyou know your range of values, then a counting sort is a very\nWhen sorting, it’s also very important to be aware of algo-\nrithms that can sort a range only partially.\na diﬀerent type of algorithm to ﬁnd the nth item, then sort all\nsort hierarchically.\nIf you split your sort\ncan use std::partial sort to ﬁnd and sort the ﬁrst n el-\nas if the container was sorted.\nSORTING\nallel merge sort\nDepending on what you need the list sorted for, you could\nsort while modifying.\nIf the sort is for some AI function that\nscale sort.\nIf you really do need a full sort, then use an algorithm\nMerge sort and quick sort are\nSorting for your platform\nIf your renderer is sorting by mesh\nFinding out which way to sort ﬁrst could\nsorts.html\nSORTING FOR YOUR PLATFORM\na list from a known small value space, then radix sort can\nyou don’t want to have to use atomic updates in your sorting\nSORTING\nIf your data is not simple enough to radix sort, you might\nare other sorts that work very well if you know the length\nThrough merge-sort is not itself a concurrent algo-\nThough quick sort is not\nbetter than bubble sort, but notice it doesn’t cost any devel-\n2It might be wise to have some inline sort function templates in your own\nSORTING FOR YOUR PLATFORM\nFor sorting, some-\ntimes you want an algorithm that always sorts in the same\nble times when sorting, you may need to resort to sorting\nSorting networks work by implementing the sort in a\nThe simplest sorting network is two\nIf the values entering are in order, the sorting crossover\nIf the values are out of order, then the sorting\nSORTING\ndata so the value is part of the key, so it is sorted along with\ncurrent sortings of A/C, and B/D pairs.\nsorting A/B, and C/D pairs.\nThe ﬁnal cleanup sorts the B/C\nperformance proﬁle, we can use the sort in ways where the\njust-in-time sorting for subsections of rendering.\nradix sorted our renderables, we can network sort any ﬁnal\nSORTING FOR YOUR PLATFORM\nSorting networks are somewhat like predication, the\ncause sorting networks use a min/max function, rather\nSORTING",
+      "keywords": [
+        "sort",
+        "data",
+        "radix sort",
+        "sorting networks",
+        "algorithm",
+        "sorting algorithm",
+        "merge sort",
+        "MAX",
+        "MIN",
+        "radix",
+        "render",
+        "time",
+        "n’t",
+        "render calls",
+        "small"
+      ],
+      "concepts": [
+        "sorting",
+        "data",
+        "times",
+        "timing",
+        "algorithms",
+        "values",
+        "small",
+        "good",
+        "function",
+        "functions"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.496,
+          "base_score": 0.346,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.496,
+          "base_score": 0.346,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.476,
+          "base_score": 0.326,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.305,
+          "base_score": 0.305,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "sort",
+          "sorting",
+          "radix",
+          "sorts",
+          "algorithm"
+        ],
+        "semantic": [],
+        "merged": [
+          "sort",
+          "sorting",
+          "radix",
+          "sorts",
+          "algorithm"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3236398047563269,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.573033+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "Optimisations and",
+      "start_page": 138,
+      "end_page": 165,
+      "summary": "Optimisations and\nWhen optimising software, you have to know what is causing\nmost cases, data movement is what really costs us the most.\nData movement is where most of the energy goes when pro-\ncessing data.\nan algorithm on the data uses less energy.\nment of the request for data in the ﬁrst place that appears\nformation is often much more useful than cached values or\nexplicit state data.\nIf we start our game development by organising our data\noptimisation.\nOPTIMISATIONS\nthe problem, and side-eﬀect free transforms on those tables,\nstances of objects everywhere, even when not needed.\nissues with object-oriented design are caused by the idea\nin some way dependent on the object.\ncause it needed to function as a unique individual element\nWHEN SHOULD WE OPTIMISE?\nWhen should we optimise?\nWhen should optimisation be done?\nThe answer lies in data of a diﬀerent sort.\nup a bit”, then it can be considered premature, as it’s not\nLet’s be clear here, without the data to show that a game\noptimisations.\nThe only way to stop premature optimisation\nis to start with real data.\nclearly deﬁned statement based on data, then anything you\nGiven that we think we will need to optimise at some\npoint, and we know optimising without proﬁling is not ac-\nWhen should you start work\ngame to run at around 30fps, then that’s a metric, even if it’s\nOPTIMISATIONS\nexpected maximum time for a level to load before it’s just\nIf performance is not optional, and it requires real work to\noptimise, then start asking yourself a diﬀerent set of ques-\nHow long can you work with-\nNot knowing you are writing poor performance code doesn’t\nwork, developers cannot get better, and myths and tech-\nto work without feedback would make no sense, but there\nthere is a risk the optimisations you will need to do will con-\na belief in a way of doing things, but it’s not helping, then it’s\ntrenched in their ways are more approachable with raw data,\nYou also need to get the feedback about the right thing.\nyou ﬁnd you’ve been optimising your game for a silky smooth\nbe as simple as remembering to proﬁle frame times on a per\nOPTIMISATIONS\ning about ﬁnancial budgets here, but instead time, memory,\nyou decide you want to maintain good level load times, and\nset yourself a budget of 4 seconds to load level data, then as\nyour load times.\nIf latency, throughput, frame times, memory usage, or\nBuilding budgets into how you work means, you can set re-\nbe that it was caused by a change from a very long time ago,\nbut as resources were plentiful in the early times of develop-\nBuild or get yourself a proﬁler that runs all the time.\nwhen the frame time goes over budget.\nSometimes you need the data from a number of frames\nIf you have AI in your game, consider running con-\ngoing to get real world proﬁling data.\nto be using your proﬁling system, it’s worth considering how\nyou gather data from it.\nOPTIMISATIONS\nget automatically generated proﬁle data sent back to an an-\nA strategy for optimisation\nproblem is that the game is running at 25fps, and you need\nIt’s important to not include any guesses in this step, so\nirrelevant data.\nP-hacking or data dredging can lead you to\nThe ﬁrst step in most informal optimisation strategies: the\nIn the informal optimisation process,\nSometimes it’s apparent from this step that the\ndon’t have good data, the next step should be to rectify your\nability to capture useful data.\nOPTIMISATIONS\nchange before you begin work.\nThe second step in most informal optimisation strategies; the\nproblem, it is a strategy to solve a data transform, and you\nindeed, worth working on, you must prove it’s useful.\nIf your optimisation is going to be perfect ﬁrst time, then\nIf you are not sure the optimisation will work out ﬁrst\noptimisation.\nOPTIMISATIONS\nyou need or if you can’t ﬁnd them, attempt to make them\nTables\ncate that keeping your data as vectors has a lot of positive\nIn all these cases, a simple array\nIt’s very much worth considering\nthe access patterns for your data.\nyour data, it’s important to think about what data will be\nloaded and what data will be stored.\nassociated with changing from read operations to write oper-\nTABLES\ntance of writing can be seen in the example code in listing\nread and write, but are close neighbours of data which is\nFor the beneﬁt of your cache, structs of arrays can be\nOPTIMISATIONS\nmore cache-friendly if the data is not strongly related both\nonly true when the data is not always accessed as a unit, as\none advocate of the data-oriented design movement assumed\nment in an array, then you more than likely need to access\nment you will be loading three cache lines of ﬂoat data, not\nabout where the data is coming from, how it is related, and\nData-oriented design is not just a set\nto see the connections between data.\nthat in some circumstances, it’s better to keep your vector\nas three or four ﬂoats if it’s not commonly used as a value in\nan operation that will be optimised with SIMD instructions.\ndata in trivial SoA format, such as if the data is commonly\ntransformations which are often the point of such data lay-\nIf you use dynamic arrays, and you need to delete el-\ntables together in order to process them as you may want\ntables are sorted by the same value, then it can be written\nout as a simple merge operation, such as in listing 8.3.\nTABLES\nListing 8.3: Zipping together multiple tables by merging\nThis works as long as the == operator knows about the ta-\nand as long as the tables are sorted based on this same col-\nBut what about the case where the tables are zipped\nthe modelID in the entity render data, and the mesh and\nprogram a solution to this is to loop through each table in\nand sorting them could cost more time.\nListing 8.4: Join by looping through all tables\nAnother thing you have to learn about when working with\ndata which is joined on diﬀerent columns is the use of join\nOPTIMISATIONS\ntables.\nWhen joining tables on a column (or key made up of\nThis is no good for large tables, but\nYou have to know your data to decide\nto use such a trivial join, then you will need an alternative\ning the join cache around makes it appear as if you can op-\nerate on the tables as if they are sorted in multiple ways at\nthe same time.\nIt’s perfectly feasible to add auxiliary data which will allow\ninto a table.\nway we need to.\nother cases, the sorting might be better done on write, as\nwhether you want the process to run without trashing too much cache\n3often a lookup join is called a join by hash, but as we know our data, we\nset of tables, meaning the merging work can be done during\ndo little with the data, as there would be less memory us-\nset of data is in cache ready for the next cycle.\ndata we will transform from the code which ultimately per-\nforms the operations on the data.\nTurning a large set of data into a single re-\nA simple reduce, one made to create a ﬁnal total from a\nOPTIMISATIONS\nthe chain can be reduced in parallel the same way building\ntion you can apply parallel processing to many things which\nWhen ray casting, it’s often useful to ﬁnd\nit’s useful to look up local nodes to help choose a starting\nAll spatial data-stores accelerate queries by letting them\ntransform into new data.\ndata is already organised by table, writing adaptors for any\nUsing the table-based approach, because of its in-\nit’s being used on data which doesn’t technically belong in\nWhen optimising object-oriented code, it’s quite common to\ncauses branching based on data which has only just loaded,\nand thus in most cases, causes memory to be read in prepa-\nOPTIMISATIONS\nvalue needs updating.\nthe dirty table implies it needs updating, and as a dirty ele-\nWhen you normalise your data you reduce the chance of an-\nother multifaceted problem of object-oriented development.\nC++’s implementation of objects forces unrelated data to\nObjects collect their data by the class, but many objects,\nby design, contain more than one role’s worth of data.\nbecause object-oriented development doesn’t naturally allow\naction, and also because C++ needed to provide a method\na simple way.\nclass will load a lot of unnecessary data into the cache in or-\ndata is one of the most common sins of the object-oriented\nuse any of the class’s early data, then that will be cache\nCPU load the data it wants to work on, which can be scat-\nknow what data it needs until it has decoded the instruc-\ntions from the function pointed to by the virtual table entry.\ntable structure to the data.\ntable is a row of columns of data, depending on the need\nWhen working with stream processing,\nMost work done with stream processing has this\nits own output vector, the reduce step would ﬁrst generate\nprocesses the list of reduces onto the ﬁnal contiguous mem-\nOPTIMISATIONS\nA parallel preﬁx sum would work well here, but simple\nelements you didn’t ﬁnish on your way to making the last\nWhen you come to write this in code, you will ﬁnd\nParallel preﬁx sums provide a way to reduce latency, but\nyou need a way of adding and deleting without causing any\nFor this, if you intend to transform your data in\nplace, you need to handle the case where one thread can be\nreading and using the data you’re deleting.\nsystem where objects’ existence was based on their memory\nYou could use\nthis data doesn’t need to be present in release builds, as\ncaused by decisions made at compile time.\nyou know the data should not be used outside of the audio\nAny time the audio system memory is\naccessed outside of the audio thread, it’s either because the\nOPTIMISATIONS\nit’s doing more work than it should in any callback functions.\ninstead, you change the way all code accesses data.\nchange what the data represents.\ntable of CarDriverAIs while it’s in use, but the moment it’s\ndead entities in your tables.\nSometimes, normalisation can mean you need to join tables\ncarefully and use the algorithm from merge sort to help us\nzip together two tables.\noutput to a table, it could be a pass-through transform which\nDATA-DRIVEN TECHNIQUES\nData-driven techniques\nmon forms of data-driven coding practices.\nIn both these cases, data causing the\nﬂow of code to change will cause the same kind of cache and\nof the callbacks in the callback table once the whole set of\nﬁnd you can use scripts for a very large number of entities\ndata-oriented-data-driven-system-for.html\nOPTIMISATIONS\na decent chunk of work to do, such as making an operation\nand in tests ran about four times faster than both the array\ndelta_time\nfloat gd = g * delta_time;\npb ->posy[i] += pb ->vy[i] * delta_time + gd2;\ndelta_time ) {\nf_gd2 = pb ->gravity * delta_time * delta_time * 0.5f;\ndelta_time );\nListing 8.5: Simple particle update with SIMD\nIt’s not often very easy to ﬁgure these things out.\nyou to get more data into the CPU in one go.\nexample loads in four diﬀerent particles at the same time,\nand updates them all at the same time too.\nwith the data layout, as you can just use a na¨ıve struct of ar-\ndata in a database style format, there is the opportunity to\naccess pattern for object data.\ncold data side by side in an SoA object as data is pulled into\nthe data has to be pulled into the cache at once.\nThis means that every time\nall the associated keyframe data.\nOPTIMISATIONS\n64 bytes of data and only using 4 bytes of it in up to 5 of the\nIf you change the data layout so the searching takes\nplace in one array, and the data is stored separately, then\nfloat *times;\nListing 8.7: struct of arrays\ning to pull in at most three of them, and the data lookup is\nguaranteed to only require one, or two at most if your data\nthroughput for data processing over traditional row-oriented\nrelational databases simply because irrelevant data is not",
+      "keywords": [
+        "data",
+        "time",
+        "n’t",
+        "Optimisations",
+        "tables",
+        "work",
+        "game",
+        "arrays",
+        "SIMD",
+        "feedback",
+        "cache",
+        "ﬁnal",
+        "system",
+        "reduce",
+        "frame"
+      ],
+      "concepts": [
+        "data",
+        "optimisations",
+        "optimising",
+        "optimise",
+        "optimised",
+        "tables",
+        "uses",
+        "useful",
+        "time",
+        "timings"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.773,
+          "base_score": 0.623,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.65,
+          "base_score": 0.5,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.518,
+          "base_score": 0.518,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.512,
+          "base_score": 0.512,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 9,
+          "title": "",
+          "score": 0.51,
+          "base_score": 0.51,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "optimisations",
+          "tables",
+          "optimisation",
+          "delta_time",
+          "work"
+        ],
+        "semantic": [],
+        "merged": [
+          "optimisations",
+          "tables",
+          "optimisation",
+          "delta_time",
+          "work"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5191220128745558,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.573047+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "Helping the compiler",
+      "start_page": 166,
+      "end_page": 181,
+      "summary": "Helping the compiler\nCompilers are rather good at optimising code, but there\nare ways in which we code that make things harder.\nsome habits that will make it easier for the compiler to do\nsome compilers use called static single assignment form, or\nHELPING THE COMPILER\ncan give you the necessary hints to write your code in a sin-\nWriting code like this means you will see where the com-\npiler might have had to break away from writing to memory,\nyou can force it to write in all cases, making your process-\nget to the data you need.\ndata is potentially a stall waiting for main memory.\nWhen writing, the same issues need to be considered as\nand also from write-only values.\nopportunities for the compiler to optimise.\nWhen you have a cache, sometimes it’s important to ﬁnd\ndata you’re loading more than once or at least not soon\nenough to beneﬁt from caching, then it can be useful to\nﬁnd ways to avoid polluting the cache.\nWhen you write your\ntransforms in simple ways, it can help the compiler promote\nyour operations from ones which pollute the cache, to in-\ning operations beneﬁt the caches by not evicting randomly\nThese non-temporal memory operations help\ntime soon, so having it available in the cache is pointless, and\nHELPING THE COMPILER\nmerely evicts potentially useful data.\nA reason to work with data in an immutable way comes\nsave them out once they are all in the cache.\ndata can be modiﬁed by writes to your output buﬀer, then\nListing 9.2: trivially parallelisable code\nListing 9.3: potentially aliased int\nThe compiler cannot tell that q is unaﬀected by operations\nso to ensure functionally correct code, the variables have to\nIf you want to return multiple values, the normal way is to\nHELPING THE COMPILER\nhelp by making more of your code run on value types, which\nto optimise by a compiler.\nCache line utilisation\nrequest will always read in at least one complete cache line.\nThat complete cache line will contain multiple bytes of data.\nAt the time of writing this book, the most common cache\nWhen you have an object you will be loading into memory,\ncalculate the diﬀerence between a cache line and the size of\nThat diﬀerence is how much memory you have\ncache the fact the entity has elements in those arrays in the\nIn the example code in listing ??\ntempt is made to use more of an object’s initial cache line to\nfully caching the result, a massive improvement was gained.\nCaching the result when\nusing the extra data you have on your cache line is always\n9.62ms [Partially cached query (25%)]\n8.77ms [Partially cached presence (50%)]\n3.71ms [Simple, cache presence]\n1.51ms [Partially cached query (95%)]\n0.30ms [Fully cached query]\nmemory at all, you are loading in a full cache line of bytes.\nCurrently, with 64-byte cache lines, that’s a 4x4 matrix of\ndata, there are times it can get choked up on the cache.\nHELPING THE COMPILER\nwhen you are writing out data to the same cache line, it can\nand write to the same cache line, but not necessarily the\nsame memory addresses in the cache line.\nint sum =0;\nint\nint sum =0;\nint\nfalse sharing, look at the where your threads are writing, and\ntry to remove the writes from shared memory where possible\na shared resource, and each thread will cause the cache to\ncores before they can update their elements in the cache line.\nIn the second function, LocalAccumulator, each thread sums\nspeculative execution, you will need to watch out for the code\nThese branch prediction caused reads can be reduced by\nHELPING THE COMPILER\ncause the smallest side-eﬀects to the data is a generally good\nEven caching only when you can, storing the result\nIn the cache line utilisation section, the numbers showed\nEven if all you are able to cache is whether a query will\nthere are ways to make code branch free, but another way is\nA trivial example such as in listing 9.5\nIf you make the work\nsort the data so the branches are much more predictable.\nThe other thing to remember is that if the compiler can help\nwork is trivially optimised into a conditional execution, then\nint\nint sum =0;\nListing 9.5: Doing work based on data\n0.76ms [Trivial Sorted branching]\nBranching happens because of data, and remember the\nber that a vtable pointer is data too.\nbased on data.\nThe trivial version, which was likely mostly compiled into\nHELPING THE COMPILER\nthe simplest solution to a lot of issues with poor cache per-\nprocesses are sharing and contending for the caches on the\nYour code will be evicted from the cache, there is\nSo will your data.\nquency of your code and data being evicted, keep both code\nSome cache architectures don’t have any way to tell if the\nL1 and L2 cache lines evicted because of L3 needing to evict,\nTo that end, try to ﬁnd ways to guarantee to the compiler\nthat you are working with aligned data, in arrays that are\nby enabling it and forming your code in such a way that it\nis possible for the compiler to make safe assumptions, and\nListing 9.6: Trivial ampliﬁcation function\nwhich is simple enough to be vectorised by most compilers\nquite fast to process the data, this code will take up a lot\nmore space than is necessary in the instruction cache.\nness of your instruction cache as the number of instructions\nHELPING THE COMPILER\non data, then it won’t be able to commit to doing all elements\nthe data turns the function from a fast parallel SIMD opera-\nvectorisation, but the fact the loop is exited based on data.\nFor example, in listing 9.9, the branch can be turned into\nFind out what your compiler can vectorise.\ncan often help to write your series of operations out longhand\nalways write out.\nthen it won’t be able to write out whole SIMD data types, so\nin, just to write it out again.\nListing 9.9: Vectorising an if\nListing 9.10: Aliasing aﬀecting vectorisation\ntorisation based on the way you write your code, but in gen-\neral, the simpler you write your code, the more likely the\ndoes, and many new ways to detect and optimise simple code\nAt the time of writing, the online Compiler\nsee how your code will be compiled into assembly, so you\nHELPING THE COMPILER\nis not a good metric for fast code, that SIMD operations are",
+      "keywords": [
+        "data",
+        "cache",
+        "compiler",
+        "Cache line",
+        "code",
+        "int",
+        "Helping the compiler",
+        "memory",
+        "int count",
+        "COUNT",
+        "Listing",
+        "write",
+        "n’t",
+        "sum",
+        "line"
+      ],
+      "concepts": [
+        "memory",
+        "data",
+        "cache",
+        "caching",
+        "code",
+        "compiler",
+        "lists",
+        "sum",
+        "sums",
+        "ways"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.51,
+          "base_score": 0.51,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.36,
+          "base_score": 0.36,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.348,
+          "base_score": 0.348,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.335,
+          "base_score": 0.335,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 11,
+          "title": "",
+          "score": 0.319,
+          "base_score": 0.319,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "cache",
+          "compiler",
+          "line",
+          "cache line",
+          "helping compiler"
+        ],
+        "semantic": [],
+        "merged": [
+          "cache",
+          "compiler",
+          "line",
+          "cache line",
+          "helping compiler"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.35748778536267206,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:54.573059+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "Maintenance and",
+      "start_page": 182,
+      "end_page": 191,
+      "summary": "When object-oriented design was ﬁrst promoted, it was said\ntrue in practice, it is often cited by object-oriented developers\nless of their level of expertise, an object-oriented program-\nof object-oriented development as a boon when it comes to\nHighly experienced but more objective developers have\nadmitted or even written about how object-oriented C++ is\nwho cannot immediately see the beneﬁt of the data-oriented\nthan working with objects.\nﬁle example, we saw how the objects we started with turned\nbalance is to be found in practical examples of data normal-\nIn object-oriented program-\nonly need to be in the zone if the code is nearing deadly levels\nData-oriented\nWhen looking for data-oriented solutions to programming\nthe value of the object being pointed at, but also implies a\nInstead of hiding, data-oriented suggests keeping data\nIf you have a transform that appears to work, but for one\nnot deleting the input data can reduce the amount of guess-\nif you run the code multiple times it will still produce the\nThe transform\nOne way of keeping your code idempotent is to write your\nA feature commonly cited by the object-oriented developers\nwhich seems to be missing from data-oriented development\nwith code which cannot be reused.\nWhile developing data-\noriented projects, the assumed inability to reuse source code\ncase, it is normally stored as source code, but the informa-\ntion is not the source code.\nWith object-oriented develop-\nIn object-oriented development, you apply the informa-\ntion inherent in the code by adapting a class that does the\nIn data-oriented devel-\ninto and out of the input and output data structures around\nthe time you apply the information contained in the data-\noriented transform.\nEven though, at ﬁrst sight, data-oriented code doesn’t ap-\nreusable as it doesn’t carry the baggage of related data or\nfunctions like object-oriented programming, and doesn’t re-\nDuck typing, not normally available in object-oriented\nreusable into a simple strategy, or a sequence of transforms\nwhich can be applied to data or structures of any type, as\nThe object-oriented C++ idea of reusability is a mix-\ndata-oriented transform centric viewpoint, architecture just\ntransform.\nThere are situations where an object-oriented\nbecause of the inherent diﬃculty interfacing object-oriented\nThe most reusable object-oriented code appears as in-\nbest example of an object-oriented approach that made ev-\ning all your data in simple linear arrangements, there is also\nThis is caused by the data being formatted\nto this being avoidable by not reusing code you don’t under-\nyour own code.\nBecause the data is built in the same way each time,\ntions in databases, and if you start to develop your code this\nUnit testing can be very helpful when developing games, but\nbecause of the object-oriented paradigm making program-\nmers think about code as representations of objects, and\nnot as data transforms, it’s hard to see what can be tested.\nand requiring complex setup state before a test can be car-\nobject-oriented programming caused simple tests to be hard\nof the non-obvious nature of how objects are transformed\nhard to write unit tests unless you’ve been working with them\ngame or engine from one code and data layout into another\ndo if you normalise your data as you’re more likely to have\nbe times when even normalised data is not suﬃcient, such\nUnit testing is simple with data-oriented technique be-\ncause you are already concentrating on the transform.\nerating tables of test data would be part of your development,\nthe test-driven development technique, a proven good way to\nRemember, when you’re doing data-oriented development\nyour game is entirely driven by stateful data and stateless\ntransforms.\ntransforms.\nthe transform produced the right data.\nbroken anything by changing the code.\ntage of data-oriented development is that, at every turn, it\nIt might come to pass, as you work with normalised data,\ncode by putting the data in objects with names, and methods\nthat did things to the objects, rather than transformed the\ndata.",
+      "keywords": [
+        "data",
+        "code",
+        "object-oriented",
+        "transform",
+        "n’t",
+        "Maintenance and reuse",
+        "UNIT TESTING",
+        "valid",
+        "UNIT",
+        "reuse",
+        "REUSABILITY",
+        "data-oriented",
+        "state",
+        "Maintenance",
+        "development"
+      ],
+      "concepts": [
+        "data",
+        "oriented",
+        "reusable",
+        "developers",
+        "state",
+        "transform",
+        "programming",
+        "program",
+        "valid",
+        "unit"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.604,
+          "base_score": 0.454,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.541,
+          "base_score": 0.541,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.501,
+          "base_score": 0.501,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.49,
+          "base_score": 0.49,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 11,
+          "title": "",
+          "score": 0.47,
+          "base_score": 0.47,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "oriented",
+          "object oriented",
+          "object",
+          "data oriented",
+          "code"
+        ],
+        "semantic": [],
+        "merged": [
+          "oriented",
+          "object oriented",
+          "object",
+          "data oriented",
+          "code"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.46140970160309375,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:54.573074+00:00"
+      }
+    },
+    {
+      "chapter_number": 11,
+      "title": "What’s wrong?",
+      "start_page": 192,
+      "end_page": 217,
+      "summary": "What’s wrong with object-oriented design?\nThe pattern of usage of C++ in game development was so ap-\nC++ game developers?\nway of coding games one of the worst ways of making use\nharm in game-development style object-oriented C++?\nobject-oriented means, as game developers tended to believe\nthat object-oriented meant you had to map instances of ev-\nThis form of object-oriented development could be\ndecry as poor, as object methods are hard to time accurately,\ngame developers, but has been accepted, as the beneﬁt of a\nA class that has derived from a base class with virtual\nmethods to a class instantly adds a virtual table to the exe-\ncutable, and a virtual table pointer as the implicit ﬁrst data\nmember of the class.\nclasses to be up to the compiler to the point where they can\nimplement such things as virtual methods by adding hidden\nmembers and generating new arrays of function pointers be-\nappears most compilers implement virtual tables to store vir-\ntual method function pointers.\nWhen we call a virtual method on a class we have to know\nwhat code to run.\nthe virtual table to access, and to do that we read the ﬁrst\ndata member in order to access the right virtual table for\nThis requires loading from the address of the class\nnon-trivial virtual method call is a lookup into a table, so in\nthe compiled code, all virtual calls are really function pointer\nthe virtual table, notably with C++11, there has been some\nclass B {\nvirtual\nclass D final : public B {\nvirtual\nvirtual\nListing 11.1: A simple derived class\nbut basically, it’s still virtual tables, but now each function\ngame.\ntable pointer will already be in memory, the object type the\nsame as last time, so the function pointer address will be the\nsame, and therefore the function pointer will be in cache too,\nover objects.\ncall the virtual function on each object in turn.\ngame code, this will involve loading the virtual table pointer\nfor each and every object.\noﬀset (the index of the virtual method), to ﬁnd the function\npointer to call, however, due to the size of virtual functions\ncommonly found in game development, the table won’t be in\nEven without loads, not knowing which function will be\nThe reason virtual functions in games are large is that\ngame developers have had it drilled into them that virtual\nfunctions are okay, as long as you don’t use them in tight\ntypes, or classes of solution helpers in tree-like problem-\nbest way to use virtuals is to put large workloads into the\nIn C++, classes’ virtual tables store function pointers by\ntheir class.\nThe alternative is to have a virtual table for each\ning class.\nthe overhead as the virtual table would be the same for all\nbraries, libraries with new classes that may inherit from the\nclass to add new virtual methods, and have them callable\ntion oriented virtual tables, the language would have had to\nruntime patch the virtual tables whenever a new library was\ning a virtual table per class oﬀers the same functionality but\nvirtual tables as the tables are oriented by the classes, which\nIt’s not just the implementation of classes\nthat causes these cache misses, it’s any time data is the de-\nther run code based on loaded data in the case of bytecode\ninterpreters or they compile code just in time, which though\nit creates faster code, causes issues of its own.\nWhen a developer implements an object-oriented frame-\nwork without using the built-in virtual functions, virtual ta-\nreduce the chance of cache miss unless they use virtual ta-\nbles by function rather than by class.\ndoing object-oriented programming with game developer ac-\ncess patterns, that of calling singular virtual functions on\nfor is one less data dependent CPU state change per virtual\ndevelopers stick with object-oriented coding practices?\nlem and stopped using object-oriented development prac-\nClaim: Objects provide a better mapping from the real world\nObject-oriented design when programming in games\nEach entity in the game design is given a class,\nEach object maintains\nits own state, communicates with other objects through\nmentation of a particular entity changes, the other objects\nthat use it or provide it with utility do not need to change.\nGame developers like abstraction, because historically they\nmanufacturers, but now game developers have to manage\nabstractions as well, but as the game development indus-\nand many of these use object-oriented design as well.\nThese agent objects contain their own state data,\nThe game design inspired objects (such as ship, player,\nobject-oriented API hides much of the details about what’s\nThe entities in object-oriented design are containers for\ndata and a place to keep all the functions that manipulate\ntity systems, as the entities in object-oriented design are\nAn object-oriented\nentity does not change class during its lifetime in C++ be-\nGame developers don’t change the type of their objects\ncase of a game entity that needs this functionality.\nThe animating player object may be made\nbody object with its diﬀerent set of virtual functions, and\nbehaviour trees that run most game AI maintain all the data\nIn this trivial example, the AI class\nfunctionality would be covered by the virtual table pointer.\ndo in C++ is to fake it by changing the virtual table pointer\nApart from immutable type, object-oriented development\nobjects when we see them.\nThis is why object-oriented development is so appealing to\nentities being objects, we think about them as wholes.\ndimensions into three distinct classes of object.\nThe class of an object is poorly deﬁned by what it is, but\nIn C++, it’s clear a class with virtual functions can\njust the ability for an object to fulﬁl a functionality contract,\nthen we don’t need virtual calls to handle that every time, as\nthere are other ways to make code behave diﬀerently based\non the object.\nIn most games engines, the object-oriented approach\nrect calls when calling virtual methods, but they also cause\nmake sure there is a Renderable base class somewhere in ev-\nmon functionality into the core base class for everything in\nObject-oriented development is good at providing a hu-\ncode, but bad at providing a machine representation of the\ndevelopers still using object-oriented techniques to develop\ngames?\nmaking it easier to change the code.\nedge that game developers are constantly changing code to\nDoes object-oriented development provide\nClaim: Encapsulation makes code more reusable.\nIn theory, well written object-oriented code that\ning how an object manipulates its data.\nIf all the code us-\nthe class fulﬁls that contract, there won’t be any new bugs\ntures of objects’ implementations.\nSometimes the object they\nIf that bug is ﬁxed, then the code using the object no longer\nby name, then the code would no longer work.\ncode.\nfunctionality of its own.\nClaim: Making every object an instance makes it very easy\nto think about what an object’s responsibilities are, what its\nlifetime looks like, and where it belongs in the world of objects.\nway of thinking about an object to another, and back again.\nhave a tendency to abstract too early, and object-oriented de-\nClaim: Inheritance allows reuse of code by extension.\nInheritance was seen as a major reason to use classes in\nC++ by game programmers.\nGame developers use inheritance to provide a robust way\nany hand coded checking of type.\nreduced copy-pasting, because inheriting from a class also\nadds functionality to a class.\nseen to reduce errors in coding as there were often times\nvirtual interface classes as per the Java deﬁnition.\nAlthough it seems like inheriting from class to extend its\nclasses don’t quite behave as expected when methods are\nthe source, not just of the class you’re inheriting, but also\nthe classes it inherits too.\nIf a base class creates a pure vir-\ntual method, then it forces the child class to implement that\nenforced, but you cannot enforce that every inheriting class\nimplements this method, only the ﬁrst instantiable class in-\nThis can lead to obscure bugs where a new class\nsometimes acts or is treated like the class it is inheriting\nvirtual.\nYou cannot declare a function as not being virtual.\nissues when common words are used, and a new virtual\nclass A {\nvirtual\nclass B : public A {\nSome code relies on the compiled state, some on run-\nAdding new functionality to a class by extending it can\nquickly become a dangerous game as classes from two lay-\nInheritance does provide a clean way of implementing\niting the base class, providing a default implementation, or\na pure virtual, then providing implementations for all the\nclasses that need to handle the new feature.\nmodiﬁcation to the base class, and possible touching all of\nthe child classes if the pure virtual route is taken.\nthe code needs to change, it has not made it signiﬁcantly\neasier to change the code.\nUsing a type member instead of a virtual table pointer can\ngive you the same runtime code linking, could be better for\nimplementing those new features, provides a very simple way\nthe fake virtual function go-forward, the class Car will step\nIn the fake virtual function re-fuel, the class Car and UFO\nto multiple inherit in order to provide diﬀerent functionality\non a per class per function level.\neach method does in a class is not something inheritance is\nwould not need to revisit the base class, or change any of\nthe existing code in order to extend and add functionality\nneed to view the base class implementation, and with chang-\ning speciﬁcations in games, it’s also quite common to need\nchanges at the base class level.\ntypes in the game.\ndrawn a veil over the one good way of building up classes\nfer similar functionality to virtual tables without some of the\nSo why put things in classes?\nThe object-oriented paradigm is seen as another tool in\nmethods, and inheritance to use or extend objects, program-\nmodularity separates each object’s code into units.\nObject-oriented design suﬀers from the problem of errors\nneed to be tested, and systems comprise of not only objects,\nObject-oriented devel-\nopment leads to an object-oriented view of the system which\nmakes it hard to isolate non-objects such as data trans-\nThe reason object-oriented modular approach doesn’t\nwork as well is that the modules are deﬁned by object\nModularity in object-oriented development can oﬀer pro-\ncode.\nAn object’s methods are often the instruc-\ntion manual for an object in the eyes of someone new to\nmodularity is important here because game development ob-\nto address cross-cutting concerns, game objects tend to ful-\nfundamental level, but object-oriented development in C++\nIf object-oriented development doesn’t increase modular-\nClaim: Faster development time through reuse of generic code\nyour data, and you will need to either rewrite the old code\nto allow for the new feature, or rewrite the old code to allow\nfrom existing solutions, from objects invented to provide fea-\nnot thousands of special case objects that provide all par-\nity of games will have a player class, but almost none share\nHaving a generic class\nthat can be reused doesn’t make the game easier to create,\nbasic classes.\ninstance adds time to development without adding value.\nalise a class if you only use it in one place?\nif you only use a class in one place, you can only test that\nthe class, yet don’t have any other test cases than the ﬁrst\nclass when generalising it.\nthe class works for other types or situations, all you have\ndone by generalising the class is added more code for bugs\nTest-driven development implicitly denies generic coding\ntime when it is a good choice to move code to a more generic\nif you write generic code, expect people to not use it unless\nwords, starting out by writing generic code is a good way to\nwrite a lot of code quickly without adding any value to your",
+      "keywords": [
+        "virtual",
+        "virtual table pointer",
+        "code",
+        "virtual table",
+        "game",
+        "n’t",
+        "virtual functions",
+        "object",
+        "game developers",
+        "virtual call",
+        "function",
+        "data",
+        "virtual methods",
+        "call",
+        "object-oriented"
+      ],
+      "concepts": [
+        "object",
+        "classes",
+        "code",
+        "coded",
+        "function",
+        "functions",
+        "functionality",
+        "virtual",
+        "virtually",
+        "development"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.47,
+          "base_score": 0.47,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.469,
+          "base_score": 0.469,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.46,
+          "base_score": 0.46,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.46,
+          "base_score": 0.46,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Data-Oriented Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.459,
+          "base_score": 0.459,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "virtual",
+          "class",
+          "object",
+          "object oriented",
+          "oriented"
+        ],
+        "semantic": [],
+        "merged": [
+          "virtual",
+          "class",
+          "object",
+          "object oriented",
+          "oriented"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.45163550127547,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:54.573091+00:00"
+      }
+    }
+  ],
+  "total_chapters": 11,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Data-Oriented Design_metadata.json",
+    "enrichment_date": "2025-12-17T23:01:54.576517+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3050.7341680004174,
+    "total_similar_chapters": 54
+  }
+}

@@ -1,0 +1,1002 @@
+{
+  "metadata": {
+    "title": "Python Data Analysis 3rd",
+    "source_file": "Python Data Analysis 3rd_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Preliminaries",
+      "start_page": 19,
+      "end_page": 34,
+      "summary": "1.1 What Is This Book About?\nand crunching data in Python.\nprogramming language and its data-oriented library ecosystem and tools that will\nof the book, the focus is specifically on Python programming, libraries, and tools as\nThis is the Python programming you need for\ndata analysis.\nThe Python\ndata, such as:\n• Tabular or spreadsheet-like data in which each column may be a different type\n• Multiple tables of data interrelated by key columns (what would be primary or\nused data analysis tool in the world, will not be strangers to these kinds of data.\n1.2 Why Python for Data Analysis?\nFor many people, the Python programming language has strong appeal.\nfirst appearance in 1991, Python has become one of the most popular interpreted\nPython and Ruby have\ninterpreted languages, for various historical and cultural reasons, Python has devel‐\noped a large and active scientific computing and data analysis community.\nputing language to one of the most important languages for data science, machine\nFor data analysis and interactive computing and data visualization, Python will inevi‐\nyears, Python’s improved open source libraries (such as pandas and scikit-learn) have\nprimary language for building data applications.\nPython as Glue\nPart of Python’s success in scientific computing is the ease of integrating C, C++,\nWhat people are increasingly finding is that Python is a suitable language not only\nPython in many cases will require programming in a low-level language like C or\nC++ and creating Python bindings to that code.\nPython programming environment.\nWhy Not Python?\nWhile Python is an excellent environment for building many kinds of analytical\nPython may be less suitable.\nAs Python is an interpreted programming language, in general most Python code\n1.2 Why Python for Data Analysis?\nPython can be a challenging language for building highly concurrent, multithreaded\nprevents the interpreter from executing more than one Python instruction at a time.\nit is true that in many big data processing applications, a cluster of computers may be\nThis is not to say that Python cannot execute truly multithreaded, parallel code.\nPython C extensions that use native multithreading (in C or C++) can run code in\ninteract with Python objects.\n1.3 Essential Python Libraries\nFor those who are less familiar with the Python data ecosystem and the libraries used\nNumPy, short for Numerical Python, has long been a cornerstone of numerical\ncomputing in Python.\nIt provides the data structures, algorithms, and library glue\nneeded for most scientific applications involving numerical data in Python.\n• A mature C API to enable Python extensions and native C or C++ code to access\nNumPy’s data structures and computational facilities\nBeyond the fast array-processing capabilities that NumPy adds to Python, one of\nits primary uses in data analysis is as a container for data to be passed between\nFor numerical data, NumPy arrays are more efficient for\nstoring and manipulating data than the other built-in Python data structures.\nThus, many numerical computing tools for Python either assume\nNumPy arrays as a primary data structure or else target interoperability with NumPy. pandas\npandas provides high-level data structures and functions designed to make working\nhas helped enable Python to be a powerful and productive data analysis environment.\npandas blends the array-computing ideas of NumPy with the kinds of data manipu‐\ntion, and cleaning are such important skills in data analysis, pandas is one of the\n• Data structures with labeled axes supporting automatic or explicit data align‐\n• The same data structures handle both time series data and non-time series data\n• Flexible handling of missing data\nlanguage for this, but at that time an integrated set of data structures and tools\ntime series functionality and tools well suited for working with time-indexed data\n1.3 Essential Python Libraries \nPython, data frames are built into the R programming language and its standard\nmensional structured datasets, and a play on the phrase Python data analysis.\nmatplotlib is the most popular Python library for producing plots and other two-\nPython programmers, matplotlib is still widely used and integrates reasonably well\nbetter interactive Python interpreter.\none of the most important tools in the modern Python data stack.\nnot provide any computational or data analytical tools by itself, IPython is designed\nwindow and a Python session in many cases.\nSince much of data analysis coding\nmode) for using Python with Jupyter.\nto accelerate the writing, testing, and debugging of Python code.\nI personally use IPython and Jupyter regularly in my Python work, whether running,\n1.3 Essential Python Libraries \npurpose machine learning toolkit for Python programmers.\nbling Python to be a productive data science programming language.\nIn 2022, there are many other Python libraries which might be discussed in a book\nwould recommend using this book to build a foundation in general-purpose Python\nSince everyone uses Python for different applications, there is no single solution for\nsetting up Python and obtaining the necessary add-on packages.\nnot have a complete Python development environment suitable for following along\nI will be using Miniconda, a minimal installation of the conda package\nThis book uses Python 3.10 throughout, but if you’re reading in the\nfuture, you are welcome to install a newer version of Python.\nTo get started on Windows, download the Miniconda installer for the latest Python\ndo), then this Miniconda installation may override other versions of Python you have\nthat’s installed to be able to use this Miniconda.\npreter by typing python.\n(base) C:\\Users\\Wes>python\nTo exit the Python shell, type exit() and press Enter.\nSome Linux distributions have all the required Python packages\n(base) $ python\nPython 3.9 | (main) [GCC 10.3.0] on linux\nTo verify everything is working, try launching Python in the system shell (open the\n$ python\nNow that we have set up Miniconda on your system, it’s time to install the main\npackages we will be using in this book.\nusing Python 3.10:\n(base) $ conda create -y -n pydata-book python=3.10\nNow, we will install the essential packages used throughout the book (along with their\n(pydata-book) $ conda install -y pandas jupyter matplotlib\nThere are two ways to install packages: with conda install and with\nconda install should always be preferred when using Miniconda, but\nWhile you can use both conda and pip to install packages, you\n• Python Tools for Visual Studio (for Windows users)\nDue to the popularity of Python, most text editors, like VS Code and Sublime Text 2,\nhave excellent Python support.\nOutside of an internet search, the various scientific and data-related Python mailing\n• pydata: A Google Group list for questions related to Python for data analysis and\n• Mailing list for scikit-learn (scikit-learn@python.org) and machine learning in\nPython, generally\n• scipy-user: For general SciPy or scientific Python questions\nEach year many conferences are held all over the world for Python programmers.\nIf you would like to connect with other Python programmers who share your inter‐\n• PyCon and EuroPython: The two main general Python conferences in North\n• PyData: A worldwide series of regional conferences targeted at data science and\ndata analysis use cases\nIf you have never programmed in Python before, you will want to spend some time\nin Chapters 2 and 3, where I have placed a condensed tutorial on Python language\nIf you have Python experience already, you\nrest of the book to data analysis topics applying pandas, NumPy, and matplotlib\ntransforming data for analysis\nConnecting your data to statistical models, machine learning algorithms, or other\nyou can execute the following Python code before running the code examples:\nData for Examples\nthe terminal before proceeding with running the book’s code examples:\nin NumPy. This is done because it’s considered bad practice in Python software",
+      "keywords": [
+        "Python",
+        "data",
+        "data analysis",
+        "Python data",
+        "Python data analysis",
+        "Python programming language",
+        "Book",
+        "Essential Python Libraries",
+        "Python programming",
+        "Python Libraries",
+        "analysis",
+        "Python code",
+        "Python data structures",
+        "Miniconda",
+        "code"
+      ],
+      "concepts": [
+        "python",
+        "data",
+        "likely",
+        "installation",
+        "languages",
+        "computing",
+        "computations",
+        "analysis",
+        "packages",
+        "numpy"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.893,
+          "base_score": 0.743,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.696,
+          "base_score": 0.546,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.561,
+          "base_score": 0.411,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 7,
+          "title": "",
+          "score": 0.48,
+          "base_score": 0.33,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 9,
+          "title": "",
+          "score": 0.477,
+          "base_score": 0.327,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "python",
+          "data",
+          "analysis",
+          "data analysis",
+          "language"
+        ],
+        "semantic": [],
+        "merged": [
+          "python",
+          "data",
+          "analysis",
+          "data analysis",
+          "language"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.49119790601460367,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757619+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "Python Language Basics, IPython,",
+      "start_page": 35,
+      "end_page": 64,
+      "summary": "Python Language Basics, IPython,\nresources available for learning about doing data analysis in Python.\nAs this book is intended as an introductory text in working with data in Python, I\nfeatures of Python’s built-in data structures and libraries from the perspective of data\nFortunately, Python is an ideal language\nThe greater your facility with the Python language and its built-in data\nmay find useful in your foray into data analysis in Python.\nTo deepen your Python language knowledge, I recommend that\nPython programming.\n2.1 The Python Interpreter\nPython is an interpreted language.\nThe Python interpreter runs a program by execut‐\nThe standard interactive Python interpreter can be\ninvoked on the command line with the python command:\n$ python\nPython interpreter, you can either type exit() or press Ctrl-D (works on Linux and\nRunning Python programs is as simple as calling python with a .py file as its first\n$ python hello_world.py\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nWhile some Python programmers execute all of their Python code in this way,\nPython interpreter, or Jupyter notebooks, web-based code notebooks originally cre‐\nWhen you use the %run command, IPython executes the code in the specified\nIPython 7.31.1 -- An enhanced Interactive Python.\nPython interpreter except with the ipython command:\nIPython 7.31.1 -- An enhanced Interactive Python.\nYou can execute arbitrary Python statements by typing them and pressing Return (or\nWhen you type just a variable into IPython, it renders a string representation\nof the object:\nThe first two lines are Python code statements; the second statement creates a vari‐\nable named data that refers to a newly created Python dictionary.\nMany kinds of Python objects are formatted to be more readable, or pretty-printed,\nvariable in the standard Python interpreter, it would be much less readable:\nJupyter notebook to work with larger blocks of code, as we will soon see.\nOne of the major components of the Jupyter project is the notebook, a type of\nThe Python Jupyter kernel uses the IPython system for its underlying\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nthe empty code “cell” and entering a line of Python code.\nIf you simply close the browser tab, the Python process associated with the notebook\nWhile the Jupyter notebook may feel like a distinct experience from the IPython\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nimprovements over the standard Python shell is tab completion, found in many IDEs\nfunctions, etc.) matching the characters you have typed so far and show the results in\non any object after typing a period:\nIn [3]: b = [1, 2, 3]\nlike a file path (even in a Python string), pressing the Tab key will complete anything\nAutocomplete function keywords in a Jupyter notebook\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nIn [1]: b = [1, 2, 3]\nIn [2]: b?\nType:        list\nend:   string appended after the last value, default a newline.\nType:      builtin_function_or_method\nIf the object is a function or instance\nfollowing function (which you can reproduce in IPython or Jupyter):\nType:      function\n2.3 Python Language Basics\nIn the next chapter, I will go into more detail about Python\nPython uses whitespace (tabs or spaces) to structure code instead of using braces as in\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nAs you can see by now, Python statements also do not need to be terminated by\na = 5; b = 6; c = 7\nPutting multiple statements on one line is generally discouraged in Python as it can\nEverything is an object\nAn important characteristic of the Python language is the consistency of its object\nEvery number, string, data structure, function, class, module, and so on exists\nin the Python interpreter in its own “box,” which is referred to as a Python object.\nEach object has an associated type (e.g., integer, string, or function) and internal data.\nany other object.\n2.3 Python Language Basics \nFunction and object method calls\nAlmost every object in Python has attached functions, known as methods, that have\nresult = f(a, b, c, d=5, e=\"foo\")\nWhen assigning a variable (or name) in Python, you are creating a reference to the\nIn [9]: b = a\nIn [10]: b\nIn some languages, the assignment if b will cause the data [1, 2, 3] to be copied.\nPython, a and b actually now refer to the same object, the original list [1, 2, 3] (see\nIn [12]: b\nUnderstanding the semantics of references in Python, and when, how, and why data\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nname to an object.\nWhen you pass objects as arguments to a function, new local variables are created\nVariables in Python have no inherent type associated with them; a variable can refer\nto a different type of object simply by doing an assignment.\nIn [18]: type(a)\nIn [20]: type(a)\nVariables are names for objects within a particular namespace; the type information is\n2.3 Python Language Basics \nIn this regard we say that Python is a strongly typed language, which means that every\nobject has a specific type (or class), and implicit conversions will occur only in certain\nIn [23]: b = 2\nIn [24]: print(f\"a is {type(a)}, b is {type(b)}\")\nIn [25]: a / b\nKnowing the type of an object is important, and it’s useful to be able to write\nis an instance of a particular type using the isinstance function:\nisinstance can accept a tuple of types if you want to check that an object’s type is\nIn [28]: a = 5; b = 4.5\nObjects in Python typically have both attributes (other Python objects stored\n“inside” the object) and methods (functions associated with an object that can\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nOften you may not care about the type of an object but rather only whether it has\nFor many objects,\nThis function would return True for strings as well as most Python collection types:\n2.3 Python Language Basics \nIn Python, a module is simply a file with the .py extension containing Python code.\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\na + b\na - b\na * b\na / b\na // b\na ** b\na & b\na | b\na ^ b\na == b\na != b\na is b\nTrue if a and b reference the same Python object\na is not b\nTrue if a and b reference different Python objects\nTo check if two variables refer to the same object, use the is keyword.\nIn [41]: b = a\nIn [43]: a is b\nSince the list function always creates a new Python list (i.e., a copy), we can be\n2.3 Python Language Basics \nMany objects in Python, such as lists, dictionaries, NumPy arrays, and most user-\nThis means that the object or values that they\nOthers, like strings and tuples, are immutable, which means their internal data\nPython has a small set of built-in types for handling numerical data, strings, Boolean\n(True or False) values, and dates and time.\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nStandard Python scalar types\nType\nThe Python “null” value (only one instance of the None object exists)\nString type; holds Unicode strings\nThe primary Python types for numbers are int and float.\nFloating-point numbers are represented with the Python float type.\nStrings\nMany people use Python for its built-in string handling capabilities.\nThe Python string type is str.\n2.3 Python Language Basics \nPython strings are immutable; you cannot modify a string:\nIn [61]: a = \"this is a string\"\nstring objects.\nIf we need to modify a string, we have to use a function or method that\ncreates a new string, such as the string replace method:\nIn [63]: b = a.replace(\"string\", \"longer string\")\nIn [64]: b\nOut[65]: 'this is a string'\nMany Python objects can be converted to a string using the str function:\nStrings are a sequence of Unicode characters and therefore can be treated like other\nIn [69]: s = \"python\"\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nIn [78]: a + b\nString objects have a format method\nthat can be used to substitute formatted arguments into the string, producing a new\nstring:\nIn this string:\n2.3 Python Language Basics \n• {1:s} means to format the second argument as a string.\nPython 3.6 introduced a new feature called f-strings (short for formatted string literals)\nWithin the string,\nenclose Python expressions in curly braces to substitute the value of the expression\ninto the formatted string:\nString formatting is a deep topic; there are multiple methods and numerous options\nand tweaks available to control how values are formatted in the resulting string.\nstring type to enable more consistent handling of ASCII and non-ASCII text.\nversions of Python, strings were all bytes without any explicit Unicode encoding.\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nIn [90]: type(val_utf8)\nThe two Boolean values in Python are written as True and False.\n2.3 Python Language Basics \nIn [102]: not b\nThe str, bool, int, and float types are also functions that can be used to cast values\nto those types:\nIn [105]: type(fval)\nNone is the Python null value type:\nIn [111]: b = 5\nIn [112]: b is not None\nNone is also a common default value for function arguments:\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nThe built-in Python datetime module provides datetime, date, and time types.\ndatetime type combines the information stored in date and time and is the most\nGiven a datetime instance, you can extract the equivalent date and time objects by\nThe strftime method formats a datetime as a string:\nStrings can be converted (parsed) into datetime objects with the strptime function:\nSince datetime.datetime is an immutable type, methods like these always produce\nThe difference of two datetime objects produces a datetime.timedelta type:\n2.3 Python Language Basics \nPython has several built-in keywords for conditional logic, loops, and other standard\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nIn [130]: a = 5; b = 7\n2.3 Python Language Basics \nfor a, b, c in iterator:\nis required only because Python uses whitespace to delimit blocks:\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nWhile you can use functions like list to store all the integers generated by range in\nThis chapter provided a brief introduction to some basic Python language concepts\ndiscuss many built-in data types, functions, and input-output utilities that will be",
+      "keywords": [
+        "Python Language Basics",
+        "Python Language",
+        "Python",
+        "Language Basics",
+        "Jupyter Notebooks",
+        "Jupyter",
+        "Python Interpreter",
+        "Language",
+        "string",
+        "Basics",
+        "Python objects",
+        "IPython",
+        "Type",
+        "Python string type",
+        "object"
+      ],
+      "concepts": [
+        "python",
+        "types",
+        "typing",
+        "typed",
+        "string",
+        "strings",
+        "object",
+        "functionality",
+        "functions",
+        "function"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.893,
+          "base_score": 0.743,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.637,
+          "base_score": 0.487,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 9,
+          "title": "",
+          "score": 0.578,
+          "base_score": 0.428,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.474,
+          "base_score": 0.324,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 3,
+          "title": "",
+          "score": 0.443,
+          "base_score": 0.443,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "python",
+          "language basics",
+          "language",
+          "python language",
+          "string"
+        ],
+        "semantic": [],
+        "merged": [
+          "python",
+          "language basics",
+          "language",
+          "python language",
+          "string"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.47272757711207586,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757683+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "Built-In Data Structures,",
+      "start_page": 65,
+      "end_page": 100,
+      "summary": "Functions, and Files\nWe’ll start with Python’s workhorse data structures: tuples, lists, dictionaries, and sets.\nThen, we’ll discuss creating your own reusable Python functions.\nWe start with tuple, list, and\nA tuple is a fixed-length, immutable sequence of Python objects which, once assigned,\nsary to enclose the values in parentheses, as in this example of creating a tuple of\nIf an object inside a tuple is mutable, such as a list, you can modify it in place:\nChapter 3: Built-In Data Structures, Functions, and Files\nMultiplying a tuple by an integer, as with lists, has the effect of concatenating that\nIf you try to assign to a tuple-like expression of variables, Python will attempt to\nIn [22]: b\na = b\nIn [26]: a, b = 1, 2\nIn [28]: b\nIn [31]: b\nA common use of variable unpacking is iterating over sequences of tuples or lists:\nAnother common use is returning multiple values from a function.\nused in function signatures to capture an arbitrarily long list of positional arguments:\nIn [34]: values = 1, 2, 3, 4, 5\nIn [35]: a, b, *rest = values\nIn [37]: b\nIn [39]: a, b, *_ = values\nChapter 3: Built-In Data Structures, Functions, and Files\nList\nIn contrast with tuples, lists are variable length and their contents can be modified in\nlist type function:\nIn [42]: a_list = [2, 3, 7, None]\nIn [44]: b_list = list(tup)\nIn [45]: b_list\nIn [46]: b_list[1] = \"peekaboo\"\nIn [47]: b_list\nLists and tuples are semantically similar (though tuples cannot be modified) and can\nThe list built-in function is frequently used in data processing as a way to material‐\nIn [50]: list(gen)\nElements can be appended to the end of the list with the append method:\nIn [51]: b_list.append(\"dwarf\")\nIn [52]: b_list\nIn [53]: b_list.insert(1, \"red\")\nIn [54]: b_list\nIn [55]: b_list.pop(2)\nIn [56]: b_list\nremoves it from the list:\nIn [57]: b_list.append(\"foo\")\nIn [58]: b_list\nIn [59]: b_list.remove(\"foo\")\nIn [60]: b_list\nlist as a set-like data structure (although Python has actual set objects, discussed\nCheck if a list contains a value using the in keyword:\nIn [61]: \"dwarf\" in b_list\nIn [62]: \"dwarf\" not in b_list\nChecking whether a list contains a value is a lot slower than doing so with diction‐\nvalues of the list, whereas it can check the others (based on hash tables) in constant\nChapter 3: Built-In Data Structures, Functions, and Files\nSimilar to tuples, adding two lists together with + concatenates them:\nIf you have a list already defined, you can append multiple elements to it using the\na new list must be created and the objects copied over.\nYou can sort a list in place (without creating a new object) by calling its sort\nfunction:\npass a secondary sort key—that is, a function that produces a value to use to sort the\nIn [72]: b\nChapter 3: Built-In Data Structures, Functions, and Files\nA clever use of this is to pass -1, which has the useful effect of reversing a list or tuple:\nThe dictionary or dict may be the most important built-in Python data structure.\nvalue are Python objects.\nIn [84]: d1 = {\"a\": \"some value\", \"b\": [1, 2, 3, 4]}\nOut[85]: {'a': 'some value', 'b': [1, 2, 3, 4]}\nof a list or tuple:\nOut[87]: {'a': 'some value', 'b': [1, 2, 3, 4], 7: 'an integer'}\nwhether a list or tuple contains a value:\n{'a': 'some value',\n'b': [1, 2, 3, 4],\n5: 'some value'}\n{'a': 'some value',\n'b': [1, 2, 3, 4],\n5: 'some value',\n{'a': 'some value',\n'b': [1, 2, 3, 4],\nOut[97]: 'another value'\nOut[98]: {'a': 'some value', 'b': [1, 2, 3, 4], 7: 'an integer'}\nThe keys and values method gives you iterators of the dictionary’s keys and values,\nfunctions output the keys and values in the same respective order:\nIn [99]: list(d1.keys())\nOut[99]: ['a', 'b', 7]\nChapter 3: Built-In Data Structures, Functions, and Files\nIn [100]: list(d1.values())\nIf you need to iterate over both the keys and values, you can use the items method to\niterate over the keys and values as 2-tuples:\nOut[101]: [('a', 'some value'), ('b', [1, 2, 3, 4]), (7, 'an integer')]\nOut[103]: {'a': 'some value', 'b': 'foo', 7: 'an integer', 'c': 12}\nfor key, value in zip(key_list, value_list):\nSince a dictionary is essentially a collection of 2-tuples, the dict function accepts a\nlist of 2-tuples:\nThus, the dictionary methods get and pop can take a default value to be returned, so\nWith setting values, it may be that the values in a dictionary are another\nkind of collection, like a list.\nwords by their first letters as a dictionary of lists:\nTo create one, you pass a type or function for generating the default value\nChapter 3: Built-In Data Structures, Functions, and Files\nWhile the values of a dictionary can be any Python object, the keys generally have to\nbe immutable objects like scalar types (int, float, string) or tuples (all the objects in\nThe hash values you see when using the hash function in general will depend on the\nTo use a list as a key, one option is to convert it to a tuple, which can be hashed as\nIn [127]: b = {3, 4, 5, 6, 7, 8}\nIn [129]: a | b\nIn [131]: a & b\nSee Table 3-1 for a list of commonly used set methods.\nPython set operations\nFunction\nAdd element x to set a\nRemove element x from set a\na | b\na |= b\nin a and b\na & b\nAll of the elements in both a and b\na &= b\nelements in a and b\na - b\nThe elements in a that are not in b\na -= b\nSet a to the elements in a that are not in b\na ^ b\nAll of the elements in either a or b but not both\na ^= b\nSet a to contain the elements in either a or b but\nTrue if the elements of a are all contained in b\nTrue if the elements of b are all contained in a\nTrue if a and b have no elements in common\nChapter 3: Built-In Data Structures, Functions, and Files\nLike dictionary keys, set elements generally must be immutable, and they must be\norder to store list-like elements (or other mutable sequences) in a set, you can convert\nIn [139]: my_set = {tuple(my_data)}\nBuilt-In Sequence Functions\nPython has a handful of useful sequence functions that you should familiarize your‐\n# do something with value\nSince this is so common, Python has a built-in function, enumerate, which returns a\nsequence of (i, value) tuples:\n# do something with value\nThe sorted function returns a new sorted list from the elements of any sequence:\nThe sorted function accepts the same arguments as the sort method on lists.\nzip “pairs” up the elements of a number of lists, tuples, or other sequences to create a\nlist of tuples:\nIn [150]: list(zipped)\nChapter 3: Built-In Data Structures, Functions, and Files\nso it does not create the reversed sequence until materialized (e.g., with list or a for\nList, Set, and Dictionary Comprehensions\nList comprehensions are a convenient and widely used Python language feature.\nallow you to concisely form a new list by filtering the elements of a collection,\na list of strings, we could filter out strings with length 2 or less and convert them to\nA set comprehension looks like the equivalent list comprehension except with curly\nLike list comprehensions, set and dictionary comprehensions are mostly convenien‐\nlist of strings from before.\nthese strings for their locations in the list:\nNested list comprehensions\nChapter 3: Built-In Data Structures, Functions, and Files\n“flatten” a list of tuples of integers into a simple list of integers:\nnested for loop instead of a list comprehension:\n3.2 Functions\n3.2 Functions \nIn [173]: def my_function(x, y):\nIn [174]: my_function(1, 2)\nIn [175]: result = my_function(1, 2)\nIn [177]: def function_without_return(x):\nIn [178]: result = function_without_return(\"hello!\")\nwe will define a function with an optional z argument with the default value 1.5:\ndef my_function2(x, y, z=1.5):\nIn [182]: my_function2(3.14, 7, 3.5)\nChapter 3: Built-In Data Structures, Functions, and Files\nIn [183]: my_function2(10, 20)\nfunction’s arguments.\nWhen func() is called, the empty list a is created, five elements are appended, and\n3.2 Functions \nof my favorite features was the ability to return multiple values from a function with\nb = 6\nreturn a, b, c\nWhat’s happening here is that the function is actually just returning one object,\nreturn_value = f()\nIn this case, return_value would be a 3-tuple with the three returned variables.\npotentially attractive alternative to returning multiple values like before might be to\nb = 6\nChapter 3: Built-In Data Structures, Functions, and Files\nFunctions Are Objects\nSince Python functions are objects, many constructs can be easily expressed that are\nneeded to apply a bunch of transformations to the following list of strings:\nfor value in strings:\nAn alternative approach that you may find useful is to make a list of the operations\nfor value in strings:\n3.2 Functions \nA more functional pattern like this enables you to easily modify how the strings\nThe clean_strings function is also now more\nYou can use functions as arguments to other functions like the built-in map function,\nmap can be used as an alternative to list comprehensions without any filter.\nPython has support for so-called anonymous or lambda functions, which are a way\nof writing functions consisting of a single statement, the result of which is the return\nvalue.\nIn [199]: def short_function(x):\nIn [201]: def apply_to_list(some_list, f):\n.....:     return [f(x) for x in some_list]\nChapter 3: Built-In Data Structures, Functions, and Files\nIn [203]: apply_to_list(ints, lambda x: x * 2)\nsuccinctly pass a custom operator to the apply_to_list function.\nHere we could pass a lambda function to the list’s sort method:\nIn [205]: strings.sort(key=lambda x: len(set(x)))\nMany objects in Python support iteration, such as over objects in a list or lines in a\nMost methods expecting a list or list-like object will also\nand type constructors like list and tuple:\nIn [211]: list(dict_iterator)\n3.2 Functions \nWhereas normal functions execute and return a single result at\na time, generators can return a sequence of multiple values by pausing and resuming\nkeyword instead of return in a function:\ntor analogue to list, dictionary, and set comprehensions.\nGenerator expressions can be used instead of list comprehensions as function argu‐\nChapter 3: Built-In Data Structures, Functions, and Files\nFor example, groupby takes any sequence and a function,\ngrouping consecutive elements in the sequence by return value of the function.\n.....:     print(letter, list(names)) # names is a generator\nSee Table 3-2 for a list of a few other itertools functions I’ve frequently found\nFunction\nGenerates a sequence of all possible k-tuples of elements in the iterable,\nGenerates a sequence of all possible k-tuples of elements in the iterable,\n3.2 Functions \nAs an example, Python’s float function is capable of casting a string\nChapter 3: Built-In Data Structures, Functions, and Files\nHere, the file object f will always get closed.\n3.2 Functions \n8     b = 6\nthe standard Python interpreter) to Verbose (which inlines function argument values\nMost of this book uses high-level tools like pandas.read_csv to read data files from\nhow to work with files in Python.\nTo open a file for reading or writing, use the built-in open function with either a\nChapter 3: Built-In Data Structures, Functions, and Files\nBy default, the file is opened in read-only mode \"r\".\nf like a list and iterate over the lines like so:\noften see code to get an EOL-free list of lines in a file like:\nWhen you use open to create file objects, it is recommended to close the file when\nIf we had typed f = open(path, \"w\"), a new file at examples/segismundo.txt would\n\"x\" file mode, which creates a writable file but fails if the file path already exists.\nTable 3-3 for a list of all valid file read/write modes.\nPython file modes\nWrite-only mode; creates a new file (erasing the data for any file with the same name)\nThe read method advances the file object position by the number of bytes read.\nEven though we read 10 characters from the file f1 opened in text mode, the position\nChapter 3: Built-In Data Structures, Functions, and Files\nImportant Python file methods or attributes\nReturn data from file as bytes or string depending on the file mode, with optional size\nReturn True if the file supports read operations\nReturn list of lines in the file, with optional size argument\nReturn True if the file supports write operations\nwritelines(strings) Write passed sequence of strings to the file\nReturn True if the file object supports seeking and thus random access (some file-like objects\nThe default behavior for Python files (whether readable or writable) is text mode,\ncontrasts with binary mode, which you can obtain by appending b to the file mode.\ncharacters from the file, Python reads enough bytes (which could be as few as 10 or\nChapter 3: Built-In Data Structures, Functions, and Files\nPython’s Unicode functionality will prove valuable.\nChapter 3: Built-In Data Structures, Functions, and Files",
+      "keywords": [
+        "Built-In Data Structures",
+        "Data Structures",
+        "list",
+        "Python",
+        "function",
+        "Data",
+        "file",
+        "Functions",
+        "Python data structure",
+        "Built-In Data",
+        "Structures",
+        "Elements",
+        "Python file",
+        "sequence",
+        "Python file objects"
+      ],
+      "concepts": [
+        "functions",
+        "functionality",
+        "function",
+        "lists",
+        "python",
+        "files",
+        "data",
+        "values",
+        "sets",
+        "setting"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 4,
+          "title": "",
+          "score": 0.631,
+          "base_score": 0.481,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 6,
+          "title": "",
+          "score": 0.518,
+          "base_score": 0.368,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.476,
+          "base_score": 0.476,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.443,
+          "base_score": 0.443,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.381,
+          "base_score": 0.381,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "list",
+          "file",
+          "functions files",
+          "files",
+          "chapter built"
+        ],
+        "semantic": [],
+        "merged": [
+          "list",
+          "file",
+          "functions files",
+          "files",
+          "chapter built"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.44434642663923707,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757708+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "NumPy Basics: Arrays and",
+      "start_page": 101,
+      "end_page": 133,
+      "summary": "NumPy Basics: Arrays and\nscientific functionality use NumPy’s array objects as one of the standard interface\n• Mathematical functions for fast operations on entire arrays of data without hav‐\nand for external libraries to return data to Python as NumPy arrays.\nan understanding of NumPy arrays and array-oriented computing will help you use\n• Common array algorithms like sorting, unique, and set operations\nNumPy. Array-oriented computing in Python traces its roots back to 1995,\nbecause it is designed for efficiency on large arrays of data.\nNumPy arrays also use much less memory than built-in Python sequences.\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\n• NumPy operations perform complex computations on entire arrays without the\nTo give you an idea of the performance difference, consider a NumPy array of one\n4.1 The NumPy ndarray: A Multidimensional Array Object\nOne of the key features of NumPy is its N-dimensional array object, or ndarray,\narray:\nIn [13]: data = np.array([[1.5, -0.1, 3], [0, -3, 6.5]])\narray([[ 1.5, -0.1,  3.\narray([[ 15.,  -1.,  30.],\n4.1 The NumPy ndarray: A Multidimensional Array Object \narray([[ 3.\nsize of each dimension, and a dtype, an object describing the data type of the array:\nThis chapter will introduce you to the basics of using NumPy arrays, and it should\nsequence-like object (including other arrays) and produces a new NumPy array\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nIn [20]: arr1 = np.array(data1)\nOut[21]: array([6.\nIn [23]: arr2 = np.array(data2)\narray([[1, 2, 3, 4],\nSince data2 was a list of lists, the NumPy array arr2 has two dimensions, with\nnumpy.array tries to infer a good data type for the array that it creates.\nIn addition to numpy.array, there are a number of other functions for creating\nAs examples, numpy.zeros and numpy.ones create arrays of 0s or 1s,\nnumpy.empty creates an array without\nOut[29]: array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])\narray([[0., 0., 0., 0., 0., 0.],\n4.1 The NumPy ndarray: A Multidimensional Array Object \narray([[[0., 0.],\nIt’s not safe to assume that numpy.empty will return an array of all\nonly if you intend to populate the new array with data.\nnumpy.arange is an array-valued version of the built-in Python range function:\nOut[32]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])\nSome important NumPy array creation functions\narray\nConvert input data (list, tuple, array, or other sequence type) to an ndarray either by inferring a data\nProduce an array of all 1s with the given shape and data type; ones_like takes another array and\nproduces a ones array of the same shape and data type\nCreate new arrays by allocating new memory, but do not populate with any values like ones and\nProduce an array of the given shape and data type with all values set to the indicated “fill value”;\nfull_like takes another array and produces a filled array of the same shape and data type\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nIn [33]: arr1 = np.array([1, 2, 3], dtype=np.float64)\nIn [34]: arr2 = np.array([1, 2, 3], dtype=np.int32)\nNumPy data types\n4.1 The NumPy ndarray: A Multidimensional Array Object \nYou can explicitly convert or cast an array from one data type to another using\nIn [37]: arr = np.array([1, 2, 3, 4, 5])\nOut[40]: array([1., 2., 3., 4., 5.])\nIn [42]: arr = np.array([3.7, -1.2, -2.6, 0.5, 12.9, 10.1])\nOut[43]: array([ 3.7, -1.2, -2.6,  0.5, 12.9, 10.1])\nOut[46]: array([ 1.25, -9.6 , 42.\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\ninstead of np.float64; NumPy aliases the Python types to its own equivalent data\nIn [47]: int_array = np.arange(10)\nIn [48]: calibers = np.array([.22, .270, .357, .380, .44, .50], dtype=np.float64)\nOut[49]: array([0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])\nCalling astype always creates a new array (a copy of the data), even\nArithmetic with NumPy Arrays\nArrays are important because they enable you to express batch operations on data\nIn [52]: arr = np.array([[1., 2., 3.], [4., 5., 6.]])\narray([[1., 2., 3.],\narray([[ 1.,  4.,  9.],\n4.1 The NumPy ndarray: A Multidimensional Array Object \narray([[0., 0., 0.],\nthe array:\narray([[1.\narray([[ 1.,  4.,  9.],\nIn [58]: arr2 = np.array([[0., 4., 1.], [7., 2., 12.]])\narray([[ 0.,  4.,  1.],\nNumPy array indexing is a deep topic, as there are many ways you may want to select\nOut[62]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nOut[64]: array([5, 6, 7])\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nOut[66]: array([ 0,  1,  2,  3,  4, 12, 12, 12,  8,  9])\nOut[68]: array([12, 12, 12])\narray arr:\narray([    0,     1,     2,     3,     4,    12, 12345,    12,     8,\nThe “bare” slice [:] will assign to all values in an array:\nOut[72]: array([ 0,  1,  2,  3,  4, 64, 64, 64,  8,  9])\nother array programming languages that copy data more eagerly.\n4.1 The NumPy ndarray: A Multidimensional Array Object \narray, the elements at each index are no longer scalars but rather one-dimensional\narrays:\nIn [73]: arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nOut[74]: array([7, 8, 9])\nIndexing elements in a NumPy array\nIn [77]: arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])\narray([[[ 1,  2,  3],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[1, 2, 3],\nBoth scalar values and arrays can be assigned to arr3d[0]:\narray([[[42, 42, 42],\narray([[[ 1,  2,  3],\nOut[85]: array([7, 8, 9])\narray([[ 7,  8,  9],\nOut[88]: array([7, 8, 9])\nThis multidimensional indexing syntax for NumPy arrays will not\n4.1 The NumPy ndarray: A Multidimensional Array Object \nOut[89]: array([ 0,  1,  2,  3,  4, 64, 64, 64,  8,  9])\nOut[90]: array([ 1,  2,  3,  4, 64])\narray([[1, 2, 3],\narray([[1, 2, 3],\narray([[2, 3],\nOut[96]: array([3, 6])\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[1],\narray([[1, 0, 0],\nTwo-dimensional array slicing\nLet’s consider an example where we have some data in an array and an array of names\n4.1 The NumPy ndarray: A Multidimensional Array Object \nIn [101]: data = np.array([[4, 7], [0, 2], [-5, 6], [0, 0], [1, 2],\narray([[  4,   7],\nSuppose each name corresponds to a row in the data array and we wanted to\narray([[4, 7],\narray([[7],\nOut[107]: array([7, 0])\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[  0,   2],\narray([[  0,   2],\narray([[ 4,  7],\nSelecting data from an array by Boolean indexing and assigning the result to a new\nvariable always creates a copy of the data, even if the returned array is unchanged.\n4.1 The NumPy ndarray: A Multidimensional Array Object \narray([[4, 7],\narray([[7, 7],\nFancy indexing is a term adopted by NumPy to describe indexing using integer arrays.\narray([[0., 0., 0., 0.],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[4., 4., 4., 4.],\narray([[5., 5., 5., 5.],\narray([[ 0,  1,  2,  3],\nOut[127]: array([ 4, 23, 29, 10])\narray([[ 4,  7,  5,  6],\n4.1 The NumPy ndarray: A Multidimensional Array Object \nOut[129]: array([ 4, 23, 29, 10])\narray([[ 0,  1,  2,  3],\narray([[ 0,  1,  2,  3,  4],\narray([[ 0,  5, 10],\nIn [135]: arr = np.array([[0, 1, 0], [1, 2, -2], [6, 3, 2], [-1, 0, -1], [1, 0, 1\narray([[ 0,  1,  0],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[39, 20, 12],\narray([[39, 20, 12],\narray([[ 0,  1,  0],\narray([[ 0,  1,  6, -1,  1],\nfunctions for efficiently generating whole arrays of sample values from many kinds of\narray([[-0.2047,  0.4789, -0.5194, -0.5557],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\n4.3 Universal Functions: Fast Element-Wise Array\nOut[151]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\narray([0.\narray([   1.\narray([-1.3678,  0.6489,  0.3611, -1.9529,  2.3474,  0.9685, -0.7594,\narray([-0.467 , -0.0607,  0.7888, -1.2567,  0.5759,  1.399 ,  1.3223,\narray([-0.467 ,  0.6489,  0.7888, -1.2567,  2.3474,  1.399 ,  1.3223,\nOut[160]: array([ 4.5146, -8.1079, -0.7909,  2.2474, -6.718 , -0.4084,  8.6237])\nOut[162]: array([ 0.5146, -0.1079, -0.7909,  0.2474, -0.718 , -0.4084,  0.6237])\nOut[163]: array([ 4., -8., -0.,  2., -6., -0.,  8.])\nOut[164]: array([ 4.5146, -8.1079, -0.7909,  2.2474, -6.718 , -0.4084,  8.6237])\nOut[166]: array([ 5.5146, -7.1079,  0.2091,  3.2474, -5.718 ,  0.5916,  9.6237])\nOut[167]: array([ 5.5146, -7.1079,  0.2091,  3.2474, -5.718 ,  0.5916,  9.6237])\nOut[168]: array([ 5.5146, -7.1079,  0.2091,  3.2474, -5.718 ,  0.5916,  9.6237])\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nReturn Boolean array indicating whether each value is NaN (Not a Number)\nMultiply array elements\nUsing NumPy arrays enables you to express many kinds of data processing tasks as\narray([[-5.\narray([[7.0711, 7.064 , 7.0569, ..., 7.0499, 7.0569, 7.064 ],\ndimensional array:\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\ntwo-dimensional array of function values.\nwhole arrays of data at once rather than going value by value using\nIn [180]: xarr = np.array([1.1, 1.2, 1.3, 1.4, 1.5])\nIn [181]: yarr = np.array([2.1, 2.2, 2.3, 2.4, 2.5])\nOut[186]: array([1.1, 2.2, 1.3, 1.4, 2.5])\nThe second and third arguments to numpy.where don’t need to be arrays; one or\narray([[ 2.6182,  0.7774,  0.8286, -0.959 ],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\narray([[ 2,  2,  2, -2],\nYou can combine scalars and arrays when using numpy.where.\narray([[ 2.\nabout the data along an axis are accessible as methods of the array class.\ndeviation) either by calling the array instance method or using the top-level NumPy\narray([[-1.1082,  0.136 ,  1.3471,  0.0611],\nOut[197]: array([ 0.109 ,  0.3281,  0.165 , -0.6672, -0.3709])\nOut[198]: array([-1.6292,  1.0399, -0.3344, -0.8203])\nIn [199]: arr = np.array([0, 1, 2, 3, 4, 5, 6, 7])\nOut[200]: array([ 0,  1,  3,  6, 10, 15, 21, 28])\nIn [201]: arr = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])\narray([[0, 1, 2],\narray([[ 0,  1,  2],\narray([[ 0,  1,  3],\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nsum is often used as a means of counting True values in a Boolean array:\nThese methods also work with non-Boolean arrays, where nonzero elements are\nLike Python’s built-in list type, NumPy arrays can be sorted in place with the sort\nOut[212]: array([ 0.0773, -0.6839, -0.7208,  1.1206, -0.0548, -0.0824])\nOut[214]: array([-0.7208, -0.6839, -0.0824, -0.0548,  0.0773,  1.1206])\nYou can sort each one-dimensional section of values in a multidimensional array in\narray([[ 0.936 ,  1.2385,  1.2728],\narray([[-2.0528, -0.0503,  0.2893],\narray([[-2.0528, -0.0503,  0.2893],\nThe top-level method numpy.sort returns a sorted copy of an array (like the Python\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nIn [221]: arr2 = np.array([5, -10, 7, 1, 0, -3])\nOut[223]: array([-10,  -3,   0,   1,   5,   7])\nused one is numpy.unique, which returns the sorted unique values in an array:\nIn [226]: ints = np.array([3, 3, 3, 2, 2, 1, 1, 4, 4])\nOut[227]: array([1, 2, 3, 4])\nIn many cases, the NumPy version is faster and returns a NumPy array rather than a\nAnother function, numpy.in1d, tests membership of the values in one array in\nIn [229]: values = np.array([6, 0, 0, 3, 2, 5, 6])\nSee Table 4-7 for a listing of array set operations in NumPy. Table 4-7.",
+      "keywords": [
+        "array",
+        "Multidimensional Array Object",
+        "data",
+        "Boolean array",
+        "NumPy",
+        "Python",
+        "arr",
+        "multidimensional array",
+        "Array Object",
+        "Vectorized Computation",
+        "NumPy Basics",
+        "NumPy arrays",
+        "data type",
+        "Boolean",
+        "type"
+      ],
+      "concepts": [
+        "arrays",
+        "numpy",
+        "data",
+        "computation",
+        "computations",
+        "compute",
+        "python",
+        "values",
+        "functions",
+        "function"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 6,
+          "title": "",
+          "score": 0.803,
+          "base_score": 0.653,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 3,
+          "title": "",
+          "score": 0.631,
+          "base_score": 0.481,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.467,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.402,
+          "base_score": 0.402,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.393,
+          "base_score": 0.393,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "array",
+          "numpy",
+          "array array",
+          "arrays",
+          "np array"
+        ],
+        "semantic": [],
+        "merged": [
+          "array",
+          "numpy",
+          "array array",
+          "arrays",
+          "np array"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.48494502540979045,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757753+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "for much",
+      "start_page": 134,
+      "end_page": 140,
+      "summary": "Compute a Boolean array indicating whether each element of x is contained in y\nIn [232]: np.save(\"some_array\", arr)\nThe array\nIn [233]: np.load(\"some_array.npy\")\nOut[233]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nYou can save multiple arrays in an uncompressed archive using numpy.savez and\nIn [234]: np.savez(\"array_archive.npz\", a=arr, b=arr)\nIn [235]: arch = np.load(\"array_archive.npz\")\nOut[236]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nThus, there is a function dot, both an array\nIn [241]: x = np.array([[1., 2., 3.], [4., 5., 6.]])\nIn [242]: y = np.array([[6., 23.], [-1, 7], [8, 9]])\narray([[1., 2., 3.],\narray([[ 6., 23.],\narray([[ 28.,  64.],\narray([[ 28.,  64.],\nOut[247]: array([ 6., 15.])\narray([[  3.4993,   2.8444,   3.5956, -16.5538,   4.4733],\narray([[ 1.,  0., -0.,  0., -0.],\n4.7 Example: Random Walks\nThe simulation of random walks provides an illustrative application of utilizing array\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nwalks:\nA simple random walk\nYou might make the observation that walk is the cumulative sum of the random steps\n4.7 Example: Random Walks \nnp.abs(walk) >= 10 gives us a Boolean array indicating where the walk has reached\nSimulating Many Random Walks at Once\npassed a 2-tuple, the numpy.random functions will generate a two-dimensional array\nIn [269]: walks\narray([[  1,   2,   3, ...,  22,  23,  22],\nwalks:\nChapter 4: NumPy Basics: Arrays and Vectorized Computation\nOut of these walks, let’s compute the minimum crossing time to 30 or –30.\nWe can use this Boolean array to select the rows of walks that actually cross the\nIn [275]: crossing_times = (np.abs(walks[hits30]) >= 30).argmax(axis=1)\nOut[276]: array([201, 491, 283, ..., 219, 259, 541])\narray with nwalks * nsteps elements, which may use a large",
+      "keywords": [
+        "array",
+        "Random Walks",
+        "Random",
+        "Walks",
+        "Compute",
+        "matrix",
+        "Boolean array",
+        "square matrix",
+        "steps",
+        "nsteps",
+        "Linear Algebra",
+        "arr",
+        "NumPy",
+        "Vectorized Computation",
+        "crossing"
+      ],
+      "concepts": [
+        "array",
+        "walks",
+        "random",
+        "compute",
+        "computing",
+        "numpy",
+        "value",
+        "steps",
+        "sized",
+        "size"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 4,
+          "title": "",
+          "score": 0.803,
+          "base_score": 0.653,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 3,
+          "title": "",
+          "score": 0.518,
+          "base_score": 0.368,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.344,
+          "base_score": 0.344,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "walks",
+          "array",
+          "random walks",
+          "random",
+          "np"
+        ],
+        "semantic": [],
+        "merged": [
+          "walks",
+          "array",
+          "random walks",
+          "random",
+          "np"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3873198810445951,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757783+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Getting Started with pandas",
+      "start_page": 141,
+      "end_page": 146,
+      "summary": "is that pandas is designed for working with tabular or heterogeneous data.\nand pandas:\nIn [3]: from pandas import Series, DataFrame\n5.1 Introduction to pandas Data Structures\ndata structures: Series and DataFrame.\nA Series is a one-dimensional array-like object containing a sequence of values (of\nsimilar types to NumPy types) of the same type and an associated array of data labels,\nThe simplest Series is formed from only an array of data:\nIn [14]: obj = pd.Series([4, 7, -5, 3])\nIn [15]: obj\nSince we did not specify an index for the data, a\nYou can get the array representation and index object of the Series via\nIn [16]: obj.array\nIn [17]: obj.index\nOften, you’ll want to create a Series with an index identifying each data point with a\nIn [18]: obj2 = pd.Series([4, 7, -5, 3], index=[\"d\", \"b\", \"a\", \"c\"])\nIn [19]: obj2\nIn [20]: obj2.index\nOut[20]: Index(['d', 'b', 'a', 'c'], dtype='object')\nCompared with NumPy arrays, you can use labels in the index when selecting single\nIn [21]: obj2[\"a\"]\nIn [22]: obj2[\"d\"] = 6\nIn [25]: obj2 * 2\n5.1 Introduction to pandas Data Structures \nmapping of index values to data values.\nShould you have data contained in a Python dictionary, you can create a Series from\nIn [31]: obj3 = pd.Series(sdata)\nIn [32]: obj3\nWhen you are only passing a dictionary, the index in the resulting Series will respect\nIn [34]: states = [\"California\", \"Ohio\", \"Oregon\", \"Texas\"]\nIn [35]: obj4 = pd.Series(sdata, index=states)\nIn [36]: obj4\nThe isna and notna functions in pandas should be used to detect missing data:\nA useful Series feature for many applications is that it automatically aligns by index\nIn [40]: obj3\n5.1 Introduction to pandas Data Structures \nIn [41]: obj4\nBoth the Series object itself and its index have a name attribute, which integrates with\nIn [44]: obj4.index.name = \"state\"\nIn [45]: obj4\nIn [46]: obj\nIn [48]: obj",
+      "keywords": [
+        "Series",
+        "data",
+        "pandas",
+        "pandas Data Structures",
+        "dtype",
+        "index",
+        "Ohio",
+        "data structures",
+        "Texas False dtype",
+        "Oregon",
+        "Texas",
+        "California",
+        "NumPy",
+        "pandas Data",
+        "Ohio False"
+      ],
+      "concepts": [
+        "array",
+        "series",
+        "index",
+        "pandas",
+        "missing",
+        "typed",
+        "types",
+        "communities",
+        "tool",
+        "values"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.697,
+          "base_score": 0.547,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 7,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.515,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.561,
+          "base_score": 0.411,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.474,
+          "base_score": 0.324,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 4,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.467,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "index",
+          "series",
+          "data",
+          "obj2",
+          "obj"
+        ],
+        "semantic": [],
+        "merged": [
+          "index",
+          "series",
+          "data",
+          "obj2",
+          "obj"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4607316435307723,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757836+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Data Cleaning and Preparation",
+      "start_page": 221,
+      "end_page": 239,
+      "summary": "In this chapter I discuss tools for missing data, duplicate data, string manipulation,\nand some other analytical data transformations.\n7.1 Handling Missing Data\nof pandas is to make working with missing data as painless as possible.\nall of the descriptive statistics on pandas objects exclude missing data by default.\nThe way that missing data is represented in pandas objects is somewhat imperfect,\nFor data with float64 dtype, pandas uses\nthe floating-point value NaN (Not a Number) to represent missing data.\nIn [14]: float_data = pd.Series([1.2, -3.5, np.nan, 0])\nIn [15]: float_data\nIn [16]: float_data.isna()\nring to missing data as NA, which stands for not available.\nWhen cleaning up data for\nIn [17]: string_data = pd.Series([\"aardvark\", np.nan, None, \"avocado\"])\nIn [18]: string_data\nIn [19]: string_data.isna()\nIn [20]: float_data = pd.Series([1, 2, None], dtype='float64')\nIn [21]: float_data\nChapter 7: Data Cleaning and Preparation\nIn [22]: float_data.isna()\nThe pandas project has attempted to make working with missing data consistent\nacross data types.\nSee Table 7-1 for a list of some functions related to missing data handling.\nFilter axis labels based on whether values for each label have missing data, with varying thresholds for how much\nmissing data to tolerate.\nFill in missing data with some value or using an interpolation method such as \"ffill\" or \"bfill\".\nFiltering Out Missing Data\nThere are a few ways to filter out missing data.\nSeries, it returns the Series with only the nonnull data and index values:\nIn [23]: data = pd.Series([1, np.nan, 3.5, np.nan, 7])\nIn [24]: data.dropna()\nIn [25]: data[data.notna()]\n7.1 Handling Missing Data \nWith DataFrame objects, there are different ways to remove missing data.\nIn [26]: data = pd.DataFrame([[1., 6.5, 3.], [1., np.nan, np.nan],\nIn [27]: data\nIn [28]: data.dropna()\nIn [29]: data.dropna(how=\"all\")\nIn [30]: data[4] = np.nan\nIn [31]: data\nIn [32]: data.dropna(axis=\"columns\", how=\"all\")\nChapter 7: Data Cleaning and Preparation\nFilling In Missing Data\nRather than filtering out missing data (and potentially discarding other data along\n7.1 Handling Missing Data \nChapter 7: Data Cleaning and Preparation\nWith fillna you can do lots of other things such as simple data imputation using the\nIn [47]: data = pd.Series([1., np.nan, 3.5, np.nan, 7])\nIn [48]: data.fillna(data.mean())\n7.2 Data Transformation\nIn [49]: data = pd.DataFrame({\"k1\": [\"one\", \"two\"] * 3 + [\"two\"],\nIn [50]: data\n7.2 Data Transformation \nIn [51]: data.duplicated()\nIn [52]: data.drop_duplicates()\nIn [54]: data\nIn [55]: data.drop_duplicates(subset=[\"k1\"])\nChapter 7: Data Cleaning and Preparation\nIn [56]: data.drop_duplicates([\"k1\", \"k2\"], keep=\"last\")\nTransforming Data Using a Function or Mapping\nvalues in an array, Series, or column in a DataFrame.\nIn [57]: data = pd.DataFrame({\"food\": [\"bacon\", \"pulled pork\", \"bacon\",\nIn [58]: data\n7.2 Data Transformation \nIn [60]: data[\"animal\"] = data[\"food\"].map(meat_to_animal)\nIn [61]: data\nIn [63]: data[\"food\"].map(get_animal)\nFilling in missing data with the fillna method is a special case of more general value\nIn [64]: data = pd.Series([1., -999., 2., -999., -1000., 3.])\nIn [65]: data\nChapter 7: Data Cleaning and Preparation\nThe -999 values might be sentinel values for missing data.\nvalues that pandas understands, we can use replace, producing a new Series:\nIn [66]: data.replace(-999, np.nan)\nIn [67]: data.replace([-999, -1000], np.nan)\nIn [68]: data.replace([-999, -1000], [np.nan, 0])\nIn [69]: data.replace({-999: np.nan, -1000: 0})\n7.2 Data Transformation \nThe data.replace method is distinct from data.str.replace,\nIn [70]: data = pd.DataFrame(np.arange(12).reshape((3, 4)),\nIn [72]: data.index.map(transform)\nIn [73]: data.index = data.index.map(transform)\nIn [74]: data\nIn [75]: data.rename(index=str.title, columns=str.upper)\nIn [76]: data.rename(index={\"OHIO\": \"INDIANA\"},\n7.2 Data Transformation \ndata.\nIn [88]: data = np.random.uniform(size=20)\nIn [89]: pd.cut(data, 4, precision=2)\nA closely related function, pandas.qcut, bins the data based on sample quantiles.\nDepending on the distribution of the data, using pandas.cut will not usually result\nin each bin having the same number of data points.\nIn [90]: data = np.random.standard_normal(1000)\nIn [91]: quartiles = pd.qcut(data, 4, precision=2)\nIn [94]: pd.qcut(data, [0, 0.1, 0.5, 0.9, 1.]).value_counts()\nConsider a DataFrame with some normally distributed data:\nIn [95]: data = pd.DataFrame(np.random.standard_normal((1000, 4)))\nIn [96]: data.describe()\n7.2 Data Transformation \nIn [97]: col = data[2]\nIn [99]: data[(data.abs() > 3).any(axis=\"columns\")]\nIn [101]: data.describe()\nThe statement np.sign(data) produces 1 and –1 values based on whether the values\n7.2 Data Transformation \n.....:                    \"data1\": range(6)})\nkey  data1\nIn [119]: df_with_dummy = df[[\"data1\"]].join(dummies)\n7.2 Data Transformation ",
+      "keywords": [
+        "Data",
+        "missing data",
+        "Data Cleaning",
+        "Handling Missing Data",
+        "missing",
+        "Data Transformation",
+        "Cleaning and Preparation",
+        "dtype",
+        "np.nan",
+        "Cleaning",
+        "Series",
+        "columns",
+        "method",
+        "Preparation",
+        "Transformation"
+      ],
+      "concepts": [
+        "data",
+        "value",
+        "pandas",
+        "methods",
+        "columns",
+        "replaces",
+        "replacing",
+        "objects",
+        "binning",
+        "bins"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.515,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.593,
+          "base_score": 0.443,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.48,
+          "base_score": 0.33,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.421,
+          "base_score": 0.271,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 9,
+          "title": "",
+          "score": 0.413,
+          "base_score": 0.263,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "data",
+          "missing data",
+          "missing",
+          "np nan",
+          "nan"
+        ],
+        "semantic": [],
+        "merged": [
+          "data",
+          "missing data",
+          "missing",
+          "np nan",
+          "nan"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.41471301379652437,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757851+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "Plotting and Visualization",
+      "start_page": 299,
+      "end_page": 318,
+      "summary": "Plotting and Visualization\nmatplotlib is a desktop plotting package designed for creating plots and figures\nthat use matplotlib for their underlying plotting.\nThe simplest way to follow the code examples in the chapter is to output plots in\nIf everything is set up right, a line plot like\nIn [16]: plt.plot(data)\nSimple line plot\nChapter 9: Plotting and Visualization\nFigures and Subplots\nPlots in matplotlib reside within a Figure object.\nempty plot window will appear, but in Jupyter nothing will be shown until we use a\nYou can’t make a plot with a blank figure.\nThis means that the figure should be 2 × 2 (so up to four plots in total), and we’re\nAn empty matplotlib figure with three subplots\nThese plot axis objects have various methods that create different types of plots,\nand it is preferred to use the axis methods over the top-level plotting functions\nlike plt.plot.\nFor example, we could make a line plot with the plot method (see\nIn [21]: ax3.plot(np.random.standard_normal(50).cumsum(), color=\"black\",\nChapter 9: Plotting and Visualization\nData visualization after a single plot\nmatplotlib returns objects that reference the plot subcomponent that was just added.\nThe additional options instruct matplotlib to plot a black dashed line.\ndirectly plot on the other empty subplots by calling each one’s instance method (see\nData visualization after additional plots\nThe style option alpha=0.3 sets the transparency of the overlaid plot.\nYou can find a comprehensive catalog of plot types in the matplotlib documentation.\nTo make creating a grid of subplots more convenient, matplotlib includes a plt.sub\nplots method that creates a new figure and returns a NumPy array containing the\notherwise, matplotlib autoscales plot limits independently.\nChapter 9: Plotting and Visualization\nmatplotlib.pyplot.subplots options\nAll subplots should use the same x-axis ticks (adjusting the xlim will affect all subplots)\nAdditional keywords to subplots are used when creating the figure, such as plt.subplots(2, 2, \nchange the spacing using the subplots_adjust method on Figure objects:\nmatplotlib’s line plot function accepts arrays of x and y coordinates and optional\nFor example, to plot x versus y with green dashes, you would\nax.plot(x, y, linestyle=\"--\", color=\"green\")\nsee some of the supported line styles by looking at the docstring for plt.plot (use\nplt.plot?\nLine plots can additionally have markers to highlight the actual data points.\nmatplotlib’s plot function creates a continuous line plot, interpolating between\nChapter 9: Plotting and Visualization\nIn [32]: ax.plot(np.random.standard_normal(30).cumsum(), color=\"black\",\nLine plot with markers\nIn [37]: ax.plot(data, color=\"black\", linestyle=\"dashed\", label=\"Default\");\nIn [38]: ax.plot(data, color=\"black\", linestyle=\"dashed\",\nLine plot with different drawstyle options\nHere, since we passed the label arguments to plot, we are able to create a plot legend\npassed the label options when plotting the data.\nMost kinds of plot decorations can be accessed through methods on matplotlib axes\nplot range, tick locations, and tick labels, respectively.\nreturns the current x-axis plotting range)\nChapter 9: Plotting and Visualization\nTo illustrate customizing the axes, I’ll create a simple figure and plot of a random\nIn [40]: fig, ax = plt.subplots()\nIn [41]: ax.plot(np.random.standard_normal(1000).cumsum());\nSimple plot for illustrating xticks (with default labels)\ngives a name to the x-axis, and set_title is the subplot title (see Figure 9-9 for the\nIn [45]: ax.set_title(\"My first matplotlib plot\")\nThe axes class has a set method that allows batch setting of plot properties.\nax.set(title=\"My first matplotlib plot\", xlabel=\"Stages\")\nof the plot:\nIn [46]: fig, ax = plt.subplots()\nIn [47]: ax.plot(np.random.randn(1000).cumsum(), color=\"black\", label=\"one\");\nIn [48]: ax.plot(np.random.randn(1000).cumsum(), color=\"black\", linestyle=\"dashed\nChapter 9: Plotting and Visualization\nIn [49]: ax.plot(np.random.randn(1000).cumsum(), color=\"black\", linestyle=\"dotted\nThe resulting plot is in Figure 9-10:\nSimple plot with three lines and legend\nThe loc legend option tells matplotlib where to place the plot.\ncoordinates (x, y) on the plot with optional custom styling:\nfig, ax = plt.subplots()\nspx.plot(ax=ax, color=\"black\")\nChapter 9: Plotting and Visualization\nand set_ylim methods to manually set the start and end boundaries for the plot\nplot.\nTo add a shape to a plot, you create the patch object and add it to a subplot ax by\nfig, ax = plt.subplots()\nTo get the same plot as a PNG at\nChapter 9: Plotting and Visualization\n9.2 Plotting with pandas and seaborn\nnents: the data display (i.e., the type of plot: line, bar, box, scatter, contour, etc.),\nLine Plots\ndefault, plot() makes line plots (see Figure 9-13):\nIn [62]: s.plot()\nThe Series object’s index is passed to matplotlib for plotting on the x-axis, though\nChapter 9: Plotting and Visualization\nSee Table 9-3 for a partial listing of plot options.\nSeries.plot method arguments\nLabel for plot legend\nmatplotlib subplot object to plot on; if nothing passed, uses active matplotlib subplot\nThe plot fill opacity (from 0 to 1)\nTitle to use for the plot\nMost of pandas’s plotting methods accept an optional ax parameter, which can be a\nmatplotlib subplot object.\n9.2 Plotting with pandas and seaborn \nDataFrame’s plot method plots each of its columns as a different line on the same\nsubplot, creating a legend automatically (see Figure 9-14):\nIn [65]: df.plot()\nrespective matplotlib plotting function, so you can further custom‐\nize these plots by learning more about the matplotlib API.\nChapter 9: Plotting and Visualization",
+      "keywords": [
+        "matplotlib API Primer",
+        "plot",
+        "matplotlib",
+        "matplotlib API",
+        "API Primer",
+        "Plotting",
+        "Visualization",
+        "subplot",
+        "data",
+        "labels",
+        "line plot",
+        "data visualization",
+        "Jupyter",
+        "line",
+        "Plotting and Visualization"
+      ],
+      "concepts": [
+        "plotting",
+        "plots",
+        "figures",
+        "data",
+        "labels",
+        "options",
+        "optional",
+        "color",
+        "visualization",
+        "visualizations"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.578,
+          "base_score": 0.428,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.477,
+          "base_score": 0.327,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 12,
+          "title": "",
+          "score": 0.433,
+          "base_score": 0.283,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 7,
+          "title": "",
+          "score": 0.413,
+          "base_score": 0.263,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.386,
+          "base_score": 0.236,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "plot",
+          "plotting",
+          "matplotlib",
+          "ax",
+          "plotting visualization"
+        ],
+        "semantic": [],
+        "merged": [
+          "plot",
+          "plotting",
+          "matplotlib",
+          "ax",
+          "plotting visualization"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.36300824595621095,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757862+00:00"
+      }
+    },
+    {
+      "chapter_number": 12,
+      "title": "Introduction to Modeling",
+      "start_page": 423,
+      "end_page": 582,
+      "summary": "Introduction to Modeling\ndata analysis in Python.\ndisproportionate amount of time with data wrangling and preparation, the book’s\nWhich library you use for developing models will depend on the application.\nyou’re crossing back and forth between data wrangling with pandas and model fitting\non data science, statistics, and machine learning.\n12.1 Interfacing Between pandas and Model Code\nA common workflow for model development is to use pandas for data loading and\ninformation from a raw dataset that may be useful in a modeling context.\nThe data\nshow some methods to make switching between data manipulation with pandas and\nIn [12]: data = pd.DataFrame({\nIn [13]: data\nIn [14]: data.columns\nOut[14]: Index(['x0', 'x1', 'y'], dtype='object')\nIn [15]: data.to_numpy()\nIn [16]: df2 = pd.DataFrame(data.to_numpy(), columns=['one', 'two', 'three'])\nChapter 12: Introduction to Modeling Libraries in Python\nThe to_numpy method is intended to be used when your data is homogeneous—for\nIf you have heterogeneous data, the result will be an\nIn [18]: df3 = data.copy()\nFor some models, you may wish to use only a subset of the columns.\nIn [22]: model_cols = ['x0', 'x1']\nIn [23]: data.loc[:, model_cols].to_numpy()\nautomatically: converting to NumPy from DataFrame and attaching model parameter\nnames to the columns of output tables or Series.\nIn [24]: data['category'] = pd.Categorical(['a', 'b', 'a', 'a', 'b'],\nIn [25]: data\n12.1 Interfacing Between pandas and Model Code \nIn [28]: data_with_dummies\n12.2 Creating Model Descriptions with Patsy\nPatsy is a Python library for describing statistical models (especially linear models)\nPatsy is well supported for specifying linear models in statsmodels, so I will focus\nIn [29]: data = pd.DataFrame({\nChapter 12: Introduction to Modeling Libraries in Python\nIn [30]: data\nIn [32]: y, X = patsy.dmatrices('y ~ x0 + x1', data)\n'x0' (column 1)\n'x1' (column 2)\n12.2 Creating Model Descriptions with Patsy \nlinear models like ordinary least squares (OLS) regression.\nIn [37]: patsy.dmatrices('y ~ x0 + x1 + 0', data)[1]\n'x0' (column 0)\n'x1' (column 1)\nmodel column names to the fitted coefficients to obtain a Series, for example:\nIn [40]: coef = pd.Series(coef.squeeze(), index=X.design_info.column_names)\nData Transformations in Patsy Formulas\nChapter 12: Introduction to Modeling Libraries in Python\nIn [42]: y, X = patsy.dmatrices('y ~ x0 + np.log(np.abs(x1) + 1)', data)\n'x0' (column 1)\nIn [44]: y, X = patsy.dmatrices('y ~ standardize(x0) + center(x1)', data)\n'standardize(x0)' (column 1)\n'center(x1)' (column 2)\nAs part of a modeling process, you may fit a model on one dataset, then evaluate\nthe model based on another.\nThis might be a hold-out portion or new data that\nshould be careful when using the model to form predications based on new data.\nof-sample data using the saved information from the original in-sample dataset:\nIn [46]: new_data = pd.DataFrame({\nIn [47]: new_X = patsy.build_design_matrices([X.design_info], new_data)\n12.2 Creating Model Descriptions with Patsy \n'standardize(x0)' (column 1)\n'center(x1)' (column 2)]\nIn [49]: y, X = patsy.dmatrices('y ~ I(x0 + x1)', data)\n'I(x0 + x1)' (column 1)\nCategorical Data and Patsy\nNonnumeric data can be transformed for a model design matrix in many different\nIn [51]: data = pd.DataFrame({\nChapter 12: Introduction to Modeling Libraries in Python\nIn [52]: y, X = patsy.dmatrices('v2 ~ key1', data)\nIf you omit the intercept from the model, then columns for each category value will\nIn [54]: y, X = patsy.dmatrices('v2 ~ key1 + 0', data)\nIn [56]: y, X = patsy.dmatrices('v2 ~ C(key2)', data)\n12.2 Creating Model Descriptions with Patsy \nused, for example, in analysis of variance (ANOVA) models:\nIn [58]: data['key2'] = data['key2'].map({0: 'zero', 1: 'one'})\nIn [59]: data\nIn [60]: y, X = patsy.dmatrices('v2 ~ key1 + key2', data)\nIn [62]: y, X = patsy.dmatrices('v2 ~ key1 + key2 + key1:key2', data)\nChapter 12: Introduction to Modeling Libraries in Python\nPatsy provides for other ways to transform categorical data, including transforma‐\nstatsmodels is a Python library for fitting many kinds of statistical models, perform‐\ning statistical tests, and data exploration and visualization.\nSome kinds of models found in statsmodels include:\n• Time series processes and state space models\nto use the modeling interfaces with Patsy formulas and pandas DataFrame objects.\nThere are several kinds of linear regression models in statsmodels, from the more\nLinear models in statsmodels have two different main interfaces: array based and\nTo show how to use these, we generate a linear model from some random data.\nis a helper function for generating normally distributed data with a particular mean\nA linear model is generally fitted with an intercept term, as we saw before with Patsy.\nIn [68]: X_model = sm.add_constant(X)\nIn [69]: X_model[:5]\nIn [70]: model = sm.OLS(y, X)\nChapter 12: Introduction to Modeling Libraries in Python\nThe model’s fit method returns a regression results object containing estimated\nIn [71]: results = model.fit()\nThe summary method on results can print a model detailing diagnostic output of the\nmodel:\nDf Model:                           3                                            \nSuppose instead that all of the model parameters are in a DataFrame:\nIn [74]: data = pd.DataFrame(X, columns=['col0', 'col1', 'col2'])\nIn [75]: data['y'] = y\nIn [76]: data[:5]\nIn [77]: results = smf.ols('y ~ col0 + col1 + col2', data=data).fit()\nObserve how statsmodels has returned results as Series with the DataFrame column\nGiven new out-of-sample data, you can compute predicted values given the estimated\nmodel parameters:\nIn [80]: results.predict(data[:5])\nChapter 12: Introduction to Modeling Libraries in Python\nmodel results in statsmodels that you can explore.\nAnother class of models in statsmodels is for time series analysis.\nLet’s simulate some time series data with an autoregressive structure and noise.\nIn [84]: model = AutoReg(values, MAXLAGS)\nIn [85]: results = model.fit()\nunsupervised machine learning methods, with tools for model selection and evalua‐\ntion, data transformation, data loading, and model persistence.\nThese models can\nParch            Ticket     Fare Cabin Embarked  \nLibraries like statsmodels and scikit-learn generally cannot be fed missing data, so we\nlook at the columns to see if there are any that contain missing data:\nChapter 12: Introduction to Modeling Libraries in Python\nwhether a passenger would survive based on features in the data.\nA model is fitted on\nI would like to use Age as a predictor, but it has missing data.\nways to do missing data imputation, but I will do a simple one and use the median of\nthe training dataset to fill the nulls in both tables:\nof the 'Sex' column:\nWe use the LogisticRegression model from scikit-learn and create a\nIn [104]: model = LogisticRegression()\nWe can fit this model to the training data using the model’s fit method:\nIn [105]: model.fit(X_train, y_train)\nNow, we can form predictions for the test dataset using model.predict:\nIn [106]: y_predict = model.predict(X_test)\ntraining data.\nnew data.\nCross-validation works by splitting the training data to simulate out-of-sample pre‐\nBased on a model accuracy score like mean squared error, you can perform\nChapter 12: Introduction to Modeling Libraries in Python\nIn [108]: from sklearn.linear_model import LogisticRegressionCV\nIn [110]: model_cv.fit(X_train, y_train)\nwhich handles the data splitting process.\nwith four nonoverlapping splits of the training data, we can do:\nIn [112]: model = LogisticRegression(C=10)\nIn [113]: scores = cross_val_score(model, X_train, y_train, cv=4)\nWhile I have only skimmed the surface of some Python modeling libraries, there\nted to modeling and data science tools.\n• Python Data Science Handbook by Jake VanderPlas (O’Reilly)\n• Data Science from Scratch: First Principles with Python by Joel Grus (O’Reilly)\nChapter 12: Introduction to Modeling Libraries in Python\nData Analysis Examples\nin this book to extract meaning from the raw data.\n13.1 Bitly Data from 1.USA.gov\nbut we preserved one of the data files for the book’s examples.\nweb data known as JSON, which stands for JavaScript Object Notation.\nThe resulting object records is now a list of Python dictionaries:\nCounting Time Zones in Pure Python\nChapter 13: Data Analysis Examples\ncounts by time zone, I’ll show two approaches: a harder way (using just the Python\nuse a dictionary to store counts while we iterate through the time zones:\nif x in counts:\ncounts[x] += 1\ncounts[x] = 1\ncounts[x] += 1\n13.1 Bitly Data from 1.USA.gov \nIf we wanted the top 10 time zones and their counts, we can make a list of tuples by\nCounting Time Zones with pandas\nChapter 13: Data Analysis Examples\nnames, inferred column types, or number of missing values, using frame.info():\nData columns (total 18 columns):\n#   Column       Non-Null Count  Dtype  \n0   a            3440 non-null   object \n1   c            2919 non-null   object \n3   tz           3440 non-null   object \n4   gr           2919 non-null   object \n5   g            3440 non-null   object \n6   h            3440 non-null   object \n7   l            3440 non-null   object \n8   al           3094 non-null   object \n9   hh           3440 non-null   object \n10  r            3440 non-null   object \n11  u            3440 non-null   object \n14  cy           2919 non-null   object \n15  ll           2919 non-null   object \n17  kw           93 non-null     object \nWe can then use the value_counts method for the Series:\nIn [32]: tz_counts.head()\n13.1 Bitly Data from 1.USA.gov \nfilling in a substitute value for unknown or missing time zone data in the records.\nIn [36]: tz_counts.head()\nIn [39]: subset = tz_counts.head()\nTop time zones in the 1.usa.gov sample data\nChapter 13: Data Analysis Examples\nIn [44]: results = pd.Series([x.split()[0] for x in frame[\"a\"].dropna()])\nIn [46]: results.value_counts().head(8)\nexclude these from the data:\n13.1 Bitly Data from 1.USA.gov \nThen, you can group the data by its time zone column and this new list of operating\nThe group counts, analogous to the value_counts function, can be computed with\nagg_counts.sum(\"columns\"), I can call argsort() to obtain an index array that can\nIn [53]: indexer = agg_counts.sum(\"columns\").argsort()\nChapter 13: Data Analysis Examples\ncall count_subset.stack() and reset the index to rearrange the data for better\nIn [63]: sns.barplot(x=\"total\", y=\"tz\", hue=\"os\",  data=count_subset)\n13.1 Bitly Data from 1.USA.gov \nTop time zones by Windows and non-Windows users\nresults = count_subset.groupby(\"tz\").apply(norm_total)\nIn [66]: sns.barplot(x=\"normed_total\", y=\"tz\", hue=\"os\",  data=results)\nChapter 13: Data Analysis Examples\nPercentage Windows and non-Windows users in top occurring time zones\nIn [68]: results2 = count_subset[\"total\"] / g[\"total\"].transform(\"sum\")\nGroupLens Research provides a number of collections of movie ratings data collected\nThe data provides movie\nratings, movie metadata (genres and year), and demographic data about the users\nSuch data is often of interest in\nThe MovieLens 1M dataset contains one million ratings collected from six thousand\nWe can load each table into a pandas DataFrame object\nratings = pd.read_table(\"datasets/movielens/ratings.dat\", sep=\"::\",\n1        2      M   56          16  70072\n2        3      M   25          15  55117\n3        4      M   45           7  02460\n4        5      M   25          20  55455\nuser_id  movie_id  rating  timestamp\nuser_id  movie_id  rating  timestamp\n[1000209 rows x 4 columns]\nAnalyzing the data spread across three tables is not\nChapter 13: Data Analysis Examples\nto do with all of the data merged together into a single table.\nmovies data.\npandas infers which columns to use as the merge (or join) keys based on\nIn [74]: data = pd.merge(pd.merge(ratings, users), movies)\nIn [75]: data\nuser_id  movie_id  rating  timestamp gender  age  occupation    zip  \\\n1              2      1193       5  978298413      M   56          16  70072   \n2             12      1193       4  978220179      M   25          12  32793   \n3             15      1193       4  978199279      M   25           7  22903   \n4             17      1193       5  978158471      M   50           1  95350   \n1000204     5949      2198       5  958846401      M   18          17  47901   \n1000205     5675      2703       3  976029116      M   35          14  30030   \n1000206     5780      2845       1  958153068      M   18          17  92886   \n1000208     5938      2909       4  957273353      M   25           1  35401   \n[1000209 rows x 10 columns]\nIn [76]: data.iloc[0]\nTo get mean movie ratings for each film grouped by gender, we can use the\nIn [77]: mean_ratings = data.pivot_table(\"rating\", index=\"title\",\nThis produced another DataFrame containing mean ratings with movie titles as row\nreceived at least 250 ratings (an arbitrary number); to do this, I group the data by\nIn [79]: ratings_by_title = data.groupby(\"title\").size()\nIn [80]: ratings_by_title.head()\nChapter 13: Data Analysis Examples\n[1216 rows x 2 columns]\nIn [86]: top_female_ratings = mean_ratings.sort_values(\"F\", ascending=False)\nOne way is to add a column to mean_ratings containing the differ‐\nIn [88]: mean_ratings[\"diff\"] = mean_ratings[\"M\"] - mean_ratings[\"F\"]\nIn [92]: rating_std_by_title = data.groupby(\"title\")[\"rating\"].std()\nIn [95]: rating_std_by_title.sort_values(ascending=False)[:10]\nChapter 13: Data Analysis Examples\nTo help us group the ratings data by\nIn [102]: ratings_with_genre = pd.merge(pd.merge(movies_exploded, ratings), users\nChapter 13: Data Analysis Examples\nauthor of several popular R packages, has this dataset in illustrating data manipula‐\nWe need to do some data wrangling to load this dataset, but once we do that we will\nIn [4]: names.head(10)\nname sex  births  year\nAs of this writing, the US Social Security Administration makes available data files,\none per year, containing the total number of births for each sex/name combination.\nnames.zip and unzipping it, you will have a directory containing a series of files like\nIn [107]: names1880 = pd.read_csv(\"datasets/babynames/yob1880.txt\",\n.....:                         names=[\"name\", \"sex\", \"births\"])\n[2000 rows x 3 columns]\nChapter 13: Data Analysis Examples\nThese files only contain names with at least five occurrences in each year, so for\nsimplicity’s sake we can use the sum of the births column by sex as the total number\nIn [109]: names1880.groupby(\"sex\")[\"births\"].sum()\nM    110493\nall of the data into a single DataFrame and further add a year field.\nframe = pd.read_csv(path, names=[\"name\", \"sex\", \"births\"])\n# Add a column for the year\ndata across all years:\nname sex  births  year\n[1690784 rows x 4 columns]\nWith this data in hand, we can already start aggregating the data at the year and sex\nIn [112]: total_births = names.pivot_table(\"births\", index=\"year\",\n.....:                                  columns=\"sex\", aggfunc=sum)\nsex         F        M\nIn [114]: total_births.plot(title=\"Total births by sex and year\")\nTotal births by sex and year\nThus, we group the data by year and sex,\nthen add the new column to each group:\nChapter 13: Data Analysis Examples\nnames = names.groupby([\"year\", \"sex\"]).apply(add_prop)\nThe resulting complete dataset now has the following columns:\nname sex  births  year      prop\n[1690784 rows x 5 columns]\nlike verifying that the prop column sums to 1 within all the groups:\nIn [117]: names.groupby([\"year\", \"sex\"])[\"prop\"].sum()\nM      1.0\nM      1.0\n2008  M      1.0\nM      1.0\nM      1.0\nanalysis: the top 1,000 names for each sex/year combination.\n.....:     return group.sort_values(\"births\", ascending=False)[:1000]\nIn [119]: grouped = names.groupby([\"year\", \"sex\"])\nname sex  births  year      prop\nname sex  births  year      prop\nWe’ll use this top one thousand dataset in the following investigations into the data.\nSimple time series, like the number of Johns or Marys for each year, can be plotted\nIn [126]: total_births = top1000.pivot_table(\"births\", index=\"year\",\nNow, this can be plotted for a handful of names with DataFrame’s plot method\nChapter 13: Data Analysis Examples\n.....:             title=\"Number of births per year\")\nA few boy and girl names over time\nnames, which I aggregate and plot by year and sex (Figure 13-6 shows the resulting\n.....:                             columns=\"sex\", aggfunc=sum)\nIn [132]: table.plot(title=\"Sum of table1000.prop by year and sex\",\nProportion of births represented in top one thousand names by sex\nname sex  births  year      prop\nChapter 13: Data Analysis Examples\n[1000 rows x 5 columns]\nand apply a function returning the count for each group:\ndiversity = top1000.groupby([\"year\", \"sex\"]).apply(get_quantile_count)\nThis resulting DataFrame diversity now has two time series, one for each sex,\nsex    F   M\nIn [144]: diversity.plot(title=\"Number of popular names in top 50%\")\nboy names by final letter has changed significantly over the last 100 years.\nwe first aggregate all of the births in the full dataset by year, sex, and final letter:\nChapter 13: Data Analysis Examples\ntable = names.pivot_table(\"births\", index=last_letters,\ncolumns=[\"sex\", \"year\"], aggfunc=sum)\nsex                 F                            M                    \nM    1910     194198.0\nsex                 F                             M                    \n[26 rows x 6 columns]\nletter_prop[\"M\"].plot(kind=\"bar\", rot=0, ax=axes[0], title=\"Male\")\nletter_prop[\"F\"].plot(kind=\"bar\", rot=0, ax=axes[1], title=\"Female\",\nsex and select a subset of letters for the boy names, finally transposing to make each\ncolumn a time series:\nChapter 13: Data Analysis Examples\nIn [154]: dny_ts = letter_prop.loc[[\"d\", \"n\", \"y\"], \"M\"].T\nProportion of boys born with names ending in d/n/y over time\nDataFrame, I compute a list of names occurring in the dataset starting with “Lesl”:\nFrom there, we can filter down to just those names and sum births grouped by name\n.....:                              columns=\"sex\", aggfunc=\"sum\")\nsex     F   M\nIn [168]: table.plot(style={\"M\": \"k-\", \"F\": \"k--\"})\nChapter 13: Data Analysis Examples\nProportion of male/female Lesley-like names over time\nEach entry in db is a dictionary containing all the data for a single food.\nWe’ll take the food names, group, ID, and manufacturer:\nChapter 13: Data Analysis Examples\nIn [176]: info_keys = [\"description\", \"group\", \"id\", \"manufacturer\"]\nIn [177]: info = pd.DataFrame(db, columns=info_keys)\nData columns (total 4 columns):\n#   Column        Non-Null Count  Dtype \n0   description   6636 non-null   object\n1   group         6636 non-null   object\n3   manufacturer  5195 non-null   object\nYou can see the distribution of food groups with value_counts:\nIn [180]: pd.value_counts(info[\"group\"])[:10]\nNow, to do some analysis on all of the nutrient data, it’s easiest to assemble the\nFirst, I’ll convert each list of food nutrients to a DataFrame, add a column for\nvalue units                         description        group     id\n[389355 rows x 5 columns]\nSince \"group\" and \"description\" are in both DataFrame objects, we can rename for\nData columns (total 4 columns):\n#   Column        Non-Null Count  Dtype \nChapter 13: Data Analysis Examples\n0   food          6636 non-null   object\n1   fgroup        6636 non-null   object\n3   manufacturer  5195 non-null   object\n[375176 rows x 5 columns]\nData columns (total 8 columns):\n#   Column        Non-Null Count   Dtype  \n0   value         375176 non-null  float64\n1   units         375176 non-null  object \n2   nutrient      375176 non-null  object \n3   nutgroup      375176 non-null  object \n5   food          375176 non-null  object \n6   fgroup        375176 non-null  object \n7   manufacturer  293054 non-null  object \nWe could now make a plot of median values by food group and nutrient type (see\nChapter 13: Data Analysis Examples\nbook’s data repository), which can be loaded with pandas.read_csv:\nData columns (total 16 columns):\n#   Column             Non-Null Count    Dtype  \n0   cmte_id            1001731 non-null  object \n1   cand_id            1001731 non-null  object \n2   cand_nm            1001731 non-null  object \n3   contbr_nm          1001731 non-null  object \n4   contbr_city        1001712 non-null  object \n5   contbr_st          1001727 non-null  object \n6   contbr_zip         1001620 non-null  object \n7   contbr_employer    988002 non-null   object \n8   contbr_occupation  993301 non-null   object \n10  contb_receipt_dt   1001731 non-null  object \n11  receipt_desc       14166 non-null    object \n12  memo_cd            92482 non-null    object \n13  memo_text          97770 non-null    object \n14  form_tp            1001731 non-null  object ",
+      "keywords": [
+        "data",
+        "data analysis",
+        "non-null object",
+        "model",
+        "Column Non-Null Count",
+        "column",
+        "America",
+        "object",
+        "Python",
+        "Non-Null Count Dtype",
+        "Windows",
+        "year",
+        "Non-Null",
+        "Sex",
+        "non-null object dtypes"
+      ],
+      "concepts": [
+        "data",
+        "modeling",
+        "names",
+        "naming",
+        "column",
+        "objects",
+        "non",
+        "nutrient",
+        "dataset",
+        "group"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 5,
+          "title": "",
+          "score": 0.697,
+          "base_score": 0.547,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 1,
+          "title": "",
+          "score": 0.696,
+          "base_score": 0.546,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 2,
+          "title": "",
+          "score": 0.637,
+          "base_score": 0.487,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 7,
+          "title": "",
+          "score": 0.593,
+          "base_score": 0.443,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Python Data Analysis 3rd",
+          "chapter": 9,
+          "title": "",
+          "score": 0.433,
+          "base_score": 0.283,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "data",
+          "non null",
+          "null",
+          "null object",
+          "model"
+        ],
+        "semantic": [],
+        "merged": [
+          "data",
+          "non null",
+          "null",
+          "null object",
+          "model"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.48124548748753565,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:08:15.757874+00:00"
+      }
+    }
+  ],
+  "total_chapters": 9,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Python Data Analysis 3rd_metadata.json",
+    "enrichment_date": "2025-12-17T23:08:15.761052+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3157.7441680001357,
+    "total_similar_chapters": 43
+  }
+}

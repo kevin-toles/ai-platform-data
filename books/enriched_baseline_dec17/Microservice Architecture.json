@@ -1,0 +1,908 @@
+{
+  "metadata": {
+    "title": "Microservice Architecture",
+    "source_file": "Microservice Architecture_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "The Microservices Way",
+      "start_page": 19,
+      "end_page": 28,
+      "summary": "The Microservices Way\nMicroservices are a thing these days.\nIn this chapter we’ll explore what microservices are and what it means to build an\napplication the microservices way.\nterm microservices by learning about its origin.\npieces of microservices systems fit together, a balancing act of speed and safety that\nwe call the microservices way.\nUnderstanding Microservices\nTo better understand what microservices are, we need to look at where they came\nWe aren’t going to recount the entire history of microservices and software\narchitecture, but it’s worth briefly examining how microservices came to be.\nthe term microservices has probably been used in various forms for many years, the\nin the way a particular set of companies was building software and gave it a name.\nJames’ recollection of the microservices origin story is important not only for histori‐\nMicroservices are ideal for big systems\nmicroservices style—it is designed to solve problems for systems that are big.\nMicroservice architecture is goal-oriented\nMicroservice architecture isn’t about identifying a\nChapter 1: The Microservices Way\nMicroservices are focused on replaceability\nThe revelation that microservices are really about replaceability is the most\nwhat makes the microservices approach special.\nOverwhelmingly, the companies that we talked to have adopted the microservices\narchitectural style as a way of working with systems in which scale is a factor.\nAdopting Microservices\namenable to change, but the microservice focus on building replaceable components\nHowever, when we’ve talked to people interested in adopting microservice-style\n1. They have already built a microservice architecture, but they didn’t know it had a\n2. The management, coordination, and control of a microservices system would be\nAdopting Microservices \n3. The microservices style doesn’t account for their unique context, environment,\nWhile we don’t believe that microservices is the answer to every question about a\n“What are microservices?\nEarlier in this chapter we shared the story of how microservices got their name, but\nMicroservices are small, autonomous services that work together.\nFor that reason our definition of microservices also includes the architectural\nA microservice is an independently deployable component of bounded scope that sup‐\nMicroservice architec‐\ncapability-aligned microservices.\nyou’ve already started shaping your culture in a way that fits the microservices advice.\nclaim that your architecture is a microservice architecture?\nthe companies that do well with microservices don’t dwell on the meaning of this sin‐\nthat finding a universal meaning for the microservices style is not important when it\nChapter 1: The Microservices Way\nIf you are considering adopting a microservice architecture for your organization,\nEarlier in this chapter we shared perspectives on microservices from Newman, Cock‐\nSo big that some people believe that microservices describe a soft‐\ncompanies who are sharing their microservice success stories with the world.\nAdopting Microservices \nto implement a microservice system is likely to differ from the way that Netflix imple‐\nprinciples and practices that help microservices companies succeed.\nTwo microservices characteristics that you might find especially concerning are\ndo you reconcile the ideals of a microservice architecture within a risk-averse culture?\nHow do we govern the work done by microservices teams?\nIn a microservice architec‐\nment of a microservice system is more expensive than in other architectural styles.\nfit, chances are this is not the best way to build software in your organization.\nChapter 1: The Microservices Way\nThe Microservices Way\nWhen you first begin learning about microservice architecture it’s easy to get caught\nthings can help you to build a system that sounds like the microservice systems we’ve\nBut microservices can’t be achieved by focusing on a particular set of\nMore specifically, the real value of microservices is realized when we focus on two key\nance between them at scale is what we call the microservices way.\n—The Microservices Way\nSpeed of change gets a lot of attention in stories about microservice architecture, but\nThe Microservices Way \nAs we heard earlier in this chapter, the microservices\ning software and is essential to the microservices way.\nWe’ve found that all of the characteristics that we associate with microservice archi‐\nThe microservices\nInstead, we introduce the microservices way in order to help you understand the\nessence of the microservices style.\nways to allow both safety and speed of change to coexist.\nChapter 1: The Microservices Way\nwith microservice architecture are able to maintain their system stability while\nthis book and we don’t expect your microservices implementation to be the same\nInstead, we hope that focusing on the way that microservices applications are\nIn this chapter we introduced the original intent of the microservice architecture con‐\nduced the microservices way, a goal-driven approach to building adaptable, reliable\nof microservices and will come up again throughout this book.",
+      "keywords": [
+        "Microservices",
+        "Microservice architecture",
+        "software",
+        "microservices style",
+        "system",
+        "n’t",
+        "architecture",
+        "speed",
+        "microservice system",
+        "change",
+        "adopting microservices",
+        "safety",
+        "’ve",
+        "companies",
+        "scale"
+      ],
+      "concepts": [
+        "microservices",
+        "software",
+        "architecture",
+        "architectural",
+        "changing",
+        "change",
+        "implement",
+        "implemented",
+        "implementations",
+        "services"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 2,
+          "title": "",
+          "score": 0.869,
+          "base_score": 0.719,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 5,
+          "title": "",
+          "score": 0.813,
+          "base_score": 0.663,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.749,
+          "base_score": 0.749,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.7,
+          "base_score": 0.7,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.645,
+          "base_score": 0.645,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "way",
+          "microservices way",
+          "way microservices",
+          "chapter microservices",
+          "microservice architecture"
+        ],
+        "semantic": [],
+        "merged": [
+          "way",
+          "microservices way",
+          "way microservices",
+          "chapter microservices",
+          "microservice architecture"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6967637358097216,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.312992+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "The Microservices Value Proposition",
+      "start_page": 29,
+      "end_page": 33,
+      "summary": "The microservice architectural style was defined based on common patterns observed\nsciously implement a microservice architecture.\nIn this chapter, we will explore the common benefits of microservice architecture and\ntrate how the goals of microservice architecture deliver business value; define a\nmaturity model for microservice architecture benefits and goals; and finally, apply\nthis information using a goal-oriented approach to microservice architecture.\nTo start with, let’s survey the motivations of some early microservice adopters.\nMicroservice Architecture Benefits\nWhy are organizations adopting microservices?\nof managing a collection of small, loosely coupled, independently deployable services\nUK e-retailer Gilt is another early adopter of microservice architecture.\nSocial media pioneer Hootsuite has observed efficiency benefits in their microservice\nWith microservices, we have reduced the time it takes to deploy a useful piece of code\nstrive to be flexible in our interpretation of microservice architecture, using its\nmicroservice architecture:\nThe goal of improving software delivery speed as functional scope grows is realized\nmaintaining software system safety as scale increases is achieved through higher\nNow let’s explore how these goals and benefits derive business value for organizations\nthat employ microservice architecture.\nSuccessful companies do not focus on increasing software delivery speed for its own\nthe level of safety implemented in an organization’s software system should be tied to\nFor each organization, that balance will be a function of its delivery speed, the safety\nfact, each of the microservice architecture benefits that drive delivery speed contrib‐\n• Agility allows organizations to deliver new products, functions, and features\n• Composability reduces development time and provides a compound benefit\n• Independent deployability of components gets new features into production more\n• Organizational alignment of services to teams reduces ramp-up time and encour‐\n• Independent manageability contributes to improved efficiency, and also reduces\nClearly, microservice architecture has the potential to provide numerous business\nservice architecture is capable of delivering all of them.\nbenefits of microservice architecture to tailor a goal-oriented approach.\nIn spite of the fact that microservice architecture was originally a reaction to the limi‐\ncompanies to use microservice architecture made the switch from monolithic appli‐\nwith an analysis of the common goals and benefits of microservice architecture, we\nModularized Microservice Architecture\nAt its most basic level, microservice architecture is about breaking up an application\nBeyond that, some of the microservice architecture benefits discussed\nTo help software delivery speed, modularized services are independently deployable.\nThis is the most technologically focused microservice architecture layer.\nfor your microservice architecture.",
+      "keywords": [
+        "microservice architecture",
+        "microservice architecture benefits",
+        "microservice",
+        "architecture",
+        "software system",
+        "business",
+        "software",
+        "services",
+        "benefits",
+        "system",
+        "architecture benefits",
+        "speed",
+        "software delivery speed",
+        "delivery speed",
+        "safety"
+      ],
+      "concepts": [
+        "service",
+        "business",
+        "microservices",
+        "independence",
+        "independent",
+        "benefits",
+        "technology",
+        "technologies",
+        "technological",
+        "technologically"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.869,
+          "base_score": 0.719,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 5,
+          "title": "",
+          "score": 0.865,
+          "base_score": 0.715,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.723,
+          "base_score": 0.723,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.64,
+          "base_score": 0.64,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.607,
+          "base_score": 0.607,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "microservice architecture",
+          "benefits",
+          "delivery speed",
+          "delivery",
+          "architecture benefits"
+        ],
+        "semantic": [],
+        "merged": [
+          "microservice architecture",
+          "benefits",
+          "delivery speed",
+          "delivery",
+          "architecture benefits"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.675119205395451,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.313047+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Systematized Microservice Architecture",
+      "start_page": 34,
+      "end_page": 40,
+      "summary": "Cohesive Microservice Architecture\nThe next layer to consider in your microservice architecture is the cohesion of serv‐\nIn order to have a cohesive microservice architecture, it must already be modu‐\nA cohesive microservice architecture can enable software speed by aligning the sys‐\nThis can be addressed through service design, which is the\nSystematized Microservice Architecture\nThe final and most advanced layer to consider in a microservice architecture is its\nmicroservice architecture, the overall software system is only comprehensible when\nor cohesive microservice architecture, the system availability is not assured unless the\nThe system aspects of microservice architecture are discussed in detail in\nMaturity Model for Microservice Architecture Goals and Benefits\nNote that an organization’s microservice architecture can be at different phases for\nnization to achieve systematized actualization with their microservice architecture.\nRather, the model is meant to clarify goals and benefits in order to help organizations\nDefining a Goal-Oriented, Layered Approach \nA maturity model for microservice architecture goals and benefits\nNow we have a good understanding of how a microservice architecture can bring\ntions aim for a high-level goal and then only implement one aspect of microservices\nmicroservice architecture was on their monolithic service platform, which included\nexplicitly focused on changing the architecture from monolith to service-enabled\napplying a microservice architecture in your organization.\nsons the early adopters of microservice architecture chose this style.\ninto the common goals and benefits of microservices, how they relate to each other,\ncan be used to target the right goals and benefits for applying a microservice architec‐\ndesign-based approach to microservice architecture.\nMicroservice Design Principles\npart of that study focused on the physical dimensions of the pilots and their cockpit\naverages of pilots and it was assumed that pilots had grown larger over time and that\nmeasuring over 4,000 pilots on 140 different physcial dimensions and then analyze\npute the averages of all 140 dimensions in order to construct what the military\nsleeve length, etc.), Daniels constructed what he defined as the average pilot.\ndimension would be included in his list of average pilots.\nFor example, the average\nwould be counted as average for height.\nsingle pilot that fell within 30% of the average for all ten dimensions.\nIt turns out there is no such thing as an average pilot.\nWhile averages are helpful when looking for trends in a group,\nAverages help us\nThe reason for this difference between real pilots and the average pilot can be sum‐\naverage value for all dimensions.\nthose averages will result in a poor fit for every actual person.\nDesigning for an ideal or average is likely to result in a model that\nmicroservice or canonical model for microservices is likely to have traits that fit no\nthe exact dimensions of any single element in the design are not as important as the",
+      "keywords": [
+        "Microservice Architecture",
+        "Cohesive Microservice Architecture",
+        "Microservice",
+        "Microservice Architecture Goals",
+        "Architecture",
+        "Systematized Microservice Architecture",
+        "Average",
+        "average pilot",
+        "Cohesive Microservice",
+        "system",
+        "Model",
+        "benefits",
+        "modularized microservice architecture",
+        "Goals",
+        "Daniels"
+      ],
+      "concepts": [
+        "microservice",
+        "service",
+        "design",
+        "goals",
+        "pilot",
+        "daniels",
+        "approach",
+        "systems",
+        "averages",
+        "cohesive"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 2,
+          "title": "",
+          "score": 0.865,
+          "base_score": 0.715,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.813,
+          "base_score": 0.663,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.652,
+          "base_score": 0.652,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.64,
+          "base_score": 0.64,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.639,
+          "base_score": 0.639,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "average",
+          "microservice architecture",
+          "pilots",
+          "dimensions",
+          "cohesive microservice"
+        ],
+        "semantic": [],
+        "merged": [
+          "average",
+          "microservice architecture",
+          "pilots",
+          "dimensions",
+          "cohesive microservice"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6766864403756183,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.313061+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "Designing Microservice Systems",
+      "start_page": 41,
+      "end_page": 43,
+      "summary": "Designing Microservice Systems\nSo far we’ve learned that companies building applications in the microservices way do\nThe hallmark of a microservice architecture might be smaller services, but\nfollowing the microservices way will require you to think big.\nintroduced are rooted in some pretty big domains: design, complexity, and systems\nservice designer.\nyour application that encapsulates the essential parts of complexity and systems\nprocess that can help promote a design-driven approach to microservices implemen‐\nThe Systems Approach to Microservices\nBut in order to develop applications in the microservices\nway, you’ll need to conceptualize the design as much more than isolated, individual\nservice designs.\nsum of their parts and for a microservices application this includes the runtime\nWhat we are learning is that microservice systems\nChapter 3: Designing Microservice Systems\nWith that in mind, Figure 3-1 depicts a microservice design model comprised of five\nThe microservice system design model\nImplementing well-designed microservices and APIs are essential to a microservice\nIn a microservice system, the services form the atomic building blocks from\nyour service just right you’ll be able to induce complex behavior from a set of compo‐\nIn Chapter 5 we’ll give you some guidance on designing effective microservices and\nAPIs. The Systems Approach to Microservices ",
+      "keywords": [
+        "microservice system",
+        "system",
+        "Microservice",
+        "Designing Microservice Systems",
+        "parts",
+        "services",
+        "behavior",
+        "complexity",
+        "design",
+        "Systems Approach",
+        "Designing Microservice",
+        "microservice architecture",
+        "work",
+        "microservices system encompasses",
+        "Microservice Systems model-based"
+      ],
+      "concepts": [
+        "services",
+        "designing",
+        "microservice",
+        "complexity",
+        "architecture",
+        "architectural",
+        "parts",
+        "systems",
+        "ant",
+        "model"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.838,
+          "base_score": 0.688,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 6,
+          "title": "",
+          "score": 0.786,
+          "base_score": 0.636,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.749,
+          "base_score": 0.749,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 4,
+          "title": "",
+          "score": 0.673,
+          "base_score": 0.673,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 5,
+          "title": "",
+          "score": 0.652,
+          "base_score": 0.652,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "systems",
+          "microservice systems",
+          "designing microservice",
+          "designing",
+          "design"
+        ],
+        "semantic": [],
+        "merged": [
+          "systems",
+          "microservice systems",
+          "designing microservice",
+          "designing",
+          "design"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.702653886654145,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.313074+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Process and Tools",
+      "start_page": 44,
+      "end_page": 50,
+      "summary": "A solution architecture is distinct from the individual service design elements\nConversely, when designing a solution architecture your decisions are\nIn the microservice’s system, this\nmicroservice system behavior.\nFor example, adopting standardized processes like\nFrom a microservice system perspective, organizational design includes the structure,\nA good microservice system designer understands the implications of changing these\norganizational design.\nChapter 3: Designing Microservice Systems\nMuch like organizational design, culture is a context-sensitive feature of your system.\nAll of the decisions you make about the organization, culture, pro‐\nend state of your organization and solution design should look like is a near impossi‐\nA good microservice designer understands the need for adaptability and endeavors to\nWhen put together all of these design elements form the microservices system.\nStandardization and Coordination\narchitects and designers do their best to control system behavior.\ning and making it do the things you want requires you to develop the right standards,\nmake sure the standards are being applied, and measure the results of the changes\nChapter 3: Designing Microservice Systems\nIn particular, he identifies standardization of work\noutputs, worker skills, and work processes as having the most impact.\nStandardizing process\nBy standardizing the way that people work and the\nple, standardizing a deployment process that reduces the time for component deploy‐\nStandardizing how we work has broad-reaching implications on the type of work we\nmethodology is a great example of process standardization.\nIn addition to process standardization, most companies employ some form of tool\nstandardization as well.\nimportant to standardize in Chapter 4, along with some examples of tools that are\nStandardizing outputs\nOutput standardization is way of setting a universal\nstandard for what that output should look like.\nmicroservice.\nIn the microservices context, output standardization often means developing some\nstandards for the APIs that expose the services.\nstandardize how the interfaces should be designed in an effort to improve the usabil‐\ndive deeper into the types of API standardization that make sense for microservice\nStandardizing people\nYou can also decide to standardize the types of people that do the work within your\nanyone who wants to work on a microservice team.\ninto your microservices system.\nworkers, but organizations that prioritize skill standardization often set very high\nChapter 3: Designing Microservice Systems\nFor example, you might decide to standardize on the APIs that all microservices\nstandardization.\nAs an example, many organizations standardize a way of document‐\nIn other words, the decision to standardize the\nteam’s output has had unintended consequences on the team’s work process.\nThe benefit of standardization is a reduction in the set of all possible outcomes.\nThe challenge for designers is to introduce just enough standardization to achieve the\nbest emergent system outcome, while also employing standards and constraints that\nA Microservices Design Process\nThe very first step of a service design process is to design the process itself.\nimpact of their design decisions, a good designer employs a process that helps them\nA Microservices Design Process \nyour best chance at designing the microservice system you want is to work with a\nFigure 3-2 illustrates a framework for a design process that you can use in your own\nmicroservice system designs.\nMicroservice system design process\nThe choice you make here is important—every decision in the design\nBut as you go through the system design process you will find that\nChapter 3: Designing Microservice Systems",
+      "keywords": [
+        "system",
+        "microservice system",
+        "Designing Microservice Systems",
+        "microservice",
+        "design",
+        "system design process",
+        "good microservice system",
+        "system design",
+        "Microservices Design Process",
+        "Design Process",
+        "system behavior",
+        "microservice system behavior",
+        "Process",
+        "Designing Microservice",
+        "work"
+      ],
+      "concepts": [
+        "standardized",
+        "standardization",
+        "standardize",
+        "designing",
+        "microservices",
+        "process",
+        "processes",
+        "decisions",
+        "decision",
+        "make"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.799,
+          "base_score": 0.649,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.786,
+          "base_score": 0.636,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 4,
+          "title": "",
+          "score": 0.725,
+          "base_score": 0.725,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.609,
+          "base_score": 0.609,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 5,
+          "title": "",
+          "score": 0.568,
+          "base_score": 0.568,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "process",
+          "standardization",
+          "design",
+          "design process",
+          "standardizing"
+        ],
+        "semantic": [],
+        "merged": [
+          "process",
+          "standardization",
+          "design",
+          "design process",
+          "standardizing"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6550292313387807,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.313086+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "we will identify the goals that we have most commonly seen among",
+      "start_page": 51,
+      "end_page": 118,
+      "summary": "companies that have embraced the microservices way and the principles that help\nIt is possible that you may need to change your optimization goals\nmeans that you need to follow the design process and implement\nchange is quite different from your original design goal this may\nyour original goal, you may even create a new system design\nUnderpinning a system optimization goal is a set of principles.\nBut the value of this step in the design process is to\nA Microservices Design Process \nThe goal of a sketching exercise is to continually improve the design\nteam?), the solution architecture (how are services organized?\nmust be in place?), the service design (what outputs?\nand tools (how do services get deployed?\nDo the principles need to\nDoes the system design need to change?\nto make and easy to destroy, so avoid modeling your system in a way that requires a\nimpact of proposed designs, and experiment in a safe way.\nBad designers make assumptions about how a system works, apply changes in the\nGood designers make\nsystem across all the domains of culture, organization, solution architecture, services,\nThe challenge for the microservice\nChapter 3: Designing Microservice Systems\nservices and teams.\nDesigners working\nBut designers who are working on new\nThe classic microservices example of this is the cautionary tale of the “monolith.” A\nteam creates an initial release of an application when the feature set is small and the\npoint, the team agrees that the application needs to be redesigned and modularized to\nRather than trying to predict the future, a good microservices designer examines the\nin a microservices system?\nA Microservices Design Process \nSo, in order to design a microservice system that is dynamic you’ll need to identify\nthe right KPIs, be able to interpret the data, and make small, cheap changes to the\norganization, culture, processes, and system architecture are in place to make it cheap\nThe Microservices System Designer\nThroughout this chapter we’ve referred to the work that the microservices system\ndesigner needs to undertake.\nTo be most effective, the microservices system designer should be able to enact\nculture, processes, solution architecture, and services are significant concerns for the\nsystem designer.\nUltimately, the microservices system designer or software system designer is respon‐\nThe system designer’s\ntect focuses on the coordination of services, the team manager focuses on the people,\nand the service developer focuses on the service design.\nIn this chapter we introduced the microservices system model and a generic design\nChapter 3: Designing Microservice Systems\ndecisions you make about organizational design, culture, solution architecture, pro‐\nA Microservices Design Process \nNow that we have a general model for establishing complex systems, we also need to\ncome up with goals, principles, and guidelines for actually designing the system.\ncommon challenge in creating a microservice architecture for your company is find‐\ning the right set of principles to govern the work.\nfully formed model from some other organization is not likely to get you where you\nIn this chapter, we’ll review a capabilities model for microservices environments.\nWe’ll also introduce the platform that represents the tools and services you provide\nyour developer and operations teams to allow them to meet their objectives.\nquality and fit of these tools has an important impact on your teams’ productivity.\nwill also review how company culture—including team size—can affect the resulting\noutput of your teams.\nFollowing that, we’ll focus on teams themselves; their size, communication modes,\nimpact on the quality of the code that team produces.\nrole goals and principles have in establishing a successful microservice environment\nand how you can use platforms and innovation culture to improve the general output\nor your teams.\nGoals and Principles\noverall goals and principles to help inform your design choices and guide the imple‐\nautonomy is provided to developer teams.\nguidance and context you need to provide to those teams.\nIn this section, we’ll take a look at some general goals for a microservice architecture\nGoals for the Microservices Way\nIt is a good idea to have a set of high-level goals to use as a guide when making deci‐\nultimate goal in building applications in the microservices way: finding the right har‐\nThese goals aren’t unique to microservice\n1. Reduce Cost: Will this reduce overall cost of designing, implementing, and main‐\n2. Increase Release Speed: Will this increase the speed at which my team can get\nfrom idea to deployment of services?\nThe ability to reduce the cost of designing, implementing, and deploying services\nallows you more flexibility when deciding whether to create a service at all.\nple, if the work of creating a new service component includes three months of design\nHowever, if creating a new service component takes only a matter of a\nFor microservices, this means com‐\ning up with ways to reduce the cost of coding and connecting services together.\nare all examples of reducing the costs of coding and connecting service components.\nIncreasing the speed of the “from design to deploy” cycle is another common goal.\nmore useful way to view this goal is that you want to shorten the time between idea\nMany of them have such a well-designed deployment model that they\nmating release can go a long way toward increasing the speed of your microservice\nNo matter the speed or cost of solutions, it is also important to build systems that can\nGoals and Principles \na good set of tools for enabling visibility during the coding process.\nconvert those goals into a set of actionable principles.\nAlong with a set of goals for a microservice approach, it is important to have a set of\nful microservice architecture is Netflix.\nAdrian left Netflix and has continued presenting on microservices,\nGoals and Principles \neach released component is immutable, a new version of the service is introduced\nThe Netflix microservice architecture arises because of separation of concerns\n(SoC) in the engineering team organization.\nEach team owns a group of services.\ncontained cells of engineers will naturally build what is now called a microservice\n3. Design and build software, even operating systems, to be tried early, ideally\nHaving a set of principles to guide software developers and architects makes a lot of\nThere is no one set of principles that matches every company.\nEach organization needs to create a set that works for their company.\nMany microservice implementations adopt the essential message—“do one thing\nadditional principle when implementing microservices.\na new microservice component rather than attempt to take an existing compo‐\nAnother important principle for Unix developers is the notion that one program’s\ncommand-line tools together to create a “solution.” This means humans don’t\nGoals and Principles \nHuman interaction isn’t something that microservice components need to deal\nopment process can go a long way toward increasing the speed at which change\nAdopting the point of view that your microservice components should be “tried\nThese tools were created in order to reach a goal.\nThis is also an important principle for microservice archi‐\ncreated their own developer and deployment tool chains in order to improve\nAlong with a set of general goals and concrete principles, you’ll need tangible tools to\nmake them real—a platform with which to make your microservice environment a\nFrom a microservice architecture perspective, good platforms increase the\nFor example, the principle of immutability primarily improves the safety of changes\ntheir microservice platforms.\nown microservice environment.\nInstead of focusing on a single existing company’s platform, we’ll look at a general\nmodel for microservice platforms.\nHe outlined a set of capabilities that he said all microservice\nIt’s common in large enterprises to create a shared set of services for everyone to use.\nimplemented infrastructure is another example of shared services.\nShared capabilities are platform services that all teams use.\nthings like container technology, policy enforcement, service orchestration/interop,\nand data storage services.\nEssentially, these are all services that are provided to every team in the organization.\nIt is important to note that shared services does not mean shared\nJust because all the teams use a single type\nmicroservices goal of change safety.\ncentric companies, capability reuse is less important than speed of delivery.\nall things in the microservices way you will need to experiment with different forms\nThe following is a quick rundown of what shared services platforms usually provide:\nIn some companies there is a team of people who are\nready for use by application teams.\ngood idea to treat this as a shared service that all teams learn to use.\nthose available to all your developer teams.\nanother one that is commonly shared across all teams.\nMany of the flagship microservice companies (e.g., Netflix and\nPlatform-level security is another shared service.\nThese are services that are used to enforce company-specific patterns or\nof services designed to purposely cause problems on the network (simulate miss‐\nFor example, Etsy created (and open sourced) a tool\nmonitors or postmortem analysis, policy services ensure that varying teams\nLocal capabilities are the ones that are selected and maintained at the team or group\nOne of the primary goals of the local capabilities set is to help teams become\nAlso, it is common to allow teams to make their own determination on which\nSometimes these tools are created in-house (even by the same team).\nFinally, it is important that the team making the decision is also the one taking\nFor example, Netflix created a tool to make it easy for teams to spin up Amazon\nmachine images (or AMIs) called Aminator, and another tool to make deploying\nDev teams don’t need to rely on\nHere’s a rundown of the common local capabilities for microservice environments:\nA pattern found in many organizations using microservices is the ability roll out\ntool lets teams use configuration files to route traffic from the “current” set of\nservices to the “newly deployed” set of services in a controlled way.\nThese tools make it possible to build and release services that,\nto abstract the exact location of services allows various teams to make changes to\nother team’s existing running code.\nThere are popular open source services like Netty (created by JBoss) and\nAlong with establishing goals and principles and arming your organization with the\nright tools for managing platform, code, and runtime environments, there is another\nThe code your team produces is the result of\nSo, how does culture affect team output?\nAnd, if it does, what kinds of team culture\nimprove team performance and work quality?\nthat you should consider as a foundation for your microservice efforts:\nResearch shows that the way your teams communicate (both to each other and to\nother teams) has a direct measurable effect on the quality of your software.\nThe size of your teams also has an effect on output.\nMore people on the team\nAnother key point in Conway’s article is that “the very act of organizing a team means\ncertain design decisions have already been made.” The process of deciding things like\nConway’s law when setting up your team structure for a software project (sometimes\ncoordination requirements for a software project, you can set up your teams to make\nwhat “tunable” elements can we use to improve the alignment of our team structures\nto meet our goals for increasing speed, resilience, and visibility for our microservice\nand needs to be kept in mind as you design your teams.\nWhen we talk to companies working in the microservices way, they commonly cite\nstreaming company, relies on a team size of around seven (what they call a [squad).\nA third important element in managing company culture is fostering innovation\nand innovative ideas is sometimes cited as a reason to adopt a microservice approach\nthing in a new way; to have new ideas about how something can be done.” It’s worth\nally thought of as an opportunity to improve what a team or company already has or\nteams).\nteams.\nCompanies we talked to enable innovation by adopting a few key principles.\nbest way to handle details within the team.\nnot control.” Team leaders are taught to provide context for the team’s work and guid‐\nance on meeting goals, but to not control what the team does.\ndecisions for [my team].\nwelfare of the company and allowing teams to act on their own within these safe\nManaging communication channels, aligning teams, and establishing a safe place to\nmicroservice-style approach to designing, implementing, and maintaining software.\nIn this chapter we’ve reviewed the common set of platform capabilities called Cock‐\ntions provide these platform capabilities to their teams.\nWe also focused on the teams\nThe way your teams communicate, their size, and the level of innovation\nSo, with these ideals in mind, what does it take to actually implement microservice\ncapabilities we discussed here as well as offer guidance on component design and\nMicroservices in Practice\nThe Microservices Way at Hootsuite\ning their application to a collection of product-oriented microservices.\nHootsuite took a design-based approach to their microservice migration from the\nThe Hootsuite team found\nthat API design guidelines helped to create a common language for this process.\ntime, Hootsuite has classified their microservices into three categories: data services\ndesign approach continues to evolve as their microservice implementation matures.\nHootsuite’s organization includes product-aligned teams made up of five to seven\nworks and tooling, and has visibility across the organization.\nany governance checkpoints that intrude on a team’s development process.\nthey have a set of community-defined principles and tools that guide microservice\nmicroservices way.\nFittingly given the company’s origin, Hootsuite has created a goal-oriented toolset for\nmicroservices.\nthe Play framework useful in building their individual services, and leverage both\nThe tooling extends to the design\nTo make sure developers know what services and components are\navailable for use in service development, the Hootsuite team created a tool to dynam‐\nHootsuite’s evolution to a microservice architecture continues.\ndozen microservices in production with many more on the way.\nembracing an approach to microservices adoption that cuts across their architecture,\norganization, culture, processes, and tools, they have been able to improve their deliv‐\nService Design\nwhen we talk about microservice architecture—is the design of the actual microser‐\nof our microservice system and do the actual work of implementing your solution\nImplementing systems that contain a large number of small service compo‐\nnents is a challenge so we’ll devote an entire chapter to a set of tools and processes\nof the more challenging questions that teams adopting microservice architecture face\nare how to properly size microservices (“how micro is micro?”) and how to properly\ndeal with data persistence in order to avoid sharing of data across services.\nwhen we talk with people who are designing and implementing microservices are\nthings like support for asynchronous messaging, transaction modeling, and dealing\nwith dependencies in a microservice environment.\nIn this chapter, we will cover microservice boundaries, looking at just how “micro” a\nservice should be and why.\nWe will explore microservice interfaces (APIs), discussing\nthe importance of evolvable, message-oriented APIs for microservices and how they\napproaches for microservices, exploring the power of shifting from data-centric and\nstate-capturing models toward capability-driven and event-sourcing-oriented ones.\ncan improve the granularity of data services, while maintaining sufficient speed and\ncomes to designing and building microservice components.\nLet’s get started with the big one: “What is the optimal size of a microservice?”\nMicroservice Boundaries\nSo just how micro should a microservice be?\nmind, such as lines of code in a microservice or the size of a team working on one are\ncontext of who is implementing the service and, more importantly, how the service is\na quality of each microservice—the use case or context in which the component will\nMicroservice Boundaries and Domain-Driven Design\nEssentially, what we see people doing when they introduce the microservices way into\nChapter 5: Service Design\nwritten in the US, while others may be developed and maintained by software teams\ncontained subsystem for development to a team that is located in one place is well-\nCan a software development team\ncess, he offers a model-centric view of software system design.\nin this book, models are a great way to view a system.\nMicroservice Boundaries \nIn DDD, Evans points out that teams need to be very careful when combining con‐\nThe microservices\nway attempts to break large components (models) into smaller ones in order to\nmicroservice architecture is an architectural style that is highly compatible with the\nbounded contexts is an effective way of designing microservice boundaries.\nbook Building Microservices, Sam Newman states:\nIf our service boundaries align to the bounded contexts in our domain, and our micro‐\nservices represent those bounded contexts, we are off to an excellent start in ensuring\nNewman makes an important point here: bounded contexts represent autonomous\nate starting point for identifying the dividing lines for microservices.\nDDD and bounded contexts approaches, the chances of two microservices needing to\nshare a model and the corresponding data space, or ending up having tight coupling,\nAvoiding data sharing improves our ability to treat each microservice\nUsing DDD and bounded contexts is an excellent process for designing components.\nChapter 5: Service Design\ntant aspect of designing microservice components—smaller is better.\nDelivery at the code, project, and deployment level, it makes sense to think about\nMicroservice Boundaries \nmicroservice.\nproblem if bounded contexts are our only tool for sizing microservices, because\nIn DDD, we need a shared understanding and way of expressing the domain\nThis shared understanding should provide business and tech teams with a\nJust as DDD tells us to use one model within a component (the\nOur technical need for the size of a service can sometimes be different\ncontexts are a great start, but we need more tools in our toolbelt if we are to size\nmicroservices efficiently.\nparticular when we look into data storage for microservices.\nChapter 5: Service Design\nAPI Design for Microservices\nWhen considering microservice component boundaries, the source code itself is only\nMicroservice components only become valuable when they can\nlarity of our code we need to make sure that our APIs, the component interfaces, are\nOtherwise, we won’t be able to deploy two microservices inde‐\nWe see two practices in crafting APIs for microservices worth mentioning here:\nneed to apply the same efforts to the shared interfaces between components.\nmicroservice APIs. The notion of messaging as a way to share information between\nAll of the companies we talked with about microservice component design men‐\ntioned the notion of messaging as a key design practice.\nmessage content as a way of refactoring components safely over time.\nlearned here is that for far too long, developers have viewed APIs and web services as\nAPI Design for Microservices \nmessages passed between components contain more than just data.\nto design proper APIs in microservice architecture, it helps to get familiar with the\nadopt and implement microservice-style systems, puts it this way:\nChapter 5: Service Design\ncode (maybe lightly organizing them in functions), but then object-oriented design\ndata and behavior?” In essence, hypermedia style has very similar approach but for\nAPI design.\nTo learn more about hypermedia APIs and how to design them,\nwhile it talks about hypermedia APIs. Exposing affordances makes sense for services that communicate over the Web. If we\nAPI Design for Microservices \nservices.\nData and Microservices\ndesigning the pertinent data models.\nfirst task most software engineers will complete is identifying entities and designing\nThis is an efficient way of designing centralized sys‐\ndata-centric design is not a good way to implement distributed systems—especially\nsystems that rely on independently deployable microservices.\nThe first step in breaking the data-centric habit is to rethink our system designs.\nneed to stop designing systems as a collection of data services and instead use busi‐\nness capabilities as the design element, or as Sam Newman notes in his book:\nYou should be thinking not in terms of data that is shared, but about the capabilities\ncontext do?” and then “So what data does it need to do that?”\n—Sam Newman, author of Building Microservices\nIt turns out that capabilities-centric design is more suitable for microservices than a\nmore traditional, data-centric design.\nShipping, Inc. To demonstrate some of the practical aspects of microservice architecture, through‐\ndesigning a microservice architecture for a fledgling shipment company, aptly named\ntions will get the data and functionality they need from a set of microservices.\nChapter 5: Service Design\nLet’s imagine that Shipping, Inc.’s accounting and sales subsystems (microservices)\ncentric design would create a table or set of tables in a database that contain exchange\nThis solution has significant issues—two microservices depend on the design of the\nindependent microservice (currency rates) serving the sales and accounting micro‐\nissue) without any of the service’s consumers noticing the change or needing to\nAPI design, in general.\nA capabilities-centric API design is\nusually a good approach, but in the case of microservices it is not just a smart design\nMuch like bounded context analysis, capabilities-oriented design is a crucial techni‐\ndata inside a microservice and call it a day.\nmodels, bounded contexts, and capabilities.\nShould reporting-oriented microservices\nbe allowed to share tables with other microservices?\nLet’s see what techniques we can use to avoid data-sharing in complex use cases.\nfirst one we will look at is event sourcing, a powerful data-modeling methodology that\ncan help us avoid data-sharing in microservices, even in very complicated cases.\nData and Microservices \nThis modeling approach is called event sourcing.\nChapter 5: Service Design\nData and Microservices \nData model for Shipping, Inc. using event sourcing\nChapter 5: Service Design\na very similar view to another technology closely related to microservices: containers.\nBut let’s get back to microservices.\ntion challenges of microservice architecture?\ndesign pattern, CQRS, to complement event sourcing and we will be well on our way\ntoward being able to design effective data storage for microservices with data persis‐\ntence models that can avoid data sharing at even very small microservice sizes.\nSystem Model for Shipping, Inc. As we noted earlier, a good start for a microservice system design is to identify boun‐\nData and Microservices \nHigh-level context map for Shipping, Inc.’s microservice architecture\nIf we were to implement a data model of this application using a traditional, struc‐\ntural, CRUD-oriented model we would immediately run into data sharing and tight-\nManagement bounded context (and its corresponding microservice) can instead\nother contexts will build their own data indexes (projections), never needing direct\naccess to any data owned and managed by the Shipment Management microservice.\nChapter 5: Service Design",
+      "keywords": [
+        "system",
+        "microservice",
+        "design",
+        "Microservices System Designer",
+        "service design",
+        "services",
+        "Microservices Design Process",
+        "system design",
+        "microservice architecture",
+        "microservices system",
+        "team",
+        "data",
+        "API design",
+        "principles"
+      ],
+      "concepts": [
+        "services",
+        "microservice",
+        "designers",
+        "teams",
+        "data",
+        "principles",
+        "api",
+        "apis",
+        "goal",
+        "calls"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 6,
+          "title": "",
+          "score": 0.725,
+          "base_score": 0.725,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.673,
+          "base_score": 0.673,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.617,
+          "base_score": 0.617,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.61,
+          "base_score": 0.61,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.564,
+          "base_score": 0.564,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "design",
+          "data",
+          "team",
+          "teams",
+          "services"
+        ],
+        "semantic": [],
+        "merged": [
+          "design",
+          "data",
+          "team",
+          "teams",
+          "services"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6506538907274324,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:07:41.313098+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Adopting Microservices in Practice",
+      "start_page": 119,
+      "end_page": 130,
+      "summary": "Adopting Microservices in Practice\nthe microservices style.\nDoing things in the microservices way can apply to almost any organization.\ncan identify the principles and practices from our showcase microservices organiza‐\nexisting legacy of culture, organizational structure, process, tools, services, and archi‐\nYou’re not going to be designing an optimized microservice-centric system\nTo adopt the microservices way of building applications, you’ll need a\nyou will face when implementing a microservice-style architecture within an existing\norganization.\ncompanies have when wrestling with a microservices implementation.\nown microservice progress.\nSolution architecture is distinct from individual service design elements because it\nprobably can’t box up 50 changes to a single service component in a week.\nmost organizations have a practice of limiting the number of changes.\nexample, tells teams to make only one significant change per release.\nyour team needs to refactor some of the internal code and start using a new data store\nIf you release a component that contains multiple changes, the uncertainty is\nBased on this, if you release a component that contains 5 changes\nWhen do I know our microservice transformation is done?\nthat is also true for one built in the microservices way.\nadvantages of microservices is that change over time is not as costly or dangerous as\nChapter 7: Adopting Microservices in Practice\nSince doing things in the microservices way means lots of small releases over time,\nFrom a microservice system perspective, organizational design includes the structure,\nA good microservice\nsystem designer understands the implications of changing these organizational prop‐\nerties and knows that good service design is a byproduct of good organizational\nHow do I know if my organization is ready for microservices?\nGiven this progression, these organizations landed on microservice\nHowever, many organizations now evaluating microservice architecture are not fol‐\nThe ideal organization for microservices has small, empowered teams responsible for\nThe teams also need the right skills,\ning to apply microservice architecture.\n...the challenge is to find small changes that can unfold in a way that creates large\nChapter 7: Adopting Microservices in Practice\nMaking changes to a working organization is\nchange.\nIn order to apply a refactoring strategy to the organizational design, you’ll need to:\nFor the microservice system we\nchange.\non the changes that occur the most often for the components that are the most vola‐\nple changes to be introduced at the same time due to resource availability or a need\nCan I do microservices in a project-centric culture?\nA hallmark of a microservices organization is that the teams that implement a feature,\napplication, or service continue to support, improve, and work on the code for its\naddress the same problem, or make additional changes to the same component, it\nIn truth, it is quite difficult to adopt the microservice style if you need to operate in\nCan I do microservices with outsourced workers?\nture, a microservice system may lend itself well to being developed by an external\norganization.\nChapter 7: Adopting Microservices in Practice\nprocesses of service teams (containers and APIs), the outsourced development team\nconforms to the principles that exemplify the microservices way: the teams should be\nIn addition to team composition, the microservice designer should acknowledge that\nsourced team, nor can the buying organization avoid having their culture changed by\nUltimately, the selection process for a microservices outsourcing model cannot be\nincentivize the team dynamic that works best for building applications the microser‐\nIn microservices systems, this usually includes tooling and\nWhat kinds of tools and technology are required for microservices?\nChapter 4 introduced the importance of the microservices platform and Chapters 5-6\nyou’ll need if you want to improve your chances of succeeding with microservices.\nThe ideal technological environment for microservices features cloud infrastructure,\nThe ideal programming languages for microservices are API\norganization.\nalso lead to skill challenges in the organization if every team is required to cultivate\nmake changes.\nmicroservices?\nWhile we talked about the principles that underpin good microservices practices in\nthe companies that are known for doing microservices well build their software.\nThe ideal software development lifecycle for microservices is based on a product\nAttempting to apply microservice architecture in a differing environment\nof services, making it difficult to manage the different change rates of those services\nChapter 7: Adopting Microservices in Practice\nHow do I govern a microservice system?\nsecure an application you can apply all of the same mechanisms to a microservice\nAssigning a separate team to manage and implement such a service also\nof services, but as more services are introduced and as those services change, the\ncontrol team’s capacity to roll out changes in time.\nto trade the speed of change for improved system safety and security.\nThe implication here is that the individual microservice teams will need to man‐\nThe organization may standardize on the particular components\nand libraries that are to be used in every microservice, but it will be the teams\nmicroservice architecture.\nfor these security components to be in place, but it is up to a subsystem service\nteam to own and manage the configuration for the security component.\nSecurity will always be an important design consideration for your microservice\nwill not impede the efforts of the rest of the service teams in the system.\never, a commonly used service becomes a problem if the cost of implementing,\nvice teams to make changes to the system.\nIn a microservice system, the services form the atomic building blocks from which\nwe’ve identified when implementing well-designed microservices and APIs. Should all microservices be coded in the same programming\nChapter 7: Adopting Microservices in Practice\nOver the life of a microservice implementation teams will come and go, and some‐\ntimes a team might disband and this can result in an “orphaned” microservice.\nWhen a team is about to disband, that team needs to designate a new “owner” of the\nmicroservice component.\nIt is unlikely that the microservice system you design will be exactly like the ones that\nmicroservices correctly.\nenough for you to call whatever you do a microservice architecture.\nthat many implementers face when introducing the microservice style to their organi‐\nBut it is important that you decide if the benefits of a microservice system\norganization needs to build applications in the microservices way.",
+      "keywords": [
+        "Microservices",
+        "microservice system",
+        "system",
+        "microservice architecture",
+        "organization",
+        "teams",
+        "Adopting Microservices",
+        "services",
+        "organizational",
+        "design",
+        "architecture",
+        "organizational design",
+        "component",
+        "security",
+        "release"
+      ],
+      "concepts": [
+        "teams",
+        "microservices",
+        "changes",
+        "changing",
+        "services",
+        "organizations",
+        "organization",
+        "organism",
+        "process",
+        "processes"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.838,
+          "base_score": 0.688,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 6,
+          "title": "",
+          "score": 0.799,
+          "base_score": 0.649,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 8,
+          "title": "",
+          "score": 0.666,
+          "base_score": 0.666,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.645,
+          "base_score": 0.645,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 2,
+          "title": "",
+          "score": 0.64,
+          "base_score": 0.64,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "team",
+          "changes",
+          "teams",
+          "microservices practice",
+          "organization"
+        ],
+        "semantic": [],
+        "merged": [
+          "team",
+          "changes",
+          "teams",
+          "microservices practice",
+          "organization"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6929306810717258,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:07:41.313126+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "Epilogue",
+      "start_page": 131,
+      "end_page": 144,
+      "summary": "The best software architecture “knows” what changes often and makes that easy.\n—Paul Clements, author of Software Architecture in Practice\nWhile this book bears the title microservice architecture, you have likely noticed that\nSpecifically, we’ve focused on designing systems\nthat make change easier.\nWhen we work in a business environment where the goals and processes change fre‐\nquently, our software architecture needs to reflect that.\ntem—then you’re making change easier and avoiding that widening gap between\nMicroservices are the small interoperable parts and microservice architecture is the\nengineering practice that can make change easier.\nharmonize the speed of change with the need for system safety is what we call the\nmicroservices way.\nAs someone responsible for making sure IT practices keep in alignment with business\nimplement as you learn from each attempt and gain experience in the microservices\nHowever, the principles that make microservices special—things\nlike immutability and modularity, speed and safety, resilience, and agility—are well-\nThe world around us is changing.\nmean that the range and types of tools available in the future may change in profound\nThese potential changes can alter the implementation details and processes you\nAnd, even with all the possibilities of rapid change ahead, we think the microservices\nchange around you, you can use the way to identify the best of the new principles and\npatterns that will inevitably emerge from these important changes.\nhave the opportunity to embrace change and more easily adapt to new ways of\ndesigning, building, and managing the information systems of the future.\nNothing endures but change.\nChapter 8: Epilogue\nMicroservice Architecture Reading List\nMicroservices 101\nvice architecture:\n• Lewis, James, and Martin Fowler.\n• Newman, Sam. Building Microservices.\ncomes to implementing a microservice architecture:\n• Cockcroft, Adrian.\n• Fowler, Martin.\n• Fowler, Martin.\n• Humble, Jez.\n• Amazon Web Services\n• Autoscout24\n• CA Technologies (Rally)\n• Disney\n• Gilt\n— http://www.infoq.com/presentations/microservices-dependencies\n— http://www.infoq.com/news/2015/04/scaling-microservices-gilt\n• ITV\n• Jet.com\n• Netflix\n— https://yow.eventer.com/yow-2013-1080/cloud-native-architecture-at-netflix-\n• Nike\n• SoundCloud\n— http://www.infoq.com/articles/microservices-evolution-soundcloud\n— http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html\n• Spotify\nAppendix A: Microservice Architecture Reading List\narchitecture:\n• Arthur, W.\n• Brooks, Fred.\n• Conway, Mel.\n• Evans, Eric.\nDomain-Driven Design: Tackling Complexity in the Heart of Software.\n• Mintzberg, Henry.\nStructure in Fives: Designing Effective Organizations.\n• Morgan, Gareth.\n• Ries, Eric.\nMicroservice Architecture Reading List \nadaptability, change and, 29\nand size of teams at, 56\nAPI design\narchitectural policy services, 51\nautonomy of microservices teams, 8\non size of teams at Amazon, 56\nand domain-driven design, 62\nin service design, 62-66\non microservices, 3\ncapabilities-oriented design, 71\nchange\ncentrality to microservice architecture, 115\non microservices, 6\non cohesive architecture, 18\ncost reduction, as goal of microservices, 43\nintroducing change to, 107-108\ndata, service design and, 70-78\ndata-centric design, 70\nin service design, 81-86\ndesign process, 33-38\ndesigner’s position in the organization, 38\nsketching the system design, 35\ndesign, 63\nfor microservices way, 42\non change, 116\nmicroservices way at, 59\non Unix architecture principles, 46\nmessage-oriented API design, 67\nmicroservice (defined), 6\nmicroservice architecture\nservice-oriented architecture vs., 92\nmicroservice concerns\nmicroservice system design model, 27\nmicroservices way\nand safety of change, 9\nand speed of change, 9\non changes, 107\nmicroservices definition, 6\nmonitoring/alerting, 101\norganizational design\nsystem designers position in, 38\nprinciples\ndesign (see design process)\nstandardization of, 31\nof change, 9\nmicroservices and, 4\nservice design, 61-87\nAPI design, 67-70\nservice-oriented architecture (SOA), microser‐\nvice architecture vs., 92\narchitectural policy services, 51\nand dependencies in service design, 81-86\ndata in service design, 70\nsolution architecture\nof change, 9\nstandardization\non design process, 33\nsystem designers, 38\nsystematization of microservice architecture, 18\nsystems approach to microservices, 25-33\nand organizational design, 28\nand solution architecture, 28\nembracing change, 29\nsystems design, 25-39\nand systems approach to microservices,\nmicroservice system design model, 27\nmicroservices design process, 33-38\norganizational design, 28\non microservice architecture at Gilt, 14\narchitecture benefits, 13-15\non Amazon Web Services architecture, 13\non cohesive architecture, 18\nAt any given time he can be found designing and implementing APIs, discus‐\nsing distributed systems architecture, and expressing opinions about product\nRonnie Mitra is the Director of Design at CA’s API Academy, and is focused on help‐\ning people design better distributed systems.\norganizations adopt a design-centric approach to interface design and a system-\ncentric approach to application architecture.\nance on strategy, architecture, and design for APIs. In his role of Director of Architecture for the API Academy, Mike Amundsen heads\nup the API Architecture and Design Practice in North America.\nThe animal on the cover of Microservice Architecture is a cowry snail, an ocean-",
+      "keywords": [
+        "microservice architecture",
+        "microservice",
+        "Microservice Architecture Reading",
+        "architecture",
+        "microservice system design",
+        "Design",
+        "system",
+        "service design",
+        "API",
+        "API design",
+        "system design",
+        "Architecture Reading List",
+        "API gateway",
+        "API Academy",
+        "software"
+      ],
+      "concepts": [
+        "microservice",
+        "architectural",
+        "architectures",
+        "changes",
+        "changing",
+        "design",
+        "services",
+        "api",
+        "apis",
+        "principles"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Microservice Architecture",
+          "chapter": 2,
+          "title": "",
+          "score": 0.723,
+          "base_score": 0.723,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 1,
+          "title": "",
+          "score": 0.7,
+          "base_score": 0.7,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 7,
+          "title": "",
+          "score": 0.666,
+          "base_score": 0.666,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 5,
+          "title": "",
+          "score": 0.64,
+          "base_score": 0.64,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Microservice Architecture",
+          "chapter": 3,
+          "title": "",
+          "score": 0.616,
+          "base_score": 0.616,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "design",
+          "change",
+          "api",
+          "microservice architecture",
+          "com"
+        ],
+        "semantic": [],
+        "merged": [
+          "design",
+          "change",
+          "api",
+          "microservice architecture",
+          "com"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.6955601498110595,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:07:41.313140+00:00"
+      }
+    }
+  ],
+  "total_chapters": 8,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Microservice Architecture_metadata.json",
+    "enrichment_date": "2025-12-17T23:07:41.323078+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3669.787794000513,
+    "total_similar_chapters": 40
+  }
+}

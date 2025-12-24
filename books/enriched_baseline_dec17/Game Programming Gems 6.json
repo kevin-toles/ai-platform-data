@@ -1,0 +1,3018 @@
+{
+  "metadata": {
+    "title": "Game Programming Gems 6",
+    "source_file": "Game Programming Gems 6_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Segment 1 (pages 1-18)",
+      "start_page": 1,
+      "end_page": 18,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 2,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.134,
+          "base_score": 0.984,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 14,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 18",
+          "18 lrn",
+          "18",
+          "segment pages"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 18",
+          "18 lrn",
+          "18",
+          "segment pages"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.943824340048226,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582443+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "Segment 2 (pages 19-36)",
+      "start_page": 19,
+      "end_page": 36,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.142,
+          "base_score": 0.992,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.14,
+          "base_score": 0.99,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 1,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 19",
+          "36 lrn",
+          "19 36",
+          "36",
+          "19"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 19",
+          "36 lrn",
+          "19 36",
+          "36",
+          "19"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9452879254935123,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582522+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "Segment 3 (pages 37-54)",
+      "start_page": 37,
+      "end_page": 54,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 0.983,
+          "base_score": 0.983,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 0.982,
+          "base_score": 0.982,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 2,
+          "title": "",
+          "score": 0.982,
+          "base_score": 0.982,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 0.982,
+          "base_score": 0.982,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 0.982,
+          "base_score": 0.982,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "37",
+          "54 lrn",
+          "54",
+          "37 54",
+          "pages 37"
+        ],
+        "semantic": [],
+        "merged": [
+          "37",
+          "54 lrn",
+          "54",
+          "37 54",
+          "pages 37"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.944930828042134,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:05:36.582564+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "Segment 4 (pages 55-72)",
+      "start_page": 55,
+      "end_page": 72,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.135,
+          "base_score": 0.985,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 55",
+          "72 lrn",
+          "72",
+          "55",
+          "55 72"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 55",
+          "72 lrn",
+          "72",
+          "55",
+          "55 72"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9461882806735665,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582603+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Segment 5 (pages 73-90)",
+      "start_page": 73,
+      "end_page": 90,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 4,
+          "title": "",
+          "score": 1.135,
+          "base_score": 0.985,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 9,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "90",
+          "pages 73",
+          "90 lrn",
+          "73",
+          "73 90"
+        ],
+        "semantic": [],
+        "merged": [
+          "90",
+          "pages 73",
+          "90 lrn",
+          "73",
+          "73 90"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9460819133301598,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582655+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Segment 6 (pages 91-108)",
+      "start_page": 91,
+      "end_page": 108,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.138,
+          "base_score": 0.988,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 4,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "108",
+          "108 lrn",
+          "91",
+          "91 108",
+          "pages 91"
+        ],
+        "semantic": [],
+        "merged": [
+          "108",
+          "108 lrn",
+          "91",
+          "91 108",
+          "pages 91"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.952413865710439,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582694+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Segment 7 (pages 109-126)",
+      "start_page": 109,
+      "end_page": 126,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.135,
+          "base_score": 0.985,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 4,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "109",
+          "109 126",
+          "pages 109",
+          "126",
+          "126 lrn"
+        ],
+        "semantic": [],
+        "merged": [
+          "109",
+          "109 126",
+          "pages 109",
+          "126",
+          "126 lrn"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9498866242075946,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582733+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "Segment 8 (pages 127-144)",
+      "start_page": 127,
+      "end_page": 144,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 10,
+          "title": "",
+          "score": 1.103,
+          "base_score": 0.953,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 18,
+          "title": "",
+          "score": 1.103,
+          "base_score": 0.953,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 20,
+          "title": "",
+          "score": 1.103,
+          "base_score": 0.953,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.099,
+          "base_score": 0.949,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 9,
+          "title": "",
+          "score": 1.098,
+          "base_score": 0.948,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "127 144",
+          "pages 127",
+          "144 lrn",
+          "144",
+          "127"
+        ],
+        "semantic": [],
+        "merged": [
+          "127 144",
+          "pages 127",
+          "144 lrn",
+          "144",
+          "127"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9116660080344858,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582771+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "Segment 9 (pages 145-162)",
+      "start_page": 145,
+      "end_page": 162,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.135,
+          "base_score": 0.985,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 10,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.129,
+          "base_score": 0.979,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.126,
+          "base_score": 0.976,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "162",
+          "162 lrn",
+          "145 162",
+          "pages 145",
+          "145"
+        ],
+        "semantic": [],
+        "merged": [
+          "162",
+          "162 lrn",
+          "145 162",
+          "pages 145",
+          "145"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9393266143686329,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582810+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "Segment 10 (pages 163-180)",
+      "start_page": 163,
+      "end_page": 180,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 9,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 20,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.129,
+          "base_score": 0.979,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.129,
+          "base_score": 0.979,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "10",
+          "180 lrn",
+          "10 pages",
+          "pages 163",
+          "163"
+        ],
+        "semantic": [],
+        "merged": [
+          "10",
+          "180 lrn",
+          "10 pages",
+          "pages 163",
+          "163"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9398951229009143,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582857+00:00"
+      }
+    },
+    {
+      "chapter_number": 11,
+      "title": "Segment 11 (pages 181-198)",
+      "start_page": 181,
+      "end_page": 198,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 14,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.14,
+          "base_score": 0.99,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 181",
+          "segment 11",
+          "11",
+          "11 pages",
+          "198 lrn"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 181",
+          "segment 11",
+          "11",
+          "11 pages",
+          "198 lrn"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9510033805646403,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582923+00:00"
+      }
+    },
+    {
+      "chapter_number": 12,
+      "title": "Segment 12 (pages 199-216)",
+      "start_page": 199,
+      "end_page": 216,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 11,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 14,
+          "title": "",
+          "score": 1.134,
+          "base_score": 0.984,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 16,
+          "title": "",
+          "score": 1.132,
+          "base_score": 0.982,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 199",
+          "12",
+          "216 lrn",
+          "199 216",
+          "199"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 199",
+          "12",
+          "216 lrn",
+          "199 216",
+          "199"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9476641352738578,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582962+00:00"
+      }
+    },
+    {
+      "chapter_number": 13,
+      "title": "Segment 13 (pages 217-234)",
+      "start_page": 217,
+      "end_page": 234,
+      "summary": "A striking feature of subsumption architecture design is that we split the agent not\ninto layers corresponding to information flow, but rather make a decomposition based\non the desired class of behaviors that we want the agent to have—its competences.\ntion based on program flow would be as shown in Figure 3.3.1.\nThe planner sends a predetermined plan to executor modules that will carry out the\nnew percepts and actions are added, the planner may face a combinatorial explosion.\nExecute Plan\nFIGURE 3.3.1 Decomposition of a shooter agent based on program flow.\nA decomposition based on competences is shown in Figure 3.3.2.\nReplanning is also not a problem, as the system is fast and all lay-",
+      "keywords": [
+        "LRN",
+        "LRN Section",
+        "Artif bot",
+        "Unreal Tournament",
+        "Section",
+        "Artif",
+        "Subsumption Architecture",
+        "plan",
+        "based",
+        "agent",
+        "Architecture",
+        "Quake",
+        "decomposition based",
+        "decomposition",
+        "Subsumption"
+      ],
+      "concepts": [
+        "architecture",
+        "agents",
+        "plan",
+        "layers",
+        "ers",
+        "robots",
+        "office",
+        "information",
+        "flow",
+        "discussed"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 35,
+          "title": "",
+          "score": 0.341,
+          "base_score": 0.191,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "based",
+          "decomposition",
+          "agent",
+          "architecture",
+          "subsumption"
+        ],
+        "semantic": [],
+        "merged": [
+          "based",
+          "decomposition",
+          "agent",
+          "architecture",
+          "subsumption"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.1615304491434597,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.582987+00:00"
+      }
+    },
+    {
+      "chapter_number": 14,
+      "title": "Segment 14 (pages 235-252)",
+      "start_page": 235,
+      "end_page": 252,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.142,
+          "base_score": 0.992,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 16,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 11,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "235",
+          "pages 235",
+          "252 lrn",
+          "252",
+          "segment 14"
+        ],
+        "semantic": [],
+        "merged": [
+          "235",
+          "pages 235",
+          "252 lrn",
+          "252",
+          "segment 14"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9512944607946898,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583034+00:00"
+      }
+    },
+    {
+      "chapter_number": 15,
+      "title": "Segment 15 (pages 253-270)",
+      "start_page": 253,
+      "end_page": 270,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 18,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.133,
+          "base_score": 0.983,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 253",
+          "270 lrn",
+          "segment 15",
+          "253",
+          "253 270"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 253",
+          "270 lrn",
+          "segment 15",
+          "253",
+          "253 270"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.949029189914574,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583073+00:00"
+      }
+    },
+    {
+      "chapter_number": 16,
+      "title": "Segment 16 (pages 271-288)",
+      "start_page": 271,
+      "end_page": 288,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.142,
+          "base_score": 0.992,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 14,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.14,
+          "base_score": 0.99,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.14,
+          "base_score": 0.99,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.14,
+          "base_score": 0.99,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "288",
+          "16 pages",
+          "16",
+          "pages 271",
+          "segment 16"
+        ],
+        "semantic": [],
+        "merged": [
+          "288",
+          "16 pages",
+          "16",
+          "pages 271",
+          "segment 16"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9514360230100886,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583113+00:00"
+      }
+    },
+    {
+      "chapter_number": 17,
+      "title": "Segment 17 (pages 289-306)",
+      "start_page": 289,
+      "end_page": 306,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 18,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 15,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.138,
+          "base_score": 0.988,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "306 lrn",
+          "17",
+          "306",
+          "pages 289",
+          "17 pages"
+        ],
+        "semantic": [],
+        "merged": [
+          "306 lrn",
+          "17",
+          "306",
+          "pages 289",
+          "17 pages"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9521046925546052,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583151+00:00"
+      }
+    },
+    {
+      "chapter_number": 18,
+      "title": "Segment 18 (pages 307-324)",
+      "start_page": 307,
+      "end_page": 324,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.139,
+          "base_score": 0.989,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 15,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.135,
+          "base_score": 0.985,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 7,
+          "title": "",
+          "score": 1.128,
+          "base_score": 0.978,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "307 324",
+          "segment 18",
+          "307",
+          "324",
+          "pages 307"
+        ],
+        "semantic": [],
+        "merged": [
+          "307 324",
+          "segment 18",
+          "307",
+          "324",
+          "pages 307"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9489904060718092,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583189+00:00"
+      }
+    },
+    {
+      "chapter_number": 19,
+      "title": "Segment 19 (pages 325-342)",
+      "start_page": 325,
+      "end_page": 342,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 2,
+          "title": "",
+          "score": 1.142,
+          "base_score": 0.992,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "342",
+          "segment 19",
+          "19 pages",
+          "pages 325",
+          "325"
+        ],
+        "semantic": [],
+        "merged": [
+          "342",
+          "segment 19",
+          "19 pages",
+          "pages 325",
+          "325"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9497373943743246,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583228+00:00"
+      }
+    },
+    {
+      "chapter_number": 20,
+      "title": "Segment 20 (pages 343-360)",
+      "start_page": 343,
+      "end_page": 360,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.131,
+          "base_score": 0.981,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 10,
+          "title": "",
+          "score": 1.13,
+          "base_score": 0.98,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 18,
+          "title": "",
+          "score": 1.128,
+          "base_score": 0.978,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 5,
+          "title": "",
+          "score": 1.127,
+          "base_score": 0.977,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "20 pages",
+          "20",
+          "360 lrn",
+          "360",
+          "pages 343"
+        ],
+        "semantic": [],
+        "merged": [
+          "20 pages",
+          "20",
+          "360 lrn",
+          "360",
+          "pages 343"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9442516268162165,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583267+00:00"
+      }
+    },
+    {
+      "chapter_number": 21,
+      "title": "Segment 21 (pages 361-378)",
+      "start_page": 361,
+      "end_page": 378,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "361",
+          "21",
+          "21 pages",
+          "378",
+          "378 lrn"
+        ],
+        "semantic": [],
+        "merged": [
+          "361",
+          "21",
+          "21 pages",
+          "378",
+          "378 lrn"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9506334026690795,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583305+00:00"
+      }
+    },
+    {
+      "chapter_number": 22,
+      "title": "Segment 22 (pages 379-396)",
+      "start_page": 379,
+      "end_page": 396,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.142,
+          "base_score": 0.992,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "segment 22",
+          "379",
+          "379 396",
+          "396",
+          "22"
+        ],
+        "semantic": [],
+        "merged": [
+          "segment 22",
+          "379",
+          "379 396",
+          "396",
+          "22"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9538830016094183,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583343+00:00"
+      }
+    },
+    {
+      "chapter_number": 23,
+      "title": "Segment 23 (pages 397-414)",
+      "start_page": 397,
+      "end_page": 414,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.147,
+          "base_score": 0.997,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "23 pages",
+          "segment 23",
+          "414 lrn",
+          "414",
+          "23"
+        ],
+        "semantic": [],
+        "merged": [
+          "23 pages",
+          "segment 23",
+          "414 lrn",
+          "414",
+          "23"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9517525600322155,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583381+00:00"
+      }
+    },
+    {
+      "chapter_number": 24,
+      "title": "Segment 24 (pages 415-432)",
+      "start_page": 415,
+      "end_page": 432,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 26,
+          "title": "",
+          "score": 1.138,
+          "base_score": 0.988,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 0.989,
+          "base_score": 0.989,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 0.988,
+          "base_score": 0.988,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 0.988,
+          "base_score": 0.988,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 0.987,
+          "base_score": 0.987,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 415",
+          "432 lrn",
+          "432",
+          "415 432",
+          "415"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 415",
+          "432 lrn",
+          "432",
+          "415 432",
+          "415"
+        ]
+      },
+      "topic_id": 3,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9484471867175321,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583419+00:00"
+      }
+    },
+    {
+      "chapter_number": 25,
+      "title": "Segment 25 (pages 433-450)",
+      "start_page": 433,
+      "end_page": 450,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 17,
+          "title": "",
+          "score": 1.141,
+          "base_score": 0.991,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 15,
+          "title": "",
+          "score": 1.137,
+          "base_score": 0.987,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 20,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 6,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 18,
+          "title": "",
+          "score": 1.136,
+          "base_score": 0.986,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "450",
+          "pages 433",
+          "25 pages",
+          "25",
+          "segment 25"
+        ],
+        "semantic": [],
+        "merged": [
+          "450",
+          "pages 433",
+          "25 pages",
+          "25",
+          "segment 25"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9530890729778396,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583458+00:00"
+      }
+    },
+    {
+      "chapter_number": 26,
+      "title": "Segment 26 (pages 451-468)",
+      "start_page": 451,
+      "end_page": 468,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 24,
+          "title": "",
+          "score": 1.138,
+          "base_score": 0.988,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 29,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 0.991,
+          "base_score": 0.991,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "451",
+          "451 468",
+          "468",
+          "468 lrn",
+          "26"
+        ],
+        "semantic": [],
+        "merged": [
+          "451",
+          "451 468",
+          "468",
+          "468 lrn",
+          "26"
+        ]
+      },
+      "topic_id": 3,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9497386352892206,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583496+00:00"
+      }
+    },
+    {
+      "chapter_number": 27,
+      "title": "Segment 27 (pages 469-486)",
+      "start_page": 469,
+      "end_page": 486,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.147,
+          "base_score": 0.997,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 469",
+          "segment 27",
+          "469",
+          "469 486",
+          "486"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 469",
+          "segment 27",
+          "469",
+          "469 486",
+          "486"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9506374265941937,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583552+00:00"
+      }
+    },
+    {
+      "chapter_number": 28,
+      "title": "Segment 28 (pages 487-504)",
+      "start_page": 487,
+      "end_page": 504,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 1.146,
+          "base_score": 0.996,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 23,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 1.144,
+          "base_score": 0.994,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "28",
+          "504 lrn",
+          "segment 28",
+          "487",
+          "487 504"
+        ],
+        "semantic": [],
+        "merged": [
+          "28",
+          "504 lrn",
+          "segment 28",
+          "487",
+          "487 504"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9511319004134157,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583590+00:00"
+      }
+    },
+    {
+      "chapter_number": 29,
+      "title": "Segment 29 (pages 505-522)",
+      "start_page": 505,
+      "end_page": 522,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 26,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 0.992,
+          "base_score": 0.992,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 19,
+          "title": "",
+          "score": 0.991,
+          "base_score": 0.991,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 21,
+          "title": "",
+          "score": 0.991,
+          "base_score": 0.991,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "segment 29",
+          "29 pages",
+          "29",
+          "522 lrn",
+          "522"
+        ],
+        "semantic": [],
+        "merged": [
+          "segment 29",
+          "29 pages",
+          "29",
+          "522 lrn",
+          "522"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9538850898516931,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:05:36.583628+00:00"
+      }
+    },
+    {
+      "chapter_number": 30,
+      "title": "Segment 30 (pages 523-540)",
+      "start_page": 523,
+      "end_page": 540,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 31,
+          "title": "",
+          "score": 1.131,
+          "base_score": 0.981,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 32,
+          "title": "",
+          "score": 1.129,
+          "base_score": 0.979,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 1.128,
+          "base_score": 0.978,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 34,
+          "title": "",
+          "score": 1.101,
+          "base_score": 0.951,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 25,
+          "title": "",
+          "score": 0.987,
+          "base_score": 0.987,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "segment 30",
+          "540 lrn",
+          "30 pages",
+          "30",
+          "523 540"
+        ],
+        "semantic": [],
+        "merged": [
+          "segment 30",
+          "540 lrn",
+          "30 pages",
+          "30",
+          "523 540"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9435554738495987,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583680+00:00"
+      }
+    },
+    {
+      "chapter_number": 31,
+      "title": "Segment 31 (pages 541-558)",
+      "start_page": 541,
+      "end_page": 558,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 32,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 30,
+          "title": "",
+          "score": 1.131,
+          "base_score": 0.981,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 34,
+          "title": "",
+          "score": 1.102,
+          "base_score": 0.952,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 28,
+          "title": "",
+          "score": 0.989,
+          "base_score": 0.989,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "31",
+          "pages 541",
+          "segment 31",
+          "541 558",
+          "558"
+        ],
+        "semantic": [],
+        "merged": [
+          "31",
+          "pages 541",
+          "segment 31",
+          "541 558",
+          "558"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9492295427180927,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583719+00:00"
+      }
+    },
+    {
+      "chapter_number": 32,
+      "title": "Segment 32 (pages 559-576)",
+      "start_page": 559,
+      "end_page": 576,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 31,
+          "title": "",
+          "score": 1.145,
+          "base_score": 0.995,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 30,
+          "title": "",
+          "score": 1.129,
+          "base_score": 0.979,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 34,
+          "title": "",
+          "score": 1.103,
+          "base_score": 0.953,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 22,
+          "title": "",
+          "score": 0.989,
+          "base_score": 0.989,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "segment 32",
+          "576 lrn",
+          "32",
+          "32 pages",
+          "pages 559"
+        ],
+        "semantic": [],
+        "merged": [
+          "segment 32",
+          "576 lrn",
+          "32",
+          "32 pages",
+          "pages 559"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9502057422821726,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583757+00:00"
+      }
+    },
+    {
+      "chapter_number": 33,
+      "title": "Segment 33 (pages 577-594)",
+      "start_page": 577,
+      "end_page": 594,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 31,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 32,
+          "title": "",
+          "score": 1.143,
+          "base_score": 0.993,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 30,
+          "title": "",
+          "score": 1.128,
+          "base_score": 0.978,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 34,
+          "title": "",
+          "score": 1.098,
+          "base_score": 0.948,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 27,
+          "title": "",
+          "score": 0.987,
+          "base_score": 0.987,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "577",
+          "pages 577",
+          "segment 33",
+          "33",
+          "33 pages"
+        ],
+        "semantic": [],
+        "merged": [
+          "577",
+          "pages 577",
+          "segment 33",
+          "33",
+          "33 pages"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.9468916446986112,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583795+00:00"
+      }
+    },
+    {
+      "chapter_number": 34,
+      "title": "Segment 34 (pages 595-602)",
+      "start_page": 595,
+      "end_page": 602,
+      "summary": "LRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\nLRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 32,
+          "title": "",
+          "score": 1.103,
+          "base_score": 0.953,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 31,
+          "title": "",
+          "score": 1.102,
+          "base_score": 0.952,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 30,
+          "title": "",
+          "score": 1.101,
+          "base_score": 0.951,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 1.098,
+          "base_score": 0.948,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 35,
+          "title": "",
+          "score": 1.057,
+          "base_score": 0.907,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pages 595",
+          "segment 34",
+          "34",
+          "595",
+          "595 602"
+        ],
+        "semantic": [],
+        "merged": [
+          "pages 595",
+          "segment 34",
+          "34",
+          "595",
+          "595 602"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.917305069917508,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583833+00:00"
+      }
+    },
+    {
+      "chapter_number": 35,
+      "title": "Segment 35 (pages 603-603)",
+      "start_page": 603,
+      "end_page": 603,
+      "summary": "LRN\n\n.",
+      "keywords": [
+        "LRN"
+      ],
+      "concepts": [],
+      "similar_chapters": [
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 34,
+          "title": "",
+          "score": 1.057,
+          "base_score": 0.907,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 30,
+          "title": "",
+          "score": 0.961,
+          "base_score": 0.811,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 32,
+          "title": "",
+          "score": 0.942,
+          "base_score": 0.792,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 31,
+          "title": "",
+          "score": 0.932,
+          "base_score": 0.782,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Game Programming Gems 6",
+          "chapter": 33,
+          "title": "",
+          "score": 0.929,
+          "base_score": 0.779,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "603",
+          "603 lrn",
+          "603 603",
+          "35 pages",
+          "segment 35"
+        ],
+        "semantic": [],
+        "merged": [
+          "603",
+          "603 lrn",
+          "603 603",
+          "35 pages",
+          "segment 35"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.7718015533789563,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:05:36.583871+00:00"
+      }
+    }
+  ],
+  "total_chapters": 35,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Game Programming Gems 6_metadata.json",
+    "enrichment_date": "2025-12-17T23:05:36.592102+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3577.875167999082,
+    "total_similar_chapters": 171
+  }
+}

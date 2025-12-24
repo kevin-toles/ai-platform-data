@@ -1,0 +1,2787 @@
+{
+  "metadata": {
+    "title": "A Philosophy of Software Design",
+    "source_file": "A Philosophy of Software Design_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Segment 1 (pages 2-9)",
+      "start_page": 2,
+      "end_page": 9,
+      "summary": "A Philosophy of Software Design by John Ousterhout\n4.3 Abstractions 4.4 Deep modules 4.5 Shallow modules 4.6 Classitis 4.7 Examples: Java and Unix I/O 4.8 Conclusion\n5.1 Information hiding 5.2 Information leakage 5.3 Temporal decomposition 5.4 Example: HTTP server 5.5 Example: too many classes 5.6 Example: HTTP parameter handling 5.7 Example: defaults in HTTP responses 5.8 Information hiding within a class 5.9 Taking it too far 5.10 Conclusion\n6.1 Make classes somewhat general-purpose 6.2 Example: storing text for an editor 6.3 A more general-purpose API 6.4 Generality leads to better information hiding 6.5 Questions to ask yourself 6.6 Conclusion\n8.1 Example: editor text class 8.2 Example: configuration parameters 8.3 Taking it too far 8.4 Conclusion\n9.1 Bring together if information is shared 9.2 Bring together if it will simplify the interface 9.3 Bring together to eliminate duplication 9.4 Separate general-purpose and special-purpose code 9.5 Example: insertion cursor and selection 9.6 Example: separate class for logging 9.7 Example: editor undo mechanism 9.8 Splitting and joining methods 9.9 Conclusion\n10.9 Design special cases out of existence 10.10 Taking it too far 10.11 Conclusion\n13.1 Pick conventions 13.2 Don’t repeat the code 13.3 Lower-level comments add precision 13.4 Higher-level comments enhance intuition 13.5 Interface documentation 13.6 Implementation comments: what and why, not how 13.7 Cross-module design decisions 13.8 Conclusion 13.9 Answers to questions from Section 13.5\n14.1 Example: bad names cause bugs 14.2 Create an image 14.3 Names should be precise 14.4 Use names consistently 14.5 A different opinion: Go style guide 14.6 Conclusion\n15.6 Conclusion\n17.1 Examples of consistency 17.2 Ensuring consistency 17.3 Taking it too far 17.4 Conclusion\n18.1 Things that make code more obvious 18.2 Things that make code less obvious 18.3 Conclusion\n20.1 How to think about performance 20.2 Measure before modifying 20.3 Design around the critical path 20.4 An example: RAMCloud Buffers 20.5 Conclusion",
+      "keywords": [
+        "Ousterhout Stanford University",
+        "John Ousterhout Stanford",
+        "John Ousterhout Copyright",
+        "Stanford University OceanofPDF.com",
+        "Design John Ousterhout",
+        "Software Design John",
+        "Stanford University",
+        "John Ousterhout",
+        "Ousterhout Stanford",
+        "Conclusion",
+        "Philosophy of Software",
+        "Comments",
+        "Software Design",
+        "Ousterhout Copyright",
+        "Design"
+      ],
+      "concepts": [
+        "conclusion",
+        "examples",
+        "comments",
+        "design",
+        "code",
+        "interface",
+        "names",
+        "modules",
+        "duplication",
+        "general"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.756,
+          "base_score": 0.606,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.72,
+          "base_score": 0.57,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.693,
+          "base_score": 0.543,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.68,
+          "base_score": 0.53,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 13,
+          "title": "",
+          "score": 0.671,
+          "base_score": 0.521,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "conclusion",
+          "13",
+          "ousterhout",
+          "john",
+          "john ousterhout"
+        ],
+        "semantic": [],
+        "merged": [
+          "conclusion",
+          "13",
+          "ousterhout",
+          "john",
+          "john ousterhout"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.40238701195539534,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166491+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "Segment 2 (pages 10-17)",
+      "start_page": 10,
+      "end_page": 17,
+      "summary": "All of these discussions have been valuable, but the core problem of software design is still largely untouched.\nWe teach for loops and object-oriented programming, but not software design.\nMany people assume that software design skill is an innate talent that cannot be taught.\nIn this class I put forth a set of principles of software design.\nI have now taught the software design class three times, and this book is based on the design principles that emerged from the class.\nThere were no classes on software design when I learned to program, and I never had a mentor to teach me design principles.\nMy ideas about software design come from personal experience writing and reading code.\nI don’t expect this book to be the final word on software design; I’m sure there are valuable techniques that I’ve missed, and some of my suggestions may turn out to be bad ideas in the long run.\nHowever, I hope that the book will start a conversation about software design.\nCompare the ideas in this book with your own experiences and decide for yourself whether the approaches described here really do reduce software complexity.\nI’m interested in hearing about things that work for you, things that don’t work, and any other ideas you may have about software design.\nI hope that the ensuing conversations will improve our collective understanding of software design.\nsoftware-design-book@googlegroups.com\nI’m interested in hearing specific feedback about the book, such as bugs or suggestions for improvement, as well as general thoughts and experiences related to software design.\nIf you would like to see what other people are saying on the email address and participate in discussions, you can join the Google Group software-design-book.\nIf for some reason the software-design-book Google Group should disappear in the future, search on the Web for my home page; it will contain\nHowever, software design has not always been viewed this way.\nSoftware systems are intrinsically more complex than physical systems; it isn’t possible to visualize the design for a large software system well enough to understand all of its implications before building anything.\nBecause of these issues, most software development projects today use an incremental approach such as agile development, in which the initial design focuses on a small subset of the overall functionality.\nThe incremental approach works for software because software is malleable enough to allow significant design changes partway through implementation.\nIncremental development means that software design is never done.\nAs a software developer, you should always be on the lookout for opportunities to improve the design of the system you are working on, and you should plan on spending some fraction of your time on design improvements.\nIf software developers should always be thinking about design issues, and reducing complexity is the most important element of software design, then software developers should always be thinking about complexity.\nThis book is about how to use complexity to guide the design of software throughout its lifetime.\nThe book’s second, and more challenging, goal is to present techniques you can use during the software development process to minimize complexity.\nReviewing code will also expose you to new design approaches and programming techniques.\nOver the course of this book I will point out red flags that suggest problems related to each major design issue; the most important ones are summarized at the back of the book.\nYou can then use these when you are coding: when you see a red flag, stop and look for an alternate design that eliminates the problem.",
+      "keywords": [
+        "software design",
+        "design",
+        "software",
+        "book",
+        "complexity",
+        "systems",
+        "code",
+        "problems",
+        "software system",
+        "design principles",
+        "software design class",
+        "n’t",
+        "software design skill",
+        "makes software design",
+        "software development"
+      ],
+      "concepts": [
+        "design",
+        "complex",
+        "problem",
+        "systems",
+        "code",
+        "coding",
+        "develop",
+        "program",
+        "students",
+        "great"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.577,
+          "base_score": 0.427,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 21,
+          "title": "",
+          "score": 0.549,
+          "base_score": 0.399,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.462,
+          "base_score": 0.312,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 13,
+          "title": "",
+          "score": 0.328,
+          "base_score": 0.328,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.303,
+          "base_score": 0.303,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "software",
+          "design",
+          "software design",
+          "book",
+          "design software"
+        ],
+        "semantic": [],
+        "merged": [
+          "software",
+          "design",
+          "software design",
+          "book",
+          "design software"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.2591902644916911,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166538+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "Segment 3 (pages 18-26)",
+      "start_page": 18,
+      "end_page": 26,
+      "summary": "complexity, and how to make software systems simpler.\nThis book is about how to design software systems to minimize their complexity.\nComplexity is anything related to the structure of a software system that makes it hard to understand and modify the system.\nComplexity\nWhen you find yourself in situations like this, it’s worth probing the other developers to find out why the code seems complex to\nChange amplification: The first symptom of complexity is that a seemingly simple change requires code modifications in many different places.\nIn order to change the background for such a Web site, a developer might have to modify every existing page by hand; this would be nearly impossible for a large site with thousands of pages.\nFortunately, modern Web sites use an approach like that in Figure 2.1(b), where the banner color is specified once in a central place, and all of the individual pages reference that shared value.\nCognitive load: The second symptom of complexity is cognitive load, which refers to how much a developer needs to know in order to complete a task.\nSystem designers sometimes assume that complexity can be measured by lines of code.\nUnknown unknowns: The third symptom of complexity is that it is not obvious which pieces of code must be modified to complete a task, or what information a developer must have to carry out the task successfully.\nThe Web site uses a central variable to determine the banner background color, so it appears to be easy to change.\nEven if a developer is aware of the problem, it won’t be obvious which pages use the emphasis color, so the developer may have to search every page in the Web site.\nIn an obvious system, a developer can quickly understand how the existing code works and what is required to make a change.\n2.3 Causes of complexity\nNow that you know the high-level symptoms of complexity and why complexity makes software development difficult, the next step is to understand what causes complexity, so that we can design systems to avoid the problems.\nComplexity is caused by two things: dependencies and obscurity.\nFor the purposes of this book, a dependency exists when a given piece of code cannot be understood and modified in isolation; the code relates in some way to other code, and the other code must be considered and/or modified if the given code is changed.\nIn the Web site example of Figure 2.1(a), the background color creates dependencies between all of the pages.\nHowever, one of the goals of software design is to reduce the number of dependencies and to make the dependencies that remain as simple and obvious as possible.\nThe new Web site fixed this problem by specifying the background color in a central place and providing an API that individual pages use to retrieve that color when they are rendered.\nThe new Web site eliminated the dependency between the pages, but it created a new the background color.\ndependency around Fortunately, the new dependency is more obvious: it is clear that each individual Web page depends on the bannerBg color, and a developer can easily find all the places where the variable is used by searching for its name.\nThe second cause of complexity is obscurity.\nIf we can find design techniques that minimize dependencies and obscurity, then we can reduce the complexity of software.\nComplexity comes about because hundreds or thousands of small dependencies and obscurities build up over time.\nHowever, if every developer takes this approach for every change, complexity accumulates rapidly.\nOnce complexity has accumulated, it is hard to eliminate, since fixing a single dependency or obscurity will not, by itself, make a big difference.\nComplexity comes from an accumulation of dependencies and obscurities.\nAs complexity increases, it leads to change amplification, a high cognitive load, and unknown unknowns.\nThe bottom line is that complexity makes it difficult and risky to modify an existing code base.",
+      "keywords": [
+        "complexity",
+        "Web site",
+        "system",
+        "Web",
+        "code",
+        "design",
+        "Change",
+        "color",
+        "background color",
+        "Cognitive load",
+        "background",
+        "dependencies",
+        "developer",
+        "pages",
+        "obvious"
+      ],
+      "concepts": [
+        "design",
+        "complexity",
+        "dependencies",
+        "depend",
+        "dependency",
+        "dependent",
+        "change",
+        "changed",
+        "developer",
+        "code"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.462,
+          "base_score": 0.312,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.457,
+          "base_score": 0.307,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.434,
+          "base_score": 0.434,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 21,
+          "title": "",
+          "score": 0.414,
+          "base_score": 0.264,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.364,
+          "base_score": 0.364,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "complexity",
+          "color",
+          "site",
+          "background",
+          "web"
+        ],
+        "semantic": [],
+        "merged": [
+          "complexity",
+          "color",
+          "site",
+          "background",
+          "web"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.2958294572165084,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166566+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "Segment 4 (pages 27-35)",
+      "start_page": 27,
+      "end_page": 35,
+      "summary": "One of the most important elements of good software design is the mindset you adopt when you approach a programming task.\nHowever, if you want a good design, you must take a more strategic approach where you invest time to produce clean designs and fix problems.\nThis chapter discusses why the strategic approach produces better designs and is actually cheaper than the tactical approach over the long run.\nMost programmers approach software development with a mindset I call tactical programming.\nIn the tactical approach, your main focus is to get something working, such as a new feature or a bug fix.\nHowever, tactical programming makes it nearly impossible to produce a good system design.\nYou don’t spend much time looking for the best design; you just want to get something working soon.\nThere’s no way your schedule can tolerate that kind of delay, and fixing one or two of the problems doesn’t seem like it will make much difference, so you just keep programming tactically.\nIf you have worked on a large software project for very long, I suspect you have seen tactical programming at work and have experienced the problems that result.\nAlmost every software development organization has at least one developer who takes tactical programming to the extreme: a tactical tornado.\nThe first step towards becoming a good software designer is to realize that working code isn’t enough.\nRather than taking the fastest path to finish your current project, you must invest time to improve the design of the system.\nIf you program strategically, you will continually make small improvements to the system design.\nThis is the opposite of tactical programming, where you are continually adding small bits of complexity that cause problems in the future.\nIt won’t be long before you’re developing at least 10–20% faster than you would if you had programmed tactically.\nFigure 3.1: At the beginning, a tactical approach to programming will make progress more quickly than a strategic approach.\nConversely, if you program tactically, you will finish your first projects 10–20% faster, but over time your development speed will slow as complexity accumulates.\nAs a result, many startups take a tactical approach, spending little effort on design and even less on cleanup when problems pop up.\nFurthermore, the payoff for good (or bad) design comes pretty quickly, so there’s a good chance that the tactical approach won’t even speed up your first product release.\nFacebook is an example of a startup that encouraged tactical programming.\nFacebook has been spectacularly successful as a company, but its code base suffered because of the company’s tactical approach; much of the code\nEventually, Facebook changed its motto to “Move fast with solid infrastructure” to encourage its engineers to invest more in good design.\nIt remains to be seen whether Facebook can successfully clean up the problems that accumulated over years of tactical programming.\nBoth companies placed a heavy emphasis on high quality code and good design, and both companies built sophisticated products that solved complex problems with reliable software systems.\nHowever, it’s a lot more fun to work in a company that cares about software design and has a clean code base.\nOnce you start delaying design improvements, it’s easy for the delays to become permanent and for your culture to slip into the tactical approach.\nThe most effective approach is one where every engineer makes continuous small investments in good design.\nOne of the most important techniques for managing software complexity is to design systems so that developers only need to face a small fraction of the overall complexity at any given time.\nThe goal of modular design is to minimize the dependencies between modules.\nThe interface consists of everything that a developer working in a different module must know in order to use\nA developer working in a particular module must understand the interface and implementation of that module, plus the interfaces of any other modules invoked by the given module.\nA developer should not need to understand the implementations of modules other than the one he or she is working in.\nMethods within a class, or functions in a language that isn’t object-oriented, can also be thought of as modules: each of these has an interface and an implementation, and modular design techniques can be applied to them.",
+      "keywords": [
+        "Tactical Programming",
+        "Tactical",
+        "design",
+        "tactical approach",
+        "Code",
+        "Programming",
+        "approach",
+        "module",
+        "strategic approach",
+        "n’t",
+        "good design",
+        "time",
+        "Strategic",
+        "system",
+        "good"
+      ],
+      "concepts": [
+        "designer",
+        "modules",
+        "tactical",
+        "tactically",
+        "code",
+        "approach",
+        "development",
+        "small",
+        "engineers",
+        "investment"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 21,
+          "title": "",
+          "score": 0.6,
+          "base_score": 0.45,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.577,
+          "base_score": 0.427,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.457,
+          "base_score": 0.307,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 22,
+          "title": "",
+          "score": 0.372,
+          "base_score": 0.372,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 24,
+          "title": "",
+          "score": 0.343,
+          "base_score": 0.343,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "tactical",
+          "tactical programming",
+          "tactical approach",
+          "approach",
+          "design"
+        ],
+        "semantic": [],
+        "merged": [
+          "tactical",
+          "tactical programming",
+          "tactical approach",
+          "approach",
+          "design"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.2652557010922569,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166589+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Segment 5 (pages 36-43)",
+      "start_page": 36,
+      "end_page": 43,
+      "summary": "The interface to a module contains two kinds of information: formal and informal.\nFor example, the formal interface for a method is its signature, which includes the names and types of its parameters, the type of its return value, and information about exceptions thrown by the method.\nThe informal parts of an interface include its high-level behavior, such as the fact that a function deletes the file named by one of its arguments.\nIn general, if a developer needs to know a particular piece of information in order to use a module, then that information is part of the module’s interface.\nFor most interfaces the informal aspects are larger and more complex than the formal aspects.\nOne of the benefits of a clearly specified interface is that it indicates exactly what developers need to know in order to use the associated module.\nIn modular programming, each module provides an abstraction in form of its interface.\nThe interface presents a simplified view of the module’s functionality; the details of the implementation are unimportant from the standpoint of the module’s abstraction, so they are omitted from the interface.\nThe abstraction provided by a file system omits many details, such as the mechanism for choosing which blocks on a storage device to use for the data in a given file.\nThus, the rules for flushing data to secondary storage must be visible in the file system’s interface.\nThe best modules are those that provide powerful functionality yet have simple interfaces.\nThe top edge of a rectangle represents the module’s interface; the length of that edge indicates the complexity of the interface.\nThe best modules are deep: they have a lot of functionality hidden behind a simple interface.\nA deep module is a good abstraction because only a small fraction of its internal complexity is visible to its users.\nThe best modules are deep: they allow a lot of functionality to be accessed through a simple interface.\nA shallow module is one with a relatively complex interface, but not much functionality: it doesn’t hide much complexity.\nThe cost of a module (in terms of system complexity) is its interface.\nA module’s interface represents the complexity that the module imposes on the rest of the system: the smaller and simpler the interface, the less complexity that it introduces.\nThe mechanism for file I/O provided by the Unix operating system and its descendants, such as Linux, is a beautiful example of a deep interface.\nDeep modules such as Unix I/O and garbage collectors provide powerful abstractions because they are easy to use, yet they hide significant implementation complexity.\nOn the other hand, a shallow module is one whose interface is relatively complex in comparison to the functionality that it provides.\nThe method offers no abstraction, since all of its functionality is visible through its interface.\nThe method adds complexity (in the form of a new interface for developers to learn) but provides no compensating benefit.\nA shallow module is one whose interface is complicated relative to the functionality it provides.\nShallow modules don’t help much in the battle against complexity, because the benefit they provide (not having to learn about how they work internally) is negated by the cost of learning and using their interfaces.\nSmall classes don’t contribute much functionality, so there have to be a lot of them, each with its own interface.\nseparated in the interface (for example, by providing a different constructor for FileInputStream, or through a method that disables or replaces the buffering mechanism), so that most developers do not even need to be aware of its existence.\nBy separating the interface of a module from its implementation, we can hide the complexity of the implementation from the rest of the system.\nUsers of a module need only understand the abstraction provided by its interface.\nThe most important issue in designing classes and other modules is to make them deep, so that they have simple interfaces for the common use cases, yet still provide significant functionality.",
+      "keywords": [
+        "interface",
+        "module",
+        "file",
+        "abstraction",
+        "system",
+        "file system",
+        "complexity",
+        "shallow module",
+        "functionality",
+        "method",
+        "Deep",
+        "classes",
+        "shallow",
+        "Unix file system",
+        "implementation"
+      ],
+      "concepts": [
+        "interface",
+        "complex",
+        "file",
+        "provides",
+        "provided",
+        "abstractions",
+        "abstraction",
+        "accessed",
+        "access",
+        "accesses"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.72,
+          "base_score": 0.57,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.718,
+          "base_score": 0.568,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.663,
+          "base_score": 0.513,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.634,
+          "base_score": 0.484,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 13,
+          "title": "",
+          "score": 0.629,
+          "base_score": 0.479,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "module",
+          "interface",
+          "functionality",
+          "deep",
+          "complexity"
+        ],
+        "semantic": [],
+        "merged": [
+          "module",
+          "interface",
+          "functionality",
+          "deep",
+          "complexity"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4007748528928131,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166617+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Segment 6 (pages 44-51)",
+      "start_page": 44,
+      "end_page": 51,
+      "summary": "Information Hiding (and Leakage)\nHere are some examples of information that might be hidden within a module:\nIf you can hide more information, you should also be able to simplify the module’s interface, and this makes the module deeper.\nNote: hiding variables and methods in a class by declaring them private isn’t the same thing as information hiding.\nFor example, if a particular feature or piece of information is only needed by a few of a class’s users, and it is accessed through separate methods so that it isn’t visible in the most common use cases, then that information is mostly hidden.\nInformation leakage occurs when a design decision is reflected in multiple modules.\nIf a piece of information is reflected in the interface for a module, then by definition it has been leaked; thus, simpler interfaces tend to correlate with better information hiding.\nEven if neither class exposes that information in its interface, they both depend on the file format: if the format changes, both classes will need to be modified.\nIf you encounter information leakage between classes, ask yourself “How can I reorganize these classes so that this particular piece of knowledge only affects a single class?” If the affected classes are relatively small and closely tied to the leaked information, it may make sense to merge them into a single class.\nInformation leakage occurs when the same knowledge is used in multiple places, such as two different classes that both understand the format of a particular type of file.\nHowever, most design decisions manifest themselves at several different times over the life of the application; as a result, temporal decomposition often results in information leakage.\nTo illustrate the issues in information hiding, let’s consider the design decisions made by students implementing the HTTP protocol in a software\nThe students in the course were asked to implement one or more classes to make it easy for Web servers to receive incoming HTTP requests and send responses.\nThe initial line contains the request type (POST is used for submitting form data), a URL indicating an operation (/comments/create) and optional parameters (photo_id has the value 246), and the HTTP protocol version used by the sender.\nThe most common mistake made by students was to divide their code into a large number of shallow classes, which led to information leakage between the classes.\nOne team used two different classes for receiving HTTP requests; the first class read the request from the network connection into a string, and the second class parsed the string.\nInformation leakage occurred because an HTTP request can’t be read without parsing much of the message; for example, the Content-Length\nAs a result, both classes needed to understand most of the structure of HTTP requests, and parsing code was duplicated in both classes.\nBecause the classes shared so much information, it would have been better to merge them into a single class that handles both request reading and parsing.\nThis provides better information hiding, since it isolates all knowledge of the request format in one class, and it also provides a simpler interface to callers (just one method to invoke).\nin software design: information hiding can often be improved by making a class slightly larger.\nOne reason for doing this is to bring together all of the code related to a particular capability (such as parsing an HTTP request), so that the resulting class contains everything related to that capability.\nBoth of these benefits apply in the example of the previous paragraph: combining the classes brings together all of the code related to parsing an HTTP request, and it replaces two externally-visible methods with one.\nAfter an HTTP request has been received by a server, the server needs to access some of the information from the request.\nIn both of these cases, information hiding resulted in simpler APIs for the code using the HTTP module.\nHowever, most of the students used an interface for returning parameters that was too shallow, and this resulted in lost opportunities for information hiding.\nMost projects used an object of type HTTPRequest to hold the parsed HTTP request, and the HTTPRequest class had a single method like the following one to return parameters: public Map<String, String> getParams() { return this.params; }\ngetIntParameter converts the value of a parameter from its string form in the HTTP request to an integer (e.g., the photo_id parameter in Figure 5.1).\nThe caller is unlikely to know what version to specify, and if the caller does specify a value, it probably results in information leakage between the HTTP library and the caller.",
+      "keywords": [
+        "Information",
+        "Information Hiding",
+        "Information leakage",
+        "HTTP request",
+        "request",
+        "module",
+        "Leakage",
+        "classes",
+        "HTTP protocol",
+        "Hiding",
+        "interface",
+        "HTTP responses",
+        "parameter",
+        "Information leakage occurs",
+        "Temporal decomposition"
+      ],
+      "concepts": [
+        "classes",
+        "information",
+        "parameters",
+        "request",
+        "requests",
+        "modules",
+        "interface",
+        "hiding",
+        "hides",
+        "design"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.693,
+          "base_score": 0.543,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.663,
+          "base_score": 0.513,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.532,
+          "base_score": 0.382,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.514,
+          "base_score": 0.364,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.475,
+          "base_score": 0.325,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "information",
+          "http",
+          "request",
+          "hiding",
+          "leakage"
+        ],
+        "semantic": [],
+        "merged": [
+          "information",
+          "http",
+          "request",
+          "hiding",
+          "leakage"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3031357586742712,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166643+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "Segment 7 (pages 52-59)",
+      "start_page": 52,
+      "end_page": 59,
+      "summary": "6.1 Make classes somewhat general-purpose\nMany of the student teams implemented special-purpose APIs for the text class.\nKnowing this, some of the teams created one method in the text class to support each of these specific features: void backspace(Cursor cursor);\nThe students probably thought that it would be easier to implement the user interface if the methods of the text class corresponded to the features visible to users.\nIn reality, however, this specialization provided little benefit for the user interface code, and it created a high cognitive load for developers working on either the user interface or the text class.\nThe text class ended up with a large number of shallow methods, each of which was only suitable for one user interface operation.\nAs a result, a developer working on the user interface had to learn about a large number of methods for the text class.\nThis approach created information leakage between the user interface and the text class.\nAbstractions related to the user interface, such as the selection or the backspace key, were reflected in the text class; this increased the cognitive load for developers working on the text class.\nEach new user interface operation required a new method to be defined in the text class, so a developer working on the user interface was likely to end up working on the text class as well.\nOne of the goals in class design is to allow each class to be developed independently, but the specialized approach tied the user interface and text classes together.\nThe text class should also provide general-purpose facilities for manipulating positions within the text, such as the following: Position changePosition(Position position, int numChars);\nWith the general-purpose text API, the code to implement user interface functions such as delete and backspace is a bit longer than with the original approach using a specialized text API.\nFurthermore, the general-purpose approach has less code overall than the specialized approach, since it replaces a large number of special-purpose methods in the text class with a smaller number of general-purpose ones.\nA text class implemented with the general-purpose interface could potentially be used for other purposes besides an interactive editor.\nMethods from the specialized text class, such as backspace and delete, would have little value for this application.\nHowever, the general- purpose text class would already have most of the functionality needed for the new application.\nThe general-purpose approach provides a cleaner separation between the text and user interface classes, which results in better information hiding.\nThe text class need not be aware of specifics of the user interface, such as how the backspace key is handled; these details are now encapsulated in the user interface class.\nNew user interface features can be added without creating new supporting functions in the text class.\nThe general-purpose interface also reduces cognitive load: a developer working on the user interface only needs to learn a few simple methods, which can be reused for a variety of purposes.\nIt purported to hide information about which characters are deleted, but the user interface module really needs to know this; user interface developers are likely to read the code of the backspace method in order to confirm its precise behavior.\nPutting the method in the text class just makes it harder for user interface developers to get the information they need.\nThe special-purpose text API had at least three methods for deleting text: backspace, delete, and deleteSelection.\nThe more general-purpose API had only one method for deleting text, which served all three purposes.\nIf you have to write a lot of additional code to use a class for your current purpose, that’s a red flag that the interface doesn’t provide the right functionality.\nFor example, one approach for the text class would be to design it around single-character operations: insert inserts a single character and delete deletes a single character.\nThey also provide a cleaner separation between classes, whereas special-purpose interfaces tend to leak information between classes.",
+      "keywords": [
+        "text class",
+        "text",
+        "user interface",
+        "interface",
+        "General-Purpose",
+        "information",
+        "user",
+        "position",
+        "module",
+        "method",
+        "API",
+        "user interface module",
+        "text API",
+        "general-purpose text API",
+        "information hiding"
+      ],
+      "concepts": [
+        "methods",
+        "purpose",
+        "text",
+        "classes",
+        "position",
+        "positions",
+        "positive",
+        "module",
+        "interface",
+        "need"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.804,
+          "base_score": 0.654,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.68,
+          "base_score": 0.53,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.651,
+          "base_score": 0.501,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.634,
+          "base_score": 0.484,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 13,
+          "title": "",
+          "score": 0.591,
+          "base_score": 0.441,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "text",
+          "user interface",
+          "user",
+          "text class",
+          "class"
+        ],
+        "semantic": [],
+        "merged": [
+          "text",
+          "user interface",
+          "user",
+          "text class",
+          "class"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3788799757434744,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166671+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "Segment 8 (pages 60-67)",
+      "start_page": 60,
+      "end_page": 67,
+      "summary": "In a well-designed system, each layer provides a different abstraction from the layers above and below it; if you follow a single operation as it moves up and down through layers by invoking methods, the abstractions change with each method call.\n7.1 Pass-through methods\nWhen adjacent layers have similar abstractions, the problem often manifests itself in the form of pass-through methods.\nFor example, a student project implementing a GUI text editor contained a class consisting almost entirely of pass-through methods.\n13 of the 15 public methods in that class were pass-through methods.\nPass-through methods make classes shallower: they increase the interface complexity of the class, which adds complexity, but they don’t increase the total functionality of the system.\nPass-through methods also create dependencies between classes: if the signature changes for the insertString method in TextArea, then the insertString method in TextDocument will have to change to match.\nPass-through methods indicate that there is confusion over the division of responsibility between classes.\nIn the example above, the TextDocument class offers an insertString method, but the functionality for inserting text is implemented entirely in TextArea.\nThis is usually a bad idea: the interface to a piece of functionality should be in the same class that implements the functionality.\nWhen you see pass-through methods from one class to another, consider the two classes and ask yourself “Exactly which features and abstractions is each of these classes responsible for?” You will probably notice that there is an overlap in responsibility between the classes.\nThe student eliminated the pass-through methods by moving methods between classes and collapsing the three classes into just two, whose responsibilities were more clearly differentiated.\nPass-through methods are bad because they contribute no new functionality.\nFigure 7.1: Pass-through methods.\nIn (a), class C1 contains three pass-through methods, which do nothing but invoke methods with the same signature in C2 (each symbol represents a particular method signature).\nThe pass-through methods can be eliminated by having C1’s callers invoke C2 directly as in (b), by redistributing functionality between C1 and C2 to avoid calls between the classes as in (c), or by combining the classes as in (d).\nA decorator object takes an existing object and extends its functionality; it provides an API similar or identical to the underlying object, and its methods invoke the methods of the the underlying object.\nDecorator classes often contain many pass-through\nWith a line-oriented API for the text class, callers were forced to split and join lines to implement the user- interface operations.\nThe text classes were much easier to use when they provided a character-oriented interface, such as an insert method that inserts an arbitrary string of text (which may include newlines) at an arbitrary position in the text and a delete method that deletes the text between two arbitrary positions in the text.\nWith this approach, the text API is quite different from the line-oriented storage mechanism; the difference represents valuable functionality provided by the class.\nFurthermore, if a new variable comes into existence (for example, a system is initially built without support for certificates, but you later decide to add that support), you may have to modify a large number of interfaces and methods to pass the variable through all of the relevant paths.",
+      "keywords": [
+        "Pass-through methods",
+        "methods",
+        "Pass-through",
+        "functionality",
+        "classes",
+        "text",
+        "text class",
+        "interface",
+        "layers",
+        "decorator",
+        "API",
+        "Abstraction Software systems",
+        "signature",
+        "decorator class",
+        "Pass-through methods make"
+      ],
+      "concepts": [
+        "methods",
+        "classes",
+        "layer",
+        "functionality",
+        "interface",
+        "variable",
+        "variables",
+        "provided",
+        "provides",
+        "decorators"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.661,
+          "base_score": 0.511,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.651,
+          "base_score": 0.501,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.601,
+          "base_score": 0.451,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.537,
+          "base_score": 0.387,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 9,
+          "title": "",
+          "score": 0.523,
+          "base_score": 0.373,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "pass methods",
+          "pass",
+          "methods",
+          "text",
+          "classes"
+        ],
+        "semantic": [],
+        "merged": [
+          "pass methods",
+          "pass",
+          "methods",
+          "text",
+          "classes"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.33146418059956345,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166700+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "Segment 9 (pages 68-76)",
+      "start_page": 68,
+      "end_page": 76,
+      "summary": "If so, main can store the certificate information in that object, so it needn’t be passed through all of the intervening methods on the path to m3 (see Figure 7.2(b)).\nThis avoids the need to pass the information from method to method, but global variables almost always create other problems.\nFor example, global variables make it impossible to create two independent instances of the same system in the same process, since accesses to the global variables will conflict.\nA context stores all of the application’s global state (anything that would otherwise be a pass-through variable or global variable).\nIn the example of Figure 7.2(d), the class containing m3 stores a reference to the context as an instance variable in its objects.\nWhen a new object is created, the creating method retrieves the context reference from its object and passes it to the constructor for the new object.\nIn (d), cert is stored in a context object along with other system-wide information, such as a timeout value and performance counters; a reference to the context is stored in all objects whose methods need access to it.\nThe context object unifies the handling of all system-global information and eliminates the need for pass-through variables.\nIf a new variable needs to be added, it can be added to the context object; no existing code is affected except for the constructor and destructor for the context.\nThe variables stored in a context have most of the disadvantages of global variables; for example, it may not be obvious why a particular variable is present, or where it is used.\nEach piece of design infrastructure added to a system, such as an interface, argument, function, class, or definition, adds complexity, since developers must learn about this element.\nFor example, a class can reduce complexity by encapsulating functionality so that users of the class needn’t be aware of it.\nSimilarly, pass-through arguments require each of several methods to be aware of their existence (which adds to complexity) without contributing additional functionality.\nWhich is better: should you let users of the module deal with the complexity, or should you handle the complexity internally within the module?\nWhen students had to implement this class, many of them chose a line-oriented interface, with methods to read, insert, and delete whole lines of text.\nThis resulted in a simple implementation for the class, but it created complexity for higher level software.\nThe implementation of the text class probably becomes more complex: if it represents the text internally as a collection of lines, it will have to split and merge lines to implement the character-oriented operations.\nThis approach is better because it encapsulates the complexity of splitting and merging within the text class, which reduces the overall complexity of the system.\nConfiguration parameters are an example of moving complexity upwards instead of down.\nThis approach pulls complexity downward and saves users from having to figure out the right retry interval.\nBefore exporting a configuration parameter, ask yourself: “will users (or higher-level modules) be able to determine a better value than we can determine here?” When you do create configuration parameters, see if you can compute reasonable defaults automatically, so users will only need to provide values under exceptional conditions.\nIdeally, each module should solve a problem completely; configuration parameters result in an incomplete solution, which adds to system complexity.\nPulling complexity down makes the most sense if (a) the complexity being pulled down is closely related to the class’s existing functionality, (b) pulling the complexity down will result in many simplifications elsewhere in the application, and (c) pulling the complexity down simplifies the class’s interface.\nChapter 6 described how some students defined methods in the text class that reflected the user interface, such as a method that implements the functionality of the backspace key.\nHowever, adding knowledge of the user interface to the text class doesn’t simplify higher-level code very much, and the user-interface knowledge doesn’t relate to the core functions of the text class.\nFor example, a piece of code that used a single object before subdivision might now have to manage multiple objects.\nThe rest of this chapter uses more specific rules as well as examples to show when it makes sense to bring pieces of code together and when it makes sense to separate them.",
+      "keywords": [
+        "complexity",
+        "context",
+        "configuration parameters",
+        "system",
+        "context object",
+        "object",
+        "configuration",
+        "parameters",
+        "variable",
+        "text class",
+        "users",
+        "variables",
+        "methods",
+        "global variables",
+        "code"
+      ],
+      "concepts": [
+        "complexity",
+        "classes",
+        "methods",
+        "interface",
+        "chapters",
+        "create",
+        "created",
+        "function",
+        "functionality",
+        "functions"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.523,
+          "base_score": 0.373,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.494,
+          "base_score": 0.344,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.491,
+          "base_score": 0.341,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.44,
+          "base_score": 0.29,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.433,
+          "base_score": 0.283,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "context",
+          "global",
+          "complexity",
+          "class",
+          "configuration"
+        ],
+        "semantic": [],
+        "merged": [
+          "context",
+          "global",
+          "complexity",
+          "class",
+          "configuration"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.23490380068129268,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166726+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "Segment 10 (pages 77-87)",
+      "start_page": 77,
+      "end_page": 87,
+      "summary": "In its first implementation, the project used two different methods in different classes to read in and parse HTTP requests.\nA combined FileInputStream class might provide methods to disable or replace the default buffering mechanism, but most users would not need to learn about them.\nIt should not include code that specializes the mechanism for a particular use, nor should it contain other general-purpose mechanisms.\nThe GUI editor discussion in Chapter 6 illustrated this principle: the best design was one where the text class provided general-purpose text operations, while operations particular to the user interface (such as deleting the\nThis approach eliminated information leakage and additional interfaces that were present in an earlier design where the specialized user interface operations were implemented in the text class.\nIt provided no benefit for higher-level code, since the higher-level code still needed to be aware of the selection and cursor as distinct entities, and it manipulated them separately (during text insertion, it first invoked a method on the combined object to delete the selected text; then it invoked another method to retrieve the cursor position in order to insert new text).\nThis red flag occurs when a general-purpose mechanism also contains code specialized for a particular use of that mechanism.\nRather than logging the error at the point where it was detected, a separate method in a special error logging class was invoked.\nThis would make the code easier to read and eliminate the interfaces required for the logging methods.\nIn the GUI editor project from Section 6.2, one of the requirements was to support multi-level undo/redo, not just for changes to the text itself, but also for changes in the selection, insertion cursor, and view.\nFor example, if a user selected some text, deleted it, scrolled to a different place in the file, and then invoked undo, the editor had to restore its state to what it was just before the deletion.\nSome of the student projects implemented the entire undo mechanism as part of the text class.\nFor changes to the selection, insertion cursor, and view, the user interface code invoked additional methods in the text class, which then added entries for those changes to the undo list.\nWhen undo or redo was requested by the user, the user interface code invoked a method in the text class, which then processed the entries in the undo list.\nFor entries related to text, it updated the internals of the text class; for entries related to other things, such as the selection, the text class called back to the user interface code to carry out the undo or redo.\nThe core was located in the text class along with special-purpose handlers that implemented undo and redo for specific things such as text and the selection.\nhandlers for the selection and the cursor had nothing to do with anything else in the text class; they resulted in information leakage between the text class and the user interface, as well as extra methods in each module to pass undo information back and forth.\nIn addition, the general- purpose undo core had little to do with the general-purpose text facilities in the class.\nthe undo/redo mechanism and placing it in a separate class: public class History { public interface Action { public void redo(); public void undo(); }\nIn this design, the History class manages a collection of objects that implement the interface History.Action.\nEach History.Action describes a single operation, such as a text insertion or a change in the cursor location, and it provides methods that can undo or redo the operation.\nThe History class knows nothing about the information stored in the actions or how they implement their undo and redo methods.\nWhenever it inserts text, the text class creates a new UndoableInsert object describing the insertion and invokes History.addAction to add it to the history list.\nThe interface code might create UndoableSelection and editor’s user UndoableCursor objects that describe changes to the selection and insertion cursor.\nThe History class also allows actions to be grouped so that, for example, a single undo request from the user can restore deleted text, reselect the deleted text, and reposition the insertion cursor.\nA general-purpose mechanism for managing and grouping actions and invoking undo/redo operations (implemented by the History class).\nNote: the suggestion to separate general-purpose code from special- purpose code refers to code related to a particular mechanism.\nFor example, special-purpose undo code (such as code to undo a text insertion) should be separated from general-purpose undo code (such as code to manage the history list).\nHowever, it often makes sense to combine special-purpose code for one mechanism with general-purpose code for another.\nThe text class is an example of this: it implements a general-purpose mechanism for managing text, but it includes special-purpose code related to undoing.\nThe undo code is special-purpose because it only handles undo operations for text modifications.\nIt doesn’t make sense to combine this code with the general-purpose undo infrastructure in the History class, but it does make sense to put it in the text class, since it is closely related to other text functions.",
+      "keywords": [
+        "text class",
+        "code",
+        "text",
+        "History class",
+        "method",
+        "undo",
+        "cursor",
+        "selection",
+        "History",
+        "user interface code",
+        "insertion cursor",
+        "general-purpose",
+        "mechanism",
+        "interface code",
+        "special-purpose code"
+      ],
+      "concepts": [
+        "method",
+        "code",
+        "classes",
+        "undo",
+        "actions",
+        "text",
+        "purposes",
+        "examples",
+        "information",
+        "special"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.804,
+          "base_score": 0.654,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.756,
+          "base_score": 0.606,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.718,
+          "base_score": 0.568,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.661,
+          "base_score": 0.511,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 12,
+          "title": "",
+          "score": 0.624,
+          "base_score": 0.474,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "text",
+          "undo",
+          "purpose",
+          "history",
+          "class"
+        ],
+        "semantic": [],
+        "merged": [
+          "text",
+          "undo",
+          "purpose",
+          "history",
+          "class"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.38609648544168607,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166753+00:00"
+      }
+    },
+    {
+      "chapter_number": 11,
+      "title": "Segment 11 (pages 88-95)",
+      "start_page": 88,
+      "end_page": 95,
+      "summary": "The second way to break up a method is to split it into two separate methods, each visible to callers of the original method, as in Figure 9.3(c).\nIdeally, most callers should only need to invoke one of the two new methods; if callers must invoke both of the new methods, then that adds complexity, which makes it less likely that the split is a good idea.\nSplits of the form shown in Figure 9.3(c) don’t make sense very often, because they result in callers having to deal with multiple methods instead of one.\nCode that deals with special conditions is inherently harder to write than code that deals with normal cases, and developers often define exceptions without considering how they will be handled.\nThe key overall lesson from this chapter is to reduce the number of places where exceptions must be handled; in many cases the semantics of operations can be modified so that the normal behavior handles all situations and there is no exceptional condition to report (hence the title of this chapter).\nHowever, exceptions can occur even without using a formal exception reporting mechanism, such as when a method returns a special value indicating that it didn’t complete its normal behavior.\nException handling can account for a significant fraction of all the code in a system.\nException handling code is inherently more difficult to write than normal-case code.\nHowever, aborting can be complicated because the exception may have occurred at a point where system state is inconsistent (a data structure might have been partially initialized); the exception handling code must restore consistency, such as by unwinding any changes made before the exception occurred.\nFurthermore, exception handling code creates opportunities for more exceptions.\nIn this case, resending the packet will result in duplicate packets arriving at the peer; this introduces a new exceptional condition that the peer must handle.\nIf an exception is handled by aborting the operation in progress, then this must be reported to the caller as another exception.\nLanguage support for exceptions tends to be verbose and clunky, which makes exception handling code hard to read.\nJust the basic try-catch boilerplate accounts for more lines of code than the code for normal-case operation, without even considering the code that actually handles the exceptions.\ncode to the normal-case code: for example, it’s not obvious where each exception is generated.\nThis would make it clear where exceptions occur, but the try blocks themselves break up the flow of the code and make it harder to read; in addition, some exception handling code might end up duplicated in multiple try blocks.\nIt’s difficult to ensure that exception handling code really works.\nSome exceptions, such as I/O errors, can’t easily be generated in a test environment, so it’s hard to test the code that handles them.\nExceptions don’t occur very often in running systems, so exception handling code rarely executes.\nBugs can go undetected for a long time, and when the exception handling code is finally needed, there’s a good chance that it won’t work (one of my favorite sayings: “code that hasn’t been executed doesn’t work”).\nWhen exception handling code fails, it’s difficult to debug the problem, since it occurs so infrequently.\nIt’s tempting to use exceptions to avoid dealing with difficult situations: rather than figuring out a clean way to handle it, just throw an exception and punt the problem to the caller.\nThus, the complexity of exceptions comes from the exception handling code.\nThe best way to reduce the complexity damage caused by exception handling is to reduce the number of places where exceptions have to be handled.\nThe best way to eliminate exception handling complexity is to define your APIs so that there are no exceptions to handle: define errors out of existence.",
+      "keywords": [
+        "Exception handling code",
+        "method",
+        "Exception handling",
+        "Exception",
+        "exceptions",
+        "code",
+        "handling code",
+        "original method",
+        "handling",
+        "n’t",
+        "parent method",
+        "child method",
+        "separate method",
+        "interface",
+        "complexity"
+      ],
+      "concepts": [
+        "method",
+        "code",
+        "catch",
+        "complex",
+        "errors",
+        "handled",
+        "handles",
+        "interface",
+        "tried",
+        "try"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.372,
+          "base_score": 0.372,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.362,
+          "base_score": 0.362,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 12,
+          "title": "",
+          "score": 0.353,
+          "base_score": 0.353,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.307,
+          "base_score": 0.307,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "exception",
+          "exception handling",
+          "handling",
+          "handling code",
+          "exceptions"
+        ],
+        "semantic": [],
+        "merged": [
+          "exception",
+          "exception handling",
+          "handling",
+          "handling code",
+          "exceptions"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.26997511380446826,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:00:27.166775+00:00"
+      }
+    },
+    {
+      "chapter_number": 12,
+      "title": "Segment 12 (pages 96-104)",
+      "start_page": 96,
+      "end_page": 104,
+      "summary": "File deletion provides another example of how errors can be defined away.\nFirst, the delete operation no longer returns an error if the file is currently in use; the delete succeeds, and the file will eventually be deleted.\nSecond, deleting a file that’s in use does not create exceptions for the processes using the file.\nHowever, this approach would create new errors for those processes to handle.\nInstead, Unix allows them to keep accessing the file normally; delaying the file deletion defines errors out of existence.\nThe Java substring method would be easier to use if it performed this adjustment automatically, so that it implemented the following API: “returns the characters of the string (if any) with index greater than or equal to beginIndex and less than endIndex.” This is a simple and natural API, and it defines the IndexOutOfBoundsException exception out of existence.\nThe low-level file system code on the client does not report any exceptions to the invoking application.\nThe other alternative is for applications to abort and return errors to their callers.\nThus, the best alternative is for NFS to mask the errors and hang applications.\nThe idea behind exception aggregation is to handle many exceptions with a single piece of code; rather than writing distinct handlers for many individual exceptions, handle them all in one place with a single handler.\nInstead of catching the exceptions in the individual service methods, let them propagate up to the top-level dispatch method for the Web server, as in Figure 10.2.\nA single handler in this method can catch all of the exceptions and generate an appropriate error response for missing parameters.\nThere are many other errors besides missing parameters that can occur while processing a Web page; for example, a parameter might not have the right syntax (the service method expected an integer, but the value was “xyz”), or the user might not have permission for the requested operation.\nThus, all conditions resulting in an error response can be handled with a single top-level exception handler.\nThe error message can be generated at the time the exception is thrown and included as a variable in the exception record; for example, getParameter will generate the “parameter 'quantity' not present in URL” message.\nThe top-level handler extracts the message from the exception and incorporates it into the error response.\nFigure 10.2: This code is functionally equivalent to Figure 10.1, but exception handling has been aggregated: a single exception handler in the dispatcher catches all of the NoSuchParameter exceptions from all of the URL-specific methods.\nThe top-level exception handler encapsulates knowledge about how to generate error responses, but it knows nothing about specific errors; it just uses the error message provided in the exception.\nAs new functionality is added to the Web server, new methods like getParameter may be created with their own errors.\nsuperclass and including an error message in each exception), they can plug into the existing system with no other changes: the top-level handler will automatically generate error responses for them.\nException aggregation works best if an exception propagates several levels up the stack before it is handled; this allows more exceptions from more methods to be handled in the same place.\nThis is the opposite of exception masking: masking usually works best if an exception is handled in a low-level method.\nFor masking, the low-level method is typically a library method used by many other methods, so allowing the exception to propagate would increase the number of places where it is handled.\nMasking and aggregation are similar in that both approaches position an exception handler where it can catch the most exceptions, eliminating many handlers that would otherwise need to be created.\nAnother example of exception aggregation occurs in the RAMCloud storage system for crash recovery.\nThe fourth technique for reducing complexity related to exception handling is to crash the application.\nThus, it rarely make sense to try to handle out-of-memory errors; this creates too much complexity for too little benefit.\nA better approach is to define a new method ckalloc, which calls malloc, checks the result, and aborts the application with an error message if memory is exhausted.\nDynamically allocated memory is such a fundamental element of any modern application that it doesn’t make sense for the application to continue if memory is exhausted; it’s better to crash as soon as the error is detected.\nThere are many other examples of errors where crashing the application makes sense.\nFor most programs, if an I/O error occurs while reading or writing an open file (such as a disk hard error), or if a network socket cannot be opened, there’s not much the application can do to recover, so aborting with a clear error message is a sensible approach.",
+      "keywords": [
+        "exception",
+        "File",
+        "error",
+        "exceptions",
+        "application",
+        "exception handler",
+        "server",
+        "method",
+        "system",
+        "error message",
+        "Exception aggregation",
+        "error response",
+        "Web server",
+        "exception masking",
+        "approach"
+      ],
+      "concepts": [
+        "error",
+        "exceptions",
+        "exceptional",
+        "methods",
+        "server",
+        "file",
+        "approach",
+        "approaches",
+        "examples",
+        "application"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.624,
+          "base_score": 0.474,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.536,
+          "base_score": 0.386,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 17,
+          "title": "",
+          "score": 0.528,
+          "base_score": 0.378,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 13,
+          "title": "",
+          "score": 0.451,
+          "base_score": 0.301,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 24,
+          "title": "",
+          "score": 0.448,
+          "base_score": 0.448,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "exception",
+          "error",
+          "handler",
+          "errors",
+          "exceptions"
+        ],
+        "semantic": [],
+        "merged": [
+          "exception",
+          "error",
+          "handler",
+          "errors",
+          "exceptions"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.26208355245169285,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166800+00:00"
+      }
+    },
+    {
+      "chapter_number": 13,
+      "title": "Segment 13 (pages 105-116)",
+      "start_page": 105,
+      "end_page": 116,
+      "summary": "The best way to do this is by designing the normal case in a way that automatically handles the special cases without any extra code.\nSimilarly, it should be possible to design the code for deleting the selection so that the empty case is handled without any special-case checks.\nIn the example above, both the line-oriented interface and the character-oriented interface will require extra work in software that uses the text class.\nIf you were designing the text class and considered only the line-oriented and character-oriented approaches, you might notice that each of the alternatives is awkward because it requires higher level software to perform additional text manipulations.\nThen you can apply it again when you are designing the implementation: for the text class, you might consider implementations such as a linked list of lines, fixed-size blocks of characters, or a “gap buffer.” The goals will be different for the implementation than for the interface: for the things are simplicity and performance.\nFor larger modules you’ll spend more time in the initial design explorations, but the implementation will also take longer, and the benefits of a better design will also be higher.\nIn-code documentation plays a crucial role in software design.\nDocumentation also plays an important role in abstraction; without comments, you can’t hide complexity.\nFinally, the process of writing comments, if done correctly, will actually improve a system’s design.\nConversely, a good software design loses much of its value if it is poorly documented.\nMany developers think that comments are a waste of time; others see the value in comments, but somehow never get around to writing them.\nHowever, even in teams that encourage documentation, comments are often viewed as drudge work and many developers don’t understand how to write them, so the resulting documentation is often mediocre.\nIn this chapter I will discuss the excuses developers use to avoid writing comments, and the reasons why comments really do matter.\nChapter 13 will then describe how to write good comments and the next few chapters after that will discuss related issues such as choosing variable names and how to use documentation to improve a system’s design.\nI hope these chapters will convince you of three things: good comments can make a big difference in the overall quality of software; it isn’t hard to write good comments; and (this may be hard to believe) writing comments can actually be fun.\n“Good code is self-documenting.” “I don’t have time to write comments.” “Comments get out of date and become misleading.” “The comments I have seen are all worthless; why bother?” In the sections below I will address each of these excuses in turn.\nSome people believe that if code is written well, it is so obvious that no comments are needed.\nTo be sure, there are things you can do when writing code to reduce the need for comments, such as choosing good variable names (see Chapter 14).\nNonetheless, there is still a significant amount of design information that can’t be represented in code.\nThe informal aspects of an interface, such as a high- level description of what each method does or the meaning of its result, can only be described in comments.\nThere are many other examples of things that can’t be described in the code, such as the rationale for a particular design decision, or the conditions under which it makes sense to call a particular method.\nSome developers argue that if others want to know what a method does, they should just read the code of the method: this will be more accurate than any comment.\nIt’s possible that a reader could deduce the abstract interface of the method by reading its code, but it would be time-consuming and painful.\nIn addition, if you write code with the expectation that users will read method implementations, you will try to make each method as short as possible, so that it’s easy to read.\nFurthermore, it doesn’t really make the code easier to read: in order to understand the behavior of the top-level method, readers will probably need to understand the behaviors of the nested\nComments allow us to capture the additional information that callers need, thereby completing the simplified view while hiding implementation details.\nIt’s also important that comments are written in a human language such as English; this makes them less precise than code, but it provides more expressive power, so we can create simple, intuitive descriptions.\n12.2 I don’t have time to write comments\nHowever, software projects are almost always under time pressure, and there will always be things that seem higher priority than writing comments.\nGood comments make a huge difference in the maintainability of software, so the effort spent on them\nAsk yourself how much of your development time you spend typing in code (as opposed to designing, compiling, testing, etc.), assuming you don’t include any comments; I doubt that the answer is more than 10%.\nWith these assumptions, writing good comments won’t add more than about 10% to your development time.\nFurthermore, many of the most important comments are those related to abstractions, such as the top-level documentation for classes and methods.\nChapter 15 will argue that these comments should be written as part of the design process, and that the act of writing the documentation serves as an important design tool that improves the overall design.\nEvery software developer has seen comments that provide no useful information, and most existing documentation is so-so at best.\nThe overall idea behind comments is to capture information that was in the mind of the designer but couldn’t be represented in the code.\nWithout documentation, future developers will have to rederive or guess at the developer’s original knowledge; this will take additional time, and there is a risk of bugs if the new developer misunderstands the original designer’s intentions.\nComments are valuable even when the original designer is the one making the changes: if it has been more than a few weeks since you last worked in a piece of code, you will have forgotten many of the details of the original design.\nWithout adequate documentation, developers may have to read large amounts of code to reconstruct what was in the designer’s mind.",
+      "keywords": [
+        "Comments",
+        "code",
+        "Design",
+        "selection",
+        "documentation",
+        "good comments",
+        "n’t",
+        "interface",
+        "special cases",
+        "good",
+        "text",
+        "writing comments",
+        "time",
+        "software",
+        "method"
+      ],
+      "concepts": [
+        "design",
+        "documentation",
+        "comments",
+        "comment",
+        "code",
+        "develop",
+        "line",
+        "good",
+        "method",
+        "implement"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.671,
+          "base_score": 0.521,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.629,
+          "base_score": 0.479,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.62,
+          "base_score": 0.47,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.591,
+          "base_score": 0.441,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 8,
+          "title": "",
+          "score": 0.506,
+          "base_score": 0.356,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "comments",
+          "documentation",
+          "design",
+          "code",
+          "good comments"
+        ],
+        "semantic": [],
+        "merged": [
+          "comments",
+          "documentation",
+          "design",
+          "code",
+          "good comments"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3183376848518533,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166827+00:00"
+      }
+    },
+    {
+      "chapter_number": 14,
+      "title": "Segment 14 (pages 117-124)",
+      "start_page": 117,
+      "end_page": 124,
+      "summary": "Comments Should Describe Things that Aren’t Obvious from the Code\nThe reason for writing comments is that statements in a programming language can’t capture all of the important information that was in the mind of the developer when the code was written.\nComments record this information so that developers who come along later can easily understand and modify the code.\nThe guiding principle for comments is that comments should describe things that aren’t obvious from the code.\nOne of the most important reasons for comments is abstractions, which include a lot of information that isn’t obvious from the code.\nThis chapter discusses what information needs to be described in comments and how to write good comments.\nAs you will see, good comments typically explain things at a different level of detail than the code, which is more detailed in some situations and less detailed (more abstract) in others.\nOccasionally, the declaration for a variable or method is so obvious that there is nothing useful to add in a comment (getters and setters sometimes fall in this category), but this is rare; it is easier to comment everything rather than spend energy worrying about whether a comment is needed.\nThe most common reason is that the comments repeat the code: all of the information in the comment can easily be deduced from the code next to the comment.\nHere is a code sample that appeared in a recent research paper: ptr_copy = get_copy(obj) if is_unlocked(ptr_copy): return obj if is_copy(ptr_copy): return obj thread_id = get_thread_id(ptr_copy) if thread_id == ctx.thread_id: return ptr_copy There is no useful information in any of these comments except for the “Locked by” comment, which suggests something about the thread that might not be obvious from the code.\nNotice that these comments are at roughly the same level of detail as the code: there is one comment per line of code, which describes that line.\nHere are more examples of comments that repeat the code:\nNone of these comments provide any value.\nFor the first two comments, the code is already clear enough that it doesn’t really need comments; in the third case, a comment might be useful, but the current comment doesn’t provide enough detail to be helpful.\nIf the answer is yes, as in the examples above, then the comment doesn’t make the code any easier to understand.\nThese comments just take the words from the method or variable name, perhaps add a few words from argument names and types, and form them into a sentence.\nFor example, the only thing in the second comment that isn’t in the code is the word “to”!\nOnce again, these comments could be written just by looking at the declarations, without any understanding the methods of variables; as a result, they have no value.\nIf the information in a comment is already obvious from the code next to the comment, then the comment isn’t helpful.\nOne example of this is when the comment uses the same words that make up the name of the thing it is describing.\nPick words for the comment that provide additional information about the meaning of the entity, rather than just repeating its name.\nThis comment provides additional information that is not obvious from the declaration itself, such as the units (pixels) and the fact that padding applies to both sides of each line.\nComments augment the code by providing information at a different level of detail.\nSome comments provide information at a lower, more detailed, level than the code; these comments add precision by clarifying the exact meaning of the code.\nOther comments provide information at a higher, more abstract, level than the code; these comments offer intuition, such as the reasoning behind the code, or a simpler and more abstract way of thinking about the code.\nComments at the same level as the code are likely to repeat the code.\nPrecision is most useful when commenting variable declarations such as class instance variables, method arguments, and return values.",
+      "keywords": [
+        "Comments",
+        "comment",
+        "Code",
+        "n’t",
+        "information",
+        "n’t Obvious",
+        "Obvious",
+        "comments provide information",
+        "Comment Repeats Code",
+        "comments provide",
+        "variable",
+        "good comments",
+        "comments add",
+        "comment describes",
+        "declaration"
+      ],
+      "concepts": [
+        "comments",
+        "comment",
+        "level",
+        "code",
+        "private",
+        "variable",
+        "variables",
+        "returned",
+        "add",
+        "lengths"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.909,
+          "base_score": 0.759,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 18,
+          "title": "",
+          "score": 0.836,
+          "base_score": 0.686,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.736,
+          "base_score": 0.586,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 19,
+          "title": "",
+          "score": 0.679,
+          "base_score": 0.529,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 15,
+          "title": "",
+          "score": 0.606,
+          "base_score": 0.456,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "comments",
+          "comment",
+          "code",
+          "information",
+          "ptr_copy"
+        ],
+        "semantic": [],
+        "merged": [
+          "comments",
+          "comment",
+          "code",
+          "information",
+          "ptr_copy"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3827089340731249,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166853+00:00"
+      }
+    },
+    {
+      "chapter_number": 15,
+      "title": "Segment 15 (pages 125-135)",
+      "start_page": 125,
+      "end_page": 135,
+      "summary": "The comment will be both shorter and more useful if it describes what the variable represents rather than mirroring the code structure: /* True means that a heartbeat has been received since the last\nThese comments are written at a higher level than the code.\nOn the other hand, the comment doesn’t explain the overall purpose of this code, or how it fits into the method that contains it.\nThis comment doesn’t contain any details; instead, it describes the code’s overall function at a higher level.\nWith this high-level information, a reader can explain almost everything that happens in the code: the loop must be iterating over all the existing remote procedure calls (RPCs); the session test is probably used to see if a particular RPC is destined for the right server; the LOADING test suggests that RPCs can have multiple states, and in some states it isn’t safe to add more hashes; the MAX - PKHASHES_PERRPC test suggests that there is a limit to how many hashes can be sent in a single RPC.\nFurthermore, the new comment provides a basis for readers to judge the code: does it do everything that is needed to add the key hash to an existing\nHigher-level comments are more difficult to write than lower-level comments because you must think about the code in a different way.\nA good higher-level comment expresses one or a few simple ideas that provide a conceptual framework, such as “append to an existing RPC.” Given the framework, it becomes easy to see how specific code statements relate to the overall goal.\nHere is another code sample, which has a good higher-level comment:\nIf you want code that presents good abstractions, you must document those abstractions with comments.\nThe first step in documenting abstractions is to separate interface comments from implementation comments.\nInterface comments provide information that someone needs to know in order to use a class or method; they define the abstraction.\nImplementation comments describe how a class or method works internally in order to implement the abstraction.\nIt’s important to separate these two kinds of comments, so that users of an interface are not exposed to implementation details.\nIf interface comments must also describe the implementation, then the class or method is shallow.\nThe interface comment for a class provides a high-level description of\nthe abstraction provided by the class, such as the following: /** * This class implements a simple server-side interface to the HTTP * protocol: by using this class, an application can receive HTTP * requests, process them, and return responses.\nThis comment describes the overall capabilities of the class, without any implementation details or even the specifics of particular methods.\nThe interface comment for a method includes both higher-level\nThe comment usually starts with a sentence or two describing the behavior of the method as perceived by callers; this is the higher-level abstraction.\nIf the method has any side effects, these must be documented in the interface comment.\nHere is the interface comment for a method that copies data out of a\nThe goal of the comment is to provide all the information a developer needs in order to invoke the method, including how special cases are handled (note how this method follows the advice of\nThe developer should not need to read the body of the method in order to invoke it, and the interface comment provides no information about how the method is implemented, such as how it scans its internal data structures to find the desired data.\nThe application first constructs an object of type IndexLookup, providing arguments that select a table, an index, and a range within the index (for example, if the index is based on an age field, key1 and key2 might be specified as 21 and 65 to select all objects with ages between those values).\neach index may also be distributed across a different set of servers; the code in the IndexLookup class must first communicate with all of the relevant index servers to collect information about the objects in the range, then it must communicate with the servers that actually store the objects in order to retrieve their values.\nNow let’s consider what information needs to be included in the interface comment for this class.\nHere is the original version of the interface comment for the IndexLookup class; the excerpt also includes a few lines from the class’s definition, which are referred to in the comment: /* * This class implements the client side framework for index range * lookups.\nin the config below: * - The number of concurrent indexedRead RPCs * - The max number of PKHashes a indexedRead RPC can hold at a time * - The size of the active PKHashes * * To use IndexLookup, the client creates an object of this class by * providing all necessary information.\nAll of this implementation information should be omitted from the comment.\nThis comment is not intended to document every detail of each method; it just provides high level information to help readers understand how the methods work together and when each method might be invoked.\nFor details, readers can refer to the interface comments for individual methods.\nThis red flag occurs when interface documentation, such as that for a method, describes implementation details that aren’t needed in order to use the thing being documented.\nOnce again, most of this documentation, such as the reference to DCFT and the entire second paragraph, concerns the implementation, so it doesn’t belong here; this is one of the most common errors in interface comments.\nHere is a better version of the comment: /* * Indicates whether an indexed read has made enough progress for * getNext to return immediately without blocking.",
+      "keywords": [
+        "comment",
+        "comments",
+        "interface comment",
+        "method",
+        "code",
+        "interface",
+        "RPC",
+        "object",
+        "information",
+        "implementation",
+        "IndexLookup class",
+        "IndexLookup",
+        "range",
+        "details",
+        "Higher-level comments"
+      ],
+      "concepts": [
+        "object",
+        "methods",
+        "code",
+        "returned",
+        "information",
+        "index",
+        "indexes",
+        "classes",
+        "providing",
+        "provides"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.671,
+          "base_score": 0.521,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 14,
+          "title": "",
+          "score": 0.606,
+          "base_score": 0.456,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 18,
+          "title": "",
+          "score": 0.586,
+          "base_score": 0.436,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 19,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.317,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.408,
+          "base_score": 0.258,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "comment",
+          "comments",
+          "interface",
+          "class",
+          "level"
+        ],
+        "semantic": [],
+        "merged": [
+          "comment",
+          "comments",
+          "interface",
+          "class",
+          "level"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.28236869098156714,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166879+00:00"
+      }
+    },
+    {
+      "chapter_number": 16,
+      "title": "Segment 16 (pages 136-143)",
+      "start_page": 136,
+      "end_page": 143,
+      "summary": "Most methods are so short and simple that they don’t need any implementation comments: given the code and the interface comments, it’s easy to figure out how a method works.\nThe main goal of implementation comments is to help readers understand what the code is doing (not how it does it).\nFor short methods, the code only does one thing, which is already described in its interface comment, so no implementation comments are needed.\nNotice how this comment describes the loop at a more abstract and intuitive level; it doesn’t go into any details about how a request is extracted from the request message or how the object is incremented.\nLoop comments are only needed for longer or more complex loops, where it may not be obvious what\nIn addition to describing what the code is doing, implementation comments are also useful to explain why.\nIf there are tricky aspects to the code that won’t be obvious from reading it, you should document them.\nFor example, if a bug fix requires the addition of code whose purpose isn’t totally obvious, add a comment describing why the code is needed.\nDevelopers can look in the bug database for more details (this is an example of avoiding duplication in comments, which will be discussed in Chapter 16).\nHowever, most local variables don’t need documentation if they have good names.\nIn this case it’s OK to let readers read the code to figure out the meaning of the variable.\nHowever, if the variable is used over a large span of code, then you should consider adding a comment to describe the variable.\nAdding a Status for a new error condition requires modifying many different files (one file maps Status values to exceptions, another provides a human-readable message for each Status, and so on).\nFortunately, there is one obvious place where developers will have to go when adding a new status value, which is the declaration of the Status enum.\n// its status code.\nNew status values will be added at the end of the existing list, so the comments are also placed at the end, where they are most likely to be seen.\nOne example from the RAMCloud storage system was the code for dealing with zombie servers, which are servers that the system believes have crashed, but in fact are still running.\nNeutralizing zombie servers required code in several different modules, and these pieces of code all depend on each other.\nNone of the pieces of code is an obvious central place to put documentation.\nAlternatively, the documentation can be located in one of the places where it is needed, but in this case it’s unlikely that developers will see the documentation or know where to look for it.\nThen, in any piece of code that relates to one of these issues there is a short comment referring to the designNotes file: // See \"Zombies\" in designNotes.\nThe goal of comments is to ensure that the structure and behavior of the system is obvious to readers, so they can quickly find the information they need and make modifications to the system with confidence that they will work.\nWhen following the rule that comments should describe things that aren’t obvious from the code, “obvious” is from the perspective of someone reading your code for the first time (not you).\nNo: this information should be encapsulated on the servers; not even the implementation of IndexLookup should need to know this.\nNo: RAMCloud recovers automatically from server crashes, so crashes are not visible to application-level software; thus, there is no need to mention crashes in the interface documentation for IndexLookup.\nGood names are a form of documentation: they make code easier to understand.",
+      "keywords": [
+        "code",
+        "Status",
+        "Implementation comments",
+        "comments",
+        "documentation",
+        "comment",
+        "obvious",
+        "servers",
+        "Add",
+        "Implementation",
+        "n’t",
+        "information",
+        "variable",
+        "bug",
+        "system"
+      ],
+      "concepts": [
+        "comment",
+        "comments",
+        "code",
+        "status",
+        "bugs",
+        "servers",
+        "readers",
+        "classes",
+        "variables",
+        "variable"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 14,
+          "title": "",
+          "score": 0.909,
+          "base_score": 0.759,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 18,
+          "title": "",
+          "score": 0.84,
+          "base_score": 0.69,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 15,
+          "title": "",
+          "score": 0.671,
+          "base_score": 0.521,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 19,
+          "title": "",
+          "score": 0.649,
+          "base_score": 0.499,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.604,
+          "base_score": 0.454,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "status",
+          "comments",
+          "code",
+          "obvious",
+          "documentation"
+        ],
+        "semantic": [],
+        "merged": [
+          "status",
+          "comments",
+          "code",
+          "obvious",
+          "documentation"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3999744490388447,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166910+00:00"
+      }
+    },
+    {
+      "chapter_number": 17,
+      "title": "Segment 17 (pages 144-151)",
+      "start_page": 144,
+      "end_page": 151,
+      "summary": "The file system code used the variable name block for two different purposes.\nIf different variable names had been used for the different kinds of blocks, such as fileBlock and diskBlock, it’s unlikely that the error would have happened; the programmer would have known that fileBlock couldn’t be used in that situation.\nThey tend to use the first name that comes to mind, as long as it’s reasonably close to matching the thing it names.\nWhen choosing a name, the goal is to create an image in the mind of the reader about the nature of the thing being named.\n14.3 Names should be precise\nGood names have two properties: precision and consistency.\nThe most common problem with names is that they are too generic or vague; as a result, it’s hard for readers to tell what the name refers to; the reader may assume that the name refers to something different from reality, as in the block bug above.\nA more precise name like getActiveIndexlets or numIndexlets would be better: with one of these names, readers will probably be able to guess what the method returns without having to look at its documentation.\nHere are some other examples of names that aren’t precise enough,\nThese names are too generic.\nprivate boolean cursorVisible = true; The name cursorVisible conveys more information; for example, it allows readers to guess what a true value means (as a general rule, names of boolean variables should always be predicates).\nA variable named result was used in a method with no return value.\nIf a variable or method name is broad enough to refer to many different things, then it doesn’t convey much information to the developer and the underlying entity is more likely to be misused.\nFor example, it’s fine to use generic names like i and j as loop iteration variables, as long as the loops only span a few lines of code.\n14.4 Use names consistently\nThe file system used block for variables with two different behaviors (file blocks and disk blocks); this led to a false assumption about the meaning of a variable, which in turn resulted in a bug.\nIf you use names such as i and j for loop variables, always use i in outermost loops and j for nested loops.\nIn a presentation on name choice for Go, Andrew Gerrand states that “long names obscure what the code does.”1 He presents this code sample, which uses single-letter variable names: func RuneCount(b []byte) int { i, n := 0, 0 for i < len(b) { if b[i] < RuneSelf { i++ } else { _, size := DecodeRune(b[i:]) i += size } n++ } return n }\nand argues that it is more readable than the following version, which uses longer names: func RuneCount(buffer []byte) int {\nTo me, ambiguous names like these are likely to result in confusion and error, just as in the block example.\nIf you write code with short variable names and the people who read it find it easy to understand, then that’s fine.\nSimilarly, if I start getting complaints that long variable names make my code harder to read, then I’ll consider using shorter ones.\nshould be.” The earlier discussion about using loop variables named i and j is an example of this rule.\nWell chosen names help to make code more obvious; when someone encounters the variable for the first time, their first guess about its behavior, made without much thought, will be correct.\nChoosing good names is an example of the investment mindset discussed in Chapter 3: if you take a little extra time up front to select good names, it will be easier for you to work on the code in the future.",
+      "keywords": [
+        "block",
+        "physical block number",
+        "variable",
+        "code",
+        "block number",
+        "physical block",
+        "variables",
+        "logical block number",
+        "n’t",
+        "method",
+        "file",
+        "logical block",
+        "good",
+        "number",
+        "block variable"
+      ],
+      "concepts": [
+        "names",
+        "named",
+        "block",
+        "variable",
+        "variables",
+        "value",
+        "code",
+        "different",
+        "difference",
+        "uses"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.568,
+          "base_score": 0.418,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 25,
+          "title": "",
+          "score": 0.532,
+          "base_score": 0.382,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 12,
+          "title": "",
+          "score": 0.528,
+          "base_score": 0.378,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.473,
+          "base_score": 0.323,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.388,
+          "base_score": 0.238,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "names",
+          "block",
+          "variable",
+          "variables",
+          "variable names"
+        ],
+        "semantic": [],
+        "merged": [
+          "names",
+          "block",
+          "variable",
+          "variables",
+          "variable names"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.26662953149195023,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166934+00:00"
+      }
+    },
+    {
+      "chapter_number": 18,
+      "title": "Segment 18 (pages 152-159)",
+      "start_page": 152,
+      "end_page": 159,
+      "summary": "Write The Comments First (Use Comments As Part Of The Design Process)\nThe best time to write comments is at the beginning of the process, as you write the code.\nWriting the comments first makes documentation part of the design process.\nAlmost every developer I have ever met puts off writing comments.\nYou know that writing comments is the right thing to do, but it’s no fun.\nYou look at the code as you are writing the comments, so the comments repeat the code.\n15.2 Write the comments \u0000rst\nFor each new method I write the interface comment before the body of the method; for instance variables I fill in the comment at the same time that I write the variable declaration.\nWhen the code is done, the comments are also done.\nIf you write the comments as you are designing the class, the key design issues will be fresh in your mind, so it’s easy to record them.\nIt’s better to write the interface comment for each method before its body, so you can focus on the method’s abstraction and interface without being distracted by its implementation.\nDuring the coding and testing process you will notice and fix problems with the comments.\n15.3 Comments are a design tool\nThe second, and most important, benefit of writing the comments at the beginning is that it improves the system design.\nIf you write comments describing the abstractions at the beginning, you can review and tune them before writing implementation code.\nTo write a good comment, you must identify the essence of a variable or piece of code: what are the most important aspects of this thing?\nOverall, the act of writing comments allows you to evaluate your design decisions early, so you can discover and fix problems.\nIf you find it difficult to write such a comment, that’s an indicator that there may be a problem with the design of the thing you are describing.\nIf you are programming strategically, where your main goal is a great design rather than just writing code that works, then writing comments should be fun, since that’s how you identify the best designs.\nEven if half of your total code lines are comments, writing comments probably doesn’t account for more than about 5% of your total development time.\nWriting the comments first will mean that the abstractions will be more stable before you start writing code.\nIn contrast, if you write the code first, the abstractions will probably evolve as you code, which will require more code revisions than the comments-first approach.\nThen think about how it affects the quality of your comments, the quality of your design, and your overall enjoyment of software development.\nIt’s easy to forget to update comments when you modify code, which results in comments that are no longer accurate.\nThe best way to ensure that comments get updated is to position them close to the code they describe, so developers will see them when they change the code.\nFor example, the best place for a method’s interface comment is in the code file, right next to the body of the method.\nAny changes to the method will involve this code, so the developer is likely to see the interface comments and update them if needed.\nHowever, this is a long way from the code; developers won’t see those comments when modifying the method’s body, and it takes additional work to open a different file and find the interface comments to update them.",
+      "keywords": [
+        "Comments",
+        "code",
+        "Design",
+        "interface comment",
+        "writing comments",
+        "comment",
+        "method",
+        "system design",
+        "Write",
+        "system",
+        "writing",
+        "n’t",
+        "interface",
+        "documentation",
+        "write interface comments"
+      ],
+      "concepts": [
+        "comments",
+        "comment",
+        "design",
+        "coding",
+        "code",
+        "changing",
+        "changes",
+        "developers",
+        "write",
+        "methods"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.84,
+          "base_score": 0.69,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 14,
+          "title": "",
+          "score": 0.836,
+          "base_score": 0.686,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 19,
+          "title": "",
+          "score": 0.717,
+          "base_score": 0.567,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 15,
+          "title": "",
+          "score": 0.586,
+          "base_score": 0.436,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.474,
+          "base_score": 0.324,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "comments",
+          "writing",
+          "writing comments",
+          "write",
+          "code"
+        ],
+        "semantic": [],
+        "merged": [
+          "comments",
+          "writing",
+          "writing comments",
+          "write",
+          "code"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3864713708972806,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166959+00:00"
+      }
+    },
+    {
+      "chapter_number": 19,
+      "title": "Segment 19 (pages 160-167)",
+      "start_page": 160,
+      "end_page": 167,
+      "summary": "Given tools such as these, the documentation should be located in the place that is most convenient for developers working on the code.\nFor example, if a method has three major phases, don’t write one comment at the top of the method that describes all of the phases in detail.\nInstead, write a separate comment for each phase and position that comment just above the first line of code in that phase.\nAdditional details can be documented just above the code for each phase.\n16.3 Comments belong in the code, not the commit log\nA common mistake when modifying code is to put detailed information about the change in the commit message for the source code repository, but then not to document it in the code.\nIf so, then document this information in the code.\nAn example is a commit message describing a subtle problem that motivated a code change.\nIf this isn’t documented in the code, then a developer might come along later and undo the change without realizing that they have re-created a bug.\nThis illustrates the principle of placing documentation in the place where developers are most likely to see it; the commit log is rarely that place.\nIf there are multiple places in the code that are affected by a particular decision, don’t repeat the documentation at each of these points.\nThis is a natural place that developers are likely to check if they’re having trouble understanding code that uses the variable.\nIn addition, add short comments in the other places that refer to the central location: “See the comment in xyz for an explanation of the code below.” If the reference becomes obsolete because the master comment was moved or deleted, this inconsistency will be self- evident because developers won’t find the comment at the indicated place; they can use revision control history to find out what happened to the comment and then update the reference.\nIn contrast, if the documentation is duplicated and some of the copies don’t get updated, there will be no indication to developers that they are using stale information.\nGood development tools will usually provide this information automatically, for example, by displaying the interface comments for a method if you select the method’s name or\nTry to make it easy for developers to find appropriate documentation, but don’t do it by repeating the documentation.\nThere are already numerous sources for this documentation on the Web; just add a short comment to your code with a URL for one of these sources.\nIt’s important that readers can easily find all the documentation needed to understand your code, but that doesn’t mean you have to write all of that documentation.\nOne final thought on maintaining documentation: comments are easier to maintain if they are higher-level and more abstract than the code.\nBut in general, the comments that are most useful (they don’t simply repeat the code) are also easiest to maintain.\nIf you can use an existing design pattern to solve the problem, the implementation will proceed more quickly, it is more likely to work, and your code will be more obvious to readers.\nCreate a document that lists the most important overall conventions, such as coding style guidelines.\nFor conventions that are more localized, such as invariants, find an appropriate spot in the code to document them.\nEven with good documentation, it’s hard for developers to remember all of the conventions.\nThe best way to enforce conventions is to write a tool that checks for violations, and make sure that code cannot be committed to the repository unless it passes the checker.\nEvery time a new developer joined the project, we would experience a rash of line termination problems while that developer adjusted to the convention.\nCode reviews provide another opportunity for enforcing conventions and for educating new developers about the conventions.\nWhen making a design decision, ask yourself if it’s likely that a similar decision was made elsewhere in the project; if so, find an existing example and use the same approach in your new code.",
+      "keywords": [
+        "code",
+        "comments",
+        "comment",
+        "developers",
+        "documentation",
+        "n’t",
+        "Consistency",
+        "conventions",
+        "method",
+        "Find",
+        "place",
+        "phase",
+        "system",
+        "information",
+        "commit"
+      ],
+      "concepts": [
+        "code",
+        "coding",
+        "consistency",
+        "consistent",
+        "comments",
+        "comment",
+        "documentation",
+        "document",
+        "developers",
+        "place"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 18,
+          "title": "",
+          "score": 0.717,
+          "base_score": 0.567,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 14,
+          "title": "",
+          "score": 0.679,
+          "base_score": 0.529,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.649,
+          "base_score": 0.499,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 20,
+          "title": "",
+          "score": 0.476,
+          "base_score": 0.326,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 15,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.317,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "code",
+          "documentation",
+          "conventions",
+          "comment",
+          "commit"
+        ],
+        "semantic": [],
+        "merged": [
+          "code",
+          "documentation",
+          "conventions",
+          "comment",
+          "commit"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3205123689420901,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.166982+00:00"
+      }
+    },
+    {
+      "chapter_number": 20,
+      "title": "Segment 20 (pages 168-175)",
+      "start_page": 168,
+      "end_page": 175,
+      "summary": "The return on this investment is that your code will be more obvious.\nCode Should be Obvious\nThe solution to the obscurity problem is to write code in a way that makes it obvious; this chapter discusses some of the factors that make code more or less obvious.\nIf code is obvious, it means that someone can read the code quickly, without much thought, and their first guesses about the behavior or meaning of the code will be correct.\nIf code is obvious, a reader doesn’t need to spend much time or effort to gather all the information they need to work with the code.\nIf code is not obvious, then a reader must expend a lot of time and energy to understand it.\nObvious code needs fewer comments than nonobvious code.\n“Obvious” is in the mind of the reader: it’s easier to notice that someone else’s code is nonobvious than to see problems with your own code.\nThus, the best way to determine the obviousness of code is through code reviews.\nIf someone reading your code says it’s not obvious, then it’s not obvious, no matter how clear it may seem to you.\n18.1 Things that make code more obvious\nTwo of the most important techniques for making code obvious have already been discussed in previous chapters.\nPrecise and meaningful names clarify the behavior of the code and reduce the need for documentation.\nIf a name is vague or ambiguous, then readers will have read through the code in order to deduce the meaning\n18.2 Things that make code less obvious\nThere are many things that can make code nonobvious; this section provides a few examples.\nBecause of this, it’s hard to reason about event-driven code or convince yourself that it works.\nOften this means that there is important information that is not immediately clear to someone reading the code.\nOne of the most common uses is to return multiple values from a method, as in this Java example: return new Pair<Integer, Boolean>(currentTerm, false);\nUnfortunately, generic containers result in nonobvious code because the grouped elements have generic names that obscure their meaning.\nGeneric containers are expedient for the person writing the code, but they create confusion for all the readers that follow.\nIt’s better for the person writing the code to spend a few extra minutes to define a specific container structure, so that the resulting code is more obvious.\nThis code is legal, since List is a superclass of ArrayList, but it can mislead a reader who sees the declaration but not the actual allocation.\nCode that violates reader expectations.\nConsider the following code, which is the main program for a Java application public static void main(String[] args) { ...\nCode is most obvious if it conforms to the conventions that readers will be expecting; if it doesn’t, then it’s important to document the behavior so readers aren’t confused.\nIf code is nonobvious, that usually means there is important information about the code that the reader does not have: in the RaftClient example, the reader might not know that the RaftClient constructor created new threads; in the Pair example, the reader might not know that result.getKey() returns the number of the current term.",
+      "keywords": [
+        "code",
+        "obvious",
+        "make code",
+        "nonobvious code",
+        "reader",
+        "nonobvious",
+        "Obvious code",
+        "work",
+        "making code obvious",
+        "make code nonobvious",
+        "number",
+        "behavior",
+        "information",
+        "code reviews",
+        "Generic"
+      ],
+      "concepts": [
+        "code",
+        "examples",
+        "returned",
+        "works",
+        "chapters",
+        "useful",
+        "uses",
+        "generic",
+        "event",
+        "threads"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 14,
+          "title": "",
+          "score": 0.736,
+          "base_score": 0.586,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.604,
+          "base_score": 0.454,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 19,
+          "title": "",
+          "score": 0.476,
+          "base_score": 0.326,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 18,
+          "title": "",
+          "score": 0.474,
+          "base_score": 0.324,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.434,
+          "base_score": 0.434,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "code",
+          "obvious",
+          "code obvious",
+          "nonobvious",
+          "reader"
+        ],
+        "semantic": [],
+        "merged": [
+          "code",
+          "obvious",
+          "code obvious",
+          "nonobvious",
+          "reader"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.31922387312606115,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.167007+00:00"
+      }
+    },
+    {
+      "chapter_number": 21,
+      "title": "Segment 21 (pages 176-183)",
+      "start_page": 176,
+      "end_page": 183,
+      "summary": "The first form of inheritance is interface inheritance, in which a parent class defines the signatures for one or more methods, but does not implement the methods.\nHowever, implementation inheritance creates dependencies between the parent class and each of its subclasses.\nFor example, a developer making changes to the parent class may need to examine all of the subclasses to ensure that the changes don’t break anything.\nSimilarly, if a subclass overrides a method in the parent class, the developer of the subclass may need to examine the implementation in the parent.\nAgile development is mostly about the process of software development (organizing teams, managing schedules, the role of unit testing, interacting with customers, etc.) as opposed to software design.\nIn the agile approach, a software system is developed in a series of iterations, each of which adds and evaluates a few new features; each iteration includes design, test, and customer input.\nThe best way to end up with a good design is to develop a system in increments, where each increment adds a few new abstractions and refactors existing abstractions based on experience.\nAgile development tends to focus developers on features, not abstractions, and it encourages developers to put off design decisions in order to produce working software as soon as possible.\nHowever, one of the tenets of agile development is that testing should be tightly integrated with development, and programmers should write tests for their own code.\nUnit tests are the ones most often written by developers.\nTests, particularly unit tests, play an important role in software design because they facilitate refactoring.\nAs a result, developers avoid refactoring in systems without good test suites; they try to minimize the number of code changes for each new feature or bug fix, which means that complexity accumulates and design mistakes don’t get corrected.\nWith a good set of tests, developers can be more confident when refactoring because the test suite will find most bugs that are introduced.\nThis encourages developers to make structural improvements to a system, which results in a better design.\nUnit tests are particularly valuable: they provide a higher degree of code coverage than system tests, so they are more likely to uncover any bugs.\n19.4 Test-driven development\nTest-driven development is an approach to software development where programmers write unit tests before they write code.\nWhen creating a new class, the developer first writes unit tests for the class, based on its expected\nNone of the tests pass, since there is no code for the class.\nThen the developer works through the tests one at a time, writing enough code for that test to pass.\nThe problem with test-driven development is that it focuses attention on getting specific features working, rather than finding the best design.\nTest-driven development is too incremental: at any point in time, it’s tempting to just hack in the next feature to make the next test pass.\nIf you fix the bug before writing the test, it’s possible that the new unit test doesn’t actually trigger the bug, in which case it won’t tell you whether you really fixed the problem.\nThe notion of design patterns was popularized by the book Design Patterns: Elements of Reusable Object- Oriented Software by Gamma, Helm, Johnson, and Vlissides, and design patterns are now widely used in object-oriented software development.\nIn the Java programming community, getter and setter methods are a popular design pattern.\nOne of the risks of establishing a design pattern is that developers assume the pattern is good and try to use it as much as possible.",
+      "keywords": [
+        "design",
+        "Design patterns",
+        "Unit tests",
+        "development",
+        "parent class",
+        "software development",
+        "Software",
+        "Agile development",
+        "implementation inheritance",
+        "inheritance",
+        "unit",
+        "code",
+        "parent",
+        "implementation",
+        "methods"
+      ],
+      "concepts": [
+        "tested",
+        "design",
+        "development",
+        "inheritance",
+        "inherit",
+        "methods",
+        "classes",
+        "implement",
+        "implementations",
+        "implementation"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.6,
+          "base_score": 0.45,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 2,
+          "title": "",
+          "score": 0.549,
+          "base_score": 0.399,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.414,
+          "base_score": 0.264,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.39,
+          "base_score": 0.39,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.364,
+          "base_score": 0.364,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "tests",
+          "unit",
+          "development",
+          "test",
+          "design"
+        ],
+        "semantic": [],
+        "merged": [
+          "tests",
+          "unit",
+          "development",
+          "test",
+          "design"
+        ]
+      },
+      "topic_id": 2,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.28835252329423366,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.167033+00:00"
+      }
+    },
+    {
+      "chapter_number": 22,
+      "title": "Segment 22 (pages 184-192)",
+      "start_page": 184,
+      "end_page": 192,
+      "summary": "On the other hand, if you completely ignore performance issues, it’s easy to end up with a large number of significant inefficiencies spread throughout the code; the resulting system can easily be 5–10x slower than it needs to be.\nWe use these both to understand the performance of existing libraries used in RAMCloud, and also to measure the performance of new classes written for RAMCloud.\nIf the faster design adds a lot of implementation complexity, or if it results in more complicated interfaces, then it may be better to start off with the simpler approach and optimize later if performance turns out to be a problem.\nIf you start making changes based on intuition, you’ll waste time on things that don’t actually improve performance, and you’ll probably make the system more complicated in the process.\nYou’ll need to measure deeper to identify in detail the factors that contribute to overall performance; the goal is to identify a small number of very specific places where the system is currently spending a lot of time, and where you have ideas for improvement.\nThe key idea is to design the code around the critical path.\nImagine instead that you are writing a new method that implements just the critical path, which is the minimum amount of code that must be executed in the the most common case.\nThe current code may also use a variety of variables and data structures; consider only the data needed for the critical path, and assume whatever data structure is most convenient for the critical path.\nYou may have to add a bit of extra code to the ideal in order to allow clean abstractions; for example, if the code involves a hash table lookup, it’s OK to introduce an extra method call to a general-purpose hash table class.\nEach special case adds a little bit of code to the critical path, in the form of extra conditional statements and/or method calls.\nIf the initial test fails (which means a special case has occurred) the code can branch to a separate place off the critical path to handle it.\nPerformance isn’t as important for special cases, so you can structure the special-case code for simplicity rather than performance.\nLet’s consider an example, in which the Buffer class of the RAMCloud storage system was optimized to achieve a speedup of about 2x for the most common operations.\nBuffers are designed to reduce overheads from memory copying and dynamic storage allocation.\nA Buffer stores what appears to be a linear array of bytes, but for efficiency it allows the underlying storage to be divided into multiple discontiguous chunks of memory, as shown in Figure 20.1.\nEach Buffer contains a small built-in allocation, which is a block of memory available for storing internal chunks.\nFigure 20.1: A Buffer object uses a collection of memory chunks to store what appears to be a linear array of bytes.\nFor example, when assembling a response message containing a short header and the contents of a large object in the RAMCloud storage system, RAMCloud uses a Buffer with two chunks.\nAside from the fundamental approach of allowing discontiguous chunks, we did not attempt to optimize the code of the Buffer class in the original implementation.\nWe decided to see if we could improve the performance of the Buffer class.\nThe most common operation for Buffer is to allocate space for a small amount of new data using an internal chunk.\nIn the simplest possible case, the space can be allocated by enlarging the last existing chunk in the Buffer.\nHowever, this is only possible if the last existing chunk is internal, and if there is enough space in its allocation to accommodate the new data.\nThe ideal code would perform a single check to confirm that the\nFigure 20.2 shows the original code for the critical path, which starts with the method Buffer::alloc.\nIn the fastest possible case, Buffer::alloc calls calls Buffer::Allocation::allocateAppend.\nThe code checks twice to see if the current allocation has enough room for the new data: once in Buffer::Allocation::allocateAppend, and again when its return value is tested by Buffer::allocateAppend.\nFurthermore, rather than trying to expand the last chunk directly, the code allocates new space without any consideration of the last chunk.\nThen Buffer::alloc checks to see if that space happens to be adjacent to the last chunk, in which case it merges the new space with the existing chunk.\nThe critical path makes two additional method calls in addition to the original invocation of Buffer::alloc.\nBuffer::allocateAppend is nearly a pass-though method; its only contribution is to create a new allocation if needed.",
+      "keywords": [
+        "Buffer",
+        "code",
+        "Performance",
+        "critical path",
+        "system",
+        "chunk",
+        "Buffer class",
+        "special cases",
+        "design",
+        "critical",
+        "cases",
+        "path",
+        "RAMCloud",
+        "system performance",
+        "complexity"
+      ],
+      "concepts": [
+        "performance",
+        "perform",
+        "buffer",
+        "code",
+        "allocating",
+        "allocate",
+        "allocations",
+        "designing",
+        "make",
+        "making"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 23,
+          "title": "",
+          "score": 0.557,
+          "base_score": 0.557,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 24,
+          "title": "",
+          "score": 0.461,
+          "base_score": 0.461,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 4,
+          "title": "",
+          "score": 0.372,
+          "base_score": 0.372,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 3,
+          "title": "",
+          "score": 0.358,
+          "base_score": 0.358,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 16,
+          "title": "",
+          "score": 0.343,
+          "base_score": 0.343,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "buffer",
+          "critical",
+          "performance",
+          "critical path",
+          "chunk"
+        ],
+        "semantic": [],
+        "merged": [
+          "buffer",
+          "critical",
+          "performance",
+          "critical path",
+          "chunk"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.2971830159864053,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:00:27.167056+00:00"
+      }
+    },
+    {
+      "chapter_number": 23,
+      "title": "Segment 23 (pages 193-200)",
+      "start_page": 193,
+      "end_page": 200,
+      "summary": "To fix these problems, we refactored the Buffer class so that its design is centered around the most performance-critical paths.\nWe considered not just the allocation code above but several other commonly executed paths, such as retrieving the total number of bytes of data currently stored in a Buffer.\nThen we designed the rest of the class around these critical paths.\nWe also applied the design principles from this book to simplify the class in general.\nFigure 20.2: The original code for allocating new space at the end of a Buffer, using an internal chunk.\nFigure 20.3: The new code for allocating new space in an internal chunk of a Buffer.\nFigure 20.3 shows the new critical path for allocating internal space in a Buffer.\nThe new code is about twice as fast as the old code: the total time to append a 1-byte string to a Buffer using internal storage dropped from 8.8 ns to 4.75 ns.\nThe Buffer class rewrite improved its performance by a factor of 2 while simplifying its design and reducing code size by 20%.\nIf the only thing that matters to you is making your current code work as soon as possible, then thinking about design will seem like drudge work that is getting in the way of your real goal.\nOn the other hand, if good design is an important goal for you, then the ideas in this book should make programming more fun.\nFurthermore, the investments you make in good design will pay off quickly.\nPoor designers spend most of their time chasing bugs in complicated and brittle code.",
+      "keywords": [
+        "Buffer",
+        "design",
+        "code",
+        "Buffer class",
+        "Buffer length",
+        "total Buffer length",
+        "total Buffer",
+        "good design",
+        "internal chunk",
+        "internal",
+        "critical paths",
+        "Buffer class rewrite",
+        "chunk",
+        "paths",
+        "time"
+      ],
+      "concepts": [
+        "problems",
+        "investments",
+        "dispatcher",
+        "general",
+        "ideas",
+        "needed",
+        "information",
+        "generic",
+        "conditions",
+        "definition"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 24,
+          "title": "",
+          "score": 0.563,
+          "base_score": 0.413,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 22,
+          "title": "",
+          "score": 0.557,
+          "base_score": 0.557,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.451,
+          "base_score": 0.451,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 12,
+          "title": "",
+          "score": 0.379,
+          "base_score": 0.379,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 15,
+          "title": "",
+          "score": 0.379,
+          "base_score": 0.379,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "buffer",
+          "internal",
+          "paths",
+          "buffer class",
+          "chunk"
+        ],
+        "semantic": [],
+        "merged": [
+          "buffer",
+          "internal",
+          "paths",
+          "buffer class",
+          "chunk"
+        ]
+      },
+      "topic_id": 3,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3173664497770096,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.167079+00:00"
+      }
+    },
+    {
+      "chapter_number": 24,
+      "title": "Segment 24 (pages 201-208)",
+      "start_page": 201,
+      "end_page": 208,
+      "summary": "masking exceptions, 81 memory allocation, dynamic, 160 method interface comment, 110 micro-benchmark, 160 missing parameter example, 82 modular design, 2, 19 module, 20\nconsistency, 126, 141 generic, 123 how to choose, 121 making code more obvious, 146 precise, 123 short names in Go, 126 network communication, 160 NFS server crash example, 81 non-existent selection example, 87 nonvolatile memory, 160\nselection/cursor example, 65 self-documenting code, 96 setter, 156 shallow module, 25 small classes, 26 special-purpose code, 62, 67 specification, formal, 21 strategic programming, 14, 135 style, coding, 141 substring example (Java), 80 system tests, 154\n2. Working code isn’t enough (see p.\n3. Make continual small investments to improve system design (see p.\n5. Interfaces should be designed to make the most common usage as simple as possible (see p.\n7. General-purpose modules are deeper (see p.\n8. Separate general-purpose and special-purpose code (see p.\nDesign it twice (see p.\nComments should describe things that are not obvious from the code (see p.\nInformation Leakage: a design decision is reflected in multiple modules (see p.\nTemporal Decomposition: the code structure is based on the order in which operations are executed, not on information hiding (see p.\nComment Repeats Code: all of the information in a comment is immediately obvious from the code next to the comment (see p.",
+      "keywords": [
+        "NFS server crash",
+        "file data loss",
+        "HTTP parameters",
+        "HTTP server",
+        "Java substring",
+        "RAMCloud Buffer",
+        "RAMCloud Status",
+        "HTTP response",
+        "NFS server",
+        "RAMCloud error promotion",
+        "Java",
+        "file data",
+        "Web site colors",
+        "file deletion",
+        "missing parameter"
+      ],
+      "concepts": [
+        "code",
+        "coding",
+        "interface",
+        "design",
+        "method",
+        "module",
+        "general",
+        "implementation",
+        "memory",
+        "special"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.621,
+          "base_score": 0.621,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 23,
+          "title": "",
+          "score": 0.563,
+          "base_score": 0.413,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.525,
+          "base_score": 0.525,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 22,
+          "title": "",
+          "score": 0.461,
+          "base_score": 0.461,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 10,
+          "title": "",
+          "score": 0.456,
+          "base_score": 0.456,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "160",
+          "nfs server",
+          "code",
+          "nfs",
+          "server"
+        ],
+        "semantic": [],
+        "merged": [
+          "160",
+          "nfs server",
+          "code",
+          "nfs",
+          "server"
+        ]
+      },
+      "topic_id": 3,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.39920203555098466,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.167124+00:00"
+      }
+    },
+    {
+      "chapter_number": 25,
+      "title": "Segment 25 (pages 209-210)",
+      "start_page": 209,
+      "end_page": 210,
+      "summary": "Vague Name: the name of a variable or method is so imprecise that it doesn’t convey much useful information (see p.\nOusterhout received a BS degree in Physics from Yale University and a PhD in Computer Science from Carnegie Mellon University.",
+      "keywords": [
+        "n’t convey",
+        "variable or method",
+        "Hard to Pick",
+        "Computer Science",
+        "Award",
+        "National Science Foundation",
+        "Murray Hopper Award",
+        "Young Investigator Award",
+        "Distinguished Teaching Award",
+        "Hard to Describe",
+        "Software System Award",
+        "Science Foundation Presidential",
+        "Carnegie Mellon University",
+        "Bosack Lerner Professor",
+        "ACM Grace Murray"
+      ],
+      "concepts": [
+        "lerner",
+        "professor",
+        "award",
+        "understood",
+        "easily",
+        "berkeley",
+        "distinguished",
+        "young",
+        "hopper",
+        "murray"
+      ],
+      "similar_chapters": [
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 17,
+          "title": "",
+          "score": 0.532,
+          "base_score": 0.382,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 7,
+          "title": "",
+          "score": 0.445,
+          "base_score": 0.295,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 5,
+          "title": "",
+          "score": 0.433,
+          "base_score": 0.283,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 6,
+          "title": "",
+          "score": 0.411,
+          "base_score": 0.261,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "A Philosophy of Software Design",
+          "chapter": 1,
+          "title": "",
+          "score": 0.356,
+          "base_score": 0.206,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "award",
+          "science",
+          "university",
+          "science foundation",
+          "computer"
+        ],
+        "semantic": [],
+        "merged": [
+          "award",
+          "science",
+          "university",
+          "science foundation",
+          "computer"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.22664417153720387,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:00:27.167150+00:00"
+      }
+    }
+  ],
+  "total_chapters": 25,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "A Philosophy of Software Design_metadata.json",
+    "enrichment_date": "2025-12-17T23:00:27.176561+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3738.8874600001145,
+    "total_similar_chapters": 124
+  }
+}

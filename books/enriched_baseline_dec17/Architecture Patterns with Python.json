@@ -1,0 +1,1445 @@
+{
+  "metadata": {
+    "title": "Architecture Patterns with Python",
+    "source_file": "Architecture Patterns with Python_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 3,
+      "title": "specifically discusses some general heuristics for choosing",
+      "start_page": 36,
+      "end_page": 40,
+      "summary": "abstractions.\nEncapsulation and abstraction help us by hiding details and protecting\nmodule, or object uses another, we say that the one depends on the\nOne of the most common examples is the three-layered architecture\nLayered architecture\ninterface components communicate with a business logic layer that\n1. High-level modules should not depend on low-level modules.\nBoth should depend on abstractions.\n2. Abstractions should not depend on details.\nshould depend on abstractions.\nHigh-level modules are the code that your organization really cares\nhigh-level modules of a software system are the functions, classes, and\nBy contrast, low-level modules are the code that your organization\nAll they care about is whether the high-level concepts work correctly.\ndepend on technical details; instead, both should use abstractions.\nHigh-level modules should be easy to\nchange in response to business needs.\nLow-level modules (details) are\nchange your infrastructure details when you need to (think about\nsharding a database, for example), without needing to make changes to\nyour business layer.\nHow can we have an abstraction that\ndoesn’t depend on the details it’s abstracting?\nneed to talk more about that middle layer: the high-level modules or\nwrong is that business logic becomes spread throughout the layers of",
+      "keywords": [
+        "abstractions",
+        "High-level modules",
+        "business",
+        "modules",
+        "details",
+        "depend",
+        "business logic",
+        "change",
+        "code",
+        "DIP",
+        "High-level",
+        "easier to maintain",
+        "n’t",
+        "powerful tool",
+        "low-level modules"
+      ],
+      "concepts": [
+        "layering",
+        "layers",
+        "module",
+        "business",
+        "abstractions",
+        "abstract",
+        "abstraction",
+        "details",
+        "level",
+        "interface"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 7,
+          "title": "",
+          "score": 0.519,
+          "base_score": 0.369,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 1,
+          "title": "",
+          "score": 0.499,
+          "base_score": 0.349,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.315,
+          "base_score": 0.315,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "modules",
+          "level modules",
+          "level",
+          "high level",
+          "details"
+        ],
+        "semantic": [],
+        "merged": [
+          "modules",
+          "level modules",
+          "level",
+          "high level",
+          "details"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.29130909641659486,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584574+00:00"
+      }
+    },
+    {
+      "chapter_number": 1,
+      "title": "shows how to build a business layer with a Domain Model",
+      "start_page": 41,
+      "end_page": 69,
+      "summary": "Chapter 1 shows how to build a business layer with a Domain Model\ndomain model easy to change and free of low-level concerns by\nDomain Modeling\nMost developers have never seen a domain model, only a data\nmodel.\nThe first part of the book looks at how to build a rich object model\nDomain Modeling\nThis chapter looks into how we can model business processes with\ndomain modeling matters, and we’ll look at a few key patterns for\nmodeling domains: Entity, Value Object, and Domain Service.\nFigure 1-1 is a simple visual placeholder for our Domain Model\nother chapters, we’ll build things around the domain model, but you\nDomain Model\nA placeholder illustration of our domain model\nWhat Is a Domain Model?\nbook, we’re going to use the term domain model instead.\nbecause you have a model of the way objects move in space.\nThe domain model is the mental map that business owners have of\nDomain-driven design, or DDD, popularized the concept of domain modeling,  and it’s been a\ncore business domain.\nIf we get that model right, our software delivers value and makes new things\nshow the basics of building a domain model, and building an architecture around it that leaves\ndomain model.\ndomain model, where complex ideas and processes are boiled down\nWe’re going to use a real-world domain model throughout this book,\nallocating stock to a customer’s orders; see Figure 1-2.\nTime for some domain modeling.\nUnderstanding the domain model takes time, and patience, and Post-it\ndomain model.\nwhile having a conversation with our domain experts about allocation.\norder lines, where each line has a SKU and a quantity.\nWe need to allocate order lines to batches.\nWhen we’ve allocated an order line to a batch, we will\nof stock to a batch, the available quantity is reduced by x.\nWe have a batch of 20 SMALL-TABLE, and we allocate an order line for 2 SMALL-TABLE.\nWe can’t allocate to a batch if the available quantity is less than the quantity of the order line.\nWe have a batch of 1 BLUE-CUSHION, and an order line for 2 BLUE-CUSHION.\nWe should not be able to allocate the line to the batch.\nWe have a batch of 10 BLUE-VASE, and we allocate an order line for 2 BLUE-VASE.\nIf we allocate the order line again to the same batch, the batch should still have an\nallocate to warehouse stock in preference to shipment batches.\nWe allocate to shipment batches\nUnit Testing Domain Models\nwant to show you how we would construct a model from this business\nA first test for allocation (test_batches.py)\ndef test_allocating_to_a_batch_reduces_the_available_quantity(): \nbatch.allocate(line) \nassert batch.available_quantity == 18\nAnd here is a domain model that meets our requirements:\nFirst cut of a domain model for batches (model.py)\ndef allocate(self, line: OrderLine):\nself.available_quantity -= line.qty  \nin its branch (e.g., chapter_01_domain_model).\nFor domain models, they can sometimes help to clarify or\navailable_quantity, and we decrement that value on allocation.\nanother, but we think that modeling our domain precisely will pay off.\nTesting logic for what we can allocate (test_batches.py)\ndef make_batch_and_line(sku, batch_qty, line_qty): \nOrderLine(\"order-123\", sku, line_qty) \ndef test_can_allocate_if_available_greater_than_required(): \nlarge_batch, small_line = make_batch_and_line(\"ELEGANT-LAMP\", 20, 2) \nassert large_batch.can_allocate(small_line) \ndef test_cannot_allocate_if_available_smaller_than_required(): \nsmall_batch, large_line = make_batch_and_line(\"ELEGANT-LAMP\", 2, 20) \nassert small_batch.can_allocate(large_line) is False \ndef test_can_allocate_if_available_equal_to_required(): \nassert batch.can_allocate(line) \ndef test_cannot_allocate_if_skus_do_not_match(): \nassert batch.can_allocate(different_sku_line) is False\nthat we don’t keep repeating the same lines of code to create a batch\ncan_allocate method of Batch:\ndef can_allocate(self, line: OrderLine) -> bool: \nreturn self.sku == line.sku and self.available_quantity >= line.qty\nThis test is going to require a smarter model (test_batches.py)\ndef test_can_only_deallocate_allocated_lines(): \nbatch.deallocate(unallocated_line) \nassert batch.available_quantity == 20\nIn this test, we’re asserting that deallocating a line from a batch has no\neffect unless the batch previously allocated the line.\nour Batch needs to understand which lines have been allocated.\nThe domain model now tracks allocations (model.py)\nself._allocations = set()  # type: Set[OrderLine] \ndef allocate(self, line: OrderLine): \nif self.can_allocate(line): \nself._allocations.add(line) \ndef deallocate(self, line: OrderLine): \nif line in self._allocations: \nself._allocations.remove(line) \ndef allocated_quantity(self) -> int: \nreturn sum(line.qty for line in self._allocations) \ndef can_allocate(self, line: OrderLine) -> bool: \nreturn self.sku == line.sku and self.available_quantity >= line.qty\nallocated OrderLine objects.\nLast batch test!\n(test_batches.py)\ndef test_allocation_is_idempotent(): \nbatch.allocate(line) \nbatch.allocate(line) \nassert batch.available_quantity == 18\nmodel is too trivial to bother with DDD (or even object orientation!).\nwe might not want to allocate them to the earliest batch.\nBut taking this simple domain model as a placeholder for something\nmore complex, we’re going to extend our simple domain model in the\ndef __init__(self, ref: Reference, sku: Sku, qty: Quantity): \neach line has a SKU and a quantity.\noften choose to represent it using the Value Object pattern.\nMore examples of value objects\nAn order line is uniquely identified by its order ID, SKU, and quantity;\nWhat about a batch,\nWe use the term entity to describe a domain object that has long-lived\nBatches, in our\nWe can allocate lines to a batch, or change the\nWe’ve made a model to represent batches, but what we actually need\nto do is allocate order lines against a specific set of batches that\norder line, given a set of batches, sounds a lot like a function, and we\nTesting our domain service (test_allocate.py)\ndef test_prefers_current_stock_batches_to_shipments(): \nallocate(line, [in_stock_batch, shipment_batch]) \nassert in_stock_batch.available_quantity == 90 \nassert shipment_batch.available_quantity == 100 \ndef test_prefers_earlier_batches(): \ndef test_returns_allocated_batch_ref(): \nallocation = allocate(line, [in_stock_batch, shipment_batch]) \nassert allocation == in_stock_batch.reference\nA standalone function for our domain service (model.py)\ndef allocate(line: OrderLine, batches: List[Batch]) -> str: \nbatch = next( \nb for b in sorted(batches) if b.can_allocate(line) \nbatch.allocate(line) \nTo make it work, we implement __gt__ on our domain model:\nMagic methods can express domain semantics (model.py)\nTesting out-of-stock exception (test_allocate.py)\ndef test_raises_out_of_stock_exception_if_cannot_allocate(): \nallocate(OrderLine('order1', 'SMALL-FORK', 10), [batch]) \nallocate(OrderLine('order2', 'SMALL-FORK', 1), [batch])",
+      "keywords": [
+        "Domain Model",
+        "batch",
+        "line",
+        "Domain",
+        "Model",
+        "quantity",
+        "allocate",
+        "SKU",
+        "def test",
+        "order line",
+        "stock",
+        "Domain Model pattern",
+        "’re",
+        "order",
+        "object"
+      ],
+      "concepts": [
+        "batches",
+        "batch",
+        "allocating",
+        "allocation",
+        "allocate",
+        "allocations",
+        "model",
+        "lines",
+        "businesses",
+        "domain"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 7,
+          "title": "",
+          "score": 0.794,
+          "base_score": 0.644,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.504,
+          "base_score": 0.504,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 3,
+          "title": "",
+          "score": 0.499,
+          "base_score": 0.349,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.397,
+          "base_score": 0.397,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.354,
+          "base_score": 0.354,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "line",
+          "domain",
+          "batch",
+          "model",
+          "allocate"
+        ],
+        "semantic": [],
+        "merged": [
+          "line",
+          "domain",
+          "batch",
+          "model",
+          "allocate"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.35894058402688633,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584600+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "We won’t bore you too much with the implementation, but the main",
+      "start_page": 70,
+      "end_page": 73,
+      "summary": "DOMAIN MODELING RECAP\nDomain modeling\nDistinguish entities from value objects\nA value object is defined by its attributes.\nIf you change an attribute on a Value Object, it represents a different object.\nubiquitous language, just as we do our entities, value objects, and\nRaising a domain exception (model.py)\nOur domain model at the end of the chapter\nWe have a domain service that we can\nwith the domain.\n6  Domain services are not the same thing as the services from the service layer, although\nA domain service represents a business concept or\nOften the service layer will call a domain service.",
+      "keywords": [
+        "DOMAIN MODELING RECAP",
+        "MODELING RECAP",
+        "DOMAIN MODELING",
+        "DOMAIN",
+        "domain service",
+        "object",
+        "MODELING",
+        "RECAP",
+        "service",
+        "originate domain modeling",
+        "domain service represents",
+        "service represents",
+        "entity",
+        "code",
+        "represents"
+      ],
+      "concepts": [
+        "objects",
+        "batches",
+        "batch",
+        "case",
+        "domain",
+        "modeling",
+        "services",
+        "python",
+        "exceptions",
+        "exception"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 1,
+          "title": "",
+          "score": 0.794,
+          "base_score": 0.644,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 3,
+          "title": "",
+          "score": 0.519,
+          "base_score": 0.369,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.504,
+          "base_score": 0.504,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.456,
+          "base_score": 0.456,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.419,
+          "base_score": 0.419,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "domain",
+          "represents",
+          "service",
+          "modeling",
+          "modeling recap"
+        ],
+        "semantic": [],
+        "merged": [
+          "domain",
+          "represents",
+          "service",
+          "modeling",
+          "modeling recap"
+        ]
+      },
+      "topic_id": 1,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.41446153187851364,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584617+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "Repository Pattern",
+      "start_page": 74,
+      "end_page": 90,
+      "summary": "We’ll introduce the Repository pattern, a simplifying abstraction over\ndata storage, allowing us to decouple our model layer from the data\nRepository object that sits between our domain model and the\ngit checkout chapter_01_domain_model\nPersisting Our Domain Model\nIn Chapter 1 we built a simple domain model that can allocate orders\nIt’s easy for us to write tests against this code\nneeded to run a database or an API and create test data, our tests\nSadly, at some point we’ll need to put our perfect little model in the\ngoing to look at how we can connect our idealized domain model to\nWe’ll need a way to retrieve batch info from the database and\ninstantiate our domain model objects from it, and we’ll also need a\nDjango’s Model-View-Template structure is closely related, as is\nModel-View-Controller (MVC).\nBut we want our domain model to have no dependencies whatsoever.\nmodel and slowing our unit tests or our ability to make changes.\nInstead, as discussed in the introduction, we’ll think of our model as\nReminder: Our Model\nLet’s remind ourselves of our domain model (see Figure 2-4): an\nOur model\nThe “Normal” ORM Way: Model Depends on ORM\nframework to generate SQL for you based on your model objects.\nThese frameworks are called object-relational mappers (ORMs)\nobjects and domain modeling and the world of databases and\nthe idea that our fancy domain model doesn’t need to know anything\nSQLAlchemy “declarative” syntax, model depends on ORM (orm.py)\nmodel is now full of dependencies on the ORM and is starting to look\nCan we really say this model is ignorant of the\nmodel properties are directly coupled to database columns?\nclass Order(models.Model): \nclass OrderLine(models.Model): \nqty = models.IntegerField() \norder = models.ForeignKey(Order) \nclass Allocation(models.Model): \nThe point is the same—our model classes inherit directly from ORM classes, so our model\nfor examples of how to apply dependency inversion and the Repository pattern to Django.\nModel\ndomain model, what SQLAlchemy calls a classical mapping:\nExplicit ORM mapping with SQLAlchemy Table objects (orm.py)\nfrom sqlalchemy.orm import mapper, relationship\nimport model  \nlines_mapper = mapper(model.OrderLine, order_lines)  \nmodel, and not the other way around.\nbind our domain model classes to the various tables we’ve\nable to easily load and save domain model instances from and to the\nBut if we never call that function, our domain model classes\nusing our domain classes, as we’ll see.\ndef test_orderline_mapper_can_load_lines(session):  \nmodel.OrderLine(\"order1\", \"RED-CHAIR\", 12),\nmodel.OrderLine(\"order1\", \"RED-TABLE\", 13),\nmodel.OrderLine(\"order2\", \"BLUE-LIPSTICK\", 14),\nassert session.query(model.OrderLine).all() == expected\ndef test_orderline_mapper_can_save_lines(session):\nnew_line = model.OrderLine(\"order1\", \"DECORATIVE-WIDGET\", 12)\nIf you haven’t used pytest, the session argument to this test needs\ndomain model, it’s only a small additional step to implement another\nabstraction called the Repository pattern, which will be easier to write\ndependency: the domain model stays “pure” and free from\ndomain model doesn’t need to change at all.\nDepending on what you’re doing in your domain model, and especially\nmay need to modify your domain model.\nThe Repository pattern is an abstraction over persistent storage.\nThe Repository in the Abstract\nour domain model to the database.\nHere’s what an abstract base class (ABC) for our repository would\ndef add(self, batch: model.Batch):\ndef get(self, reference) -> model.Batch:\nWe’re using abstract base classes in this book for didactic reasons: we hope they help explain\nPythonista, a repository is any object that has add(thing) and get(id) methods.\nWhenever we introduce an architectural pattern in this book, we’ll\nWe will have to write a few lines of code in our repository class each\ntime we add a new domain object that we want to retrieve, but in\nan integration test, since we’re checking that our code (the repository)\npart of your codebase longer term, particularly if any parts of your domain model",
+      "keywords": [
+        "domain model",
+        "model",
+        "domain",
+        "Repository Pattern",
+        "Repository",
+        "ORM",
+        "database",
+        "domain model classes",
+        "order",
+        "batch",
+        "’ll",
+        "SQLAlchemy",
+        "Pattern",
+        "’re",
+        "domain model objects"
+      ],
+      "concepts": [
+        "modeling",
+        "sqlalchemy",
+        "classes",
+        "orm",
+        "batches",
+        "batch",
+        "session",
+        "orders",
+        "dependency",
+        "dependencies"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.774,
+          "base_score": 0.624,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.754,
+          "base_score": 0.604,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.515,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.663,
+          "base_score": 0.513,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.537,
+          "base_score": 0.387,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "model",
+          "domain",
+          "domain model",
+          "repository",
+          "orm"
+        ],
+        "semantic": [],
+        "merged": [
+          "model",
+          "domain",
+          "domain model",
+          "repository",
+          "orm"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4683764693714606,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584634+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "We use the raw SQL to verify that the right data has been saved",
+      "start_page": 91,
+      "end_page": 117,
+      "summary": "Repository test for saving an object (test_repository.py)\ndef test_repository_can_save_a_batch(session):\nThe next test involves retrieving batches and allocations, so it’s more\nRepository test for retrieving a complex object (test_repository.py)\ndef insert_batch(session, batch_id):  \ndef test_repository_can_retrieve_a_batch_with_allocations(session):\ninsert_allocation(session, orderline_id, batch1_id)  \ninsert_allocation; the point is to create a couple of batches,\nWhether or not you painstakingly write tests for every model is a\nself.session.add(batch) \nself.session.query(model.Batch).filter_by(reference=reference).one() \nreturn self.session.query(model.Batch).all()\n10 years.” The Repository pattern and an ORM both act as abstractions in front of raw SQL, so\nYou’ll find the code on GitHub. We’ve left the repository tests, but figuring out what SQL to write is up to you.\nBuilding a Fake Repository for Tests Is\nA simple fake repository using a set (repository.py)\nreturn list(self._batches)\nUsing a fake repo in tests is really easy, and we have a simple\nabstraction that’s easy to use and reason about:\nExample usage of fake repository (test_api.py)\nusing an abstract base class, that’s the port.\nRepository pattern and our persistence-ignorant model.\nunit testing, or to \ndomain model is harder work than a simple ORM/ActiveRecord\ndatabase, then you don’t need a domain model or a repository.\ndatabase migration before we could run any tests.\nThe Repository pattern is a simple abstraction around permanent storage\ncreate a FakeRepository for testing and to swap fundamental details of your infrastructure\nhardcoded SQL, we depend on an abstraction, the ORM.\nAbstractions\nWhat do we want from abstractions?\nThe code for this chapter is in the chapter_03_abstractions branch on GitHub:\ncan use simple abstractions to hide messy details.\nLocally, coupling is a good thing: it’s a sign that our code is working\nThe abstraction\nImagine we want to write code for synchronizing\nIf a file exists in the source but not in the destination, copy the\na hashing function like MD5 or SHA-1.\nhash from a file is simple enough:\nHashing a file (sync.py)\ndef hash_file(path): \ndef sync(source, dest): \n# Walk the source folder and build a dict of filenames and their hashes \nsource_hashes = {} \nfor folder, _, files in os.walk(source): \nsource_hashes[hash_file(Path(folder) / fn)] = fn\nfor folder, _, files in os.walk(dest): \ndest_path = Path(folder) / fn \ndest_hash = hash_file(dest_path) \nseen.add(dest_hash) \n# if there's a file in target that's not in source, delete it \nif dest_hash not in source_hashes: \n# if there's a file in target that has a different path in source, \nelif dest_hash in source_hashes and fn != source_hashes[dest_hash]: \nshutil.move(dest_path, Path(folder) / source_hashes[dest_hash]) \nfor src_hash, fn in source_hashes.items(): \nshutil.copy(Path(source) / fn, Path(dest) / fn)\nHow do we go about testing\nSome end-to-end tests (test_sync.py)\ndef test_when_a_file_exists_in_the_source_but_not_the_destination(): \n(Path(source) / 'my-file').write_text(content) \nsync(source, dest)\nexpected_path = Path(dest) /  'my-file' \ndef test_when_a_file_has_been_renamed_in_the_source(): \nexpected_dest_path = Path(dest) / 'source-filename' \nsource_path.write_text(content) \nold_dest_path.write_text(content) \nsync(source, dest) \nassert old_dest_path.exists() is False \nassert expected_dest_path.read_text() == content \nOur high-level code is coupled to low-level details, and it’s making\nFirst, we need to think about what our code needs from the filesystem.\nhashes for a series of paths.\n3. We copy, move, or delete files to match the source.\nabstraction, a dictionary of hashes to paths.\nseems like a nice way to abstract the current state of the filesystem:\nsource_files = {'hash1': 'path1', 'hash2': 'path2'} \ndest_files = {'hash1': 'path1', 'hash2': 'pathX'}\nHow can we abstract out the\nNow we could write tests that just use two filesystem dicts as inputs,\nSimplified inputs and outputs in our tests (test_sync.py)\ndef test_when_a_file_exists_in_the_source_but_not_the_destination(): \ndef test_when_a_file_has_been_renamed_in_the_source(): \nThat’s all very well, but how do we actually write those new tests,\ntest it thoroughly without needing to set up a real filesystem.\ndef sync(source, dest):\nsource_hashes = read_paths_and_hashes(source)  \ndest_hashes = read_paths_and_hashes(dest)  \nactions = determine_actions(source_hashes, dest_hashes, source, dest)  \nread_paths_and_hashes(), which isolates the I/O part of our\nThe code to build up the dictionary of paths and hashes is now trivially\ndef read_paths_and_hashes(root): \nhashes[hash_file(Path(folder) / fn)] = fn \nlogic, which says, “Given these two sets of hashes and filenames, what\ndef determine_actions(src_hashes, dst_hashes, src_folder, dst_folder): \nolddestpath = Path(dst_folder) / dst_hashes[sha] \nOur tests now act directly on the determine_actions() function:\nNicer-looking tests (test_sync.py)\ndef test_when_a_file_exists_in_the_source_but_not_the_destination(): \nactions = determine_actions(src_hashes, dst_hashes, Path('/src'), \nassert list(actions) == [('copy', Path('/src/fn1'), Path('/dst/fn1'))]\ndef test_when_a_file_has_been_renamed_in_the_source(): \nactions = determine_actions(src_hashes, dst_hashes, Path('/src'), \nassert list(actions) == [('move', Path('/dst/fn2'), Path('/dst/fn1'))]\ntest the core of our code.\nfunction, sync(), to testing a lower-level function,\noption, which is to modify the sync() function so it can be unit tested\ntesting.\nTesting Edge to Edge with Fakes and Dependency\nInstead, we often write tests that invoke\ndef sync(reader, filesystem, source_root, dest_root): \ndest_hashes = reader(dest_root)\nif sha not in dest_hashes:\nelif dest_hashes[sha] != filename:\nolddestpath = dest_root / dest_hashes[sha]\nif sha not in source_hashes:\nfilesystem.delete(dest_root/filename)\nAlthough we’re using dependency injection, there is no need to define an abstract\ndef copy(self, src, dest): \ndef move(self, src, dest):\ndef delete(self, dest):\ndef test_when_a_file_exists_in_the_source_but_not_the_destination():\nsource = {\"sha1\": \"my-file\" }\nsynchronise_dirs(reader.pop, filesystem, \"/source\", \"/dest\")\nassert filesystem == [(\"COPY\", \"/source/my-file\", \"/dest/my-file\")]\ndef test_when_a_file_has_been_renamed_in_the_source():\nsource = {\"sha1\": \"renamed-file\" }\ndest = {\"sha1\": \"original-file\" }\nsynchronise_dirs(reader.pop, filesystem, \"/source\", \"/dest\")\nassert filesystem == [(\"MOVE\", \"/dest/original-file\", \"/dest/renamed-file\")]\nBob loves using lists to build simple test doubles, even though his\nIt means we can write tests like assert foo",
+      "keywords": [
+        "dest",
+        "source",
+        "path",
+        "hashes",
+        "Repository",
+        "file",
+        "def test",
+        "code",
+        "Repository pattern",
+        "dst",
+        "ORM",
+        "src",
+        "batch",
+        "abstraction",
+        "actions"
+      ],
+      "concepts": [
+        "tested",
+        "paths",
+        "batch",
+        "batches",
+        "abstractions",
+        "abstraction",
+        "abstract",
+        "dest",
+        "file",
+        "simple"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.774,
+          "base_score": 0.624,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.706,
+          "base_score": 0.556,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 11,
+          "title": "",
+          "score": 0.685,
+          "base_score": 0.535,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.657,
+          "base_score": 0.507,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.651,
+          "base_score": 0.501,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "source",
+          "dest",
+          "path",
+          "file",
+          "source_hashes"
+        ],
+        "semantic": [],
+        "merged": [
+          "source",
+          "dest",
+          "path",
+          "file",
+          "source_hashes"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.43771940335261905,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584652+00:00"
+      }
+    },
+    {
+      "chapter_number": 13,
+      "title": "We have three closely related reasons for our preference:",
+      "start_page": 118,
+      "end_page": 121,
+      "summary": "We avoid using mocks in this book and in our production code too.\nobjects that are easy to replace with a test double.\nYou can see an example in Chapter 8, where we mock.patch() out an email-\nunit test the code, but it does nothing to improve the design.\nUsing mock.patch won’t let your code work with a --dry-\nTests that use mocks tend to be more coupled to the\nbetween code and test tends to make tests more brittle, in our\nOveruse of mocks leads to complicated test suites that fail to\nMOCKS VERSUS FAKES; CLASSIC-STYLE VERSUS LONDON-\nFakes are working implementations of the thing they’re replacing, but they’re designed\nfor use only in tests.\nBut you can use them to make assertions about the end state of a\nWe’re slightly conflating mocks with spies and fakes with stubs here, and you can read the long,\nThere, we promise we’re done with the test double terminology nitpicks now.\nWe like to build our tests around\nstate both in setup and in assertions, and we like to work at the highest level of abstraction\nWe view TDD as a design practice first and a testing practice second.\nTests that use too many mocks get overwhelmed with setup code that\nSteve Freeman has a great example of overmocked tests in his talk\nIn this chapter, we’ve spent a lot of time replacing end-to-end tests with unit tests.\nThat doesn’t mean we think you should never use E2E tests!\nedge, and we use dependency injection to provide those services with stateful components, so\nwe can still unit test them.",
+      "keywords": [
+        "’re",
+        "mocks",
+        "TDD",
+        "Holy War",
+        "code",
+        "n’t",
+        "book",
+        "FAKES",
+        "production code",
+        "make",
+        "system",
+        "read",
+        "dependency",
+        "VERSUS",
+        "unit"
+      ],
+      "concepts": [
+        "mocks",
+        "code",
+        "practice",
+        "design",
+        "objects",
+        "talk",
+        "patching",
+        "abstractions",
+        "abstraction",
+        "programming"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.59,
+          "base_score": 0.44,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.559,
+          "base_score": 0.409,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.487,
+          "base_score": 0.337,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.475,
+          "base_score": 0.325,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.44,
+          "base_score": 0.29,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "mocks",
+          "tests",
+          "fakes",
+          "code",
+          "test"
+        ],
+        "semantic": [],
+        "merged": [
+          "mocks",
+          "tests",
+          "fakes",
+          "code",
+          "test"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.29700957848566945,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584667+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "Our First Use",
+      "start_page": 122,
+      "end_page": 138,
+      "summary": "Case: Flask API and Service\nWe’ll also discuss testing: by combining the Service Layer with our\nrepository abstraction over the database, we’re able to write fast tests,\nAPI that will talk to the service layer, which will serve as the\nBecause our service layer depends on\nThe service layer will become the main way into our app\nThe code for this chapter is in the chapter_04_service_layer branch on GitHub:\ngit checkout chapter_04_service_layer \nour domain model and the domain service we need to allocate orders,\n1. Use Flask to put an API endpoint in front of our allocate\ndomain service.\n2. Refactor out a service layer that can serve as an abstraction to\nBuild some service-layer tests and show how\nthe service layer’s clients (our tests and our Flask API) to be\nA first API test (test_api.py)\ndef test_api_returns_allocation(add_stock):\nbatches = repository.SqlAlchemyRepository(session).list() \nbatchref = model.allocate(line, batches) \nTest allocations are persisted (test_api.py)\ndef test_allocations_are_persisted(add_stock): \n(batch1, sku, 10, '2011-01-01'), \n(batch2, sku, 10, '2011-01-02'), \nservice.\nYet more tests at the E2E layer (test_api.py)\ndef test_400_message_for_out_of_stock(add_stock):  \nsku, smalL_batch, large_order = random_sku(), random_batchref(), \ndef test_400_message_for_invalid_sku():  \nIn the first test, we’re trying to allocate more units than we have in\ndef is_valid_sku(sku, batches): \nreturn sku in {b.sku for b in batches} \nbatches = repository.SqlAlchemyRepository(session).list() \nif not is_valid_sku(line.sku, batches): \nbatchref = model.allocate(line, batches) \nE2E tests is starting to get out of control, and soon we’ll end up with\nIntroducing a Service Layer, and Using\nFakeRepository to Unit Test It\nIt often makes sense to split out a service layer, sometimes called an\n(test_services.py)\ndef add(self, batch): \nHere’s where it will come in useful; it lets us test our service layer\nUnit testing with fakes at the service layer (test_services.py)\ndef test_returns_allocation():\nresult = services.allocate(line, repo, FakeSession())  \ndef test_error_for_invalid_sku():\nwith pytest.raises(services.InvalidSku, match=\"Invalid sku NONEXISTENTSKU\"):\nservices.allocate(line, repo, FakeSession())  \ntest.\nOur services module (services.py) will define an allocate()\nservice-layer function.\nallocate_endpoint() function in the API layer and the\nallocate() domain service function from our domain model.\nA fake database session (test_services.py)\n.commit() lets us migrate a third test from the E2E layer:\nA second test at the service layer (test_services.py)\ndef test_commits(): \nservices.allocate(line, repo, session) \nWe’ll write a service function that looks something like this:\nBasic allocation service (services.py)\ndef is_valid_sku(sku, batches):\nreturn sku in {b.sku for b in batches}\ndef allocate(line: OrderLine, repo: AbstractRepository, session) -> str:\nif not is_valid_sku(line.sku, batches):  \nbatchref = model.allocate(line, batches)  \nTypical service-layer functions have similar steps:\nWe call a domain service.\nNotice one more thing about our service-layer function:\ndef allocate(line: OrderLine, repo: AbstractRepository, session) -> str:\nshould “depend on abstractions.” Our high-level module, the service layer, depends on the\nBut the essentials of the service layer are there, and our Flask app now\nFlask app delegating to service layer (flask_app.py)\nbatchref = services.allocate(line, repo, session)  \nthem to a domain service.\nlogic is in the use case/service layer, and the domain logic stays in the\nE2E tests only happy and unhappy paths (test_api.py)\ndef test_happy_path_returns_201_and_allocated_batch(add_stock): \ndef test_unhappy_path_returns_400_and_error_message(): \norchestration stuff, which we can test against the service layer in",
+      "keywords": [
+        "sku",
+        "Service Layer",
+        "Service",
+        "Flask",
+        "Layer",
+        "api def test",
+        "API",
+        "Flask app",
+        "random",
+        "orderid",
+        "batchref",
+        "url",
+        "allocate",
+        "session",
+        "def test"
+      ],
+      "concepts": [
+        "tested",
+        "batches",
+        "batch",
+        "repository",
+        "repositories",
+        "session",
+        "service",
+        "line",
+        "layer",
+        "database"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.872,
+          "base_score": 0.722,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.82,
+          "base_score": 0.67,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.754,
+          "base_score": 0.604,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.722,
+          "base_score": 0.572,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.706,
+          "base_score": 0.556,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "service",
+          "service layer",
+          "layer",
+          "allocate",
+          "line"
+        ],
+        "semantic": [],
+        "merged": [
+          "service",
+          "service layer",
+          "layer",
+          "allocate",
+          "line"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5215229416886327,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584684+00:00"
+      }
+    },
+    {
+      "chapter_number": 12,
+      "title": "Why Is Everything Called a Service?",
+      "start_page": 139,
+      "end_page": 147,
+      "summary": "E2E test and a few stub service-layer tests for you to get started on GitHub. If that’s not enough, continue into the E2E tests and flask_app.py, and refactor the Flask adapter\ndomain layer!\nfigure out exactly what the difference is between a domain service and\na service layer.\napplication service (our service layer).\nis that the service layer drives the application by following a bunch of\n├── domain   \n│   ├── __init__.py \n│   └── model.py\n├── service_layer   \n│   ├── __init__.py \n│   └── services.py \n├── adapters   \n│   ├── __init__.py \n│   ├── orm.py \n│   ├── __init__.py \n│   ├── test_allocate.py \n│   ├── test_batches.py \n│   └── test_services.py \n│   ├── test_orm.py \n│   └── test_repository.py \n└── test_api.py\nexceptions.py for domain-layer exceptions and, as you’ll see in\nWe’ll distinguish the service layer.\ncalled services.py for our service-layer functions.\nan adapter for our domain too.\nWe can write tests in “high gear” by using the service layer,\nFigure 4-3 shows the dependencies of our service layer: the domain\nAbstract dependencies of the service layer\nhaving a service layer at all.",
+      "keywords": [
+        "service layer",
+        "service",
+        "domain",
+        "layer",
+        "domain service",
+        "adapters",
+        "domain model",
+        "EXERCISE",
+        "READER",
+        "’ll",
+        "model",
+        "flask",
+        "application",
+        "init",
+        "file"
+      ],
+      "concepts": [
+        "service",
+        "adapters",
+        "layer",
+        "thing",
+        "dependencies",
+        "dependency",
+        "model",
+        "gets",
+        "application",
+        "job"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.82,
+          "base_score": 0.67,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.782,
+          "base_score": 0.632,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.709,
+          "base_score": 0.559,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.537,
+          "base_score": 0.387,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.531,
+          "base_score": 0.381,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "service",
+          "py",
+          "layer",
+          "service layer",
+          "__init__ py"
+        ],
+        "semantic": [],
+        "merged": [
+          "service",
+          "py",
+          "layer",
+          "service layer",
+          "__init__ py"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4558557929722279,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584699+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "for more",
+      "start_page": 148,
+      "end_page": 162,
+      "summary": "a nice way of writing tests at a \nwe can test more of our \nuse integration tests \nThe service layer is still tightly coupled to the domain,\nThe service layer is tightly coupled to a session object.\ninvolved in moving those tests up to the service-layer level, and some\nOnce you implement domain modeling and the service layer, you really actually can get to a\nhigh gear versus low gear way of thinking really changed my testing life.\nlayer tests, does to our test pyramid:\ntests/unit/test_allocate.py:4 \ntests/unit/test_batches.py:8 \ntests/unit/test_services.py:3 \ntests/e2e/test_api.py:2\nend tests.\nShould Domain Layer Tests Move to the\nService Layer?\nSince we can test\nour software against the service layer, we don’t really need tests for\ndomain-level tests from Chapter 1 in terms of the service layer:\nRewriting a domain test at the service layer\n(tests/unit/test_services.py)\n# domain-layer test:\ndef test_prefers_current_stock_batches_to_shipments(): \n# service-layer test:\ndef test_prefers_warehouse_batches_to_shipments(): \nwe see teams writing too many tests against their domain model.\ntests.\nWe use tests to check that the API\nTesting\nonly against the service layer, we won’t have any tests that directly\nIs it wrong to write tests against the domain model?” To answer those\nwe’re writing tests, we might find that the code is hard to use or notice\ntests guided us to a design that makes sense and reads in the domain\nWhen our tests read in the domain language, we feel\ncode, though, we will need to replace or delete these tests, because\ncases, we prefer to write tests against services because of the lower\ntests against the service layer.\nproblem, we will drop back down to writing tests against the domain\nFully Decoupling the Service-Layer Tests\nWe still have direct dependencies on the domain in our service-layer\ntests, because we use domain objects to set up our test data and to\nTo have a service layer that’s fully decoupled from the domain, we\nOur service layer currently takes an OrderLine domain object:\nBefore: allocate takes a domain object (service_layer/services.py)\nTests now use primitives in function call (tests/unit/test_services.py)\ndef test_returns_allocation(): \nBut our tests still depend on the domain, because we still manually\ntests.\nour tests.\n(tests/unit/test_services.py)\ndef test_returns_allocation(): \nAt least that would move all of our tests’ dependencies on the domain\nwe could use that and make our service-layer tests fully expressed in\nTest for new add_batch service (tests/unit/test_services.py)\ndef test_add_batch(): \nservices.add_batch(\"b1\", \"CRUNCHY-ARMCHAIR\", 100, None, repo, session) \nservice-layer tests, it may be an indication that your service layer is incomplete.\nA new service for add_batch (service_layer/services.py)\nrepo.add(model.Batch(ref, sku, qty, eta)) \nfrom your tests?\nan add_batch service one day anyway.\nThat now allows us to rewrite all of our service-layer tests purely in\nServices tests now use only services (tests/unit/test_services.py)\ndef test_allocate_returns_allocation(): \nservices.add_batch(\"batch1\", \"COMPLICATED-LAMP\", 100, None, repo, session) \ndef test_allocate_errors_for_invalid_sku():\nservices.add_batch(\"b1\", \"AREALSKU\", 100, None, repo, session) \nOur service-layer tests depend on\nE2E Tests\nIn the same way that adding add_batch helped decouple our service-\nlayer tests from the model, adding an API endpoint to add a batch\nservices.add_batch( \nAPI tests can now add their own batches (tests/e2e/test_api.py)\ndef test_happy_path_returns_201_and_allocated_batch(): \nOnce you have a service layer in place, you really can move the\nWrite the bulk of your tests against the service layer\nMaintain a small core of tests written against your domain model\nthe service layer.\nThis means you need to test only the",
+      "keywords": [
+        "service layer",
+        "service",
+        "layer",
+        "batch",
+        "domain",
+        "API",
+        "repo",
+        "def test",
+        "unit tests",
+        "add",
+        "session",
+        "eta",
+        "sku",
+        "Service-Layer Tests",
+        "domain model"
+      ],
+      "concepts": [
+        "service",
+        "layer",
+        "batch",
+        "batches",
+        "session",
+        "eta",
+        "api",
+        "models",
+        "functions",
+        "function"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.872,
+          "base_score": 0.722,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.796,
+          "base_score": 0.646,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.782,
+          "base_score": 0.632,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.663,
+          "base_score": 0.513,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.651,
+          "base_score": 0.501,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "tests",
+          "service",
+          "service layer",
+          "layer",
+          "domain"
+        ],
+        "semantic": [],
+        "merged": [
+          "tests",
+          "service",
+          "service layer",
+          "layer",
+          "domain"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4977136802759585,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584715+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "and “Optionally: Unit Testing Event Handlers in Isolation with a Fake Message Bus”",
+      "start_page": 163,
+      "end_page": 237,
+      "summary": "able to test entirely against the service layer, rather than\ntests of the various collaborating domain objects can be useful.\nand “Optionally: Unit Testing Event Handlers in Isolation with a Fake Message Bus”.\ntogether the Repository and Service Layer patterns: the Unit of Work\nstorage, the Unit of Work (UoW) pattern is our abstraction over the\nlayer to start a session, it talks to the repository layer to initialize\nallocate.\nthings: it initializes a unit of work, and it invokes a service.\nservice collaborates with the UoW (we like to think of the UoW as\nLet’s see the unit of work (or UoW, which we pronounce “you-wow”)\nHere’s how the service layer will look when we’re finished:\n(src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork\nbatches = uow.batches.list()  \nbatchref = model.allocate(line, batches)\nuow.commit()  \nWe’ll start a UoW as a context manager.\nuow.batches is the batches repo, so the UoW provides us access\nHere are our integration tests for the UOW:\ndef test_uow_can_retrieve_a_batch_and_allocate_to_it(session_factory):\nuow = unit_of_work.SqlAlchemyUnitOfWork(session_factory)  \nbatch = uow.batches.get(reference='batch1')  \nbatch.allocate(line)\nuow.commit()  \nbatchref = get_allocated_batch_ref(session, 'o1', 'HIPSTER-WORKBENCH')\nback a uow object to use in our with block.\nThe UoW gives us access to the batches repository via\nuow.batches.\nFor the curious, the insert_batch and get_allocated_batch_ref\nHelpers for doing SQL stuff (tests/integration/test_uow.py)\ndef insert_batch(session, ref, sku, qty, eta): \ndef get_allocated_batch_ref(session, orderid, sku): \n'SELECT b.reference FROM allocations JOIN batches AS b ON batch_id = \nUnit of Work and Its Context Manager\nIn our tests we’ve implicitly defined an interface for what a UoW\nAbstract UoW context manager\n(src/allocation/service_layer/unit_of_work.py)\nThe UoW provides an attribute called .batches, which will give\nus access to the batches repository.\nWe’ll call this method to explicitly commit our work when we’re\nThe Real Unit of Work Uses SQLAlchemy\n(src/allocation/service_layer/unit_of_work.py)\nself.batches = repository.SqlAlchemyRepository(self.session)  \nself.session.commit()\nthat use our database session.\nFake Unit of Work for Testing\nHere’s how we use a fake UoW in our service-layer tests:\nFake UoW (tests/unit/test_services.py)\ndef test_add_batch():\nservices.add_batch(\"b1\", \"CRUNCHY-ARMCHAIR\", 100, None, uow)  \nassert uow.batches.get(\"b1\") is not None\ndef test_allocate_returns_allocation():\nservices.add_batch(\"batch1\", \"COMPLICATED-LAMP\", 100, None, uow)  \nresult = services.allocate(\"o1\", \"COMPLICATED-LAMP\", 10, uow)  \nIn our tests, we can instantiate a UoW and pass it to our service\nlayer, rather than passing a repository and a session.\nthe same thing: they give us a way to swap out our persistence layer so we can run tests in\nIt’s easy to use Session to make\nservice layer being able to start and stop units of work.\nUsing the UoW in the Service Layer\nHere’s what our new service layer looks like:\nService layer using UoW (src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork  \nuow.batches.add(model.Batch(ref, sku, qty, eta))\nuow.commit()\nuow: unit_of_work.AbstractUnitOfWork  \nbatches = uow.batches.list()\nif not is_valid_sku(line.sku, batches):\nbatchref = model.allocate(line, batches)\nuow.commit()\n(tests/integration/test_uow.py)\ndef test_rolls_back_uncommitted_work_by_default(session_factory): \nuow = unit_of_work.SqlAlchemyUnitOfWork(session_factory) \ninsert_batch(uow.session, 'batch1', 'MEDIUM-PLINTH', 100, None) \nrows = list(new_session.execute('SELECT * FROM \"batches\"')) \ndef test_rolls_back_on_error(session_factory): \nuow = unit_of_work.SqlAlchemyUnitOfWork(session_factory) \ninsert_batch(uow.session, 'batch1', 'LARGE-FORK', 100, None) \nrows = list(new_session.execute('SELECT * FROM \"batches\"')) \nChapter 7, we’ll switch some of the tests to using the real database.\nWe could imagine a slightly different version of the UoW that commits\nA UoW with implicit commit… (src/allocation/unit_of_work.py)\n(src/allocation/service_layer/services.py)\ndef add_batch(ref: str, sku: str, qty: int, eta: Optional[date], uow): \nuow.batches.add(model.Batch(ref, sku, qty, eta)) \n# uow.commit()\nAlthough we use an extra line of code, this makes the software safe by\nHere are a few examples showing the Unit of Work pattern in use.\ndef reallocate(line: OrderLine, uow: AbstractUnitOfWork) -> str:\nbatch = uow.batches.get(sku=line.sku)\nif batch is None:\nbatch.deallocate(line)  \nallocate(line)  \nuow.commit()\nIf deallocate() fails, we don’t want to call allocate(),\nIf allocate() fails, we probably don’t want to actually commit\nExample 2: Change Batch Quantity\ndef change_batch_quantity(batchref: str, new_qty: int, uow: AbstractUnitOfWork):\nbatch = uow.batches.get(reference=batchref)\nbatch.change_purchased_quantity(new_qty)\nline = batch.deallocate_one()  \nuow.commit()\ndatabase: test_orm.py, test_repository.py, and test_uow.py.\n│   └── test_uow.py \n├── test_allocate.py \n├── test_batches.py \n└── test_services.py\nproviding the .batches repository) from the context manager, whose job is to initialize things, and\nHopefully we’ve convinced you that the Unit of Work pattern is useful,\nThis pattern is so useful, in fact, that SQLAlchemy already uses a UoW\nEvery time you load a new entity from the database, the session begins\ncan help us work with events \ndon’t want or need in our domain.\nThe Unit of Work pattern is an abstraction around data integrity\nIt helps to enforce the consistency of our domain model, and improves performance, by\nIt works closely with the Repository and Service Layer patterns\nThe Unit of Work pattern completes our abstractions over data access by representing\nEach of our service-layer use cases runs in a single unit of work that\nWe introduce an even simpler abstraction over the SQLAlchemy Session object in order to\nThe unit of work and the repository are a great example\nIn this chapter, we’d like to revisit our domain model to talk about\ninvariants and constraints, and see how our domain objects can\nnew model object called Product to wrap multiple batches, and we’ll\nmake the old allocate() domain service available as a method on\nWhat’s the point of a domain model, anyway?\nAn order line can be allocated to only one batch at a time.\nan order line is allocated to either zero or one batch, but never more\nBatch.allocate() on two different batches for the same line, and\nWe can’t allocate to a batch if the available quantity is less than\navailable to a batch, so we never oversell stock by allocating two\nupdate the state of the system, our code needs to ensure that we don’t\nWe can just allocate stock one line at a time,\nSuddenly we might be allocating stock for multiple order lines\nWe might even be allocating order lines at the same\ntime as processing changes to the batches themselves.\nmodel of allocating lines against all available batches may not scale.\nthousands of order lines, we can’t hold a lock over the whole batches\nallocate an order line, what should we do instead?\nIt’s safe to allocate two products at\nAn aggregate is just a domain\nThe only way to modify the objects inside the aggregate is to load the\ncollections in the model as we do (our batches are a collection), it’s a\nInstead, we want each change to the basket to run in a single database\nWhat aggregate should we use for our system?\nThe object we’re manipulating under the covers is Batch.\ncontains many batches, and counting all the stock at the same time\nWhen we allocate an order line, we’re interested only in batches that\nSo the plan is this: when we want to allocate an order line, instead of\nFigure 7-2, where we look up all the Batch objects in the world and\npass them to the allocate() domain service…\nBefore: allocate against all batches using the domain service\nProduct object for the particular SKU of our order line, and it will be\nin charge of all the batches for that SKU, and we can call a\nAfter: ask Product to allocate against its batches\nOur chosen aggregate, Product (src/allocation/domain/model.py)\ndef __init__(self, sku: str, batches: List[Batch]):\ndef allocate(self, line: OrderLine) -> str:  \nbatch = next(\nb for b in sorted(self.batches) if b.can_allocate(line)\nbatch.allocate(line)\nOur Product class holds a reference to a collection of batches\nFinally, we can move the allocate() domain service to be a\nmethod on the Product aggregate.\nThis Product might not look like what you’d expect a Product model to look like.\nthan trying to build a single model (or class, or database) to capture all the use cases, it’s better\nIn our example, the allocation service has Product(sku, batches), whereas the ecommerce will\nyour domain models should include only the data that they need for performing calculations.\nwe enforce the convention that aggregates are the only way into our domain\nOur new UoW and repository (unit_of_work.py and repository.py)\ndef get(self, sku) -> model.Product: \nThe ORM layer will need some tweaks so that the right batches\nthrough the new model into our service layer to see how it looks with\nService layer (src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=sku) \nproduct = model.Product(sku, batches=[]) \nproduct.batches.append(model.Batch(ref, sku, qty, eta)) \nuow.commit() \nuow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=line.sku) \nbatchref = product.allocate(line) \nuow.commit() \nWe’ve mentioned a few times that we’re modeling with aggregates\nloading all the batches when we only need one.\nFirst, we’re purposefully modeling our data so that we can make a\nIn systems that don’t model this way, we often find\nThird, we expect to have only 20 or so batches of each product at a\nthe batches in a product.\nBecause we need to find only a single batch\nto implement the Product aggregate starting from Batch, just as we did.\ncome back to these tests to have a go at implementing version numbers.\nWe don’t want to hold a lock over the entire batches table, but how\nOne answer is to have a single attribute on the Product model that\ntransactions read the state of the world for batches at the same time,\nand both want to update the allocations tables, we force both to also\ntry to update the version_number in the products table, in such a\noperations at the same time, so they see a Product with, for example,\nThey both call Product.allocate() in order to modify a\nthem is allowed to commit the new Product with version=4, and the\nload the product at version 1 and allocate stock.\nstrictly a domain concern, so instead our service layer could\nUoW does a commit, it can increment the version number for\nthe service layer and the domain layer, so it’s a little messy as well.\nSo in the end, even though version numbers don’t have to be a domain\nOur chosen aggregate, Product (src/allocation/domain/model.py)\ndef __init__(self, sku: str, batches: List[Batch], version_number: int = 0):  \ndef allocate(self, line: OrderLine) -> str:\nbatch = next(\nb for b in sorted(self.batches) if b.can_allocate(line)\nbatch.allocate(line)\ndatabase row is modified whenever we make a change to the Product aggregate.\nThe version number is a simple, human-comprehensible way to model a thing that\nconcurrent attempts to do allocation against the same Product, one of\n(tests/integration/test_uow.py)\ndef try_to_allocate(orderid, sku, exceptions): \nline = model.OrderLine(orderid, sku, 10) \nwith unit_of_work.SqlAlchemyUnitOfWork() as uow: \nproduct = uow.products.get(sku=sku) \nproduct.allocate(line) \nuow.commit() \nThen we have our test invoke this slow allocation twice, concurrently,\n(tests/integration/test_uow.py)\ntest_concurrent_updates_to_version_are_not_allowed(postgres_session_factory):\ninsert_batch(session, batch, sku, 100, eta=None, product_version=1)\ntry_to_allocate_order1 = lambda: try_to_allocate(order1, sku, exceptions)\ntry_to_allocate_order2 = lambda: try_to_allocate(order2, sku, exceptions)\n\"SELECT version_number FROM products WHERE sku=:sku\",\n\" JOIN batches ON allocations.batch_id = batches.id\"\nwith unit_of_work.SqlAlchemyUnitOfWork() as uow:\nuow.session.execute('select 1')\n(src/allocation/service_layer/unit_of_work.py)\nreturn self.session.query(model.Product) \\ \nYou can also use the test as a basis for performing some\nmodel object?\nAggregates are your entrypoints into the domain model\nBy restricting the number of ways that things can be changed, we make the system easier to\nAn aggregate’s job is to be able to manage our business rules about invariants as they apply\nWe’ve seen how to build a domain model that’s exercised by a set of\nthey can read our tests to understand how things work.\nand-adapters-inspired patterns like Repository and Unit of Work,\ndon’t want to lock our entire system whenever we make a change, so\n2  time.sleep() works well in our use case, but it’s not the most reliable or efficient way\nIt’s all very well being able to write one domain model to manage a\nWe’ll see how our Service Layer and Unit of Work patterns allow us to\nhow event-driven systems help us to decouple aggregates and\nDomain Events\nEvents and the\nallocate an order because we’re out of stock, we should alert the\nof Mud. Then we’ll show how to use the Domain Events pattern to separate\nmessage bus, and finally we’ll show how the Unit of Work pattern can\nThe code for this chapter is in the chapter_08_events_and_message_bus branch\nuow = unit_of_work.SqlAlchemyUnitOfWork() \nbatchref = services.allocate(line, uow) \nwe’d like to be able to unit test this new feature.\nEmail-sending code in our model isn’t lovely either\n(src/allocation/domain/model.py)\ndef allocate(self, line: OrderLine) -> str: \nbatch = next( \nb for b in sorted(self.batches) if b.can_allocate(line) \nWe don’t want our model to have any\nWhat we’d like is to keep our domain model\nThe domain model’s job is to know that we’re out of stock, but the\ninstead, without needing to change the rules of our domain model.\nAnd in the service layer, it’s out of place\n(src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=line.sku) \nbatchref = product.allocate(line) \nuow.commit() \nOur use case is allocation.\ndomain methods are all called allocate, not\ndomain model’s job is to know that we’re out of stock, but the\ninstead, without needing to change the rules of our domain model.\nWe’d also like to keep the service layer free of implementation details.\nso that our service layer depends on an abstraction, in the same way as\nThe patterns we’re going to introduce here are Domain Events and the\nThe Model Records Events\nWe’ll use a message bus to respond to events and invoke a new\nWe always name events in the\ndomain/events.py):\nEvent classes (src/allocation/domain/events.py)\nOnce we have a number of events, we’ll find it useful to have a\ndataclasses are great for domain events too.\nThe Model Raises Events\nWhen our domain model records a fact that happened, we say it raises\nan event.\nallocate but it can’t, it should raise an event:\nTest our aggregate to raise events (tests/unit/test_product.py)\ndef test_records_out_of_stock_event_if_cannot_allocate():\nproduct = Product(sku=\"SMALL-FORK\", batches=[batch])\nproduct.allocate(OrderLine('order1', 'SMALL-FORK', 10))\nallocation = product.allocate(OrderLine('order2', 'SMALL-FORK', 1))\nassert product.events[-1] == events.OutOfStock(sku=\"SMALL-FORK\")  \nOur aggregate will expose a new attribute called .events that will\nEvent objects.\nThe model raises a domain event (src/allocation/domain/model.py)\ndef __init__(self, sku: str, batches: List[Batch], version_number: int = 0):\ndef allocate(self, line: OrderLine) -> str:\nself.events.append(events.OutOfStock(line.sku))  \nHere’s our new .events attribute in use.\nevents, don’t raise exceptions to describe the same domain concept.\nlater when we handle events in the Unit of Work pattern, it’s confusing to have to\nSimple message bus (src/allocation/service_layer/messagebus.py)\ndef send_out_of_stock_notification(event: events.OutOfStock): \nf'Out of stock for {event.sku}', \nIf you do have a requirement for moving work off the main thread, you can still use our event-\nTable 11-1, but essentially, if you implement a way of persisting events to a centralized store, you\nevents to separate responsibilities across units of work within a single process/service can be\nEvents from the Model and Puts Them on\nOur domain model raises events, and our message bus will call the\nWe need something to catch events from the model\nThe service layer with an explicit message bus\n(src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=line.sku)\nbatchref = product.allocate(line)\nuow.commit()\nmessagebus.handle(product.events)  \nthe service layer is just in charge of passing events from the model\nin which the service layer explicitly collects events from aggregates\nOwn Events\nraised by the domain model:\n(src/allocation/service_layer/services.py)\nuow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=line.sku)\nbatchref = product.allocate(line)\nuow.commit() \nmessagebus.handle(events.OutOfStock(line.sku))\nAs before, we commit even if we fail to allocate because the code\nOption 3: The UoW Publishes Events to\n(src/allocation/service_layer/unit_of_work.py)\ndef publish_events(self):  \nwhile product.events:",
+      "keywords": [
+        "service layer",
+        "UoW",
+        "sku",
+        "Product",
+        "unit",
+        "service",
+        "session",
+        "layer",
+        "n’t",
+        "Message Bus",
+        "domain model",
+        "domain",
+        "Work",
+        "events",
+        "allocate"
+      ],
+      "concepts": [
+        "batches",
+        "batch",
+        "event",
+        "session",
+        "sessions",
+        "allocate",
+        "allocations",
+        "allocated",
+        "allocation",
+        "model"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 5,
+          "title": "",
+          "score": 0.796,
+          "base_score": 0.646,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.722,
+          "base_score": 0.572,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 12,
+          "title": "",
+          "score": 0.709,
+          "base_score": 0.559,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 9,
+          "title": "",
+          "score": 0.694,
+          "base_score": 0.544,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.665,
+          "base_score": 0.515,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "uow",
+          "batches",
+          "product",
+          "line",
+          "events"
+        ],
+        "semantic": [],
+        "merged": [
+          "uow",
+          "batches",
+          "product",
+          "line",
+          "events"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5223509384059768,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584731+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "Repository tracks aggregates that pass through it",
+      "start_page": 238,
+      "end_page": 246,
+      "summary": "has seen and pass their events to the message bus.\nself.seen = set()  # type: Set[model.Product]  \ndef add(self, product: model.Product):  \nself._add(product)\nself.seen.add(product)\ndef get(self, sku) -> model.Product:  \nproduct = self._get(sku)\nself.seen.add(product)\ndef _add(self, product: model.Product):  \ndef _get(self, sku) -> model.Product:\ndef _add(self, product):  \nself.session.add(product)\nreturn self.session.query(model.Product).filter_by(sku=sku).first()\nkeep track of live objects and process their events, the service layer\ndef __init__(self, products): \ndef _add(self, product): \nself._products.add(product) \nself.seen = set()  # type: Set[model.Product]\ndef add(self, product: model.Product):  \nself._repo.add(product)  \nself.seen.add(product)\ndef get(self, sku) -> model.Product:\nproduct = self._repo.get(sku)\nself.seen.add(product)\nDomain events give us a way to handle workflows in our system.\nTreating events as first-class\nDomain events: the trade-offs\nEvent handlers are nicely \nevents for us is neat but also \nfor any events are finished.\nEvents are useful for more than just sending email, though.\nusing events.\nDOMAIN EVENTS AND THE MESSAGE BUS RECAP\nEvents can help with the single responsibility principle\nEvents can help us to\nWe also use events\nYou can think of a message bus as a dict that maps from events to their consumers.\nOption 1: Service layer raises events and passes them to message bus\nThe simplest way to start using events in your system is to raise them from handlers by\ncalling bus.handle(some_new_event) after you commit your unit of work.\nOption 2: Domain model raises events, service layer passes them to message bus\nThe logic about when to raise an event really should live with the model, so we can improve\nour system’s design and testability by raising events from the domain model.\nhandlers to collect events off the model objects after commit and pass them to the bus.\nOption 3: UoW collects events from aggregates and passes them to message bus\nAdding bus.handle(aggregate.events) to every handler is annoying, so we can tidy up by\nmaking our unit of work responsible for raising events that were raised by loaded objects.",
+      "keywords": [
+        "events",
+        "product",
+        "message bus",
+        "sku",
+        "model.Product",
+        "message",
+        "bus",
+        "add",
+        "commit",
+        "Domain events",
+        "self.",
+        "init",
+        "service layer",
+        "repository",
+        "handlers"
+      ],
+      "concepts": [
+        "events",
+        "add",
+        "way",
+        "product",
+        "handling",
+        "handle",
+        "bus",
+        "multiple",
+        "repository",
+        "allocate"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 11,
+          "title": "",
+          "score": 0.756,
+          "base_score": 0.606,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.608,
+          "base_score": 0.458,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.606,
+          "base_score": 0.456,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 9,
+          "title": "",
+          "score": 0.588,
+          "base_score": 0.438,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.525,
+          "base_score": 0.375,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "product",
+          "events",
+          "self",
+          "product self",
+          "model product"
+        ],
+        "semantic": [],
+        "merged": [
+          "product",
+          "events",
+          "self",
+          "product self",
+          "model product"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.37226540793557705,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584748+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "Going to Town on",
+      "start_page": 247,
+      "end_page": 267,
+      "summary": "In this chapter, we’ll start to make events more fundamental to the\ngit checkout chapter_08_events_and_message_bus\nAn event we’ll call BatchQuantityChanged should lead us to change\nnew allocation, which we can capture as an event called\nWill Be an Event Handler\nWouldn’t it be easier if everything was an event handler?\nour API calls as capturing events, the service-layer functions can be\nevent handlers too, and we no longer need to make a distinction\nbetween internal and external event handlers:\nAllocationRequired event and could emit Allocated\nevents as its output.\nBatchCreated event.\nAnd the new AllocationRequired events that it may raise\n1. We refactor our service layer into event handlers.\nfunction will become the handler for an event called\nAllocated events coming out.\nhandler for BatchQuantityChanged events, whose\nmoving the responsibility for putting new events on the message bus\nBatchCreated and AllocationRequired events\n(src/allocation/domain/events.py)\nclass BatchCreated(Event): \nclass AllocationRequired(Event): \ninputs, an event and a UoW:\nevent: events.BatchCreated, uow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get(sku=event.sku) \nevent: events.AllocationRequired, uow: unit_of_work.AbstractUnitOfWork\nevent: events.OutOfStock, uow: unit_of_work.AbstractUnitOfWork,\nf'Out of stock for {event.sku}', \n+        event: events.BatchCreated, uow: unit_of_work.AbstractUnitOfWork \n+        product = uow.products.get(sku=event.sku) \n+        event: events.AllocationRequired, uow: unit_of_work.AbstractUnitOfWork \n+        event: events.OutOfStock, uow: unit_of_work.AbstractUnitOfWork,\nEVENTS AS AN INTERFACE\nThe Message Bus Now Collects Events from the\nOur event handlers now need a UoW.\ndef handle(event: events.Event, uow: unit_of_work.AbstractUnitOfWork):  \nqueue = [event]  \nevent = queue.pop(0)  \nfor handler in HANDLERS[type(event)]:  \nhandler(event, uow=uow)  \nqueue.extend(uow.collect_new_events())  \nhandlers (the HANDLERS dict hasn’t changed; it still maps event\nAfter each handler finishes, we collect any new events that have\nmethod, collect_new_events():\nUoW no longer puts events directly on the bus\n-        self.publish_events()  \n-    def publish_events(self): \n+    def collect_new_events(self): \nwhile product.events: \n-                event = product.events.pop(0) \n-                messagebus.handle(event) \n+                yield product.events.pop(0)  \nmessage bus is keeping track of the event queue instead.\nAnd the UoW no longer actively puts events on the message bus; it\nHandler tests use events (tests/unit/test_handlers.py)\n+            events.BatchCreated(\"b1\", \"CRUNCHY-ARMCHAIR\", 100, None), uow\n+            events.BatchCreated(\"batch1\", \"COMPLICATED-LAMP\", 100, None), uow\n+            events.AllocationRequired(\"o1\", \"COMPLICATED-LAMP\", 10), uow\nreturn events:\ndef handle(event: events.Event, uow: unit_of_work.AbstractUnitOfWork): \nqueue = [event] \nevent = queue.pop(0) \nfor handler in HANDLERS[type(event)]: \n-            handler(event, uow=uow)\n+            results.append(handler(event, uow=uow)) \nqueue.extend(uow.collect_new_events()) \nModifying Our API to Work with Events\n+        results = messagebus.handle(event, unit_of_work.SqlAlchemyUnitOfWork())  \nWe instantiate an event.\nWhat used to be service-layer functions are now event\nhandling internal events raised by our domain model.\nBatchQuantityChanged events and pass them to a handler, which in\nOur New Event\nThe event that tells us a batch quantity has changed is simple; it just\nNew event (src/allocation/domain/events.py)\nclass BatchQuantityChanged(Event): \nHandler tests for change_batch_quantity\nevents.BatchCreated(\"batch1\", \"ADORABLE-SETTEE\", 100, None), uow\nmessagebus.handle(events.BatchQuantityChanged(\"batch1\", 50), uow)\nevent_history = [\nevents.BatchCreated(\"batch1\", \"INDIFFERENT-TABLE\", 50, None),\nevents.BatchCreated(\"batch2\", \"INDIFFERENT-TABLE\", 50, \nmessagebus.handle(events.BatchQuantityChanged(\"batch1\", 25), uow)\nevent: events.BatchQuantityChanged, uow: unit_of_work.AbstractUnitOfWork\nproduct = uow.products.get_by_batchref(batchref=event.ref) \nproduct.change_batch_quantity(ref=event.ref, qty=event.qty) ",
+      "keywords": [
+        "event",
+        "Message Bus",
+        "UoW",
+        "Message",
+        "Handler",
+        "Bus",
+        "batch",
+        "event handlers",
+        "sku",
+        "unit",
+        "quantity",
+        "API",
+        "batchref",
+        "service",
+        "change"
+      ],
+      "concepts": [
+        "event",
+        "handler",
+        "batch",
+        "allocated",
+        "allocation",
+        "allocate",
+        "allocations",
+        "classes",
+        "services",
+        "product"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 11,
+          "title": "",
+          "score": 0.841,
+          "base_score": 0.691,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.694,
+          "base_score": 0.544,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.646,
+          "base_score": 0.496,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 10,
+          "title": "",
+          "score": 0.588,
+          "base_score": 0.438,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 2,
+          "title": "",
+          "score": 0.502,
+          "base_score": 0.352,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "event",
+          "events",
+          "uow",
+          "handler",
+          "batchcreated"
+        ],
+        "semantic": [],
+        "merged": [
+          "event",
+          "events",
+          "uow",
+          "handler",
+          "batchcreated"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4172833092899589,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584763+00:00"
+      }
+    },
+    {
+      "chapter_number": 11,
+      "title": "and the epilogue have some tips on managing complex queries",
+      "start_page": 268,
+      "end_page": 497,
+      "summary": "We’re adding a query to our repository to make this use case easier to implement.\nand deallocation(s) inline and publishes a new event.\nthe existing allocate function to publish an event:\n(src/allocation/domain/model.py)\ndef change_batch_quantity(self, ref: str, qty: int): \nself.events.append( \nevents.AllocationRequired(line.orderid, line.sku, line.qty) \nreturn self._allocations.pop()\n(src/allocation/service_layer/messagebus.py)\nevents.BatchCreated: [handlers.add_batch], \nevents.BatchQuantityChanged: [handlers.change_batch_quantity], \nevents.AllocationRequired: [handlers.allocate], \nevents.OutOfStock: [handlers.send_out_of_stock_notification], \nOptionally: Unit Testing Event Handlers in\nmessage bus, and it tests the whole flow, where the\nBatchQuantityChanged event handler triggers deallocation, and\nemits new AllocationRequired events, which in turn are handled by\nOne test covers a chain of multiple events and\nDepending on the complexity of your chain of events, you may decide\nthat you want to test some handlers in isolation from one another.\npublish_events() method on FakeUnitOfWork and decoupling it\nfrom the real message bus, instead making it record what events it\nFake message bus implemented in UoW (tests/unit/test_handlers.py)\nself.events_published = []  # type: List[events.Event] \ndef publish_events(self): \nwhile product.events: \nself.events_published.append(product.events.pop(0))\nthat event.\nTesting reallocation in isolation (tests/unit/test_handlers.py)\nevent_history = [ \nevents.BatchCreated(\"batch1\", \"INDIFFERENT-TABLE\", 50, None), \nevents.BatchCreated(\"batch2\", \"INDIFFERENT-TABLE\", 50, date.today()), \nevents.AllocationRequired(\"order1\", \"INDIFFERENT-TABLE\", 20),\nevents.AllocationRequired(\"order2\", \"INDIFFERENT-TABLE\", 20), \nmessagebus.handle(events.BatchQuantityChanged(\"batch1\", 25), uow) \n# assert on new events emitted rather than downstream side-effects \n[reallocation_event] = uow.events_published \nassert reallocation_event.orderid in {'order1', 'order2'} \nassert reallocation_event.sku == 'INDIFFERENT-TABLE'\nchain of events.\nIf we change the message bus to being a class,  then building a FakeMessageBus is more\nHANDLERS: Dict[Type[events.Event], List[Callable]] \ndef handle(self, event: events.Event): \nfor handler in self.HANDLERS[type(event)]: \nhandler(event) \nevents.OutOfStock: [send_out_of_stock_notification], \nself.events_published = []  # type: List[events.Event] \nevents.OutOfStock: [lambda e: self.events_published.append(e)] \nWe use a class-based message bus in Chapter 13, if you need more inspiration.\nEvents are simple dataclasses that define the data structures for inputs\nHandlers are the way we react to events.\nfor a single event if we want to.\nHandlers can also raise other events.\nWe’ve added new events, new handlers, and a new\nbetween model objects and events, which will have a \nBut first, let’s talk about events\n1  Event-based modeling is so popular that a practice called event storming has been\ndeveloped for facilitating event-based requirements gathering and domain model\n2  If you’ve done a bit of reading about event-driven architectures, you may be thinking,\n“Some of these events sound more like commands!” Bear with us!\nbetween commands and events.\nCommand Handler\nIn the previous chapter, we talked about using events as a way of\nTo achieve that, we converted all our use-case functions to event\nbuilds a new BatchCreated event and handles it as if it were an\ninternal event.\nthey can be handled by the same message bus but with slightly different\nCommands and Events\nLike events, commands are a type of message—instructions sent by\nevents.\nThe differences between commands and events, though, are important.\npost a form to an API handler, we are sending a command.\nWe often use events to spread the knowledge about successful\nEvents capture facts about things that happened in the past.\ndon’t know who’s handling an event, senders should not care whether\nEvents versus commands\nEvent\nPulling out some commands (src/allocation/domain/commands.py)\nclass Allocate(Command):  \ncommands.Allocate will replace\nevents.AllocationRequired.\ncommands.CreateBatch will replace events.BatchCreated.\nevents.BatchQuantityChanged.\nWe want to treat events and\nmessage bus changes:\nDispatch events and commands differently\n(src/allocation/service_layer/messagebus.py)\nMessage = Union[commands.Command, events.Event]\ndef handle(message: Message, uow: unit_of_work.AbstractUnitOfWork):  \nif isinstance(message, events.Event):\nhandle_event(message, queue, uow)  \ncmd_result = handle_command(message, queue, uow)  \nraise Exception(f'{message} was not an Event or Command')\nmay be a command or an event.\nWe dispatch events and commands to two different helper\nHere’s how we handle events:\n(src/allocation/service_layer/messagebus.py)\ndef handle_event(\nfor handler in EVENT_HANDLERS[type(event)]:  \nlogger.debug('handling event %s with handler %s', event, handler)\nhandler(event, uow=uow)\nqueue.extend(uow.collect_new_events())\nlogger.exception('Exception handling event %s', event)\nEvents go to a dispatcher that can delegate to multiple handlers per\nevent.\n(src/allocation/service_layer/messagebus.py)\ndef handle_command(\nresult = handler(command, uow=uow)\nqueue.extend(uow.collect_new_events())\ntemporary hack to allow the message bus to return the batch\ncommands and events.\nCommands can have only one handler,\nNew handlers dicts (src/allocation/service_layer/messagebus.py)\nEVENT_HANDLERS = { \nevents.OutOfStock: [handlers.send_out_of_stock_notification],\nCOMMAND_HANDLERS = { \ncommands.Allocate: handlers.allocate, \ncommands.CreateBatch: handlers.add_batch, \ncommands.ChangeBatchQuantity: handlers.change_batch_quantity,\nDiscussion: Events, Commands, and\nhappens when an event fails to process?\nof the events during messagebus.handle before an out-of-memory\nLet’s start with the worst case: we fail to handle an event, and the\nare both allocated and available, depending on how you look at it.\nFor example, when we allocate stock to an order, our consistency\nconsistent, so if we fail to process an event and update only a single\nsplitting messages into commands and events.\nnotification we need to do can happen via an event.\nthe event handlers to succeed in order for the command to be\ncan raise domain events when rules are met.\nself.events.append(\ndef update_customer_history(uow, event: OrderCreated): \nhistory = uow.order_history.get(event.customer_id)\nhistory.record_order(event.order_id, event.order_amount)\ndef congratulate_vip_customer(uow, event: CustomerBecameVip): \ncustomer = uow.customers.get(event.customer_id)\nOur first handler creates an order for the customer and raises a\ndomain event OrderCreated.\nevent-driven system.\nIn our current implementation, we raise events about an aggregate after\nWhat if we raised those events\nhandler that creates an order.\nHopefully we’ve convinced you that it’s OK for events to fail\nLet’s look again at the handle_event method from our message bus:\n(src/allocation/service_layer/messagebus.py)\ndef handle_event( \nfor handler in EVENT_HANDLERS[type(event)]: \nlogger.debug('handling event %s with handler %s', event, handler) \nhandler(event, uow=uow) \nqueue.extend(uow.collect_new_events()) \nlogger.exception('Exception handling event %s', event) \nWhen we handle a message in our system, the first thing we do is write\nHandling event CustomerBecameVIP(customer_id=12345) \nthe problem in a unit test or replay the message into the system.\nwe can re-process an event, but our systems will always experience\nHandle with retry (src/allocation/service_layer/messagebus.py)\ndef handle_event(\nfor handler in EVENT_HANDLERS[type(event)]:\nlogger.debug('handling event %s with handler %s', event, \nhandler(event, uow=uow)\nqueue.extend(uow.collect_new_events())\n'Failed to handle event %s times, giving up!,\nCommand Handler patterns mean that each attempt starts from a\nHandler pattern to describe what we’re doing with Events,\nCommands, and Message Bus. Table 10-2 discusses some of the things you should think about before\nSplitting commands and events: the trade-offs\nTreating commands and events \nbetween commands and events \nIn Chapter 11 we’ll talk about using events as an integration pattern.\nEvent-Driven\nArchitecture: Using Events to\nsystem that an order has been allocated and needs to be sent to a\nIn this chapter, we’d like to show how the events metaphor can be\nmessage bus (we’ll use Redis pub/sub queues as an example) and\nThe code for this chapter is in the chapter_11_external_events branch on GitHub:\ngit checkout chapter_11_external_events \nbatches of stock, orders, products, and customers.\nAllocation).\nallocate stock, the Orders service drives the Batches system, which\nallocating, and so on.\naccepts commands from the outside world and raises events to record\nOther services can listen to those events to trigger the next\nIf we need to change the order of operations or to introduce new steps\ngetting events out of one system and into another, like our message bus,\nAt MADE.com, we use Event Store; Kafka or RabbitMQ are valid\nConcerns like message ordering, failure handling, and idempotency all\nour Allocated event is published back out to Redis again at the end.\nexisting API to create batches, and then we’ll test both inbound and\n(tests/e2e/test_external_events.py)\ndef test_change_batch_quantity_leading_to_reallocation():\n# start with two batches and an order allocated to one of them  \nresponse = api_client.post_to_allocate(orderid, sku, 10)  \n# change quantity on allocated batch so it's less than our order  \nredis_client.publish_message('change_batch_quantity', {  \ncomments: we want to send an event into the system that causes an\nas an event in Redis too.\nbecause it may take some time for our new line_allocated\nmuch like Flask: it translates from the outside world to our events:\n(src/allocation/entrypoints/redis_eventconsumer.py)\ndef handle_change_batch_quantity(m):\nmessagebus.handle(cmd, uow=unit_of_work.SqlAlchemyUnitOfWork())\n(src/allocation/adapters/redis_eventpublisher.py)\ndef publish(channel, event: events.Event):  \nmapping between event classes/names and the appropriate channel,\nOur New Outgoing Event\nHere’s what the Allocated event will look like:\nNew event (src/allocation/domain/events.py)\nclass Allocated(Event): \nof the order line, and which batch it was allocated to.\nWe add it into our model’s allocate() method (having added a test\nProduct.allocate() emits new event to record what happened\n(src/allocation/domain/model.py)\ndef allocate(self, line: OrderLine) -> str: \nbatch.allocate(line) \nself.events.append(events.Allocated( \nto add is a handler that publishes the outgoing event:\n(src/allocation/service_layer/messagebus.py)\nevents.Allocated: [handlers.publish_allocated_event], \nevents.OutOfStock: [handlers.send_out_of_stock_notification],\nPublishing the event uses our helper function from the Redis wrapper:\nPublish to Redis (src/allocation/service_layer/handlers.py)\ndef publish_allocated_event( \nevent: events.Allocated, uow: unit_of_work.AbstractUnitOfWork,\nredis_eventpublisher.publish('line_allocated', event)\nevents clear.\nThis is particularly important if you get into event sourcing (very much\nOutbound events are one of the places it’s important to apply validation.\nA nice simple one for this chapter: make it so that the main allocate() use case can also be\ninvoked by an event on a Redis channel, as well as (or instead of) via the API.\nYou will likely want to add a new E2E test and feed through some changes into\nEvents can come from the outside, but they can also be published\nexternally—our publish handler converts an event to a message on a\nWe use events to talk to the outside world.\nover various event notifications...It can be hard to see such a flow\ninsight: reads (queries) and writes (commands) are different, so they\ngit checkout chapter_11_external_events\nIn this book, we’ve set explicit constraints like “You can’t allocate\n“Each order line is allocated to a single batch.”\ndef test_allocating_to_a_batch_reduces_the_available_quantity(): \nbatch.allocate(line) \ndef test_cannot_allocate_if_available_smaller_than_required(): \nassert small_batch.can_allocate(large_line) is False\nthe Domain Events pattern so we can write rules like “When stock is\nAt MADE.com, we have a system very like the allocation service.\nhave a big gnarly system for allocating stock to those orders.\nof this difference by making our reads eventually consistent in order\nwe try to allocate Bob’s order, we’ll get a failure, and we’ll need to either cancel his order or buy\nplaces his order, we send it to the allocation service, and because there’s not enough stock, we\ntakes an order and calls our service layer to allocate some stock.\nchange it to return a simple OK message and instead provide a new\nread-only endpoint to retrieve allocation state:\ndef test_happy_path_returns_202_and_batch_is_allocated(): \nr = api_client.post_to_allocate(orderid, sku, qty=3) \nr = api_client.get_allocation(orderid) \ndef test_unhappy_path_returns_400_and_error_message(): \nr = api_client.get_allocation(orderid) \n(src/allocation/entrypoints/flask_app.py)\nfrom allocation import views\ndef allocations_view_endpoint(orderid):\nresult = views.allocations(orderid, uow)  \n(src/allocation/views.py)\nfrom allocation.service_layer import unit_of_work \ndef allocations(orderid: str, uow: unit_of_work.SqlAlchemyUnitOfWork): \n' FROM allocations AS a' \nwhich code modifies state (the event handlers) and which code just\nSplitting out your read-only views from your state-modifying command and event\ndef test_allocations_view(sqlite_session_factory):\nmessagebus.handle(commands.CreateBatch('sku1batch', 'sku1', 50, None), uow)  \nmessagebus.handle(commands.CreateBatch('sku2batch', 'sku2', 50, today), uow)\nmessagebus.handle(commands.Allocate('order1', 'sku1', 20), uow)\nmessagebus.handle(commands.Allocate('order1', 'sku2', 20), uow)\nmessagebus.handle(commands.Allocate('otherorder', 'sku1', 30), uow)\nmessagebus.handle(commands.Allocate('otherorder', 'sku2', 10), uow)\nassert views.allocations('order1', uow) == [\nA simple view that uses the repository (src/allocation/views.py)\nfrom allocation import unit_of_work\ndef allocations(orderid: str, uow: unit_of_work.AbstractUnitOfWork):\norder IDs it has allocated.\n(src/allocation/domain/model.py)\nreturn {l.orderid for l in self._allocations}\nA simple view that uses the ORM (src/allocation/views.py)\nfrom allocation import unit_of_work, model \ndef allocations(orderid: str, uow: unit_of_work.AbstractUnitOfWork): \nbatches = uow.session.query(model.Batch).join( \nmodel.OrderLine, model.Batch._allocations \nA much nicer query (src/allocation/views.py)\ndef allocations(orderid: str, uow: unit_of_work.SqlAlchemyUnitOfWork): \n'SELECT sku, batchref FROM allocations_view WHERE orderid = \n(src/allocation/adapters/orm.py)\nallocations_view = Table( \nUpdating a Read Model Table Using an Event\nWe add a second handler to the Allocated event:\nAllocated event gets a new handler\n(src/allocation/service_layer/messagebus.py)\nEVENT_HANDLERS = { \nevents.Allocated: [ \nhandlers.publish_allocated_event, \nhandlers.add_allocation_to_read_model \nHere’s what our update-view-model code looks like:\nUpdate on allocation (src/allocation/service_layer/handlers.py)\ndef add_allocation_to_read_model( \nevent: events.Allocated, uow: unit_of_work.SqlAlchemyUnitOfWork,\n'INSERT INTO allocations_view (orderid, sku, batchref)' \ndict(orderid=event.orderid, sku=event.sku, batchref=event.batchref) \nevents.Deallocated: [ \nhandlers.remove_allocation_from_read_model, \ndef remove_allocation_from_read_model( \nevent: events.Deallocated, uow: unit_of_work.SqlAlchemyUnitOfWork,\nmodel, which the GET/read operation can use.\nWell, this is just another case where events and commands can fail independently.\nQueries the current state of the write side to work out what’s currently allocated\nCalls the add_allocate_to_read_model handler for each allocated item\nWe can use this technique to create entirely new read models from historical data.\nLet’s see the flexibility that our event-driven model buys us in action,\nHandlers update a Redis read model\n(src/allocation/service_layer/handlers.py)\ndef add_allocation_to_read_model(event: events.Allocated, _): \nredis_eventpublisher.update_readmodel(event.orderid, event.sku, \nevent.batchref) \ndef remove_allocation_from_read_model(event: events.Deallocated, _): \nredis_eventpublisher.update_readmodel(event.orderid, event.sku, None)\n(src/allocation/adapters/redis_eventpublisher.py)\nView adapted to Redis (src/allocation/views.py)\ndef allocations(orderid): \nEvent handlers are a great way to manage updates to a read model, if you decide\nImplement another view, this time to show the allocation for a single order line.\nAs it happens, the allocation service at MADE.com does use “full-\nseparate read model and event handlers for updating it.\nevents\nobjects as your write model, so using the ORM, adding some read\nThe allocation service thinks\nin terms of Batches for a single SKU, but users care about allocations\nOur main handler functions declare an explicit dependency on the\nOur handlers have an explicit dependency on the UoW\n(src/allocation/service_layer/handlers.py)\ndef allocate( \ncmd: commands.Allocate, uow: unit_of_work.AbstractUnitOfWork\nService-layer tests against a fake UoW: (tests/unit/test_services.py)\n(src/allocation/service_layer/unit_of_work.py)\n(src/allocation/service_layer/handlers.py)\nfrom allocation.adapters import email, redis_eventpublisher  \nevent: events.OutOfStock, uow: unit_of_work.AbstractUnitOfWork,\nf'Out of stock for {event.sku}',\n(tests/unit/test_handlers.py)\n(src/allocation/service_layer/handlers.py)\nf'Out of stock for {event.sku}', \nonly passing the UoW around: our tests use FakeUnitOfWork, while\nmessage bus passes them onto our command handlers.\nthe right handler onto the message bus feels like a violation of the SRP.\n# existing allocate function, with abstract uow dependency\ndef allocate(\ncmd: commands.Allocate, uow: unit_of_work.AbstractUnitOfWork\n# prepare a version of the allocate fn with UoW dependency captured in a \nreturn allocate(cmd, uow)\nsend_out_of_stock_notification() handler, which has different\nsosn_composed  = lambda event: send_out_of_stock_notification(event, \nsosn_composed(event)  # will have email.send_mail already injected in\nhandler functions as classes, though:\n# we replace the old `def allocate(cmd, uow)` with:\ndef __init__(self, uow: unit_of_work.AbstractUnitOfWork):  \ndef __call__(self, cmd: commands.Allocate):  \n# then prepares a version of the allocate fn with dependencies already injected\nallocate = AllocateHandler(uow)\n3. Inject all the dependencies into our handlers\nA bootstrap function (src/allocation/bootstrap.py)\ninjected_event_handlers = {  \nevent_type: [\ninject_dependencies(handler, dependencies)\nfor handler in event_handlers\nfor event_type, event_handlers in handlers.EVENT_HANDLERS.items()\ninjected_command_handlers = {  \ncommand_type: inject_dependencies(handler, dependencies)\nevent_handlers=injected_event_handlers,\nWe return a configured message bus ready for use.\nHere’s how we inject dependencies into a handler function by\nDI by inspecting function signatures (src/allocation/bootstrap.py)\ndef inject_dependencies(handler, dependencies):\nreturn lambda message: handler(message, **deps)  \nWe inspect our command/event handler’s arguments.\nManually creating partial functions inline (src/allocation/bootstrap.py)\ninjected_event_handlers = { \nevents.Allocated: [ \nlambda e: handlers.publish_allocated_event(e, publish), \nlambda e: handlers.add_allocation_to_read_model(e, uow), \nevents.Deallocated: [ \nlambda e: handlers.remove_allocation_from_read_model(e, uow), \nevents.OutOfStock: [ \ninjected_command_handlers = { \ncommands.Allocate: lambda c: handlers.allocate(c, uow), \nlambda c: handlers.add_batch(c, uow), \nlambda c: handlers.change_batch_quantity(c, uow), \nMessage Bus Is Given Handlers at\nMessageBus as a class (src/allocation/service_layer/messagebus.py)\nevent_handlers: Dict[Type[events.Event], List[Callable]],  \nself.event_handlers = event_handlers\nself.command_handlers = command_handlers\ndef handle(self, message: Message):  \nif isinstance(message, events.Event):\nself.handle_event(message)\nself.handle_command(message)\nraise Exception(f'{message} was not an Event or Command')\nEvent and command handler logic stays the same\n(src/allocation/service_layer/messagebus.py)\ndef handle_event(self, event: events.Event):\nfor handler in self.event_handlers[type(event)]:  \nlogger.debug('handling event %s with handler %s', event, \nhandler(event)  \nself.queue.extend(self.uow.collect_new_events())\nlogger.exception('Exception handling event %s', event)\ndef handle_command(self, command: commands.Command):\nhandler = self.command_handlers[type(command)]  \nhandler(command)  \nself.queue.extend(self.uow.collect_new_events())\nhandle_event and handle_command are substantially the same,\nbut instead of indexing into a static EVENT_HANDLERS or\nCOMMAND_HANDLERS dict, they use the versions on self.\nargument, the specific event or command.\nFlask calls bootstrap (src/allocation/entrypoints/flask_app.py)\n-from allocation import views \n+from allocation import bootstrap, views \ndef test_allocations_view(sqlite_bus):\nsqlite_bus.handle(commands.CreateBatch('sku1batch', 'sku1', 50, None))\nsqlite_bus.handle(commands.CreateBatch('sku2batch', 'sku2', 50, \nassert views.allocations('order1', sqlite_bus.uow) == [\nBootstrap in unit test (tests/unit/test_handlers.py)\nChange all the handlers to being classes as per the DI using classes example, and amend the\n(src/allocation/service_layer/messagebus.py)\nEven though it’s simple, let’s use send_mail as an example to talk\n(src/allocation/adapters/notifications.py)\ndef send(self, destination, message): \ndef send(self, destination, message): \nmsg = f'Subject: allocation service notification\\n{message}' \nNotifications in message bus (src/allocation/bootstrap.py)\nFake notifications (tests/unit/test_handlers.py)\ndef send(self, destination, message): \nTests change slightly (tests/unit/test_handlers.py)\ndef test_sends_email_on_out_of_stock_error(self): \nbus.handle(commands.Allocate(\"o1\", \"POPULAR-CURTAINS\", 10)) \nIn our integration tests, we use the real EmailNotifications class,\ndef test_out_of_stock_email(bus):\nbus.handle(commands.CreateBatch('batch1', sku, 9, None))  \nbus.handle(commands.Allocate('order1', sku, 10))\nassert email['Raw']['From'] == 'allocations@example.com'  \nWe use our bootstrapper to build a message bus that talks to the\n3. Build a fake and use it for unit/service-layer/handler tests.",
+      "keywords": [
+        "event",
+        "message bus",
+        "message",
+        "UoW",
+        "handler",
+        "Command",
+        "allocation",
+        "Redis",
+        "Event Handlers",
+        "Model",
+        "system",
+        "order",
+        "Unit",
+        "bus"
+      ],
+      "concepts": [
+        "event",
+        "messages",
+        "messaging",
+        "commands",
+        "handler",
+        "allocated",
+        "allocation",
+        "batch",
+        "batches",
+        "model"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 9,
+          "title": "",
+          "score": 0.841,
+          "base_score": 0.691,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 10,
+          "title": "",
+          "score": 0.756,
+          "base_score": 0.606,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 6,
+          "title": "",
+          "score": 0.685,
+          "base_score": 0.535,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 4,
+          "title": "",
+          "score": 0.636,
+          "base_score": 0.486,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        },
+        {
+          "book": "Architecture Patterns with Python",
+          "chapter": 8,
+          "title": "",
+          "score": 0.624,
+          "base_score": 0.474,
+          "topic_boost": 0.15,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "event",
+          "events",
+          "commands",
+          "uow",
+          "handler"
+        ],
+        "semantic": [],
+        "merged": [
+          "event",
+          "events",
+          "commands",
+          "uow",
+          "handler"
+        ]
+      },
+      "topic_id": 0,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4177651541442927,
+        "topic_boost": 0.15,
+        "timestamp": "2025-12-17T23:01:03.584778+00:00"
+      }
+    }
+  ],
+  "total_chapters": 13,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Architecture Patterns with Python_metadata.json",
+    "enrichment_date": "2025-12-17T23:01:03.587871+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3107.9956680005125,
+    "total_similar_chapters": 63
+  }
+}

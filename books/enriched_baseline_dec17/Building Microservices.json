@@ -1,0 +1,1307 @@
+{
+  "metadata": {
+    "title": "Building Microservices",
+    "source_file": "Building Microservices_metadata.json"
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Microservices",
+      "start_page": 15,
+      "end_page": 29,
+      "summary": "Microservices\nnew wave of technology companies operate in different ways to create IT systems that\nof small teams owning the full lifecycle of their services.\nMicroservices have emerged from\nWhat Are Microservices?\nMicroservices are small, autonomous services that work together.\ndefinition down a bit and consider the characteristics that make microservices different.\nknow where a change needs to be made because the codebase is so large.\nmicroservices.\nMicroservices take this same approach to independent services.\nWe focus our service\nis how well the service aligns to team\nIf the codebase is too big to be managed by a small team, looking to break it\nservice, the more you maximize the benefits and downsides of microservice architecture.\nstrive for smaller and smaller services.\nIt might be deployed as an isolated service on a\navoid packing multiple services onto the same machine, although the definition of\nseparation between the services and avoid the perils of tight coupling.\nThese services need to be able to change independently of each other, and be deployed by\nservices should expose, and what they should allow to be hidden.\nsharing, our consuming services become coupled to our internal representations.\nOur service exposes an application programming interface (API), and collaborating\nservices communicate with us via those APIs. We also need to think about what\nchange to a service and deploy it by itself without changing anything else?\nTo do decoupling well, you’ll need to model your services right and get the APIs right.\nMicroservices, however, tend to achieve these benefits\nsystems and service-oriented architecture.\nWith a system composed of multiple, collaborating services, we can decide to use different\ndifferent technology stack that is better able to achieve the performance levels required.\nMicroservices can allow you to more easily embrace different technologies\nWith microservices, we are also able to adopt technology more quickly, and understand\nWith a system consisting of multiple services, I have\nmultiple new places in which to try out a new piece of technology.\nI can pick a service that\nmake it more difficult for non-Java-based services or clients.\nAs you’ll find throughout this book, just like many things concerning microservices, it’s\nWe’ll discuss how to make technology choices in\nintegration, you’ll learn how to ensure that your services can evolve their technology\nService boundaries become your obvious bulkheads.\nmonolithic service, if the service fails, everything stops working.\nmicroservices, we can build systems that handle the total failure of services and degrade\nTo ensure our microservice systems can properly\nWith a large, monolithic service, we have to scale everything together.\nsmaller services, we can just scale those services that need scaling, allowing us to run\nYou can target scaling at just those microservices that need it\nServices, we can even apply this scaling on demand for those pieces that need it.\nWith microservices, we can make a change to a single service and deploy it independently\noccur, it can be isolated quickly to an individual service, making fast rollback easy to\nThe technology in this space has changed greatly in the last couple of years, and we’ll be\nlooking more deeply into the topic of deployment in a microservice world in Chapter 6.\nMicroservices allow us to better align our architecture to our organization, helping us\nWe can also shift ownership of services between teams to try to keep\npeople working on one service colocated.\nOne of the key promises of distributed systems and service-oriented architectures is that\nWith microservices, we allow for our\nChapter 5, I’ll discuss ways for you to break apart existing monolithic systems, and\nhopefully change them into some reusable, re-composable microservices.\nWith our individual services being small in size, the cost to replace them with a better\nTeams using microservice approaches are comfortable with completely rewriting services\nwhen required, and just killing a service when it is no longer needed.\nWhat About Service-Oriented Architecture?\nService-oriented architecture (SOA) is a design approach where multiple services\nA service here typically means a\nCommunication between these services\nmore end-user applications, for example, could both use the same services.\nmake it easier to maintain or rewrite software, as theoretically we can replace one service\nservice granularity, or the wrong guidance on picking places to split your system.\nenough about real-world, practical ways to ensure that services do not become overly\nThe microservice approach has emerged from real-world use, taking our better\nunderstanding of systems and architecture to do SOA well.\nmicroservices as a specific approach for SOA in the same way that XP or Scrum are\nWhen you get down to it, many of the advantages of a microservice-based architecture",
+      "keywords": [
+        "services",
+        "Microservices",
+        "system",
+        "small",
+        "SOA",
+        "change",
+        "’ll",
+        "technology",
+        "code",
+        "monolithic",
+        "architecture",
+        "make",
+        "application",
+        "n’t",
+        "multiple services"
+      ],
+      "concepts": [
+        "services",
+        "microservices",
+        "technologies",
+        "technology",
+        "architecture",
+        "architectural",
+        "make",
+        "making",
+        "team",
+        "different"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.643,
+          "base_score": 0.643,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.631,
+          "base_score": 0.631,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.612,
+          "base_score": 0.612,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 6,
+          "title": "",
+          "score": 0.584,
+          "base_score": 0.584,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.555,
+          "base_score": 0.555,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "services",
+          "microservices",
+          "service",
+          "architecture",
+          "multiple"
+        ],
+        "semantic": [],
+        "merged": [
+          "services",
+          "microservices",
+          "service",
+          "architecture",
+          "multiple"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.5233700318990987,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120727+00:00"
+      }
+    },
+    {
+      "chapter_number": 4,
+      "title": "Services can and should make heavy use of third-party libraries to reuse common code",
+      "start_page": 30,
+      "end_page": 34,
+      "summary": "Shared Libraries\nThese libraries may be provided by third\nLibraries give you a way to share functionality between teams and services.\nTeams can organize themselves around these libraries, and the libraries themselves can be\nyou’re using dynamically linked libraries, you cannot deploy a new library without\nShared libraries do have their place.\nServices can and should make heavy use of third-party libraries to reuse common code.\nModules\nThey allow some lifecycle management of the modules, such that they\ncan be deployed into a running process, allowing you to make changes without taking the\nmodules, and we’ll have to wait at least until Java 9 to see this added to the language.\nIDE, is now used as a way to retrofit a module concept in Java via a library.\nThe problem with OSGI is that it is trying to enforce things like module lifecycle\nprocess boundary, it is also much easier to fall into the trap of making modules overly\nErlang follows a different approach, in which modules are baked into the language\nmodule upgrading.\nThe capabilities of Erlang’s modules are impressive indeed, but even if we are lucky\nwe do with normal shared libraries.\nwell-factored, independent modules within a single monolithic process.\nSo while modular decomposition within a process boundary may be something you want\nrest of us, we should see modules as offering the same sorts of benefits as shared libraries.\nalso need to think differently about how you scale your systems and ensure that they are",
+      "keywords": [
+        "Libraries",
+        "Modules",
+        "Shared Libraries",
+        "Erlang",
+        "process",
+        "’ll",
+        "OSGI",
+        "n’t",
+        "system",
+        "modular decomposition",
+        "Java",
+        "library",
+        "Shared",
+        "language",
+        "modular"
+      ],
+      "concepts": [
+        "modules",
+        "libraries",
+        "library",
+        "shared",
+        "share",
+        "erlang",
+        "process",
+        "technologies",
+        "common",
+        "code"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 11,
+          "title": "",
+          "score": 0.484,
+          "base_score": 0.484,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.456,
+          "base_score": 0.456,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.397,
+          "base_score": 0.397,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.394,
+          "base_score": 0.394,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.373,
+          "base_score": 0.373,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "libraries",
+          "modules",
+          "shared libraries",
+          "shared",
+          "erlang"
+        ],
+        "semantic": [],
+        "merged": [
+          "libraries",
+          "modules",
+          "shared libraries",
+          "shared",
+          "erlang"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.38151868385471605,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120782+00:00"
+      }
+    },
+    {
+      "chapter_number": 2,
+      "title": "The Evolutionary Architect",
+      "start_page": 35,
+      "end_page": 39,
+      "summary": "The Evolutionary Architect\nthe more fluid environment that these architectures allow, the role of the architect also has\nto change.\nArchitects have an important job.\nplaces, they may only have to work with one team, in which case the role of the architect\nMore than any other role, architects can have a direct impact on the quality of the systems\nArchitects and engineers have a rigor and discipline\narchitect and I should be held responsible if I get it wrong.” The importance of these jobs\narchitect.\nPerhaps the term architect has done the most harm.\nIn our industry, this view of the architect leads to\nWhen we compare ourselves to engineers or architects, we are in danger of doing\nUnfortunately, we are stuck with the word architect for now.\nAn Evolutionary Vision for the Architect\nOur requirements shift more rapidly than they do for people who design and build\nas the way it is used changes.\nThus, our architects need to shift their thinking away\nIT architect and that I think better encapsulates what we want this role to be.\nplanners than architects for the built environment.\nA town planner’s role is to look at\nbest suit the needs of the citizens today, taking into account future use.\nspecific building there”; instead, he zones a city.\nto other people to decide what exact buildings get created, but there are restrictions: if you\nwant to build a factory, it will need to be in an industrial zone.\nmuch about what happens in one zone, the town planner will instead spend far more time\nThe city changes over time.\nAs our users use our software, we need\nhave to work there, and who have the job of making sure it can change as required.\nA town planner, just like an architect, also needs to know when his plan isn’t being\nSo our architects as town planners need to set direction in broad strokes, and only get\nthey need to ensure that it is a system that makes users and developers equally happy.",
+      "keywords": [
+        "Architect",
+        "role",
+        "town planner",
+        "change",
+        "system",
+        "town",
+        "n’t",
+        "city",
+        "engineers",
+        "software",
+        "people",
+        "planner",
+        "zone",
+        "build",
+        "Part"
+      ],
+      "concepts": [
+        "architect",
+        "direct",
+        "direction",
+        "programming",
+        "program",
+        "different",
+        "work",
+        "far",
+        "uses",
+        "build"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 10,
+          "title": "",
+          "score": 0.365,
+          "base_score": 0.365,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "architect",
+          "town",
+          "planner",
+          "architects",
+          "role"
+        ],
+        "semantic": [],
+        "merged": [
+          "architect",
+          "town",
+          "planner",
+          "architects",
+          "role"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.24412857022540613,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120795+00:00"
+      }
+    },
+    {
+      "chapter_number": 10,
+      "title": "If you are in such an organization, you will rely more on the",
+      "start_page": 40,
+      "end_page": 50,
+      "summary": "architects, we need to worry much less about what happens inside the zone than what\nservices talk to each other, or ensuring that we can properly monitor the overall health of\nteam to make the right local decision.\nWithin each service, you may be OK with the team who owns that zone picking a different\nSimilarly, if each team picks a completely different data\nNetflix, for example, has mostly standardized on Cassandra as a data-store technology.\nintegration can become a nightmare as consuming services have to understand and support\nIf we are to ensure that the systems we create are habitable for our developers, then our architects need to\nshould mean that these developers actually spend time coding with the team too.\nFor those of you who practice pair\nIf you are working with four teams, for example, spending half a day with\nset of principles and practices that guide it, based on goals that we are trying to achieve.\nthat this is where your organization is headed, so you need to make sure the technology is\nPrinciples\nPrinciples are rules you have made in order to align what you are doing to some larger\norganization is to decrease the time to market for new features, you may define a principle\nThe more principles you have,\nHeroku’s 12 Factors are a set of design principles structured around the goal of helping\nPractices\nOur practices are how we ensure our principles are being carried out.\nPractices could\noften change more often than principles.\nAs with principles, sometimes practices reflect constraints in your organization.\nexample, if you support only CentOS, this will need to be reflected in your practices.\nPractices should underpin our principles.\nA principle stating that delivery teams control\nthe full lifecycle of their systems may mean you have a practice stating that all services\nCombining Principles and Practices\nOne person’s principles are another’s practices.\nHTTP/REST a principle rather than a practice, for example.\nFor a small enough group, perhaps a single team, combining principles and practices\nHowever, for larger organizations, where the technology and working\nA .NET team, for example, might have\none set of practices, and a Java team another, with a set of practices common to both.\nprinciples, though, could be the same for both.\nThe figure shows the interplay of goals, principles, and\nA real-world example of principles and practices\nthough, I like the idea of having example code that you can look at, inspect, and run,\nWhen you’re working through your practices and thinking about the trade-offs you need to\ndefine what a well-behaved, good service looks like.\nDefining clear attributes that each service should have is\nChapter 8, knowing the health of an individual service is useful, but often only when\nYou might choose to adopt a push mechanism, where each service needs to push this data\ntechnology inside the box opaque, and don’t require that your monitoring systems change\nPicking a small number of defined interface technologies helps integrate new consumers.",
+      "keywords": [
+        "principles",
+        "practices",
+        "team",
+        "service",
+        "system",
+        "technology",
+        "make",
+        "goals",
+        "change",
+        "n’t",
+        "organization",
+        "architect",
+        "Strategic Goals",
+        "things",
+        "time"
+      ],
+      "concepts": [
+        "service",
+        "practice",
+        "practical",
+        "teams",
+        "principled",
+        "principles",
+        "make",
+        "making",
+        "level",
+        "differ"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.483,
+          "base_score": 0.483,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 11,
+          "title": "",
+          "score": 0.48,
+          "base_score": 0.48,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.452,
+          "base_score": 0.452,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.437,
+          "base_score": 0.437,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.436,
+          "base_score": 0.436,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "principles",
+          "practices",
+          "principles practices",
+          "goals",
+          "team"
+        ],
+        "semantic": [],
+        "merged": [
+          "principles",
+          "practices",
+          "principles practices",
+          "goals",
+          "team"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4465691594603925,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120832+00:00"
+      }
+    },
+    {
+      "chapter_number": 11,
+      "title": "Playing by the rules is important when it comes to response codes, too. If your circuit",
+      "start_page": 51,
+      "end_page": 61,
+      "summary": "ensure that our services shield themselves accordingly from unhealthy, downstream calls.\nbreakers rely on HTTP codes, and one service decides to send back 2XX codes for errors,\nGovernance Through Code\ntime making sure people are following these guidelines is less fun, as is placing a burden\non developers to implement all these standard things you expect each service to do.\ngreat believer in making it easy to do the right thing.\nwell here are using exemplars and providing service templates.\nIdeally, these should be real-world services you have that get things right, rather than\nTailored Service Template\nWouldn’t it be great if you could make it really easy for all developers to follow most of\nmost of the code in place to implement the core attributes that each service needs?\nThey work in\nBy tailoring such a service template for your own set of development practices, you ensure\nthat teams can get going faster, and also that developers have to go out of their way to\nmake their services badly behaved.\nservice template for each.\nIf the in-house service template supports only Java, then people may\nthis, a large amount of work has been done to ensure that there are client libraries on the\nJVM to provide teams with the tools they need to keep their services well behaved.\nYou do have to be careful that creating the service template doesn’t become the job of a\ncentral tools or architecture team who dictates how things should be done, albeit via code.\nDefining the practices you use should be a collective activity, so ideally your team(s)\ndecide to use a tailored service template, think very carefully about what its job is.\nyou need to understand that ease of use for the developers has to be a prime guiding force.\nintroduce sources of coupling between services.\nworried about this that it actually copies its service template code manually into each\nservice.\nThis means that an upgrade to the core service template takes longer to be applied\ntechnical vision.\nSometimes we make a decision that is just an\ndevelopers have less freedom, tracking exceptions may be vital to ensure that the rules put\nIf you are working in an organization\nthat places lots of restrictions on how developers can do their work, then microservices\nPart of what architects need to handle is governance.\naspect of technical governance, something I feel is the job of the architect.\narchitect’s jobs is ensuring there is a technical vision, then governance is about ensuring\nArchitects are responsible for a lot of things.\nThey need to ensure there is a set of\nThey need to make sure as well that these principles don’t require working\npractices that make developers miserable.\ntechnology, and know when to make the right trade-offs.\nAll that, and they also need to carry people with them — that is, to ensure\nthat the colleagues they are working with understand the decisions being made and are\nsome time with the teams to understand the impact of their decisions, and perhaps even\nA properly functioning governance group can work together to share the work and shape\npredominantly of people who are executing the work being governed.\nThe architect is responsible for making sure the group works, but the group as a\nIt also ensures that information flows freely from the teams into the\ngroup, and as a result, the decision making is much more sensible and informed.\nSometimes, the group may make decisions with which the architect disagrees.\nwith the group decision.\nLikewise, as an architect, you need to have a firm grasp of when, figuratively, your team is\nBeing the main point person responsible for the technical vision of your system and\nensuring that you’re executing on this vision isn’t just about making technology decisions.\ntechnical leader is about helping grow them — to help them understand the vision\nwhich are outside the scope of this book.\nHelping people step up by having them take ownership of individual services\nEnsure there is a clearly communicated technical vision for the system that will help\nMake sure that the technical vision changes as your customers or organization\nEnsure that the system being implemented fits the technical vision\ngive us many more decisions to make.",
+      "keywords": [
+        "Service Template",
+        "service",
+        "technical vision",
+        "vision",
+        "Technical",
+        "group",
+        "system",
+        "make",
+        "n’t",
+        "work",
+        "architect",
+        "teams",
+        "people",
+        "Code",
+        "Governance"
+      ],
+      "concepts": [
+        "service",
+        "codes",
+        "technical",
+        "people",
+        "make",
+        "needs",
+        "group",
+        "vision",
+        "governance",
+        "governed"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.5,
+          "base_score": 0.5,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 4,
+          "title": "",
+          "score": 0.484,
+          "base_score": 0.484,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 10,
+          "title": "",
+          "score": 0.48,
+          "base_score": 0.48,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.461,
+          "base_score": 0.461,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.459,
+          "base_score": 0.459,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "vision",
+          "technical",
+          "technical vision",
+          "service template",
+          "template"
+        ],
+        "semantic": [],
+        "merged": [
+          "vision",
+          "technical",
+          "technical vision",
+          "service template",
+          "template"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4514957736595498,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120847+00:00"
+      }
+    },
+    {
+      "chapter_number": 3,
+      "title": "How to Model Services",
+      "start_page": 62,
+      "end_page": 99,
+      "summary": "How to Model Services\nchapter, we’ll look at how to think about the boundaries of your microservices that will\nof microservices works within this world.\nWhat Makes a Good Service?\nBefore the team from MusicCorp tears off into the distance, creating service after service\ngood service?\nWhen services are loosely coupled, a change to one service should not require a change to\nThe whole point of a microservice is being able to make a change to one service\nand deploy it, without needing to change any other part of the system.\nthat tightly binds one service to another, causing changes inside the service to require a\nchange to consumers.\nA loosely coupled service knows as little as it needs to about the services with which it\ncalls from one service to another, because beyond the potential performance problem,\ndifferent places, we’ll have to release lots of different services (perhaps at the same time)\nMaking changes in lots of different places is slower, and deploying\nlots of services at once is risky — both of which we want to avoid.\nSo we want to find boundaries within our problem domain that help ensure that related\nThe Bounded Context\nconcept Evans introduces that completely passed me by at first: bounded context.\nare things (Eric uses the word model a lot, which is probably better than things) that do not\nneed to be communicated outside as well as things that are shared externally with other\nbounded contexts.\nEach bounded context has an explicit interface, where it decides what\nmodels to share with other contexts.\nAnother definition of bounded contexts I like is “a specific responsibility enforced by\nexplicit boundaries.”1 If you want information from a bounded context, or want to make\nrequests of functionality within a bounded context, you communicate with its explicit\nthat look like the bounded contexts that Evans refers to.\nIt does need to know some things, though — for example it needs to know\nFigure 3-1 shows an example context\nA shared model between the finance department and the warehouse\nneed to be exposed in the shared model.\nmeanings in different contexts too.\nWithin the context of the customer,\nassociated with different processes and supporting entities within each bounded context,\nModules and Services\nall like-minded business capabilities should live, giving us the high cohesion we want.\nSo once you have found your bounded contexts in your domain,\nmake sure they are modeled within your codebase as modules, with shared and hidden\nmicroservices should cleanly align to bounded contexts.\nyou may decide to skip the step of keeping the bounded context modeled as a module\nout, however, keep a new system on the more monolithic side; getting service boundaries\nSo, if our service boundaries align to the bounded contexts in our domain, and our\nmicroservices represent those bounded contexts, we are off to an excellent start in\nensuring that our microservices are loosely coupled and strongly cohesive.\ndifferent enough that the initial take on the service boundaries wasn’t quite right.\nto lots of changes being made across services, and an associated high cost of change.\nWhen you start to think about the bounded contexts that exist in your organization, you\ncontexts provide the rest of the domain.\ncurrent stock list, for example, or the finance context may well expose the end-of-month\nabout data leads to anemic, CRUD-based (create, read, update, delete) services.\nWhen modeled as services, these capabilities become the key operations that will be\nAt the start, you will probably identify a number of coarse-grained bounded contexts.\nmicroservices, first think in terms of the larger, coarser-grained contexts, and then\nI have seen these nested contexts remaining hidden to other, collaborating microservices\nTo the outside world, they are still making use of business capabilities in\nyou will decide it makes more sense for the higher-level bounded context to not be\nexplicitly modeled as a service boundary, as in Figure 3-3, so rather than a single\nMicroservices representing nested bounded contexts hidden inside the warehouse\nThe bounded contexts inside the warehouse being popped up into their own top-level contexts\none team, then the nested model makes more sense.\nFor example, when testing services that consume the warehouse, I don’t\nhave to stub each service inside the warehouse context, just the more coarse-grained API.\nexample, decide to have end-to-end tests where I launch all services inside the warehouse\nThe changes we implement to our system are often about changes the business wants to\nrepresent our domain, the changes we want to make are more likely to be isolated to one,\nThis reduces the number of places we need to make a\nIt’s also important to think of the communication between these microservices in terms of\nIt can be useful to look at what can go wrong when services are modeled incorrectly.\nseparate service.\nA service boundary split across a technical seam\nChanges frequently had to be made to both services.\nlevel, RPC-style method calls, which were overly brittle (we’ll discuss this futher in\nThe service interface was also very chatty too, resulting in performance issues.\nMaking decisions to model service boundaries along technical seams isn’t always wrong.\nIn this chapter, you’ve learned a bit about what makes a good service, and how to find\nour microservices to these boundaries we ensure that the resulting system has every\nintroduced MusicCorp, the example domain that we will use throughout this book.\nEvery now and then, we may make a change that requires our consumers to also change.\nWe’ll discuss how to handle this later, but we want to pick technology that ensures this\nFor example, if a microservice adds new fields to a piece of\ncommunication between microservices technology-agnostic.\nintegration technology that dictates what technology stacks we can use to implement our\nMake Your Service Simple for Consumers\nWe want to make it easy for consumers to use our service.\nlet’s think about what makes it easy for consumers to use our wonderful new service.\nIdeally, we’d like to allow our clients full freedom in their technology choice, but on the\nFor example, we might use client\nWe don’t want our consumers to be bound to our internal implementation.\nThis means that if we want to change something inside our\nmicroservice, we can break our consumers by requiring them to also change.\nare less likely to want to make a change for fear of having to upgrade our consumers,\nInterfacing with Customers\nintegration between services, let’s look at some of the most common options out there and\nEnrolling a new customer may need to\nAnd when we change or delete a customer, other business processes might get\nSo with that in mind, we should look at some different ways in which we might want to\nwork with customers in our MusicCorp system.\nIn this world, if other services want information\nfrom a service, they reach into the database.\nUsing DB integration to access and change customer information\nIf I want to change the\nlogic associated with, say, how the helpdesk manages customers and this requires a change\nby other services.\nmakes sense to store customers in a relational database, so my consumers use an\nconsumers are intimately tied to the implementation of the customer service.\nconsumers to allow our service a level of autonomy in terms of how it changes its\nhow a customer is changed.\nwarehouse, registration UI, and call center UI all need to edit customer information, I need\ncohesion and loose coupling — with database integration, we lose both things.\nintegration makes it easy for services to share data, but does nothing about sharing\nbe very difficult to avoid making breaking changes, which inevitably leads to a fear of any\nchange at all.\nFor the rest of the chapter, we’ll explore different styles of integration that involve\ncollaborating services, which themselves hide their own internal representations.\nBefore we start diving into the specifics of different technology choices, we should discuss\none of the most important decisions we can make in terms of how services collaborate.\nyou can add new subscribers to these events without the client ever needing to know.\ncomplex problem: how do we handle processes that span service boundaries and may be\nmanaging business processes that stretch across the boundary of individual services.\nMusicCorp, and look at what happens when we create a customer:\nThe process for creating a new customer\nprobably the simplest thing to do would be to have our customer service act as the central\nOn creation, it talks to the loyalty points bank, email service, and postal service as\nThe customer service\nThe downside to this orchestration approach is that the customer service can become too\nWith a choreographed approach, we could instead just have the customer service emit an\nIf some other service\nprocess in Figure 4-2, but then tracks what each of the services does as independent\nchoreographed approach, which can yield significantly more decoupled services —\nsomething we want to strive for to ensure our services are independently releasable.\nimplementation details that will further help us make the right call.\non a remote service somewhere.\nThere are a number of different types of RPC technology\nThe use of a separate interface definition can make it easier to generate\nclient and server stubs for different technology stacks, so, for example, I could have a Java\nserver exposing a SOAP interface, and a .NET client generated from the Web Service\ncalls for a tighter coupling between the client and server, requiring that both use the same\nunderlying technology but avoid the need for a shared interface definition.\nMany of these technologies are binary in nature, like Java RMI, Thrift, or protocol buffers,\nspecific networking protocol (like SOAP, which makes nominal use of HTTP), whereas\nothers might allow you to use different types of networking protocols, which themselves\nnetworking technology for different use cases.\nThose RPC implementations that allow you to generate client and server stubs help you\nlimit which technology can be used in the client and server.\nIn a way, this technology coupling can be a form of exposing internal technical\nFor example, the use of RMI ties not only the client to the JVM,\nThe drive in some forms of RPC to make remote method\ncalls look like local method calls hides the fact that these two things are very different.\ncan make large numbers of local, in-process calls without worrying overly about the\nyou need to think differently about API design for remote interfaces versus local\nJust taking a local API and trying to make it a service boundary without any\nremote server returning an error, or by you making a bad call.\ninterface that we have decided to make a remote API for our customer service.\nconsume the new method need the new stubs, and depending on the nature of the changes\nto the specification, consumers that don’t need the new method may also need to have\nLet’s take a look at what our Customer object\nchange, I would have to deploy both a new server and clients at the same time.\nfields — for example, if I wanted to encapsulate firstName and surname into a new\navoiding the need for lock-step releases of client and server code.\nMake sure your clients aren’t oblivious to the fact that a network call is going\nClient libraries are often used in the context of RPC, and if not structured right\nworld, and when we’re looking for an alternative style to RPC for our service interfaces.\nservice itself knows about, like a Customer.\nCustomer, for example, even if it is stored in a completely different format.\nhas a representation of this Customer, it can then make requests to change it, and the\nI have seen implementations of REST using very different protocols\nthat HTTP gives us as part of the specification, such as verbs, make implementing REST",
+      "keywords": [
+        "Service",
+        "bounded contexts",
+        "customer",
+        "customer service",
+        "microservices",
+        "contexts",
+        "RPC",
+        "make",
+        "n’t",
+        "Bounded",
+        "system",
+        "technology",
+        "client",
+        "’ll",
+        "consumers"
+      ],
+      "concepts": [
+        "services",
+        "making",
+        "makes",
+        "different",
+        "difference",
+        "customer",
+        "implementation",
+        "implement",
+        "implementations",
+        "technology"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.631,
+          "base_score": 0.631,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.558,
+          "base_score": 0.558,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.532,
+          "base_score": 0.532,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.511,
+          "base_score": 0.511,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 6,
+          "title": "",
+          "score": 0.477,
+          "base_score": 0.477,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "service",
+          "bounded",
+          "contexts",
+          "customer",
+          "context"
+        ],
+        "semantic": [],
+        "merged": [
+          "service",
+          "bounded",
+          "contexts",
+          "customer",
+          "context"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.47345271358976543,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120870+00:00"
+      }
+    },
+    {
+      "chapter_number": 9,
+      "title": "That said, to get these benefits, you have to use HTTP well. Use it badly, and it can be as",
+      "start_page": 100,
+      "end_page": 110,
+      "summary": "REST and HTTP\nHTTP itself defines some useful capabilities that play very well with the REST style.\nexample, the HTTP verbs (e.g., GET, POST, and PUT) already have well-understood\nmeanings in the HTTP specification as to how they should work with resources.\nresources, and the HTTP specification happens to define a bunch of methods we can use.\nHTTP also brings a large ecosystem of supporting tools and technology.\nmonitoring tools already have lots of support for HTTP out of the box.\nblocks allow us to handle large volumes of HTTP traffic and route them smartly, in a fairly\nWe also get to use all the available security controls with HTTP to secure\nFrom basic auth to client certs, the HTTP ecosystem gives us lots of\nThat said, to get these benefits, you have to use HTTP well.\nNote that HTTP can be used to implement RPC too.\nHTTP, but unfortunately uses very little of the specification.\nsimple things like HTTP error codes.\nAnother principle introduced in REST that can help us avoid the coupling between client\nof hypermedia controls, to see related content.\nserver by knowing which URI to hit; instead, the client looks for and navigates links to\ncontrol used to represent it has changed.\nthe control we want to interact with.\nWith hypermedia controls, we are trying to achieve the same level of smarts for our\nLet’s look at a hypermedia control that we might have for\ncontrols.\nHypermedia controls used on an album listing\nThis hypermedia control shows us where to find information about the artist.\nIn this document, we have two hypermedia controls.\nneeds to know that a control with a relation of artist is where it needs to navigate to get\nsame way as a human being needs to understand that on a shopping website the cart is\nAs a client, I don’t need to know which URI scheme to access to buy the album, I just\nneed to access the resource, find the buy control, and navigate to that.\nimplementation of how the control is presented as long as the client can still find a control\nconsumers only if we fundamentally changed the semantics of one of the controls so it\nUsing these controls to decouple the client and server yields significant benefits over time\nOne of the downsides is that this navigation of controls can be quite chatty, as the client\nneeds to follow links to find the operation it wants to perform.\nI would suggest you start with having your clients navigate these controls first, then\nThe use of standard textual formats gives clients a lot of flexibility as to how they\nconsume resources, and REST over HTTP lets us use a variety of formats.\nfor services that work over HTTP.\nXML defines the link control we used earlier\nas a hypermedia control.\nhyperlinking for JSON (and XML too, although arguably XML needs less help).\nfollow the HAL standard, you can use tools like the web-based HAL browser for\nexploring hypermedia controls, which can make the task of creating a client much easier.\nHTTP if we want, even binary.\nit is nice and lightweight, then try and push concepts into it like hypermedia controls that\nThis ensured that how the consumers wanted to use the service drove the design\nDownsides to REST Over HTTP\nover HTTP application protocol like you can with RPC.\nused means that you get to take advantage of all the excellent HTTP client libraries out\nthere, but if you want to implement and use hypermedia controls as a client you are pretty\nincreased complexity result in people backsliding into smuggling RPC over HTTP or\nHTTP verbs well.\nProper REST frameworks like Jersey don’t have this problem, and you can\nlimit what style of REST you can use.\nREST over HTTP payloads can actually be more\nHTTP for each request may also be a concern for low-latency requirements.\nTransmission Control Protocol (TCP) or other networking technology.\nWebSockets, for example, has very little to do with the Web. After the initial HTTP\nnote that you aren’t really using much of HTTP, let alone anything to do with REST.\nimportant, HTTP communications in general may not be a good idea.\nThese can become a coupling point in their own right between client and server, as\nDespite these disadvantages, REST over HTTP is a sensible default choice for service-to-\nwhich covers the topic of REST over HTTP in depth.\nTraditionally, message brokers like RabbitMQ try to handle both problems.\nof consumers, for example by helping keep track of what messages they have seen before.\nAnother approach is to try to use HTTP as a way of propagating events.\nMany client libraries exist that allow us to create and consume these feeds.\nuseful, and we know that HTTP handles scale very well.\nHowever, HTTP is not good at\nlow latency (where some message brokers excel), and we still need to deal with the fact\nthat the consumers need to keep track of what messages they have seen and manage their\nget out of the box with an appropriate message broker to make ATOM work for some use\nthe case where two or more workers see the same message, as we’ll end up doing the same\nWith a message broker, a standard queue will handle this.\nATOM, we now need to manage our own shared state among all the workers to try to\nand more of the support that a message broker gives you, at a certain point you might want\nWe would look at market events, and work out which items in a portfolio needed to\nwe needed a way to view, and potentially replay, these bad messages.\nWe also created a UI to view those messages and retry them if needed.",
+      "keywords": [
+        "hypermedia controls",
+        "client",
+        "REST",
+        "controls",
+        "n’t",
+        "JSON",
+        "Hypermedia",
+        "REST over HTTP",
+        "HTTP client libraries",
+        "message",
+        "XML",
+        "HTTP application protocol",
+        "HTTP client",
+        "HTTP specification",
+        "consumers"
+      ],
+      "concepts": [
+        "message",
+        "controls",
+        "client",
+        "useful",
+        "uses",
+        "service",
+        "protocol",
+        "event",
+        "request",
+        "requests"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.545,
+          "base_score": 0.545,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 11,
+          "title": "",
+          "score": 0.371,
+          "base_score": 0.371,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 10,
+          "title": "",
+          "score": 0.327,
+          "base_score": 0.327,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.309,
+          "base_score": 0.309,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "http",
+          "controls",
+          "hypermedia",
+          "client",
+          "hypermedia controls"
+        ],
+        "semantic": [],
+        "merged": [
+          "http",
+          "controls",
+          "hypermedia",
+          "client",
+          "hypermedia controls"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.3315946922315028,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120883+00:00"
+      }
+    },
+    {
+      "chapter_number": 8,
+      "title": "I also strongly recommend Enterprise Integration Patterns (Addison-Wesley), which",
+      "start_page": 111,
+      "end_page": 144,
+      "summary": "Services as State Machines\nSOAP, the core concept of the service as a state machine is powerful.\nOur customer microservice owns all logic associated with behavior in\nWhen a consumer wants to change a customer, it sends an appropriate request to the\ncustomer service.\nThe customer service, based on its logic, gets to decide if it accepts that\nOur customer service controls all lifecycle events associated with the\ncustomer itself.\nWe want to avoid dumb, anemic services that are little more than CRUD\nIf the decision about what changes are allowed to be made to a customer leak\nout of the customer service itself, we are losing cohesion.\nI still think that REST over HTTP makes for a much more sensible integration technology\nservices much easier.\nAs you find yourself making more service calls, especailly when making multiple calls to\nwant to change behavior, and that behavior is duplicated in many parts of your system, it\nis easy to forget everywhere you need to make a change, which can lead to bugs.\nchanges to the consumer.\nThis library was used by all the services\nBut when a change was made to one of them, all services had to be updated.\nIf your use of shared code ever leaks outside your service boundary, you have introduced a\ntailored service template to help bootstrap new service creation.\ncode shared, the company copies it for every new service to ensure that coupling doesn’t\nviolating DRY across all services.\nThe evils of too much coupling between services are far\nservices is an essential part of creating services in the first place.\nmakes it easy to use your service, and avoids the duplication of code required to consume\nthe service itself.\nThe problem, of course, is that if the same people create both the server API and the client\nA model for client libraries I like is the one for Amazon Web Services (AWS).\nunderlying SOAP or REST web service calls can be made directly, but everyone ends up\nThe Netflix client libraries handle service discovery, failure modes, logging, and\nthings like service discovery and failure, from things related to the destination service\nyou’ll allow people using different technology stacks to make calls to the underlying API.\nlibraries: we need to ensure we maintain the ability to release our services independently\nimportance of the logic associated with changing this Customer being held in the customer\nservice, and that if we want to change it we have to issue a request to the customer service.\nBut it also follows that we should consider the customer service as being the source of\nWhen we retrieve a given Customer resource from the customer service, we get to see\nrequested that Customer resource, something else has changed it.\nis a memory of what the Customer resource once looked like.\nOther times you need to know if it has changed.\nSo whether you decide to pass around a memory of what an entity once looked like, make\nLet’s consider the example where we ask the email service to send an email when an order\nNow we could send in the request to the email service with the\nHowever, if the email service is\nIt might make more sense to just send a URI for the Customer and Order\nreceiving updates due to a Customer resource changing, for example, it could be valuable\nto us to know what the Customer looked like when the event occurred.\nIf we always go to the customer service to look at the information associated with a given\nCustomer, the load on the customer service can be too great.\nAnother problem is that some of our services might not need to know about the whole\nIt could be argued, for example, that our email service should be more dumb,\nchange to the interface of a service, and they want to understand how to manage that.\nThe best way to reduce the impact of making breaking changes is to avoid making them in\ntechnology that can make it very hard to avoid breaking changes.\nhand, helps because changes to internal implementation detail are less likely to result in a\nchange to the service interface.\nAnother key to deferring a breaking change is to encourage good behavior in your clients,\nand avoid them binding too tightly to your services in the first place.\nemail service, whose job it is to send out emails to our customers from time to time.\nretrieves the customer with that ID, and gets back something like the response shown in\nSample response from the customer service\n<customer>\n</customer>\nLikewise, what if we wanted to restructure our Customer object to support more details,\nThe data our email service\nwants is still there, and still with the same name, but if our code makes very explicit\n<customer>\n</customer>\nThe example of a client trying to be as flexible as possible in consuming a service\ninteraction, it can lead us to try our best to allow the service being consumed to change\nIt’s crucial to make sure we pick up changes that will break consumers as soon as possible,\nIf you’re supporting multiple different client libraries,\nrunning tests using each library you support against the latest service is another technique\nconversations with the people looking after the consuming services.\nWouldn’t it be great if as a client you could look just at the version number of a service\nhelpdesk application is built to work against version 1.2.0 of the customer service.\nnew feature is added, causing the customer service to change to 1.3.0, our helpdesk\napplication should see no change in behavior and shouldn’t be expected to make any\nchanges.\nWe couldn’t guarantee that we could work against version 1.1.0 of the customer\nservice, though, as we may rely on functionality added in the 1.2.0 release.\nexpect to have to make changes to our application if a new 2.0.0 release of the customer\nservice comes out.\nYou may decide to have a semantic version for the service, or even for an individual\nendpoint on a service if you are coexisting them as detailed in the next section.\nIf we’ve done all we can to avoid introducing a breaking interface change, our next job is\ncoexist both the old and new interfaces in the same running service.\nrelease a breaking change, we deploy a new version of the service that exposes both the\nCoexisting different endpoint versions allows consumers to migrate gradually\nnumber of consumers we had and the number of breaking changes we had made.\nFor systems making use of HTTP, I have seen this done with both version\nnumbers in request headers and also in the URI itself — for example, /v1/customer/ or\nother hand, this approach does make things very obvious and can simplify request routing.\nUse Multiple Concurrent Service Versions\nAnother versioning solution often cited is to have different versions of the service live at\ninternal bug in my service, I now have to fix and deploy two different sets of services.\nFinally, consider any persistent state our service might manage.\nCustomers created by\neither version of the service need to be stored and made visible to all services, no matter\nRunning multiple versions of the same service to support old endpoints\nCoexisting concurrent service versions for a short period of time can make perfect sense,\ndifferent versions of the service present at the same time.\nourselves wanting to create beautiful, functional user interfaces that will delight our\ncustomers.\nsomething that makes sense to our customers.\nWhat is the best way for our customers to use the services we offer?\nservices expose in different ways, we can curate different experiences for our customers\nservices via SMS in places where bandwidth is at a premium — the use of SMS as an\nSo, although our core services — our core offering — might be the same, we need a way\nlook at different styles of user interface composition, we need to ensure that they address\ncomponents that make up the interface, handling synchronization of state and the like with\nIf we were using a binary protocol for service-to-service communication, this\nFor example, when I retrieve a customer\npull back when they make a request, but this assumes that each service supports this form\nservices are removed from how their services are surfaced to the users — for example, if\narchitecture where making even small changes requires change requests to multiple teams.\nOpening lots of calls directly to services\nRather than having our UI make API calls and map everything back to UI controls, we\ncould have our services provide parts of the UI directly, and then just pull these fragments\nImagine, for example, that the recommendation service\nServices directly serving up UI components for assembly\nOne of the key advantages of this approach is that the same team that makes changes to\nthe services can also be in charge of making changes to those parts of the UI.\nwant to have a seamless experience, not to feel that different parts of the interface work in\nan approach where the frontend application makes API calls and handles the UI itself.\nthe capabilities offered by a service do not fit neatly into a widget or a page.\nback to just making API calls.\nA common solution to the problem of chatty interfaces with backend services, or the need\nThe problem that can occur is that normally we’ll have one giant layer for all our services.\nshould stay in the services themselves.\nWe need to ensure that logic associated with ordering music or changing customer\ndetails lives inside those services that handle those operations, and doesn’t get smeared all\nWe’ve looked at approaches to breaking apart existing systems that are under our control,\norganizations we work for buy commercial off-the-shelf software (COTS) or make use of\nsoftware as a service (SaaS) offerings over which we have little control.\nof custom software, you’ll still use software products provided by external parties, be they\nThink of all the products you use, from office productivity tools like\ncontinuous integration of customizations?\nintegration and customization work back on to your terms.\nCustomization\nprovides aren’t that special to you, it might make more sense to change how your\norganization works rather than embark on complex customization.\ncustomizations you have made.\ncarefully about how you integrate between services is important, and ideally you want to\nExample: CMS as a service\ncustomized or integrated with.\nwith dynamic content like customer records or the latest product offerings.\nthis dynamic content is typically other services inside the organization, which you may\nFront the CMS with your own service that provides the website to the outside\nTreat the CMS as a service whose role is to allow for the\nIn your own service, you write the code and integrate\nwith services how you want.\nto front that with your own service façade.\nHiding a CMS using your own service\nfaked it by having a web service that just surfaced static content.\nwith the site well before the CMS was selected by using our fake content service in\nexamples of adhesive (as opposed to cohesive) services.\ntime, multiple internal systems were using the less-than-ideal CRM APIs for integration.\nWe wanted to move the system architecture toward a place where we had services that\nWhat we did was instead create a project service.\nThis service exposed projects as\nthe new, easier-to-work-with service.\nInternally, the project service was just a façade,\nUsing façade services to mask the underlying CRM\nWe’ve looked at a number of different options around integration, and I’ve shared my\nAvoid breaking changes and the need to version by understanding Postel’s Law and",
+      "keywords": [
+        "customer service",
+        "service",
+        "customer",
+        "client",
+        "change",
+        "n’t",
+        "email service",
+        "API",
+        "CMS",
+        "system",
+        "make",
+        "customer service controls",
+        "Code",
+        "approach",
+        "calls"
+      ],
+      "concepts": [
+        "services",
+        "different",
+        "customers",
+        "customized",
+        "customize",
+        "likely",
+        "makes",
+        "making",
+        "api",
+        "apis"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.612,
+          "base_score": 0.612,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 9,
+          "title": "",
+          "score": 0.545,
+          "base_score": 0.545,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.541,
+          "base_score": 0.541,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.532,
+          "base_score": 0.532,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.521,
+          "base_score": 0.521,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "service",
+          "customer",
+          "services",
+          "customer service",
+          "change"
+        ],
+        "semantic": [],
+        "merged": [
+          "service",
+          "customer",
+          "services",
+          "customer service",
+          "change"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.497657593013685,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120900+00:00"
+      }
+    },
+    {
+      "chapter_number": 5,
+      "title": "Splitting the Monolith",
+      "start_page": 145,
+      "end_page": 187,
+      "summary": "We’ve discussed what a good service looks like, and why smaller servers may be better for\nWe discussed in Chapter 3 that we want our services to be highly cohesive and loosely\nreally exist: if I want to make a change to a line of code, I may be able to do that easily\nwe want to identify seams that can become service boundaries.\nDuring this process we can use code to analyze the dependencies between these packages\nwrong — for example, the warehouse package depends on code in the finance package\nYou may not need to sort all code into\ndomain-oriented packages before splitting out your first service, and indeed it can be more\nDeciding that you’d like a monolithic service or application to be smaller is a good start.\nIf we split out the warehouse seam as a service now, we could change that\nsplit out the code that the Hawaii team works on the most, so it can take full ownership.\nthe recommendation code into a separate service, it would be easy to consider building an\nThe Database\nwe need to find seams in our databases too so we can split them out cleanly.\nDatabases,\nfrom the database.\nof framework like Hibernate, to bind your code to the database, making it easy to map\nobjects or data structures to and from the database.\nfar, you’ll have grouped our code into packages representing our bounded contexts; we\nwant to do the same for our database access code.\nHaving the database mapping code colocated inside the code for a given context can help\nus understand what parts of the database are used by what bits of code.\nfinance code uses the ledger table, and that the catalog code uses the line item table, but it\nstumbling block, we need to use another tool to visualize the data.\nIn this example, our catalog code uses a generic line item table to store information about\nOur finance code uses a ledger table to track financial transactions.\nof each month we need to generate reports for various people in the organization so they\nWe want to make the reports nice and easy to read, so rather\nTo do this, our reporting code in the finance package\nWell, we need to make a change in two places.\nneed to stop the finance code from reaching into the line item table, as this table really\nbelongs to the catalog code, and we don’t want database integration happening once\ncatalog and finance are services in their own rights.\nrather than having the code in finance reach into the line item table, we’ll expose the data\nAt this point it becomes clear that we may well end up having to make two database calls\nseparate services.\nconstraint we need to now manage in our resulting services rather than in the database\nservices, or else trigger actions to clean up related data.\nFor example, if our order service contains a list\nExample: Shared Static Data\nI have seen perhaps as many country codes stored in databases (shown in Figure 5-4) as I\nnew code, but whatever the real reason, these examples of shared static data being stored\nservices read from the same table like this?\nCountry codes in the database\nA second option is to instead treat this shared, static data as code.\nproblems around the consistency of data remain, although experience has shown that it is\nfar easier to push out changes to configuration files than alter live database tables.\nA third option, which may well be extreme, is to push this static data into a service of its\nExample: Shared Data\nwhen you’re trying to tease apart systems: shared mutable data.\nAccessing customer data: are we missing something?\nWe need to make the current abstract concept of the customer concrete.\nCustomer code to other packages, such as finance or warehouse.\nforward, we may now end up with a distinct customer service (Figure 5-6).\nSo we’ve found seams in our application code, grouping it around bounded contexts.\nWe’ve used this to identify seams in the database, and we’ve done our best to split those\nsingle schema to two services, each with its own schema?\nthat you split out the schema but keep the service together before splitting the application\nWith a separate schema, we’ll be potentially increasing the number of database calls to\nwanted in a single SELECT statement, now we may need to pull the data back from two\nBy splitting the schemas out but keeping the application code\nseparation makes sense, we can then think about splitting out the application code into two\nservices.\nTransactions are useful things.\nThey are very useful when we’re inserting data into a\ndatabase; they let us update multiple tables at once, knowing that if anything fails,\nTransactions don’t just apply to databases, although we most often use them in that\nWhen creating an order, I want to update the order table stating that a customer order has\napplication code into separate packages, and have also separated the customer and\nWithin a single transaction in our existing monolithic schema, creating the order and\ninserting the record for the warehouse team takes place within a single transaction, as\nUpdating two tables in a single transaction\nrelated data including our order table, and another for the warehouse, we have lost this\nThe order placing process now spans two separate transactional\ncommitted transaction in the order table.\nbut we’d have to consider what we could do when we split up the application code.\nthe logic to handle the compensating transaction live in the customer service, the order\nservice, or somewhere else?\neither need to retry the compensating transaction, or allow some backend process to clean\ntransaction.\nlived transactions, as in the case of handling our customer order — is to use a two-phase\nIf the transaction\nneed a way of making this commit work at some point.\nJava’s Transaction API, allowing for disparate resources like a database and a message\ndatabase transaction) and actually create a concrete concept to represent the transaction\nAs we’ve already seen, in splitting a service into smaller parts, we need to also potentially\nsplit up how and where data is stored.\naudience of our reporting systems are users like any other, and we need to consider their\nThe Reporting Database\nReporting typically needs to group together data from across multiple parts of our\nIn a standard, monolithic service architecture, all our data is stored in one big database.\nThis means all the data is in one place, so reporting across all the information is actually\nwon’t run these reports on the main database for fear of the load generated by our queries\nWith this approach we have one sizeable upside — that all the data is already in one place,\nAPI between the running monolithic services and any reporting system.\nSome databases let us make\nHowever, we cannot structure the data differently to make\nreporting faster if that change in data structure has a bad impact on the running system.\nrelational databases expose SQL query interfaces that work with many reporting tools,\nthey aren’t always the best option for storing data for our running services.\noriented database like Cassandra for our reporting system, which makes it much easier to\nassociated with the standard reporting database model?\nData Retrieval via Service Calls\nTo report across data from two or more systems, you need to make multiple calls to\nThis approach breaks down rapidly with use cases that require larger volumes of data,\nImagine a use case where we want to report on customer purchasing behavior for\nWe need to pull large volumes of data from at least\nKeeping a local copy of this data in the reporting\nsystem is dangerous, as we may not know if it has changed (even historic data may be\nchanged after the fact), so to generate an accurate report we need all of the finance and\nReporting systems also often rely on third-party tools that expect to retrieve data in a\ndata periodically into a SQL database, of course, but this still presents us with some\nnot be designed for reporting use cases.\nFor example, a customer service may allow us to\nmade to retrieve all the data — for example, having to iterate through a list of all the\ncustomers, making a separate call for each one.\nreporting system, it could generate load for the service in question too.\nresources exposed by our service, and have this data cached in something like a reverse\nproxy, the nature of reporting is often that we access the long tail of data.\nYou could resolve this by exposing batch APIs to make reporting easier.\ncustomer service could allow you to pass a list of customer IDs to it to retrieve them in\nFor example, the customer service might expose something like a BatchCustomerExport\nlocation where a file can be placed with all the data.\nThe customer service would return an\nThis would allow potentially large data files to be exported\nI have seen the preceding approach used for batch insertion of data, where it worked well.\ntraditional reporting needs.\nData Pumps\nRather than have the reporting system pull the data, we could instead have the data pushed\nthe service that is the source of data, and pumps it into a reporting database, as shown in\nUsing a data pump to periodically push data to a central reporting database\nwhere the downsides of the coupling are more than mitigated by making the reporting\nTo start with, the data pump should be built and managed by the same team that manages\nthe service.\nservice, and also the reporting schema.\ntry to reduce the problems with coupling to the service’s schema by having the same team\nthat manages the service also manage the pump.\ndon’t open up access to the schema to anyone outside of the service team, many of the\ncould have one schema in the reporting database for each service, using things like\nschema for the customer data to the customer data pump.\ndatabase you picked for reporting.\nrely on capabilities in the database to make such a setup performant.\nWhile I think data\nmanaging change in the database.\nEvent Data Pump\nFor example, our customer service may emit an event\npumps data into the reporting database, as shown in Figure 5-15.\nAn event data pump using state change events to populate a reporting database\neasier for us to be smarter in what data we sent to our central reporting store; we can send\ndata to the reporting system as we see an event, allowing data to flow faster to our\nreporting system, rather than relying on a regular schedule as with the data pump.\nWe can do similar things with a data pump, but we have to manage this ourselves, whereas\nAs our event data pump is less coupled to the internals of the service, it is also easier to\nsubscribers to changes in the service, this event mapper can evolve independently of the\nbroadcast as events, and it may not scale as well as a data pump for larger volumes of data\ncoupling and fresher data available via such an approach makes it strongly worth\nBackup Data Pump\nways, you can consider this a special case of a data pump, but it seemed like such an\nNetflix has decided to standardize on Cassandra as the backing store for its services, of\nTo back up Cassandra data, the standard approach is\nto make a copy of the data files that back it and store them somewhere safe.\nNetflix needs to report across all this data, but given the scale involved this is a nontrivial\nLike data pumps, though, with this pattern we still have a coupling to the destination\nMany of the patterns previously outlined are different ways of getting a lot of data from\nreports, user analytics — all of these use cases have different tolerances for accuracy and\nrouting our data to multiple different places depending on need.\nSplitting apart a database, however, is much more work, and rolling back a database\nhappens when you run use cases across what you think your service boundaries will be.\nWe have discussed how to split apart larger services into smaller ones, but why did these\nservices grow so large in the first place?\nservice to the point that it needs to be split is completely OK.\nanother challenge is the cost associated with splitting out services.\nWe decompose our system by finding seams along which service boundaries can emerge,\nworking to reduce the cost of splitting out services in the first place, we can continue to\nSo now we can split our services out, but we’ve introduced some new problems too.",
+      "keywords": [
+        "data",
+        "code",
+        "service",
+        "database",
+        "Reporting",
+        "data pump",
+        "reporting system",
+        "system",
+        "customer",
+        "Reporting Database",
+        "transaction",
+        "customer service",
+        "change",
+        "make",
+        "Event Data Pump"
+      ],
+      "concepts": [
+        "data",
+        "code",
+        "service",
+        "transactions",
+        "transaction",
+        "reporting",
+        "database",
+        "likely",
+        "customer",
+        "events"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.555,
+          "base_score": 0.555,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.521,
+          "base_score": 0.521,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.511,
+          "base_score": 0.511,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 10,
+          "title": "",
+          "score": 0.483,
+          "base_score": 0.483,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.467,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "data",
+          "reporting",
+          "database",
+          "service",
+          "customer"
+        ],
+        "semantic": [],
+        "merged": [
+          "data",
+          "reporting",
+          "database",
+          "service",
+          "customer"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.45688349666375605,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120917+00:00"
+      }
+    },
+    {
+      "chapter_number": 6,
+      "title": "Deployment",
+      "start_page": 188,
+      "end_page": 188,
+      "summary": "In this chapter, we’re going to look at some techniques and technology that can\nWe’re going to start off, though, by taking a look at continuous integration and continuous",
+      "keywords": [
+        "’re",
+        "Deployment",
+        "Microservices",
+        "build",
+        "make",
+        "continuous",
+        "fairly straightforward process",
+        "straightforward process",
+        "monolithic application",
+        "fairly straightforward",
+        "fish altogether",
+        "process",
+        "deploying microservices",
+        "approach deployment",
+        "interdependence"
+      ],
+      "concepts": [
+        "build",
+        "continuous",
+        "fairly",
+        "interdependence",
+        "straightforward",
+        "approach",
+        "deploying",
+        "application",
+        "fish",
+        "altogether"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.584,
+          "base_score": 0.584,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.573,
+          "base_score": 0.573,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 7,
+          "title": "",
+          "score": 0.485,
+          "base_score": 0.485,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.477,
+          "base_score": 0.477,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.406,
+          "base_score": 0.406,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "straightforward",
+          "deployment",
+          "continuous",
+          "fairly straightforward",
+          "straightforward process"
+        ],
+        "semantic": [],
+        "merged": [
+          "straightforward",
+          "deployment",
+          "continuous",
+          "fairly straightforward",
+          "straightforward process"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.430487712713576,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120935+00:00"
+      }
+    },
+    {
+      "chapter_number": 7,
+      "title": "CI has a number of benefits. We get some level of fast feedback as to the quality of our",
+      "start_page": 189,
+      "end_page": 410,
+      "summary": "verification like making sure the code compiles and that tests pass.\nas deploying a running service to run tests against it.\nartifacts once and once only, and use them for all deployments of that version of the code.\nconfirm that the artifact we deployed is the one we tested.\nlook in depth at testing in Chapter 7.\ndepending on the capabilities of the CI tool itself, can see what tests were run on the code\nI really like Jez Humble’s three questions he asks people to test if they really understand\nDo you have a suite of tests to validate your changes?\nWithout tests, we just know that syntactically our integration has worked, but we\nensure that we can make a change to a single service and deploy it independently of the\nUsing a single source code repository and CI build for all microservices\nIf I have to work on multiple services at\nyou don’t mind deploying multiple services at once.\nservice — for example, changing the behavior in the user service in Figure 6-1 — all the\nwaiting for things that probably don’t need to be tested.\ndeploy all the build services to push my small change into production?\nFurthermore, if my one-line change to the user service breaks the build, no other changes\ncan be made to the other services until that break is fixed.\nsource code for multiple services at once, which can make it equally easy to slip into\nmaking changes that couple services together.\nhowever, over having a single build for multiple services.\nmicroservice, to allow us to quickly make and validate a change prior to deployment into\nWhen making a change, I run only the build and\ntests I need to.\nI get a single artifact to deploy.\nIf you own the service, you own the repository and the build.\nThe tests for a given microservice should live in source control with the microservice’s\nsource code too, to ensure we always know what tests should be run against a given\nservice.\nWe’ll use the CI build process to create our deployable artifacts too in a fully\nTests are a very common case where this comes into play.\nmay have a lot of fast, small-scoped tests, and a small number of large-scoped, slow tests.\nIf we run all the tests together, we may not be able to get fast feedback when our fast tests\nAnd if the fast tests\nfail, there probably isn’t much sense in running the slower tests anyway!\ntesting (UAT) process I should be able to use a CD tool to model it.\nIn a microservices world, where we want to ensure we can release our services\nindependently of each other, it follows that as with CI, we’ll want one pipeline per service.\nlikely that there will be a large amount of churn in terms of working out where the service\nDuring this time of churn, changes across service boundaries are more likely, and what is\nin or not in a given service is likely to change frequently.\nservices in a single build to reduce the cost of cross-service changes may make sense.\nIt does follow, though, that in this case you need to buy into releasing all the services as a\nThink of it from the point of view of someone trying to deploy multiple services together.\nThey could be a developer or tester wanting to test some functionality, or it could be\nNow imagine that those services use three\ndeploying tools and services, which is much more like the package managers in the Linux\nchange, new versions of your service can continue to use the same base image.\nThis means that for developers you may want to support other ways of deploying\nservices to ensure they don’t have to wait half an hour just to create a binary deployment.\ncould create an image for deployment on your production AWS environment and a\nmatching Vagrant image for local development and test, all from the same configuration.\nthe model of our service artifact being an image.\nservice is there ready to go.\nadopted the model of baking its own services as AWS AMIs. Just as with OS-specific packages, these VM images become a nice way of abstracting out\nthe differences in the technology stacks used to create the services.\nservice running on the image is written in Ruby or Java, and uses a gem or JAR file?\nwe run our slow tests, another for UAT, another for performance, and a final one for\nenvironment for our service might consist of multiple load-balanced hosts spread across\ntwo data centers, whereas our test environment might just have everything running on a\nWe were deploying a Java web service into\nThis meant that in our test environment, our software\nThe service we want to deploy is the same in all these different environments, but each of\ndeploy the service, potentially against stubbed collaborators, to run tests or carry out some\nmay want to deploy multiple copies of my service in a load-balanced fashion, perhaps split\ndeploying your service into a local Vagrant instance, for example.\nshortly at some different deployment platforms that can make this much easier for us.\nService Configuration\nOur services need some configuration.\nSo if we have some configuration for our service that does change from one environment\nCustomer-Service-Test and Customer-Service-Prod artifacts.\nIf my Customer-Service-Test\nartifact passes the tests, but it’s the Customer-Service-Prod artifact that I actually deploy,\nproduction passwords checked in with my source code, but if it is needed at build time to\nService-to-Host Mapping\nmy services.\nvirtualization, a single physical machine can map to multiple independent hosts, each of\nwhich could hold one or more services.\nSo when thinking of different deployment models, we’ll talk about hosts.\nmany services per host should we have?\nMultiple Services Per Host\nHaving multiple services per host, as shown in Figure 6-6, is attractive for a number of\nIf more services are packed on to a single host, the host management workload doesn’t\nservices.\nmultiple-services-per-host model, so we’ll look into that separately.\nDeploying multiple services to a single host in\nproduction is synonymous with deploying multiple services to a local dev workstation or\nFor example, when tracking CPU, do I need to track the CPU of one service\nInitially it coexisted many services on a single box, but\nDeployment of services can be somewhat more complex too, as ensuring one deployment\nprepare a host, but each service has different (and potentially contradictory) dependencies,\nservice deployments together, deploying multiple different services to a single host in one\nstep, to try to simplify the deployment of multiple services to one host.\nIf you do adopt the multiple-services-per-host model, make sure you keep hold\nof the idea that each service should be deployed independently.\nIf services for different teams are installed\non the same host, who gets to configure the host for their services?\nservices deployed.\ndeployments are out, as are immutable servers unless you tie multiple different services\nThe fact that we have multiple services on a single host means that efforts to target scaling\nto the service most in need of it can be complicated.\nHaving everything on one host means we might end up having to treat all services the\nservices or applications sit inside a single application container, which in turn sits on a\nservices live in gives you benefits in terms of improved manageability, such as clustering\nConsider running five Java services in a single Java servlet container.\nimplementation of the service itself, but also the options you have in terms of automation\nservices.\nWhether you decide to have multiple services per host\nSingle Service Per Host\nWith a single-service-per-host model shown in Figure 6-8, we avoid side effects of\nconcerns more easily by focusing our attention only on the service and host that requires\nHaving a single-service-per-host model is significantly easier to\nPlatform as a Service\nWhen using a platform as a service (PaaS), you are working at a higher-level abstraction\nwill allow you some control over how many nodes your service might run on, but it\nhosts and deployments of individual services.\nI remember running a small set of production machines, and I would collect logs, deploy\nOne of the pushbacks against the single-service-per-host setup is the perception that the\ncontrol of our hosts, and deployment of the services, then there is no reason why adding\nBut even if we keep the number of hosts small, we still are going to have lots of services.\nThat means multiple deployments to handle, services to monitor, logs to collect.\nthe same tool chain as is used for deployment of our production services so as to ensure\njourney it had to spend a lot of time getting the tooling around the services just right —\nmaking it easy for developers to provision machines, to deploy their code, or monitor\nentire build, deployment, and support of the services.\nover 60–70 services.\nservice-per-host model is probably right for you, although don’t be surprised if this\nseparate hosts, each of which can run different things.\nSo if we want one service per host,\nVagrant is a very useful deployment platform, which is normally used for dev and test\nThis makes it easier for you to create production-like environments on your local machine.\nYou can spin up multiple VMs at a time, shut individual ones to test failure modes, and\nto ensure that the development and test experience is a good one.\non the same hardware than would be possible with VMs. By deploying one service per\nwanted to run each service in its own VM.\nRunning services in separate containers\nmicroservices running in their own containers on a host.\nbuilds for our services create Docker applications, and store them in the Docker registry,\nDocker can also alleviate some of the downsides of running lots of services locally for dev\nand test purposes.\ncontaining its own service, we can host a single VM in Vagrant that runs a Docker\nstripped-down Linux OS that provides only the essential services to allow Docker to run.\nIf you want tools to help you manage services across multiple Docker\nplatform for all sorts of deployments over the next few years for all sorts of different use\nPaaS solutions — the term containers as a service (CaaS) is already being used to\nWe’ll want to trigger deployment of a microservice on demand in a\nvariety of different situations, from deployments locally for dev and test to production\nproduction because deployment uses a completely different process!\nWhen testing, you’ll\nOr when testing/diagnosing issues, we may want to deploy an exact\ndeveloping locally and want to deploy our catalog service into our local environment.\nOnce I’ve checked in, our CI build service picks up the change and creates a new build\nWhen our test stage gets triggered, the CI stage will run:\n$ deploy artifact=catalog environment=ci version=b456\nintegrated test environment to do some exploratory testing, and to help with a showcase.\nlook like, and what our service looks like in a given environment.\ncatalog-service:\nbalancers if a service had more than one instance (something that AWS’s ELBs make\nability to release one service independently from another, and make sure that whatever\nmicroservice, but am firmer still that you need one CI build per microservice if you want\nNext, if possible, move to a single-service per host/container.\nCreating tools that let you self-service-deploy any given\nservice into a number of different environments is really important, and will help\nhow do we test our microservices to make sure they actually work?\nTesting\nThe world of automated testing has advanced significantly since I first started writing\ntesting finer-grained systems and presents some solutions to help you make sure you can\nTesting covers a lot of ground.\nEven when we are just talking about automated tests, there\nUnderstanding what different types of tests we can run is important to help us\nTypes of Tests\nWesley) that helps categorize the different types of tests.\nPerformance tests and small-scoped\nThese could be large-scoped, end-to-end tests, as shown in the top-left\nExactly how much of each test you\nthat you have multiple choices in terms of how to test your system.\nbeen away from any large-scale manual testing, in favor of automating as much as\ntesting can be very useful and certainly has its part to play, the differences with testing a\ntests, so that is where we will focus our time.\nBut when it comes to automated tests, how many of each test do we want?\nTest Scope\nthe Test Pyramid to help explain what types of automated tests you need.\nhelps us think about the scopes the tests should cover, but also the proportions of different\ntypes of tests we should aim for.\nCohn’s original model split automated tests into Unit,\nIs it still a unit test if I\ntest multiple functions or classes?\nwith the Unit and Service names despite their ambiguity, but much prefer calling UI tests\nend-to-end tests, which we’ll do from now on.\ndive into a few different scenarios we may want to test.\nPart of our music shop under test\nUnit Tests\nThese are tests that typically test a single function or method call.\nThe tests generated as a\nlarge number of these sorts of tests.\nThese are tests that help us developers and so would be technology-facing, not business-\nSo, in our example, when we think about the customer service, unit tests would cover\nScope of unit tests on our example system\nTests can be important to support refactoring of code, allowing us to\nrestructure our code as we go, knowing that our small-scoped tests will catch us if we\nService Tests\nService tests are designed to bypass the user interface and test services directly.\nservice to the UI.\nFor a system comprising a number of services, a service test would test\nThe reason we want to test a single service by itself is to improve the isolation of the test\nScope of service tests on our example system\ndatabase, or go over networks to stubbed downstream collaborators, test times can\nEnd-to-End Tests\nEnd-to-end tests are tests run against your entire system.\nThese tests cover a lot of production code, as we see in Figure 7-6 .\nyou feel good: you have a high degree of confidence that the code being tested will work\nScope of end-to-end tests on our example system\npyramid, the test scope increases, as does our confidence that the functionality being\ntested works.\nOn the other hand, the feedback cycle time increases as the tests take longer\nto run, and when a test fails it can be harder to determine which functionality has broken.\nAs you go down the pyramid, in general the tests become much faster, so we get much\nWhen those smaller-scoped tests fail, we also tend to know what\nthat our system as a whole works if we’ve only tested one line of code!\nWhen broader-scoped tests like our service or end-to-end tests fail, we will try to write a\nfast unit test to catch that problem in the future.\nWhatever you call them, the key takeaway is that you will want tests\nSo if these tests all have trade-offs, how many of each type do you want?\ntests and understanding if your current balance gives you a problem!\nI worked on one monolithic system, for example, where we had 4,000 unit tests, 1,000\nservice tests, and 60 end-to-end tests.\nhad way too many service and end-to-end tests (the latter of which were the worst\noffenders in impacting feedback loops), so we worked hard to replace the test coverage\nwith smaller-scoped tests.\nscoped tests.\nThese projects often have glacially slow test runs, and very long feedback\nIf these tests are run as part of continuous integration, you won’t get many builds,\nImplementing Service Tests\nThe service and end-to-\nend tests are the ones that are more interesting.\nOur service tests want to test a slice of functionality across the whole service, but to\nisolate ourselves from other services we need to find some way to stub out all of our\nSo, if we wanted to write a test like this for the customer service from\nFigure 7-3, we would deploy an instance of the customer service, and as discussed earlier\nwe would want to stub out any downstream services.\nfor our service, so deploying that is pretty straightforward.\nOur service test suite needs to launch stub services for any downstream collaborators (or\nensure they are running), and configure the service under test to connect to the stub\nservices.\nworld services.\nWhen I talk about stubbing downstream collaborators, I mean that we create a stub service\nthat responds with canned responses to known requests from the service under test.\nThe test doesn’t care if the stub is called 0, 1, or 100 times.\ncall is not made, the test fails.\ndelicate one, and is just as fraught in service tests as in unit tests.\nstubs far more than mocks for service tests.\nIn general, I rarely use mocks for this sort of testing.\nmocks, test doubles.\nused to launch stub servers for such test cases.\ncalling service.\nSo, if we want to run our service tests for just our customer service we can launch the\nthose tests pass, I can deploy the customer service straightaway!\nThose Tricky End-to-End Tests\nby a number of services.\nThe point of the end-to-end tests as outlined in Mike Cohn’s\nSo, to implement an end-to-end test we need to deploy multiple services together, then run\na test against all of them.\nObviously, this test has much more scope, resulting in more\nexample to see how these tests can fit in.\nImagine we want to push out a new version of the customer service.\nlet’s deploy all of our services together, and run some tests against the helpdesk and web\ntests onto the end of our customer service pipeline, as in Figure 7-7.\nAdding our end-to-end tests stage: the right approach?\nother services should we use?\nShould we run our tests against the versions of helpdesk and\nAnother problem: if we have a set of customer service tests that deploy lots of services\nand run tests against them, what about the end-to-end tests that the other services run?\nthey are testing the same thing, we may find ourselves covering lots of the same ground,\nand may duplicate a lot of the effort to deploy all those services in the first place.\nsingle, end-to-end test stage.\nHere, whenever a new build of one of our services is\ntriggered, we run our end-to-end tests, an example of which we can see in Figure 7-8.\nSome CI tools with better build pipeline support will enable fan-in models like this out of\nA standard way to handle end-to-end tests across services\nSo any time any of our services changes, we run the tests local to that service.\nDownsides to End-to-End Testing\nAs test scope increases, so too do the number of moving parts.\nAs an example, if we have a test to verify that we can\nplace an order for a single CD, but we are running that test against four or five services, if\ntest itself.\nanything about the functionality under test.\nIf you have tests that sometimes fail, but everyone just re-runs them because they may\nIt isn’t only tests covering lots of different\nTests that cover functionality being exercised on multiple\nneed to find and eliminate these tests as soon as we can before we start to assume that\nfailing tests are OK.\ntesting code running on multiple threads.\nIn some cases, changing the software under test to make\nit easier to test can also be the right way forward.\nWho Writes These Tests?\nWith the tests that run as part of the pipeline for a specific service, the sensible starting\npoint is that the team that owns that service should write those tests (we’ll talk more about\ninvolved, and the end-to-end-tests step is now effectively shared between the teams, who\nwrites and looks after these tests?\nThese tests become a free-for-all, with\nall teams granted access to add tests without any understanding of the health of the whole\nassumes it is someone else’s problem, so they don’t care whether the tests are passing.\nSometimes organizations react by having a dedicated team write these tests.\nThe team developing the software becomes increasingly distant from the tests\nCycle times increase, as service owners end up waiting for the test team to\nwrite end-to-end tests for the functionality they just wrote.\nthese tests, the team that wrote the service is less involved with, and therefore less likely\nto know, how to run and fix these tests.\nwriting tests for the code it wrote in the first place.\nto completely centralize this to the extent that the teams building services are too far\nservices themselves.\nIf you want to make extensive use of end-to-end tests with multiple\nThese end-to-end tests can take a while.\nteams actually curate their end-to-end test suites to reduce overlap in test coverage, or\nWe can ameliorate some of this by running tests in parallel — for example, making use of\nunderstanding what needs to be tested and actively removing tests that are no longer\nthanked if you remove a test?\nWhen it comes to the larger-scoped test suites, however, this\ntests, perhaps we can get rid of half of them, as those 20 tests take 10 minutes to run!\nThe long feedback cycles associated with end-to-end tests aren’t just a problem when it\nWith a long test suite, any breaks take a while to fix,\nwhich reduces the amount of time that the end-to-end tests can be expected to be passing.\nIf we deploy only software that has passed through all our tests successfully (which we\nshould!), this means fewer of our services get through to the point of being deployable\nWhile a broken integration test stage is being fixed, more\nbuild harder, it means the scope of changes to be deployed increases.\nthis is to not let people check in if the end-to-end tests are failing, but given a long test\nWith the end-to-end test step, it is easy to start thinking, So, I know all these services at\nBy versioning together changes made to multiple services, we effectively embrace the idea\nthat changing and deploying multiple services at once is acceptable.\nability to deploy one service by itself, independently of other services.\nAll too often, the approach of accepting multiple services being deployed together drifts\ndeployment of multiple services at once, and as we discussed previously, this sort of\nmanageable with one or two services, and in these situations still make a lot of sense.\nwhat happens with 3, 4, 10, or 20 services?\nVery quickly these test suites become hugely\ntest.\nThe best way to counter this is to focus on a small number of core journeys to test for the\ntests that analyze services in isolation from each other.\ncomplex systems) of tests we can reduce the downsides of integration tests, but we cannot\nWhat is one of the key problems we are trying to address when we use the integration tests\nWe are trying to ensure that when we deploy a new service to\nThe expectations of the consumers are captured in code form as tests, which are then run\nimportantly from a test feedback point of view, these tests need to be run only against a\nsingle producer in isolation, so can be faster and more reliable than the end-to-end tests\nAs an example, let’s revisit our customer service scenario.\nThe customer service has two\nBoth these consuming services have\nsets of tests: one for each consumer representing the helpdesk’s and web shop’s use of the\ncustomer service.\nconsumer teams collaborate on creating the tests, so perhaps people from the web shop\nand helpdesk teams pair with people from the customer service team.\ncan be run against the customer service by itself with any of its downstream dependencies\nthe test pyramid as service tests, albeit with a very different focus, as shown in Figure 7-\nThese tests are focused on how a consumer will use the service, and the trigger if they\nbreak is very different when compared with service tests.\nduring a build of the customer service, it becomes obvious which consumer would be\nhaving to use a potentially expensive end-to-end test.\nConsumer-driven testing in the context of our customer service example\nPact is a consumer-driven testing tool that was originally developed in-house at\nbe used for further isolated tests of the consumer.",
+      "keywords": [
+        "service",
+        "Service Tests",
+        "multiple services",
+        "build",
+        "customer service",
+        "n’t",
+        "host",
+        "multiple",
+        "deployment",
+        "run",
+        "single",
+        "system",
+        "code",
+        "Docker",
+        "software"
+      ],
+      "concepts": [
+        "tested",
+        "services",
+        "deploying",
+        "deployments",
+        "likely",
+        "builds",
+        "different",
+        "differences",
+        "differ",
+        "multiple"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 6,
+          "title": "",
+          "score": 0.485,
+          "base_score": 0.485,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 12,
+          "title": "",
+          "score": 0.448,
+          "base_score": 0.448,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.408,
+          "base_score": 0.408,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.391,
+          "base_score": 0.391,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.368,
+          "base_score": 0.368,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "tests",
+          "test",
+          "service",
+          "services",
+          "end"
+        ],
+        "semantic": [],
+        "merged": [
+          "tests",
+          "test",
+          "service",
+          "services",
+          "end"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.38404776253092865,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120964+00:00"
+      }
+    },
+    {
+      "chapter_number": 12,
+      "title": "Bringing It All Together",
+      "start_page": 411,
+      "end_page": 473,
+      "summary": "to define their boundaries, and from integration technology to concerns about security and\nPrinciples of Microservices\nframe the various decisions we have to make when building our systems.\nbeing the key principles for microservice architectures, which you can see summarized in\nThese are the principles that will help us create small autonomous services\nPrinciples of microservices\nExperience has shown us that interfaces structured around business-bounded contexts are\nMicroservices add a lot of complexity, a key part of which comes from the sheer number\nto address this, and front-loading effort to create the tooling to support microservices can\nAutomated testing is essential, as ensuring our services still work is a\nto deploy the same way everywhere can help, and this can be a key part of adopting\nenvironment to another, without sacrificing the ability to use a uniform deployment\nThink about creating custom images to speed up deployment, and embracing the\nsystems.\nTo maximize the ability of one service to evolve independently of any others, it is vital\nServices\ncoupling that can appear in traditional service-oriented architectures, and use data pumps\nor event data pumps to consolidate data across multiple services for reporting purposes.\nWhere possible, pick technology-agnostic APIs to give you freedom to use different\nTo maximize the autonomy that microservices make possible, we need to constantly be\nservices themselves.\nThis process starts with embracing self-service wherever possible,\nallowing people to deploy software on demand, making development and testing as easy\nEnsuring that teams own their services is an important step on this journey, making teams\nMaking use of internal open source ensures that people can make\nchanges on services owned by other teams, although remember that this requires work to\nAlign teams to the organization to ensure that Conway’s law works for you,\nand help your team become domain experts in the business-focused services they are\ngovernance model where people from each team collectively share responsibility for\nAvoid approaches like enterprise service bus\nservices.\nsmart endpoints to ensure that you keep associated logic and data within service\nWe should always strive to ensure that our microservices can and are deployed by\nversioned endpoints to allow our consumers to change over time.\nteams owning these microservices by ensuring that they don’t have to constantly\nBy adopting a one-service-per-host model, you reduce side effects that could cause\ndeploying one service to impact another unrelated service.\nUse consumer-driven contracts to catch breaking changes before\nsingle service and release it into production, without having to deploy any other services\nA microservice architecture can be more resilient than a monolithic system, but only if we\nWe cannot rely on observing the behavior of a single service instance or the status of a\nWhen Shouldn’t You Use Microservices?\nservices.\nAs we discussed previously, getting service boundaries wrong can result in\nhaving to make lots of changes in service-to-service collaboration — an expensive\nclean module boundaries prior to splitting out services.\nMany of the challenges you’re going to face with microservices get worse with scale.\nyou mostly do things manually, you might be OK with 1 or 2 services, but 5 or 10?\nlikewise might work OK for a few services, but the more service-to-service collaboration\nyou add more services, and I hope the advice in this book will help you see some of these\nmicroservices well, prior to being able to use them in any large quantity.\nappetite and ability to change, which will help you properly adopt microservices.\nMicroservice architectures give you more options, and more decisions to make.\ndecisions in this world is a far more common activity than in simpler, monolithic systems.\nyour system bends and flexes and changes over time as you learn new things.\ndecide if microservices are for you.\nsystems is a far more important lesson to learn than any other I have shared with you\nantifragile systems, Microservices, The Antifragile Organization-Isolation\nincreased use of, Microservices\nAPI key-based authentication, API Keys, It’s All About the Keys\narchitectural principles\nkey microservices principles, Bringing It All Together\nservice-to-service, Service-to-Service Authentication and Authorization\nmicroservices and, Autonomous\nrole of systems architect in, Summary\nkey microservices principle of, How Much Is Too Much?\nmodules and services, Modules and Services\nsystem design and, Bounded Contexts and Team Structures\nbundled service release, And the Inevitable Exceptions\nclient-side, Client-Side, Proxy, and Server-Side Caching\nproxy, Client-Side, Proxy, and Server-Side Caching\nserver-side, Client-Side, Proxy, and Server-Side Caching\nAP/CP systems, It’s Not All or Nothing\ncircuit breakers, Tailored Service Template, Circuit Breakers\ncode reuse, DRY and the Perils of Code Reuse in a Microservice World\nprotocols for (SOAP), What About Service-Oriented Architecture?\nconfiguration, service, Service Configuration\ncontent delivery network (CDN), Client-Side, Proxy, and Server-Side Caching\ncontent management systems (CMS), Example: CMS as a service\ncontinuous delivery (CD), Microservices, Build Pipelines and Continuous\nmapping to microservices, Mapping Continuous Integration to\nMicroservices\nbatch insertion of, Data Retrieval via Service Calls\nretrieval via service calls, Data Retrieval via Service Calls\nshared, Example: Shared Data\nshared static, Example: Shared Static Data\nshared data, Example: Shared Data\nshared static data, Example: Shared Static Data\ndatabase integration, The Shared Database\ndatabase scaling\nservice availability vs.\ndata durability, Availability of Service Versus\ndecision-making guidelines, A Principled Approach-A Real-World Example\ncustomized approach to, Combining Principles and Practices\nbundled service release, And the Inevitable Exceptions\ncontinuous integration in microservices, Mapping Continuous\nIntegration to Microservices\nmicroservices vs.\nmonolithic systems, Ease of Deployment, Deployment\nservice configuration, Service Configuration\n(see also architectural principles)\ndirectory service, Common Single Sign-On Implementations\nDiRT (Disaster Recovery Test), The Antifragile Organization\ndistributed systems\nDNS service, DNS\nimportance of, Documenting Services\ndomain-driven design, Microservices\nDropwizard, Tailored Service Template\nMicroservice World\ndynamic service registries\nbenefits of, Dynamic Service Registries\nappropriate uses for, Test Journeys, Not Stories, So Should You Use End-\nto-End Tests?\nimplementation of, Those Tricky End-to-End Tests\nevent-based collaboration, Synchronous Versus Asynchronous\nrole of systems architect in, Summary\ngranularity, What About Service-Oriented Architecture?\nGraphite, Metric Tracking Across Multiple Services\nhexagonal architecture, Microservices\nHystrix library, Tailored Service Template, Bulkheads\ninfrastructure automation, Microservices\nMicroservice World\nservices as state machines, Services as State Machines\nKaryon, Tailored Service Template\nlayered architectures, Microservices\nservice metrics, Service Metrics\nlibraries for, Service Metrics\nservice metrics, Service Metrics\ntracking across multiple services, Metric Tracking Across Multiple\nServices\nMetrics library, Tailored Service Template\nmicroservices\nappropriate application of, When Shouldn’t You Use Microservices?\nbenefits of, Microservices\ndefinition of term, What Are Microservices?\ndrawbacks of, No Silver Bullet, When Shouldn’t You Use Microservices?\norigins of, Microservices\nservice-oriented architecture, What About Service-Oriented\nmicroservices at scale\nantifragile systems, The Antifragile Organization\ndocumenting services, Documenting Services\ndynamic service registries, Dynamic Service Registries\nservice discovery, Service Discovery\nmodeling services\nkey concepts, What Makes a Good Service?\nmodules and services, Modules and Services\nmodules, Modules and Services\nmetric tracking across multiple services, Metric Tracking Across\nMultiple Services\nmultiple services/multiple servers, Multiple Services, Multiple Servers\nservice metrics, Service Metrics\nsingle service/multiple servers, Single Service, Multiple Servers\nsingle service/single server, Single Service, Single Server\nmonolithic systems\nservice-oriented architecture, What About Service-Oriented\nMountebank, A Smarter Stub Service\non-demand provisioning systems, Scaling\non-demand virtualization, Microservices\nOpenID Connect, Common Single Sign-On Implementations, Use SAML or\noperating systems security, Operating System\neffect on systems design, Evidence\norphaned services, The Orphaned Service?\nshared, Drivers for Shared Services\nsystem design and, Service Ownership\nplatform as a service (PaaS), Platform as a Service\nRDBMS (relational database management systems), Scaling for Reads\ndata retrieval via service calls, Data Retrieval via Service Calls\ngeneric eventing systems, Toward Real Time\nthird-party software, Data Retrieval via Service Calls\nreverse proxy, Client-Side, Proxy, and Server-Side Caching\nSAML, Common Single Sign-On Implementations, Use SAML or OpenID\noperating systems, Operating System\nservice-to-service authentication/authorization, Service-to-Service\nsemantic monitoring, So Should You Use End-to-End Tests?, Synthetic\nservice accounts, Use SAML or OpenID Connect\nservice boundaries, Zoning\n(see also modeling services)\nservice calls, data retrieval via, Data Retrieval via Service Calls\nservice configuration, Service Configuration\nservice discovery, Service Discovery\nservice ownership\ncomprehensive approach, Service Ownership\nshared, Drivers for Shared Services\nservice provider, Common Single Sign-On Implementations\nservice separation, staging, Staging the Break\nservice templates, Tailored Service Template\nservice tests\nimplementation of, Implementing Service Tests\nMountebank server for, A Smarter Stub Service\nscope of, Service Tests\nservice-oriented architectures (SOA)\nconcept of, What About Service-Oriented Architecture?\ndrawbacks of, What About Service-Oriented Architecture?\nmicroservices, What About Service-Oriented Architecture?\nservice-to-host mapping, Service-to-Host Mapping-Platform as a Service\nmultiple services per host, Multiple Services Per Host\nplatform as a service (PaaS), Platform as a Service\nsingle service per host, Single Service Per Host\nterminology, Service-to-Host Mapping\nservice-to-service authentication/authorization, Service-to-Service\nshared code, DRY and the Perils of Code Reuse in a Microservice World\nshared data, Example: Shared Data\nshared static data, Example: Shared Static Data\nsmoke test suites, Separating Deployment from Release\nSSH-multiplexing, Single Service, Multiple Servers\ntailored service templates, Tailored Service Template\nstatic data, Example: Shared Static Data\norphaned services, The Orphaned Service?\nservice maturity, Maturity\nservice ownership, Service Ownership\nshared service ownership, Drivers for Shared Services\nsystems architects\ndecision-making guidelines for, A Principled Approach\nservice boundaries and, Zoning\nstandards enforcement by, Governance Through Code-Tailored Service\ntailored service templates, Tailored Service Template\ntechnology-facing tests, Types of Tests\ntemplates, Tailored Service Template\ntest doubles, Mocking or Stubbing\ntesting\nsemantic monitoring, So Should You Use End-to-End Tests?\nservice test implementation, Implementing Service Tests\nPattern, Data Retrieval via Service Calls\ncontent management systems (CMS), Example: CMS as a service\nreporting databases, Data Retrieval via Service Calls\nversioning, Versioning-Use Multiple Concurrent Service Versions\nmultiple concurrent versions, Use Multiple Concurrent Service Versions\non-demand, Microservices\nsystems.\nThe animals on the cover of Building Microservices are honey bees (of the genus Apis).\nworker bees communicate with one another by “dancing” in particular patterns to share\n1. Microservices\nWhat Are Microservices?\nScaling\nWhat About Service-Oriented Architecture?\nTailored Service Template\n3. How to Model Services\nWhat Makes a Good Service?\nModules and Services\nMake Your Service Simple for Consumers\nThe Shared Database\nServices as State Machines\nDRY and the Perils of Code Reuse in a Microservice World\nUse Multiple Concurrent Service Versions\nExample: Breaking Foreign Key Relationships\nExample: Shared Static Data\nExample: Shared Data\nData Retrieval via Service Calls\nMapping Continuous Integration to Microservices\nService Configuration\nService-to-Host Mapping\nMultiple Services Per Host\nSingle Service Per Host\nPlatform as a Service\nA Deployment Interface\n7. Testing\nTypes of Tests\nTest Scope\nService Tests\nImplementing Service Tests\nA Smarter Stub Service\nWho Writes These Tests?\nSo Should You Use End-to-End Tests?\nTesting After Production\nCross-Functional Testing\nSingle Service, Single Server\nSingle Service, Multiple Servers\nMultiple Services, Multiple Servers\nMetric Tracking Across Multiple Services\nService Metrics\nService-to-Service Authentication and Authorization\nSecuring Data at Rest\nService Ownership\nDrivers for Shared Services\nBounded Contexts and Team Structures\nThe Orphaned Service?\nMicroservices at Scale\nScaling\nWorker-Based Systems\nScaling Databases\nAvailability of Service Versus Durability of Data\nClient-Side, Proxy, and Server-Side Caching\nCaching in HTTP\nService Discovery\nDynamic Service Registries\nDocumenting Services\nPrinciples of Microservices\nWhen Shouldn’t You Use Microservices?",
+      "keywords": [
+        "service",
+        "Tailored Service Template",
+        "Shared Static Data",
+        "Shared Services service",
+        "Service Calls",
+        "single service",
+        "Implementing Service Tests",
+        "service tests",
+        "multiple services",
+        "shared",
+        "data",
+        "Backup Data Pump",
+        "Tailored Service",
+        "Synchronous Versus Asynchronous"
+      ],
+      "concepts": [
+        "services",
+        "microservices",
+        "summary",
+        "systems",
+        "shared",
+        "share",
+        "uses",
+        "architecture",
+        "architectural",
+        "technologies"
+      ],
+      "similar_chapters": [
+        {
+          "book": "Building Microservices",
+          "chapter": 1,
+          "title": "",
+          "score": 0.643,
+          "base_score": 0.643,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 6,
+          "title": "",
+          "score": 0.573,
+          "base_score": 0.573,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 3,
+          "title": "",
+          "score": 0.558,
+          "base_score": 0.558,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 8,
+          "title": "",
+          "score": 0.541,
+          "base_score": 0.541,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        },
+        {
+          "book": "Building Microservices",
+          "chapter": 5,
+          "title": "",
+          "score": 0.467,
+          "base_score": 0.467,
+          "topic_boost": 0.0,
+          "method": "sbert"
+        }
+      ],
+      "enriched_keywords": {
+        "tfidf": [
+          "service",
+          "microservices",
+          "services",
+          "data",
+          "multiple"
+        ],
+        "semantic": [],
+        "merged": [
+          "service",
+          "microservices",
+          "services",
+          "data",
+          "multiple"
+        ]
+      },
+      "topic_id": null,
+      "chapter_provenance": {
+        "methods_used": [
+          "sbert",
+          "tfidf",
+          "bertopic"
+        ],
+        "sbert_score": 0.4967961415268962,
+        "topic_boost": 0.0,
+        "timestamp": "2025-12-17T23:01:17.120983+00:00"
+      }
+    }
+  ],
+  "total_chapters": 12,
+  "enrichment_provenance": {
+    "taxonomy_id": "none",
+    "taxonomy_version": "none",
+    "taxonomy_path": "none",
+    "taxonomy_checksum": "sha256:none",
+    "source_metadata_file": "Building Microservices_metadata.json",
+    "enrichment_date": "2025-12-17T23:01:17.128733+00:00",
+    "enrichment_method": "msep",
+    "model_version": "ai-agents-msep-v1",
+    "processing_time_ms": 3150.0567099992622,
+    "total_similar_chapters": 55
+  }
+}
