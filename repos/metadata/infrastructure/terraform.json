@@ -1,0 +1,20 @@
+{
+  "id": "terraform",
+  "name": "Terraform",
+  "source_url": "https://github.com/hashicorp/terraform",
+  "target_path": "infrastructure/terraform",
+  "owner": "hashicorp",
+  "license": "MPL-2.0",
+  "domain": "infrastructure",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["go"],
+  "concepts": ["infrastructure-as-code", "declarative", "state-management", "providers", "modules", "plan-apply"],
+  "patterns": ["declarative", "provider", "state-machine"],
+  "tags": ["terraform", "iac", "hashicorp", "infrastructure"],
+  "description": "Infrastructure as Code tool for building, changing, and versioning infrastructure.",
+  "why_include": "Dominant IaC tool - essential for understanding infrastructure automation.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

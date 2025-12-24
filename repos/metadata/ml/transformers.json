@@ -1,0 +1,20 @@
+{
+  "id": "transformers",
+  "name": "Hugging Face Transformers",
+  "source_url": "https://github.com/huggingface/transformers",
+  "target_path": "ml/frameworks/transformers",
+  "owner": "huggingface",
+  "license": "Apache-2.0",
+  "domain": "ml-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["transformers", "pre-trained-models", "tokenizers", "pipelines", "model-hub"],
+  "patterns": ["model-hub", "pipeline", "auto-classes"],
+  "tags": ["transformers", "nlp", "huggingface", "llm"],
+  "description": "State-of-the-art machine learning for PyTorch, TensorFlow, and JAX.",
+  "why_include": "LLM ecosystem center - essential for understanding transformer architecture.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,290 @@
+{
+  "registry_version": "1.0.0",
+  "description": "Master registry of reference code repositories. Points to mirrored code in code-reference-engine.",
+  "code_engine_repo": "https://github.com/kevin-toles/code-reference-engine",
+  "total_repos": 92,
+  "total_mirrored": 0,
+  "domains": [
+    {
+      "id": "game-dev-engines",
+      "name": "Game Engines",
+      "path": "game-dev/engines",
+      "description": "Full game engine source code (Godot, Urho3D, OGRE)",
+      "repo_count": 4,
+      "repos": [
+        {"id": "godot", "metadata_path": "repos/metadata/game-dev/godot.json", "priority": 1},
+        {"id": "urho3d", "metadata_path": "repos/metadata/game-dev/urho3d.json", "priority": 2},
+        {"id": "ogre3d", "metadata_path": "repos/metadata/game-dev/ogre3d.json", "priority": 3},
+        {"id": "openmw", "metadata_path": "repos/metadata/game-dev/openmw.json", "priority": 4}
+      ]
+    },
+    {
+      "id": "game-dev-systems",
+      "name": "Game Systems",
+      "path": "game-dev/systems",
+      "description": "ECS, input, audio, UI systems",
+      "repo_count": 4,
+      "repos": [
+        {"id": "entt", "metadata_path": "repos/metadata/game-dev/entt.json", "priority": 1},
+        {"id": "sdl", "metadata_path": "repos/metadata/game-dev/sdl.json", "priority": 2},
+        {"id": "glfw", "metadata_path": "repos/metadata/game-dev/glfw.json", "priority": 3},
+        {"id": "imgui", "metadata_path": "repos/metadata/game-dev/imgui.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "game-dev-rendering",
+      "name": "Rendering & Graphics",
+      "path": "game-dev/rendering",
+      "description": "Rendering engines, graphics APIs",
+      "repo_count": 4,
+      "repos": [
+        {"id": "bgfx", "metadata_path": "repos/metadata/game-dev/bgfx.json", "priority": 1},
+        {"id": "filament", "metadata_path": "repos/metadata/game-dev/filament.json", "priority": 1},
+        {"id": "vulkan-samples", "metadata_path": "repos/metadata/game-dev/vulkan-samples.json", "priority": 2},
+        {"id": "directx-samples", "metadata_path": "repos/metadata/game-dev/directx-samples.json", "priority": 3}
+      ]
+    },
+    {
+      "id": "game-dev-physics",
+      "name": "Physics Simulation",
+      "path": "game-dev/physics",
+      "description": "Physics engines",
+      "repo_count": 2,
+      "repos": [
+        {"id": "bullet", "metadata_path": "repos/metadata/game-dev/bullet.json", "priority": 1},
+        {"id": "box2d", "metadata_path": "repos/metadata/game-dev/box2d.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "game-dev-ai",
+      "name": "Game AI",
+      "path": "game-dev/ai",
+      "description": "Navigation, behavior trees, pathfinding",
+      "repo_count": 2,
+      "repos": [
+        {"id": "recast", "metadata_path": "repos/metadata/game-dev/recast.json", "priority": 1},
+        {"id": "behaviortree-cpp", "metadata_path": "repos/metadata/game-dev/behaviortree-cpp.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "cpp-core",
+      "name": "C++ Core Libraries",
+      "path": "cpp/core",
+      "description": "Core C++ libraries",
+      "repo_count": 4,
+      "repos": [
+        {"id": "abseil", "metadata_path": "repos/metadata/cpp/abseil.json", "priority": 1},
+        {"id": "folly", "metadata_path": "repos/metadata/cpp/folly.json", "priority": 2},
+        {"id": "glm", "metadata_path": "repos/metadata/cpp/glm.json", "priority": 1},
+        {"id": "entt-cpp", "metadata_path": "repos/metadata/cpp/entt.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "backend-frameworks",
+      "name": "Backend Frameworks",
+      "path": "backend/frameworks",
+      "description": "Production-ready backend frameworks",
+      "repo_count": 10,
+      "repos": [
+        {"id": "spring-boot", "metadata_path": "repos/metadata/backend/spring-boot.json", "priority": 1},
+        {"id": "django", "metadata_path": "repos/metadata/backend/django.json", "priority": 1},
+        {"id": "fastapi", "metadata_path": "repos/metadata/backend/fastapi.json", "priority": 1},
+        {"id": "flask", "metadata_path": "repos/metadata/backend/flask.json", "priority": 2},
+        {"id": "express", "metadata_path": "repos/metadata/backend/express.json", "priority": 1},
+        {"id": "koa", "metadata_path": "repos/metadata/backend/koa.json", "priority": 2},
+        {"id": "rails", "metadata_path": "repos/metadata/backend/rails.json", "priority": 1},
+        {"id": "laravel", "metadata_path": "repos/metadata/backend/laravel.json", "priority": 2},
+        {"id": "aspnetcore", "metadata_path": "repos/metadata/backend/aspnetcore.json", "priority": 1},
+        {"id": "phoenix", "metadata_path": "repos/metadata/backend/phoenix.json", "priority": 3}
+      ]
+    },
+    {
+      "id": "backend-microservices",
+      "name": "Microservices Examples",
+      "path": "backend/microservices",
+      "description": "Reference microservices architectures",
+      "repo_count": 4,
+      "repos": [
+        {"id": "eshop-on-containers", "metadata_path": "repos/metadata/backend/eshop-on-containers.json", "priority": 1},
+        {"id": "online-boutique", "metadata_path": "repos/metadata/backend/online-boutique.json", "priority": 1},
+        {"id": "ftgo", "metadata_path": "repos/metadata/backend/ftgo.json", "priority": 2},
+        {"id": "spring-petclinic", "metadata_path": "repos/metadata/backend/spring-petclinic.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "backend-event-driven",
+      "name": "Event-Driven Architecture",
+      "path": "backend/event-driven",
+      "description": "EDA patterns, Kafka examples",
+      "repo_count": 2,
+      "repos": [
+        {"id": "kafka-demo", "metadata_path": "repos/metadata/backend/kafka-demo.json", "priority": 1},
+        {"id": "kafka", "metadata_path": "repos/metadata/backend/kafka.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "backend-serverless",
+      "name": "Serverless Architecture",
+      "path": "backend/serverless",
+      "description": "Serverless patterns",
+      "repo_count": 2,
+      "repos": [
+        {"id": "aws-airline", "metadata_path": "repos/metadata/backend/aws-airline.json", "priority": 1},
+        {"id": "openfaas", "metadata_path": "repos/metadata/backend/openfaas.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "backend-ddd",
+      "name": "Domain-Driven Design",
+      "path": "backend/ddd",
+      "description": "DDD reference implementations",
+      "repo_count": 1,
+      "repos": [
+        {"id": "cargo-sample", "metadata_path": "repos/metadata/backend/cargo-sample.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "frontend-frameworks",
+      "name": "Frontend Frameworks",
+      "path": "frontend/frameworks",
+      "description": "React, Angular, Vue, Svelte",
+      "repo_count": 4,
+      "repos": [
+        {"id": "react", "metadata_path": "repos/metadata/frontend/react.json", "priority": 1},
+        {"id": "angular", "metadata_path": "repos/metadata/frontend/angular.json", "priority": 1},
+        {"id": "vue", "metadata_path": "repos/metadata/frontend/vue.json", "priority": 1},
+        {"id": "svelte", "metadata_path": "repos/metadata/frontend/svelte.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "frontend-micro-frontends",
+      "name": "Micro-Frontends",
+      "path": "frontend/micro-frontends",
+      "description": "Micro-frontend architectures",
+      "repo_count": 1,
+      "repos": [
+        {"id": "single-spa", "metadata_path": "repos/metadata/frontend/single-spa.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure & DevOps",
+      "path": "infrastructure",
+      "description": "IaC, containers, orchestration",
+      "repo_count": 6,
+      "repos": [
+        {"id": "kubernetes", "metadata_path": "repos/metadata/infrastructure/kubernetes.json", "priority": 1},
+        {"id": "k8s-hard-way", "metadata_path": "repos/metadata/infrastructure/k8s-hard-way.json", "priority": 1},
+        {"id": "docker", "metadata_path": "repos/metadata/infrastructure/docker.json", "priority": 1},
+        {"id": "terraform", "metadata_path": "repos/metadata/infrastructure/terraform.json", "priority": 1},
+        {"id": "ansible", "metadata_path": "repos/metadata/infrastructure/ansible.json", "priority": 2},
+        {"id": "helm", "metadata_path": "repos/metadata/infrastructure/helm.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "path": "databases",
+      "description": "Database engines and data stores",
+      "repo_count": 5,
+      "repos": [
+        {"id": "postgresql", "metadata_path": "repos/metadata/databases/postgresql.json", "priority": 1},
+        {"id": "redis", "metadata_path": "repos/metadata/databases/redis.json", "priority": 1},
+        {"id": "cassandra", "metadata_path": "repos/metadata/databases/cassandra.json", "priority": 2},
+        {"id": "cockroachdb", "metadata_path": "repos/metadata/databases/cockroachdb.json", "priority": 3},
+        {"id": "opensearch", "metadata_path": "repos/metadata/databases/opensearch.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "path": "security",
+      "description": "Identity, secrets management",
+      "repo_count": 3,
+      "repos": [
+        {"id": "keycloak", "metadata_path": "repos/metadata/security/keycloak.json", "priority": 1},
+        {"id": "vault", "metadata_path": "repos/metadata/security/vault.json", "priority": 1},
+        {"id": "owasp-zap", "metadata_path": "repos/metadata/security/owasp-zap.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring & Observability",
+      "path": "monitoring",
+      "description": "Metrics, logging, tracing",
+      "repo_count": 4,
+      "repos": [
+        {"id": "prometheus", "metadata_path": "repos/metadata/monitoring/prometheus.json", "priority": 1},
+        {"id": "grafana", "metadata_path": "repos/metadata/monitoring/grafana.json", "priority": 1},
+        {"id": "jaeger", "metadata_path": "repos/metadata/monitoring/jaeger.json", "priority": 2},
+        {"id": "loki", "metadata_path": "repos/metadata/monitoring/loki.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Testing & QA",
+      "path": "testing",
+      "description": "Testing frameworks",
+      "repo_count": 6,
+      "repos": [
+        {"id": "selenium", "metadata_path": "repos/metadata/testing/selenium.json", "priority": 1},
+        {"id": "cypress", "metadata_path": "repos/metadata/testing/cypress.json", "priority": 1},
+        {"id": "jmeter", "metadata_path": "repos/metadata/testing/jmeter.json", "priority": 2},
+        {"id": "locust", "metadata_path": "repos/metadata/testing/locust.json", "priority": 2},
+        {"id": "junit5", "metadata_path": "repos/metadata/testing/junit5.json", "priority": 1},
+        {"id": "pytest", "metadata_path": "repos/metadata/testing/pytest.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "ml-frameworks",
+      "name": "ML Frameworks",
+      "path": "ml/frameworks",
+      "description": "Machine learning frameworks",
+      "repo_count": 6,
+      "repos": [
+        {"id": "tensorflow", "metadata_path": "repos/metadata/ml/tensorflow.json", "priority": 1},
+        {"id": "pytorch", "metadata_path": "repos/metadata/ml/pytorch.json", "priority": 1},
+        {"id": "scikit-learn", "metadata_path": "repos/metadata/ml/scikit-learn.json", "priority": 1},
+        {"id": "transformers", "metadata_path": "repos/metadata/ml/transformers.json", "priority": 1},
+        {"id": "xgboost", "metadata_path": "repos/metadata/ml/xgboost.json", "priority": 2},
+        {"id": "ray", "metadata_path": "repos/metadata/ml/ray.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "ml-ops",
+      "name": "MLOps",
+      "path": "ml/ops",
+      "description": "ML lifecycle and orchestration",
+      "repo_count": 3,
+      "repos": [
+        {"id": "mlflow", "metadata_path": "repos/metadata/ml/mlflow.json", "priority": 1},
+        {"id": "kubeflow", "metadata_path": "repos/metadata/ml/kubeflow.json", "priority": 2},
+        {"id": "airflow", "metadata_path": "repos/metadata/ml/airflow.json", "priority": 1}
+      ]
+    },
+    {
+      "id": "build-systems",
+      "name": "Build Systems",
+      "path": "build-systems",
+      "description": "Build and compilation tools",
+      "repo_count": 3,
+      "repos": [
+        {"id": "cmake", "metadata_path": "repos/metadata/build-systems/cmake.json", "priority": 1},
+        {"id": "bazel", "metadata_path": "repos/metadata/build-systems/bazel.json", "priority": 2},
+        {"id": "premake", "metadata_path": "repos/metadata/build-systems/premake.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "path": "networking",
+      "description": "Network libraries",
+      "repo_count": 2,
+      "repos": [
+        {"id": "enet", "metadata_path": "repos/metadata/networking/enet.json", "priority": 1},
+        {"id": "gamenetworkingsockets", "metadata_path": "repos/metadata/networking/gamenetworkingsockets.json", "priority": 1}
+      ]
+    }
+  ],
+  "updated_at": "2024-12-24T00:00:00Z"
+}

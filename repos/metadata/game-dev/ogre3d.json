@@ -1,0 +1,20 @@
+{
+  "id": "ogre3d",
+  "name": "OGRE 3D",
+  "source_url": "https://github.com/OGRECave/ogre",
+  "target_path": "game-dev/engines/ogre",
+  "owner": "OGRECave",
+  "license": "MIT",
+  "domain": "game-dev-engines",
+  "tier": "T2-patterns",
+  "priority": 3,
+  "languages": ["cpp"],
+  "concepts": ["rendering-engine", "scene-graph", "material-system", "plugin-architecture", "resource-management"],
+  "patterns": ["singleton", "factory", "plugin", "strategy"],
+  "tags": ["rendering", "3d", "graphics", "scene-graph"],
+  "description": "Rendering-focused 3D engine known for clean scene graph and material system design.",
+  "why_include": "Focused rendering architecture - excellent reference for scene graphs and material systems.",
+  "estimated_size_mb": 400,
+  "mirrored": false,
+  "indexed": false
+}

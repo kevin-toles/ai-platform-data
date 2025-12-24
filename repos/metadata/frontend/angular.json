@@ -1,0 +1,20 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "source_url": "https://github.com/angular/angular",
+  "target_path": "frontend/frameworks/angular",
+  "owner": "angular",
+  "license": "MIT",
+  "domain": "frontend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["typescript"],
+  "concepts": ["mvc", "dependency-injection", "two-way-binding", "modules", "services", "rxjs"],
+  "patterns": ["mvc", "dependency-injection", "observable", "decorator"],
+  "tags": ["angular", "typescript", "google", "enterprise"],
+  "description": "Platform for building mobile and desktop web applications.",
+  "why_include": "Full-featured framework - shows enterprise-grade frontend architecture.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

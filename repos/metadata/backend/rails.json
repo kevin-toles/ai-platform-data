@@ -1,0 +1,20 @@
+{
+  "id": "rails",
+  "name": "Ruby on Rails",
+  "source_url": "https://github.com/rails/rails",
+  "target_path": "backend/frameworks/rails",
+  "owner": "rails",
+  "license": "MIT",
+  "domain": "backend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["ruby"],
+  "concepts": ["mvc", "active-record", "convention-over-configuration", "scaffolding", "migrations", "concerns"],
+  "patterns": ["active-record", "mvc", "convention-over-configuration"],
+  "tags": ["ruby", "full-stack", "mvc", "productive"],
+  "description": "Full-stack web framework optimized for programmer happiness and sustainable productivity.",
+  "why_include": "Pioneering MVC framework - influenced countless other frameworks.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "cargo-sample",
+  "name": "DDD Cargo Sample",
+  "source_url": "https://github.com/citerus/dddsample-core",
+  "target_path": "backend/ddd/cargo-sample",
+  "owner": "citerus",
+  "license": "Apache-2.0",
+  "domain": "backend-ddd",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java"],
+  "concepts": ["ddd", "aggregates", "bounded-contexts", "domain-events", "value-objects", "entities", "repositories"],
+  "patterns": ["aggregate", "repository", "domain-event", "specification"],
+  "tags": ["ddd", "domain-driven-design", "eric-evans", "java"],
+  "description": "Canonical DDD sample application based on Eric Evans' cargo shipping domain.",
+  "why_include": "The DDD reference implementation - directly from Eric Evans' examples.",
+  "estimated_size_mb": 20,
+  "mirrored": false,
+  "indexed": false
+}

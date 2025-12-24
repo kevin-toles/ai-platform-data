@@ -1,0 +1,20 @@
+{
+  "id": "filament",
+  "name": "Filament",
+  "source_url": "https://github.com/google/filament",
+  "target_path": "game-dev/rendering/filament",
+  "owner": "google",
+  "license": "Apache-2.0",
+  "domain": "game-dev-rendering",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["pbr-rendering", "physically-based", "material-system", "mobile-rendering", "real-time-rendering"],
+  "patterns": ["render-graph", "material-graph", "command-buffer"],
+  "tags": ["rendering", "pbr", "mobile", "google", "real-time"],
+  "description": "Real-time physically based rendering engine for Android, iOS, Linux, macOS, Windows, and WebGL.",
+  "why_include": "Google's production PBR renderer - excellent reference for modern physically-based rendering.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

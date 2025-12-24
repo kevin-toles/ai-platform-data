@@ -1,0 +1,20 @@
+{
+  "id": "postgresql",
+  "name": "PostgreSQL",
+  "source_url": "https://github.com/postgres/postgres",
+  "target_path": "databases/postgresql",
+  "owner": "postgres",
+  "license": "PostgreSQL",
+  "domain": "databases",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["c"],
+  "concepts": ["rdbms", "mvcc", "wal", "query-planning", "indexing", "extensions", "replication"],
+  "patterns": ["mvcc", "write-ahead-log", "b-tree"],
+  "tags": ["postgresql", "database", "sql", "rdbms"],
+  "description": "The world's most advanced open source relational database.",
+  "why_include": "Gold standard RDBMS - essential for understanding database internals.",
+  "estimated_size_mb": 300,
+  "mirrored": false,
+  "indexed": false
+}

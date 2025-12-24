@@ -1,0 +1,20 @@
+{
+  "id": "svelte",
+  "name": "Svelte",
+  "source_url": "https://github.com/sveltejs/svelte",
+  "target_path": "frontend/frameworks/svelte",
+  "owner": "sveltejs",
+  "license": "MIT",
+  "domain": "frontend-frameworks",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": ["typescript", "javascript"],
+  "concepts": ["compiler", "no-virtual-dom", "reactive-declarations", "stores", "transitions"],
+  "patterns": ["compiler-pattern", "reactive", "store"],
+  "tags": ["svelte", "compiler", "frontend", "performance"],
+  "description": "Compiler that turns declarative components into efficient JavaScript.",
+  "why_include": "Compiler-based approach - shows alternative to virtual DOM runtime.",
+  "estimated_size_mb": 30,
+  "mirrored": false,
+  "indexed": false
+}

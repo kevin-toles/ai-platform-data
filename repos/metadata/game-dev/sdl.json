@@ -1,0 +1,20 @@
+{
+  "id": "sdl",
+  "name": "SDL2",
+  "source_url": "https://github.com/libsdl-org/SDL",
+  "target_path": "game-dev/systems/sdl",
+  "owner": "libsdl-org",
+  "license": "Zlib",
+  "domain": "game-dev-systems",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": ["c"],
+  "concepts": ["windowing", "input-handling", "audio", "graphics-context", "cross-platform", "hardware-abstraction"],
+  "patterns": ["facade", "adapter", "platform-abstraction"],
+  "tags": ["windowing", "input", "audio", "cross-platform", "hardware"],
+  "description": "Cross-platform development library for low level access to audio, keyboard, mouse, joystick, and graphics.",
+  "why_include": "Industry standard for cross-platform windowing/input - used by many engines including as Unreal fallback.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

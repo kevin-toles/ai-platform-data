@@ -1,0 +1,20 @@
+{
+  "id": "recast",
+  "name": "Recast & Detour",
+  "source_url": "https://github.com/recastnavigation/recastnavigation",
+  "target_path": "game-dev/ai/recast",
+  "owner": "recastnavigation",
+  "license": "Zlib",
+  "domain": "game-dev-ai",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp", "c"],
+  "concepts": ["navigation-mesh", "pathfinding", "navmesh-generation", "crowd-simulation", "a-star", "string-pulling"],
+  "patterns": ["spatial-partitioning", "graph-search"],
+  "tags": ["navigation", "pathfinding", "ai", "navmesh"],
+  "description": "Navigation mesh construction toolset and pathfinding library for games.",
+  "why_include": "Industry standard for game navigation - used by Unreal Engine, Unity, and most AAA games.",
+  "estimated_size_mb": 20,
+  "mirrored": false,
+  "indexed": false
+}

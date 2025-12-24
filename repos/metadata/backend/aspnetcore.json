@@ -1,0 +1,20 @@
+{
+  "id": "aspnetcore",
+  "name": "ASP.NET Core",
+  "source_url": "https://github.com/dotnet/aspnetcore",
+  "target_path": "backend/frameworks/aspnetcore",
+  "owner": "dotnet",
+  "license": "MIT",
+  "domain": "backend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["csharp"],
+  "concepts": ["mvc", "razor-pages", "blazor", "minimal-apis", "dependency-injection", "middleware"],
+  "patterns": ["middleware-pipeline", "dependency-injection", "options-pattern"],
+  "tags": ["csharp", "dotnet", "microsoft", "cross-platform"],
+  "description": "Cross-platform, high-performance, open-source framework for building modern web applications.",
+  "why_include": "Microsoft's modern web framework - essential for C#/.NET architecture patterns.",
+  "estimated_size_mb": 300,
+  "mirrored": false,
+  "indexed": false
+}

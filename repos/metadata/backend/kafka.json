@@ -1,0 +1,20 @@
+{
+  "id": "kafka",
+  "name": "Apache Kafka",
+  "source_url": "https://github.com/apache/kafka",
+  "target_path": "backend/event-driven/kafka",
+  "owner": "apache",
+  "license": "Apache-2.0",
+  "domain": "backend-event-driven",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java", "scala"],
+  "concepts": ["distributed-log", "event-streaming", "partitioning", "replication", "consumer-groups", "exactly-once"],
+  "patterns": ["commit-log", "publish-subscribe", "partitioning", "leader-election"],
+  "tags": ["kafka", "streaming", "messaging", "distributed-systems"],
+  "description": "Distributed event streaming platform capable of handling trillions of events a day.",
+  "why_include": "The event streaming platform - essential for understanding distributed messaging.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

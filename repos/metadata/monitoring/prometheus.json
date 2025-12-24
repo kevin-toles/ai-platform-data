@@ -1,0 +1,20 @@
+{
+  "id": "prometheus",
+  "name": "Prometheus",
+  "source_url": "https://github.com/prometheus/prometheus",
+  "target_path": "monitoring/prometheus",
+  "owner": "prometheus",
+  "license": "Apache-2.0",
+  "domain": "monitoring",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["go"],
+  "concepts": ["metrics", "time-series", "pull-model", "promql", "alerting", "service-discovery"],
+  "patterns": ["pull-based", "time-series-db", "service-discovery"],
+  "tags": ["prometheus", "monitoring", "metrics", "cncf"],
+  "description": "Systems and service monitoring system with dimensional data model and query language.",
+  "why_include": "The observability standard - essential for understanding metrics collection.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}

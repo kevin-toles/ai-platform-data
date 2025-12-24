@@ -1,0 +1,20 @@
+{
+  "id": "selenium",
+  "name": "Selenium",
+  "source_url": "https://github.com/SeleniumHQ/selenium",
+  "target_path": "testing/e2e/selenium",
+  "owner": "SeleniumHQ",
+  "license": "Apache-2.0",
+  "domain": "testing",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java", "javascript", "python"],
+  "concepts": ["browser-automation", "webdriver", "cross-browser", "grid", "remote-execution"],
+  "patterns": ["page-object", "webdriver-protocol", "grid-architecture"],
+  "tags": ["selenium", "testing", "e2e", "browser-automation"],
+  "description": "Browser automation framework and ecosystem for web testing.",
+  "why_include": "The browser automation standard - essential for understanding E2E testing.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

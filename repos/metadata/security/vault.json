@@ -1,0 +1,20 @@
+{
+  "id": "vault",
+  "name": "HashiCorp Vault",
+  "source_url": "https://github.com/hashicorp/vault",
+  "target_path": "security/vault",
+  "owner": "hashicorp",
+  "license": "MPL-2.0",
+  "domain": "security",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["go"],
+  "concepts": ["secrets-management", "encryption", "dynamic-secrets", "leasing", "audit", "policies"],
+  "patterns": ["seal-unseal", "leasing", "plugin-architecture"],
+  "tags": ["vault", "secrets", "hashicorp", "encryption"],
+  "description": "Tool for secrets management, encryption as a service, and privileged access management.",
+  "why_include": "Standard secrets management - essential for secure credential handling.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

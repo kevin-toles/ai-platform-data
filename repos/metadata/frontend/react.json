@@ -1,0 +1,20 @@
+{
+  "id": "react",
+  "name": "React",
+  "source_url": "https://github.com/facebook/react",
+  "target_path": "frontend/frameworks/react",
+  "owner": "facebook",
+  "license": "MIT",
+  "domain": "frontend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["javascript"],
+  "concepts": ["virtual-dom", "component-model", "jsx", "hooks", "reconciliation", "fiber-architecture"],
+  "patterns": ["component", "composite", "observer", "hooks"],
+  "tags": ["react", "frontend", "ui", "facebook"],
+  "description": "A JavaScript library for building user interfaces.",
+  "why_include": "Dominant UI library - essential for understanding component-based UI architecture.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}

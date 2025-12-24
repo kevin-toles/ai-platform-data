@@ -1,0 +1,20 @@
+{
+  "id": "docker",
+  "name": "Moby (Docker)",
+  "source_url": "https://github.com/moby/moby",
+  "target_path": "infrastructure/docker",
+  "owner": "moby",
+  "license": "Apache-2.0",
+  "domain": "infrastructure",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["go"],
+  "concepts": ["containerization", "images", "layers", "networking", "volumes", "containerd"],
+  "patterns": ["layered-filesystem", "namespace-isolation", "cgroups"],
+  "tags": ["docker", "containers", "moby", "containerization"],
+  "description": "The Moby Project - open framework for assembling container systems.",
+  "why_include": "The containerization platform - essential for understanding container internals.",
+  "estimated_size_mb": 300,
+  "mirrored": false,
+  "indexed": false
+}

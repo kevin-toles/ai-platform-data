@@ -1,0 +1,20 @@
+{
+  "id": "imgui",
+  "name": "Dear ImGui",
+  "source_url": "https://github.com/ocornut/imgui",
+  "target_path": "game-dev/systems/imgui",
+  "owner": "ocornut",
+  "license": "MIT",
+  "domain": "game-dev-systems",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": ["cpp"],
+  "concepts": ["immediate-mode-gui", "debug-ui", "tool-ui", "graphics-agnostic", "backend-abstraction"],
+  "patterns": ["immediate-mode", "retained-mode-comparison"],
+  "tags": ["gui", "imgui", "debug-tools", "editor-ui"],
+  "description": "Bloat-free graphical user interface library for C++ with minimal dependencies.",
+  "why_include": "Industry standard for game/engine tooling UI - used inside Unreal Editor and countless engines.",
+  "estimated_size_mb": 30,
+  "mirrored": false,
+  "indexed": false
+}

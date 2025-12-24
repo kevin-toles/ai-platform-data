@@ -1,0 +1,20 @@
+{
+  "id": "kafka-demo",
+  "name": "Event-Driven Microservices Demo",
+  "source_url": "https://github.com/gschmutz/event-driven-microservices-demo",
+  "target_path": "backend/event-driven/kafka-demo",
+  "owner": "gschmutz",
+  "license": "Apache-2.0",
+  "domain": "backend-event-driven",
+  "tier": "T3-implementation",
+  "priority": 1,
+  "languages": ["java"],
+  "concepts": ["event-driven", "kafka", "stream-processing", "event-sourcing", "cqrs"],
+  "patterns": ["event-sourcing", "cqrs", "publish-subscribe"],
+  "tags": ["kafka", "event-driven", "streaming", "microservices"],
+  "description": "Demo showing how to implement Event Driven Microservices with Apache Kafka.",
+  "why_include": "Practical Kafka-based EDA example - shows real event-driven patterns.",
+  "estimated_size_mb": 30,
+  "mirrored": false,
+  "indexed": false
+}

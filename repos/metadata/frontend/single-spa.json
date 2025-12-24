@@ -1,0 +1,20 @@
+{
+  "id": "single-spa",
+  "name": "single-spa",
+  "source_url": "https://github.com/single-spa/single-spa",
+  "target_path": "frontend/micro-frontends/single-spa",
+  "owner": "single-spa",
+  "license": "MIT",
+  "domain": "frontend-micro-frontends",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["javascript"],
+  "concepts": ["micro-frontends", "module-federation", "framework-agnostic", "routing", "lifecycle"],
+  "patterns": ["micro-frontend", "module-federation", "lifecycle-hooks"],
+  "tags": ["micro-frontends", "module-federation", "framework-agnostic"],
+  "description": "JavaScript framework for front-end microservices.",
+  "why_include": "Micro-frontend orchestration - shows how to compose multiple frameworks.",
+  "estimated_size_mb": 10,
+  "mirrored": false,
+  "indexed": false
+}

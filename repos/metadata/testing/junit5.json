@@ -1,0 +1,20 @@
+{
+  "id": "junit5",
+  "name": "JUnit 5",
+  "source_url": "https://github.com/junit-team/junit5",
+  "target_path": "testing/unit/junit5",
+  "owner": "junit-team",
+  "license": "EPL-2.0",
+  "domain": "testing",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java"],
+  "concepts": ["unit-testing", "test-lifecycle", "extensions", "parameterized-tests", "assertions"],
+  "patterns": ["test-lifecycle", "extension-model", "parameterized"],
+  "tags": ["junit", "testing", "java", "unit-testing"],
+  "description": "Programmer-friendly testing framework for Java and the JVM.",
+  "why_include": "Java testing standard - essential for understanding test framework architecture.",
+  "estimated_size_mb": 50,
+  "mirrored": false,
+  "indexed": false
+}

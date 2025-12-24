@@ -1,0 +1,20 @@
+{
+  "id": "keycloak",
+  "name": "Keycloak",
+  "source_url": "https://github.com/keycloak/keycloak",
+  "target_path": "security/keycloak",
+  "owner": "keycloak",
+  "license": "Apache-2.0",
+  "domain": "security",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java"],
+  "concepts": ["identity-management", "oauth2", "oidc", "saml", "federation", "single-sign-on"],
+  "patterns": ["identity-provider", "token-based-auth", "federation"],
+  "tags": ["keycloak", "identity", "oauth", "sso"],
+  "description": "Open Source Identity and Access Management for modern applications and services.",
+  "why_include": "Standard IAM solution - essential for understanding auth flows and SSO.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

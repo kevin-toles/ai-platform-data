@@ -1,0 +1,20 @@
+{
+  "id": "entt-cpp",
+  "name": "EnTT (C++ Core)",
+  "source_url": "https://github.com/skypjack/entt",
+  "target_path": "cpp/ecs/entt",
+  "owner": "skypjack",
+  "license": "MIT",
+  "domain": "cpp-ecs",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["ecs", "entity-component-system", "data-oriented-design", "modern-cpp", "compile-time-polymorphism"],
+  "patterns": ["ecs-pattern", "sparse-set", "archetype"],
+  "tags": ["ecs", "modern-cpp", "header-only", "template-metaprogramming"],
+  "description": "Header-only ECS library showcasing modern C++ patterns.",
+  "why_include": "Duplicate reference in C++ context - demonstrates advanced template metaprogramming.",
+  "estimated_size_mb": 10,
+  "mirrored": false,
+  "indexed": false
+}

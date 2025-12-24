@@ -1,0 +1,20 @@
+{
+  "id": "ftgo",
+  "name": "FTGO Application",
+  "source_url": "https://github.com/microservices-patterns/ftgo-application",
+  "target_path": "backend/microservices/ftgo",
+  "owner": "microservices-patterns",
+  "license": "Apache-2.0",
+  "domain": "backend-microservices",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": ["java"],
+  "concepts": ["microservices", "saga", "event-sourcing", "cqrs", "domain-events", "choreography", "orchestration"],
+  "patterns": ["saga", "event-sourcing", "cqrs", "choreography", "orchestration"],
+  "tags": ["microservices", "java", "saga", "chris-richardson"],
+  "description": "Example code from Chris Richardson's Microservices Patterns book.",
+  "why_include": "Companion code for the definitive microservices patterns book - shows saga implementations.",
+  "estimated_size_mb": 50,
+  "mirrored": false,
+  "indexed": false
+}

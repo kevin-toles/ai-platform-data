@@ -1,0 +1,20 @@
+{
+  "id": "abseil",
+  "name": "Abseil",
+  "source_url": "https://github.com/abseil/abseil-cpp",
+  "target_path": "cpp/core/abseil",
+  "owner": "abseil",
+  "license": "Apache-2.0",
+  "domain": "cpp-core",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["string-handling", "containers", "synchronization", "time-handling", "hash-tables", "status-handling"],
+  "patterns": ["pimpl", "type-erasure", "policy-based-design"],
+  "tags": ["cpp", "google", "stdlib-extension", "utilities"],
+  "description": "Google's C++ library - collection of C++ code designed to augment the C++ standard library.",
+  "why_include": "Google's battle-tested C++ utilities - shows production-quality C++ patterns.",
+  "estimated_size_mb": 50,
+  "mirrored": false,
+  "indexed": false
+}

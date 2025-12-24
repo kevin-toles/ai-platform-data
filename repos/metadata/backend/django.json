@@ -1,0 +1,20 @@
+{
+  "id": "django",
+  "name": "Django",
+  "source_url": "https://github.com/django/django",
+  "target_path": "backend/frameworks/django",
+  "owner": "django",
+  "license": "BSD-3-Clause",
+  "domain": "backend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["mvc", "orm", "admin-interface", "middleware", "template-engine", "batteries-included"],
+  "patterns": ["active-record", "template-view", "middleware-chain"],
+  "tags": ["python", "web-framework", "orm", "full-stack"],
+  "description": "High-level Python web framework that encourages rapid development and clean, pragmatic design.",
+  "why_include": "Most popular Python web framework - excellent for understanding full-stack MVC patterns.",
+  "estimated_size_mb": 80,
+  "mirrored": false,
+  "indexed": false
+}

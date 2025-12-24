@@ -1,0 +1,20 @@
+{
+  "id": "cockroachdb",
+  "name": "CockroachDB",
+  "source_url": "https://github.com/cockroachdb/cockroach",
+  "target_path": "databases/cockroachdb",
+  "owner": "cockroachdb",
+  "license": "Apache-2.0",
+  "domain": "databases",
+  "tier": "T1-architecture",
+  "priority": 3,
+  "languages": ["go"],
+  "concepts": ["newsql", "distributed-sql", "raft-consensus", "serializable-isolation", "geo-partitioning"],
+  "patterns": ["raft", "range-partitioning", "mvcc"],
+  "tags": ["cockroachdb", "newsql", "distributed", "raft"],
+  "description": "Distributed SQL database built for cloud - survives failures with strong consistency.",
+  "why_include": "NewSQL reference - shows how to achieve distributed SQL with strong consistency.",
+  "estimated_size_mb": 400,
+  "mirrored": false,
+  "indexed": false
+}

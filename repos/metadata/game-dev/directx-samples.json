@@ -1,0 +1,20 @@
+{
+  "id": "directx-samples",
+  "name": "DirectX Graphics Samples",
+  "source_url": "https://github.com/microsoft/DirectX-Graphics-Samples",
+  "target_path": "game-dev/rendering/directx-samples",
+  "owner": "microsoft",
+  "license": "MIT",
+  "domain": "game-dev-rendering",
+  "tier": "T3-implementation",
+  "priority": 3,
+  "languages": ["cpp"],
+  "concepts": ["directx12", "low-level-graphics", "gpu-programming", "ray-tracing", "mesh-shaders"],
+  "patterns": ["command-list", "pipeline-state", "root-signature"],
+  "tags": ["directx", "dx12", "graphics-api", "microsoft", "windows"],
+  "description": "Official DirectX 12 graphics samples from Microsoft.",
+  "why_include": "Official reference for DX12 patterns - essential for Windows/Xbox graphics programming.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

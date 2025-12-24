@@ -1,0 +1,20 @@
+{
+  "id": "airflow",
+  "name": "Apache Airflow",
+  "source_url": "https://github.com/apache/airflow",
+  "target_path": "ml/mlops/airflow",
+  "owner": "apache",
+  "license": "Apache-2.0",
+  "domain": "ml-ops",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["workflow-orchestration", "dag", "scheduling", "operators", "sensors", "executors"],
+  "patterns": ["dag", "operator", "sensor", "executor"],
+  "tags": ["airflow", "orchestration", "workflow", "apache"],
+  "description": "Platform to programmatically author, schedule and monitor workflows.",
+  "why_include": "Workflow orchestration standard - essential for data pipeline patterns.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gamenetworkingsockets",
+  "name": "GameNetworkingSockets",
+  "source_url": "https://github.com/ValveSoftware/GameNetworkingSockets",
+  "target_path": "networking/gamenetworkingsockets",
+  "owner": "ValveSoftware",
+  "license": "BSD-3-Clause",
+  "domain": "networking",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": ["c++"],
+  "concepts": ["reliable-udp", "encryption", "nat-traversal", "steam-datagram-relay", "connection-quality"],
+  "patterns": ["reliable-ordered", "encryption", "relay"],
+  "tags": ["valve", "networking", "steam", "game-dev"],
+  "description": "Valve's networking sockets library - reliable, encrypted UDP transport.",
+  "why_include": "Production game networking from Valve - shows AAA networking patterns.",
+  "estimated_size_mb": 10,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "kubeflow",
+  "name": "Kubeflow",
+  "source_url": "https://github.com/kubeflow/kubeflow",
+  "target_path": "ml/mlops/kubeflow",
+  "owner": "kubeflow",
+  "license": "Apache-2.0",
+  "domain": "ml-ops",
+  "tier": "T1-architecture",
+  "priority": 2,
+  "languages": ["python", "go"],
+  "concepts": ["ml-pipelines", "kubernetes-native", "notebooks", "model-serving", "hyperparameter-tuning"],
+  "patterns": ["pipeline", "component", "kubernetes-operator"],
+  "tags": ["kubeflow", "kubernetes", "mlops", "pipelines"],
+  "description": "Machine Learning Toolkit for Kubernetes.",
+  "why_include": "K8s-native ML platform - shows cloud-native ML architecture.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

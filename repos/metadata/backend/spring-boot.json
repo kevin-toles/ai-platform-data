@@ -1,0 +1,20 @@
+{
+  "id": "spring-boot",
+  "name": "Spring Boot",
+  "source_url": "https://github.com/spring-projects/spring-boot",
+  "target_path": "backend/frameworks/spring-boot",
+  "owner": "spring-projects",
+  "license": "Apache-2.0",
+  "domain": "backend-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["java"],
+  "concepts": ["dependency-injection", "auto-configuration", "embedded-server", "actuator", "microservices", "convention-over-configuration"],
+  "patterns": ["ioc", "factory", "template-method", "starter-pattern"],
+  "tags": ["java", "spring", "microservices", "enterprise"],
+  "description": "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications.",
+  "why_include": "Dominant Java framework - essential for understanding enterprise Java patterns.",
+  "estimated_size_mb": 150,
+  "mirrored": false,
+  "indexed": false
+}

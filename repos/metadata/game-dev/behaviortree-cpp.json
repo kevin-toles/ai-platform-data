@@ -1,0 +1,20 @@
+{
+  "id": "behaviortree-cpp",
+  "name": "BehaviorTree.CPP",
+  "source_url": "https://github.com/BehaviorTree/BehaviorTree.CPP",
+  "target_path": "game-dev/ai/behaviortree-cpp",
+  "owner": "BehaviorTree",
+  "license": "MIT",
+  "domain": "game-dev-ai",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["behavior-tree", "game-ai", "decision-making", "hierarchical-fsm", "reactive-behavior"],
+  "patterns": ["composite-pattern", "decorator-pattern", "blackboard"],
+  "tags": ["ai", "behavior-tree", "game-ai", "robotics"],
+  "description": "Behavior Trees library in C++ with focus on usability and extensibility.",
+  "why_include": "Modern C++ behavior tree implementation - cleaner than engine-specific implementations.",
+  "estimated_size_mb": 15,
+  "mirrored": false,
+  "indexed": false
+}

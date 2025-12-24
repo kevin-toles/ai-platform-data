@@ -1,0 +1,20 @@
+{
+  "id": "grafana",
+  "name": "Grafana",
+  "source_url": "https://github.com/grafana/grafana",
+  "target_path": "monitoring/grafana",
+  "owner": "grafana",
+  "license": "AGPL-3.0",
+  "domain": "monitoring",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["typescript", "go"],
+  "concepts": ["visualization", "dashboards", "data-sources", "alerting", "plugins"],
+  "patterns": ["plugin-architecture", "data-source-abstraction", "dashboard"],
+  "tags": ["grafana", "visualization", "dashboards", "observability"],
+  "description": "Open and composable observability and data visualization platform.",
+  "why_include": "Standard visualization platform - shows plugin architecture and dashboarding.",
+  "estimated_size_mb": 300,
+  "mirrored": false,
+  "indexed": false
+}

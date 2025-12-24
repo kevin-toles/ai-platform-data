@@ -1,0 +1,20 @@
+{
+  "id": "cassandra",
+  "name": "Apache Cassandra",
+  "source_url": "https://github.com/apache/cassandra",
+  "target_path": "databases/cassandra",
+  "owner": "apache",
+  "license": "Apache-2.0",
+  "domain": "databases",
+  "tier": "T1-architecture",
+  "priority": 2,
+  "languages": ["java"],
+  "concepts": ["distributed", "wide-column", "eventual-consistency", "partitioning", "gossip-protocol", "lsm-tree"],
+  "patterns": ["consistent-hashing", "gossip", "lsm-tree", "quorum"],
+  "tags": ["cassandra", "nosql", "distributed", "wide-column"],
+  "description": "Distributed NoSQL database for handling large amounts of data across many servers.",
+  "why_include": "Distributed database reference - shows partition-tolerant architecture.",
+  "estimated_size_mb": 200,
+  "mirrored": false,
+  "indexed": false
+}

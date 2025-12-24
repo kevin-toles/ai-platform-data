@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-platform-data/schemas/repo_registry.schema.json",
+  "title": "Repository Registry Schema",
+  "description": "Master registry of all reference repositories organized by domain.",
+  "type": "object",
+  "required": ["registry_version", "code_engine_repo", "domains"],
+  "properties": {
+    "registry_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "description": {
+      "type": "string"
+    },
+    "code_engine_repo": {
+      "type": "string",
+      "description": "GitHub URL of the code-reference-engine repo"
+    },
+    "total_repos": {
+      "type": "integer"
+    },
+    "total_mirrored": {
+      "type": "integer"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/domain"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "definitions": {
+    "domain": {
+      "type": "object",
+      "required": ["id", "name", "path", "repos"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path in code-reference-engine"
+        },
+        "description": {
+          "type": "string"
+        },
+        "repo_count": {
+          "type": "integer"
+        },
+        "repos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "metadata_path"],
+            "properties": {
+              "id": { "type": "string" },
+              "metadata_path": { "type": "string" },
+              "priority": { "type": "integer" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

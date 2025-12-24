@@ -1,0 +1,20 @@
+{
+  "id": "folly",
+  "name": "Folly",
+  "source_url": "https://github.com/facebook/folly",
+  "target_path": "cpp/core/folly",
+  "owner": "facebook",
+  "license": "Apache-2.0",
+  "domain": "cpp-core",
+  "tier": "T1-architecture",
+  "priority": 2,
+  "languages": ["cpp"],
+  "concepts": ["async-programming", "futures", "executors", "memory-allocation", "concurrent-containers", "networking"],
+  "patterns": ["future-promise", "executor", "lock-free"],
+  "tags": ["cpp", "facebook", "async", "performance"],
+  "description": "Facebook's open-source C++ library - core library used across Facebook's infrastructure.",
+  "why_include": "Facebook's high-performance C++ library - excellent for async patterns and concurrency.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}

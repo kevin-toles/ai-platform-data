@@ -1,0 +1,20 @@
+{
+  "id": "godot",
+  "name": "Godot Engine",
+  "source_url": "https://github.com/godotengine/godot",
+  "target_path": "game-dev/engines/godot",
+  "owner": "godotengine",
+  "license": "MIT",
+  "domain": "game-dev-engines",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp", "c"],
+  "concepts": ["game-engine", "scene-graph", "scripting-runtime", "editor-architecture", "signal-slot", "resource-management", "gdscript"],
+  "patterns": ["component-pattern", "observer", "command", "singleton", "factory", "scene-tree"],
+  "tags": ["game-engine", "2d", "3d", "open-source", "gdscript", "editor", "cross-platform"],
+  "description": "Full-featured open-source game engine with built-in editor, scene system, and GDScript scripting.",
+  "why_include": "Complete engine architecture reference - shows how to build scene graphs, editors, and scripting runtimes in C++.",
+  "estimated_size_mb": 800,
+  "mirrored": false,
+  "indexed": false
+}

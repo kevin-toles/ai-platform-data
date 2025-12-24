@@ -1,0 +1,20 @@
+{
+  "id": "spring-petclinic",
+  "name": "Spring PetClinic",
+  "source_url": "https://github.com/spring-projects/spring-petclinic",
+  "target_path": "backend/microservices/spring-petclinic",
+  "owner": "spring-projects",
+  "license": "Apache-2.0",
+  "domain": "backend-microservices",
+  "tier": "T3-implementation",
+  "priority": 2,
+  "languages": ["java"],
+  "concepts": ["mvc", "layered-architecture", "repository-pattern", "service-layer", "spring-data"],
+  "patterns": ["repository", "service-layer", "mvc"],
+  "tags": ["spring", "java", "monolith", "sample-app"],
+  "description": "Classic Spring sample application demonstrating layered MVC architecture.",
+  "why_include": "Classic Spring example - good baseline for comparing monolith vs microservices.",
+  "estimated_size_mb": 20,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "mlflow",
+  "name": "MLflow",
+  "source_url": "https://github.com/mlflow/mlflow",
+  "target_path": "ml/mlops/mlflow",
+  "owner": "mlflow",
+  "license": "Apache-2.0",
+  "domain": "ml-ops",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["experiment-tracking", "model-registry", "model-serving", "projects", "artifacts"],
+  "patterns": ["tracking", "registry", "artifact-store"],
+  "tags": ["mlflow", "mlops", "experiment-tracking", "databricks"],
+  "description": "Open source platform for the machine learning lifecycle.",
+  "why_include": "MLOps standard - essential for understanding ML lifecycle management.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}
