@@ -8,13 +8,31 @@
   "domain": "ml-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["c++", "python"],
-  "concepts": ["deep-learning", "dynamic-graph", "autograd", "cuda", "distributed"],
-  "patterns": ["dynamic-computational-graph", "autograd", "module-api"],
-  "tags": ["pytorch", "ml", "deep-learning", "meta"],
+  "languages": [
+    "c++",
+    "python"
+  ],
+  "concepts": [
+    "deep-learning",
+    "dynamic-graph",
+    "autograd",
+    "cuda",
+    "distributed"
+  ],
+  "patterns": [
+    "dynamic-computational-graph",
+    "autograd",
+    "module-api"
+  ],
+  "tags": [
+    "pytorch",
+    "ml",
+    "deep-learning",
+    "meta"
+  ],
   "description": "Tensors and dynamic neural networks in Python with strong GPU acceleration.",
   "why_include": "Research-dominant ML framework - essential for understanding dynamic graphs.",
   "estimated_size_mb": 600,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

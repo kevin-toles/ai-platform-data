@@ -8,13 +8,31 @@
   "domain": "testing",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python"],
-  "concepts": ["unit-testing", "fixtures", "plugins", "markers", "parameterization", "conftest"],
-  "patterns": ["fixture", "plugin-architecture", "parametrize"],
-  "tags": ["pytest", "testing", "python", "unit-testing"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "unit-testing",
+    "fixtures",
+    "plugins",
+    "markers",
+    "parameterization",
+    "conftest"
+  ],
+  "patterns": [
+    "fixture",
+    "plugin-architecture",
+    "parametrize"
+  ],
+  "tags": [
+    "pytest",
+    "testing",
+    "python",
+    "unit-testing"
+  ],
   "description": "The pytest framework makes it easy to write small, readable tests.",
   "why_include": "Python testing standard - essential for understanding fixture-based testing.",
   "estimated_size_mb": 30,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

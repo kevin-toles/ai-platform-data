@@ -8,13 +8,31 @@
   "domain": "security",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["java"],
-  "concepts": ["identity-management", "oauth2", "oidc", "saml", "federation", "single-sign-on"],
-  "patterns": ["identity-provider", "token-based-auth", "federation"],
-  "tags": ["keycloak", "identity", "oauth", "sso"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "identity-management",
+    "oauth2",
+    "oidc",
+    "saml",
+    "federation",
+    "single-sign-on"
+  ],
+  "patterns": [
+    "identity-provider",
+    "token-based-auth",
+    "federation"
+  ],
+  "tags": [
+    "keycloak",
+    "identity",
+    "oauth",
+    "sso"
+  ],
   "description": "Open Source Identity and Access Management for modern applications and services.",
   "why_include": "Standard IAM solution - essential for understanding auth flows and SSO.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

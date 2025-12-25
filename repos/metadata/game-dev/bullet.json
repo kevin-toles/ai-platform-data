@@ -8,13 +8,32 @@
   "domain": "game-dev-physics",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["cpp", "c"],
-  "concepts": ["physics-simulation", "rigid-body", "collision-detection", "constraint-solver", "broadphase", "narrowphase"],
-  "patterns": ["visitor", "strategy", "composite"],
-  "tags": ["physics", "simulation", "collision", "dynamics"],
+  "languages": [
+    "cpp",
+    "c"
+  ],
+  "concepts": [
+    "physics-simulation",
+    "rigid-body",
+    "collision-detection",
+    "constraint-solver",
+    "broadphase",
+    "narrowphase"
+  ],
+  "patterns": [
+    "visitor",
+    "strategy",
+    "composite"
+  ],
+  "tags": [
+    "physics",
+    "simulation",
+    "collision",
+    "dynamics"
+  ],
   "description": "Real-time collision detection and multi-physics simulation for games and visual effects.",
   "why_include": "Industry standard open-source physics engine - used in games, film, and robotics.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

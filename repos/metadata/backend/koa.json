@@ -8,13 +8,29 @@
   "domain": "backend-frameworks",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["javascript"],
-  "concepts": ["async-middleware", "context-object", "error-handling", "modern-javascript"],
-  "patterns": ["middleware-chain", "async-await", "onion-model"],
-  "tags": ["nodejs", "javascript", "async", "modern"],
+  "languages": [
+    "javascript"
+  ],
+  "concepts": [
+    "async-middleware",
+    "context-object",
+    "error-handling",
+    "modern-javascript"
+  ],
+  "patterns": [
+    "middleware-chain",
+    "async-await",
+    "onion-model"
+  ],
+  "tags": [
+    "nodejs",
+    "javascript",
+    "async",
+    "modern"
+  ],
   "description": "Next generation web framework for Node.js using async functions.",
   "why_include": "Express successor with modern async/await - shows evolution of middleware patterns.",
   "estimated_size_mb": 3,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,30 @@
   "domain": "monitoring",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["go"],
-  "concepts": ["distributed-tracing", "spans", "context-propagation", "sampling", "opentelemetry"],
-  "patterns": ["trace-context", "sampling", "collector-agent"],
-  "tags": ["jaeger", "tracing", "distributed", "cncf"],
+  "languages": [
+    "go"
+  ],
+  "concepts": [
+    "distributed-tracing",
+    "spans",
+    "context-propagation",
+    "sampling",
+    "opentelemetry"
+  ],
+  "patterns": [
+    "trace-context",
+    "sampling",
+    "collector-agent"
+  ],
+  "tags": [
+    "jaeger",
+    "tracing",
+    "distributed",
+    "cncf"
+  ],
   "description": "Distributed tracing platform for monitoring and troubleshooting microservices.",
   "why_include": "CNCF tracing standard - essential for understanding distributed tracing.",
   "estimated_size_mb": 80,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

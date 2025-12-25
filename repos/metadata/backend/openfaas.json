@@ -8,13 +8,31 @@
   "domain": "backend-serverless",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["go"],
-  "concepts": ["serverless", "faas", "kubernetes", "docker", "auto-scaling", "watchdog"],
-  "patterns": ["sidecar", "gateway", "auto-scaling"],
-  "tags": ["serverless", "kubernetes", "faas", "self-hosted"],
+  "languages": [
+    "go"
+  ],
+  "concepts": [
+    "serverless",
+    "faas",
+    "kubernetes",
+    "docker",
+    "auto-scaling",
+    "watchdog"
+  ],
+  "patterns": [
+    "sidecar",
+    "gateway",
+    "auto-scaling"
+  ],
+  "tags": [
+    "serverless",
+    "kubernetes",
+    "faas",
+    "self-hosted"
+  ],
   "description": "Serverless Functions Made Simple - deploy functions to Kubernetes.",
   "why_include": "Self-hosted serverless platform - shows how FaaS platforms work internally.",
   "estimated_size_mb": 30,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

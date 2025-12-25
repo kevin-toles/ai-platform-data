@@ -9,12 +9,27 @@
   "tier": "T3-implementation",
   "priority": 1,
   "languages": [],
-  "concepts": ["kubernetes-internals", "etcd", "api-server", "controller-manager", "kubelet", "networking"],
-  "patterns": ["step-by-step", "manual-setup"],
-  "tags": ["kubernetes", "learning", "internals", "tutorial"],
+  "concepts": [
+    "kubernetes-internals",
+    "etcd",
+    "api-server",
+    "controller-manager",
+    "kubelet",
+    "networking"
+  ],
+  "patterns": [
+    "step-by-step",
+    "manual-setup"
+  ],
+  "tags": [
+    "kubernetes",
+    "learning",
+    "internals",
+    "tutorial"
+  ],
   "description": "Tutorial for bootstrapping Kubernetes the hard way - no scripts, just manual steps.",
   "why_include": "Best way to understand K8s internals - builds cluster component by component.",
   "estimated_size_mb": 1,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

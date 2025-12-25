@@ -8,13 +8,32 @@
   "domain": "game-dev-engines",
   "tier": "T1-architecture",
   "priority": 2,
-  "languages": ["cpp"],
-  "concepts": ["game-engine", "component-system", "scene-management", "resource-caching", "event-system"],
-  "patterns": ["component-pattern", "observer", "factory", "object-pool"],
-  "tags": ["game-engine", "lightweight", "3d", "2d", "cross-platform"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "game-engine",
+    "component-system",
+    "scene-management",
+    "resource-caching",
+    "event-system"
+  ],
+  "patterns": [
+    "component-pattern",
+    "observer",
+    "factory",
+    "object-pool"
+  ],
+  "tags": [
+    "game-engine",
+    "lightweight",
+    "3d",
+    "2d",
+    "cross-platform"
+  ],
   "description": "Lightweight cross-platform 2D/3D game engine with clean C++ architecture.",
   "why_include": "Cleaner, more approachable engine architecture than larger engines - good for learning engine patterns.",
   "estimated_size_mb": 300,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

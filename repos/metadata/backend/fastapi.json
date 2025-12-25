@@ -8,13 +8,32 @@
   "domain": "backend-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python"],
-  "concepts": ["async-api", "type-hints", "openapi", "pydantic", "dependency-injection", "automatic-docs"],
-  "patterns": ["dependency-injection", "decorator", "middleware"],
-  "tags": ["python", "async", "api", "openapi", "modern"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "async-api",
+    "type-hints",
+    "openapi",
+    "pydantic",
+    "dependency-injection",
+    "automatic-docs"
+  ],
+  "patterns": [
+    "dependency-injection",
+    "decorator",
+    "middleware"
+  ],
+  "tags": [
+    "python",
+    "async",
+    "api",
+    "openapi",
+    "modern"
+  ],
   "description": "Modern, fast web framework for building APIs with Python 3.7+ based on standard Python type hints.",
   "why_include": "Modern Python API framework - shows async patterns and automatic validation/docs.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

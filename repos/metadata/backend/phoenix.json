@@ -8,13 +8,31 @@
   "domain": "backend-frameworks",
   "tier": "T2-patterns",
   "priority": 3,
-  "languages": ["elixir"],
-  "concepts": ["mvc", "channels", "liveview", "pubsub", "presence", "real-time"],
-  "patterns": ["mvc", "pubsub", "actor-model"],
-  "tags": ["elixir", "real-time", "websockets", "functional"],
+  "languages": [
+    "elixir"
+  ],
+  "concepts": [
+    "mvc",
+    "channels",
+    "liveview",
+    "pubsub",
+    "presence",
+    "real-time"
+  ],
+  "patterns": [
+    "mvc",
+    "pubsub",
+    "actor-model"
+  ],
+  "tags": [
+    "elixir",
+    "real-time",
+    "websockets",
+    "functional"
+  ],
   "description": "Web framework for Elixir leveraging the Erlang VM for real-time, fault-tolerant applications.",
   "why_include": "Best-in-class real-time framework - shows functional patterns and BEAM concurrency.",
   "estimated_size_mb": 30,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

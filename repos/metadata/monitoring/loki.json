@@ -8,13 +8,29 @@
   "domain": "monitoring",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["go"],
-  "concepts": ["log-aggregation", "labels", "chunks", "logql", "promtail"],
-  "patterns": ["label-based-indexing", "chunk-storage"],
-  "tags": ["loki", "logging", "grafana", "observability"],
+  "languages": [
+    "go"
+  ],
+  "concepts": [
+    "log-aggregation",
+    "labels",
+    "chunks",
+    "logql",
+    "promtail"
+  ],
+  "patterns": [
+    "label-based-indexing",
+    "chunk-storage"
+  ],
+  "tags": [
+    "loki",
+    "logging",
+    "grafana",
+    "observability"
+  ],
   "description": "Horizontally scalable, highly available log aggregation system inspired by Prometheus.",
   "why_include": "Modern log aggregation - shows Prometheus-inspired log architecture.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

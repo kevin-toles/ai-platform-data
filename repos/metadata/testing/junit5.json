@@ -8,13 +8,30 @@
   "domain": "testing",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["java"],
-  "concepts": ["unit-testing", "test-lifecycle", "extensions", "parameterized-tests", "assertions"],
-  "patterns": ["test-lifecycle", "extension-model", "parameterized"],
-  "tags": ["junit", "testing", "java", "unit-testing"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "unit-testing",
+    "test-lifecycle",
+    "extensions",
+    "parameterized-tests",
+    "assertions"
+  ],
+  "patterns": [
+    "test-lifecycle",
+    "extension-model",
+    "parameterized"
+  ],
+  "tags": [
+    "junit",
+    "testing",
+    "java",
+    "unit-testing"
+  ],
   "description": "Programmer-friendly testing framework for Java and the JVM.",
   "why_include": "Java testing standard - essential for understanding test framework architecture.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

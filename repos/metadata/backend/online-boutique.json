@@ -8,13 +8,38 @@
   "domain": "backend-microservices",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["go", "python", "java", "csharp", "javascript"],
-  "concepts": ["microservices", "grpc", "kubernetes", "istio", "service-mesh", "polyglot", "observability"],
-  "patterns": ["api-gateway", "service-mesh", "sidecar", "health-check"],
-  "tags": ["microservices", "google", "kubernetes", "grpc", "polyglot"],
+  "languages": [
+    "go",
+    "python",
+    "java",
+    "csharp",
+    "javascript"
+  ],
+  "concepts": [
+    "microservices",
+    "grpc",
+    "kubernetes",
+    "istio",
+    "service-mesh",
+    "polyglot",
+    "observability"
+  ],
+  "patterns": [
+    "api-gateway",
+    "service-mesh",
+    "sidecar",
+    "health-check"
+  ],
+  "tags": [
+    "microservices",
+    "google",
+    "kubernetes",
+    "grpc",
+    "polyglot"
+  ],
   "description": "Cloud-native microservices demo (11 services in 5 languages) for Kubernetes/GKE.",
   "why_include": "Google's official microservices reference - shows polyglot architecture on Kubernetes.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

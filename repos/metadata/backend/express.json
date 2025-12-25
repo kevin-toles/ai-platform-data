@@ -8,13 +8,30 @@
   "domain": "backend-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["javascript"],
-  "concepts": ["middleware", "routing", "http-server", "request-response", "error-handling"],
-  "patterns": ["middleware-chain", "decorator", "factory"],
-  "tags": ["nodejs", "javascript", "web-framework", "middleware"],
+  "languages": [
+    "javascript"
+  ],
+  "concepts": [
+    "middleware",
+    "routing",
+    "http-server",
+    "request-response",
+    "error-handling"
+  ],
+  "patterns": [
+    "middleware-chain",
+    "decorator",
+    "factory"
+  ],
+  "tags": [
+    "nodejs",
+    "javascript",
+    "web-framework",
+    "middleware"
+  ],
   "description": "Fast, unopinionated, minimalist web framework for Node.js.",
   "why_include": "Most popular Node.js framework - essential for understanding middleware patterns.",
   "estimated_size_mb": 5,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,32 @@
   "domain": "game-dev-engines",
   "tier": "T3-implementation",
   "priority": 4,
-  "languages": ["cpp"],
-  "concepts": ["open-world", "game-engine", "mod-support", "scripting", "save-system", "npc-ai", "quest-system"],
-  "patterns": ["component-pattern", "state-machine", "command"],
-  "tags": ["open-world", "rpg", "modding", "reimplementation"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "open-world",
+    "game-engine",
+    "mod-support",
+    "scripting",
+    "save-system",
+    "npc-ai",
+    "quest-system"
+  ],
+  "patterns": [
+    "component-pattern",
+    "state-machine",
+    "command"
+  ],
+  "tags": [
+    "open-world",
+    "rpg",
+    "modding",
+    "reimplementation"
+  ],
   "description": "Open-source reimplementation of Morrowind engine - large-scale open-world architecture.",
   "why_include": "Real-world example of open-world game architecture with mod support and complex game systems.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

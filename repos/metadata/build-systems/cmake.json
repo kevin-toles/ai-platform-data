@@ -8,13 +8,31 @@
   "domain": "build-systems",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["c++"],
-  "concepts": ["build-system", "cross-platform", "generators", "targets", "packages", "modules"],
-  "patterns": ["target-based", "generator", "find-module"],
-  "tags": ["cmake", "build", "c++", "cross-platform"],
+  "languages": [
+    "c++"
+  ],
+  "concepts": [
+    "build-system",
+    "cross-platform",
+    "generators",
+    "targets",
+    "packages",
+    "modules"
+  ],
+  "patterns": [
+    "target-based",
+    "generator",
+    "find-module"
+  ],
+  "tags": [
+    "cmake",
+    "build",
+    "c++",
+    "cross-platform"
+  ],
   "description": "Cross-platform family of tools designed to build, test and package software.",
   "why_include": "C++ build standard - essential for understanding modern C++ build systems.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

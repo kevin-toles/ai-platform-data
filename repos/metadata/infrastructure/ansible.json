@@ -8,13 +8,31 @@
   "domain": "infrastructure",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["python"],
-  "concepts": ["configuration-management", "playbooks", "inventory", "modules", "roles", "idempotent"],
-  "patterns": ["idempotent", "declarative", "task-runner"],
-  "tags": ["ansible", "automation", "configuration", "redhat"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "configuration-management",
+    "playbooks",
+    "inventory",
+    "modules",
+    "roles",
+    "idempotent"
+  ],
+  "patterns": [
+    "idempotent",
+    "declarative",
+    "task-runner"
+  ],
+  "tags": [
+    "ansible",
+    "automation",
+    "configuration",
+    "redhat"
+  ],
   "description": "Automation platform for configuration management, app deployment, and task automation.",
   "why_include": "Popular configuration management - shows idempotent automation patterns.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

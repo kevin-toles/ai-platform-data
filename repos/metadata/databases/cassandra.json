@@ -8,13 +8,32 @@
   "domain": "databases",
   "tier": "T1-architecture",
   "priority": 2,
-  "languages": ["java"],
-  "concepts": ["distributed", "wide-column", "eventual-consistency", "partitioning", "gossip-protocol", "lsm-tree"],
-  "patterns": ["consistent-hashing", "gossip", "lsm-tree", "quorum"],
-  "tags": ["cassandra", "nosql", "distributed", "wide-column"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "distributed",
+    "wide-column",
+    "eventual-consistency",
+    "partitioning",
+    "gossip-protocol",
+    "lsm-tree"
+  ],
+  "patterns": [
+    "consistent-hashing",
+    "gossip",
+    "lsm-tree",
+    "quorum"
+  ],
+  "tags": [
+    "cassandra",
+    "nosql",
+    "distributed",
+    "wide-column"
+  ],
   "description": "Distributed NoSQL database for handling large amounts of data across many servers.",
   "why_include": "Distributed database reference - shows partition-tolerant architecture.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

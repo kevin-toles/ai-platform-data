@@ -8,13 +8,33 @@
   "domain": "backend-serverless",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python", "javascript"],
-  "concepts": ["serverless", "lambda", "step-functions", "dynamodb", "appsync", "graphql", "event-driven"],
-  "patterns": ["saga", "event-driven", "api-composition"],
-  "tags": ["serverless", "aws", "lambda", "step-functions"],
+  "languages": [
+    "python",
+    "javascript"
+  ],
+  "concepts": [
+    "serverless",
+    "lambda",
+    "step-functions",
+    "dynamodb",
+    "appsync",
+    "graphql",
+    "event-driven"
+  ],
+  "patterns": [
+    "saga",
+    "event-driven",
+    "api-composition"
+  ],
+  "tags": [
+    "serverless",
+    "aws",
+    "lambda",
+    "step-functions"
+  ],
   "description": "Full-stack serverless airline booking application on AWS.",
   "why_include": "Production-grade serverless reference - shows AWS best practices end-to-end.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

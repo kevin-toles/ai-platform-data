@@ -8,13 +8,30 @@
   "domain": "build-systems",
   "tier": "T3-implementation",
   "priority": 3,
-  "languages": ["c", "lua"],
-  "concepts": ["project-generation", "lua-scripting", "visual-studio", "makefiles", "xcode"],
-  "patterns": ["lua-dsl", "project-generator"],
-  "tags": ["premake", "build", "lua", "game-dev"],
+  "languages": [
+    "c",
+    "lua"
+  ],
+  "concepts": [
+    "project-generation",
+    "lua-scripting",
+    "visual-studio",
+    "makefiles",
+    "xcode"
+  ],
+  "patterns": [
+    "lua-dsl",
+    "project-generator"
+  ],
+  "tags": [
+    "premake",
+    "build",
+    "lua",
+    "game-dev"
+  ],
   "description": "Powerfully simple build configuration using Lua scripts.",
   "why_include": "Game dev favorite - shows simple Lua-based project generation.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

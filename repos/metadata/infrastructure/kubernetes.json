@@ -8,13 +8,32 @@
   "domain": "infrastructure",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["go"],
-  "concepts": ["container-orchestration", "declarative-config", "controllers", "operators", "scheduling", "networking"],
-  "patterns": ["controller", "operator", "reconciliation-loop", "declarative"],
-  "tags": ["kubernetes", "containers", "orchestration", "cncf"],
+  "languages": [
+    "go"
+  ],
+  "concepts": [
+    "container-orchestration",
+    "declarative-config",
+    "controllers",
+    "operators",
+    "scheduling",
+    "networking"
+  ],
+  "patterns": [
+    "controller",
+    "operator",
+    "reconciliation-loop",
+    "declarative"
+  ],
+  "tags": [
+    "kubernetes",
+    "containers",
+    "orchestration",
+    "cncf"
+  ],
   "description": "Production-grade container orchestration system.",
   "why_include": "The container orchestration platform - essential for understanding cloud-native.",
   "estimated_size_mb": 500,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

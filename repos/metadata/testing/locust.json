@@ -8,13 +8,30 @@
   "domain": "testing",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["python"],
-  "concepts": ["load-testing", "distributed", "code-as-tests", "real-time-stats", "web-ui"],
-  "patterns": ["user-class", "task-weight", "distributed-execution"],
-  "tags": ["locust", "load-testing", "python", "performance"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "load-testing",
+    "distributed",
+    "code-as-tests",
+    "real-time-stats",
+    "web-ui"
+  ],
+  "patterns": [
+    "user-class",
+    "task-weight",
+    "distributed-execution"
+  ],
+  "tags": [
+    "locust",
+    "load-testing",
+    "python",
+    "performance"
+  ],
   "description": "Scalable load testing tool written in Python - define user behavior with code.",
   "why_include": "Python load testing - shows code-first approach to performance testing.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

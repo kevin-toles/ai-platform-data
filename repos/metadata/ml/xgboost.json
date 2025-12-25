@@ -8,13 +8,30 @@
   "domain": "ml-frameworks",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["c++", "python"],
-  "concepts": ["gradient-boosting", "decision-trees", "regularization", "distributed-training"],
-  "patterns": ["boosting", "ensemble", "early-stopping"],
-  "tags": ["xgboost", "ml", "gradient-boosting", "tabular"],
+  "languages": [
+    "c++",
+    "python"
+  ],
+  "concepts": [
+    "gradient-boosting",
+    "decision-trees",
+    "regularization",
+    "distributed-training"
+  ],
+  "patterns": [
+    "boosting",
+    "ensemble",
+    "early-stopping"
+  ],
+  "tags": [
+    "xgboost",
+    "ml",
+    "gradient-boosting",
+    "tabular"
+  ],
   "description": "Scalable and flexible gradient boosting - wins Kaggle competitions.",
   "why_include": "Tabular ML champion - essential for understanding gradient boosting.",
   "estimated_size_mb": 80,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

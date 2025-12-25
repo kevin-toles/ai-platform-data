@@ -8,13 +8,31 @@
   "domain": "game-dev-rendering",
   "tier": "T3-implementation",
   "priority": 2,
-  "languages": ["cpp"],
-  "concepts": ["vulkan", "low-level-graphics", "gpu-programming", "render-passes", "descriptor-sets", "synchronization"],
-  "patterns": ["command-buffer", "pipeline-state", "resource-binding"],
-  "tags": ["vulkan", "graphics-api", "samples", "khronos"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "vulkan",
+    "low-level-graphics",
+    "gpu-programming",
+    "render-passes",
+    "descriptor-sets",
+    "synchronization"
+  ],
+  "patterns": [
+    "command-buffer",
+    "pipeline-state",
+    "resource-binding"
+  ],
+  "tags": [
+    "vulkan",
+    "graphics-api",
+    "samples",
+    "khronos"
+  ],
   "description": "Official Vulkan samples from Khronos Group demonstrating API usage and best practices.",
   "why_include": "Official reference for Vulkan patterns - essential for low-level graphics programming.",
   "estimated_size_mb": 300,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

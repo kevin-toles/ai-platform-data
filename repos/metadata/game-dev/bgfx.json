@@ -8,13 +8,35 @@
   "domain": "game-dev-rendering",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["cpp", "c"],
-  "concepts": ["rendering-abstraction", "cross-platform-graphics", "shader-compilation", "render-graph", "multi-backend"],
-  "patterns": ["facade", "adapter", "command-buffer"],
-  "tags": ["rendering", "graphics", "cross-platform", "dx11", "dx12", "vulkan", "opengl", "metal"],
+  "languages": [
+    "cpp",
+    "c"
+  ],
+  "concepts": [
+    "rendering-abstraction",
+    "cross-platform-graphics",
+    "shader-compilation",
+    "render-graph",
+    "multi-backend"
+  ],
+  "patterns": [
+    "facade",
+    "adapter",
+    "command-buffer"
+  ],
+  "tags": [
+    "rendering",
+    "graphics",
+    "cross-platform",
+    "dx11",
+    "dx12",
+    "vulkan",
+    "opengl",
+    "metal"
+  ],
   "description": "Cross-platform, graphics API agnostic rendering library with multiple backend support.",
   "why_include": "Best example of abstracting multiple graphics APIs - supports DX9/11/12, Metal, Vulkan, OpenGL.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,31 @@
   "domain": "backend-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["ruby"],
-  "concepts": ["mvc", "active-record", "convention-over-configuration", "scaffolding", "migrations", "concerns"],
-  "patterns": ["active-record", "mvc", "convention-over-configuration"],
-  "tags": ["ruby", "full-stack", "mvc", "productive"],
+  "languages": [
+    "ruby"
+  ],
+  "concepts": [
+    "mvc",
+    "active-record",
+    "convention-over-configuration",
+    "scaffolding",
+    "migrations",
+    "concerns"
+  ],
+  "patterns": [
+    "active-record",
+    "mvc",
+    "convention-over-configuration"
+  ],
+  "tags": [
+    "ruby",
+    "full-stack",
+    "mvc",
+    "productive"
+  ],
   "description": "Full-stack web framework optimized for programmer happiness and sustainable productivity.",
   "why_include": "Pioneering MVC framework - influenced countless other frameworks.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

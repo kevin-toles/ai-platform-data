@@ -8,13 +8,31 @@
   "domain": "monitoring",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["typescript", "go"],
-  "concepts": ["visualization", "dashboards", "data-sources", "alerting", "plugins"],
-  "patterns": ["plugin-architecture", "data-source-abstraction", "dashboard"],
-  "tags": ["grafana", "visualization", "dashboards", "observability"],
+  "languages": [
+    "typescript",
+    "go"
+  ],
+  "concepts": [
+    "visualization",
+    "dashboards",
+    "data-sources",
+    "alerting",
+    "plugins"
+  ],
+  "patterns": [
+    "plugin-architecture",
+    "data-source-abstraction",
+    "dashboard"
+  ],
+  "tags": [
+    "grafana",
+    "visualization",
+    "dashboards",
+    "observability"
+  ],
   "description": "Open and composable observability and data visualization platform.",
   "why_include": "Standard visualization platform - shows plugin architecture and dashboarding.",
   "estimated_size_mb": 300,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

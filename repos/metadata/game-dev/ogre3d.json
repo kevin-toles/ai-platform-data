@@ -8,13 +8,31 @@
   "domain": "game-dev-engines",
   "tier": "T2-patterns",
   "priority": 3,
-  "languages": ["cpp"],
-  "concepts": ["rendering-engine", "scene-graph", "material-system", "plugin-architecture", "resource-management"],
-  "patterns": ["singleton", "factory", "plugin", "strategy"],
-  "tags": ["rendering", "3d", "graphics", "scene-graph"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "rendering-engine",
+    "scene-graph",
+    "material-system",
+    "plugin-architecture",
+    "resource-management"
+  ],
+  "patterns": [
+    "singleton",
+    "factory",
+    "plugin",
+    "strategy"
+  ],
+  "tags": [
+    "rendering",
+    "3d",
+    "graphics",
+    "scene-graph"
+  ],
   "description": "Rendering-focused 3D engine known for clean scene graph and material system design.",
   "why_include": "Focused rendering architecture - excellent reference for scene graphs and material systems.",
   "estimated_size_mb": 400,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

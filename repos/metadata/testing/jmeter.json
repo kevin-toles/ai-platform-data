@@ -8,13 +8,31 @@
   "domain": "testing",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["java"],
-  "concepts": ["load-testing", "performance-testing", "distributed-testing", "samplers", "assertions"],
-  "patterns": ["test-plan", "sampler", "listener", "distributed-execution"],
-  "tags": ["jmeter", "load-testing", "performance", "apache"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "load-testing",
+    "performance-testing",
+    "distributed-testing",
+    "samplers",
+    "assertions"
+  ],
+  "patterns": [
+    "test-plan",
+    "sampler",
+    "listener",
+    "distributed-execution"
+  ],
+  "tags": [
+    "jmeter",
+    "load-testing",
+    "performance",
+    "apache"
+  ],
   "description": "Application designed to load test functional behavior and measure performance.",
   "why_include": "Standard load testing tool - shows performance testing architecture.",
   "estimated_size_mb": 80,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

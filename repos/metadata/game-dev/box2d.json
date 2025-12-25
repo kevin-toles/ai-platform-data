@@ -8,13 +8,30 @@
   "domain": "game-dev-physics",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["c"],
-  "concepts": ["2d-physics", "rigid-body", "collision-detection", "constraint-solver", "continuous-collision"],
-  "patterns": ["island-solver", "broadphase", "contact-graph"],
-  "tags": ["physics", "2d", "simulation", "games"],
+  "languages": [
+    "c"
+  ],
+  "concepts": [
+    "2d-physics",
+    "rigid-body",
+    "collision-detection",
+    "constraint-solver",
+    "continuous-collision"
+  ],
+  "patterns": [
+    "island-solver",
+    "broadphase",
+    "contact-graph"
+  ],
+  "tags": [
+    "physics",
+    "2d",
+    "simulation",
+    "games"
+  ],
   "description": "A 2D physics engine for games.",
   "why_include": "The standard for 2D physics - clean, well-documented, used in countless 2D games.",
   "estimated_size_mb": 10,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

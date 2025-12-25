@@ -8,13 +8,31 @@
   "domain": "testing",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["javascript", "typescript"],
-  "concepts": ["e2e-testing", "component-testing", "time-travel", "automatic-waiting", "network-stubbing"],
-  "patterns": ["command-chaining", "automatic-retry", "time-travel-debugging"],
-  "tags": ["cypress", "testing", "e2e", "javascript"],
+  "languages": [
+    "javascript",
+    "typescript"
+  ],
+  "concepts": [
+    "e2e-testing",
+    "component-testing",
+    "time-travel",
+    "automatic-waiting",
+    "network-stubbing"
+  ],
+  "patterns": [
+    "command-chaining",
+    "automatic-retry",
+    "time-travel-debugging"
+  ],
+  "tags": [
+    "cypress",
+    "testing",
+    "e2e",
+    "javascript"
+  ],
   "description": "Fast, easy and reliable testing for anything that runs in a browser.",
   "why_include": "Modern E2E testing - shows developer-friendly test architecture.",
   "estimated_size_mb": 150,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

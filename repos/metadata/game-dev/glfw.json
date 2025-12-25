@@ -8,13 +8,29 @@
   "domain": "game-dev-systems",
   "tier": "T2-patterns",
   "priority": 3,
-  "languages": ["c"],
-  "concepts": ["windowing", "opengl-context", "vulkan-context", "input-handling", "cross-platform"],
-  "patterns": ["facade", "platform-abstraction"],
-  "tags": ["windowing", "opengl", "vulkan", "context-creation"],
+  "languages": [
+    "c"
+  ],
+  "concepts": [
+    "windowing",
+    "opengl-context",
+    "vulkan-context",
+    "input-handling",
+    "cross-platform"
+  ],
+  "patterns": [
+    "facade",
+    "platform-abstraction"
+  ],
+  "tags": [
+    "windowing",
+    "opengl",
+    "vulkan",
+    "context-creation"
+  ],
   "description": "Multi-platform library for OpenGL, OpenGL ES and Vulkan application development.",
   "why_include": "Lightweight window/context creation - simpler alternative to SDL for graphics-focused apps.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

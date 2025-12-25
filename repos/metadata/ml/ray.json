@@ -8,13 +8,31 @@
   "domain": "ml-ops",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python", "c++"],
-  "concepts": ["distributed-computing", "actors", "tasks", "object-store", "autoscaling"],
-  "patterns": ["actor", "task", "object-store"],
-  "tags": ["ray", "distributed", "ml", "scaling"],
+  "languages": [
+    "python",
+    "c++"
+  ],
+  "concepts": [
+    "distributed-computing",
+    "actors",
+    "tasks",
+    "object-store",
+    "autoscaling"
+  ],
+  "patterns": [
+    "actor",
+    "task",
+    "object-store"
+  ],
+  "tags": [
+    "ray",
+    "distributed",
+    "ml",
+    "scaling"
+  ],
   "description": "Unified framework for scaling AI and Python applications.",
   "why_include": "ML scaling framework - essential for distributed ML patterns.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,29 @@
   "domain": "frontend-micro-frontends",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["javascript"],
-  "concepts": ["micro-frontends", "module-federation", "framework-agnostic", "routing", "lifecycle"],
-  "patterns": ["micro-frontend", "module-federation", "lifecycle-hooks"],
-  "tags": ["micro-frontends", "module-federation", "framework-agnostic"],
+  "languages": [
+    "javascript"
+  ],
+  "concepts": [
+    "micro-frontends",
+    "module-federation",
+    "framework-agnostic",
+    "routing",
+    "lifecycle"
+  ],
+  "patterns": [
+    "micro-frontend",
+    "module-federation",
+    "lifecycle-hooks"
+  ],
+  "tags": [
+    "micro-frontends",
+    "module-federation",
+    "framework-agnostic"
+  ],
   "description": "JavaScript framework for front-end microservices.",
   "why_include": "Micro-frontend orchestration - shows how to compose multiple frameworks.",
   "estimated_size_mb": 10,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

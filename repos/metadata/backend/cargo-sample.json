@@ -8,13 +8,33 @@
   "domain": "backend-ddd",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["java"],
-  "concepts": ["ddd", "aggregates", "bounded-contexts", "domain-events", "value-objects", "entities", "repositories"],
-  "patterns": ["aggregate", "repository", "domain-event", "specification"],
-  "tags": ["ddd", "domain-driven-design", "eric-evans", "java"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "ddd",
+    "aggregates",
+    "bounded-contexts",
+    "domain-events",
+    "value-objects",
+    "entities",
+    "repositories"
+  ],
+  "patterns": [
+    "aggregate",
+    "repository",
+    "domain-event",
+    "specification"
+  ],
+  "tags": [
+    "ddd",
+    "domain-driven-design",
+    "eric-evans",
+    "java"
+  ],
   "description": "Canonical DDD sample application based on Eric Evans' cargo shipping domain.",
   "why_include": "The DDD reference implementation - directly from Eric Evans' examples.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

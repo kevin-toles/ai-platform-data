@@ -8,13 +8,31 @@
   "domain": "game-dev-systems",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["cpp"],
-  "concepts": ["ecs", "entity-component-system", "data-oriented-design", "cache-friendly", "modern-cpp", "header-only"],
-  "patterns": ["ecs-pattern", "archetype", "sparse-set"],
-  "tags": ["ecs", "game-systems", "header-only", "performance"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "ecs",
+    "entity-component-system",
+    "data-oriented-design",
+    "cache-friendly",
+    "modern-cpp",
+    "header-only"
+  ],
+  "patterns": [
+    "ecs-pattern",
+    "archetype",
+    "sparse-set"
+  ],
+  "tags": [
+    "ecs",
+    "game-systems",
+    "header-only",
+    "performance"
+  ],
   "description": "Header-only, tiny and easy to use entity component system library in modern C++.",
   "why_include": "Gold standard for modern C++ ECS implementation - essential for data-oriented game architecture.",
   "estimated_size_mb": 10,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

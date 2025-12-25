@@ -8,13 +8,30 @@
   "domain": "ml-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python"],
-  "concepts": ["machine-learning", "estimators", "transformers", "pipelines", "cross-validation"],
-  "patterns": ["estimator-api", "transformer", "pipeline"],
-  "tags": ["scikit-learn", "ml", "classical-ml", "python"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "machine-learning",
+    "estimators",
+    "transformers",
+    "pipelines",
+    "cross-validation"
+  ],
+  "patterns": [
+    "estimator-api",
+    "transformer",
+    "pipeline"
+  ],
+  "tags": [
+    "scikit-learn",
+    "ml",
+    "classical-ml",
+    "python"
+  ],
   "description": "Machine learning in Python - simple and efficient tools for predictive data analysis.",
   "why_include": "ML API gold standard - essential for understanding sklearn's fit/transform pattern.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,30 @@
   "domain": "networking",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["c++"],
-  "concepts": ["reliable-udp", "encryption", "nat-traversal", "steam-datagram-relay", "connection-quality"],
-  "patterns": ["reliable-ordered", "encryption", "relay"],
-  "tags": ["valve", "networking", "steam", "game-dev"],
+  "languages": [
+    "c++"
+  ],
+  "concepts": [
+    "reliable-udp",
+    "encryption",
+    "nat-traversal",
+    "steam-datagram-relay",
+    "connection-quality"
+  ],
+  "patterns": [
+    "reliable-ordered",
+    "encryption",
+    "relay"
+  ],
+  "tags": [
+    "valve",
+    "networking",
+    "steam",
+    "game-dev"
+  ],
   "description": "Valve's networking sockets library - reliable, encrypted UDP transport.",
   "why_include": "Production game networking from Valve - shows AAA networking patterns.",
   "estimated_size_mb": 10,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

@@ -8,13 +8,36 @@
   "domain": "backend-microservices",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["csharp"],
-  "concepts": ["microservices", "ddd", "cqrs", "event-sourcing", "api-gateway", "service-mesh", "docker", "kubernetes"],
-  "patterns": ["saga", "cqrs", "event-sourcing", "api-gateway", "service-discovery"],
-  "tags": ["microservices", "dotnet", "docker", "kubernetes", "reference-architecture"],
+  "languages": [
+    "csharp"
+  ],
+  "concepts": [
+    "microservices",
+    "ddd",
+    "cqrs",
+    "event-sourcing",
+    "api-gateway",
+    "service-mesh",
+    "docker",
+    "kubernetes"
+  ],
+  "patterns": [
+    "saga",
+    "cqrs",
+    "event-sourcing",
+    "api-gateway",
+    "service-discovery"
+  ],
+  "tags": [
+    "microservices",
+    "dotnet",
+    "docker",
+    "kubernetes",
+    "reference-architecture"
+  ],
   "description": "Cross-platform .NET microservices reference application demonstrating DDD and modern architecture.",
   "why_include": "Canonical .NET microservices reference - Microsoft's official architecture guide.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

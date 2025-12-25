@@ -8,13 +8,31 @@
   "domain": "databases",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["java"],
-  "concepts": ["full-text-search", "inverted-index", "distributed", "lucene", "aggregations", "analytics"],
-  "patterns": ["inverted-index", "sharding", "replica"],
-  "tags": ["opensearch", "search", "elasticsearch", "analytics"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "full-text-search",
+    "inverted-index",
+    "distributed",
+    "lucene",
+    "aggregations",
+    "analytics"
+  ],
+  "patterns": [
+    "inverted-index",
+    "sharding",
+    "replica"
+  ],
+  "tags": [
+    "opensearch",
+    "search",
+    "elasticsearch",
+    "analytics"
+  ],
   "description": "Open source search and analytics suite derived from Elasticsearch.",
   "why_include": "Search engine reference - shows full-text search and analytics architecture.",
   "estimated_size_mb": 300,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

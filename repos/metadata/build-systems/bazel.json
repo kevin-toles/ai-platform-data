@@ -8,13 +8,30 @@
   "domain": "build-systems",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["java"],
-  "concepts": ["hermetic-builds", "remote-caching", "remote-execution", "starlark", "sandboxing"],
-  "patterns": ["hermetic", "content-addressable", "rule-based"],
-  "tags": ["bazel", "build", "google", "monorepo"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "hermetic-builds",
+    "remote-caching",
+    "remote-execution",
+    "starlark",
+    "sandboxing"
+  ],
+  "patterns": [
+    "hermetic",
+    "content-addressable",
+    "rule-based"
+  ],
+  "tags": [
+    "bazel",
+    "build",
+    "google",
+    "monorepo"
+  ],
   "description": "Fast, scalable, multi-language build system from Google.",
   "why_include": "Google-scale builds - essential for understanding hermetic build systems.",
   "estimated_size_mb": 300,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

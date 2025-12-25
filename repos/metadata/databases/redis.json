@@ -8,13 +8,31 @@
   "domain": "databases",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["c"],
-  "concepts": ["in-memory", "data-structures", "pub-sub", "persistence", "clustering", "lua-scripting"],
-  "patterns": ["event-loop", "single-threaded", "data-structure-server"],
-  "tags": ["redis", "cache", "in-memory", "key-value"],
+  "languages": [
+    "c"
+  ],
+  "concepts": [
+    "in-memory",
+    "data-structures",
+    "pub-sub",
+    "persistence",
+    "clustering",
+    "lua-scripting"
+  ],
+  "patterns": [
+    "event-loop",
+    "single-threaded",
+    "data-structure-server"
+  ],
+  "tags": [
+    "redis",
+    "cache",
+    "in-memory",
+    "key-value"
+  ],
   "description": "In-memory data store used as database, cache, message broker.",
   "why_include": "Most popular in-memory store - essential for caching and real-time patterns.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

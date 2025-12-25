@@ -8,13 +8,30 @@
   "domain": "networking",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["c"],
-  "concepts": ["reliable-udp", "sequencing", "channels", "peer-to-peer", "low-latency"],
-  "patterns": ["reliable-udp", "channel", "peer"],
-  "tags": ["enet", "networking", "udp", "game-dev"],
+  "languages": [
+    "c"
+  ],
+  "concepts": [
+    "reliable-udp",
+    "sequencing",
+    "channels",
+    "peer-to-peer",
+    "low-latency"
+  ],
+  "patterns": [
+    "reliable-udp",
+    "channel",
+    "peer"
+  ],
+  "tags": [
+    "enet",
+    "networking",
+    "udp",
+    "game-dev"
+  ],
   "description": "Reliable UDP networking library for games.",
   "why_include": "Game networking standard - shows reliable UDP implementation.",
   "estimated_size_mb": 1,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

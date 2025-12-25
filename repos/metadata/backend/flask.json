@@ -8,13 +8,31 @@
   "domain": "backend-frameworks",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["python"],
-  "concepts": ["microframework", "wsgi", "routing", "blueprints", "extensions", "context-locals"],
-  "patterns": ["decorator", "factory", "blueprint"],
-  "tags": ["python", "microframework", "wsgi", "lightweight"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "microframework",
+    "wsgi",
+    "routing",
+    "blueprints",
+    "extensions",
+    "context-locals"
+  ],
+  "patterns": [
+    "decorator",
+    "factory",
+    "blueprint"
+  ],
+  "tags": [
+    "python",
+    "microframework",
+    "wsgi",
+    "lightweight"
+  ],
   "description": "Lightweight WSGI web application framework designed to make getting started quick and easy.",
   "why_include": "Minimalist Python framework - great for understanding core web concepts without magic.",
   "estimated_size_mb": 10,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

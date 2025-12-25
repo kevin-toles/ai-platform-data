@@ -8,13 +8,30 @@
   "domain": "infrastructure",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["go"],
-  "concepts": ["package-manager", "charts", "templates", "releases", "repositories"],
-  "patterns": ["package-manager", "template", "release-management"],
-  "tags": ["helm", "kubernetes", "package-manager", "cncf"],
+  "languages": [
+    "go"
+  ],
+  "concepts": [
+    "package-manager",
+    "charts",
+    "templates",
+    "releases",
+    "repositories"
+  ],
+  "patterns": [
+    "package-manager",
+    "template",
+    "release-management"
+  ],
+  "tags": [
+    "helm",
+    "kubernetes",
+    "package-manager",
+    "cncf"
+  ],
   "description": "The Kubernetes Package Manager.",
   "why_include": "Standard K8s packaging - shows how to template and distribute K8s apps.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

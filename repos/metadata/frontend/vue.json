@@ -8,13 +8,31 @@
   "domain": "frontend-frameworks",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["typescript"],
-  "concepts": ["reactivity", "virtual-dom", "composition-api", "single-file-components", "proxy-based-reactivity"],
-  "patterns": ["component", "observer", "proxy", "composition"],
-  "tags": ["vue", "frontend", "progressive", "reactivity"],
+  "languages": [
+    "typescript"
+  ],
+  "concepts": [
+    "reactivity",
+    "virtual-dom",
+    "composition-api",
+    "single-file-components",
+    "proxy-based-reactivity"
+  ],
+  "patterns": [
+    "component",
+    "observer",
+    "proxy",
+    "composition"
+  ],
+  "tags": [
+    "vue",
+    "frontend",
+    "progressive",
+    "reactivity"
+  ],
   "description": "Progressive JavaScript framework for building user interfaces.",
   "why_include": "Popular progressive framework - shows proxy-based reactivity patterns.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

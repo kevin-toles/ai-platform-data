@@ -8,13 +8,30 @@
   "domain": "security",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["java"],
-  "concepts": ["security-scanning", "penetration-testing", "vulnerability-detection", "proxy", "fuzzing"],
-  "patterns": ["proxy", "scanner", "plugin-architecture"],
-  "tags": ["owasp", "security", "scanning", "pentest"],
+  "languages": [
+    "java"
+  ],
+  "concepts": [
+    "security-scanning",
+    "penetration-testing",
+    "vulnerability-detection",
+    "proxy",
+    "fuzzing"
+  ],
+  "patterns": [
+    "proxy",
+    "scanner",
+    "plugin-architecture"
+  ],
+  "tags": [
+    "owasp",
+    "security",
+    "scanning",
+    "pentest"
+  ],
   "description": "World's most widely used web app scanner - free and open source.",
   "why_include": "Security testing reference - shows how to build vulnerability scanners.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

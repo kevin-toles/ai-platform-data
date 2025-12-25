@@ -8,13 +8,30 @@
   "domain": "cpp-math",
   "tier": "T2-patterns",
   "priority": 1,
-  "languages": ["cpp"],
-  "concepts": ["linear-algebra", "vector-math", "matrix-math", "quaternions", "transformations", "glsl-compatible"],
-  "patterns": ["expression-templates", "simd-optimization"],
-  "tags": ["math", "graphics", "glsl", "header-only"],
+  "languages": [
+    "cpp"
+  ],
+  "concepts": [
+    "linear-algebra",
+    "vector-math",
+    "matrix-math",
+    "quaternions",
+    "transformations",
+    "glsl-compatible"
+  ],
+  "patterns": [
+    "expression-templates",
+    "simd-optimization"
+  ],
+  "tags": [
+    "math",
+    "graphics",
+    "glsl",
+    "header-only"
+  ],
   "description": "Header-only C++ mathematics library for graphics software based on GLSL specifications.",
   "why_include": "Standard graphics math library - GLSL-compatible, used everywhere in graphics code.",
   "estimated_size_mb": 5,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

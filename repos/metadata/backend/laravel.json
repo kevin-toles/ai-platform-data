@@ -8,13 +8,31 @@
   "domain": "backend-frameworks",
   "tier": "T2-patterns",
   "priority": 2,
-  "languages": ["php"],
-  "concepts": ["mvc", "eloquent-orm", "blade-templates", "artisan-cli", "queues", "broadcasting"],
-  "patterns": ["active-record", "facade", "service-container"],
-  "tags": ["php", "full-stack", "mvc", "eloquent"],
+  "languages": [
+    "php"
+  ],
+  "concepts": [
+    "mvc",
+    "eloquent-orm",
+    "blade-templates",
+    "artisan-cli",
+    "queues",
+    "broadcasting"
+  ],
+  "patterns": [
+    "active-record",
+    "facade",
+    "service-container"
+  ],
+  "tags": [
+    "php",
+    "full-stack",
+    "mvc",
+    "eloquent"
+  ],
   "description": "PHP web application framework with expressive, elegant syntax.",
   "why_include": "Most popular PHP framework - shows modern PHP patterns and conventions.",
   "estimated_size_mb": 30,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

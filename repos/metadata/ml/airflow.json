@@ -8,13 +8,32 @@
   "domain": "ml-ops",
   "tier": "T1-architecture",
   "priority": 1,
-  "languages": ["python"],
-  "concepts": ["workflow-orchestration", "dag", "scheduling", "operators", "sensors", "executors"],
-  "patterns": ["dag", "operator", "sensor", "executor"],
-  "tags": ["airflow", "orchestration", "workflow", "apache"],
+  "languages": [
+    "python"
+  ],
+  "concepts": [
+    "workflow-orchestration",
+    "dag",
+    "scheduling",
+    "operators",
+    "sensors",
+    "executors"
+  ],
+  "patterns": [
+    "dag",
+    "operator",
+    "sensor",
+    "executor"
+  ],
+  "tags": [
+    "airflow",
+    "orchestration",
+    "workflow",
+    "apache"
+  ],
   "description": "Platform to programmatically author, schedule and monitor workflows.",
   "why_include": "Workflow orchestration standard - essential for data pipeline patterns.",
   "estimated_size_mb": 200,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }
