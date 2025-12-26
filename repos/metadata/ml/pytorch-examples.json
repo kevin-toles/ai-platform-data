@@ -15,6 +15,6 @@
   "description": "Official PyTorch examples - reference implementations covering vision, NLP, RL, and more.",
   "why_include": "Official PyTorch examples. Essential for understanding PyTorch patterns and best practices.",
   "estimated_size_mb": 100,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

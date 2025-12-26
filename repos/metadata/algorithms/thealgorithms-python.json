@@ -15,6 +15,6 @@
   "description": "All Algorithms implemented in Python - comprehensive collection of algorithm implementations for education and reference.",
   "why_include": "Gold standard for algorithm implementations in Python. Essential for code generation and algorithm explanation.",
   "estimated_size_mb": 50,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

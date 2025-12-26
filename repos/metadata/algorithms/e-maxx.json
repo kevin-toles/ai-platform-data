@@ -15,6 +15,6 @@
   "description": "Translation of e-maxx.ru - comprehensive algorithms reference with explanations and C++ implementations.",
   "why_include": "Best-in-class algorithm explanations with implementations. Essential for understanding algorithm theory.",
   "estimated_size_mb": 20,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

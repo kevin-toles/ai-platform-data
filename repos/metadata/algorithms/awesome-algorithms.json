@@ -15,6 +15,6 @@
   "description": "A curated list of awesome places to learn and practice algorithms.",
   "why_include": "Meta-resource for algorithm learning. Useful for discovering additional resources and context.",
   "estimated_size_mb": 1,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

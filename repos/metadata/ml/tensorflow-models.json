@@ -15,6 +15,6 @@
   "description": "Official TensorFlow models and examples - production-ready implementations of state-of-the-art models.",
   "why_include": "Official reference implementations from TensorFlow team. Essential for ML code generation.",
   "estimated_size_mb": 500,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

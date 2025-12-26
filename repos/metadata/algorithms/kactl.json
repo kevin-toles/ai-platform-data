@@ -15,6 +15,6 @@
   "description": "KTH's ICPC team's algorithm template library - battle-tested competitive programming implementations.",
   "why_include": "Gold standard for optimized C++ algorithm implementations. Used by ICPC world finalists.",
   "estimated_size_mb": 5,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }

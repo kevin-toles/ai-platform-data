@@ -15,6 +15,6 @@
   "description": "Minimal and clean example implementations of data structures and algorithms in Python 3.",
   "why_include": "Clean, readable Python implementations. Great for code generation and learning.",
   "estimated_size_mb": 5,
-  "mirrored": false,
+  "mirrored": true,
   "indexed": false
 }
