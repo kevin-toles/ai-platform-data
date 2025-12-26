@@ -43,7 +43,8 @@
         "backend-serverless", "backend-ddd",
         "frontend-frameworks", "frontend-micro-frontends",
         "infrastructure", "databases", "security", "monitoring", "testing",
-        "ml-frameworks", "ml-ops", "build-systems", "networking"
+        "ml-frameworks", "ml-ops", "ml-examples", "build-systems", "networking",
+        "algorithms"
       ]
     },
     "tier": {

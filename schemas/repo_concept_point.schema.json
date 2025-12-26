@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-platform-data/schemas/repo_concept_point.schema.json",
+  "title": "Repo Concept Point Schema",
+  "description": "JSON Schema for Qdrant points in the repo_concepts collection. These points enable semantic matching between book concepts and repo implementations.",
+  "type": "object",
+  "required": ["id", "vector", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID v5 generated from repo_id:term",
+      "format": "uuid"
+    },
+    "vector": {
+      "type": "array",
+      "description": "384-dimensional embedding from sentence-transformers/all-MiniLM-L6-v2",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 384,
+      "maxItems": 384
+    },
+    "payload": {
+      "$ref": "#/definitions/concept_payload"
+    }
+  },
+  "definitions": {
+    "concept_payload": {
+      "type": "object",
+      "description": "Metadata payload for each indexed concept/pattern/tag",
+      "required": ["pattern", "type", "repo_id", "domain"],
+      "additionalProperties": false,
+      "properties": {
+        "pattern": {
+          "type": "string",
+          "description": "The indexed term (concept, pattern, or tag)",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of term",
+          "enum": ["concept", "pattern", "tag"]
+        },
+        "repo_id": {
+          "type": "string",
+          "description": "Repository identifier (matches repo metadata id)",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "repo_name": {
+          "type": "string",
+          "description": "Human-readable repository name"
+        },
+        "domain": {
+          "type": "string",
+          "description": "Repository domain classification"
+        },
+        "target_path": {
+          "type": "string",
+          "description": "Path in code-reference-engine where repo is mirrored"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Taxonomy tier classification"
+        }
+      }
+    }
+  }
+}
