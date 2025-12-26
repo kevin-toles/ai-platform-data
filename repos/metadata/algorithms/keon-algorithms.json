@@ -1,0 +1,20 @@
+{
+  "id": "keon-algorithms",
+  "name": "Algorithms (keon)",
+  "source_url": "https://github.com/keon/algorithms",
+  "target_path": "algorithms/keon-algorithms",
+  "owner": "keon",
+  "license": "MIT",
+  "domain": "algorithms",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["algorithms", "data-structures", "sorting", "searching", "graphs", "trees", "dynamic-programming", "bit-manipulation", "backtracking"],
+  "patterns": ["algorithm-implementation", "clean-code", "interview-prep"],
+  "tags": ["algorithms", "python", "interview", "data-structures"],
+  "description": "Minimal and clean example implementations of data structures and algorithms in Python 3.",
+  "why_include": "Clean, readable Python implementations. Great for code generation and learning.",
+  "estimated_size_mb": 5,
+  "mirrored": false,
+  "indexed": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pytorch-examples",
+  "name": "PyTorch Examples",
+  "source_url": "https://github.com/pytorch/examples",
+  "target_path": "ml/examples/pytorch-examples",
+  "owner": "pytorch",
+  "license": "BSD-3-Clause",
+  "domain": "ml-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["deep-learning", "neural-networks", "computer-vision", "nlp", "reinforcement-learning", "generative-models", "distributed-training"],
+  "patterns": ["model-implementation", "training-loop", "data-loading", "distributed-training"],
+  "tags": ["pytorch", "deep-learning", "examples", "tutorials", "official"],
+  "description": "Official PyTorch examples - reference implementations covering vision, NLP, RL, and more.",
+  "why_include": "Official PyTorch examples. Essential for understanding PyTorch patterns and best practices.",
+  "estimated_size_mb": 100,
+  "mirrored": false,
+  "indexed": false
+}

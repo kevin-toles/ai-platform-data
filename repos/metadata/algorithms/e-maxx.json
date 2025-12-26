@@ -1,0 +1,20 @@
+{
+  "id": "e-maxx-algorithms",
+  "name": "E-Maxx Algorithms",
+  "source_url": "https://github.com/e-maxx-eng/e-maxx-eng",
+  "target_path": "algorithms/e-maxx",
+  "owner": "e-maxx-eng",
+  "license": "CC-BY-SA-4.0",
+  "domain": "algorithms",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["algorithms", "data-structures", "number-theory", "algebra", "geometry", "graphs", "strings", "combinatorics", "dynamic-programming"],
+  "patterns": ["algorithm-explanation", "reference-implementation", "educational"],
+  "tags": ["algorithms", "competitive-programming", "tutorials", "explanations"],
+  "description": "Translation of e-maxx.ru - comprehensive algorithms reference with explanations and C++ implementations.",
+  "why_include": "Best-in-class algorithm explanations with implementations. Essential for understanding algorithm theory.",
+  "estimated_size_mb": 20,
+  "mirrored": false,
+  "indexed": false
+}

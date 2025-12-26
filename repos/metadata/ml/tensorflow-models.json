@@ -1,0 +1,20 @@
+{
+  "id": "tensorflow-models",
+  "name": "TensorFlow Models",
+  "source_url": "https://github.com/tensorflow/models",
+  "target_path": "ml/examples/tensorflow-models",
+  "owner": "tensorflow",
+  "license": "Apache-2.0",
+  "domain": "ml-frameworks",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["python"],
+  "concepts": ["deep-learning", "computer-vision", "nlp", "object-detection", "image-classification", "transformer", "bert", "resnet"],
+  "patterns": ["model-implementation", "training-pipeline", "inference", "transfer-learning"],
+  "tags": ["tensorflow", "deep-learning", "models", "pretrained", "official"],
+  "description": "Official TensorFlow models and examples - production-ready implementations of state-of-the-art models.",
+  "why_include": "Official reference implementations from TensorFlow team. Essential for ML code generation.",
+  "estimated_size_mb": 500,
+  "mirrored": false,
+  "indexed": false
+}

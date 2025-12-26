@@ -2,8 +2,8 @@
   "registry_version": "1.0.0",
   "description": "Master registry of reference code repositories. Points to mirrored code in code-reference-engine.",
   "code_engine_repo": "https://github.com/kevin-toles/code-reference-engine",
-  "total_repos": 92,
-  "total_mirrored": 0,
+  "total_repos": 99,
+  "total_mirrored": 82,
   "domains": [
     {
       "id": "game-dev-engines",
@@ -284,7 +284,32 @@
         {"id": "enet", "metadata_path": "repos/metadata/networking/enet.json", "priority": 1},
         {"id": "gamenetworkingsockets", "metadata_path": "repos/metadata/networking/gamenetworkingsockets.json", "priority": 1}
       ]
+    },
+    {
+      "id": "algorithms",
+      "name": "Algorithms & Data Structures",
+      "path": "algorithms",
+      "description": "Algorithm implementations and references",
+      "repo_count": 5,
+      "repos": [
+        {"id": "thealgorithms-python", "metadata_path": "repos/metadata/algorithms/thealgorithms-python.json", "priority": 1},
+        {"id": "kactl", "metadata_path": "repos/metadata/algorithms/kactl.json", "priority": 1},
+        {"id": "e-maxx-algorithms", "metadata_path": "repos/metadata/algorithms/e-maxx.json", "priority": 1},
+        {"id": "keon-algorithms", "metadata_path": "repos/metadata/algorithms/keon-algorithms.json", "priority": 1},
+        {"id": "awesome-algorithms", "metadata_path": "repos/metadata/algorithms/awesome-algorithms.json", "priority": 2}
+      ]
+    },
+    {
+      "id": "ml-examples",
+      "name": "ML Examples & Models",
+      "path": "ml/examples",
+      "description": "Official ML framework examples and model implementations",
+      "repo_count": 2,
+      "repos": [
+        {"id": "tensorflow-models", "metadata_path": "repos/metadata/ml/tensorflow-models.json", "priority": 1},
+        {"id": "pytorch-examples", "metadata_path": "repos/metadata/ml/pytorch-examples.json", "priority": 1}
+      ]
     }
   ],
-  "updated_at": "2024-12-24T00:00:00Z"
+  "updated_at": "2025-12-25T00:00:00Z"
 }

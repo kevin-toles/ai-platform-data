@@ -1,0 +1,20 @@
+{
+  "id": "awesome-algorithms",
+  "name": "Awesome Algorithms",
+  "source_url": "https://github.com/tayllan/awesome-algorithms",
+  "target_path": "algorithms/awesome-algorithms",
+  "owner": "tayllan",
+  "license": "CC0-1.0",
+  "domain": "algorithms",
+  "tier": "T2-patterns",
+  "priority": 2,
+  "languages": [],
+  "concepts": ["algorithms", "learning-resources", "curated-list", "educational"],
+  "patterns": ["reference-collection"],
+  "tags": ["algorithms", "awesome-list", "resources", "learning"],
+  "description": "A curated list of awesome places to learn and practice algorithms.",
+  "why_include": "Meta-resource for algorithm learning. Useful for discovering additional resources and context.",
+  "estimated_size_mb": 1,
+  "mirrored": false,
+  "indexed": false
+}

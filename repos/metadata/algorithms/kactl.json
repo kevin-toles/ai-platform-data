@@ -1,0 +1,20 @@
+{
+  "id": "kactl",
+  "name": "KTH Algorithm Competition Template Library",
+  "source_url": "https://github.com/kth-competitive-programming/kactl",
+  "target_path": "algorithms/kactl",
+  "owner": "kth-competitive-programming",
+  "license": "CC0-1.0",
+  "domain": "algorithms",
+  "tier": "T1-architecture",
+  "priority": 1,
+  "languages": ["cpp"],
+  "concepts": ["competitive-programming", "algorithms", "data-structures", "number-theory", "geometry", "graphs", "strings", "numerical-methods"],
+  "patterns": ["template-library", "optimized-implementation", "contest-ready"],
+  "tags": ["competitive-programming", "icpc", "algorithms", "cpp", "templates"],
+  "description": "KTH's ICPC team's algorithm template library - battle-tested competitive programming implementations.",
+  "why_include": "Gold standard for optimized C++ algorithm implementations. Used by ICPC world finalists.",
+  "estimated_size_mb": 5,
+  "mirrored": false,
+  "indexed": false
+}
