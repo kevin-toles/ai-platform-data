@@ -6,6 +6,122 @@
 
 ## Changelog
 
+### 2025-12-29: Protocol Integration Architecture - Phase 2 (CL-016)
+
+**Summary**: Created Protocol Integration Architecture document for A2A (Agent-to-Agent) and MCP (Model Context Protocol) integration as Phase 2 of the Agent Architecture Evolution. All features are behind feature flags for safe experimentation.
+
+**Documents Created**:
+
+| Document | Location | Purpose |
+|----------|----------|---------|
+| `PROTOCOL_INTEGRATION_ARCHITECTURE.md` | ai-agents/docs/ | Phase 2 architecture for A2A + MCP |
+
+**Architecture Evolution Phases**:
+
+| Phase | Focus | Status | Document |
+|-------|-------|--------|----------|
+| Phase 1 | Agent Functions + ADK Patterns | ✅ Complete | AGENT_FUNCTIONS_ARCHITECTURE.md |
+| Phase 2 | Protocol Integration (A2A + MCP) | 🚧 Design | PROTOCOL_INTEGRATION_ARCHITECTURE.md |
+| Phase 3 | Full ADK Migration | 📋 Planned | ADK_MIGRATION_GUIDE.md |
+
+**Feature Flags Introduced**:
+```bash
+# A2A Protocol
+AGENTS_A2A_ENABLED=false
+AGENTS_A2A_AGENT_CARD_ENABLED=false
+AGENTS_A2A_STREAMING_ENABLED=false
+
+# MCP Protocol
+AGENTS_MCP_ENABLED=false
+AGENTS_MCP_SERVER_ENABLED=false
+AGENTS_MCP_TOOLBOX_QDRANT=false
+AGENTS_MCP_TOOLBOX_NEO4J=false
+```
+
+**No-Conflict Analysis**:
+- ✅ A2A is a protocol layer—does not replace agent functions
+- ✅ MCP standardizes tool interfaces—wraps existing tools
+- ✅ Both are opt-in via feature flags—zero impact on Phase 1
+- ✅ Agent functions remain the execution unit
+
+**A2A Integration Highlights**:
+- Agent Cards expose service capabilities at `/.well-known/agent-card.json`
+- 8 agent functions mapped to A2A Skills
+- A2A Task lifecycle maps to pipeline execution states
+- Streaming via SSE for task updates
+
+**MCP Integration Highlights**:
+- MCP Server: Expose agent functions as MCP tools for external clients
+- MCP Client: Consume MCP Toolbox for Qdrant, Neo4j, Redis operations
+- Standardized tool interface for cross-platform compatibility
+
+**Implementation Timeline** (6 weeks):
+- Week 1: Feature Flags + Agent Card
+- Week 2: MCP Server
+- Week 3: MCP Client (Qdrant Toolbox)
+- Week 4: A2A Task Lifecycle
+- Week 5: A2A Streaming
+- Week 6: Integration Testing
+
+**Cross-References**:
+- [PROTOCOL_INTEGRATION_ARCHITECTURE.md](../ai-agents/docs/PROTOCOL_INTEGRATION_ARCHITECTURE.md) - Phase 2 design
+- [AGENT_FUNCTIONS_ARCHITECTURE.md](../ai-agents/docs/AGENT_FUNCTIONS_ARCHITECTURE.md) - Phase 1 foundation
+- [A2A Protocol Spec](https://a2a-protocol.org/latest/specification/) - External reference
+- [MCP Documentation](https://modelcontextprotocol.io/) - External reference
+
+**Deviations from Original Architecture**: None - Protocol layer is additive
+
+---
+
+### 2025-12-29: ADK Pattern Integration - Agent Functions Architecture (CL-015)
+
+**Summary**: Integrated Google Agent Development Kit (ADK) patterns into the Agent Functions Architecture using Option C (Cherry-Pick Patterns) approach. Created migration guide for future full ADK adoption (Option A).
+
+**Documents Updated**:
+
+| Document | Location | Changes |
+|----------|----------|---------|
+| `AGENT_FUNCTIONS_ARCHITECTURE.md` | ai-agents/docs/ | v1.0.0 → v1.1.0: Added ADK Pattern Integration section |
+| `ADK_MIGRATION_GUIDE.md` | ai-agents/docs/ | NEW: Full Option A migration roadmap |
+
+**Option C Patterns Adopted**:
+
+| ADK Pattern | Platform Implementation | Benefit |
+|-------------|-------------------------|---------|
+| State Prefixes (`temp:`, `user:`, `app:`) | Cache key conventions | Industry standard, clear scope |
+| Artifact Conventions | Versioned artifact naming | Consistent versioning |
+| AgentTool Pattern | Agent function as callable | ADK compatibility |
+| Workflow Agent Mapping | Pipeline → SequentialAgent | Future migration path |
+
+**State Prefix Mapping**:
+```
+temp:  → handoff_cache (pipeline-local, discarded after completion)
+user:  → compression_cache (Redis, 24h TTL, cross-session)
+app:   → artifact_store (Qdrant/Neo4j, permanent)
+```
+
+**Architecture Alignment**:
+- ✅ Kitchen Brigade: No role changes, patterns enhance existing architecture
+- ✅ Stateless executors: ADK's shared session state aligns with our caching philosophy
+- ✅ Gateway-First: External requests still route through llm-gateway:8080
+- ✅ CODING_PATTERNS_ANALYSIS: `**kwargs` ABC pattern used for flexible signatures
+
+**Future Migration Path** (Option A - Documented, Not Implemented):
+- Phase 1: Foundation (2-3 weeks) - ADK adapter layer
+- Phase 2: Workflow Agents (2-3 weeks) - SequentialAgent, ParallelAgent, LoopAgent
+- Phase 3: State Migration (1-2 weeks) - Full prefix adoption
+- Phase 4: Full Integration (2 weeks) - Legacy deprecation
+- Total: 7-10 weeks when team resources available
+
+**Cross-References**:
+- [AGENT_FUNCTIONS_ARCHITECTURE.md](../ai-agents/docs/AGENT_FUNCTIONS_ARCHITECTURE.md) - Current Option C implementation
+- [ADK_MIGRATION_GUIDE.md](../ai-agents/docs/ADK_MIGRATION_GUIDE.md) - Future Option A roadmap
+- [Google ADK Documentation](https://google.github.io/adk-docs/) - External reference
+
+**Deviations from Original Architecture**: None - Option C enhances without changing service boundaries
+
+---
+
 ### 2025-12-18: EEP-6 Diagram Similarity - Data Schema Impact (CL-014)
 
 **Summary**: EEP-6 Diagram Similarity was implemented in Code-Orchestrator-Service. This change has potential future impact on the enriched data schema stored in ai-platform-data.
