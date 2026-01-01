@@ -1,0 +1,7 @@
+organization=kevin-toles
+projectKey=ai-platform-data
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.78018
+dashboardUrl=https://sonarcloud.io/dashboard?id=ai-platform-data
+ceTaskId=AZttalqjt5Ih-HzEtztb
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZttalqjt5Ih-HzEtztb

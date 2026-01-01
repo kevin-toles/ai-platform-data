@@ -1,0 +1,52 @@
+
+"score"str
+	"repo_id"str
+"auto_approved"str
+
+4int
+
+"chapter_title"str
+	"concept"str
+"chapter_number"str
+3*"Convert to dictionary for serialization."str
+	"book_id"str
+"repo_pattern"strselfL L("Ö$
+"
+N W(	"#new-object#Bdict(
+&
+O O(#"#get-field# book_id: 
+
+O O(#"	#map-set#:/
+-
+P P(1"#get-field# chapter_number: 
+
+P P(1	"	#map-set#:.
+,
+Q Q(/"#get-field# chapter_title: 
+
+Q Q(/"	#map-set#:
+(
+&
+R R(#"#get-field# concept: 
+
+R R(#"	#map-set#:(
+&
+S S(#"#get-field# repo_id: 
+
+S S(#"	#map-set#:-
++
+T T(-"#get-field# repo_pattern: 
+
+T T(-"	#map-set#:&
+$
+U U(%"#get-field# score:(
+&
+U U()"
+builtinsround*: 
+
+U U()"	#map-set#:.
+,
+V V(/"#get-field# auto_approved: 
+
+V V(/"	#map-set#:
+N W(	*C/Users/kevintoles/POC/ai-platform-data/scripts/auto_map_concepts.py

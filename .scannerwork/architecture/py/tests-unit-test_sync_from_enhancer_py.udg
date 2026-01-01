@@ -1,0 +1,729 @@
+
+1.0PythonFrontend"1767067231353*py2.BÕ
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+*
+%tests/unit/test_sync_from_enhancer.py9
+(
+"tests.unit.test_sync_from_enhancer11
+
+
+__future__12
+
+hashlib14
+
+
+json16
+
+shutil18
+
+dataclasses20
+
+pathlib22
+
+typing24
+
+unittest.mock26
+ 
+scripts.sync_from_enhancer28
+
+click.testing30
+;
+5tests.unit.test_sync_from_enhancer.TestJsonValidation32
+Z
+Ttests.unit.test_sync_from_enhancer.TestJsonValidation.test_invalid_json_raises_error34
+
+NoneType36
+
+pathlib.Path38
+_
+Ytests.unit.test_sync_from_enhancer.TestJsonValidation.test_missing_required_fields_logged40
+>
+8tests.unit.test_sync_from_enhancer.TestFileRenamingLogic42
+f
+`tests.unit.test_sync_from_enhancer.TestFileRenamingLogic.test_files_renamed_with_metadata_suffix44
+
+
+list46
+`
+Ztests.unit.test_sync_from_enhancer.TestFileRenamingLogic.test_skip_non_enriched_json_files48
+
+
+dict50
+b
+\tests.unit.test_sync_from_enhancer.TestFileRenamingLogic.test_book_title_preserved_in_rename52
+]
+Wtests.unit.test_sync_from_enhancer.TestFileRenamingLogic.test_source_files_not_modified54
+@
+:tests.unit.test_sync_from_enhancer.TestSyncReportStructure56
+`
+Ztests.unit.test_sync_from_enhancer.TestSyncReportStructure.test_sync_report_has_statistics58
+Y
+Stests.unit.test_sync_from_enhancer.TestSyncReportStructure.test_sync_report_to_dict60
+M
+Gtests.unit.test_sync_from_enhancer.sample_enriched_data_with_provenance62
+A
+;tests.unit.test_sync_from_enhancer.TestChecksumVerification64
+b
+\tests.unit.test_sync_from_enhancer.TestChecksumVerification.test_checksum_matches_after_copy66
+b
+\tests.unit.test_sync_from_enhancer.TestChecksumVerification.test_checksum_included_in_report68
+e
+_tests.unit.test_sync_from_enhancer.TestChecksumVerification.test_checksum_mismatch_raises_error70
+7
+1tests.unit.test_sync_from_enhancer.TestDryRunMode72
+Z
+Ttests.unit.test_sync_from_enhancer.TestDryRunMode.test_dry_run_does_not_create_files74
+[
+Utests.unit.test_sync_from_enhancer.TestDryRunMode.test_dry_run_returns_preview_report76
+[
+Utests.unit.test_sync_from_enhancer.TestDryRunMode.test_dry_run_detects_existing_files78
+A
+;tests.unit.test_sync_from_enhancer.TestSourcePathValidation80
+m
+gtests.unit.test_sync_from_enhancer.TestSourcePathValidation.test_target_directory_created_if_not_exists82
+i
+ctests.unit.test_sync_from_enhancer.TestSourcePathValidation.test_source_directory_must_be_directory84
+b
+\tests.unit.test_sync_from_enhancer.TestSourcePathValidation.test_source_directory_must_exist86
+s
+mtests.unit.test_sync_from_enhancer.TestSourcePathValidation.test_source_directory_must_contain_enriched_files88
+9
+3tests.unit.test_sync_from_enhancer.TestCliInterface90
+U
+Otests.unit.test_sync_from_enhancer.TestCliInterface.test_cli_missing_source_arg92
+T
+Ntests.unit.test_sync_from_enhancer.TestCliInterface.test_cli_with_verbose_flag94
+T
+Ntests.unit.test_sync_from_enhancer.TestCliInterface.test_cli_with_dry_run_flag96
+P
+Jtests.unit.test_sync_from_enhancer.TestCliInterface.test_cli_default_paths98
+9
+2tests.unit.test_sync_from_enhancer.temp_source_dir100
+7
+0tests.unit.test_sync_from_enhancer.TestEdgeCases102
+V
+Otests.unit.test_sync_from_enhancer.TestEdgeCases.test_permission_error_handling104
+R
+Ktests.unit.test_sync_from_enhancer.TestEdgeCases.test_unicode_in_book_title106
+Q
+Jtests.unit.test_sync_from_enhancer.TestEdgeCases.test_very_long_book_title108
+P
+Itests.unit.test_sync_from_enhancer.TestEdgeCases.test_empty_enriched_file110
+=
+6tests.unit.test_sync_from_enhancer.create_source_files112
+9
+2tests.unit.test_sync_from_enhancer.temp_target_dir114
+>
+7tests.unit.test_sync_from_enhancer.sample_enriched_data116
+9
+2tests.unit.test_sync_from_enhancer._compute_sha256118
+
+
+str120J
+
+8
+89jÃ
+
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25245
+
+27
+27265
+
+29
+29285
+
+31
+31305
+
+33
+33326 210
+
+35
+35347 233
+
+37
+37366
+
+39
+39386
+
+41
+41407 233
+
+43
+43426 210
+
+45
+45447 243
+
+47
+47466
+
+49
+49487 243
+
+51
+51506
+
+53
+53527 243
+
+55
+55547 243
+
+57
+57566 210
+
+59
+59587 257
+
+61
+61607 257
+
+63
+63627 210
+
+65
+65646 210
+
+67
+67667 265
+
+69
+69687 265
+
+71
+71707 265
+
+73
+73726 210
+
+75
+75747 273
+
+77
+77767 273
+
+79
+79787 273
+
+81
+81806 210
+
+83
+83827 281
+
+85
+85847 281
+
+87
+87867 281
+
+89
+89887 281
+
+91
+91906 210
+
+93
+93927 291
+
+95
+95947 291
+
+97
+97967 291
+
+99
+99987 291
+
+101
+1011007 210
+
+103
+1031026 210
+
+105
+1051047 2103
+
+107
+1071067 2103
+
+109
+1091087 2103
+
+111
+1111107 2103
+
+113
+1131127 210
+
+115
+1151147 210
+
+117
+1171167 210
+
+119
+1191187 210
+
+121
+1211206rŒ
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8 (
+
+10211*
+8   ("
+
+10231*
+8! !(
+
+10251*
+8" "(
+
+10271*
+8# #( 
+
+10291*
+8≤	 ≤(M
+
+10291*
+8ø	 ø(M
+
+10291*
+8Õ	 Õ(M
+
+10291*
+8‹	 ‹(B
+
+10291*
+8Ù	 Ù(B
+
+10291*
+8ã	 ã(B
+
+10291*
+8¢	 ¢(B
+
+10291*
+8º	 º(B
+
+10291*
+8›	 ›(B
+
+10291*
+8Ô	 Ô(B
+
+10291*
+8ç	 ç(B
+
+10291*
+8•	 •(B
+
+10291*
+8∏	 ∏(M
+
+10291*
+8‹	 ‹(B
+
+10291*
+8Ú	 Ú(B
+
+10291*
+8â	 â(B
+
+10291*
+8©	 ©(B
+
+10291*
+8¿	 ¿(B
+
+10311*
+8⁄	 ⁄(,
+
+10291*
+8€	 €(3
+
+10311*
+8Ó	 Ó(,
+
+10291*
+8Ô	 Ô(3
+
+10311*
+8˛	 ˛(,
+
+10291*
+8ˇ	 ˇ(3
+
+10291*
+8ã	 ã(V
+
+10291*
+8°	 °(B
+
+10291*
+8¥	 ¥(B
+
+10291*
+8Õ	 Õ(B
+
+10291*
+8Â	 Â(B
+
+35373*
+8◊	 ◊('
+
+35394*
+8◊	 ◊('
+
+35394*
+8◊	 ◊('
+
+41373*
+8È	 È(,
+
+41394*
+8È	 È(,
+
+41394*
+8È	 È(,
+
+45373*
+8Ì	 Ì(0
+
+45394*
+8Ì	 Ì(0
+
+45394*
+8Ì	 Ì(0
+
+45474*
+8Ì	 Ì(0
+
+49373*
+8∞	 ∞(*
+
+49394*
+8∞	 ∞(*
+
+49394*
+8∞	 ∞(*
+
+49514*
+8∞	 ∞(*
+
+53373*
+8Ñ	 Ñ(,
+
+53394*
+8Ñ	 Ñ(,
+
+53394*
+8Ñ	 Ñ(,
+
+53514*
+8Ñ	 Ñ(,
+
+55373*
+8õ	 õ('
+
+55394*
+8õ	 õ('
+
+55394*
+8õ	 õ('
+
+55474*
+8õ	 õ('
+
+59373*
+8¢	 ¢((
+
+59394*
+8¢	 ¢((
+
+59394*
+8¢	 ¢((
+
+59474*
+8¢	 ¢((
+
+61373*
+8π	 π(!
+
+61394*
+8π	 π(!
+
+61394*
+8π	 π(!
+
+61474*
+8π	 π(!
+
+63513*
+8n n()
+
+67373*
+8Ü	 Ü()
+
+67394*
+8Ü	 Ü()
+
+67394*
+8Ü	 Ü()
+
+67514*
+8Ü	 Ü()
+
+69373*
+8û	 û()
+
+69394*
+8û	 û()
+
+69394*
+8û	 û()
+
+69474*
+8û	 û()
+
+71373*
+8∞	 ∞(,
+
+71394*
+8∞	 ∞(,
+
+71394*
+8∞	 ∞(,
+
+71514*
+8∞	 ∞(,
+
+75373*
+8’	 ’(+
+
+75394*
+8’	 ’(+
+
+75394*
+8’	 ’(+
+
+75474*
+8’	 ’(+
+
+77373*
+8Î	 Î(,
+
+77394*
+8Î	 Î(,
+
+77394*
+8Î	 Î(,
+
+77474*
+8Î	 Î(,
+
+79373*
+8Ç	 Ç(,
+
+79394*
+8Ç	 Ç(,
+
+79394*
+8Ç	 Ç(,
+
+79514*
+8Ç	 Ç(,
+
+83373*
+8’	 ’(4
+
+83394*
+8’	 ’(4
+
+83474*
+8’	 ’(4
+
+83394*
+8’	 ’(4
+
+85373*
+8π	 π(0
+
+85394*
+8π	 π(0
+
+85394*
+8π	 π(0
+
+87373*
+8∞	 ∞()
+
+87394*
+8∞	 ∞()
+
+87394*
+8∞	 ∞()
+
+89373*
+8«	 «(:
+
+89394*
+8«	 «(:
+
+89394*
+8«	 «(:
+
+93373*
+8¸	 ¸($
+
+95373*
+8Á	 Á(#
+
+95394*
+8Á	 Á(#
+
+95394*
+8Á	 Á(#
+
+95474*
+8Á	 Á(#
+
+97373*
+8”	 ”(#
+
+97394*
+8”	 ”(#
+
+97394*
+8”	 ”(#
+
+97474*
+8”	 ”(#
+
+99373*
+8Ü	 Ü(
+
+101393*
+8B B(
+
+101394*
+8B B(
+
+105373*
+8¨	 ¨('
+
+105394*
+8¨	 ¨('
+
+105394*
+8¨	 ¨('
+
+105514*
+8¨	 ¨('
+
+107373*
+8∆	 ∆(#
+
+107394*
+8∆	 ∆(#
+
+107394*
+8∆	 ∆(#
+
+107514*
+8∆	 ∆(#
+
+109373*
+8ﬁ	 ﬁ("
+
+109394*
+8ﬁ	 ﬁ("
+
+109394*
+8ﬁ	 ﬁ("
+
+109514*
+8ﬁ	 ﬁ("
+
+111373*
+8õ	 õ(!
+
+111394*
+8õ	 õ(!
+
+111394*
+8õ	 õ(!
+
+113473*
+8å å(
+
+113394*
+8å å(
+
+113514*
+8å å(
+
+115393*
+8J J(
+
+115394*
+8J J(
+
+117513*
+8R R(
+
+1191213*
+8† †(
+
+119394*
+8† †(

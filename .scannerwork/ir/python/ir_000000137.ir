@@ -1,0 +1,12 @@
+selfR R("ð,
+*
+S S("#get-field# total_books:,
+*
+S S("?python-partial-apply?:-
++
+S" S(3"#get-field# passed_count:,
+*
+S" S(3"?python-partial-apply?:%
+#
+S S(3"	#binop -#*2-:
+S S(3*D/Users/kevintoles/POC/ai-platform-data/scripts/validate_raw_books.py

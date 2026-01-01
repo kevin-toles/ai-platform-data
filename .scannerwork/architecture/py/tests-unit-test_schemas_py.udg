@@ -1,0 +1,491 @@
+
+1.0PythonFrontend"1767067230930*py2.B¬ 
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+
+tests/unit/test_schemas.py9
+
+tests.unit.test_schemas11
+
+
+__future__12
+
+
+json14
+
+pathlib16
+
+typing18
+
+
+jsonschema20
++
+%tests.unit.test_schemas.validate_data22
+
+
+bool24
+
+
+dict26
+/
+)tests.unit.test_schemas.TestBookRawSchema28
+K
+Etests.unit.test_schemas.TestBookRawSchema.test_valid_raw_book_minimal30
+
+NoneType32
+K
+Etests.unit.test_schemas.TestBookRawSchema.test_invalid_missing_author34
+P
+Jtests.unit.test_schemas.TestBookRawSchema.test_invalid_chapter_number_type36
+Q
+Ktests.unit.test_schemas.TestBookRawSchema.test_valid_raw_book_with_chapters38
+P
+Jtests.unit.test_schemas.TestBookRawSchema.test_schema_is_valid_json_schema40
+S
+Mtests.unit.test_schemas.TestBookRawSchema.test_invalid_chapter_missing_number42
+B
+<tests.unit.test_schemas.TestBookRawSchema.test_schema_exists44
+
+pathlib.Path46
+J
+Dtests.unit.test_schemas.TestBookRawSchema.test_invalid_missing_title48
+8
+2tests.unit.test_schemas.TestTaxonomyRegistrySchema50
+^
+Xtests.unit.test_schemas.TestTaxonomyRegistrySchema.test_invalid_missing_default_taxonomy52
+Y
+Stests.unit.test_schemas.TestTaxonomyRegistrySchema.test_invalid_taxonomy_missing_id54
+T
+Ntests.unit.test_schemas.TestTaxonomyRegistrySchema.test_valid_registry_minimal56
+V
+Ptests.unit.test_schemas.TestTaxonomyRegistrySchema.test_invalid_empty_taxonomies58
+U
+Otests.unit.test_schemas.TestTaxonomyRegistrySchema.test_valid_inactive_taxonomy60
+Y
+Stests.unit.test_schemas.TestTaxonomyRegistrySchema.test_schema_is_valid_json_schema62
+X
+Rtests.unit.test_schemas.TestTaxonomyRegistrySchema.test_invalid_taxonomy_id_format64
+[
+Utests.unit.test_schemas.TestTaxonomyRegistrySchema.test_invalid_taxonomy_missing_path66
+Q
+Ktests.unit.test_schemas.TestTaxonomyRegistrySchema.test_valid_registry_full68
+K
+Etests.unit.test_schemas.TestTaxonomyRegistrySchema.test_schema_exists70
+0
+*tests.unit.test_schemas.TestTaxonomySchema72
+L
+Ftests.unit.test_schemas.TestTaxonomySchema.test_valid_taxonomy_minimal74
+I
+Ctests.unit.test_schemas.TestTaxonomySchema.test_valid_taxonomy_full76
+M
+Gtests.unit.test_schemas.TestTaxonomySchema.test_invalid_missing_version78
+X
+Rtests.unit.test_schemas.TestTaxonomySchema.test_invalid_tier_priority_not_positive80
+O
+Itests.unit.test_schemas.TestTaxonomySchema.test_invalid_tier_missing_name82
+W
+Qtests.unit.test_schemas.TestTaxonomySchema.test_invalid_relationship_missing_type84
+Q
+Ktests.unit.test_schemas.TestTaxonomySchema.test_schema_is_valid_json_schema86
+J
+Dtests.unit.test_schemas.TestTaxonomySchema.test_invalid_missing_name88
+C
+=tests.unit.test_schemas.TestTaxonomySchema.test_schema_exists90
+)
+#tests.unit.test_schemas.load_schema92
+4
+.tests.unit.test_schemas.TestBookEnrichedSchema94
+P
+Jtests.unit.test_schemas.TestBookEnrichedSchema.test_valid_enriched_minimal96
+G
+Atests.unit.test_schemas.TestBookEnrichedSchema.test_schema_exists98
+N
+Gtests.unit.test_schemas.TestBookEnrichedSchema.test_valid_enriched_full100
+U
+Ntests.unit.test_schemas.TestBookEnrichedSchema.test_invalid_missing_embeddings102
+Z
+Stests.unit.test_schemas.TestBookEnrichedSchema.test_invalid_dimensions_not_positive104
+[
+Ttests.unit.test_schemas.TestBookEnrichedSchema.test_invalid_embeddings_missing_model106
+V
+Otests.unit.test_schemas.TestBookEnrichedSchema.test_schema_is_valid_json_schema108
+5
+.tests.unit.test_schemas.TestBookMetadataSchema110
+V
+Otests.unit.test_schemas.TestBookMetadataSchema.test_schema_is_valid_json_schema112
+H
+Atests.unit.test_schemas.TestBookMetadataSchema.test_schema_exists114
+M
+Ftests.unit.test_schemas.TestBookMetadataSchema.test_invalid_missing_id116
+X
+Qtests.unit.test_schemas.TestBookMetadataSchema.test_invalid_priority_out_of_range118
+N
+Gtests.unit.test_schemas.TestBookMetadataSchema.test_valid_metadata_full120
+Q
+Jtests.unit.test_schemas.TestBookMetadataSchema.test_valid_metadata_minimal122
+O
+Htests.unit.test_schemas.TestBookMetadataSchema.test_invalid_missing_tier124
+S
+Ltests.unit.test_schemas.TestBookMetadataSchema.test_invalid_year_not_integer126J
+
+8
+89jÈ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23227 210
+
+25
+25246
+
+27
+27266
+
+29
+29286 210
+
+31
+31307 229
+
+33
+33326
+
+35
+35347 229
+
+37
+37367 229
+
+39
+39387 229
+
+41
+41407 229
+
+43
+43427 229
+
+45
+45447 229
+
+47
+47466
+
+49
+49487 229
+
+51
+51506 210
+
+53
+53527 251
+
+55
+55547 251
+
+57
+57567 251
+
+59
+59587 251
+
+61
+61607 251
+
+63
+63627 251
+
+65
+65647 251
+
+67
+67667 251
+
+69
+69687 251
+
+71
+71707 251
+
+73
+73726 210
+
+75
+75747 273
+
+77
+77767 273
+
+79
+79787 273
+
+81
+81807 273
+
+83
+83827 273
+
+85
+85847 273
+
+87
+87867 273
+
+89
+89887 273
+
+91
+91907 273
+
+93
+93927 210
+
+95
+95946 210
+
+97
+97967 295
+
+99
+99987 295
+
+101
+1011007 295
+
+103
+1031027 295
+
+105
+1051047 295
+
+107
+1071067 295
+
+109
+1091087 295
+
+111
+1111106 210
+
+113
+1131127 2111
+
+115
+1151147 2111
+
+117
+1171167 2111
+
+119
+1191187 2111
+
+121
+1211207 2111
+
+123
+1231227 2111
+
+125
+1251247 2111
+
+127
+1271267 2111r’
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8 (
+
+10211*
+8 (8
+
+23253*
+8. .(
+
+23274*
+8. .(
+
+23274*
+8. .(
+
+31333*
+8T	 T($
+
+35333*
+8Ž	 Ž($
+
+37333*
+8±	 ±()
+
+39333*
+8d	 d(*
+
+41333*
+8N	 N()
+
+43333*
+8	 (,
+
+45333*
+8I	 I(
+
+45474*
+8I	 I(
+
+49333*
+8	 (#
+
+53333*
+8ú	 ú(.
+
+55333*
+8—	 —()
+
+57333*
+8Å	 Å($
+
+59333*
+8Œ	 Œ(&
+
+61333*
+8Í	 Í(%
+
+63333*
+8À	 À()
+
+65333*
+8»	 »((
+
+67333*
+8©	 ©(+
+
+69333*
+8Ö	 Ö(!
+
+71333*
+8»	 »(
+
+71474*
+8»	 »(
+
+75333*
+8²	 ²($
+
+77333*
+8¼	 ¼(!
+
+79333*
+8í	 í(%
+
+81333*
+8‰	 ‰(0
+
+83333*
+8ø	 ø('
+
+85333*
+8š	 š(/
+
+87333*
+8­	 ­()
+
+89333*
+8â	 â("
+
+91333*
+8¨	 ¨(
+
+91474*
+8¨	 ¨(
+
+93474*
+8 (
+
+97333*
+8¿	 ¿($
+
+99333*
+8µ	 µ(
+
+99474*
+8µ	 µ(
+
+101333*
+8Ð	 Ð(!
+
+103333*
+8ì	 ì((
+
+105333*
+8	 (-
+
+107333*
+8û	 û(.
+
+109333*
+8º	 º()
+
+113333*
+8Ò	 Ò()
+
+115333*
+8Í	 Í(
+
+115474*
+8Í	 Í(
+
+117333*
+8ú	 ú( 
+
+119333*
+8Ÿ	 Ÿ(+
+
+121333*
+8â	 â(!
+
+123333*
+8×	 ×($
+
+125333*
+8†	 †("
+
+127333*
+8’	 ’(&

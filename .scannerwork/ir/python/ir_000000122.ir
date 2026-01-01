@@ -1,0 +1,16 @@
+
+E<"https://raw.githubusercontent.com/{self.repo}/{ref}/{path}"str
+öì"Get raw content URL for a file.
+        
+        Args:
+            path: File path relative to repo root
+            ref: Branch, tag, or commit SHA
+            
+        Returns:
+            Raw GitHub URL for direct download
+        "strself
+‚ ‚(path
+‚ ‚(#ref
+‚% ‚(6"
+
+Œ Œ(L*J/Users/kevintoles/POC/ai-platform-data/src/code_reference/github_client.py

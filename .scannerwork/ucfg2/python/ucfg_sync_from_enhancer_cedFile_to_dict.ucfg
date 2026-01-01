@@ -1,0 +1,116 @@
+
+-scripts.sync_from_enhancer.SyncedFile.to_dictN
+D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.pyt t("2*ó
+
+2u u(&
+v |(	
+%1"dictp
+n
+w w(+
+%2"__id*V
+
+__unknown_file (:*8'
+%scripts.sync_from_enhancer.SyncedFile"
+source_name’
+
+w w(+
+%3"__mapSet*"
+
+__unknown_file (
+
+%1*+
+
+__unknown_file (
+source_name*"
+
+__unknown_file (
+
+%2p
+n
+x x(+
+%4"__id*V
+
+__unknown_file (:*8'
+%scripts.sync_from_enhancer.SyncedFile"
+target_name’
+
+x x(+
+%5"__mapSet*"
+
+__unknown_file (
+
+%1*+
+
+__unknown_file (
+target_name*"
+
+__unknown_file (
+
+%4t
+r
+y y(3
+%6"__id*Z
+
+__unknown_file (>*<'
+%scripts.sync_from_enhancer.SyncedFile"
+source_checksum–
+“
+y y(3
+%7"__mapSet*"
+
+__unknown_file (
+
+%1*/
+
+__unknown_file (
+source_checksum*"
+
+__unknown_file (
+
+%6t
+r
+z z(3
+%8"__id*Z
+
+__unknown_file (>*<'
+%scripts.sync_from_enhancer.SyncedFile"
+target_checksum–
+“
+z z(3
+%9"__mapSet*"
+
+__unknown_file (
+
+%1*/
+
+__unknown_file (
+target_checksum*"
+
+__unknown_file (
+
+%8r
+p
+{ {(-
+%10"__id*W
+
+__unknown_file (;*9'
+%scripts.sync_from_enhancer.SyncedFile"
+bytes_copied•
+’
+{ {(-
+%11"__mapSet*"
+
+__unknown_file (
+
+%1*,
+
+__unknown_file (
+bytes_copied*#
+
+__unknown_file (
+
+%10"
+v |(	
+
+%1B)'
+%scripts.sync_from_enhancer.SyncedFileH

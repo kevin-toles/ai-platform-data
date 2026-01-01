@@ -1,0 +1,252 @@
+
+1.0PythonFrontend"1767067231204*py2.BŠ	
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+(
+#src/code_reference/github_client.py9
+&
+ src.code_reference.github_client11
+
+
+__future__12
+
+base6414
+
+logging16
+
+os18
+
+dataclasses20
+
+typing22
+3
+-src.code_reference.github_client.GitHubClient24
+B
+<src.code_reference.github_client.GitHubClient.list_directory26
+
+typing.Coroutine28
+	
+str30
+<
+6src.code_reference.github_client.GitHubClient.__init__32
+
+float34
+;
+5src.code_reference.github_client.GitHubClient.headers36
+
+
+dict38
+>
+8src.code_reference.github_client.GitHubClient.__aenter__40
+=
+7src.code_reference.github_client.GitHubClient.__aexit__42
+
+tuple44
+?
+9src.code_reference.github_client.GitHubClient.get_raw_url46
+<
+6src.code_reference.github_client.GitHubClient.get_file48
+:
+4src.code_reference.github_client.GitHubClient.client50
+B
+<src.code_reference.github_client.GitHubClient.get_file_lines52
+	
+int54
+?
+9src.code_reference.github_client.GitHubClient.search_code56
+@
+:src.code_reference.github_client.GitHubClient.get_html_url58
+1
++src.code_reference.github_client.GitHubFile60J
+
+8
+89jË
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25246 210
+
+27
+27267 225
+
+29
+29286
+
+31
+31306
+
+33
+33327 225
+
+35
+35346
+
+37
+37367 225
+
+39
+39386
+
+41
+41407 225
+
+43
+43427 225
+
+45
+45446
+
+47
+47467 225
+
+49
+49487 225
+
+51
+51507 225
+
+53
+53527 225
+
+55
+55546
+
+57
+57567 225
+
+59
+59587 225
+
+61
+61606 210râ
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8 (
+
+
+10211*
+8 ("
+
+10231*
+8	 	(!
+
+27293*
+8® ®(
+
+27314*
+8® ®(
+
+27314*
+8® ®(
+
+33314*
+8+	 +(
+
+33354*
+8+	 +(
+
+37393*
+8>	 >(
+
+41293*
+8H H(
+
+43293*
+8Q Q(
+
+43454*
+8Q Q(
+
+47313*
+8‚	 ‚(
+
+47314*
+8‚	 ‚(
+
+47314*
+8‚	 ‚(
+
+49293*
+8b b(
+
+49314*
+8b b(
+
+49314*
+8b b(
+
+53293*
+8Ž Ž(
+
+53314*
+8Ž Ž(
+
+53554*
+8Ž Ž(
+
+53554*
+8Ž Ž(
+
+53314*
+8Ž Ž(
+
+53554*
+8Ž Ž(
+
+57293*
+8Ð Ð(
+
+57314*
+8Ð Ð(
+
+57554*
+8Ð Ð(
+
+59313*
+8Ž	 Ž(
+
+59314*
+8Ž	 Ž(

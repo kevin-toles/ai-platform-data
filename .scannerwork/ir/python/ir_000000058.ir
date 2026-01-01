@@ -1,0 +1,92 @@
+
+#"errors"str
+"error_count"str
+#"Serialize to dictionary."str
+"skipped_count"str
+"synced_files"str
+"synced_count"str
+"total_bytes_copied"str
+ 
+"warnings"str
+"elapsed_seconds"str
+"planned_files"str
+	"dry_run"strself
+Ø Ø("È&
+$
+
+Ú å(	"#new-object#Bdict*
+(
+
+Û Û(#"#get-field# dry_run:"
+ 
+
+Û Û(#"	#map-set#:/
+-
+
+Ü Ü(-"#get-field# synced_count:.
+,
+
+Ü Ü(-	"?python-partial-apply?:"
+ 
+
+Ü Ü(-
+"	#map-set#:	0
+.
+
+Ý Ý(/"#get-field# skipped_count:.
+,
+
+Ý Ý(/"?python-partial-apply?:"
+ 
+
+Ý Ý(/"	#map-set#:.
+,
+
+Þ Þ(+"#get-field# error_count:.
+,
+
+Þ Þ(+"?python-partial-apply?:"
+ 
+
+Þ Þ(+"	#map-set#:5
+3
+
+ß" ß(9" #get-field# total_bytes_copied:.
+,
+
+ß" ß(9"?python-partial-apply?:"
+ 
+
+ß ß(9"	#map-set#:2
+0
+
+à à(3"#get-field# elapsed_seconds:"
+ 
+
+à à(3"	#map-set#:-
++
+
+á á(D"?python-unknown?:Blist"
+ 
+
+á á(D"	#map-set#:-
++
+
+â â(F"?python-unknown?:Blist"
+ 
+
+â â(F"	#map-set#:-
++
+
+ã ã(<!"?python-unknown?:Blist"
+ 
+
+ã ã(<""	#map-set#: !-
++
+
+ä ä(8$"?python-unknown?:Blist"
+ 
+
+ä ä(8%"	#map-set#:#$
+
+Ú å(	*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

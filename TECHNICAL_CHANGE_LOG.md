@@ -6,6 +6,125 @@
 
 ## Changelog
 
+### 2025-12-31: Qwen3 Model Series Addition (CL-019)
+
+**Summary**: Added two new Qwen3 models to the inference-service model registry, expanding code generation capabilities with both a dense model (Qwen3-8B) and a Mixture of Experts model (Qwen3-Coder-30B-A3B).
+
+**Models Added**:
+
+| Model | File | Size | Architecture | Use Case |
+|-------|------|------|--------------|----------|
+| `qwen3-8b` | Qwen3-8B-Q4_K_M.gguf | 4.7GB | Dense | General-purpose, good at code - D4v2 preset |
+| `qwen3-coder-30b-a3b` | Qwen3-Coder-30B-A3B-Instruct-Q3_K_M.gguf | 14GB | MoE (128 experts, 8 active) | Standalone code generation - S10 preset |
+
+**Qwen3-Coder-30B-A3B MoE Architecture**:
+- Total Parameters: 30.5B
+- Active Parameters per Token: 3.3B
+- Experts: 128 total, 8 activated per inference
+- Native Context: 256K (extendable to 1M)
+- Quantization: Q3_K_M (~14GB)
+
+**New Presets Added**:
+
+| Preset | Models | Size | Mode | Description |
+|--------|--------|------|------|-------------|
+| `S9` | qwen3-8b | 4.7GB | single | Qwen3 8B standalone |
+| `S10` | qwen3-coder-30b-a3b | 14GB | single | MoE code specialist standalone |
+| `D4v2` | deepseek-r1-7b + qwen3-8b | 9.4GB | critique | Upgraded D4 with Qwen3 |
+
+**Configuration Files Updated**:
+
+| File | Location | Changes |
+|------|----------|---------|
+| `models.yaml` | ai-models/config/ | Added qwen3-8b, qwen3-coder-30b-a3b definitions |
+| `presets.yaml` | inference-service/config/ | Added S9, S10, D4v2 presets |
+| `ARCHITECTURE.md` | inference-service/docs/ | Updated model tables, context constraints, folder structure |
+| `WBS.md` | inference-service/docs/ | Added Qwen3 model options reference |
+
+**Source Repositories**:
+- qwen3-8b: `Qwen/Qwen3-8B-GGUF`
+- qwen3-coder-30b-a3b: `unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF`
+
+**Cross-References**:
+- inference-service/docs/ARCHITECTURE.md: v1.4.0
+- inference-service/config/presets.yaml: 35+ presets now available
+
+---
+
+### 2025-12-31: Architecture Documentation Update - inference-service Integration (CL-018)
+
+**Summary**: Updated architecture documents across repositories to include `inference-service` (port 8085) which was missing from the master platform architecture document despite being active since December 27, 2025.
+
+**Documents Updated**:
+
+| Document | Location | Changes |
+|----------|----------|---------|
+| `AI_CODING_PLATFORM_ARCHITECTURE.md` | textbooks/pending/platform/ | Added inference-service to Platform Services table, Network Topology diagram |
+| `ARCHITECTURE.md` | llm-gateway/docs/ | Added inference-service to Platform Services, documented LlamaCpp provider routing |
+
+**Platform Services (Updated)**:
+
+| Service | Port | Role |
+|---------|------|------|
+| `llm-gateway` | 8080 | Router (entry point) |
+| `semantic-search-service` | 8081 | Cookbook (retrieval) |
+| `ai-agents` | 8082 | Expeditor (orchestration) |
+| `Code-Orchestrator-Service` | 8083 | Sous Chef (ML models) |
+| `audit-service` | 8084 | Auditor (validation) |
+| `inference-service` | 8085 | **NEW** - Local LLM Inference |
+| `ai-platform-data` | N/A | Pantry (storage) |
+
+**inference-service Details**:
+- Backend: llama-cpp-python + Metal (Mac), vLLM + CUDA (future)
+- API: OpenAI-compatible (`/v1/chat/completions`)
+- Access: Internal only (called by llm-gateway via llamacpp provider)
+- Models: phi-4, deepseek-r1-7b, qwen2.5-7b, llama-3.2-3b, phi-3-medium-128k, granite-8b-code-128k
+
+**Cross-References**:
+- inference-service/docs/ARCHITECTURE.md: v1.3.0 (source of truth for inference-service)
+- llm-gateway/src/providers/llamacpp.py: LlamaCpp provider implementation
+
+---
+
+### 2025-12-31: Model Configuration Single Source of Truth (CL-017)
+
+**Summary**: Resolved configuration drift between `ai-models` and `inference-service` repos. Established **inference-service** as the single owner of all model configuration, with ai-models becoming storage-only.
+
+**Conflict Analysis**:
+
+| Issue | Description |
+|-------|-------------|
+| Duplicate Config | `models.yaml` existed in both repos with different values |
+| Maintenance Burden | `gpu_layers` had to be updated in two places |
+| Drift Risk | Path formats differed (`phi-4-Q4_K_S.gguf` vs `phi-4/phi-4-Q4_K_S.gguf`) |
+| Principle Violation | Violated Single Source of Truth (SSOT) |
+
+**Resolution (Option A Adopted)**:
+
+| Action | File | Result |
+|--------|------|--------|
+| **DELETE** | `ai-models/config/models.yaml` | Removed duplicate |
+| **DELETE** | `ai-models/config/configs.yaml` | Removed duplicate (presets) |
+| **UPDATE** | `ai-models/README.md` | Clarified storage-only role |
+| **UPDATE** | `inference-service/docs/ARCHITECTURE.md` | Documented ownership |
+| **KEEP** | `ai-models/scripts/download_models.py` | Self-contained (has own MODELS dict) |
+
+**New Architecture**:
+
+| Repo | Responsibility | Config Files |
+|------|----------------|--------------|
+| **inference-service** | Runtime config (models, presets, gpu_layers) | `config/models.yaml`, `config/presets.yaml` |
+| **ai-models** | Storage (model files, downloads) | None (storage-only) |
+
+**Cross-References**:
+- Building Microservices (Newman): "Service autonomy - can you deploy by itself?"
+- Beyond 12-Factor App (Hoffman): "Externalize configuration per service"
+- AI_CODING_PLATFORM_ARCHITECTURE.md: Kitchen Brigade - each service owns its domain
+
+**Document Priority Applied**: Resolved per document hierarchy (Priority 1-5)
+
+---
+
 ### 2025-12-29: Protocol Integration Architecture - Phase 2 (CL-016)
 
 **Summary**: Created Protocol Integration Architecture document for A2A (Agent-to-Agent) and MCP (Model Context Protocol) integration as Phase 2 of the Agent Architecture Evolution. All features are behind feature flags for safe experimentation.

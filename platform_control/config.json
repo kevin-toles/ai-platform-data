@@ -1,0 +1,32 @@
+{
+  "services": {
+    "inference-service": {
+      "mode": "native",
+      "auto_start": false
+    },
+    "llm-gateway": {
+      "mode": "docker",
+      "auto_start": false
+    },
+    "ai-agents": {
+      "mode": "docker",
+      "auto_start": false
+    },
+    "code-orchestrator": {
+      "mode": "docker",
+      "auto_start": false
+    },
+    "semantic-search": {
+      "mode": "docker",
+      "auto_start": false
+    },
+    "audit-service": {
+      "mode": "docker",
+      "auto_start": false
+    }
+  },
+  "ui": {
+    "refresh_interval_seconds": 5,
+    "theme": "dark"
+  }
+}

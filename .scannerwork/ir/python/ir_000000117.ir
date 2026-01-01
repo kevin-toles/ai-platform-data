@@ -1,0 +1,26 @@
+
+"Accept"str
+"X-GitHub-Api-Version"str
+"Authorization"str
+"Bearer {self.token}"str
+"2022-11-28"str
+!"Build request headers."str
+) "application/vnd.github.v3+json"strself> >("ä-
++
+@ C(	headers"#new-object#Bdict 
+
+A A(6"	#map-set#: 
+
+B B(0	"	#map-set#:&
+$
+D D(
+"#get-field# token:)
+'
+D D("
+__bool__*:
+BboolH"
+D D( *D D(
+".$
+"
+E E(="#array-write#:"
+F F(*J/Users/kevintoles/POC/ai-platform-data/src/code_reference/github_client.py

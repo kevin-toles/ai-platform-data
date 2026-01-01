@@ -1,0 +1,85 @@
+
+5src.code_reference.github_client.GitHubClient.headersT
+J/Users/kevintoles/POC/ai-platform-data/src/code_reference/github_client.py> >("2*¸
+2? ?($
+@ C(	
+%4"dict©
+¦
+A A(6
+%5"__mapSet*"
+
+__unknown_file (
+
+%4*&
+
+__unknown_file (
+
+Accept*>
+
+__unknown_file (" 
+application/vnd.github.v3+json£
+ 
+B B(0
+%6"__mapSet*"
+
+__unknown_file (
+
+%4*4
+
+__unknown_file (
+X-GitHub-Api-Version**
+
+__unknown_file (
+
+2022-11-28A
+?
+@ C(		
+headers"__id*"
+
+__unknown_file (
+
+%4r
+p
+D D(
+%7"__id*X
+
+__unknown_file (<*:/
+-src.code_reference.github_client.GitHubClient"
+token*
+4
+5*&
+4F F("
+F F(
+	
+headers*‚
+5E E(=r
+p
+E1 E(;
+%1"__id*X
+
+__unknown_file (<*:/
+-src.code_reference.github_client.GitHubClient"
+tokenI
+G
+E' E(=
+%2"__concat*
+E) E(0	
+Bearer *
+E1 E(;
+
+%1®«
+E E(=
+%3"dict.__setitem__*'
+
+__unknown_file (
+	
+headers*-
+
+__unknown_file (
+Authorization*"
+
+__unknown_file (
+
+%22__setitem__*
+4B1/
+-src.code_reference.github_client.GitHubClientH

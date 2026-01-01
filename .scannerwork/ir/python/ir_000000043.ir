@@ -1,0 +1,28 @@
+
+
+"edge_types"str
+
+"chapters"str
+"hops"str
+"score"str
+8/"Convert to dictionary for JSON serialization."strselfk k("å$
+"
+m r(	"#new-object#Bdict)
+'
+n n(%"#get-field# chapters: 
+
+n n(%"	#map-set#:%
+#
+o o("#get-field# hops: 
+
+o o(	"	#map-set#:+
+)
+p p(<"?python-unknown?:Blist 
+
+p p(<"	#map-set#:
+&
+$
+q q("#get-field# score: 
+
+q q("	#map-set#:
+m r(	*</Users/kevintoles/POC/ai-platform-data/src/graph/__init__.py

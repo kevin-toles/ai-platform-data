@@ -1,0 +1,125 @@
+
+1.0PythonFrontend"1767067231231*py2.Bõ
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+!
+src/code_reference/models.py9
+
+src.code_reference.models11
+
+
+__future__12
+
+dataclasses14
+
+typing16
+-
+'src.code_reference.models.CodeReference18
+6
+0src.code_reference.models.CodeReference.citation20
+	
+str22
+)
+#src.code_reference.models.CodeChunk24
++
+%src.code_reference.models.CodeContext26
+9
+3src.code_reference.models.CodeContext.get_citations28
+
+
+list30
+=
+7src.code_reference.models.CodeContext.to_prompt_context32
+,
+&src.code_reference.models.RepoMetadata34
+6
+0src.code_reference.models.RepoMetadata.from_dict36
+
+
+dict38J
+
+8
+89j‹
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19186 210
+
+21
+21207 219
+
+23
+23226
+
+25
+25246 210
+
+27
+27266 210
+
+29
+29287 227
+
+31
+31306
+
+33
+33327 227
+
+35
+35346 210
+
+37
+37367 235
+
+39
+39386r–
+
+10131*
+8 (#
+
+10151*
+8 ()
+
+10171*
+8 (
+
+21233*
+8P	 P(
+
+29313*
+8p	 p(
+
+33233*
+8b	 b(
+
+37353*
+8 	  (
+
+37394*
+8 	  (

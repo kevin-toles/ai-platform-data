@@ -1,0 +1,17 @@
+
+XO"{base}/{self.chunk.file_path}#L{self.chunk.start_line}-L{self.chunk.end_line}"str
+7."Generate citation string for this reference."str
+I@"https://github.com/kevin-toles/code-reference-engine/blob/main"strselfP P("v+
+)
+R R("#get-field# source_url:)
+'
+R R("
+__bool__*:BboolH"
+R R( *R R(
+"?+
+)
+S S(""#get-field# source_url:
+S S(""8$
+"
+T T(Obase"#id#:Bstr
+U U(_*C/Users/kevintoles/POC/ai-platform-data/src/code_reference/models.py

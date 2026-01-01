@@ -1,0 +1,12 @@
+selfm m("ð,
+*
+n n("#get-field# total_books:,
+*
+n n("?python-partial-apply?:-
++
+n" n(3"#get-field# passed_count:,
+*
+n" n(3"?python-partial-apply?:%
+#
+n n(3"	#binop -#*2-:
+n n(3*I/Users/kevintoles/POC/ai-platform-data/scripts/validate_enriched_books.py

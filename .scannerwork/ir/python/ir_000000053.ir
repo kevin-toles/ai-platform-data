@@ -1,0 +1,12 @@
+
+/&"Number of files successfully synced."strself
+» »("q/
+-
+
+½ ½($"#get-field# synced_files:,
+*
+
+½ ½(%"
+builtinslen*:Bint
+
+½ ½(%*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

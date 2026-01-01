@@ -1,0 +1,26 @@
+
+çÉ"Create Qdrant client from environment configuration.
+    
+    Per Issue #12: Single client instance with connection pooling.
+    "str
+"QDRANT_HOST"str
+"6333"str
+"localhost"str
+"QDRANT_PORT"str"å0
+.
+L L(*QdrantClient"?python-unknown?!
+
+N N("#unknown-value#&
+$
+P P(0host"
+osgetenv: 
+
+Q Q(/	"
+osgetenv:4
+2
+Q Q(0
+port"#dependent-value#*:	Bint%
+#
+S S(-"#unknown-value#:
+
+S S(-*=/Users/kevintoles/POC/ai-platform-data/scripts/seed_qdrant.py

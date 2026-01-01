@@ -1,0 +1,320 @@
+
+1.0PythonFrontend"1767067231003*py2.Bç
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+!
+src/code_reference/engine.py9
+
+src.code_reference.engine11
+
+
+__future__12
+
+
+json14
+
+logging16
+
+pathlib18
+
+typing20
+&
+ src.code_reference.github_client22
+
+src.code_reference.models24
+ 
+qdrant_client.QdrantClient26
+
+qdrant_client28
+3
+-src.code_reference.engine.CodeReferenceEngine30
+:
+4src.code_reference.engine.CodeReferenceEngine.github32
+3
+-src.code_reference.github_client.GitHubClient34
+H
+Bsrc.code_reference.engine.CodeReferenceEngine.get_repos_by_pattern36
+
+
+list38
+	
+str40
+B
+<src.code_reference.engine.CodeReferenceEngine.get_statistics42
+
+
+dict44
+<
+6src.code_reference.engine.CodeReferenceEngine.get_file46
+
+typing.Coroutine48
+J
+Dsrc.code_reference.engine.CodeReferenceEngine.get_file_with_citation50
+>
+8src.code_reference.engine.CodeReferenceEngine.__aenter__52
+C
+=src.code_reference.engine.CodeReferenceEngine.get_all_domains54
+<
+6src.code_reference.engine.CodeReferenceEngine.registry56
+B
+<src.code_reference.engine.CodeReferenceEngine._search_qdrant58
+	
+int60
+@
+:src.code_reference.engine.CodeReferenceEngine.get_metadata62
+B
+<src.code_reference.engine.CodeReferenceEngine._search_github64
+<
+6src.code_reference.engine.CodeReferenceEngine.__init__66
+H
+Bsrc.code_reference.engine.CodeReferenceEngine.get_repos_for_domain68
+=
+7src.code_reference.engine.CodeReferenceEngine.__aexit__70
+
+tuple72
+:
+4src.code_reference.engine.CodeReferenceEngine.search74
+
+
+bool76
+H
+Bsrc.code_reference.engine.CodeReferenceEngine.get_repos_by_concept78J
+
+8
+89jŽ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25245
+
+27
+27265
+
+29
+29285
+
+31
+31306 210
+
+33
+33327 231
+
+35
+35346
+
+37
+37367 231
+
+39
+39386
+
+41
+41406
+
+43
+43427 231
+
+45
+45446
+
+47
+47467 231
+
+49
+49486
+
+51
+51507 231
+
+53
+53527 231
+
+55
+55547 231
+
+57
+57567 231
+
+59
+59587 231
+
+61
+61606
+
+63
+63627 231
+
+65
+65647 231
+
+67
+67667 231
+
+69
+69687 231
+
+71
+71707 231
+
+73
+73726
+
+75
+75747 231
+
+77
+77766
+
+79
+79787 231r¤
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8 (
+
+10211*
+8 (&
+
+10231*
+8 ((
+
+10251*
+8 (H
+
+10271*
+8 (+
+
+10291*
+8 (+
+
+33353*
+8g	 g(
+
+37393*
+8¯	 ¯(
+
+37414*
+8¯	 ¯(
+
+43453*
+8—	 —(
+
+47493*
+8õ õ(
+
+47414*
+8õ õ(
+
+51493*
+8 (%
+
+51414*
+8 (%
+
+53493*
+8S S(
+
+55393*
+8	 (
+
+57453*
+8_	 _(
+
+59493*
+8µ µ(
+
+59414*
+8µ µ(
+
+59614*
+8µ µ(
+
+63414*
+8m	 m(
+
+65493*
+8Í Í(
+
+65414*
+8Í Í(
+
+65614*
+8Í Í(
+
+67414*
+87	 7(
+
+69393*
+8‡	 ‡(
+
+69414*
+8‡	 ‡(
+
+71493*
+8Y Y(
+
+71734*
+8Y Y(
+
+75493*
+8Å Å(
+
+75414*
+8Å Å(
+
+75614*
+8Å Å(
+
+75774*
+8Å Å(
+
+75614*
+8Å Å(
+
+79393*
+8™	 ™(
+
+79414*
+8™	 ™(

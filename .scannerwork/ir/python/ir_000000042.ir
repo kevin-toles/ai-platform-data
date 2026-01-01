@@ -1,0 +1,44 @@
+
+"book_title"str
+
+"tier"str
+"edge_type"str
+"title"str
+"chapter_id"str
+"score"str
+	"book_id"str
+8/"Convert to dictionary for JSON serialization."strselfL L("ó$
+"
+N V(	"#new-object#Bdict+
+)
+O O()"#get-field# chapter_id: 
+
+O O()"	#map-set#:&
+$
+P P("#get-field# title: 
+
+P P(	"	#map-set#:%
+#
+Q Q("#get-field# tier: 
+
+Q Q("	#map-set#:
+*
+(
+R R('"#get-field# edge_type:&
+$
+R R(-"#get-field# value: 
+
+R R(-"	#map-set#:&
+$
+S S("#get-field# score: 
+
+S S("	#map-set#:(
+&
+T T(#"#get-field# book_id: 
+
+T T(#"	#map-set#:+
+)
+U U()"#get-field# book_title: 
+
+U U()"	#map-set#:
+N V(	*</Users/kevintoles/POC/ai-platform-data/src/graph/__init__.py

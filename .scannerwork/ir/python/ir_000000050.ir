@@ -1,0 +1,40 @@
+
+"skip_reason"str
+"source_name"str
+"target_name"str
+#"Serialize to dictionary."str
+"bytes_to_copy"strself
+å å("º&
+$
+
+é ì(	"#new-object#Bdict.
+,
+
+è è(+"#get-field# source_name:.
+,
+
+è è(+"?python-partial-apply?:"
+ 
+
+è è(+"	#map-set#:.
+,
+
+ê ê(+	"#get-field# target_name:"
+ 
+
+ê ê(+
+"	#map-set#:	0
+.
+
+ë ë(/"#get-field# bytes_to_copy:"
+ 
+
+ë ë(/"	#map-set#:.
+,
+
+í í(+"#get-field# skip_reason:"
+ 
+
+í í(+"	#map-set#:
+
+é ì(	*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

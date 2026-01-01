@@ -1,0 +1,12 @@
+
+„{"Load sentence transformer model for embeddings.
+    
+    Uses all-MiniLM-L6-v2 (384 dimensions) for semantic search.
+    "str"’7
+5
+[ [(9SentenceTransformer"?python-unknown?!
+
+] ](."#unknown-value#$
+"
+] ](/"#unknown-value#:
+] ](/*=/Users/kevintoles/POC/ai-platform-data/scripts/seed_qdrant.py

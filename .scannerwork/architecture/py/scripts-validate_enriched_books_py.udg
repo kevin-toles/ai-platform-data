@@ -1,0 +1,313 @@
+
+1.0PythonFrontend"1767067230921*py2.B¥
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+'
+"scripts/validate_enriched_books.py9
+%
+scripts.validate_enriched_books11
+
+
+__future__12
+
+
+json14
+
+dataclasses16
+
+pathlib18
+
+typing20
+
+click22
+
+rich.console.Console24
+
+rich.console26
+
+rich.table.Table28
+
+
+rich.table30
+3
+-scripts.validate_enriched_books.validate_book32
+:
+4scripts.validate_enriched_books.BookValidationResult34
+
+pathlib.Path36
+4
+.scripts.validate_enriched_books.display_report38
+
+NoneType40
+6
+0scripts.validate_enriched_books.ValidationReport42
+
+
+bool44
+>
+8scripts.validate_enriched_books._validate_top_level_keys46
+
+
+list48
+
+
+dict50
+	
+str52
+*
+$scripts.validate_enriched_books.main54
+>
+8scripts.validate_enriched_books._validate_chapter_fields56
+	
+int58
+2
+,scripts.validate_enriched_books.ChapterIssue60
+A
+;scripts.validate_enriched_books.BookValidationResult.passed62
+C
+=scripts.validate_enriched_books._validate_enrichment_metadata64
+A
+;scripts.validate_enriched_books.validate_enriched_directory66
+A
+;scripts.validate_enriched_books._validate_naming_convention68
+C
+=scripts.validate_enriched_books.ValidationReport.failed_count70
+C
+=scripts.validate_enriched_books.ValidationReport.total_issues72
+C
+=scripts.validate_enriched_books.ValidationReport.passed_count74
+B
+<scripts.validate_enriched_books.ValidationReport.total_books76J
+
+8
+89jõ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25245
+
+27
+27265
+
+29
+29285
+
+31
+31305
+
+33
+33327 210
+
+35
+35346 210
+
+37
+37366
+
+39
+39387 210
+
+41
+41406
+
+43
+43426 210
+
+45
+45446
+
+47
+47467 210
+
+49
+49486
+
+51
+51506
+
+53
+53526
+
+55
+55547 210
+
+57
+57567 210
+
+59
+59586
+
+61
+61606 210
+
+63
+63627 235
+
+65
+65647 210
+
+67
+67667 210
+
+69
+69687 210
+
+71
+71707 243
+
+73
+73727 243
+
+75
+75747 243
+
+77
+77767 243r„
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 ()
+
+10191*
+8 (
+
+10211*
+8 (
+
+10231*
+8 (
+
+10251*
+8   (!
+
+10271*
+8   (!
+
+10291*
+8! !(
+
+10311*
+8! !(
+
+33353*
+8« «(
+
+33374*
+8« «(
+
+39413*
+8ï ï(
+
+39434*
+8ï ï(
+
+39454*
+8ï ï(
+
+47493*
+8u u(
+
+47514*
+8u u(
+
+47534*
+8u u(
+
+55413*
+8± ±(	
+
+55374*
+8± ±(	
+
+55454*
+8± ±(	
+
+55454*
+8± ±(	
+
+57493*
+8† †(
+
+57514*
+8† †(
+
+57594*
+8† †(
+
+57534*
+8† †(
+
+63453*
+8Y	 Y(
+
+65493*
+8Í Í("
+
+65514*
+8Í Í("
+
+65534*
+8Í Í("
+
+67433*
+8â â( 
+
+67374*
+8â â( 
+
+69493*
+8— —( 
+
+69374*
+8— —( 
+
+71593*
+8m	 m(
+
+73593*
+8q	 q(
+
+75593*
+8i	 i(
+
+77593*
+8e	 e(

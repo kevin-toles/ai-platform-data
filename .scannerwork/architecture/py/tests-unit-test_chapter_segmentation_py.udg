@@ -1,0 +1,110 @@
+
+1.0PythonFrontend"1767067230494*py2.Bİ
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+,
+'tests/unit/test_chapter_segmentation.py9
+*
+$tests.unit.test_chapter_segmentation11
+
+
+json12
+
+pathlib14
+E
+?tests.unit.test_chapter_segmentation.TestPageChapterAssignments16
+c
+]tests.unit.test_chapter_segmentation.TestPageChapterAssignments.test_pages_have_chapter_field18
+
+NoneType20
+?
+9tests.unit.test_chapter_segmentation.TestChapterStructure22
+b
+\tests.unit.test_chapter_segmentation.TestChapterStructure.test_chapters_have_required_fields24
+^
+Xtests.unit.test_chapter_segmentation.TestChapterStructure.test_chapters_have_page_ranges26
+C
+=tests.unit.test_chapter_segmentation.TestAllBooksHaveChapters28
+`
+Ztests.unit.test_chapter_segmentation.TestAllBooksHaveChapters.test_all_books_have_chapters30
+>
+8tests.unit.test_chapter_segmentation.TestChapterCoverage32
+\
+Vtests.unit.test_chapter_segmentation.TestChapterCoverage.test_chapters_cover_all_pages34J
+
+8
+89j¼
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17166 210
+
+19
+19187 217
+
+21
+21206
+
+23
+23226 210
+
+25
+25247 223
+
+27
+27267 223
+
+29
+29286 210
+
+31
+31307 229
+
+33
+33326 210
+
+35
+35347 233rº
+
+10131*
+8 (
+
+10151*
+8 (
+
+19213*
+8™	 ™(&
+
+25213*
+8L	 L(+
+
+27213*
+8v	 v('
+
+31213*
+8*	 *(%
+
+35213*
+8Ç	 Ç(&

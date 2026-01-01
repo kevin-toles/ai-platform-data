@@ -1,0 +1,169 @@
+
+!src.graph.TraversalResult.to_dictF
+</Users/kevintoles/POC/ai-platform-data/src/graph/__init__.pyL L("2*µ
+2M M(;
+N V(	
+%1"dictc
+a
+O O()
+%2"__id*I
+
+__unknown_file (-*+
+src.graph.TraversalResult"
+
+chapter_id‘
+Ž
+O O()
+%3"__mapSet*"
+
+__unknown_file (
+
+%1**
+
+__unknown_file (
+
+chapter_id*"
+
+__unknown_file (
+
+%2^
+\
+P P(
+%4"__id*D
+
+__unknown_file ((*&
+src.graph.TraversalResult"
+titleŒ
+‰
+P P(
+%5"__mapSet*"
+
+__unknown_file (
+
+%1*%
+
+__unknown_file (	
+title*"
+
+__unknown_file (
+
+%4]
+[
+Q Q(
+%6"__id*C
+
+__unknown_file ('*%
+src.graph.TraversalResult"
+tier‹
+ˆ
+Q Q(
+%7"__mapSet*"
+
+__unknown_file (
+
+%1*$
+
+__unknown_file (
+tier*"
+
+__unknown_file (
+
+%6b
+`
+R R('
+%8"__id*H
+
+__unknown_file (,**
+src.graph.TraversalResult"
+	edge_typeG
+E
+R R(-
+%9"__id*-
+
+__unknown_file (*
+
+%8"
+value‘
+Ž
+R R(-
+%10"__mapSet*"
+
+__unknown_file (
+
+%1*)
+
+__unknown_file (
+	edge_type*"
+
+__unknown_file (
+
+%9_
+]
+S S(
+%11"__id*D
+
+__unknown_file ((*&
+src.graph.TraversalResult"
+scoreŽ
+‹
+S S(
+%12"__mapSet*"
+
+__unknown_file (
+
+%1*%
+
+__unknown_file (	
+score*#
+
+__unknown_file (
+
+%11a
+_
+T T(#
+%13"__id*F
+
+__unknown_file (**(
+src.graph.TraversalResult"	
+book_id
+
+T T(#
+%14"__mapSet*"
+
+__unknown_file (
+
+%1*'
+
+__unknown_file (	
+book_id*#
+
+__unknown_file (
+
+%13d
+b
+U U()
+%15"__id*I
+
+__unknown_file (-*+
+src.graph.TraversalResult"
+
+book_title“
+
+U U()
+%16"__mapSet*"
+
+__unknown_file (
+
+%1**
+
+__unknown_file (
+
+book_title*#
+
+__unknown_file (
+
+%15"
+N V(	
+
+%1B
+src.graph.TraversalResultH

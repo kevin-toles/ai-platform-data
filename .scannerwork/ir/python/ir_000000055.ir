@@ -1,0 +1,12 @@
+
+'"Number of files with errors."strself
+Å Å("k)
+'
+
+Ç Ç("#get-field# errors:,
+*
+
+Ç Ç("
+builtinslen*:Bint
+
+Ç Ç(*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

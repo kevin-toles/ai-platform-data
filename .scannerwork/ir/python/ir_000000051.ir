@@ -1,0 +1,22 @@
+
+#"Serialize to dictionary."str
+"file_name"str
+	"message"strself
+ù ù("‹&
+$
+
+ü ü(E"#new-object#Bdict,
+*
+
+ü ü(+"#get-field# file_name:"
+ 
+
+ü ü(+"	#map-set#:*
+(
+
+ü8 ü(D"#get-field# message:"
+ 
+
+ü- ü(D	"	#map-set#:
+
+ü ü(E*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

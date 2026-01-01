@@ -1,0 +1,238 @@
+
+1.0PythonFrontend"1767067226446*py2.B‰
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+8
+3tests/unit/test_d22_naming_convention_validation.py9
+6
+0tests.unit.test_d22_naming_convention_validation11
+
+
+__future__12
+
+
+json14
+
+pathlib16
+
+typing18
+S
+Mtests.unit.test_d22_naming_convention_validation._get_metadata_enriched_files20
+
+
+list22
+J
+Dtests.unit.test_d22_naming_convention_validation._load_enriched_book24
+
+
+dict26
+
+pathlib.Path28
+N
+Htests.unit.test_d22_naming_convention_validation.TestScriptCompatibility30
+x
+rtests.unit.test_d22_naming_convention_validation.TestScriptCompatibility.test_validate_enriched_books_glob_pattern32
+
+NoneType34
+m
+gtests.unit.test_d22_naming_convention_validation.TestScriptCompatibility.test_seed_qdrant_enriched_path36
+M
+Gtests.unit.test_d22_naming_convention_validation.TestAllBooksValidation38
+v
+ptests.unit.test_d22_naming_convention_validation.TestAllBooksValidation.test_all_books_have_source_metadata_file40
+u
+otests.unit.test_d22_naming_convention_validation.TestAllBooksValidation.test_all_books_have_enrichment_metadata42
+`
+Ztests.unit.test_d22_naming_convention_validation.TestAllBooksValidation.all_enriched_books44
+J
+Dtests.unit.test_d22_naming_convention_validation._get_enriched_files46
+U
+Otests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields48
+s
+mtests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields.test_taxonomy_checksum_format50
+j
+dtests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields.sample_enriched_book52
+x
+rtests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields.test_all_provenance_fields_present54
+Ç
+|tests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields.test_enriched_books_have_enrichment_metadata56
+r
+ltests.unit.test_d22_naming_convention_validation.TestEnrichmentProvenanceFields.test_enrichment_method_valid58
+K
+Etests.unit.test_d22_naming_convention_validation.TestNamingConvention60
+j
+dtests.unit.test_d22_naming_convention_validation.TestNamingConvention.test_enriched_directory_exists62
+w
+qtests.unit.test_d22_naming_convention_validation.TestNamingConvention.test_all_files_use_metadata_enriched_suffix64
+t
+ntests.unit.test_d22_naming_convention_validation.TestNamingConvention.test_expected_book_count_with_new_naming66J
+
+8
+89jÆ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21207 210
+
+23
+23226
+
+25
+25247 210
+
+27
+27266
+
+29
+29286
+
+31
+31306 210
+
+33
+33327 231
+
+35
+35346
+
+37
+37367 231
+
+39
+39386 210
+
+41
+41407 239
+
+43
+43427 239
+
+45
+45447 239
+
+47
+47467 210
+
+49
+49486 210
+
+51
+51507 249
+
+53
+53527 249
+
+55
+55547 249
+
+57
+57567 249
+
+59
+59587 249
+
+61
+61606 210
+
+63
+63627 261
+
+65
+65647 261
+
+67
+67667 261r“
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8 (
+
+21233*
+8G G(!
+
+25273*
+8N N(
+
+25294*
+8N N(
+
+33353*
+8í	 í(2
+
+37353*
+8õ	 õ('
+
+41353*
+8¯	 ¯(1
+
+41234*
+8¯	 ¯(1
+
+43353*
+8Á	 Á(0
+
+43234*
+8Á	 Á(0
+
+45233*
+8‹	 ‹(
+
+47233*
+8@ @(
+
+51353*
+8´	 ´(&
+
+55353*
+8õ	 õ(+
+
+57353*
+8ê	 ê(5
+
+59353*
+8ƒ	 ƒ(%
+
+63353*
+8[	 [('
+
+65353*
+8a	 a(4
+
+67353*
+8w	 w(1

@@ -1,0 +1,439 @@
+
+1.0PythonFrontend"1767067230677*py2.B«
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+!
+tests/unit/test_migration.py9
+
+tests.unit.test_migration11
+
+
+__future__12
+
+dataclasses14
+
+pathlib16
+
+typing18
+
+collections.abc20
+
+scripts.migrate_raw_books22
+
+inspect24
+
+
+json26
+@
+:tests.unit.test_migration.TestMigrationScriptFunctionality28
+^
+Xtests.unit.test_migration.TestMigrationScriptFunctionality.test_migrate_batch_processing30
+
+NoneType32
+
+pathlib.Path34
+
+
+dict36
+g
+atests.unit.test_migration.TestMigrationScriptFunctionality.test_migration_result_dataclass_exists38
+j
+dtests.unit.test_migration.TestMigrationScriptFunctionality.test_migration_result_has_required_fields40
+i
+ctests.unit.test_migration.TestMigrationScriptFunctionality.test_migrate_books_batch_function_exists42
+p
+jtests.unit.test_migration.TestMigrationScriptFunctionality.test_migrate_continues_on_error_when_configured44
+Y
+Stests.unit.test_migration.TestMigrationScriptFunctionality.test_migrate_single_file46
+/
+)tests.unit.test_migration.sample_raw_book48
+5
+/tests.unit.test_migration.TestTaxonomyMigration50
+T
+Ntests.unit.test_migration.TestTaxonomyMigration.test_taxonomy_registry_updated52
+Z
+Ttests.unit.test_migration.TestTaxonomyMigration.test_copy_taxonomies_function_exists54
+Y
+Stests.unit.test_migration.TestTaxonomyMigration.test_taxonomy_files_exist_in_target56
+9
+3tests.unit.test_migration.TestExpectedBooksMigrated58
+i
+ctests.unit.test_migration.TestExpectedBooksMigrated.test_all_source_files_have_corresponding_target60
+\
+Vtests.unit.test_migration.TestExpectedBooksMigrated.test_migrated_count_matches_source62
+Y
+Stests.unit.test_migration.TestExpectedBooksMigrated.test_source_directory_has_books64
+7
+1tests.unit.test_migration.TestStreamingValidation66
+e
+_tests.unit.test_migration.TestStreamingValidation.test_validate_books_streaming_catches_invalid68
+_
+Ytests.unit.test_migration.TestStreamingValidation.test_validation_result_dataclass_exists70
+d
+^tests.unit.test_migration.TestStreamingValidation.test_validate_books_streaming_yields_results72
+b
+\tests.unit.test_migration.TestStreamingValidation.test_validation_result_has_required_fields74
+d
+^tests.unit.test_migration.TestStreamingValidation.test_all_migrated_files_valid_against_schema76
+e
+_tests.unit.test_migration.TestStreamingValidation.test_validate_books_streaming_function_exists78
+9
+3tests.unit.test_migration.TestMigrationScriptExists80
+`
+Ztests.unit.test_migration.TestMigrationScriptExists.test_migration_config_dataclass_exists82
+c
+]tests.unit.test_migration.TestMigrationScriptExists.test_migration_config_has_required_fields84
+^
+Xtests.unit.test_migration.TestMigrationScriptExists.test_migrate_raw_books_script_exists86
+]
+Wtests.unit.test_migration.TestMigrationScriptExists.test_migration_script_is_importable88J
+
+8
+89jØ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25245
+
+27
+27265
+
+29
+29286 210
+
+31
+31307 229
+
+33
+33326
+
+35
+35346
+
+37
+37366
+
+39
+39387 229
+
+41
+41407 229
+
+43
+43427 229
+
+45
+45447 229
+
+47
+47467 229
+
+49
+49487 210
+
+51
+51506 210
+
+53
+53527 251
+
+55
+55547 251
+
+57
+57567 251
+
+59
+59586 210
+
+61
+61607 259
+
+63
+63627 259
+
+65
+65647 259
+
+67
+67666 210
+
+69
+69687 267
+
+71
+71707 267
+
+73
+73727 267
+
+75
+75747 267
+
+77
+77767 267
+
+79
+79787 267
+
+81
+81806 210
+
+83
+83827 281
+
+85
+85847 281
+
+87
+87867 281
+
+89
+89887 281rí
+
+10131*
+8 (#
+
+10151*
+8 ("
+
+10171*
+8 (
+
+10191*
+8 (1
+
+10211*
+8 ()
+
+10231*
+8-! -(2
+
+10231*
+84 4(B
+
+10231*
+8<	 <(>
+
+10231*
+8T	 T(B
+
+10251*
+8U U(
+
+10231*
+8\ \(B
+
+10231*
+8d	 d(>
+
+10271*
+8v v(
+
+10231*
+8w	 w(S
+
+10271*
+8ñ ñ(
+
+10231*
+8ó	 ó(S
+
+10271*
+8∑ ∑(
+
+10231*
+8∏	 ∏(S
+
+10231*
+8ï ï(C
+
+10231*
+8ù	 ù(?
+
+10231*
+8™	 ™(G
+
+10251*
+8´ ´(
+
+10271*
+8∂ ∂(
+
+10231*
+8∑	 ∑(Y
+
+10271*
+8Õ Õ(
+
+10231*
+8Œ	 Œ(G
+
+10231*
+8Ê	 Ê(G
+
+10231*
+8Ä Ä(B
+
+10271*
+8í í(
+
+31333*
+8ê	 ê(&
+
+31354*
+8ê	 ê(&
+
+31374*
+8ê	 ê(&
+
+39333*
+8Y	 Y(/
+
+41333*
+8b	 b(2
+
+43333*
+8R	 R(1
+
+45333*
+8±	 ±(8
+
+45354*
+8±	 ±(8
+
+45374*
+8±	 ±(8
+
+47333*
+8p	 p(!
+
+47354*
+8p	 p(!
+
+47374*
+8p	 p(!
+
+49373*
+8† †(
+
+53333*
+8ç	 ç('
+
+53354*
+8ç	 ç('
+
+55333*
+8˝	 ˝(-
+
+57333*
+8Ñ	 Ñ(,
+
+57354*
+8Ñ	 Ñ(,
+
+61333*
+8˘	 ˘(8
+
+61354*
+8˘	 ˘(8
+
+61354*
+8˘	 ˘(8
+
+63333*
+8Ï	 Ï(+
+
+63354*
+8Ï	 Ï(+
+
+63354*
+8Ï	 Ï(+
+
+65333*
+8Á	 Á((
+
+65354*
+8Á	 Á((
+
+69333*
+8∆	 ∆(6
+
+69354*
+8∆	 ∆(6
+
+69374*
+8∆	 ∆(6
+
+71333*
+8í	 í(0
+
+73333*
+8Ø	 Ø(5
+
+73354*
+8Ø	 Ø(5
+
+73374*
+8Ø	 Ø(5
+
+75333*
+8õ	 õ(3
+
+77333*
+8‡	 ‡(5
+
+77354*
+8‡	 ‡(5
+
+79333*
+8®	 ®(6
+
+83333*
+81	 1(/
+
+85333*
+8:	 :(2
+
+87333*
+8%	 %(-
+
+87354*
+8%	 %(-
+
+89333*
+8*	 *(,

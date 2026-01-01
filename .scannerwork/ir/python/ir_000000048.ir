@@ -1,0 +1,36 @@
+
+"source_name"str
+"source_checksum"str
+"target_name"str
+#"Serialize to dictionary."str
+"bytes_copied"str
+"target_checksum"strselft t("«$
+"
+v |(	"#new-object#Bdict,
+*
+w w(+"#get-field# source_name:,
+*
+w w(+"?python-partial-apply?: 
+
+w w(+"	#map-set#:,
+*
+x x(+	"#get-field# target_name:,
+*
+x x(+
+"?python-partial-apply?:	 
+
+x x(+"	#map-set#:
+0
+.
+y y(3"#get-field# source_checksum: 
+
+y y(3"	#map-set#:0
+.
+z z(3"#get-field# target_checksum: 
+
+z z(3"	#map-set#:-
++
+{ {(-"#get-field# bytes_copied: 
+
+{ {(-"	#map-set#:
+v |(	*D/Users/kevintoles/POC/ai-platform-data/scripts/sync_from_enhancer.py

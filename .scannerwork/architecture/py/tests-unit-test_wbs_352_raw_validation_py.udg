@@ -1,0 +1,239 @@
+
+1.0PythonFrontend"1767067230719*py2.B®
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+.
+)tests/unit/test_wbs_352_raw_validation.py9
+,
+&tests.unit.test_wbs_352_raw_validation11
+
+
+__future__12
+
+
+json14
+
+pathlib16
+
+typing18
+
+
+jsonschema20
+H
+Btests.unit.test_wbs_352_raw_validation.TestChapterSchemaCompliance22
+h
+btests.unit.test_wbs_352_raw_validation.TestChapterSchemaCompliance.test_chapters_conform_to_schema24
+
+NoneType26
+
+pathlib.Path28
+E
+?tests.unit.test_wbs_352_raw_validation.TestAllBooksHaveChapters30
+_
+Ytests.unit.test_wbs_352_raw_validation.TestAllBooksHaveChapters.test_47_books_transferred32
+b
+\tests.unit.test_wbs_352_raw_validation.TestAllBooksHaveChapters.test_raw_directory_has_books34
+b
+\tests.unit.test_wbs_352_raw_validation.TestAllBooksHaveChapters.test_all_books_have_chapters36
+_
+Ytests.unit.test_wbs_352_raw_validation.TestAllBooksHaveChapters.test_raw_directory_exists38
+C
+=tests.unit.test_wbs_352_raw_validation.TestRawBooksStatistics40
+\
+Vtests.unit.test_wbs_352_raw_validation.TestRawBooksStatistics.test_total_chapter_count42
+K
+Etests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields44
+Y
+Stests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.all_raw_books46
+
+
+list48
+k
+etests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.test_all_chapters_have_end_page50
+m
+gtests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.test_all_chapters_have_start_page52
+h
+btests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.test_all_chapters_have_title54
+o
+itests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.test_all_chapters_have_number_field56
+b
+\tests.unit.test_wbs_352_raw_validation.TestChaptersHaveRequiredFields.test_page_ranges_valid58J
+
+8
+89j 
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23226 210
+
+25
+25247 223
+
+27
+27266
+
+29
+29286
+
+31
+31306 210
+
+33
+33327 231
+
+35
+35347 231
+
+37
+37367 231
+
+39
+39387 231
+
+41
+41406 210
+
+43
+43427 241
+
+45
+45446 210
+
+47
+47467 245
+
+49
+49486
+
+51
+51507 245
+
+53
+53527 245
+
+55
+55547 245
+
+57
+57567 245
+
+59
+59587 245rî
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 (
+
+10191*
+8   (
+
+10211*
+8∂	 ∂(/
+
+25273*
+8Æ	 Æ((
+
+25294*
+8Æ	 Æ((
+
+33273*
+8o	 o("
+
+33294*
+8o	 o("
+
+35273*
+8G	 G(%
+
+35294*
+8G	 G(%
+
+37273*
+8Q	 Q(%
+
+37294*
+8Q	 Q(%
+
+39273*
+8>	 >("
+
+39294*
+8>	 >("
+
+43273*
+8‹	 ‹(!
+
+43294*
+8‹	 ‹(!
+
+47493*
+8è	 è(
+
+47294*
+8è	 è(
+
+51273*
+8Ë	 Ë((
+
+51494*
+8Ë	 Ë((
+
+53273*
+8–	 –(*
+
+53494*
+8–	 –(*
+
+55273*
+8∑	 ∑(%
+
+55494*
+8∑	 ∑(%
+
+57273*
+8ú	 ú(,
+
+57494*
+8ú	 ú(,
+
+59273*
+8Ä	 Ä(
+
+59494*
+8Ä	 Ä(

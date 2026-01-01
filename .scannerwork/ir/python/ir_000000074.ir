@@ -1,0 +1,27 @@
+
+"QDRANT_HOST"str
+"6333"str
+"localhost"str
+"QDRANT_PORT"str
+?6"Create Qdrant client from environment configuration."str"”0
+.
+{ {(*QdrantClient"?python-unknown?!
+
+} }("#unknown-value#&
+$
+ (0host"
+osgetenv:"
+ 
+
+€ €(/	"
+osgetenv:6
+4
+
+€ €(0
+port"#dependent-value#*:	Bint'
+%
+
+‚ ‚(-"#unknown-value#:
+
+
+‚ ‚(-*C/Users/kevintoles/POC/ai-platform-data/scripts/auto_map_concepts.py

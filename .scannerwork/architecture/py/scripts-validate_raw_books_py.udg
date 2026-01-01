@@ -1,0 +1,314 @@
+
+1.0PythonFrontend"1767067231280*py2.B±
+
+
+imports1
+
+extends2
+
+returns3
+
+	has param4
+
+module5
+
+
+class6
+
+function7
+"
+scripts/validate_raw_books.py9
+ 
+scripts.validate_raw_books11
+
+
+__future__12
+
+
+json14
+
+dataclasses16
+
+pathlib18
+
+typing20
+
+click22
+
+rich.console.Console24
+
+rich.console26
+
+rich.table.Table28
+
+
+rich.table30
+.
+(scripts.validate_raw_books.validate_book32
+5
+/scripts.validate_raw_books.BookValidationResult34
+
+pathlib.Path36
+-
+'scripts.validate_raw_books.ChapterIssue38
+8
+2scripts.validate_raw_books.validate_chapter_fields40
+
+
+list42
+
+
+dict44
+	
+int46
+	
+str48
+5
+/scripts.validate_raw_books.validate_page_ranges50
+2
+,scripts.validate_raw_books.find_chapter_gaps52
+%
+scripts.validate_raw_books.main54
+
+NoneType56
+
+
+bool58
+3
+-scripts.validate_raw_books.validate_all_books60
+1
++scripts.validate_raw_books.ValidationReport62
+<
+6scripts.validate_raw_books.BookValidationResult.passed64
+=
+7scripts.validate_raw_books.ValidationReport.total_books66
+>
+8scripts.validate_raw_books.ValidationReport.failed_count68
+>
+8scripts.validate_raw_books.ValidationReport.passed_count70
+<
+6scripts.validate_raw_books.ValidationReport.all_passed72
+@
+:scripts.validate_raw_books.ValidationReport.total_chapters74
+-
+'scripts.validate_raw_books.print_report76J
+
+8
+89jõ
+ 
+10
+10115 *
+8 (
+
+13
+13125
+
+15
+15145
+
+17
+17165
+
+19
+19185
+
+21
+21205
+
+23
+23225
+
+25
+25245
+
+27
+27265
+
+29
+29285
+
+31
+31305
+
+33
+33327 210
+
+35
+35346 210
+
+37
+37366
+
+39
+39386 210
+
+41
+41407 210
+
+43
+43426
+
+45
+45446
+
+47
+47466
+
+49
+49486
+
+51
+51507 210
+
+53
+53527 210
+
+55
+55547 210
+
+57
+57566
+
+59
+59586
+
+61
+61607 210
+
+63
+63626 210
+
+65
+65647 235
+
+67
+67667 263
+
+69
+69687 263
+
+71
+71707 263
+
+73
+73727 263
+
+75
+75747 263
+
+77
+77767 210rø
+
+10131*
+8 (#
+
+10151*
+8 (
+
+10171*
+8 ()
+
+10191*
+8 (
+
+10211*
+8 (
+
+10231*
+8 (
+
+10251*
+8 (!
+
+10271*
+8 (!
+
+10291*
+8   (
+
+10311*
+8   (
+
+33353*
+8¸ ¸(
+
+33374*
+8¸ ¸(
+
+41433*
+8^ ^(
+
+41454*
+8^ ^(
+
+41474*
+8^ ^(
+
+41494*
+8^ ^(
+
+51433*
+8~ ~(
+
+51454*
+8~ ~(
+
+51474*
+8~ ~(
+
+51494*
+8~ ~(
+
+53433*
+8› ›(
+
+53434*
+8› ›(
+
+53494*
+8› ›(
+
+55573*
+8± ±(	
+
+55374*
+8± ±(	
+
+55594*
+8± ±(	
+
+55594*
+8± ±(	
+
+61633*
+8Ø Ø(
+
+61374*
+8Ø Ø(
+
+65593*
+8>	 >(
+
+67473*
+8J	 J(
+
+69473*
+8R	 R(
+
+71473*
+8N	 N(
+
+73593*
+8Z	 Z(
+
+75473*
+8V	 V(
+
+77573*
+8è è(
+
+77634*
+8è è(
+
+77594*
+8è è(
