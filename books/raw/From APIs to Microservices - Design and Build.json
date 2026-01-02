@@ -1,0 +1,573 @@
+{
+  "metadata": {
+    "title": "From APIs to Microservices - Design and Build",
+    "author": "Unknown Author",
+    "publisher": "Unknown Publisher",
+    "edition": "1st Edition",
+    "isbn": "",
+    "total_pages": 89,
+    "conversion_date": "2025-12-19T17:28:50.134400",
+    "conversion_method": "PyMuPDF + OCR fallback",
+    "source_pdf": "From APIs to Microservices - Design and Build.pdf",
+    "extraction_method": "Unstructured"
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Segment 1 (pages 1-9)",
+      "start_page": 1,
+      "end_page": 9,
+      "detection_method": "topic_boundary",
+      "content": "From APIs to Microservices: Design and Build\n\nMike Amundsen, API Academy, CA Technologies @mamund\n\nJuly 2017\n\n© 2017 CA. Confidential. All rights reserved.\n\n© 2017 CA. Confidential. All rights reserved.\n\nAPI Academy\n\nhttp://g.mamund.com/msabook\n\nOverview\n\nThe Business of APIs ● Microservices\n\nThe Value of Design\n\nAn API Design Methodology\n\nThree-Steps to API Implementation\n\n© 2017 CA. Confidential. All rights reserved.\n\n9\n\nThe Business of APIs\n\n© 2017 CA. Confidential. All rights reserved.\n\nAPI abbreviation 1. application programming interface\n\nGET /weather\n\n{ “city”: “London”, “temp”: 22 }\n\nAPIs allow us to unlock hidden business value\n\n▪Create New Applications ▪Identify New Revenue Streams ▪Initiate New Businesses",
+      "page_number": 1
+    },
+    {
+      "number": 2,
+      "title": "Segment 2 (pages 10-25)",
+      "start_page": 10,
+      "end_page": 25,
+      "detection_method": "topic_boundary",
+      "content": "user input\n\nTypical Mobile App\n\nBuild page and send\n\ntemperature data (by location)\n\nlayout, graphics and text\n\nuser input\n\nlayout, graphics and text\n\nPowered by APIs\n\nWeb API\n\ntemperature data (by location)\n\nAPIs enable Multi-channel Delivery\n\nWeb API\n\ntemperature data (by location)\n\nuser input\n\nlayout, graphics and text\n\n9\n\nMicroservices\n\n© 2017 CA. Confidential. All rights reserved.\n\n16\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n17\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n18\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n19\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n20\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n21\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n22\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n23\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n24\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n25\n\nBalancing Speed and Safety at Scale\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\nThe Microservice Way\n\nA microservice is an independently deployable component of bounded scope that supports interoperability through message-based communication.\n\n26\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\nThe Microservice Way\n\nA microservice is an independently deployable component of bounded scope that supports interoperability through message-based communication.\n\nMicroservice architecture is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.\n\n27\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "page_number": 10
+    },
+    {
+      "number": 3,
+      "title": "Segment 3 (pages 26-34)",
+      "start_page": 26,
+      "end_page": 34,
+      "detection_method": "topic_boundary",
+      "content": "The Microservice Way\n\n▪ Microservices are ideal for big systems\n\n▪ Microservice architecture is goal-oriented\n\n▪ Microservices focus on replaceability\n\n28\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n29\n\n© 2015 CA. ALL RIGHTS RESERVED.\n\n7\n\nThe Value of Design\n\n© 2017 CA. Confidential. All rights reserved.\n\n“\n\nFew people think about it or are aware of it. But there is nothing made by human beings that does not involve a design decision somewhere.\n\nBill Moggridge Interaction Design Pioneer\n\n”\n\ntoast\n\nhttp://www.flickr.com/photos/monicamuller/3171329060\n\nFunctionality\n\nhttp://www.flickr.com/photos/traviswiens/3761198872/\n\nUsability\n\nExperience\n\n20\n\nAn API Design Methodology\n\n© 2017 CA. Confidential. All rights reserved.",
+      "page_number": 26
+    },
+    {
+      "number": 4,
+      "title": "Segment 4 (pages 35-42)",
+      "start_page": 35,
+      "end_page": 42,
+      "detection_method": "topic_boundary",
+      "content": "An API Design Methodology\n\nA repeatable process to govern the creation of interfaces\n\n▪Produce a Service Canvas ▪Draw a Diagram ▪Apply Vocabularies ▪Create Description Document\n\nProduce a Service Canvas\n\nDesign Canvas: Customer-centric Payments Management Service\n\nConsumer Tasks\n\nInterface\n\nBanking Customer using Online Banking Web App • Sign up for payments service • Opt out of payments service\n\nQueries • Query customer payments status and preferences\n\nCommands • Opt in • Opt out • Update preferences\n\nEvent Subscriptions\n\nEvent Publications\n\nBranch CSR using Branch Banking Desktop App • Sign customer up for payments service\n\n\n\n\n\nQualities • Audited Low volume Non-critical Delegated authorization Backward compatibility for interface versions\n\n•\n\nLogic/Rules • Minimum accounts/products required for signup • Role-based permissions\n\n\n\n\n\nData\n\nCustomer signup status for customer-centric payments Customer preferences for customer-centric payments\n\nMarketing Web App • Identify customers for payments promotion\n\nDependencies\n\nCustomer Information Service • Obtain list of customer accounts and products\n\n40\n\nList all the Actions\n\nConsumer Tasks\n\nInterface\n\nBanking Customer using Online Banking Web App • Sign up for payments service • Opt out of payments service\n\nQueries • Query customer payments status and preferences\n\nCommands • Opt in • Opt out • Update preferences\n\nEvent Subscriptions\n\nEvent Publications\n\nBranch CSR using Branch Banking Desktop App • Sign customer up for payments service\n\n\n\n\n\nQualities • Audited Low volume Non-critical Delegated authorization Backward compatibility for interface versions\n\nData\n\nLogic/Rules • Minimum accounts/products required for signup • Role-based permissions\n\n\n\nCustomer signup status for customer-centric payments Customer preferences for customer-centric payments\n\n•\n\n\n\nWe only need to focus on the INTERFACE\n\nMarketing Web App • Identify customers for payments promotion\n\nDependencies\n\nCustomer Information Service • Obtain list of customer accounts and products\n\n41\n\nDraw a Diagram\n\nList Preferences\n\nCustID, Pref[name,value]\n\nUpdate Preferences\n\nCustID\n\nCustID\n\nHome\n\nGet Opt-in Status\n\nCustID, Status\n\nUpdate Opt-In\n\nApply Vocabularies\n\nSources for Vocabularies\n\n▪IANA Link Relation Values ▪schema.org ▪microformats ▪Dublin Core ▪Activity Streams ▪Industry Vocabularies (BIAN, etc.) ▪Your Enterprise Vocabularies",
+      "page_number": 35
+    },
+    {
+      "number": 5,
+      "title": "Segment 5 (pages 43-52)",
+      "start_page": 43,
+      "end_page": 52,
+      "detection_method": "topic_boundary",
+      "content": "Before Applying Vocabularies\n\n▪CustID, ▪CustomerName, ▪AccountName, ▪AccountType ▪Optin-Status(in, out) ▪Preference(Name, Value, Prompt) ▪GetStatus ▪GetPreferences ▪UpdateStatus ▪UpdatePreferences\n\nAfter Applying Vocabularies\n\n▪BankAccount.identifier, ▪Customer.familyName, ▪Customer.givenName, ▪BankAccount.name, ▪BankAccount.category ▪ActionStatus(\"in\", \"out\") ▪ItemList(identifier, value, name) ▪GetStatus ▪GetPreferences ▪UpdateStatus ▪UpdatePreferences\n\nCreate a Description Document\n\nDescription vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home\n\nDescription vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home ▪ Definition languages\n\n▪ WSDL ▪ Swagger ▪ RAML ▪ Blueprint\n\nDescription vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home ▪ Definition languages\n\n▪ WSDL ▪ Swagger ▪ RAML ▪ Blueprint\n\nDesign Artifacts\n\n▪Service Canvas ▪Diagram ▪Description Document\n\nCheck these into source control\n\nThree Steps to API Implementation\n\n© 2017 CA. Confidential. All rights reserved.\n\nImplementing APIs\n\n▪ APIs are Interfaces, Not Functionality ▪ ▪ Three-phase API Implementation\n\nImplementing APIs means translating the Design\n\n▪ Sketching ▪ Prototyping ▪ Building\n\nAPIs are Interfaces\n\n▪You're not designing the functionality of a service ▪You MAY already have that functionality somewhere ▪You MAY need to create the functionality ▪Focus on the \"API-First\"",
+      "page_number": 43
+    },
+    {
+      "number": 6,
+      "title": "Segment 6 (pages 53-61)",
+      "start_page": 53,
+      "end_page": 61,
+      "detection_method": "topic_boundary",
+      "content": "You MAY already have the functionality\n\n▪Your job is to act as a \"proxy\" between the interface design and the existing functionality\n\n▪Identify the existing functionality (e.g. the MSC or portion of a monolith\n\nYou MAY need to create the functionality\n\n▪Your job is to act as a \"guide\" for the new functionality ▪Offer a \"shell\" for future functionality ▪Be prepared to do conversions\n\nAPI First, API Forever\n\n▪Assume the API will not change, but the implementation details will\n\n▪Once released to production, it is easier to modify functionality than interfaces\n\nTranslating the Design\n\n▪ Translations are always approximate ▪ In many cases we \"lose something in the translation…\" ▪ API styles affect translation\n\n▪ SOAP ▪ CRUD ▪ Hypermedia ▪ Reactive\n\n▪ Don't worry if the translation is not exact.\n\nThree-Phase API Implementation\n\nThree-Phase API Implementation\n\n▪To reduce cost and risk, take a three-phase approach ▪Sketching - disposable experiments ▪Prototyping - testable examples ▪Building - production implementation\n\nReduce Cost and Risk in API Implementation\n\n▪Implementation can be costly ▪Mistakes may be uncovered along the way ▪Uncover mistakes early when they are inexpensive to fix ▪Put off writing code for as long as possible.\n\nFrank Gehry\n\nFrank Gehry",
+      "page_number": 53
+    },
+    {
+      "number": 7,
+      "title": "Segment 7 (pages 62-70)",
+      "start_page": 62,
+      "end_page": 70,
+      "detection_method": "topic_boundary",
+      "content": "Frank Gehry on Design...\n\nSketching APIs\n\n▪Sketches are terse, rough drawings ▪They give the general idea of a thing\n\nbut lack important details.\n\n▪Usually, one can glean the basics from a sketch but ▪Sketches usually are just explorations of ideas,\n\nnot fully-formed items.\n\nApiary Blueprint\n\nSketching APIs\n\n▪ Use tools like Apiary Editor to create a sketch. ▪ Show it to others (devs, stakeholders) and\n\nget their feedback.\n\n▪ If possible use simple API consumer tools\n\n(curl, NodeJS, etc.) to test.\n\n▪ Continue to modify the simple sketches as needed\n\nSketches are made to be thrown away.\n\nPrototyping APIs\n\n▪Prototypes look like the real thing, but are not.\n\nThey’re \"fakes.\"\n\n▪They let you work up something with all the details of a real API, but without the actual functionality behind it.\n\n▪They’re an inexpensive way to work out the details ▪Use them to discover challenges before you go\n\ninto production.\n\nSwagger Editor\n\nPrototyping APIs\n\n▪Use tools like Live API Creator, NodeJS express,\n\nor other code-generating platforms.\n\n▪It’s also a good idea to use service-virtualization frameworks to mock up the response data. ▪If possible, include access-control checking when\n\nrunning tests against the prototype.\n\n▪If possible use existing production-level API\n\nconsumers to test out the prototype.\n\nPrototypes are made to be tested.",
+      "page_number": 62
+    },
+    {
+      "number": 8,
+      "title": "Segment 8 (pages 71-82)",
+      "start_page": 71,
+      "end_page": 82,
+      "detection_method": "topic_boundary",
+      "content": "By Patrick Creighton - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=49014485\n\nBuilding APIs\n\n▪ API builds are the real thing ▪ Production-ready, access-controlled, resilient, scalable. ▪ Building the production implementation means\n\n▪ Working out all the kinks ▪ Supporting all the use-cases identified during the sketch and prototype\n\nphases.\n\nBuilding APIs\n\nvar express = require('express'), app = express(); var port = 8080; app.listen(port);\n\napp.get(\"/tasks\", function(req, res) { res.status(200).send(‘<response>\n\n<tasks>\n\n<task> <name>Pick up Kai</name> <priority>1</priority>\n\n</tasks> </response>’);\n\n}\n\nBuilding APIs\n\nGET /tasks\n\nBuilding APIs\n\n▪ Each implementation has their own challenges to\n\novercome.\n\n▪ Each deserves their own guidance and style-guides.\n\n▪ Gateway Policies ▪ ESB Rules ▪ Scripting (NodeJS) ▪ Code (Java/C#)\n\n▪ All require exhaustive testing at the unit,\n\nacceptance, and integration levels. ▪ All require detailed access control.\n\nProduction APIs are made last.\n\nSo...\n\n© 2017 CA. Confidential. All rights reserved.\n\nSummary\n\nAPI enable Multi-channel Delivery\n\nFunctionality, Usability, Experience\n\nCanvas, Diagram, Description\n\nSketch, Prototype, Build\n\n© 2017 CA. Confidential. All rights reserved.\n\nFrom APIs to Microservices: Design and Build\n\nMike Amundsen, API Academy, CA Technologies @mamund\n\nJuly 2017\n\n© 2017 CA. Confidential. All rights reserved.",
+      "page_number": 71
+    },
+    {
+      "number": 9,
+      "title": "Segment 9 (pages 83-89)",
+      "start_page": 83,
+      "end_page": 89,
+      "detection_method": "topic_boundary",
+      "content": "",
+      "page_number": 83
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "content": "From APIs to Microservices: Design and Build\n\nMike Amundsen, API Academy, CA Technologies @mamund\n\nJuly 2017\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 155,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 2,
+      "content": "© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 45,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 3,
+      "content": "API Academy",
+      "content_length": 11,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 4,
+      "content": "http://g.mamund.com/msabook",
+      "content_length": 27,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 5,
+      "content": "Overview\n\nThe Business of APIs ● Microservices\n\nThe Value of Design\n\nAn API Design Methodology\n\nThree-Steps to API Implementation\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 176,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 6,
+      "content": "9\n\nThe Business of APIs\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 70,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 7,
+      "content": "API abbreviation 1. application programming interface",
+      "content_length": 53,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 9,
+      "content": "GET /weather\n\n{ “city”: “London”, “temp”: 22 }",
+      "content_length": 46,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 10,
+      "content": "APIs allow us to unlock hidden business value\n\n▪Create New Applications ▪Identify New Revenue Streams ▪Initiate New Businesses",
+      "content_length": 126,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 12,
+      "content": "user input\n\nTypical Mobile App\n\nBuild page and send\n\ntemperature data (by location)\n\nlayout, graphics and text",
+      "content_length": 110,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 13,
+      "content": "user input\n\nlayout, graphics and text\n\nPowered by APIs\n\nWeb API\n\ntemperature data (by location)",
+      "content_length": 95,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 14,
+      "content": "APIs enable Multi-channel Delivery\n\nWeb API\n\ntemperature data (by location)\n\nuser input\n\nlayout, graphics and text",
+      "content_length": 114,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 15,
+      "content": "9\n\nMicroservices\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 63,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 16,
+      "content": "16\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 17,
+      "content": "17\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 18,
+      "content": "18\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 19,
+      "content": "19\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 20,
+      "content": "20\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 21,
+      "content": "21\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 22,
+      "content": "22\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 23,
+      "content": "23\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 24,
+      "content": "24\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 25,
+      "content": "25\n\nBalancing Speed and Safety at Scale\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 72,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 26,
+      "content": "The Microservice Way\n\nA microservice is an independently deployable component of bounded scope that supports interoperability through message-based communication.\n\n26\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 199,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 27,
+      "content": "The Microservice Way\n\nA microservice is an independently deployable component of bounded scope that supports interoperability through message-based communication.\n\nMicroservice architecture is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.\n\n27\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 342,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 28,
+      "content": "The Microservice Way\n\n▪ Microservices are ideal for big systems\n\n▪ Microservice architecture is goal-oriented\n\n▪ Microservices focus on replaceability\n\n28\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 187,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 29,
+      "content": "29\n\n© 2015 CA. ALL RIGHTS RESERVED.",
+      "content_length": 35,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 30,
+      "content": "7\n\nThe Value of Design\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 69,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 31,
+      "content": "“\n\nFew people think about it or are aware of it. But there is nothing made by human beings that does not involve a design decision somewhere.\n\nBill Moggridge Interaction Design Pioneer\n\n”",
+      "content_length": 187,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 33,
+      "content": "toast\n\nhttp://www.flickr.com/photos/monicamuller/3171329060",
+      "content_length": 59,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 34,
+      "content": "Functionality\n\nhttp://www.flickr.com/photos/traviswiens/3761198872/",
+      "content_length": 67,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 35,
+      "content": "Usability",
+      "content_length": 9,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 36,
+      "content": "Experience",
+      "content_length": 10,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 37,
+      "content": "20\n\nAn API Design Methodology\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 76,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 38,
+      "content": "An API Design Methodology\n\nA repeatable process to govern the creation of interfaces\n\n▪Produce a Service Canvas ▪Draw a Diagram ▪Apply Vocabularies ▪Create Description Document",
+      "content_length": 176,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 39,
+      "content": "Produce a Service Canvas",
+      "content_length": 24,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 40,
+      "content": "Design Canvas: Customer-centric Payments Management Service\n\nConsumer Tasks\n\nInterface\n\nBanking Customer using Online Banking Web App • Sign up for payments service • Opt out of payments service\n\nQueries • Query customer payments status and preferences\n\nCommands • Opt in • Opt out • Update preferences\n\nEvent Subscriptions\n\nEvent Publications\n\nBranch CSR using Branch Banking Desktop App • Sign customer up for payments service\n\n\n\n\n\nQualities • Audited Low volume Non-critical Delegated authorization Backward compatibility for interface versions\n\n•\n\nLogic/Rules • Minimum accounts/products required for signup • Role-based permissions\n\n\n\n\n\nData\n\nCustomer signup status for customer-centric payments Customer preferences for customer-centric payments\n\nMarketing Web App • Identify customers for payments promotion\n\nDependencies\n\nCustomer Information Service • Obtain list of customer accounts and products\n\n40",
+      "content_length": 910,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 41,
+      "content": "List all the Actions\n\nConsumer Tasks\n\nInterface\n\nBanking Customer using Online Banking Web App • Sign up for payments service • Opt out of payments service\n\nQueries • Query customer payments status and preferences\n\nCommands • Opt in • Opt out • Update preferences\n\nEvent Subscriptions\n\nEvent Publications\n\nBranch CSR using Branch Banking Desktop App • Sign customer up for payments service\n\n\n\n\n\nQualities • Audited Low volume Non-critical Delegated authorization Backward compatibility for interface versions\n\nData\n\nLogic/Rules • Minimum accounts/products required for signup • Role-based permissions\n\n\n\nCustomer signup status for customer-centric payments Customer preferences for customer-centric payments\n\n•\n\n\n\nWe only need to focus on the INTERFACE\n\nMarketing Web App • Identify customers for payments promotion\n\nDependencies\n\nCustomer Information Service • Obtain list of customer accounts and products\n\n41",
+      "content_length": 911,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 42,
+      "content": "Draw a Diagram",
+      "content_length": 14,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 43,
+      "content": "List Preferences\n\nCustID, Pref[name,value]\n\nUpdate Preferences\n\nCustID\n\nCustID\n\nHome\n\nGet Opt-in Status\n\nCustID, Status\n\nUpdate Opt-In",
+      "content_length": 134,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 44,
+      "content": "Apply Vocabularies",
+      "content_length": 18,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 45,
+      "content": "Sources for Vocabularies\n\n▪IANA Link Relation Values ▪schema.org ▪microformats ▪Dublin Core ▪Activity Streams ▪Industry Vocabularies (BIAN, etc.) ▪Your Enterprise Vocabularies",
+      "content_length": 175,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 46,
+      "content": "Before Applying Vocabularies\n\n▪CustID, ▪CustomerName, ▪AccountName, ▪AccountType ▪Optin-Status(in, out) ▪Preference(Name, Value, Prompt) ▪GetStatus ▪GetPreferences ▪UpdateStatus ▪UpdatePreferences",
+      "content_length": 196,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 47,
+      "content": "After Applying Vocabularies\n\n▪BankAccount.identifier, ▪Customer.familyName, ▪Customer.givenName, ▪BankAccount.name, ▪BankAccount.category ▪ActionStatus(\"in\", \"out\") ▪ItemList(identifier, value, name) ▪GetStatus ▪GetPreferences ▪UpdateStatus ▪UpdatePreferences",
+      "content_length": 259,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 48,
+      "content": "Create a Description Document",
+      "content_length": 29,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 49,
+      "content": "Description vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home",
+      "content_length": 126,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 50,
+      "content": "Description vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home ▪ Definition languages\n\n▪ WSDL ▪ Swagger ▪ RAML ▪ Blueprint",
+      "content_length": 186,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 51,
+      "content": "Description vs. Definitions\n\n▪ Describing the interface doesn't define it. ▪ Description languages\n\n▪ ALPS ▪ DCAP ▪\n\nJSON Home ▪ Definition languages\n\n▪ WSDL ▪ Swagger ▪ RAML ▪ Blueprint",
+      "content_length": 186,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 53,
+      "content": "Design Artifacts\n\n▪Service Canvas ▪Diagram ▪Description Document\n\nCheck these into source control",
+      "content_length": 97,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 54,
+      "content": "Three Steps to API Implementation\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 80,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 55,
+      "content": "Implementing APIs\n\n▪ APIs are Interfaces, Not Functionality ▪ ▪ Three-phase API Implementation\n\nImplementing APIs means translating the Design\n\n▪ Sketching ▪ Prototyping ▪ Building",
+      "content_length": 180,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 56,
+      "content": "APIs are Interfaces\n\n▪You're not designing the functionality of a service ▪You MAY already have that functionality somewhere ▪You MAY need to create the functionality ▪Focus on the \"API-First\"",
+      "content_length": 192,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 57,
+      "content": "You MAY already have the functionality\n\n▪Your job is to act as a \"proxy\" between the interface design and the existing functionality\n\n▪Identify the existing functionality (e.g. the MSC or portion of a monolith",
+      "content_length": 209,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 58,
+      "content": "You MAY need to create the functionality\n\n▪Your job is to act as a \"guide\" for the new functionality ▪Offer a \"shell\" for future functionality ▪Be prepared to do conversions",
+      "content_length": 173,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 59,
+      "content": "API First, API Forever\n\n▪Assume the API will not change, but the implementation details will\n\n▪Once released to production, it is easier to modify functionality than interfaces",
+      "content_length": 176,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 61,
+      "content": "Translating the Design\n\n▪ Translations are always approximate ▪ In many cases we \"lose something in the translation…\" ▪ API styles affect translation\n\n▪ SOAP ▪ CRUD ▪ Hypermedia ▪ Reactive\n\n▪ Don't worry if the translation is not exact.",
+      "content_length": 236,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 62,
+      "content": "Three-Phase API Implementation",
+      "content_length": 30,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 63,
+      "content": "Three-Phase API Implementation\n\n▪To reduce cost and risk, take a three-phase approach ▪Sketching - disposable experiments ▪Prototyping - testable examples ▪Building - production implementation",
+      "content_length": 192,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 64,
+      "content": "Reduce Cost and Risk in API Implementation\n\n▪Implementation can be costly ▪Mistakes may be uncovered along the way ▪Uncover mistakes early when they are inexpensive to fix ▪Put off writing code for as long as possible.",
+      "content_length": 218,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 65,
+      "content": "Frank Gehry",
+      "content_length": 11,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 66,
+      "content": "Frank Gehry",
+      "content_length": 11,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 68,
+      "content": "Frank Gehry on Design...",
+      "content_length": 24,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 69,
+      "content": "Sketching APIs\n\n▪Sketches are terse, rough drawings ▪They give the general idea of a thing\n\nbut lack important details.\n\n▪Usually, one can glean the basics from a sketch but ▪Sketches usually are just explorations of ideas,\n\nnot fully-formed items.",
+      "content_length": 248,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 70,
+      "content": "Apiary Blueprint",
+      "content_length": 16,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 71,
+      "content": "Sketching APIs\n\n▪ Use tools like Apiary Editor to create a sketch. ▪ Show it to others (devs, stakeholders) and\n\nget their feedback.\n\n▪ If possible use simple API consumer tools\n\n(curl, NodeJS, etc.) to test.\n\n▪ Continue to modify the simple sketches as needed",
+      "content_length": 260,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 72,
+      "content": "Sketches are made to be thrown away.",
+      "content_length": 36,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 76,
+      "content": "Prototyping APIs\n\n▪Prototypes look like the real thing, but are not.\n\nThey’re \"fakes.\"\n\n▪They let you work up something with all the details of a real API, but without the actual functionality behind it.\n\n▪They’re an inexpensive way to work out the details ▪Use them to discover challenges before you go\n\ninto production.",
+      "content_length": 321,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 77,
+      "content": "Swagger Editor",
+      "content_length": 14,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 78,
+      "content": "Prototyping APIs\n\n▪Use tools like Live API Creator, NodeJS express,\n\nor other code-generating platforms.\n\n▪It’s also a good idea to use service-virtualization frameworks to mock up the response data. ▪If possible, include access-control checking when\n\nrunning tests against the prototype.\n\n▪If possible use existing production-level API\n\nconsumers to test out the prototype.",
+      "content_length": 374,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 79,
+      "content": "Prototypes are made to be tested.",
+      "content_length": 33,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 81,
+      "content": "By Patrick Creighton - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=49014485",
+      "content_length": 103,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 82,
+      "content": "Building APIs\n\n▪ API builds are the real thing ▪ Production-ready, access-controlled, resilient, scalable. ▪ Building the production implementation means\n\n▪ Working out all the kinks ▪ Supporting all the use-cases identified during the sketch and prototype\n\nphases.",
+      "content_length": 265,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 83,
+      "content": "Building APIs\n\nvar express = require('express'), app = express(); var port = 8080; app.listen(port);\n\napp.get(\"/tasks\", function(req, res) { res.status(200).send(‘<response>\n\n<tasks>\n\n<task> <name>Pick up Kai</name> <priority>1</priority>\n\n</tasks> </response>’);\n\n}",
+      "content_length": 266,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 84,
+      "content": "Building APIs\n\nGET /tasks",
+      "content_length": 25,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 85,
+      "content": "Building APIs\n\n▪ Each implementation has their own challenges to\n\novercome.\n\n▪ Each deserves their own guidance and style-guides.\n\n▪ Gateway Policies ▪ ESB Rules ▪ Scripting (NodeJS) ▪ Code (Java/C#)\n\n▪ All require exhaustive testing at the unit,\n\nacceptance, and integration levels. ▪ All require detailed access control.",
+      "content_length": 322,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 86,
+      "content": "Production APIs are made last.",
+      "content_length": 30,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 87,
+      "content": "So...\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 52,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 88,
+      "content": "Summary\n\nAPI enable Multi-channel Delivery\n\nFunctionality, Usability, Experience\n\nCanvas, Diagram, Description\n\nSketch, Prototype, Build\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 183,
+      "extraction_method": "Unstructured"
+    },
+    {
+      "page_number": 89,
+      "content": "From APIs to Microservices: Design and Build\n\nMike Amundsen, API Academy, CA Technologies @mamund\n\nJuly 2017\n\n© 2017 CA. Confidential. All rights reserved.",
+      "content_length": 155,
+      "extraction_method": "Unstructured"
+    }
+  ]
+}

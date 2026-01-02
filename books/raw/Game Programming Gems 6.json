@@ -1,0 +1,4553 @@
+{
+  "metadata": {
+    "title": "Game Programming Gems 6",
+    "author": "Unknown Author",
+    "publisher": "Unknown Publisher",
+    "edition": "1st Edition",
+    "isbn": "",
+    "total_pages": 603,
+    "conversion_date": "2025-11-27T15:35:13.554753",
+    "conversion_method": "PyMuPDF + OCR fallback",
+    "source_pdf": "Game Programming Gems 6.pdf"
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Segment 1 (pages 1-18)",
+      "start_page": 1,
+      "end_page": 18,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 1
+    },
+    {
+      "number": 2,
+      "title": "Segment 2 (pages 19-36)",
+      "start_page": 19,
+      "end_page": 36,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 19
+    },
+    {
+      "number": 3,
+      "title": "Segment 3 (pages 37-54)",
+      "start_page": 37,
+      "end_page": 54,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 37
+    },
+    {
+      "number": 4,
+      "title": "Segment 4 (pages 55-72)",
+      "start_page": 55,
+      "end_page": 72,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 55
+    },
+    {
+      "number": 5,
+      "title": "Segment 5 (pages 73-90)",
+      "start_page": 73,
+      "end_page": 90,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 73
+    },
+    {
+      "number": 6,
+      "title": "Segment 6 (pages 91-108)",
+      "start_page": 91,
+      "end_page": 108,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 91
+    },
+    {
+      "number": 7,
+      "title": "Segment 7 (pages 109-126)",
+      "start_page": 109,
+      "end_page": 126,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 109
+    },
+    {
+      "number": 8,
+      "title": "Segment 8 (pages 127-144)",
+      "start_page": 127,
+      "end_page": 144,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 127
+    },
+    {
+      "number": 9,
+      "title": "Segment 9 (pages 145-162)",
+      "start_page": 145,
+      "end_page": 162,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 145
+    },
+    {
+      "number": 10,
+      "title": "Segment 10 (pages 163-180)",
+      "start_page": 163,
+      "end_page": 180,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 163
+    },
+    {
+      "number": 11,
+      "title": "Segment 11 (pages 181-198)",
+      "start_page": 181,
+      "end_page": 198,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 181
+    },
+    {
+      "number": 12,
+      "title": "Segment 12 (pages 199-216)",
+      "start_page": 199,
+      "end_page": 216,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 199
+    },
+    {
+      "number": 13,
+      "title": "Segment 13 (pages 217-234)",
+      "start_page": 217,
+      "end_page": 234,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nSection 3 Artif\n\nbot for Quake IT. [Pinto05-a] has applied extended behavior networks [Dorer04] to\nthe design of agents for Unreal Tournament. In this gem, we examine these architec-\ntures and their applications, present other promising techniques, and point extensions\nto the systems discussed.\n\nSubsumption Architecture -\n\nThe subsumption architecture [Brooks86] was proposed as a control mechanism for\nautonomous robots that have multiple goals, several sensing abilities, and need to be\nrobust in face of noise and small system failures. It has been applied to the construction\nof several robots, including one that wandered through a real office collecting empty\nsoda cans. In games, it has controlled bots in Quake I [Champandard03].\n\nA striking feature of subsumption architecture design is that we split the agent not\ninto layers corresponding to information flow, but rather make a decomposition based\non the desired class of behaviors that we want the agent to have—its competences.\n\nSuppose we want to build a simple agent that attacks its enemies. A decomposi-\ntion based on program flow would be as shown in Figure 3.3.1. We have a module\nthat translates the sensory information into a suitable representation for a planner.\nThe planner sends a predetermined plan to executor modules that will carry out the\nactions in the sequence defined by the plan. A problem with this approach is that as\nnew percepts and actions are added, the planner may face a combinatorial explosion.\nAnother is that we need to replan often, using sophisticated heuristics, because the\nplan may become obsolete in the middle of its execution.\n\nPerceive\nExecute Plan\n\nFIGURE 3.3.1 Decomposition of a shooter agent based on program flow.\n\nA decomposition based on competences is shown in Figure 3.3.2. Here we have\nno problem adding more sensors; each layer uses just a few sensors and is directly con-\n\nnected to an output. Replanning is also not a problem, as the system is fast and all lay-\ners operate in parallel.\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 217
+    },
+    {
+      "number": 14,
+      "title": "Segment 14 (pages 235-252)",
+      "start_page": 235,
+      "end_page": 252,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 235
+    },
+    {
+      "number": 15,
+      "title": "Segment 15 (pages 253-270)",
+      "start_page": 253,
+      "end_page": 270,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 253
+    },
+    {
+      "number": 16,
+      "title": "Segment 16 (pages 271-288)",
+      "start_page": 271,
+      "end_page": 288,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 271
+    },
+    {
+      "number": 17,
+      "title": "Segment 17 (pages 289-306)",
+      "start_page": 289,
+      "end_page": 306,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 289
+    },
+    {
+      "number": 18,
+      "title": "Segment 18 (pages 307-324)",
+      "start_page": 307,
+      "end_page": 324,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 307
+    },
+    {
+      "number": 19,
+      "title": "Segment 19 (pages 325-342)",
+      "start_page": 325,
+      "end_page": 342,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 325
+    },
+    {
+      "number": 20,
+      "title": "Segment 20 (pages 343-360)",
+      "start_page": 343,
+      "end_page": 360,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 343
+    },
+    {
+      "number": 21,
+      "title": "Segment 21 (pages 361-378)",
+      "start_page": 361,
+      "end_page": 378,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 361
+    },
+    {
+      "number": 22,
+      "title": "Segment 22 (pages 379-396)",
+      "start_page": 379,
+      "end_page": 396,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 379
+    },
+    {
+      "number": 23,
+      "title": "Segment 23 (pages 397-414)",
+      "start_page": 397,
+      "end_page": 414,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 397
+    },
+    {
+      "number": 24,
+      "title": "Segment 24 (pages 415-432)",
+      "start_page": 415,
+      "end_page": 432,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 415
+    },
+    {
+      "number": 25,
+      "title": "Segment 25 (pages 433-450)",
+      "start_page": 433,
+      "end_page": 450,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 433
+    },
+    {
+      "number": 26,
+      "title": "Segment 26 (pages 451-468)",
+      "start_page": 451,
+      "end_page": 468,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 451
+    },
+    {
+      "number": 27,
+      "title": "Segment 27 (pages 469-486)",
+      "start_page": 469,
+      "end_page": 486,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 469
+    },
+    {
+      "number": 28,
+      "title": "Segment 28 (pages 487-504)",
+      "start_page": 487,
+      "end_page": 504,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 487
+    },
+    {
+      "number": 29,
+      "title": "Segment 29 (pages 505-522)",
+      "start_page": 505,
+      "end_page": 522,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 505
+    },
+    {
+      "number": 30,
+      "title": "Segment 30 (pages 523-540)",
+      "start_page": 523,
+      "end_page": 540,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 523
+    },
+    {
+      "number": 31,
+      "title": "Segment 31 (pages 541-558)",
+      "start_page": 541,
+      "end_page": 558,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 541
+    },
+    {
+      "number": 32,
+      "title": "Segment 32 (pages 559-576)",
+      "start_page": 559,
+      "end_page": 576,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 559
+    },
+    {
+      "number": 33,
+      "title": "Segment 33 (pages 577-594)",
+      "start_page": 577,
+      "end_page": 594,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 577
+    },
+    {
+      "number": 34,
+      "title": "Segment 34 (pages 595-602)",
+      "start_page": 595,
+      "end_page": 602,
+      "detection_method": "synthetic",
+      "content": "LRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n\n\nLRN\n",
+      "page_number": 595
+    },
+    {
+      "number": 35,
+      "title": "Segment 35 (pages 603-603)",
+      "start_page": 603,
+      "end_page": 603,
+      "detection_method": "synthetic",
+      "content": "LRN\n",
+      "page_number": 603
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 2,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 3,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 4,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 5,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 6,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 7,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 8,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 9,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 10,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 11,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 12,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 13,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 14,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 15,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 16,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 17,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 18,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 19,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 20,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 21,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 22,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 23,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 24,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 25,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 26,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 27,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 28,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 29,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 30,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 31,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 32,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 33,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 34,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 35,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 36,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 37,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 38,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 39,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 40,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 41,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 42,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 43,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 44,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 45,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 46,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 47,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 48,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 49,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 50,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 51,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 52,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 53,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 54,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 55,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 56,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 57,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 58,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 59,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 60,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 61,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 62,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 63,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 64,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 65,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 66,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 67,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 68,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 69,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 70,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 71,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 72,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 73,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 74,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 75,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 76,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 77,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 78,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 79,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 80,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 81,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 82,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 83,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 84,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 85,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 86,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 87,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 88,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 89,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 90,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 91,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 92,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 93,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 94,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 95,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 96,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 97,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 98,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 99,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 100,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 101,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 102,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 103,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 104,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 105,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 106,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 107,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 108,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 109,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 110,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 111,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 112,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 113,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 114,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 115,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 116,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 117,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 118,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 119,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 120,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 121,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 122,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 123,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 124,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 125,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 126,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 127,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 128,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 129,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 130,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 131,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 132,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 133,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 134,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 135,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 136,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 137,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 138,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 139,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 140,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 141,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 142,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 143,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 144,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 145,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 146,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 147,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 148,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 149,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 150,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 151,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 152,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 153,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 154,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 155,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 156,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 157,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 158,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 159,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 160,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 161,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 162,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 163,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 164,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 165,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 166,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 167,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 168,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 169,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 170,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 171,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 172,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 173,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 174,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 175,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 176,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 177,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 178,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 179,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 180,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 181,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 182,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 183,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 184,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 185,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 186,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 187,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 188,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 189,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 190,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 191,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 192,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 193,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 194,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 195,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 196,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 197,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 198,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 199,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 200,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 201,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 202,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 203,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 204,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 205,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 206,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 207,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 208,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 209,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 210,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 211,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 212,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 213,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 214,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 215,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 216,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 217,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 218,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 219,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 220,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 221,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 222,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 223,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 224,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 225,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 226,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 227,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 228,
+      "chapter": null,
+      "content": "Section 3 Artif\n\nbot for Quake IT. [Pinto05-a] has applied extended behavior networks [Dorer04] to\nthe design of agents for Unreal Tournament. In this gem, we examine these architec-\ntures and their applications, present other promising techniques, and point extensions\nto the systems discussed.\n\nSubsumption Architecture -\n\nThe subsumption architecture [Brooks86] was proposed as a control mechanism for\nautonomous robots that have multiple goals, several sensing abilities, and need to be\nrobust in face of noise and small system failures. It has been applied to the construction\nof several robots, including one that wandered through a real office collecting empty\nsoda cans. In games, it has controlled bots in Quake I [Champandard03].\n\nA striking feature of subsumption architecture design is that we split the agent not\ninto layers corresponding to information flow, but rather make a decomposition based\non the desired class of behaviors that we want the agent to have—its competences.\n\nSuppose we want to build a simple agent that attacks its enemies. A decomposi-\ntion based on program flow would be as shown in Figure 3.3.1. We have a module\nthat translates the sensory information into a suitable representation for a planner.\nThe planner sends a predetermined plan to executor modules that will carry out the\nactions in the sequence defined by the plan. A problem with this approach is that as\nnew percepts and actions are added, the planner may face a combinatorial explosion.\nAnother is that we need to replan often, using sophisticated heuristics, because the\nplan may become obsolete in the middle of its execution.\n\nPerceive\nExecute Plan\n\nFIGURE 3.3.1 Decomposition of a shooter agent based on program flow.\n\nA decomposition based on competences is shown in Figure 3.3.2. Here we have\nno problem adding more sensors; each layer uses just a few sensors and is directly con-\n\nnected to an output. Replanning is also not a problem, as the system is fast and all lay-\ners operate in parallel.",
+      "content_length": 2005,
+      "extraction_method": "OCR"
+    },
+    {
+      "page_number": 229,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 230,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 231,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 232,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 233,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 234,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 235,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 236,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 237,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 238,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 239,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 240,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 241,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 242,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 243,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 244,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 245,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 246,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 247,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 248,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 249,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 250,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 251,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 252,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 253,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 254,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 255,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 256,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 257,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 258,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 259,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 260,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 261,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 262,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 263,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 264,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 265,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 266,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 267,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 268,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 269,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 270,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 271,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 272,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 273,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 274,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 275,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 276,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 277,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 278,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 279,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 280,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 281,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 282,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 283,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 284,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 285,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 286,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 287,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 288,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 289,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 290,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 291,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 292,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 293,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 294,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 295,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 296,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 297,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 298,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 299,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 300,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 301,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 302,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 303,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 304,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 305,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 306,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 307,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 308,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 309,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 310,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 311,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 312,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 313,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 314,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 315,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 316,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 317,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 318,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 319,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 320,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 321,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 322,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 323,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 324,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 325,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 326,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 327,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 328,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 329,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 330,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 331,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 332,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 333,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 334,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 335,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 336,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 337,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 338,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 339,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 340,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 341,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 342,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 343,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 344,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 345,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 346,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 347,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 348,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 349,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 350,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 351,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 352,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 353,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 354,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 355,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 356,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 357,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 358,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 359,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 360,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 361,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 362,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 363,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 364,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 365,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 366,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 367,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 368,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 369,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 370,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 371,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 372,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 373,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 374,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 375,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 376,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 377,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 378,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 379,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 380,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 381,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 382,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 383,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 384,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 385,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 386,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 387,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 388,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 389,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 390,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 391,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 392,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 393,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 394,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 395,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 396,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 397,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 398,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 399,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 400,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 401,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 402,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 403,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 404,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 405,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 406,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 407,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 408,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 409,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 410,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 411,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 412,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 413,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 414,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 415,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 416,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 417,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 418,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 419,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 420,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 421,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 422,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 423,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 424,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 425,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 426,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 427,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 428,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 429,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 430,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 431,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 432,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 433,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 434,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 435,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 436,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 437,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 438,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 439,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 440,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 441,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 442,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 443,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 444,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 445,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 446,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 447,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 448,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 449,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 450,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 451,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 452,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 453,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 454,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 455,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 456,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 457,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 458,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 459,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 460,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 461,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 462,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 463,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 464,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 465,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 466,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 467,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 468,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 469,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 470,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 471,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 472,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 473,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 474,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 475,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 476,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 477,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 478,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 479,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 480,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 481,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 482,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 483,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 484,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 485,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 486,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 487,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 488,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 489,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 490,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 491,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 492,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 493,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 494,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 495,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 496,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 497,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 498,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 499,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 500,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 501,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 502,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 503,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 504,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 505,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 506,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 507,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 508,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 509,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 510,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 511,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 512,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 513,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 514,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 515,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 516,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 517,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 518,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 519,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 520,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 521,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 522,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 523,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 524,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 525,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 526,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 527,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 528,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 529,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 530,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 531,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 532,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 533,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 534,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 535,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 536,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 537,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 538,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 539,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 540,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 541,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 542,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 543,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 544,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 545,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 546,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 547,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 548,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 549,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 550,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 551,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 552,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 553,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 554,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 555,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 556,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 557,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 558,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 559,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 560,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 561,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 562,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 563,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 564,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 565,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 566,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 567,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 568,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 569,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 570,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 571,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 572,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 573,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 574,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 575,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 576,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 577,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 578,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 579,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 580,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 581,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 582,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 583,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 584,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 585,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 586,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 587,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 588,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 589,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 590,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 591,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 592,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 593,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 594,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 595,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 596,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 597,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 598,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 599,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 600,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 601,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 602,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    },
+    {
+      "page_number": 603,
+      "chapter": null,
+      "content": "LRN\n",
+      "content_length": 4,
+      "extraction_method": "Direct"
+    }
+  ]
+}

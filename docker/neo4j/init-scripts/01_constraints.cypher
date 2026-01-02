@@ -16,3 +16,16 @@ CREATE CONSTRAINT concept_id IF NOT EXISTS FOR (c:Concept) REQUIRE c.concept_id 
 
 // Tier constraints - ensure unique tier name
 CREATE CONSTRAINT tier_name IF NOT EXISTS FOR (t:Tier) REQUIRE t.name IS UNIQUE;
+
+// =============================================================================
+// PCON-2 Additions (2026-01-01) - WBS-AGT21-24 Integration
+// =============================================================================
+
+// CodeFile constraints - for code-reference-engine integration
+CREATE CONSTRAINT codefile_path IF NOT EXISTS FOR (f:CodeFile) REQUIRE f.file_path IS UNIQUE;
+
+// Pattern constraints - for design pattern tracking
+CREATE CONSTRAINT pattern_name IF NOT EXISTS FOR (p:Pattern) REQUIRE p.name IS UNIQUE;
+
+// Repository constraints - for code repository tracking
+CREATE CONSTRAINT repository_id IF NOT EXISTS FOR (r:Repository) REQUIRE r.repo_id IS UNIQUE;
