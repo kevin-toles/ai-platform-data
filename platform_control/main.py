@@ -32,6 +32,18 @@ import httpx
 
 POC_ROOT = Path(__file__).parent.parent.parent  # /Users/kevintoles/POC
 CONFIG_FILE = Path(__file__).parent / "config.json"
+INFRASTRUCTURE_COMPOSE = POC_ROOT / "ai-platform-data" / "docker" / "docker-compose.yml"
+
+# Startup order for Kitchen Brigade services (dependency order)
+# Infrastructure must be healthy before services start
+SERVICE_STARTUP_ORDER = [
+    "inference-service",  # Line Cook - needed by all LLM operations
+    "semantic-search",    # Cookbook - depends on Qdrant
+    "code-orchestrator",  # Sous Chef - HuggingFace models
+    "audit-service",      # Auditor - citation tracking
+    "ai-agents",          # Expeditor - orchestrates everything
+    "llm-gateway",        # Maître d' - external entry point
+]
 
 # Default service definitions - Kitchen Brigade Architecture
 # Reference: ai-platform-data/docs/NETWORK_ARCHITECTURE.md
@@ -89,13 +101,17 @@ DEFAULT_SERVICES = {
 
 INFERENCE_API = "http://localhost:8085"
 
+# Default model to load on platform startup
+# This is the primary coder/general model
+DEFAULT_MODEL_TO_LOAD = "qwen2.5-7b"
+
 
 def load_config() -> dict:
     """Load configuration from file."""
     if CONFIG_FILE.exists():
         with open(CONFIG_FILE) as f:
             return json.load(f)
-    return {"services": {}, "ui": {"refresh_interval_seconds": 5, "theme": "dark"}}
+    return {"services": {}, "ui": {"refresh_interval_seconds": 5, "theme": "dark"}, "default_model": DEFAULT_MODEL_TO_LOAD}
 
 
 def save_config(config: dict):
@@ -139,6 +155,110 @@ class ServiceManager:
             return False, str(e)[:30]
     
     @staticmethod
+    def check_infrastructure_health() -> dict[str, tuple[bool, str]]:
+        """Check health of infrastructure services (Neo4j, Qdrant, Redis)."""
+        results = {}
+        
+        # Check Neo4j via docker exec
+        try:
+            result = subprocess.run(
+                ["docker", "exec", "ai-platform-neo4j", "wget", "-q", "--spider", "http://localhost:7474"],
+                capture_output=True,
+                timeout=10,
+            )
+            results["neo4j"] = (result.returncode == 0, "healthy" if result.returncode == 0 else "unhealthy")
+        except Exception as e:
+            results["neo4j"] = (False, str(e)[:30])
+        
+        # Check Qdrant via docker exec
+        try:
+            result = subprocess.run(
+                ["docker", "exec", "ai-platform-qdrant", "curl", "-sf", "http://localhost:6333/readyz"],
+                capture_output=True,
+                timeout=10,
+            )
+            results["qdrant"] = (result.returncode == 0, "healthy" if result.returncode == 0 else "unhealthy")
+        except Exception as e:
+            results["qdrant"] = (False, str(e)[:30])
+        
+        # Check Redis via docker exec
+        try:
+            result = subprocess.run(
+                ["docker", "exec", "ai-platform-redis", "redis-cli", "ping"],
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+            is_healthy = result.returncode == 0 and "PONG" in result.stdout
+            results["redis"] = (is_healthy, "healthy" if is_healthy else "unhealthy")
+        except Exception as e:
+            results["redis"] = (False, str(e)[:30])
+        
+        return results
+    
+    @staticmethod
+    def start_infrastructure() -> tuple[bool, str]:
+        """Start infrastructure services (Neo4j, Qdrant, Redis)."""
+        try:
+            # Create network if not exists
+            subprocess.run(
+                ["docker", "network", "create", "ai-platform-network"],
+                capture_output=True,
+                timeout=10,
+            )
+            
+            # Start infrastructure with dev overlay (exposes ports for local access)
+            result = subprocess.run(
+                ["docker-compose", "-f", "docker-compose.yml", "-f", "docker-compose.dev.yml", "up", "-d"],
+                cwd=INFRASTRUCTURE_COMPOSE.parent,
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
+            if result.returncode == 0:
+                return True, "Infrastructure starting..."
+            return False, result.stderr[:200] if result.stderr else "Unknown error"
+        except subprocess.TimeoutExpired:
+            return False, "Timeout starting infrastructure"
+        except Exception as e:
+            return False, str(e)[:100]
+    
+    @staticmethod
+    def stop_infrastructure() -> tuple[bool, str]:
+        """Stop infrastructure services."""
+        try:
+            result = subprocess.run(
+                ["docker-compose", "-f", "docker-compose.yml", "-f", "docker-compose.dev.yml", "down"],
+                cwd=INFRASTRUCTURE_COMPOSE.parent,
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+            if result.returncode == 0:
+                return True, "Infrastructure stopped"
+            return False, result.stderr[:100]
+        except Exception as e:
+            return False, str(e)[:50]
+    
+    @staticmethod
+    def wait_for_infrastructure(timeout: int = 60, callback: Optional[Callable] = None) -> bool:
+        """Wait for all infrastructure to be healthy."""
+        import time
+        start = time.time()
+        while time.time() - start < timeout:
+            health = ServiceManager.check_infrastructure_health()
+            all_healthy = all(h[0] for h in health.values())
+            
+            if callback:
+                status_str = ", ".join(f"{k}: {'✓' if v[0] else '✗'}" for k, v in health.items())
+                callback(f"Infrastructure: {status_str}")
+            
+            if all_healthy:
+                return True
+            time.sleep(2)
+        return False
+    
+    @staticmethod
     def start_docker_service(compose_path: Path) -> tuple[bool, str]:
         """Start a Docker Compose service."""
         try:
@@ -161,18 +281,35 @@ class ServiceManager:
     
     @staticmethod
     def stop_docker_service(compose_path: Path) -> tuple[bool, str]:
-        """Stop a Docker Compose service."""
+        """Stop a Docker Compose service.
+        
+        Uses docker-compose stop + rm to ensure containers are fully stopped
+        and removed, preventing auto-restart issues.
+        """
         try:
+            # First, stop the containers gracefully
             result = subprocess.run(
-                ["docker-compose", "down"],
+                ["docker-compose", "stop"],
                 cwd=compose_path,
                 capture_output=True,
                 text=True,
                 timeout=30,
             )
+            
+            # Then remove them to prevent any restart policy issues
+            subprocess.run(
+                ["docker-compose", "rm", "-f"],
+                cwd=compose_path,
+                capture_output=True,
+                text=True,
+                timeout=15,
+            )
+            
             if result.returncode == 0:
                 return True, "Stopped"
-            return False, result.stderr[:100]
+            return False, result.stderr[:100] if result.stderr else "Stop failed"
+        except subprocess.TimeoutExpired:
+            return False, "Timeout stopping service"
         except Exception as e:
             return False, str(e)[:50]
     
@@ -263,6 +400,67 @@ class ModelManager:
 # =============================================================================
 # UI Components
 # =============================================================================
+
+class InfrastructurePanel(ctk.CTkFrame):
+    """Panel showing infrastructure status (Neo4j, Qdrant, Redis)."""
+    
+    def __init__(self, parent, on_status_change: Callable, **kwargs):
+        super().__init__(parent, **kwargs)
+        
+        self.on_status_change = on_status_change
+        self.infra_status = {"neo4j": False, "qdrant": False, "redis": False}
+        
+        # Layout
+        self.grid_columnconfigure(0, weight=1)
+        
+        # Header row with indicators
+        header_frame = ctk.CTkFrame(self, fg_color="transparent")
+        header_frame.pack(fill="x", padx=10, pady=5)
+        
+        ctk.CTkLabel(
+            header_frame,
+            text="Infrastructure",
+            font=("Helvetica", 12, "bold"),
+        ).pack(side="left")
+        
+        # Status indicators for each service
+        self.indicators = {}
+        for name in ["neo4j", "qdrant", "redis"]:
+            frame = ctk.CTkFrame(header_frame, fg_color="transparent")
+            frame.pack(side="right", padx=8)
+            
+            indicator = ctk.CTkLabel(
+                frame,
+                text="●",
+                font=("Helvetica", 14),
+                text_color="gray",
+            )
+            indicator.pack(side="left")
+            
+            label = ctk.CTkLabel(
+                frame,
+                text=name.capitalize(),
+                font=("Helvetica", 10),
+                text_color="gray",
+            )
+            label.pack(side="left", padx=2)
+            
+            self.indicators[name] = indicator
+    
+    def update_status(self, health: dict[str, tuple[bool, str]]):
+        """Update infrastructure status indicators."""
+        for name, (is_healthy, _) in health.items():
+            if name in self.indicators:
+                color = "#4CAF50" if is_healthy else "#f44336"
+                self.indicators[name].configure(text_color=color)
+                self.infra_status[name] = is_healthy
+        
+        self.on_status_change(all(self.infra_status.values()))
+    
+    def all_healthy(self) -> bool:
+        """Check if all infrastructure is healthy."""
+        return all(self.infra_status.values())
+
 
 class ServiceCard(ctk.CTkFrame):
     """Card displaying a single service status and controls."""
@@ -553,8 +751,8 @@ class PlatformControlApp(ctk.CTk):
         super().__init__()
         
         self.title("AI Platform Control")
-        self.geometry("500x700")
-        self.minsize(450, 600)
+        self.geometry("520x800")
+        self.minsize(480, 700)
         
         # Load config
         self.config = load_config()
@@ -562,6 +760,8 @@ class PlatformControlApp(ctk.CTk):
         # Store service cards for updates
         self.service_cards: dict[str, ServiceCard] = {}
         self.model_cards: list[ModelCard] = []
+        self.infra_healthy = False
+        self.startup_in_progress = False
         
         self._create_ui()
         self._start_health_monitor()
@@ -578,9 +778,80 @@ class PlatformControlApp(ctk.CTk):
             text="🤖 AI Platform Control",
             font=("Helvetica", 20, "bold"),
         )
-        title.pack(pady=(0, 15))
+        title.pack(pady=(0, 10))
         
+        # =================================================================
+        # Platform Start/Restart Section (NEW)
+        # =================================================================
+        platform_frame = ctk.CTkFrame(main_scroll)
+        platform_frame.pack(fill="x", pady=(0, 15))
+        
+        platform_label = ctk.CTkLabel(
+            platform_frame,
+            text="🚀 Platform Control",
+            font=("Helvetica", 14, "bold"),
+        )
+        platform_label.pack(anchor="w", padx=10, pady=(10, 5))
+        
+        # Infrastructure panel
+        self.infra_panel = InfrastructurePanel(
+            platform_frame,
+            on_status_change=self._on_infra_status_change,
+        )
+        self.infra_panel.pack(fill="x", padx=5, pady=5)
+        
+        # Platform action buttons
+        platform_btns = ctk.CTkFrame(platform_frame, fg_color="transparent")
+        platform_btns.pack(fill="x", padx=10, pady=(5, 10))
+        
+        self.platform_start_btn = ctk.CTkButton(
+            platform_btns,
+            text="⚡ Start Platform",
+            width=140,
+            height=35,
+            font=("Helvetica", 12, "bold"),
+            fg_color="#2E7D32",
+            hover_color="#1B5E20",
+            command=self._start_platform,
+        )
+        self.platform_start_btn.pack(side="left", padx=5)
+        
+        self.platform_restart_btn = ctk.CTkButton(
+            platform_btns,
+            text="🔄 Restart Platform",
+            width=140,
+            height=35,
+            font=("Helvetica", 12, "bold"),
+            fg_color="#F57C00",
+            hover_color="#E65100",
+            command=self._restart_platform,
+        )
+        self.platform_restart_btn.pack(side="left", padx=5)
+        
+        self.platform_stop_btn = ctk.CTkButton(
+            platform_btns,
+            text="⏹ Stop All",
+            width=100,
+            height=35,
+            font=("Helvetica", 12, "bold"),
+            fg_color="#c92a1e",
+            hover_color="#a82318",
+            command=self._stop_platform,
+        )
+        self.platform_stop_btn.pack(side="left", padx=5)
+        
+        # Progress/status label
+        self.platform_status = ctk.CTkLabel(
+            platform_frame,
+            text="Ready - Click 'Start Platform' to launch all services",
+            font=("Helvetica", 11),
+            text_color="gray",
+        )
+        self.platform_status.pack(fill="x", padx=10, pady=(0, 10))
+        
+        # =================================================================
         # Services Section
+        # =================================================================
         services_label = ctk.CTkLabel(
             main_scroll,
             text="Services (Kitchen Brigade)",
@@ -603,22 +874,22 @@ class PlatformControlApp(ctk.CTk):
             card.pack(fill="x", padx=5, pady=3)
             self.service_cards[name] = card
         
-        # Quick Actions
+        # Quick Actions (legacy - keep for individual control)
         actions_frame = ctk.CTkFrame(main_scroll, fg_color="transparent")
         actions_frame.pack(fill="x", pady=(0, 15))
         
         start_all_btn = ctk.CTkButton(
             actions_frame,
-            text="▶ Start All",
-            width=120,
+            text="▶ Start All Services",
+            width=140,
             command=self._start_all_services,
         )
         start_all_btn.pack(side="left", padx=5)
         
         stop_all_btn = ctk.CTkButton(
             actions_frame,
-            text="■ Stop All",
-            width=120,
+            text="■ Stop All Services",
+            width=140,
             fg_color="#c92a1e",
             hover_color="#a82318",
             command=self._stop_all_services,
@@ -661,6 +932,7 @@ class PlatformControlApp(ctk.CTk):
         """Start background health monitoring."""
         def _monitor():
             while True:
+                # Check service health
                 for name, card in self.service_cards.items():
                     config = SERVICES[name]
                     is_healthy, status = ServiceManager.check_health(
@@ -668,9 +940,214 @@ class PlatformControlApp(ctk.CTk):
                     )
                     card.after(0, lambda c=card, h=is_healthy, s=status: c.update_status(h, s))
                 
+                # Check infrastructure health
+                infra_health = ServiceManager.check_infrastructure_health()
+                self.after(0, lambda h=infra_health: self.infra_panel.update_status(h))
+                
                 threading.Event().wait(5.0)  # Check every 5 seconds
         
         threading.Thread(target=_monitor, daemon=True).start()
+    
+    def _on_infra_status_change(self, all_healthy: bool):
+        """Called when infrastructure status changes."""
+        self.infra_healthy = all_healthy
+        if all_healthy and not self.startup_in_progress:
+            self.platform_status.configure(
+                text="✓ Infrastructure healthy - Services can be started",
+                text_color="#4CAF50",
+            )
+    
+    def _start_platform(self):
+        """Start the entire platform (infrastructure + all services)."""
+        if self.startup_in_progress:
+            return
+        
+        self.startup_in_progress = True
+        self.platform_start_btn.configure(state="disabled")
+        self.platform_restart_btn.configure(state="disabled")
+        self.platform_status.configure(
+            text="Starting infrastructure (Neo4j, Qdrant, Redis)...",
+            text_color="orange",
+        )
+        
+        def _startup_sequence():
+            # Step 1: Start infrastructure
+            success, msg = ServiceManager.start_infrastructure()
+            if not success:
+                self.after(0, lambda: self._platform_startup_failed(f"Infrastructure failed: {msg}"))
+                return
+            
+            self.after(0, lambda: self.platform_status.configure(
+                text="Waiting for infrastructure to be healthy...",
+                text_color="orange",
+            ))
+            
+            # Step 2: Wait for infrastructure health
+            def status_callback(status: str):
+                self.after(0, lambda s=status: self.platform_status.configure(text=s))
+            
+            if not ServiceManager.wait_for_infrastructure(timeout=90, callback=status_callback):
+                self.after(0, lambda: self._platform_startup_failed("Infrastructure health check timeout"))
+                return
+            
+            self.after(0, lambda: self.platform_status.configure(
+                text="✓ Infrastructure ready - Starting services...",
+                text_color="#4CAF50",
+            ))
+            
+            # Step 3: Start services in order
+            import time
+            for i, svc_name in enumerate(SERVICE_STARTUP_ORDER):
+                if svc_name in self.service_cards:
+                    self.after(0, lambda n=svc_name, idx=i: self.platform_status.configure(
+                        text=f"Starting {n} ({idx+1}/{len(SERVICE_STARTUP_ORDER)})...",
+                        text_color="orange",
+                    ))
+                    
+                    card = self.service_cards[svc_name]
+                    self.after(0, card.start_service)
+                    
+                    # Wait a bit between service starts
+                    time.sleep(3)
+            
+            # Step 4: Wait for all services to be healthy
+            self.after(0, lambda: self.platform_status.configure(
+                text="Waiting for all services to be healthy...",
+                text_color="orange",
+            ))
+            time.sleep(10)  # Give services time to fully start
+            
+            # Step 5: Wait for inference-service specifically before loading model
+            self.after(0, lambda: self.platform_status.configure(
+                text="Waiting for inference-service to be ready...",
+                text_color="orange",
+            ))
+            
+            inference_ready = False
+            for attempt in range(30):  # 30 attempts, 2 seconds each = 60 seconds max
+                healthy, status = ServiceManager.check_health(f"{INFERENCE_API}/health", timeout=5.0)
+                if healthy:
+                    inference_ready = True
+                    break
+                time.sleep(2)
+            
+            if not inference_ready:
+                self.after(0, lambda: self.platform_status.configure(
+                    text="✓ Platform started (inference-service not ready for models)",
+                    text_color="#FFA500",
+                ))
+                self.after(0, self._platform_startup_complete)
+                return
+            
+            # Step 6: Load default LLM model
+            default_model = self.config.get("default_model", DEFAULT_MODEL_TO_LOAD)
+            self.after(0, lambda: self.platform_status.configure(
+                text=f"Loading default model ({default_model})...",
+                text_color="orange",
+            ))
+            
+            success, msg = ModelManager.load_model(default_model)
+            if not success:
+                # Not fatal - platform is still usable, just no model loaded
+                self.after(0, lambda m=msg: self.platform_status.configure(
+                    text=f"✓ Platform started (model load failed: {m})",
+                    text_color="#FFA500",  # Orange - warning
+                ))
+            else:
+                self.after(0, self._platform_startup_complete)
+                return
+            
+            self.after(0, self._platform_startup_complete)
+        
+        threading.Thread(target=_startup_sequence, daemon=True).start()
+    
+    def _restart_platform(self):
+        """Restart the entire platform."""
+        if self.startup_in_progress:
+            return
+        
+        self.startup_in_progress = True
+        self.platform_start_btn.configure(state="disabled")
+        self.platform_restart_btn.configure(state="disabled")
+        self.platform_status.configure(
+            text="Stopping all services...",
+            text_color="orange",
+        )
+        
+        def _restart_sequence():
+            # Step 1: Stop all services
+            for card in self.service_cards.values():
+                self.after(0, card.stop_service)
+            
+            import time
+            time.sleep(5)  # Wait for services to stop
+            
+            self.after(0, lambda: self.platform_status.configure(
+                text="Stopping infrastructure...",
+                text_color="orange",
+            ))
+            
+            # Step 2: Stop infrastructure
+            ServiceManager.stop_infrastructure()
+            time.sleep(3)
+            
+            # Step 3: Start platform fresh
+            self.after(0, self._start_platform)
+        
+        threading.Thread(target=_restart_sequence, daemon=True).start()
+    
+    def _stop_platform(self):
+        """Stop the entire platform."""
+        self.platform_status.configure(
+            text="Stopping all services and infrastructure...",
+            text_color="orange",
+        )
+        
+        def _stop_sequence():
+            import time
+            
+            # Stop all services sequentially (reverse order of startup)
+            for service_name in reversed(SERVICE_STARTUP_ORDER):
+                if service_name in self.service_cards:
+                    card = self.service_cards[service_name]
+                    self.after(0, lambda c=card: c.stop_service())
+                    time.sleep(1)  # Small delay between stops
+            
+            # Wait for services to stop
+            time.sleep(5)
+            
+            # Stop infrastructure
+            success, msg = ServiceManager.stop_infrastructure()
+            
+            # Final status update
+            self.after(0, lambda: self.platform_status.configure(
+                text="Platform stopped",
+                text_color="gray",
+            ))
+        
+        threading.Thread(target=_stop_sequence, daemon=True).start()
+    
+    def _platform_startup_failed(self, error: str):
+        """Handle platform startup failure."""
+        self.startup_in_progress = False
+        self.platform_start_btn.configure(state="normal")
+        self.platform_restart_btn.configure(state="normal")
+        self.platform_status.configure(
+            text=f"✗ Startup failed: {error}",
+            text_color="#f44336",
+        )
+    
+    def _platform_startup_complete(self):
+        """Handle platform startup completion."""
+        self.startup_in_progress = False
+        self.platform_start_btn.configure(state="normal")
+        self.platform_restart_btn.configure(state="normal")
+        default_model = self.config.get("default_model", DEFAULT_MODEL_TO_LOAD)
+        self.platform_status.configure(
+            text=f"✓ Platform ready! Model: {default_model}",
+            text_color="#4CAF50",
+        )
+        self._refresh_models()  # Refresh models after inference-service starts
     
     def _refresh_models(self):
         """Refresh the models list."""

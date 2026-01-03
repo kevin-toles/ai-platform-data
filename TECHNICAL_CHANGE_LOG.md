@@ -6,6 +6,43 @@
 
 ## Changelog
 
+### 2026-01-01: Neo4j Schema Expansion and Book Data Addition (CL-020)
+
+**Summary**: Added raw book JSON files, Neo4j init scripts for expanded schema, and seeding documentation as part of Platform Consolidation (PCON-2, PCON-3).
+
+**Changes Made:**
+
+| Category | Change |
+|----------|--------|
+| **Book Data** | Added raw book JSONs to `books/raw/` |
+| **Neo4j Schema** | Created `04_extended_relationships.cypher` for COVERS, PART_OF, IMPLEMENTED_BY, FOUND_IN |
+| **Constraints** | Added CodeFile, Pattern, Repository node constraints |
+| **Indexes** | Added chapter_keywords, codefile_repo, pattern_tier indexes |
+| **Seeding** | Updated `seed_neo4j.py` with `seed_concepts()` function |
+
+**Schema Expansion (PCON-2):**
+
+| Node | Constraint | Purpose |
+|------|------------|---------|
+| `CodeFile` | `file_path` unique | Code-reference-engine integration |
+| `Pattern` | `name` unique | Design pattern tracking |
+| `Repository` | `repo_id` unique | Repository tracking |
+
+**New Relationships:**
+
+| Relationship | From → To | Purpose |
+|--------------|-----------|---------|
+| `COVERS` | Chapter → Concept | Chapter covers a concept |
+| `PART_OF` | Chapter → Book | Chapter belongs to book |
+| `IMPLEMENTED_BY` | Concept → CodeFile | Concept implementation |
+| `FOUND_IN` | Pattern → Repository | Pattern location |
+
+**Cross-Reference:** See PLATFORM_CONSOLIDATION_WBS.md PCON-2, PCON-3
+
+**Git Commit:** `cdd19c2`
+
+---
+
 ### 2025-12-31: Qwen3 Model Series Addition (CL-019)
 
 **Summary**: Added two new Qwen3 models to the inference-service model registry, expanding code generation capabilities with both a dense model (Qwen3-8B) and a Mixture of Experts model (Qwen3-Coder-30B-A3B).
