@@ -1,19 +1,4 @@
-"""GitHub API client for on-demand code retrieval."""
-
-from __future__ import annotations
-
-import base64
-import logging
-import os
-from dataclasses import dataclass
-from typing import TYPE_CHECKING
-
-import httpx
-
-if TYPE_CHECKING:
-    pass
-
-logger = logging.getLogger(__name__)
+\"\"\"GitHub API client for on-demand code retrieval.\"\"\"\n\nfrom __future__ import annotations\n\nimport base64\nimport logging\nimport os\nfrom dataclasses import dataclass\n\nimport httpx\n\nlogger = logging.getLogger(__name__)
 
 # Constants
 GITHUB_API_BASE = "https://api.github.com"

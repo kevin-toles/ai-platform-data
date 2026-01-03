@@ -306,29 +306,7 @@ class CodeReferenceEngine:
             total_chunks_found=len(references),
         )
     
-    async def _search_qdrant(
-        self,
-        query: str,
-        domains: list[str] | None = None,
-        top_k: int = 10,
-    ) -> list[CodeReference]:
-        """Search Qdrant for semantically similar code chunks.
-        
-        Args:
-            query: Natural language query
-            domains: Limit to specific domains
-            top_k: Maximum results
-            
-        Returns:
-            List of CodeReference from Qdrant matches
-        """
-        if not self.qdrant_client:
-            return []
-        
-        # This requires an embedding model - placeholder for now
-        # In production, use CodeBERT or SBERT to encode query
-        logger.info(f"Qdrant search not yet implemented - query: {query}")
-        return []
+    async def _search_qdrant(\n        self,\n        query: str,\n        domains: list[str] | None = None,\n        top_k: int = 10,  # noqa: ARG002 - reserved for future Qdrant implementation\n    ) -> list[CodeReference]:\n        \"\"\"Search Qdrant for semantically similar code chunks.\n        \n        Args:\n            query: Natural language query\n            domains: Limit to specific domains\n            top_k: Maximum results (reserved for future use)\n            \n        Returns:\n            List of CodeReference from Qdrant matches\n        \"\"\"\n        if not self.qdrant_client:\n            return []\n        \n        # Yield control to event loop (placeholder for async Qdrant operations)\n        await asyncio.sleep(0)\n        \n        # This requires an embedding model - placeholder for now\n        # In production, use CodeBERT or SBERT to encode query\n        _ = domains  # Reserved for filtering\n        logger.info(f\"Qdrant search not yet implemented - query: {query}\")\n        return []
     
     async def _search_github(
         self,

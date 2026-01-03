@@ -315,18 +315,11 @@ def create_neo4j_relationships(
     return created
 
 
-def save_pending_review(
-    matches: list[ConceptMatch],
-    config: MappingConfig,
-) -> Path:
-    """Save low-confidence matches for human review.
-    
-    Args:
-        matches: All matches (will filter for review-only)
+def save_pending_review(\n    matches: list[ConceptMatch],\n    config: MappingConfig,\n) -> Path | None:\n    \"\"\"Save low-confidence matches for human review.\n    \n    Args:\n        matches: All matches (will filter for review-only)
         config: Mapping configuration
         
     Returns:
-        Path to saved review file
+        Path to saved review file, or None if no pending reviews
     """
     pending = [m for m in matches if not m.auto_approved]
     
@@ -522,7 +515,7 @@ def main(
             stats.concepts_extracted += len(concepts)
             
             # Count unique chapters
-            chapters = set((c["book_id"], c["chapter_number"]) for c in concepts)
+            chapters = {(c["book_id"], c["chapter_number"]) for c in concepts}
             stats.chapters_processed += len(chapters)
             
             # Match concepts to repos

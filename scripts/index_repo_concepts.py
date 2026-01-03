@@ -348,7 +348,7 @@ def main(
             
             progress.advance(task)
     
-    console.print(f"\nExtracted terms:")
+    console.print("\nExtracted terms:")
     console.print(f"  • Concepts: {stats.concepts_indexed}")
     console.print(f"  • Patterns: {stats.patterns_indexed}")
     console.print(f"  • Tags: {stats.tags_indexed}")
